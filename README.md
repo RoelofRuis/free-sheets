@@ -8,6 +8,7 @@ Alle bestanden hier zijn geschreven in Lilypond, een soort programmeertaal waaru
 
 **Wat staat waar?**
 - `music` bevat mappen met de individuele composities.
+- `published` bevat gepubliceerde PDF-bestanden van de bladmuziek.
 - `snippets` bevat bestanden om snel stukken uit te knippen/plakken.
 - `templates` bevat templates die kunnen worden geïmporteerd.
 
@@ -24,6 +25,7 @@ All sheet music is written in Lilypond, a kind of programming language from whic
 
 **What's where?**
 - `music` contains folders with the individual compositions.
+- `published` contains published PDF files of the sheet music.
 - `snippets` contains files from which to quickly cut and past.
 - `templates` contains templates that can be imported.
 
