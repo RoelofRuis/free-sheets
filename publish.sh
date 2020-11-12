@@ -11,5 +11,5 @@ do
 	else
 		OUT="published/${BASE}_${DATE}_${TAG}"
 	fi
-	lilypond -o $OUT $file
+	lilypond -drelative-includes -o $OUT $file
 done
