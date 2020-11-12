@@ -7,9 +7,9 @@ do
 	BASE=$(basename -s .ly $file)
 	DATE=$(date +%Y%m)
 	if [ -z "$1" ]; then
-		OUT="${BASE}_${DATE}"
+		OUT="published/${BASE}_${DATE}"
 	else
-		OUT="${BASE}_${DATE}_${TAG}"
+		OUT="published/${BASE}_${DATE}_${TAG}"
 	fi
 	lilypond -o $OUT $file
 done
