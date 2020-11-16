@@ -177,14 +177,14 @@ staffAccordionRight = {
       f2.~ |
       f2 r4 |
     } \\ {
-      r4 <es d g>8-. r8 <d c f>4 |
+      r4 <es d g,>8-. r8 <d c f,>4 |
       <c fis,>4-- <c fis,>-- <es bes f>-- |
-      r4 <es d g>8-. r8 <d c f>4 |
+      r4 <es d g,>8-. r8 <d c f,>4 |
       <c fis,>4-- <c fis,>4-- <es bes f>--
     } >>
-    r4 <es d g>8-. r <d c f>4 |
+    r4 <es d g,>8-. r <d c f,>4 |
     <f c fis,>-- <f c fis,>-- <es bes f>-- |
-    r4 <es c g>8-. r <d bes f>4 |
+    r4 <es d g,>8-. r <d c f,>4 |
     << {
       s2 es8 f |
       g2. |
@@ -222,11 +222,11 @@ staffAccordionRight = {
     } >>
     
     <f c fis,>-- <f c fis,>-- <es bes f>-- |
-    r4 <es c g>8-. r <d c f>4 |
+    r4 <es d g,>8-. r <d c f,>4 |
     <f c fis,>-- <f c fis,>-- <es bes f>-- |
-    r4 <es d g>8-. r <d c f>4 |
+    r4 <es d g,>8-. r <d c f,>4 |
     <f c fis,>-- <f c fis,>-- <es bes f>-- |
-    r4 <es d g>8-. r <d c f>4 |
+    r4 <es d g,>8-. r <d c f,>4 |
     <f c fis,>2-- <g es ces as>4-- |
     <a fis d bes>2.\fermata |
     
@@ -413,7 +413,7 @@ dynamicsStaff = \new Dynamics {
     info = "For standard bass - Difficulty: Hard"
     permission = "Explicit permission is granted to NOVAM Nederland to publish this work on their website for free."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
-    version = "November 2020"
+    version = "November 2020 - 2"
   }
 
   \paper {
