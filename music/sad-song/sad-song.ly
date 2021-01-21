@@ -113,9 +113,9 @@ leftHand = \new Staff {
     year = "2016"
     description = "One of a series of songs I wrote for one of my students for practicing with the free-bass system. Notice the two hands playing in different keys."
     info = "For free bass - Difficulty: Medium/Easy"
-    permission = "Explicit permission is granted to NOVAM Nederland to publish this work on their website for free."
+    permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
-    version = "November 2020"
+    version = "January 2021"
   }
 
   \paper {

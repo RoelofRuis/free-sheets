@@ -411,9 +411,9 @@ dynamicsStaff = \new Dynamics {
     year = "2016"
     description = "A jazz piece starting with a soothing melody and slowly evolving central part. I tried to combine the left and right hands to create an interesting rythmic movement."
     info = "For standard bass - Difficulty: Hard"
-    permission = "Explicit permission is granted to NOVAM Nederland to publish this work on their website for free."
+    permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
-    version = "November 2020 - 2"
+    version = "January 2021"
   }
 
   \paper {

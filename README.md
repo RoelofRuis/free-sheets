@@ -9,13 +9,17 @@ Alle bestanden hier zijn geschreven in Lilypond, een soort programmeertaal waaru
 **Wat staat waar?**
 - `music` bevat mappen met de individuele composities.
 - `snippets` bevat bestanden om snel stukken uit te knippen/plakken.
-- `templates` bevat templates die kunnen worden geïmporteerd.
+- `templates` bevat templates die kunnen worden geÃ¯mporteerd.
 
 Veel dank aan [NOVAM Nederland](http://novam.net) voor het publiekelijk aanbieden van mijn composities.
 
 Heb je vragen of opmerkingen? Stuur me een mailtje op `roelof.ruis+bladmuziek@gmail.com`
 
 Wil je de bladmuziek genereren en beschik je over een systeem met Linux, lees dan onderaan verder bij 'Creating the sheet music'.
+
+#### Licentie
+Alle hier verzamelde werken zijn uitgebracht onder de [Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal (CC BY-ND 4.0) lisentie](https://creativecommons.org/licenses/by-nd/4.0/).
+
 
 ### Free Sheet Music
 
@@ -33,6 +37,10 @@ Many thanks go out to [NOVAM Nederland](http://novam.net) for showcasing my comp
 Do you have questions or comments? Send me a mail at `roelof.ruis+bladmuziek@gmail.com`
 
 If you want to generate the sheet music and you have a Linux machine, then read on at 'Creating the sheet music'
+
+#### License
+All sheet music in this repository is published under the [Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) license](https://creativecommons.org/licenses/by-nd/4.0/).
+
 
 ## Creating the sheet music
 

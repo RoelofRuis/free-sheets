@@ -175,9 +175,9 @@ staffAccordionLeft = {
     description = "A short piece on the edge between classical and jazz, which I wrote while practicing working with jazz harmony and voice leading.
                    Mind the slightly differing lines in the reprise."
     info = "For free bass - Difficulty: Hard"
-    permission = "Explicit permission is granted to NOVAM Nederland to publish this work on their website for free."
+    permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
-    version = "November 2020"
+    version = "January 2021"
   }
 
   \paper {
