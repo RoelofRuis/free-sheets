@@ -1,3 +1,4 @@
+% Publishable book
 \version "2.20.0"
 
 options = {
@@ -30,10 +31,11 @@ staffLeft = {
   }
 
   \paper {
-    max-systems-per-page = 5
-    min-systems-per-page = 5
+    %max-systems-per-page = 5
+    %min-systems-per-page = 5
+    %ragged-last-bottom = ##f
+
     indent = 0.0
-    ragged-last-bottom = ##f
     print-all-headers = ##t
     
     bookTitleMarkup = \markup {
