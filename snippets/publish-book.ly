@@ -1,5 +1,19 @@
 % Publishable book
 
+options = {
+  \numericTimeSignature
+  \time 4/4
+  \key c \major
+}
+
+staffRight = {
+  \options
+}
+
+staffLeft = {
+  \options
+}
+
 \book {
   
   \header {
@@ -65,7 +79,10 @@
       breakbefore = ##t
     }
 
-    % TODO: add music!
+    \new PianoStaff <<
+      \new Staff = "right" \with {midiInstrument = "bright acoustic"} \staffRight
+      \new Staff = "left" \with {midiInstrument = "bright acoustic"} \staffLeft
+    >>
 
     \layout {}
     
