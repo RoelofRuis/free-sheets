@@ -18,7 +18,7 @@ Heb je vragen of opmerkingen? Stuur me een mailtje op `roelof.ruis+bladmuziek@gm
 Wil je de bladmuziek genereren en beschik je over een systeem met Linux, lees dan onderaan verder bij 'Creating the sheet music'.
 
 #### Licentie
-Alle hier verzamelde werken zijn uitgebracht onder de [Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal (CC BY-ND 4.0) lisentie](https://creativecommons.org/licenses/by-nd/4.0/).
+Alle hier verzamelde werken zijn uitgebracht onder de [Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal (CC BY-ND 4.0) licentie](https://creativecommons.org/licenses/by-nd/4.0/).
 
 
 ### Free Sheet Music
