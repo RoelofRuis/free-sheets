@@ -9,10 +9,20 @@ options = {
 
 staffRight = {
   \options
+
+  % add music
 }
 
 staffLeft = {
   \options
+
+  % add music
+}
+
+dynamicsStaff = \new Dynamics {
+  \time 4/4
+
+  % add dynamics
 }
 
 \book {
@@ -83,6 +93,7 @@ staffLeft = {
 
     \new PianoStaff <<
       \new Staff = "right" \with {midiInstrument = "bright acoustic"} \staffRight
+      \dynamicsStaff
       \new Staff = "left" \with {midiInstrument = "bright acoustic"} \staffLeft
     >>
 
