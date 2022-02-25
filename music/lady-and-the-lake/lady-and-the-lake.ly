@@ -24,6 +24,38 @@ staffRight = {
     f2~ f8 f g f |
     d8 f g a~ a2~ |
     a1 |
+    
+    <a d,>4 <d g,> <a d,> <d g,> |
+    <a d,>4 <d g,> <a d,> <d g,> |
+    <a d,>4 <d g,> <a d,> <d g,> |
+    <a d,>4 <d g,> <a d,> <d g,> |
+    
+    f8 e d a~ a2~ |
+    a2~ a8 a d e |
+    f g f e a,2~ |
+    a1 |
+    g8 a g f~ f2~ |
+    f4. f8 g a g f |
+    d8 f g a~ a2~ |
+    a4. a8 bes c bes a |
+    
+    <c f,>4 <f a,> <c f,> <f a,> |
+    <c f,> <f a,> <c f,> <f a,> |
+    <c es,> <f a,> <c es,> <f a,> |
+    <c es,> <es a,> <c es,> <es a,> |
+    <bes d,> <d f,> <bes d,> <d f,> |
+    <bes d,> <d f,> <bes d,> <d f,> |
+    <bes des,> <des f,> <bes des,> <des f,> |
+    <bes des,> <c f,> <bes des,> <c f,> |
+    <a c,> <c f,> <a c,> <c f,> |
+    <a c,> <c f,> <a c,> <c f,> |
+    <g c,> <bes es,> <g c,> <bes es,> |
+    <g c,> <a es> <g c,> <a es> |
+    <f c> <a e> <f c> <a e> |
+    <f c> <a e> <f c> <a e> |
+    <f c> <a e> <f c> <a e> |
+    <f c>1 |
+    
   }
 }
 
@@ -43,13 +75,55 @@ staffLeft = {
          b r b r |
          c r c r |
          c r c r |
-         cis r cis r |
-         cis r cis r |
+         des r des r |
+         des r des r |
        }
        \\
-       { f,1~ f~ f~ f~ f~ f~ f~ f~ }
+       { f,1~ f~ f~ f~ f~ f~ f~ f }
     >>
+    
+    << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
+    << { f2. e4 } \\ { r8 e4 c'8~ c2 } >> |
+    << { f,1 } \\ { r8 e4 c'8~ c4 e, } >> |
+    << { f2. e4 } \\ { r8 e4 c'8~ c2 } >> |
+    
+    << 
+       { 
+         r4 d4 d, d' |
+         d, d' d, d' |
+         b, b' b, b' |
+         b, b' b, b' |
+         c, c' c, c' |
+         c, c' c, c' |
+         des, des' des, des' |
+         des, des' des, des' |
+       }
+       \\
+       { f,1~ f~ f~ f~ f~ f~ f~ f }
+    >>
+    
+    << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
+    << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
+    << { f1 } \\ { r8 es4 c'8~ c4 es, } >> |
+    << { f1 } \\ { r8 es4 c'8~ c4 es, } >> |
+    << { f1 } \\ { r8 es4 bes'8~ bes4 es, } >> |
+    << { f1 } \\ { r8 es4 bes'8~ bes4 es, } >> |
+    << { f1 } \\ { r8 des4 c'8~ c4 des, } >> |
+    << { f1 } \\ { r8 des4 c'8~ c4 des, } >> |
+    << { f1 } \\ { r8 des4 c'8~ c4 des, } >> |
+    << { f1 } \\ { r8 des4 c'8~ c4 des, } >> |
+    << { f1 } \\ { r8 des4 c'8~ c4 des, } >> |
+    << { f1 } \\ { r8 c4 c'8~ c4 c, } >> |
+    << { f1 } \\ { r8 c4 c'8~ c4 c, } >> |
+    << { f1 } \\ { r8 c4 c'8~ c4 des, } >> |
+    << { f1 } \\ { r8 c4 c'8~ c4 des, } >> |
+    <c' f, c>1
+    
   }
+}
+
+dynamics = \new Dynamics {
+  
 }
 
 \book {
@@ -61,7 +135,7 @@ staffLeft = {
     tagline = ##f
     instrumentName = "Accordion solo"
     year = "2022"
-    description = "A young lady arrives at a small lake at the start of spring and decides to take short swim."
+    description = "The start of Spring. A young lady arrives at a small lake and decides to take short swim.\nWritten to practice composing by story."
     info = "For Free Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
@@ -122,6 +196,7 @@ staffLeft = {
 
     \new PianoStaff <<
       \new Staff = "right" \with {midiInstrument = "bright acoustic"} \staffRight
+      \dynamics
       \new Staff = "left" \with {midiInstrument = "bright acoustic"} \staffLeft
     >>
 
