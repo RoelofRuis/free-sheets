@@ -10,8 +10,12 @@ options = {
 
 staffRight = {
   \options
-  \relative c'' { 
-    <a d,>4\regdba <d g,> <a d,> <d g,> |
+  \relative c''' {
+    <d a g d>1~\regdba |
+    <d a g d>1\fermata |
+    \bar "||"
+    
+    <a, d,>4 <d g,> <a d,> <d g,> |
     <a d,>4 <d g,> <a d,> <d g,> |
     <a d,>4 <d g,> <a d,> <d g,> |
     <a d,>4 <d g,> <a d,> <d g,> |
@@ -54,7 +58,21 @@ staffRight = {
     <f c> <a e> <f c> <a e> |
     <f c> <a e> <f c> <a e> |
     <f c> <a e> <f c> <a e> |
-    <f c>1 |
+    <f c>2 r2 |
+    
+    <c' g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
+    <bes f d>1 |
+    <c g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
+    <bes f d>1 |
+
+    <es bes g>4 <f des as>8 <g~ es~ bes~> <g es bes> <es bes g>4 <des~ as~ f~>8 |
+    <des as f>1 |
+    <es bes g>4 <f des as>8 <g~ es~ bes~> <g es bes> <es bes g>4 <c~ gis~ e~>8 |
+    <c gis e>4 <c gis e> <ais fis d> <gis e c> <fis d ais>4 r4 
+    \override Glissando.style = #'zigzag
+    \afterGrace g2\glissando g''16 |
+
+    <c,, g e>4\regezv <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     
   }
 }
@@ -62,14 +80,18 @@ staffRight = {
 staffLeft = {
   \options
   \relative c' {
+    R1 
+    f8 e d a~ a2\fermata |
+    \bar "||"
+    
+    << { f'1 } \\ { r8 e4 c'8~ c4 e, } >> |
+    << { f1 } \\ { r8 e4 c'8~ c4 es, } >> |
     << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
-    << { f2. e4 } \\ { r8 e4 c'8~ c2 } >> |
-    << { f,1 } \\ { r8 e4 c'8~ c4 e, } >> |
-    << { f2. e4 } \\ { r8 e4 c'8~ c2 } >> |
+    << { f1 } \\ { r8 e4 c'8~ c4 es, } >> |
     
     << 
        { 
-         d4 r d r |
+         d'4 r d r |
          d4 r d r |
          b r b r |
          b r b r |
@@ -83,13 +105,13 @@ staffLeft = {
     >>
     
     << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
-    << { f2. e4 } \\ { r8 e4 c'8~ c2 } >> |
-    << { f,1 } \\ { r8 e4 c'8~ c4 e, } >> |
-    << { f2. e4 } \\ { r8 e4 c'8~ c2 } >> |
+    << { f1 } \\ { r8 e4 c'8~ c4 es, } >> |
+    << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
+    << { f1 } \\ { r8 e4 c'8~ c4 es, } >> |
     
     << 
        { 
-         r4 d4 d, d' |
+         r4 d'4 d, d' |
          d, d' d, d' |
          b, b' b, b' |
          b, b' b, b' |
@@ -113,11 +135,24 @@ staffLeft = {
     << { f1 } \\ { r8 des4 c'8~ c4 des, } >> |
     << { f1 } \\ { r8 des4 c'8~ c4 des, } >> |
     << { f1 } \\ { r8 des4 c'8~ c4 des, } >> |
-    << { f1 } \\ { r8 c4 c'8~ c4 c, } >> |
+    << { f1 } \\ { r8 des4 c'8~ c4 des, } >> |
     << { f1 } \\ { r8 c4 c'8~ c4 c, } >> |
     << { f1 } \\ { r8 c4 c'8~ c4 des, } >> |
     << { f1 } \\ { r8 c4 c'8~ c4 des, } >> |
-    <c' f, c>1
+    <c' f, c>2 r2
+
+    c,1~ |
+    c8 bes f' e f bes, c16 d e8 |
+    c1~ |
+    c8 bes f' e f bes, c16 d e8 |
+    
+    es1~ |
+    es8 des bes' a bes des, es16 f g8 |
+    es2.. fis8~ |
+    fis4 fis4 e d |
+    c4 r2. |
+    
+    
     
   }
 }
@@ -143,7 +178,7 @@ dynamics = \new Dynamics {
   }
 
   \paper {
-    %max-systems-per-page = 5
+    max-systems-per-page = 5
     %min-systems-per-page = 5
     indent = 0.0
     %ragged-last-bottom = ##f
