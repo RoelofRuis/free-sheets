@@ -3,3 +3,4 @@ pub/
 music/**/*.pdf
 music/**/*.midi
 music/**/*.mid
+music/**/local-notes.txt
