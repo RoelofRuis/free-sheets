@@ -10,12 +10,13 @@ options = {
 
 staffRight = {
   \options
+  \clef treble
   \relative c''' {
-    <d a g d>1~\regdba |
-    <d a g d>1\fermata |
-    \bar "||"
-    
+    R1*2 |
     <a, d,>4 <d g,> <a d,> <d g,> |
+    <a d,>4 <d g,> r2 |
+    
+    <a d,>4 <d g,> <a d,> <d g,> |
     <a d,>4 <d g,> <a d,> <d g,> |
     <a d,>4 <d g,> <a d,> <d g,> |
     <a d,>4 <d g,> <a d,> <d g,> |
@@ -27,7 +28,7 @@ staffRight = {
     g8 a g f~ f2~ |
     f2~ f8 f g f |
     d8 f g a~ a2~ |
-    a1 |
+    a2 r |
     
     <a d,>4 <d g,> <a d,> <d g,> |
     <a d,>4 <d g,> <a d,> <d g,> |
@@ -60,7 +61,7 @@ staffRight = {
     <f c> <a e> <f c> <a e> |
     <f c>2 r2 |
     
-    <c' g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
+    <c' g e>4\rega <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     <bes f d>1 |
     <c g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     <bes f d>1 |
@@ -72,19 +73,33 @@ staffRight = {
     \override Glissando.style = #'zigzag
     \afterGrace g2\glissando g''16 |
 
-    <c,, g e>4\regezv <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
+    <c, g e>4\regzv <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
+    <bes f d>1 |
+    <c g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
+    <bes f d>1 |
     
+    <es bes g>4 <f des as>8 <g~ es~ bes~> <g es bes> <es bes g>4. |
+    <des as f>4 <es bes g>8 <f~ des~ as~> <f des as> <des as f>4. |
+    <c g f>2 <c g e> |
+    <f, c a>4 <g es bes>8 <a~ f~ c~> <a f c> <f c a>4 <e~ b~ gis~>8 |
+    <e b gis>1 |
+    <f c a>4 <g es bes>8 <a~ f~ c~> <a f c> <f c a>4 <es~ bes~ g~>8 |
+    <es bes g>1 |
+
   }
 }
 
 staffLeft = {
   \options
+  \clef treble
   \relative c' {
-    R1 
-    f8 e d a~ a2\fermata |
-    \bar "||"
+    f1~ |
+    f1~ |
+    f1~ |
+    f2 r2 |
     
-    << { f'1 } \\ { r8 e4 c'8~ c4 e, } >> |
+    
+    << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
     << { f1 } \\ { r8 e4 c'8~ c4 es, } >> |
     << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
     << { f1 } \\ { r8 e4 c'8~ c4 es, } >> |
@@ -98,10 +113,10 @@ staffLeft = {
          c r c r |
          c r c r |
          des r des r |
-         des r des r |
+         des2 r |
        }
        \\
-       { f,1~ f~ f~ f~ f~ f~ f~ f }
+       { f,1~ f~ f~ f~ f~ f~ f~ f2 r }
     >>
     
     << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
@@ -144,13 +159,26 @@ staffLeft = {
     c,1~ |
     c8 bes f' e f bes, c16 d e8 |
     c1~ |
-    c8 bes f' e f bes, c16 d e8 |
-    
+    c8 bes f' e f bes, c16 d f8 |
     es1~ |
     es8 des bes' a bes des, es16 f g8 |
     es2.. fis8~ |
     fis4 fis4 e d |
     c4 r2. |
+    
+    \clef bass
+    
+    c,1~ |
+    c8 bes f' e f bes, c16 d e8 |
+    c1~ |
+    c8 bes f' e f bes, c16 d f8 |
+    es1 |
+    bes2 b |
+    r8 c bes' a bes c, e16 f g8 |
+    
+    f1 |
+    f,8 g gis ais b cis d e |
+    f1 |
     
     
     
