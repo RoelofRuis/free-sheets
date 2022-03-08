@@ -13,7 +13,7 @@ staffRight = {
   \clef treble
   \relative c''' {
     R1*2 |
-    <a, d,>4 <d g,> <a d,> <d g,> |
+    <a, d,>4\regdba <d g,> <a d,> <d g,> |
     <a d,>4 <d g,> r2 |
     
     <a d,>4 <d g,> <a d,> <d g,> |
@@ -60,6 +60,9 @@ staffRight = {
     <f c> <a e> <f c> <a e> |
     <f c> <a e> <f c> <a e> |
     <f c>2 r2 |
+    f4 g8 a~ a f4 <f~ es~>8 |
+    <f es>1 |
+    s1 |
     
     <c' g e>4\rega <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     <bes f d>1 |
@@ -78,13 +81,15 @@ staffRight = {
     <c g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     <bes f d>1 |
     
-    <es bes g>4 <f des as>8 <g~ es~ bes~> <g es bes> <es bes g>4. |
+    <es bes g>4 <f des as>8 <g~ es~ bes~> <g es bes> <es bes g>4 <des~ as~ f~>8 |
     <des as f>4 <es bes g>8 <f~ des~ as~> <f des as> <des as f>4. |
     <c g f>2 <c g e> |
     <f, c a>4 <g es bes>8 <a~ f~ c~> <a f c> <f c a>4 <e~ b~ gis~>8 |
     <e b gis>1 |
     <f c a>4 <g es bes>8 <a~ f~ c~> <a f c> <f c a>4 <es~ bes~ g~>8 |
     <es bes g>1 |
+    <f c a>4 <g es bes>8 <a~ f~ c~> <a f c> <f c a>4 <a f c>8 |
+    <g es bes>4 <a f c>8 <bes~ g~ es~> <bes g es> <g es bes>4 <bes g es>8 |
 
   }
 }
@@ -154,9 +159,13 @@ staffLeft = {
     << { f1 } \\ { r8 c4 c'8~ c4 c, } >> |
     << { f1 } \\ { r8 c4 c'8~ c4 des, } >> |
     << { f1 } \\ { r8 c4 c'8~ c4 des, } >> |
-    <c' f, c>2 r2
+    <c' f, a,>2 r2
+    
+    f,1~ |
+    f4 g8 a~ a f4 <f~ es~>8 |
+    <f es>1 |
 
-    c,1~ |
+    c1~ |
     c8 bes f' e f bes, c16 d e8 |
     c1~ |
     c8 bes f' e f bes, c16 d f8 |
@@ -179,6 +188,9 @@ staffLeft = {
     f1 |
     f,8 g gis ais b cis d e |
     f1 |
+    f,8 g a bes c d es f |
+    g1 |
+    a1 |
     
     
     
