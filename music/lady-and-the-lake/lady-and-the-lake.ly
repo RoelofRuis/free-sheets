@@ -60,11 +60,13 @@ staffRight = {
     <f c> <a e> <f c> <a e> |
     <f c> <a e> <f c> <a e> |
     <f c>2 r2 |
-    f4 g8 a~ a f4 <f~ es~>8 |
-    <f es>1 |
-    s1 |
+
+    f4\rega g8 a~ a f4 <f~ es~>8 |
+    <f~ es>2 <f~ d~> |
+    <f d>1 |
+    r8 g f' e f g, b16 c d8 |
     
-    <c' g e>4\rega <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
+    <c g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     <bes f d>1 |
     <c g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     <bes f d>1 |
@@ -90,6 +92,8 @@ staffRight = {
     <es bes g>1 |
     <f c a>4 <g es bes>8 <a~ f~ c~> <a f c> <f c a>4 <a f c>8 |
     <g es bes>4 <a f c>8 <bes~ g~ es~> <bes g es> <g es bes>4 <bes g es>8 |
+    <a~ e~ d>2 <a e cis> |
+    <a e cis>8 r4. r2 |
 
   }
 }
@@ -162,8 +166,10 @@ staffLeft = {
     <c' f, a,>2 r2
     
     f,1~ |
-    f4 g8 a~ a f4 <f~ es~>8 |
-    <f es>1 |
+    f |
+    g4 a8 b~ b g4 f8 |
+    r8 g, f' e f g, b16 c d8 |
+    
 
     c1~ |
     c8 bes f' e f bes, c16 d e8 |
@@ -183,7 +189,7 @@ staffLeft = {
     c8 bes f' e f bes, c16 d f8 |
     es1 |
     bes2 b |
-    r8 c bes' a bes c, e16 f g8 |
+    r8 c c' bes c c, e16 f g8 |
     
     f1 |
     f,8 g gis ais b cis d e |
@@ -191,6 +197,9 @@ staffLeft = {
     f,8 g a bes c d es f |
     g1 |
     a1 |
+    bes1 |
+    r8 
+    a, a' g a a, cis16 d e8 |
     
     
     
@@ -210,7 +219,7 @@ dynamics = \new Dynamics {
     tagline = ##f
     instrumentName = "Accordion solo"
     year = "2022"
-    description = "The start of Spring. A young lady arrives at a small lake and decides to take short swim.\nWritten to practice composing by story."
+    description = "The start of Spring. A young, adventurous lady arrives at a small lake and decides to take short swim.\n\nWritten to practice composing by story."
     info = "For Free Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
