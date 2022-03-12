@@ -92,8 +92,19 @@ staffRight = {
     <es bes g>1 |
     <f c a>4 <g es bes>8 <a~ f~ c~> <a f c> <f c a>4 <a f c>8 |
     <g es bes>4 <a f c>8 <bes~ g~ es~> <bes g es> <g es bes>4 <bes g es>8 |
-    <a~ e~ d>2 <a e cis> |
-    <a e cis>8 r4. r2 |
+    <a~ e~ d>1 |
+    <a e cis>8 a,[ b cis] d e f g |
+
+    <a c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e a,> |
+    <c e,> <e a,> <c e,> <e a,> |
+    <a, c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e a,> |
+    <c e,> <e a,> <c e,> <e a,> |
+    
+    <a, c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e a,> |
+    <c e,> <e a,> <c e,> <e a,> |
+    <c e,> <e a,> r2 |
+    R1 |
+    <ais,, fis cis>1\regdba |
 
   }
 }
@@ -106,8 +117,7 @@ staffLeft = {
     f1~ |
     f1~ |
     f2 r2 |
-    
-    
+
     << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
     << { f1 } \\ { r8 e4 c'8~ c4 es, } >> |
     << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
@@ -172,11 +182,11 @@ staffLeft = {
     
 
     c1~ |
-    c8 bes f' e f bes, c16 d e8 |
+    c8 bes[ f' e] f bes, c16 d e8 |
     c1~ |
-    c8 bes f' e f bes, c16 d f8 |
+    c8 bes[ f' e] f bes, c16 d f8 |
     es1~ |
-    es8 des bes' a bes des, es16 f g8 |
+    es8 des[ bes' a] bes des, es16 f g8 |
     es2.. fis8~ |
     fis4 fis4 e d |
     c4 r2. |
@@ -184,9 +194,9 @@ staffLeft = {
     \clef bass
     
     c,1~ |
-    c8 bes f' e f bes, c16 d e8 |
+    c8 bes[ f' e] f bes, c16 d e8 |
     c1~ |
-    c8 bes f' e f bes, c16 d f8 |
+    c8 bes[ f' e] f bes, c16 d f8 |
     es1 |
     bes2 b |
     r8 c c' bes c c, e16 f g8 |
@@ -197,9 +207,18 @@ staffLeft = {
     f,8 g a bes c d es f |
     g1 |
     a1 |
-    bes1 |
-    r8 
-    a, a' g a a, cis16 d e8 |
+    bes2 bes, |
+    a'8 a,[ a' g] a a, cis16 d e8 |
+
+    << { r2. c'4 } \\ { f,4 e8 f8~ f2~ } >> |
+    << { r4 c' r c } \\ { f,1 } >> |
+    << { r2. c'4 } \\ { f,4 e8 f8~ f2~ } >> |
+    << { r4 c' r c } \\ { f,1 } >> |
+    << { f4 e8 f8~ f2 } \\ { r2 r8 a, e' d } >> |
+    << { f1~ } \\ { e8 a, c16 d e8 r a, e' d } >> |
+    << { f2 r2 } \\ { e8 a, c16 d e8 r2 } >> |
+    c8 b a e8~ e2~ |
+    e1 |
     
     
     
@@ -227,7 +246,7 @@ dynamics = \new Dynamics {
   }
 
   \paper {
-    max-systems-per-page = 5
+    max-systems-per-page = 6
     %min-systems-per-page = 5
     indent = 0.0
     %ragged-last-bottom = ##f
@@ -267,7 +286,7 @@ dynamics = \new Dynamics {
       \fill-line {
         \center-column {
           \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - sheetmusic.roelofruis.nl }
+          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis }
         }
       }
     }  
