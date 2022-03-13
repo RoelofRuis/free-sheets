@@ -105,6 +105,10 @@ staffRight = {
     <c e,> <e a,> r2 |
     R1 |
     <ais,, fis cis>1\regdba |
+    R1 |
+    <bis gis dis>1 |
+    R1 |
+    <d bes f>1 |
 
   }
 }
@@ -219,6 +223,10 @@ staffLeft = {
     << { f2 r2 } \\ { e8 a, c16 d e8 r2 } >> |
     c'8 b a e8~ e2~ |
     e1 |
+    d'8 cis b fis8~ fis2~ |
+    fis1 |
+    e8 fis e d~ d2~ |
+    d1 |
     
     
     
