@@ -92,8 +92,8 @@ staffRight = {
     <es bes g>1 |
     <f c a>4 <g es bes>8 <a~ f~ c~> <a f c> <f c a>4 <a f c>8 |
     <g es bes>4 <a f c>8 <bes~ g~ es~> <bes g es> <g es bes>4 <bes g es>8 |
-    <a~ e~ d>1 |
-    <a e cis>8 a,[ b cis] d e f g |
+    <a e d>2.. <a e cis>8 |
+    r8 a,[ b cis] d e f g |
 
     <a c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e a,> |
     <c e,> <e a,> <c e,> <e a,> |
@@ -207,17 +207,17 @@ staffLeft = {
     f,8 g a bes c d es f |
     g1 |
     a1 |
-    bes2 bes, |
-    a'8 a,[ a' g] a a, cis16 d e8 |
+    bes2 bes,4. a'8 |
+    r8 a,[ a' g] a a, cis16 d e8 |
 
     << { r2. c'4 } \\ { f,4 e8 f8~ f2~ } >> |
     << { r4 c' r c } \\ { f,1 } >> |
     << { r2. c'4 } \\ { f,4 e8 f8~ f2~ } >> |
     << { r4 c' r c } \\ { f,1 } >> |
-    << { f4 e8 f8~ f2 } \\ { r2 r8 a, e' d } >> |
+    << { f4 e8 f8~ f2~ } \\ { r2 r8 a, e' d } >> |
     << { f1~ } \\ { e8 a, c16 d e8 r a, e' d } >> |
     << { f2 r2 } \\ { e8 a, c16 d e8 r2 } >> |
-    c8 b a e8~ e2~ |
+    c'8 b a e8~ e2~ |
     e1 |
     
     
