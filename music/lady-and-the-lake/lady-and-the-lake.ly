@@ -109,6 +109,11 @@ staffRight = {
     <bis gis dis>1 |
     R1 |
     <d bes f>1 |
+    R1 |
+    <e c g>1\fermata |
+    <e g,>4 <fis a,>8 <g~ b,~> <g b,>4 <e g,>4 |
+    <d fis,>2 <c fis,> |
+    <b e,>1 |
 
   }
 }
@@ -214,10 +219,10 @@ staffLeft = {
     bes2 bes,4. a'8 |
     r8 a,[ a' g] a a, cis16 d e8 |
 
-    << { r2. c'4 } \\ { f,4 e8 f8~ f2~ } >> |
-    << { r4 c' r c } \\ { f,1 } >> |
-    << { r2. c'4 } \\ { f,4 e8 f8~ f2~ } >> |
-    << { r4 c' r c } \\ { f,1 } >> |
+    << { r2 r8 c'4. } \\ { f,4 e8 f8~ f2~ } >> |
+    << { r8 c'4. r8 c4. } \\ { f,1 } >> |
+    << { r2 r8 c'4. } \\ { f,4 e8 f8~ f2~ } >> |
+    << { r8 c'4. r8 c4. } \\ { f,1 } >> |
     << { f4 e8 f8~ f2~ } \\ { r2 r8 a, e' d } >> |
     << { f1~ } \\ { e8 a, c16 d e8 r a, e' d } >> |
     << { f2 r2 } \\ { e8 a, c16 d e8 r2 } >> |
@@ -227,6 +232,8 @@ staffLeft = {
     fis1 |
     e8 fis e d~ d2~ |
     d1 |
+    b8 d e fis~ fis2~ |
+    fis1 |
     
     
     
