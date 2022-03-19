@@ -103,17 +103,25 @@ staffRight = {
     <a, c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e a,> |
     <c e,> <e a,> <c e,> <e a,> |
     <c e,> <e a,> r2 |
-    R1 |
-    <ais,, fis cis>1\regdba |
-    R1 |
-    <bis gis dis>1 |
-    R1 |
-    <d bes f>1 |
-    R1 |
-    <e c g>1\fermata |
-    <e g,>4 <fis a,>8 <g~ b,~> <g b,>4 <e g,>4 |
-    <d fis,>2 <c fis,> |
-    <b e,>1 |
+    
+    %R1 |
+    %<ais,, fis cis>1\regdba |
+    %R1 |
+    %<bis gis dis>1 |
+    %R1 |
+    %<d bes f>1 |
+    %R1 |
+    %<e c g>1\fermata |
+    << { e,4\regdba fis8 g~ g4 e } \\ { g,4 a8 b~ b4 g } >> |
+    << { d'2 c } \\ { fis,1 } >> |
+    << { b1 } \\ { e,4 fis8 gis~ gis4 e } >> |
+    << { b'2 d } \\ { d,2 gis } >> |
+    << { cis4 dis8 e~ e4 cis } \\ { e,4 fis8 gis~ gis4 e } >> |
+    << { b'2 a } \\ { dis,1 } >> |
+    << { gis1~ } \\ { cis,4 dis8 eis~ eis4 cis } >> |
+    << { gis'1~ } \\ { b,1 } >> |
+    << { gis'1~ } \\ { cis,4 dis8 eis~ eis4 cis } >> |
+    << { gis'1~ } \\ { c,?1 } >> |
 
   }
 }
@@ -141,11 +149,11 @@ staffLeft = {
          c r c r |
          c r c r |
          des r des r |
-         des2 r |
+         des2
        }
        \\
-       { f,1~ f~ f~ f~ f~ f~ f~ f2 r }
-    >>
+       { f,1~ f~ f~ f~ f~ f~ f~ f2 }
+    >> r2 |
     
     << { f1 } \\ { r8 e4 c'8~ c4 e, } >> |
     << { f1 } \\ { r8 e4 c'8~ c4 es, } >> |
@@ -225,17 +233,27 @@ staffLeft = {
     << { r8 c'4. r8 c4. } \\ { f,1 } >> |
     << { f4 e8 f8~ f2~ } \\ { r2 r8 a, e' d } >> |
     << { f1~ } \\ { e8 a, c16 d e8 r a, e' d } >> |
-    << { f2 r2 } \\ { e8 a, c16 d e8 r2 } >> |
-    c'8 b a e8~ e2~ |
-    e1 |
-    d'8 cis b fis8~ fis2~ |
-    fis1 |
-    e8 fis e d~ d2~ |
-    d1 |
-    b8 d e fis~ fis2~ |
-    fis1 |
+    << { f2 } \\ { e8 a, c16 d e8 } >> r2 |
     
+    %c'8 b a e8~ e2~ |
+    %e1 |
+    %d'8 cis b fis8~ fis2~ |
+    %fis1 |
+    %e8 fis e d~ d2~ |
+    %d1 |
+    %b8 d e fis~ fis2~ |
+    %fis1 |
     
+    c'1 |
+    a1 |
+    gis4 a8 b~ b4 gis |
+    e2 gis |
+    a1 |
+    fis1 |
+    eis4 fis8 gis~ gis4 eis |
+    e?1 |
+    eis4 fis8 gis~ gis4 eis |
+    es1 |
     
   }
 }
