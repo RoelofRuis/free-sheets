@@ -115,13 +115,17 @@ staffRight = {
     << { e,4\regdba fis8 g~ g4 e } \\ { g,4 a8 b~ b4 g } >> |
     << { d'2 c } \\ { fis,1 } >> |
     << { b1 } \\ { e,4 fis8 gis~ gis4 e } >> |
-    << { b'2 d } \\ { d,2 gis } >> |
-    << { cis4 dis8 e~ e4 cis } \\ { e,4 fis8 gis~ gis4 e } >> |
+    << { b'2 d } \\ { d,2 e } >> |
+    << { cis'4 dis8 e~ e4 cis } \\ { e,4 fis8 gis~ gis4 e } >> |
     << { b'2 a } \\ { dis,1 } >> |
     << { gis1~ } \\ { cis,4 dis8 eis~ eis4 cis } >> |
     << { gis'1~ } \\ { b,1 } >> |
     << { gis'1~ } \\ { cis,4 dis8 eis~ eis4 cis } >> |
     << { gis'1~ } \\ { c,?1 } >> |
+    <as' c,>1~ |
+    <as c,>1~ |
+    <as c,>1~ |
+    <as c,>1 |
 
   }
 }
@@ -254,6 +258,10 @@ staffLeft = {
     e?1 |
     eis4 fis8 gis~ gis4 eis |
     es1 |
+    f8 e4 c'8~ c4 e, |
+    f8 e4 c'8~ c4 e, |
+    f8 e4 c'8~ c4 e, |
+    f8 e4 c'8~ c4 e, |
     
   }
 }
