@@ -3,6 +3,7 @@
 \include "../../templates/accordion-func.ly"
 
 options = {
+  \tempo 4=160
   \numericTimeSignature
   \time 4/4
   \key f \major
@@ -37,7 +38,7 @@ staffRight = {
     
     f8 e d a~ a2~ |
     a2~ a8 a d e |
-    f g f e a,2~ |
+    f g f e~ e a,4.~ |
     a1 |
     g8 a g f~ f2~ |
     f4. f8 g a g f |
@@ -339,9 +340,9 @@ dynamics = \new Dynamics {
     }
 
     \new PianoStaff <<
-      \new Staff = "right" \with {midiInstrument = "bright acoustic"} \staffRight
+      \new Staff = "right" \with {midiInstrument = "accordion"} \staffRight
       \dynamics
-      \new Staff = "left" \with {midiInstrument = "bright acoustic"} \staffLeft
+      \new Staff = "left" \with {midiInstrument = "accordion"} \staffLeft
     >>
 
     \layout {}
