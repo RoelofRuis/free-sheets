@@ -1,7 +1,7 @@
 \version "2.20.0"
 
-\include "../../templates/accordion-func.ly"
-\include "../../templates/swing.ly"
+\include "../../includes/accordion-func.ly"
+\include "../../includes/swing.ly"
 
 staffAccordionRight = \new Staff {
   \numericTimeSignature

@@ -1,5 +1,6 @@
-% Publishable book
 \version "2.20.0"
+
+% \include "../../includes/accordion-func.ly"
 
 options = {
   \numericTimeSignature

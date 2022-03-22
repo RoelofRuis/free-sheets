@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-\include "../../templates/accordion-func.ly"
+\include "../../includes/accordion-func.ly"
 
 rightHand = \new Staff {
     \set Staff.midiInstrument = #"Accordion"

@@ -8,8 +8,8 @@ Alle bestanden hier zijn geschreven in Lilypond, een soort programmeertaal waaru
 
 **Wat staat waar?**
 - `music` bevat mappen met de individuele composities.
-- `snippets` bevat bestanden om snel stukken uit te knippen/plakken.
-- `templates` bevat templates die kunnen worden geïmporteerd.
+- `includes` bevat bestanden die kunnen worden geïmporteerd.
+- `templates` bevat bestanden die als basis kunnen worden gebruikt voor nieuwe stukken.
 
 Veel dank aan [NOVAM Nederland](http://novam.net) voor het publiekelijk aanbieden van mijn composities.
 
@@ -29,8 +29,8 @@ All sheet music is written in Lilypond, a kind of programming language from whic
 
 **What's where?**
 - `music` contains folders with the individual compositions.
-- `snippets` contains files from which to quickly cut and past.
-- `templates` contains templates that can be imported.
+- `includes` contains files to be included in scores.
+- `templates` contains files that serve as basis for new pieces.
 
 Many thanks go out to [NOVAM Nederland](http://novam.net) for showcasing my compositions.
 
