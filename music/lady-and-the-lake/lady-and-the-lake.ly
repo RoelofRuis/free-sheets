@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-\include "../../templates/accordion-func.ly"
+\include "../../includes/accordion-func.ly"
 
 options = {
   \tempo 4=160
@@ -75,9 +75,8 @@ staffRight = {
     <es bes g>4 <f des as>8 <g~ es~ bes~> <g es bes> <es bes g>4 <des~ as~ f~>8 |
     <des as f>1 |
     <es bes g>4 <f des as>8 <g~ es~ bes~> <g es bes> <es bes g>4 <c~ gis~ e~>8 |
-    <c gis e>4 <c gis e> <ais fis d> <gis e c> <fis d ais>4 r4 
     \override Glissando.style = #'zigzag
-    \afterGrace g2\glissando g''16 |
+    <c gis e>8 <c gis e> <ais fis d> <gis e c> <fis d ais> r8 \afterGrace g8 \glissando g''8 r8 |
 
     <c, g e>4\regzv <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     <bes f d>1 |
@@ -116,7 +115,7 @@ staffRight = {
     << { e,4\regdba fis8 g~ g4 e } \\ { g,4 a8 b~ b4 g } >> |
     << { d'2 c } \\ { fis,1 } >> |
     << { b1 } \\ { e,4 fis8 gis~ gis4 e } >> |
-    << { b'2 d } \\ { d,2 e } >> |
+    << { b'2 d } \\ { d,2 fis } >> |
     << { cis'4 dis8 e~ e4 cis } \\ { e,4 fis8 gis~ gis4 e } >> |
     << { b'2 a } \\ { dis,1 } >> |
     << { gis1~ } \\ { cis,4 dis8 eis~ eis4 cis } >> |
@@ -210,8 +209,7 @@ staffLeft = {
     es1~ |
     es8 des[ bes' a] bes des, es16 f g8 |
     es2.. fis8~ |
-    fis4 fis4 e d |
-    c4 r2. |
+    fis8 fis e d c8 r4. |
     
     \clef bass
     
@@ -261,8 +259,8 @@ staffLeft = {
     es1 |
     f8 e4 c'8~ c4 e, |
     f8 e4 c'8~ c4 e, |
-    f8 e4 c'8~ c4 e, |
-    f8 e4 c'8~ c4 e, |
+    f8 es4 c'8~ c4 es, |
+    f8 es4 c'8~ c4 es, |
     
   }
 }
