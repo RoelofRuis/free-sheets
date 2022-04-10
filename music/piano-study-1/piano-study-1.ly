@@ -27,8 +27,10 @@ staffPianoLeft = \new Staff {
     e4 dis8 fis16 gis a8 d, dis |
     ais'4 gis8 gis16 ais b8 gis e |
     e4 cis dis8 e4 |
-    dis2. cis16 dis |
-    e4 cis 
+    dis2~ dis8 cis16 dis e8[ |
+    cis ais] ais4 cis4 e8 |
+    e4 dis2 e16 dis | 
+    cis4 e8 gis dis g ais |
     
   }
 }
@@ -43,9 +45,12 @@ staffPianoRight = \new Staff <<
     r8 b4. r8 b4 |
     r8 b4. r8 b4 |
     r8 b4 ais a |
-    gis4. fis2 |
+    g4. fis2 |
     r8 d8[ g] r8 fis8 b e |
     fis,2.. |
+    
+    r8 e4. r8 e4 |
+    
   }
   \\
   \relative c, {
@@ -59,6 +64,7 @@ staffPianoRight = \new Staff <<
     b,4. cis2 |
     b2.. |
     
+    e,2 fis4. |
   }
 >>
 
