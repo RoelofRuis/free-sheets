@@ -103,15 +103,7 @@ staffRight = {
     <a, c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e a,> |
     <c e,> <e a,> <c e,> <e a,> |
     <c e,> <e a,> r2 |
-    
-    %R1 |
-    %<ais,, fis cis>1\regdba |
-    %R1 |
-    %<bis gis dis>1 |
-    %R1 |
-    %<d bes f>1 |
-    %R1 |
-    %<e c g>1\fermata |
+
     << { e,4\regdba fis8 g~ g4 e } \\ { g,4 a8 b~ b4 g } >> |
     << { d'2 c } \\ { fis,1 } >> |
     << { b1 } \\ { e,4 fis8 gis~ gis4 e } >> |
@@ -121,11 +113,21 @@ staffRight = {
     << { gis1~ } \\ { cis,4 dis8 eis~ eis4 cis } >> |
     << { gis'1~ } \\ { b,1 } >> |
     << { gis'1~ } \\ { cis,4 dis8 eis~ eis4 cis } >> |
-    << { gis'1~ } \\ { c,?1 } >> |
-    <as' c,>1~ |
-    <as c,>1~ |
-    <as c,>1~ |
-    <as c,>1 |
+    << { gis'1~ } \\ { c,?1~ } >> |
+    << { gis'1~ } \\ { c, } >> |
+    << { gis'1~ } \\ { c, } >> |
+    << { gis'1~ } \\ { c, } >> |
+    << { gis'1~ } \\ { c, } >> |
+
+    <f as,>4 <g bes,>8 <as~ c,~>8 <as c,>4 <f as,> |
+    <e g,>1 |
+    <f as,>4 <g bes,>8 <as~ c,~>8 <as c,>4 <bes d,> |
+    <bes d,>1 |
+    
+    <c e,>4 <d f,> <e g,> <c e,> |
+    <bes d,>4. <a c,>8 <bes d,> <a c,>4 <g~ bes,~>8 |
+    <g bes,>4 <bes f> <g bes,> <bes f> |
+    <g bes,>4 <bes f> <g bes,> <bes f> |
 
   }
 }
@@ -238,15 +240,6 @@ staffLeft = {
     << { f1~ } \\ { e8 a, c16 d e8 r a, e' d } >> |
     << { f2 } \\ { e8 a, c16 d e8 } >> r2 |
     
-    %c'8 b a e8~ e2~ |
-    %e1 |
-    %d'8 cis b fis8~ fis2~ |
-    %fis1 |
-    %e8 fis e d~ d2~ |
-    %d1 |
-    %b8 d e fis~ fis2~ |
-    %fis1 |
-    
     c'1 |
     a1 |
     gis4 a8 b~ b4 gis |
@@ -257,10 +250,15 @@ staffLeft = {
     e?1 |
     eis4 fis8 gis~ gis4 eis |
     es1 |
+    f8 e?4 c'8~ c4 e, |
     f8 e4 c'8~ c4 e, |
     f8 e4 c'8~ c4 e, |
-    f8 es4 c'8~ c4 es, |
-    f8 es4 c'8~ c4 es, |
+    f8 e4 c'8~ c4 e, |
+    
+    << { f1 } \\ { r8 es4 c'8~ c4 es, } >> |
+    << { f1 } \\ { r8 e?4 c'8~ c4 e, } >> |
+    << { f1 } \\ { r8 es4 c'8~ c4 es, } >> |
+    << { f1 } \\ { r8 es4 bes'8~ bes4 es, } >> |
     
   }
 }
