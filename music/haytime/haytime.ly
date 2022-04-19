@@ -11,20 +11,88 @@ options = {
 staffRight = {
   \options
   \clef treble
-
   
+  \once \override Staff.TimeSignature.style = #'single-digit
+  \time 4/4
+  
+  \relative c'' {
+    \cadenzaOn
+    r4^\markup { \halign #1 \italic "freely timed" } \afterGrace e2\regza { d8[ c] } d32[ e d c] d4.
+    r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4
+    r4 \afterGrace e2 { d8[ c] } d32[ e d c] d4 c
+    a1
+    \bar "|"
+    r4 \afterGrace e'2 { d8[ c] } d32[ e d c] d4.
+    r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4
+    
+    r4 \afterGrace e2 { d8[ c] } d32[ e d c] d4 c
+    a16[ c] a4 g8 
+    <a cis,>16[ <c g>] <a cis,>4.
+    \cadenzaOff
+    \bar "|"
+    \break
+    \time 4/4
 
-  % add music
+    r8 <a' f c>4\regz <a f c>8 <g es bes>16 <f c as> <d bes f> <c as es> <f des as>8 <f des as> |
+    <d~ as~ e~>2 <d as e>4 r16 d16 f a 
+    g8 f d c f4 f |
+    << { d2. r16 d f a } \\ { r8 <b, f> <bes e,> <a es> <as d,>4  r4 } >>
+    g'8 f d c f4 f |
+    r8 g16 f g f d c f4 f | 
+    g8 f d c f4 f | 
+   
+  } 
+  
 }
 
 staffLeft = {
   \options
   \clef bass
 
-  << { r4 c'\mj bes2\mj } \\ { a,1~ } >> |
-  << { g4\mj f2.\mj } \\ { a, } >> |
+  \once \override Staff.TimeSignature.style = #'single-digit
+  \time 4/4
 
-  % add music
+  \cadenzaOn
+  << 
+    { 
+      r4 c'2\mj bes2\mj
+      g2\mj f2\mj
+      r4 c'2\mj bes8~\mj bes2
+      f2\mj e2\mj
+      \bar "|"
+      r4 c'2\mj bes2\mj
+      g2\mj f2\mj
+      r4 c'2\mj
+      g8~\mj g2 d'2\mj
+      a2\spt
+    } 
+    \\ 
+    { 
+      a,4~
+      a,1~ 
+      a,
+      a,4~
+      a,2~ a,8~ a,2
+      c2 b,2
+      \grace { e,8 g, gis, } a,4~
+      a,1~
+      a,1
+      g,4~
+      g,2
+      d8~ d2
+      a,2
+      a,2
+    }
+  >>
+  \cadenzaOff
+  \bar "|"
+  \time 4/4
+  
+  d,2 des,4 c |
+  b,2~ b,4 r4 |
+  <e, g>2\mn <a, a>\spt |
+  r8 g ges f e4 r4 |
+
 }
 
 dynamicsStaff = \new Dynamics {
@@ -45,7 +113,7 @@ dynamicsStaff = \new Dynamics {
     info = "For Standard Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
-    version = "March 2022"
+    version = "April 2022"
   }
 
   \paper {
