@@ -54,6 +54,13 @@ staffRight = {
     d8 r <c a> r r16 <b g cis,> r8 c cis |
     d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
     d8 r <c a> r r16 <b g cis,> r8 c cis |
+    d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
+    d8 r <c a> r r16 <b g cis,> r8 c cis |
+    d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
+    d8 r8. d16 a' c <d b g e> <d b g e> r4. |
+    
+    r4\regdba a4 g16 f d c f8 f |
+    d c16 a g8 f c' r8. c,16 cis d |
    
   } 
   
@@ -71,10 +78,10 @@ staffLeft = {
     { 
       r4 c'2\mj bes2\mj
       g2\mj f2\mj
-      r4 c'2\mj bes2\mj
+      r4 c'2\mj bes!2\mj
       f2\mj e2\mj
       s4
-      r4 c'2\mj bes2\mj
+      r4 c'2\mj bes!2\mj
       g2\mj f2\mj
       r4 c'2\mj
       g2\mj d'2\mj
@@ -118,6 +125,10 @@ staffLeft = {
   b, d' c d' cis a16\spt e r8 a |
   d,8 d'\mn f, d' g, d' a, d' |
   b, d' c d' cis a16\spt e r8 a |
+  d,8 d'\mn f, d' g, d' a, d' |
+  b, d' c d' cis a16\spt e r8 a |
+  d,8 d'\mn f, d' g, d' a, d' |
+  b,8 r4. a,16 a, r4 a,8 |
 
 }
 
