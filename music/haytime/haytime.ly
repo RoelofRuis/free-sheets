@@ -43,11 +43,12 @@ staffRight = {
 
     r8\regz <a' f c>4 <a f c>8 <g es bes>16 <f c as> <d bes f> <c as es> <f des as>8 <f des as> |
     <d~ as~ e~>2 <d as e>4 r16 d16 f a 
-    g8 f d c f4 f |
+    g8 f d c <f cis g>4 <f cis g> |
     << { \grace { c16 cis } d2. c16\rest d f a } \\ { r8 <b, f> <bes e,> <a es> <as d,>4  s4 } >>
-    g'8^\markup { \bold "molto accel." } f d c f4 f |
-    r8 g16 f g f d c f4 f | 
-    g8 f d c f4 f | 
+    \once \override TextSpanner.bound-details.left.text = \markup { "molto accel." }
+    g'8\startTextSpan f d c <f c a>4 <f c a> |
+    r8 g16 f g f d c <f c ges>4 <f c ges> | 
+    g8 f d c <f cis g>4 <f cis g>\stopTextSpan | 
     
     \tempo 4 = 132
     \grace { a,16 c cis } d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
@@ -61,6 +62,15 @@ staffRight = {
     
     r4\regdba a4 g16 f d c f8 f |
     d c16 a g8 f c' r8. c,16 cis d |
+    r4 a''4 g16 f d c f8 f |
+    d2 r2 |
+    r4 a'4 g16 f d c f8 f |
+    d c16 a g8 f c' r8. c,16 cis d |
+    r4 a''4 g16 f d c f8 f |
+    d2 r2 |
+    a'4 a g16 a c d f8 f |
+    d2 r2 |
+    d4 d c a |
    
   } 
   
@@ -95,10 +105,10 @@ staffLeft = {
       a,4~
       a,2~ a,2
       c2 b,2
-      e16\rest e,16[ g, gis,]
+      e16\rest e,16[\( g, gis,]
       \bar ""
       \break
-      a,4~
+      a,4~\)
       a,1
       a,1
       g,4~
@@ -129,6 +139,17 @@ staffLeft = {
   b, d' c d' cis a16\spt e r8 a |
   d,8 d'\mn f, d' g, d' a, d' |
   b,8 r4. a,16 a, r4 a,8 |
+  
+  d'8\mn d' d' d' bes\mj bes bes bes |
+  f\mj f f f c'\mj c' c' c' |
+  d'8\mn d' d' d' es\mj es es es |
+  bes\mj bes bes bes g\mn g a\spt a |
+  d'8\mn d' d' d' bes\mj bes bes bes |
+  f\mj f f f c'\mj c' c' c' |
+  d'8\mn d' d' d' es\mj es es es |
+  bes\mj bes bes bes g\mn g a\spt a |
+  d'\mn d' d' d' es\mj es f\mj f |
+  bes\mj bes bes bes g\mn g a\spt a |
 
 }
 
@@ -136,7 +157,12 @@ dynamicsStaff = \new Dynamics {
   \time 4/4
 
   s4\p s1 s2\< s2\!\>
-  s1\!
+  s4\! s1 s1 s4
+  s4 s1 s2\< s2\!\>
+  s4\! s1 s1 |
+  s1\mf
+ 
+
 }
 
 \book {
@@ -155,7 +181,7 @@ dynamicsStaff = \new Dynamics {
   }
 
   \paper {
-    %max-systems-per-page = 5
+    max-systems-per-page = 5
     %min-systems-per-page = 5
     indent = 0.0
     ragged-last-bottom = ##f
