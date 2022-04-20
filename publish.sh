@@ -13,5 +13,5 @@ do
 	else
 		OUT="pub/${BASE}_${DATE}_${TAG}"
 	fi
-	lilypond -drelative-includes -o $OUT $file
+	lilypond -dno-point-and-click -drelative-includes -o $OUT $file
 done
