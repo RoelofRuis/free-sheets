@@ -14,32 +14,46 @@ staffRight = {
   
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 4/4
+  \tempo 4 = 56
   
   \relative c'' {
     \cadenzaOn
-    r4^\markup { \halign #1 \italic "freely timed" } \afterGrace e2\regza { d8[ c] } d32[ e d c] d4.
+    r4\regza^\markup { \halign #-2 \italic "rubato" } \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4.
     r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4
-    r4 \afterGrace e2 { d8[ c] } d32[ e d c] d4 c
+    \bar ""
+    \break
+    r4 \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4 c8
     a1
-    \bar "|"
-    r4 \afterGrace e'2 { d8[ c] } d32[ e d c] d4.
+    r4
+    \bar ""
+    r4 \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4.
     r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4
-    
-    r4 \afterGrace e2 { d8[ c] } d32[ e d c] d4 c
+    \bar ""
+    \break
+    r4 \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4 c8
     a16[ c] a4 g8 
     <a cis,>16[ <c g>] <a cis,>4.
     \cadenzaOff
+    \breathe
     \bar "|"
     \break
-    \time 4/4
 
-    r8 <a' f c>4\regz <a f c>8 <g es bes>16 <f c as> <d bes f> <c as es> <f des as>8 <f des as> |
+    \time 4/4
+    \tempo 4 = 80
+
+    r8\regz <a' f c>4 <a f c>8 <g es bes>16 <f c as> <d bes f> <c as es> <f des as>8 <f des as> |
     <d~ as~ e~>2 <d as e>4 r16 d16 f a 
     g8 f d c f4 f |
-    << { d2. r16 d f a } \\ { r8 <b, f> <bes e,> <a es> <as d,>4  r4 } >>
-    g'8 f d c f4 f |
+    << { \grace { c16 cis } d2. c16\rest d f a } \\ { r8 <b, f> <bes e,> <a es> <as d,>4  s4 } >>
+    g'8^\markup { \bold "molto accel." } f d c f4 f |
     r8 g16 f g f d c f4 f | 
     g8 f d c f4 f | 
+    
+    \tempo 4 = 132
+    \grace { a,16 c cis } d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
+    d8 r <c a> r r16 <b g cis,> r8 c cis |
+    d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
+    d8 r <c a> r r16 <b g cis,> r8 c cis |
    
   } 
   
@@ -57,29 +71,32 @@ staffLeft = {
     { 
       r4 c'2\mj bes2\mj
       g2\mj f2\mj
-      r4 c'2\mj bes8~\mj bes2
+      r4 c'2\mj bes2\mj
       f2\mj e2\mj
-      \bar "|"
+      s4
       r4 c'2\mj bes2\mj
       g2\mj f2\mj
       r4 c'2\mj
-      g8~\mj g2 d'2\mj
+      g2\mj d'2\mj
       a2\spt
     } 
     \\ 
     { 
       a,4~
-      a,1~ 
+      a,1
       a,
       a,4~
-      a,2~ a,8~ a,2
+      a,2~ a,2
       c2 b,2
-      \grace { e,8 g, gis, } a,4~
-      a,1~
+      e16\rest e,16[ g, gis,]
+      \bar ""
+      \break
+      a,4~
+      a,1
       a,1
       g,4~
       g,2
-      d8~ d2
+      d2
       a,2
       a,2
     }
@@ -88,17 +105,26 @@ staffLeft = {
   \bar "|"
   \time 4/4
   
-  d,2 des,4 c |
-  b,2~ b,4 r4 |
+  d,2 des,8 c b,4 |
+  bes,2~ bes,4 r4 |
   <e, g>2\mn <a, a>\spt |
-  r8 g ges f e4 r4 |
+  r8 g, ges, f, e,4 r4 |
+  
+  e, g\mn <b, d'>\mn <b, d'> |
+  bes, bes\spt <as, as>\spt <as, as> |
+  e, e\spt <a, a>2\spt |
+  
+  d,8 d'\mn f, d' g, d' a, d' |
+  b, d' c d' cis a16\spt e r8 a |
+  d,8 d'\mn f, d' g, d' a, d' |
+  b, d' c d' cis a16\spt e r8 a |
 
 }
 
 dynamicsStaff = \new Dynamics {
   \time 4/4
 
-  % add dynamics
+  s4\p
 }
 
 \book {
@@ -117,10 +143,10 @@ dynamicsStaff = \new Dynamics {
   }
 
   \paper {
-    max-systems-per-page = 6
+    %max-systems-per-page = 5
     %min-systems-per-page = 5
     indent = 0.0
-    %ragged-last-bottom = ##f
+    ragged-last-bottom = ##f
     print-all-headers = ##t
     
     bookTitleMarkup = \markup {
