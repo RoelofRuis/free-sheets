@@ -135,7 +135,8 @@ staffLeft = {
 dynamicsStaff = \new Dynamics {
   \time 4/4
 
-  s4\p
+  s4\p s1 s2\< s2\!\>
+  s1\!
 }
 
 \book {
