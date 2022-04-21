@@ -64,13 +64,17 @@ staffRight = {
     d c16 a g8 f c' r8. c,16 cis d |
     r4 a''4 g16 f d c f8 f |
     d2 r2 |
-    r4 a'4 g16 f d c f8 f |
+    a'4 a g16 f d c f8 f |
     d c16 a g8 f c' r8. c,16 cis d |
     r4 a''4 g16 f d c f8 f |
     d2 r2 |
     a'4 a g16 a c d f8 f |
     d2 r2 |
     d4 d c a |
+    g16 f d c'~ c c8 d,16~ d4 r16 d f a |
+    g8 f d c f8. f16 g f es f |
+    d8. c16 d e f g a bes c cis d a8. |
+    r4 d c a |
    
   } 
   
