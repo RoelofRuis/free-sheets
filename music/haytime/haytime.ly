@@ -74,7 +74,7 @@ staffRight = {
     d4 d c a |
     g16 f d c'~ c c8 d,16~ d4 r16 d f a |
     g8 f d c f8. f16 g f es f |
-    d8 r8 d16 e f g a bes c cis d a8. |
+    d8 r8 d16 es f g a bes c cis d a8. |
     r4 d c a |
     g16 f d c'~ c c8 d,16~ d4 r16 d f a |
     g8 f d c f4 f |
