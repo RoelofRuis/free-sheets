@@ -70,11 +70,30 @@ staffRight = {
     d2 r2 |
     a'4 a g16 a c d f8 f |
     d2 r2 |
+    
     d4 d c a |
     g16 f d c'~ c c8 d,16~ d4 r16 d f a |
     g8 f d c f8. f16 g f es f |
-    d8. c16 d e f g a bes c cis d a8. |
+    d8 r8 d16 e f g a bes c cis d a8. |
     r4 d c a |
+    g16 f d c'~ c c8 d,16~ d4 r16 d f a |
+    g8 f d c f4 f |
+    
+    d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
+    d8 r <c a> r r16 <b g cis,> r8 c cis |
+    d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
+    d8 r8. d16 a' c <d b g e> <d b g e> r4. |
+    
+    r4\regzv a4 g16 f d c f8 f |
+    d c16 a g8 f c' r8. c,16 cis d |
+    r4 a''4 g16 f d c f8 f |
+    d2 r2 |
+    a'4 a g16 f d c f8 f |
+    d c16 a g8 f c' r8. c,16 cis d |
+    r4 a''4 g16 f d c f8 f |
+    d2 r2 |
+    a'4 a g16 a c d f8 f |
+    d2 r2 |
    
   } 
   
@@ -154,6 +173,23 @@ staffLeft = {
   bes\mj bes bes bes g\mn g a\spt a |
   d'\mn d' d' d' es\mj es f\mj f |
   bes\mj bes bes bes g\mn g a\spt a |
+  
+  d d'\mn d' d' f, f\mj f f |
+  c c'\mj c' c' g, g\mj g g |
+  es, es\mj es es f, f\mj f f |
+  bes, bes\mj bes bes e, g\mn a, a\spt
+  d d'\mn d' d' f, f\mj f f |
+  c c'\mj c' c' bes, bes\mj bes bes |
+  g, g\mn g g a, a\spt a a |
+  
+  d,8 d'\mn f, d' g, d' a, d' |
+  b, d' c d' cis a16\spt e r8 a |
+  d,8 d'\mn f, d' g, d' a, d' |
+  b,8 r4. a,16 a, r4 a,8 |
+  
+  d, d\mn d d bes, bes\mj bes bes |
+  f, f\mj f f c c' c' c' |
+  
 
 }
 
