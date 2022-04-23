@@ -189,7 +189,6 @@ staffLeft = {
   
   d, d\mn d d bes, bes\mj bes bes |
   f, f\mj f f c c' c' c' |
-  
 
 }
 
