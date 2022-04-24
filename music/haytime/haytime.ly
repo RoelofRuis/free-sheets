@@ -95,6 +95,18 @@ staffRight = {
     a'4 a g16 a c d f8 f |
     d2 r2 |
    
+    d4 d c a |
+    g16 f d c'~ c8 c d,4 r16 d f a |
+    g8 f d c f4 f |
+    d8 r8 \grace { g16 f es } d16 es f g a bes c cis d a g f |
+    d4 d' c a |
+    g16 f d c'~ c8 c8 d,4 r16 d f a |
+    g8 f d c f4 f |
+    
+    <d a g d>16 <d a g d> <d a g d> <d a g d> r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
+    
+    
+   
   } 
   
 }
@@ -180,7 +192,7 @@ staffLeft = {
   bes, bes\mj bes bes e, g\mn a, a\spt
   d d'\mn d' d' f, f\mj f f |
   c c'\mj c' c' bes, bes\mj bes bes |
-  g, g\mn g g a, a\spt a a |
+  e, g\mn g g a, a\spt a a |
   
   d,8 d'\mn f, d' g, d' a, d' |
   b, d' c d' cis a16\spt e r8 a |
@@ -188,7 +200,23 @@ staffLeft = {
   b,8 r4. a,16 a, r4 a,8 |
   
   d, d\mn d d bes, bes\mj bes bes |
-  f, f\mj f f c c' c' c' |
+  f, f\mj f f c c'\mj c' c' |
+  d, d\mn d d es, es\mj es es |
+  bes, bes\mj bes bes e, g\mn a, a\spt |
+  d, d\mn d d bes, bes\mj bes bes |
+  f, f\mj f f c c'\mj c' c' |
+  d, d\mn d d es, es\mj es es |
+  bes, bes\mj bes bes e, g\mn a, a\spt |
+  d, d\mn d d es, es\mj f, f\mj |
+  bes, bes\mj bes bes e, g\mn a, a\spt |
+  
+  d d'\mn d' d' f, f\mj f f |
+  c c'\mj c' c' g, g\mj g g |
+  es, es\mj es es f, f\mj f f |
+  bes, bes\mj bes bes  e, g\mn a, a\spt
+  d d'\mn d' d' f, f\mj f f |
+  c c'\mj c' c' bes, bes\mj bes bes |
+  e, g\mn g g a, a\spt a a |
 
 }
 
@@ -221,7 +249,7 @@ dynamicsStaff = \new Dynamics {
 
   \paper {
     max-systems-per-page = 5
-    %min-systems-per-page = 5
+    min-systems-per-page = 5
     indent = 0.0
     ragged-last-bottom = ##f
     print-all-headers = ##t
