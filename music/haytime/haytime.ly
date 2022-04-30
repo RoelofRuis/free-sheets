@@ -103,12 +103,15 @@ staffRight = {
     g16 f d c'~ c8 c8 d,4 r16 d f a |
     g8 f d c f4 f |
     
-    <d a g d>16 <d a g d> <d a g d> <d a g d> r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
+    <d a g d>16\in <d a g d>\out <d a g d>\in <d a g d>\in r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
     <f' c b f>16 <f c b f> <f c b f> <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
     <a' e d a>16 <a e d a> <a e d a> <a e d a> r16 <a e d a> r8 <bes f es bes>4 <bes f es bes> |
     <b f d as>2 r8 b c d |
+    es4 es d b |
+    des4 des c2 |
     
-   
+    
+    
   } 
   
 }
