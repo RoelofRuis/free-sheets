@@ -79,7 +79,7 @@ staffRight = {
     g16 f d c'~ c c8 d,16~ d4 r16 d f a |
     g8 f d c f4 f |
     
-    d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
+    \grace { c16 cis } d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
     d8 r <c a> r r16 <b g cis,> r8 c cis |
     d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
     d8 r8. d16 a' c <d b g e> <d b g e> r4. |
@@ -103,14 +103,24 @@ staffRight = {
     g16 f d c'~ c8 c8 d,4 r16 d f a |
     g8 f d c f4 f |
     
-    <d a g d>16\in <d a g d>\out <d a g d>\in <d a g d>\in r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
-    <f' c b f>16 <f c b f> <f c b f> <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
-    <a' e d a>16 <a e d a> <a e d a> <a e d a> r16 <a e d a> r8 <bes f es bes>4 <bes f es bes> |
+    <d~ a~ g~ d>16\in <d~ a~ g~ d>\out <d a g d>\in <d a g d> r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
+    <f'~ c~ b~ f>16\in <f~ c~ b~ f>\out <f c b f>\in <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
+    <a'~ e~ d~ a>16\in <a~ e~ d~ a>\out <a e d a>\in <a e d a> r16 <a e d a> r8 <bes f es bes>4 <bes f es bes> |
     <b f d as>2 r8 b c d |
-    es4 es d b |
-    des4 des c2 |
+    r4 es8 es d4 b |
+    r4 des8 des c2 |
+    r4 b8 b g16 f d c f8 f |
+    es4 f g c |
+    r4 es8 es d4 g, |
+    d'8 c16 d~ d es c8~ c4 c4 |
+    b16 g f d as'8 as as4 f |
+    f2. f16 as c8 |
+    as f d c as'4 as |
     
-    
+    \grace { bes,16 b } c8 r8 <bes g> r8 <a f>8. <bes g>16 r g bes b |
+    c8 r <bes g> r <a f>8.<bes g>16 r g bes c |
+    cis8 r <bes g> r <a fis>8. <bes g>16 r g bes c |
+    d4 <d a fis> <d g, e> <d a fis> |
     
   } 
   
@@ -222,6 +232,18 @@ staffLeft = {
   d d'\mn d' d' f, f\mj f f |
   c c'\mj c' c' bes, bes\mj bes bes |
   e, g\mn g g a, a\spt a a |
+  
+  d16~ d~ d d r d r des r2 |
+  c16~ c~ c c r c r b, r2 |
+  bes,16~ bes,~ bes, bes, r bes, r8 as,4 as, |
+  g,2 r2 |
+  
+  c8 c'\mn r c' b, g\mj r g |
+  bes, bes\mn r bes a, f\mj r f |
+  
+  s1*7
+  
+  s1*4
 
 }
 
