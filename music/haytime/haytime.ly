@@ -15,8 +15,10 @@ staffRight = {
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 4/4
   \tempo 4 = 56
+  %\tempo 4 = 132 % temp
   
   \relative c'' {
+    
     \cadenzaOn
     r4\regza^\markup { \halign #-2 \italic "rubato" } \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4.
     r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4
@@ -102,25 +104,36 @@ staffRight = {
     d4 d' c a |
     g16 f d c'~ c8 c8 d,4 r16 d f a |
     g8 f d c f4 f |
-    
-    <d~ a~ g~ d>16\in <d~ a~ g~ d>\out <d a g d>\in <d a g d> r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
-    <f'~ c~ b~ f>16\in <f~ c~ b~ f>\out <f c b f>\in <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
-    <a'~ e~ d~ a>16\in <a~ e~ d~ a>\out <a e d a>\in <a e d a> r16 <a e d a> r8 <bes f es bes>4 <bes f es bes> |
+
+    <d~ a~ g~ d~>16\in <d~ a~ g~ d~>\out <d a g d>\in <d a g d> r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
+    <f'~ c~ b~ f~>16\in <f~ c~ b~ f~>\out <f c b f>\in <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
+    <a'~ e~ d~ a~>16\in <a~ e~ d~ a~>\out <a e d a>\in <a e d a> r16 <a e d a> r8 <bes f es bes>4 <bes f es bes> |
     <b f d as>2 r8 b c d |
-    r4 es8 es d4 b |
-    r4 des8 des c2 |
-    r4 b8 b g16 f d c f8 f |
+    r4 es8 es d4 g, |
+    r4 des'8 des c2 |
+    r4 bes8 bes g16 f d c f8 f |
     es4 f g c |
     r4 es8 es d4 g, |
-    d'8 c16 d~ d es c8~ c4 c4 |
-    b16 g f d as'8 as as4 f |
-    f2. f16 as c8 |
-    as f d c as'4 as |
+    d'8 c16 d~ d es c8~ c4 g4 |
+    f16 es c bes es8 es <es bes f>4 <c bes e,?> |
+    <c as es>2. c16 es g8 |
+    f es c bes <es bes f>4 <es bes f> |
     
-    \grace { bes,16 b } c8 r8 <bes g> r8 <a f>8. <bes g>16 r g bes b |
+    \grace { bes16 b } c8 r8 <bes g> r8 <a f>8. <bes g>16 r g bes b |
     c8 r <bes g> r <a f>8.<bes g>16 r g bes c |
-    cis8 r <bes g> r <a fis>8. <bes g>16 r g bes c |
+    cis8 r <bes g> r <a es>8. <bes g>16 r a bes cis |
     d4 <d a fis> <d g, e> <d a fis> |
+    
+    b4 b \times 4/5 { bes16 a g e d } g8 g |
+    e16 g a b c d e fis g d c a g8 a |
+    b4 b \times 4/5 { bes16 a g e d } g8 g |
+    e16 g a b c d e fis g d c d e fis g a |
+    b4 b \times 4/5 { bes16 a g e d } g8 g |
+    e16 g a b c d e fis g d c a g8 a |
+    b4 b \times 4/5 { bes16 a g e d } g8 g |
+    e16 g a b c d e fis g8 d c a |
+    
+    g8 d c a g' d c a |
     
   } 
   
@@ -132,7 +145,7 @@ staffLeft = {
 
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 4/4
-
+  
   \cadenzaOn
   << 
     { 
@@ -240,10 +253,19 @@ staffLeft = {
   
   c8 c'\mn r c' b, g\mj r g |
   bes, bes\mn r bes a, f\mj r f |
+  as, as\mj r as g, g\spt r g |
+  c4 b, bes, a, |
+  f,8 f\mn r f g, g\spt r g |
+  c c'\mn r c' bes, c'\mn r c' |
+  as, as\mj r as g,4 ges, |
+  f,8 f\mn r f es, f r f |
+  d, f\mn r f g,4 g, |
+  c8 c'\mn es, c' f, c' g, c' |
+  c c'\mn es, c' f, c' g, c' |
+  a, a\spt cis a e, a a, a |
+  d d'\spt fis d' <c' d>4\mj <d d'>\spt |
   
-  s1*7
   
-  s1*4
 
 }
 
