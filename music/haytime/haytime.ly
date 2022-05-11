@@ -48,7 +48,7 @@ staffRight = {
     g8 f d c <f cis g>4 <f cis g> |
     << { \grace { c16 cis } d2. c16\rest d f a } \\ { r8 <b, f> <bes e,> <a es> <as d,>4  s4 } >>
     \once \override TextSpanner.bound-details.left.text = \markup { "molto accel." }
-    g'8\startTextSpan f d c <f c a>4 <f c a> |
+    g'8\startTextSpan f d c <f d a>4 <f d a> |
     r8 g16 f g f d c <f c ges>4 <f c ges> | 
     g8 f d c <f cis g>4 <f cis g>\stopTextSpan | 
     
