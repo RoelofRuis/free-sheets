@@ -46,11 +46,11 @@ staffRight = {
     r8\regz <a' f c>4 <a f c>8 <g es bes>16 <f c as> <d bes f> <c as es> <f des as>8 <f des as> |
     <d~ as~ e~>2 <d as e>4 r16 d16 f a 
     g8 f d c <f cis g>4 <f cis g> |
-    << { \grace { c16 cis } d2. c16\rest d f a } \\ { r8 <b, f> <bes e,> <a es> <as d,>4  s4 } >>
+    << { \grace { a,16 c cis } d2. c16\rest d f a } \\ { r8 <b, f> <bes e,> <a es> <as d,>4  s4 } >>
     \once \override TextSpanner.bound-details.left.text = \markup { "molto accel." }
     g'8\startTextSpan f d c <f d a>4 <f d a> |
-    r8 g16 f g f d c <f c ges>4 <f c ges> | 
-    g8 f d c <f cis g>4 <f cis g>\stopTextSpan | 
+    r8 << { g16 f g f d c } \\ { as4. } >> <f' c ges>4 <f c ges> | 
+    << { g8 f d c } \\ { gis2 } >> <f' cis g>4 <f cis g>\stopTextSpan | 
     
     \tempo 4 = 132
     \grace { a,16 c cis } d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
@@ -79,14 +79,14 @@ staffRight = {
     d8 r8 d16 es f g a bes c cis d a8. |
     r4 d c a |
     g16 f d c'~ c c8 d,16~ d4 r16 d f a |
-    g8 f d c f4 f |
+    g8 f d c <f cis g>4 <f cis g> |
     
-    \grace { c16 cis } d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
+    \grace { a,16 c cis } d8\regzv r <c a> r <b g>8. <c a>16 r16 a c cis |
     d8 r <c a> r r16 <b g cis,> r8 c cis |
     d8 r <c a> r <b g>8. <c a>16 r16 a c cis |
     d8 r8. d16 a' c <d b g e> <d b g e> r4. |
     
-    r4\regzv a4 g16 f d c f8 f |
+    r4 a4 g16 f d c f8 f |
     d c16 a g8 f c' r8. c,16 cis d |
     r4 a''4 g16 f d c f8 f |
     d2 r2 |
@@ -103,7 +103,7 @@ staffRight = {
     d8 r8 \grace { g16 f es } d16 es f g a bes c cis d a g f |
     d4 d' c a |
     g16 f d c'~ c8 c8 d,4 r16 d f a |
-    g8 f d c f4 f |
+    g8 f d c <f cis g>4 <f cis g> |
 
     <d~ a~ g~ d~>16\in <d~ a~ g~ d~>\out <d a g d>\in <d a g d> r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
     <f'~ c~ b~ f~>16\in <f~ c~ b~ f~>\out <f c b f>\in <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
@@ -112,16 +112,16 @@ staffRight = {
     r4 es8 es d4 g, |
     r4 des'8 des c2 |
     r4 bes8 bes g16 f d c f8 f |
-    es4 f g c |
+    <es d>4 f g c |
     r4 es8 es d4 g, |
     d'8 c16 d~ d es c8~ c4 g4 |
     f16 es c bes es8 es <es bes f>4 <c bes e,?> |
-    <c as es>2. c16 es g8 |
+    << { c2. } \\ { r8 <bes es,>4 <bes es,>8 r8 <bes es,>8 } >> c16 es g8 |
     f es c bes <es bes f>4 <es bes f> |
     
-    \grace { bes16 b } c8 r8 <bes g> r8 <a f>8. <bes g>16 r g bes b |
+    \grace { g,16 bes b } c8 r8 <bes g> r8 <a f>8. <bes g>16 r g bes b |
     c8 r <bes g> r <a f>8.<bes g>16 r g bes c |
-    cis8 r <bes g> r <a es>8. <bes g>16 r a bes cis |
+    cis8 r <bes g> r <a cis,>8. <bes g>16 r a bes cis |
     d4 <d a fis> <d g, e> <d a fis> |
     
     b4 b \times 4/5 { bes16 a g e d } g8 g |
@@ -134,6 +134,39 @@ staffRight = {
     e16 g a b c d e fis g8 d c a |
     
     g8 d c a g' d c a |
+    g'8 d c a g' d c a |
+    g'8 d c a g' d c a |
+    g'8 d c a g' d c a |
+    e'4 g f8 d e f |
+    g a b g c a g f |
+    e4 g f8 e d c |
+    a1 |
+    e'4 g f8 d e f |
+    g a b g c a g f |
+    e4 g f8 e d c |
+    a1 |
+    e'4 g f8 d e f |
+    g a b g c a g f |
+    e4 g f8 e d c |
+    a1 |
+    e'4 g f8 e d c |
+    a1 |
+    
+    \break
+    
+    \once \override Staff.TimeSignature.style = #'single-digit
+    \time 4/4
+    \tempo 4 = 56
+    
+    \cadenzaOn
+    r4 \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4 c8
+    a16[ c] a4 g8 
+    <a cis,>16[ <c g>] <a cis,>4.\fermata
+    \cadenzaOff
+    
+    \bar "|"
+    \time 4/4
+    r8 <c g cis,> <cis gis d> <d a dis,> <dis ais e> <e b f> <f bis, fis> <fis cis fisis,> |
     
   } 
   
@@ -195,20 +228,20 @@ staffLeft = {
   e, e\spt <a, a>2\spt |
   
   d,8 d'\mn f, d' g, d' a, d' |
-  b, d' c d' cis a16\spt e r8 a |
+  b, d' c d' cis a16\spt a, r8 a |
   d,8 d'\mn f, d' g, d' a, d' |
-  b, d' c d' cis a16\spt e r8 a |
+  b, d' c d' cis a16\spt a, r8 a |
   d,8 d'\mn f, d' g, d' a, d' |
-  b, d' c d' cis a16\spt e r8 a |
+  b, d' c d' cis a16\spt a, r8 a |
   d,8 d'\mn f, d' g, d' a, d' |
   b,8 r4. a,16 a, r4 a,8 |
   
   d'8\mn d' d' d' bes\mj bes bes bes |
-  f\mj f f f c'\mj c' c' c' |
+  f\mj f f f g\mn g a\spt a |
   d'8\mn d' d' d' es\mj es es es |
   bes\mj bes bes bes g\mn g a\spt a |
   d'8\mn d' d' d' bes\mj bes bes bes |
-  f\mj f f f c'\mj c' c' c' |
+  f\mj f f f g\mn g a\spt a |
   d'8\mn d' d' d' es\mj es es es |
   bes\mj bes bes bes g\mn g a\spt a |
   d'\mn d' d' d' es\mj es f\mj f |
@@ -223,16 +256,16 @@ staffLeft = {
   e, g\mn g g a, a\spt a a |
   
   d,8 d'\mn f, d' g, d' a, d' |
-  b, d' c d' cis a16\spt e r8 a |
+  b, d' c d' cis a16\spt a, r8 a |
   d,8 d'\mn f, d' g, d' a, d' |
   b,8 r4. a,16 a, r4 a,8 |
   
   d, d\mn d d bes, bes\mj bes bes |
-  f, f\mj f f c c'\mj c' c' |
+  f, f\mj f f e, g\mn a, a\spt |
   d, d\mn d d es, es\mj es es |
   bes, bes\mj bes bes e, g\mn a, a\spt |
   d, d\mn d d bes, bes\mj bes bes |
-  f, f\mj f f c c'\mj c' c' |
+  f, f\mj f f e, g\mn a, a\spt |
   d, d\mn d d es, es\mj es es |
   bes, bes\mj bes bes e, g\mn a, a\spt |
   d, d\mn d d es, es\mj f, f\mj |
@@ -244,29 +277,79 @@ staffLeft = {
   bes, bes\mj bes bes  e, g\mn a, a\spt
   d d'\mn d' d' f, f\mj f f |
   c c'\mj c' c' bes, bes\mj bes bes |
-  e, g\mn g g a, a\spt a a |
+  e, g\mn g g <a, a>4\spt <a, a> |
   
   d16~ d~ d d r d r des r2 |
   c16~ c~ c c r c r b, r2 |
   bes,16~ bes,~ bes, bes, r bes, r8 as,4 as, |
   g,2 r2 |
   
-  c8 c'\mn r c' b, g\mj r g |
-  bes, bes\mn r bes a, f\mj r f |
-  as, as\mj r as g, g\spt r g |
+  << { r8 c'4\mn c'8 r8 g4\mj g8 } \\ { c2 b, } >>
+  << { r8 bes4\mn bes8 r8 f4\mj f8 } \\ { bes,2 a, } >>
+  << { r8 as4\mj as8 r8 g4\spt g8 } \\ { as,2 g, } >>
   c4 b, bes, a, |
-  f,8 f\mn r f g, g\spt r g |
-  c c'\mn r c' bes, c'\mn r c' |
-  as, as\mj r as g,4 ges, |
-  f,8 f\mn r f es, f r f |
-  d, f\mn r f g,4 g, |
+  << { r8 f4\mn f8 r8 g4\spt g8 } \\ { f,2 g, } >>
+  << { r8 c'4\mn c'8 r8 c'4 c'8 } \\ { c2 bes, } >>
+  << { r8 as8\mj r8 as8 } \\ { as,2 } >> g,4 ges, |
+  << { r8 f8\mn r8 f8 r8 f r8 f } \\ { f,2 es, } >> |
+  << { r8 f\mn r8 f8 } \\ { d,2 } >> g,4 g, |
+
   c8 c'\mn es, c' f, c' g, c' |
   c c'\mn es, c' f, c' g, c' |
   a, a\spt cis a e, a a, a |
-  d d'\spt fis d' <c' d>4\mj <d d'>\spt |
+  d d'\spt r d' <c' d>4\mj <d d'>\spt |
   
+  << { g8\mj g g g g g g g } \\ { g,2 f, } >>
+  << { c'8\mj c' c' c' es\mj es es es } \\ { e,2 f, } >>
+  << { e8\mn e e e e e e e } \\ { b,2 cis } >>
+  << { a8\spt a a a d'\spt d' d' d' } \\ { a,2 d } >>
   
+  << { g8\mj g g g g g g g } \\ { g,2 f, } >>
+  << { c'8\mj c' c' c' es\mj es es es } \\ { e,2 f, } >>
+  << { e8\mn e e e e e e e } \\ { b,2 cis } >>
+  << { a8\spt a a a } \\ { a,2 } >> d2 |
+  
+  c2 bes, g, f, |
+  c2 bes, g, f, |
+  
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2 bes, } >>
+  << { g8\mj g g g f\mj f f f } \\ { g,2 f, } >>
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2 bes, } >>
+  << { g8\mj g g g f\mj f f f } \\ { g,2 f, } >>
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2 bes, } >>
+  << { g8\mj g g g f\mj f f f } \\ { g,2 f, } >>
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2 bes, } >>
+  << { g8\mj g g g f\mj f f f } \\ { g,2 f, } >>
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { a,1~ } >>
+  << { g8\mj g g g f\mj f f f } \\ { a,1~ } >>
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { a,1~ } >>
+  << { g8\mj g g g f\mj f f f } \\ { a,1~ } >>
+  << { c'2\mj bes\mj } \\ { a,1~ } >>
+  << { g2\mj f\mj } \\ { a,1 } >>
 
+  \once \override Staff.TimeSignature.style = #'single-digit
+  \time 4/4
+  
+  \cadenzaOn
+  << {
+    r4 c'2\mj
+    g2\mj d'2\mj
+    a2\spt
+  } \\ {
+    g,4~
+    g,2
+    d2
+    a,2
+    a,2
+  } >>
+  
+  \cadenzaOff
+  \bar "|"
+  \break
+  \time 4/4
+  
+  r8 d des c b, bes, a, as, |
+  
 }
 
 dynamicsStaff = \new Dynamics {
