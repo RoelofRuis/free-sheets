@@ -74,8 +74,8 @@ staffRight = {
     d2 r2 |
     
     d4 d c a |
-    g16 f d c'~ c c8 d,16~ d4 r16 d f a |
-    g8 f d c f8. f16 g f es f |
+    g16 f d c'~ c8 c8 d,4 r16 d f a |
+    g8 f d c f8 r g16 f es f |
     d8 r8 d16 es f g a bes c cis d a8. |
     r4 d c a |
     g16 f d c'~ c c8 d,16~ d4 r16 d f a |
@@ -166,7 +166,47 @@ staffRight = {
     
     \bar "|"
     \time 4/4
-    r8 <c g cis,> <cis gis d> <d a dis,> <dis ais e> <e b f> <f bis, fis> <fis cis fisis,> |
+    \tempo 4 = 132
+    r8 <c g cis,!> <cis gis d> <d a dis,> <dis ais e> <e b f> <f bis, fis> <fis cis fisis,> |
+    \grace { gis16 } <a c,>4 \grace { gis16 } <a c,>4 g16 f d c f8 f |
+    d8 c16 a g8 f c' r8 r16 c,16 cis d|
+    r4 \grace { gis'16 } <a c,>4 g16 f d c f8 f | 
+    << { d1~ } \\ { r4 <a f> <as e> <g es> } >> |
+    << { d'8 } \\ { <f, d>8 } >> r8 \grace { gis'16 } <a c,>4 g16 f d c f8 f |
+    d8 c16 a g8 f c' r8 r16 c,16 cis d|
+    r4 \grace { gis'16 } <a c,>4 g16 f d c f8 f | 
+    << { d1~ } \\ { r4 <a f> <as e> <g es> } >> |
+    << { d'8 } \\ { <f, d>8 } >> r8 \grace { gis'16 } a4 g16 a c d f8 f |
+    d2. cis4 |
+    d4 d c a 
+    g16 f d c'~ c8 c d,4 r16 d16 f a |
+    g8 f d c f r16 f g f es f |
+    d8 r8 \grace { g16 f es } d16 es f g a bes c cis d a g f |
+    d4 d' c a |
+    g16 f d c'~ c8 c d,4 r16 d16 f a |
+    g8 f d c f4 g16 a b cis |
+    << { 
+      d1~
+      d2. c8 cis |
+      d1~
+      d2. c8 cis |
+      d1~
+      d2. c8 cis |
+    } \\ { 
+      r8 <c a>8. <b g>16 r8 <c a>8. <b g>16 r8 <c~ a~>8 |
+      <c a>16 <b g>16 r8 <c a>8. <b g>16 r16 <b g cis,> r4. |
+      r8 <c a>8. <b g>16 r8 <c a>8. <b g>16 r8 <c~ a~>8 |
+      <c a>16 <b g>16 r8 <c a>8. <b g>16 r16 <b g cis,> r4. |
+      r8 <c a>8. <b g>16 r8 <c a>8. <b g>16 r8 <c~ a~>8 |
+      <c a>16 <b g>16 r8 <c a>8. <b g>16 r16 <b g cis,> r4. |
+    } >>
+    
+    \grace { gis16 } a4 \grace { gis16 } a4 g16 f d c f8 f |
+    << { d2~ d8 } \\ { r8 <b f> <bes e,> <a es> <as d,>8 } >> d8 f a |
+    g8 f d c f4 g16 a b c |
+    << { d1 } \\ { r8 <c a>8. <b g>8. <c a>8. <b g>8. <c a>8 | } >> |
+    <d b a f>16 <d b a f> r2.. |
+    \bar "|."
     
   } 
   
