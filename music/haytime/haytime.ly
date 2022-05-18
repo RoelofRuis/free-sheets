@@ -105,14 +105,20 @@ staffRight = {
     g16 f d c'~ c8 c8 d,4 r16 d f a |
     g8 f d c <f cis g>4 <f cis g> |
 
-    <d~ a~ g~ d~>16\in <d~ a~ g~ d~>\out <d a g d>\in <d a g d> r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
-    <f'~ c~ b~ f~>16\in <f~ c~ b~ f~>\out <f c b f>\in <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
-    <a'~ e~ d~ a~>16\in <a~ e~ d~ a~>\out <a e d a>\in <a e d a> r16 <a e d a> r8 <bes f es bes>4 <bes f es bes> |
+    <d~ a~ g~ d~>16-\tweak Y-offset #5 \in 
+    <d~ a~ g~ d~>-\tweak Y-offset #5 \out 
+    <d a g d>-\tweak Y-offset #5 \in <d a g d> r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
+    <f'~ c~ b~ f~>16-\tweak Y-offset #4 \in
+    <f~ c~ b~ f~>-\tweak Y-offset #4 \out 
+    <f c b f>-\tweak Y-offset #4 \in <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
+    <a'~ e~ d~ a~>16-\tweak Y-offset #5 \in 
+    <a~ e~ d~ a~>-\tweak Y-offset #5 \out 
+    <a e d a>-\tweak Y-offset #5 \in <a e d a> r16 <a e d a> r8 <bes f es bes>4 <bes f es bes> |
     <b f d as>2 r8 b c d |
     r4 es8 es d4 g, |
     r4 des'8 des c2 |
     r4 bes8 bes g16 f d c f8 f |
-    <es d>4 f g c |
+    <es d>4 <f as,> <g c,> <c fis,> |
     r4 es8 es d4 g, |
     d'8 c16 d~ d es c8~ c4 g4 |
     f16 es c bes es8 es <es bes f>4 <c bes e,?> |
@@ -167,22 +173,22 @@ staffRight = {
     \bar "|"
     \time 4/4
     \tempo 4 = 132
-    r8 <c g cis,!> <cis gis d> <d a dis,> <dis ais e> <e b f> <f bis, fis> <fis cis fisis,> |
+    r8\regzav <c g cis,!> <cis gis d> <d a dis,> <dis ais e> <e b f> <f bis, fis> <fis cis fisis,> |
     \grace { gis16 } <a c,>4 \grace { gis16 } <a c,>4 g16 f d c f8 f |
     d8 c16 a g8 f c' r8 r16 c,16 cis d|
     r4 \grace { gis'16 } <a c,>4 g16 f d c f8 f | 
-    << { d1~ } \\ { r4 <a f> <as e> <g es> } >> |
+    << { d1~ } \\ { r4 <a f> <as f> <g es> } >> |
     << { d'8 } \\ { <f, d>8 } >> r8 \grace { gis'16 } <a c,>4 g16 f d c f8 f |
     d8 c16 a g8 f c' r8 r16 c,16 cis d|
     r4 \grace { gis'16 } <a c,>4 g16 f d c f8 f | 
-    << { d1~ } \\ { r4 <a f> <as e> <g es> } >> |
+    << { d1~ } \\ { r4 <a f> <as f> <g es> } >> |
     << { d'8 } \\ { <f, d>8 } >> r8 \grace { gis'16 } a4 g16 a c d f8 f |
     d2. cis4 |
     d4 d c a 
     g16 f d c'~ c8 c d,4 r16 d16 f a |
     g8 f d c f r16 f g f es f |
     d8 r8 \grace { g16 f es } d16 es f g a bes c cis d a g f |
-    d4 d' c a |
+    d8 d' a d c4 a |
     g16 f d c'~ c8 c d,4 r16 d16 f a |
     g8 f d c f4 g16 a b cis |
     << { 
@@ -193,18 +199,18 @@ staffRight = {
       d1~
       d2. c8 cis |
     } \\ { 
-      r8 <c a>8. <b g>16 r8 <c a>8. <b g>16 r8 <c~ a~>8 |
-      <c a>16 <b g>16 r8 <c a>8. <b g>16 r16 <b g cis,> r4. |
-      r8 <c a>8. <b g>16 r8 <c a>8. <b g>16 r8 <c~ a~>8 |
-      <c a>16 <b g>16 r8 <c a>8. <b g>16 r16 <b g cis,> r4. |
-      r8 <c a>8. <b g>16 r8 <c a>8. <b g>16 r8 <c~ a~>8 |
-      <c a>16 <b g>16 r8 <c a>8. <b g>16 r16 <b g cis,> r4. |
+      a,8\rest <c' a>8. <b g>16 a,8\rest <c' a>8. <b g>16 a,8\rest <c'~ a~>8 |
+      <c a>16 <b g>16 a,8\rest <c' a>8. <b g>16 a,16\rest <b' g cis,> a,4.\rest |
+      a8\rest <c' a>8. <b g>16 a,8\rest <c' a>8. <b g>16 a,8\rest <c'~ a~>8 |
+      <c a>16 <b g>16 a,8\rest <c' a>8. <b g>16 a,16\rest <b' g cis,> a,4.\rest |
+      a8\rest <c' a>8. <b g>16 a,8\rest <c' a>8. <b g>16 a,8\rest <c'~ a~>8 |
+      <c a>16 <b g>16 a,8\rest <c' a>8. <b g>16 a,16\rest <b' g cis,> a,4.\rest |
     } >>
     
-    \grace { gis16 } a4 \grace { gis16 } a4 g16 f d c f8 f |
+    \grace { gis'16 } a4 \grace { gis16 } a4 g16 f d c f8 f |
     << { d2~ d8 } \\ { r8 <b f> <bes e,> <a es> <as d,>8 } >> d8 f a |
     g8 f d c f4 g16 a b c |
-    << { d1 } \\ { r8 <c a>8. <b g>8. <c a>8. <b g>8. <c a>8 | } >> |
+    << { d1 } \\ { a,8\rest <c' a>8. <b g>8. <c a>8. <b g>8. <c a>8 | } >> |
     <d b a f>16 <d b a f> r2.. |
     \bar "|."
     
@@ -277,7 +283,7 @@ staffLeft = {
   b,8 r4. a,16 a, r4 a,8 |
   
   d'8\mn d' d' d' bes\mj bes bes bes |
-  f\mj f f f g\mn g a\spt a |
+  f\mj f f f c'\mj c' c' c' |
   d'8\mn d' d' d' es\mj es es es |
   bes\mj bes bes bes g\mn g a\spt a |
   d'8\mn d' d' d' bes\mj bes bes bes |
@@ -293,7 +299,7 @@ staffLeft = {
   bes, bes\mj bes bes e, g\mn a, a\spt
   d d'\mn d' d' f, f\mj f f |
   c c'\mj c' c' bes, bes\mj bes bes |
-  e, g\mn g g a, a\spt a a |
+  e, g4\mn g8 <a a,>4\spt <a a,> |
   
   d,8 d'\mn f, d' g, d' a, d' |
   b, d' c d' cis a16\spt a, r8 a |
@@ -389,6 +395,17 @@ staffLeft = {
   \time 4/4
   
   r8 d des c b, bes, a, as, |
+  << { r8 d'4\mn d'8 r d'4 d'8 } \\ { d2 c } >>
+  << { r8 d'4\mn d'8 r d'8 r g8\mn } \\ { b,2 bes,4 a, } >>
+  
+  s1*21
+  
+  r8 d des c b, bes, a, as, |
+  r8 g, ges, f, e, r4. |
+  <g e,>2\mn <a a,>4\spt r4 |
+  d8 f,8. g, a, b, c8 |
+  d16 d r2.. |
+  
   
 }
 
