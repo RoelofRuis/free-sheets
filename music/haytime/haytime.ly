@@ -177,11 +177,11 @@ staffRight = {
     \grace { gis16 } <a c,>4 \grace { gis16 } <a c,>4 g16 f d c f8 f |
     d8 c16 a g8 f c' r8 r16 c,16 cis d|
     r4 \grace { gis'16 } <a c,>4 g16 f d c f8 f | 
-    << { d1~ } \\ { r4 <a f> <as f> <g es> } >> |
+    << { d1~ } \\ { r4 <a f> <as f> <g e> } >> |
     << { d'8 } \\ { <f, d>8 } >> r8 \grace { gis'16 } <a c,>4 g16 f d c f8 f |
     d8 c16 a g8 f c' r8 r16 c,16 cis d|
     r4 \grace { gis'16 } <a c,>4 g16 f d c f8 f | 
-    << { d1~ } \\ { r4 <a f> <as f> <g es> } >> |
+    << { d1~ } \\ { r4 <a f> <as f> <g e> } >> |
     << { d'8 } \\ { <f, d>8 } >> r8 \grace { gis'16 } a4 g16 a c d f8 f |
     d2. cis4 |
     d4 d c a 
@@ -197,7 +197,7 @@ staffRight = {
       d1~
       d2. c8 cis |
       d1~
-      d2. c8 cis |
+      d2. b8 bes |
     } \\ { 
       a,8\rest <c' a>8. <b g>16 a,8\rest <c' a>8. <b g>16 a,8\rest <c'~ a~>8 |
       <c a>16 <b g>16 a,8\rest <c' a>8. <b g>16 a,16\rest <b' g cis,> a,4.\rest |
@@ -211,7 +211,7 @@ staffRight = {
     << { d2~ d8 } \\ { r8 <b f> <bes e,> <a es> <as d,>8 } >> d8 f a |
     g8 f d c f4 g16 a b c |
     << { d1 } \\ { a,8\rest <c' a>8. <b g>8. <c a>8. <b g>8. <c a>8 | } >> |
-    <d b a f>16 <d b a f> r2.. |
+    <d b a f>16 <d b a f> r8 r16 <d, b a f>8 <d b a f>16 <d b a f>8 r4. |
     \bar "|."
     
   } 
@@ -395,17 +395,37 @@ staffLeft = {
   \time 4/4
   
   r8 d des c b, bes, a, as, |
-  << { r8 d'4\mn d'8 r d'4 d'8 } \\ { d2 c } >>
-  << { r8 d'4\mn d'8 r d'8 r g8\mn } \\ { b,2 bes,4 a, } >>
+  << { r8 d'4\mn d'8 r d'4 d'8 } \\ { d2 c } >> |
+  << { r8 d'4\mn d'8 r d'8 r g8\mn } \\ { b,2 bes,4 a, } >> |
+  << { r8 d'4\mn d'8 r d'4 d'8 } \\ { d2 c } >> |
+  << { r8 d'4\mn d'8 r g8\mn r g } \\ { b,2 bes,4 a, } >> |
+  << { r8 d'4\mn d'8 r d'4 d'8 } \\ { d2 c } >> |
+  << { r8 d'4\mn d'8 r d'8 r g8\mn } \\ { b,2 bes,4 a, } >> |
+  << { r8 d'4\mn d'8 r d'4 d'8 } \\ { d2 c } >> |
+  << { r8 d'4\mn d'8 r g8\mn r g } \\ { b,2 bes,4 a, } >> |
+  << { r8 d'4\mn d'8 r es8\mj r f8\mj } \\ { d2 es,4 f, } >> |
+  bes,8 bes\mj bes bes e, g\mn a, a\spt |
   
-  s1*21
+  d8 d'\mn a, d' f, f\mj c f |
+  c c'\mj g, c' g, g\mj d g |
+  es, es\mj bes, es f, f\mj c f |
+  bes, bes\mj f, bes e, g\mn a, a\spt |
+  d8 d'\mn a, d' f, f\mj c f |
+  c c'\mj g, c' bes, bes\mj f, bes |
+  << { r8 g4\mn g8 r8 a4\spt a8 } \\ { e,2 a, } >> |
+  
+  d,8 d'\mn f, d' g, d' a, d' |
+  b, d' c d' cis a16\spt a, r8 a |
+  d,8 d'\mn f, d' g, d' a, d' |
+  b, d' c d' cis a16\spt a, r8 a |
+  d,8 d'\mn f, d' g, d' a, d' |
+  b, d' c d' cis a16\spt a, r8 a |
   
   r8 d des c b, bes, a, as, |
   r8 g, ges, f, e, r4. |
   <g e,>2\mn <a a,>4\spt r4 |
   d8 f,8. g, a, b, c8 |
-  d16 d r2.. |
-  
+  d16 d r8 r16 c8 cis16 d8 r4. |
   
 }
 
