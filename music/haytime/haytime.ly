@@ -417,11 +417,11 @@ staffLeft = {
   << { r8 g4\mn g8 r8 a4\spt a8 } \\ { e,2 a, } >> |
   
   d,8 d'\mn f, d' g, d' a, d' |
-  b, d' c d' cis a16\spt a, r8 a |
+  b, d' c d' cis16[ r a16\spt a,] r8 a |
   d,8 d'\mn f, d' g, d' a, d' |
-  b, d' c d' cis a16\spt a, r8 a |
+  b, d' c d' cis16[ r a16\spt a,] r8 a |
   d,8 d'\mn f, d' g, d' a, d' |
-  b, d' c d' cis a16\spt a, r8 a |
+  b, d' c d' cis16[ r a16\spt a,] r8 a |
   
   r8 d-- des-- c-- b,-- bes,-- a,-- as,-- |
   r8 g,-- ges,-- f,-- e,-- r4. |
