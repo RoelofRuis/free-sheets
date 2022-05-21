@@ -48,6 +48,7 @@ staffRight = {
     g8 f d c <f cis g>4 <f cis g> |
     << { \grace { a,16 c cis } d2. c16\rest d f a } \\ { r8 <b, f>( <bes e,> <a es> <as d,>4)  s4 } >>
     \once \override TextSpanner.bound-details.left.text = \markup { "molto accel." }
+    \once \override TextSpanner.bound-details.left-broken.text = ##f
     g'8\startTextSpan f d c <f d a>4 <f d a> |
     r8 << { g16 f g f d c } \\ { as4. } >> <f' c ges>4 <f c ges> | 
     << { g8 f d c } \\ { gis2 } >> <f' cis g>4 <f cis g>\stopTextSpan | 
@@ -103,7 +104,7 @@ staffRight = {
     d8 r8 \grace { g16 f es } d16 es f g a bes c cis d a g f |
     d4 d' c a |
     g16 f d c'~ c8 c8 d,4 r16 d f a |
-    g8 f d c <f cis g>4 <f cis g> |
+    g8 f d c <f cis g>4-> <f cis g>-> |
 
     <d~ a~ g~ d~>16-\tweak Y-offset #5 \in 
     <d~ a~ g~ d~>-\tweak Y-offset #5 \out 
@@ -118,20 +119,20 @@ staffRight = {
     r4 es8 es d4 g, |
     r4 des'8 des c2 |
     r4 bes8 bes g16 f d c f8 f |
-    <es d>4 <f as,> <g c,> <c fis,> |
+    <es d>4-- <f as,>-- <g c,>-- <c fis,>-- |
     r4 es8 es d4 g, |
     d'8 c16 d~ d es c8~ c4 g4 |
     f16 es c bes es8 es <es bes f>4 <c bes e,?> |
     << { c2. } \\ { r8 <bes es,>4 <bes es,>8 r8 <bes es,>8 } >> c16 es g8 |
-    f es c bes <es bes f>4 <es bes f> |
+    f es c bes <es bes f>4-- <es bes f>-- |
     
-    \grace { g,16 bes b } c8 r8 <bes g> r8 <a f>8. <bes g>16 r g bes b |
-    c8 r <bes g> r <a f>8.<bes g>16 r g bes c |
-    cis8 r <bes g> r <a cis,>8. <bes g>16 r a bes cis |
-    d4 <d a fis> <d g, e> <d a fis> |
+    \grace { g,16 bes b } c8 r8 <bes g> r8 <a f>8.( <bes g>16) r g( bes b |
+    c8) r <bes g> r <a f>8.( <bes g>16) r g( bes c |
+    cis8) r <bes g> r <a cis,>8.( <bes g>16) r a( bes cis |
+    d4) <d a fis>-- <d g, e>-- <d a fis>-- |
     
     b4 b \times 4/5 { bes16 a g e d } g8 g |
-    e16 g a b c d e fis g d c a g8 a |
+    e16 g a b? c d e fis g d c a g8 a |
     b4 b \times 4/5 { bes16 a g e d } g8 g |
     e16 g a b c d e fis g d c d e fis g a |
     b4 b \times 4/5 { bes16 a g e d } g8 g |
@@ -155,9 +156,10 @@ staffRight = {
     g a b g c a g f |
     e4 g f8 e d c |
     a1 |
-    e'4 g f8 e d c |
+    \once \override TextSpanner.bound-details.left.text = \markup { "rit." }
+    \once \override TextSpanner.bound-details.left-broken.text = ##f
+    e'4\startTextSpan g f8 e d c |
     a1 |
-    
     \break
     
     \once \override Staff.TimeSignature.style = #'single-digit
@@ -165,7 +167,7 @@ staffRight = {
     \tempo 4 = 56
     
     \cadenzaOn
-    r4 \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4 c8
+    r4\stopTextSpan \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4 c8
     a16[ c] a4 g8 
     <a cis,>16[ <c g>] <a cis,>4.\fermata
     \cadenzaOff
@@ -333,12 +335,12 @@ staffLeft = {
   << { r8 c'4\mn c'8 r8 g4\mj g8 } \\ { c2 b, } >>
   << { r8 bes4\mn bes8 r8 f4\mj f8 } \\ { bes,2 a, } >>
   << { r8 as4\mj as8 r8 g4\spt g8 } \\ { as,2 g, } >>
-  c4 b, bes, a, |
+  c4-- b,-- bes,-- a,-- |
   << { r8 f4\mn f8 r8 g4\spt g8 } \\ { f,2 g, } >>
   << { r8 c'4\mn c'8 r8 c'4 c'8 } \\ { c2 bes, } >>
   << { r8 as8\mj r8 as8 } \\ { as,2 } >> g,4 ges, |
   << { r8 f8\mn r8 f8 r8 f r8 f } \\ { f,2 es, } >> |
-  << { r8 f\mn r8 f8 } \\ { d,2 } >> g,4 g, |
+  << { r8 f\mn r8 f8 } \\ { d,2 } >> g,4-- g,-- |
 
   c8 c'\mn es, c' f, c' g, c' |
   c c'\mn es, c' f, c' g, c' |
@@ -448,7 +450,18 @@ dynamicsStaff = \new Dynamics {
   s1*3 |
   s1\mf s1*11 |
   s1\< s1 |
-  s1\!\f 
+  s1\!\f |
+  s1*2 s4 s4\< s4 s4\> |
+  s4\! s4\f s2 |
+  s1*2 |
+  s1*2 s2 s2\> |
+  s2 s8\! s8\mp s4 |
+  s1*3 s1\< |
+  s1\! s1*3 |
+  s2\> s2\! |
+  s1\mp s2. s4\< |
+  s1 s1\!
+  
  
 
 }
