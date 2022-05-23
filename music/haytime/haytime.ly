@@ -206,14 +206,14 @@ staffRight = {
       \grace { gis16 } a4 \grace { gis16 } a4 g16 f d c f8 f |
       d2~\) d8
     } \\ { 
-      a,8\rest <c' a>16-. a,8\rest <b' g>16-. a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
+      a,8\rest <c'' a>16-. a,8\rest <b' g>16-. a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
       a8\rest<c' a>16-. a,8\rest <b' g>16-. a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
       a8\rest <c' a>16-. a,8\rest <b' g>16-. a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
       r1
-      r8 <b' f> <bes e,> <a es> <as d,>8
+      r8 <b f> <bes e,> <a es> <as d,>8
     } >> d8\( f a |
 
     g8 f d c f4\) << { \stemDown g16( a b cis \stemNeutral } \\ { s4 } >> |
