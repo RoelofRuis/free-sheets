@@ -195,20 +195,20 @@ staffRight = {
     d8 r8 \grace { g16 f es } d16 es f g a bes c cis d a g f |
     d8\) d'\( a d c4 a |
     \tuplet 3/2 { g8 f d } c'8 c16 d,~ d4\) r16 d16\( f a |
-    g8 f d c f4\) g16 a b cis |
+    g8 f d c f4\) << { \stemDown g16( a b cis \stemNeutral } \\ { s4 } >> |
     << { 
-      d1~
+      d1)~
       d2. c8 cis |
       d1~
       d2. c8 cis |
       d1~
       d2. g,8 gis |
     } \\ { 
-      a,8\rest <c' a>8.( <b g>16) a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
+      a,8\rest <c' a>16 a,8\rest <b' g>16 a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
-      a8\rest <c' a>8.( <b g>16) a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
+      a8\rest<c' a>16 a,8\rest <b' g>16 a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
-      a8\rest <c' a>8.( <b g>16) a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
+      a8\rest <c' a>16 a,8\rest <b' g>16 a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
     } >>
     
@@ -466,8 +466,20 @@ dynamicsStaff = \new Dynamics {
   s1\! |
   s2\> s2\! |
   s1\mp s2. s4\< |
-  s1 s1\!
-  
+  s1 s1\! |
+  s1\mf s1*2 |
+  s1\< |
+  s1\!\f s1*2 |
+  s2 s2\> |
+  s1\mp s1*3 |
+  s1*8 |
+  s1\< s1 |
+  s1\!\> s1*3 |
+  s4\!\p s1 s1 |
+  s1\f s1*8 |
+  s2 s2\< s1\! |
+  s1*7 |
+  s1*11 |
  
 
 }
