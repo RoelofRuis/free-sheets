@@ -108,28 +108,28 @@ staffRight = {
 
     <d~ a~ g~ d~>16-\tweak Y-offset #5 \in 
     <d~ a~ g~ d~>-\tweak Y-offset #5 \out 
-    <d a g d>-\tweak Y-offset #5 \in <d a g d> r16 <d a g d> r16 <e b a e> r16 e, a b e b a e |
+    <d a g d>-\tweak Y-offset #5 \in <d a g d> r16 <d a g d> r16 <e b a e> r16 e,( a b e b a e) |
     <f'~ c~ b~ f~>16-\tweak Y-offset #4 \in
     <f~ c~ b~ f~>-\tweak Y-offset #4 \out 
-    <f c b f>-\tweak Y-offset #4 \in <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
+    <f c b f>-\tweak Y-offset #4 \in <f c b f> r16 <f c b f> r16 <g d c g> r16 g,( c d g d c g) | 
     <a'~ e~ d~ a~>16-\tweak Y-offset #5 \in 
     <a~ e~ d~ a~>-\tweak Y-offset #5 \out 
     <a e d a>-\tweak Y-offset #5 \in <a e d a> r16 <a e d a> r8 
     \once \override TextSpanner.bound-details.left.text = \markup { "poco rit." }
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     <bes f es bes>4\startTextSpan <bes f es bes> |
-    <b f d as>2 r8 b c d\stopTextSpan |
-    r4 es8 es d4 g, |
-    r4 des'8 des c2 |
-    r4 bes8 bes g16 f d c f8 f |
-    <es d>4-- <f as,>-- <g c,>-- <c fis,>-- |
-    r4 es8 es d4 g, |
-    d'8 c16 d~ d es c8~ c4 g4 |
-    f16 es c bes es8 es <es bes f>4 <c bes e,?> |
-    << { c2. } \\ { r8 <bes es,>4 <bes es,>8 r8 <bes es,>8 } >> c16 es g8 |
+    <b f d as>2 r8 b( c d)\stopTextSpan |
+    r4 es8\( es d4 g, |
+    r4 des'8 des c2\) |
+    r4 bes8\( bes g16 f d c f8 f |
+    <es d>4-- <f as,>-- <g c,>-- <c fis,>--\) |
+    r4 es8\( es d4 g, |
+    d'8 c16 d~ d es c8~ c4\) g4\( |
+    f16 es c bes es8 es <es bes f>4 <c bes e,?>\) |
+    << { c2. } \\ { r8 <bes es,>4 <bes es,>8 r8 <bes es,>8 } >> c16\( es g8 |
     f es c bes <es bes f>4-- <es bes f>-- |
     
-    \grace { g,16 bes b } c8 r8 <bes g> r8 <a f>8.( <bes g>16) r g( bes b |
+    \grace { g,16 bes b } c8\) r8 <bes g> r8 <a f>8.( <bes g>16) r g( bes b |
     c8) r <bes g> r <a f>8.( <bes g>16) r g( bes c |
     cis8) r <bes g> r <a cis,>8.( <bes g>16) r16 << { a( bes cis } \\ { s8. } >> |
     << { d1) } \\ { r4 <a fis>-- <g e>-- <a fis>-- } >> |
@@ -202,18 +202,20 @@ staffRight = {
       d1~
       d2. c8 cis |
       d1~
-      d2. g,8 gis |
+      d2. g,8\( gis |
+      \grace { gis16 } a4 \grace { gis16 } a4 g16 f d c f8 f |
+      d2~\) d8
     } \\ { 
-      a,8\rest <c' a>16 a,8\rest <b' g>16 a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
+      a,8\rest <c' a>16-. a,8\rest <b' g>16-. a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
-      a8\rest<c' a>16 a,8\rest <b' g>16 a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
+      a8\rest<c' a>16-. a,8\rest <b' g>16-. a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
-      a8\rest <c' a>16 a,8\rest <b' g>16 a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
+      a8\rest <c' a>16-. a,8\rest <b' g>16-. a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
-    } >>
-    
-    \grace { gis'16 } a4 \grace { gis16 } a4 g16 f d c f8 f |
-    << { d2~ d8 } \\ { r8 <b f> <bes e,> <a es> <as d,>8 } >> d8\( f a |
+      r1
+      r8 <b' f> <bes e,> <a es> <as d,>8
+    } >> d8\( f a |
+
     g8 f d c f4\) << { \stemDown g16( a b cis \stemNeutral } \\ { s4 } >> |
     << { d1) } \\ { a,8\rest <c' a>8.-- <b g>8.-- <c a>8.-- <b g>8.-- <c a>8-- | } >> |
     <d b a f>16-> <d b a f>-> r8 r16 <d, b a f>8 <d b a f>16 <d b a f>8 r4. |
@@ -409,7 +411,7 @@ staffLeft = {
   << { r8 d'4\mn d'8 r d'4 d'8 } \\ { d2 c } >> |
   << { r8 d'4\mn d'8 r g8\mn r g } \\ { b,2 bes,4 a, } >> |
   << { r8 d'4\mn d'8 r es8\mj r f8\mj } \\ { d2 es,4 f, } >> |
-  bes,8 bes\mj bes bes e, g\mn a, a\spt |
+  << { r8 bes\mj bes bes } \\ { bes,2 } >> e,8 g\mn a, a\spt |
   
   d8 d'\mn a, d' f, f\mj c f |
   c c'\mj g, c' g, g\mj d g |
@@ -492,11 +494,11 @@ dynamicsStaff = \new Dynamics {
     tagline = ##f
     instrumentName = "Accordion solo"
     year = "2018"
-    description = ""
+    description = "A sunny day during the Norwegian haying season. The air is warm but damp. Farmers cut the grass and rake it into piles to dry."
     info = "For Standard Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
-    version = "April 2022"
+    version = "May 2022"
   }
 
   \paper {
