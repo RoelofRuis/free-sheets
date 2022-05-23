@@ -20,21 +20,21 @@ staffRight = {
   \relative c'' {
     
     \cadenzaOn
-    r4\regza^\markup { \halign #-2 \italic "rubato" } \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4.
-    r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4
+    r4\regza^\markup { \halign #-2 \italic "rubato" } \grace { dis16 } \afterGrace e2\( { d16[ c] } d32[ e d c] d4.
+    r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4\)
     \bar ""
     \break
-    r4 \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4 c8
-    a1
+    r4 \grace { dis16 } \afterGrace e2\( { d16[ c] } d32[ e d c] d4 c8
+    a1\)
     r4
     \bar ""
-    r4 \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4.
-    r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4
+    r4 \grace { dis16 } \afterGrace e2\( { d16[ c] } d32[ e d c] d4.
+    r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4\)
     \bar ""
     \break
-    r4 \grace { dis16 } \afterGrace e2 { d16[ c] } d32[ e d c] d4 c8
+    r4 \grace { dis16 } \afterGrace e2\( { d16[ c] } d32[ e d c] d4 c8
     a16[ c] a4 g8 
-    <a cis,>16[ <c g>] <a cis,>4.
+    <a cis,>16[ <c g>] <a cis,>4.\)
     \cadenzaOff
     \breathe
     \bar "|"
@@ -54,7 +54,7 @@ staffRight = {
     << { g8 f d c } \\ { gis2 } >> <f' cis g>4 <f cis g>\stopTextSpan | 
     
     \tempo 4 = 132
-    \grace { a,16 c cis } d8 r <c a> r <b g>8.( <c a>16) r16 a( c cis |
+    \grace { a,16 c cis } d8\regza r <c a> r <b g>8.( <c a>16) r16 a( c cis |
     d8) r <c a> r r16 <b g cis,>-. r8 c cis |
     d8 r <c a> r <b g>8.( <c a>16) r16 a( c cis |
     d8) r <c a> r r16 <b g cis,> r8 c cis |
@@ -75,11 +75,11 @@ staffRight = {
     d2 r2 |
     
     d4\( d c a |
-    g16 f d c'~ c8 c8 d,4\) r16 d\( f a |
-    g8 f d c f8 r g16 f es f |
+    \tuplet 3/2 { g8 f d } c'8 c16 d,~ d4\) r16 d\( f a |
+    g8 f d c f4 f |
     d8\) r8 d16( es f g a bes c cis d a8.) |
     r4 d\( c a |
-    g16 f d c'~ c c8 d,16\)~ d4 r16 d f a |
+    \tuplet 3/2 { g8 f d } c'8 c16 d,16\)~ d4 r16 d f a |
     g8 f d c <f cis g>4-> <f cis g>-> |
     
     \grace { a,16 c cis } d8\regzv r <c a> r <b g>8.( <c a>16) r16 a( c cis |
@@ -96,14 +96,14 @@ staffRight = {
     r4 a''4 g16 f d c f8 f |
     d2 r2 |
     a'4 a g16 a c d f8 f |
-    d2 r2 |
+    d2. cis4 |
    
     d4 d c a |
-    g16 f d c'~ c8 c d,4 r16 d f a |
-    g8 f d c f4 f |
+    \tuplet 3/2 { g8 f d } c'8 c16 d,~ d4 r16 d f a |
+    g8 f d c f8 r g16 f es f |
     d8 r8 \grace { g16 f es } d16 es f g a bes c cis d a g f |
     d4 d' c a |
-    g16 f d c'~ c8 c8 d,4 r16 d f a |
+    \tuplet 3/2 { g8 f d } c'8 c16 d,~ d4 r16 d f a |
     g8 f d c <f cis g>4-> <f cis g>-> |
 
     <d~ a~ g~ d~>16-\tweak Y-offset #5 \in 
@@ -114,8 +114,11 @@ staffRight = {
     <f c b f>-\tweak Y-offset #4 \in <f c b f> r16 <f c b f> r16 <g d c g> r16 g, c d g d c g | 
     <a'~ e~ d~ a~>16-\tweak Y-offset #5 \in 
     <a~ e~ d~ a~>-\tweak Y-offset #5 \out 
-    <a e d a>-\tweak Y-offset #5 \in <a e d a> r16 <a e d a> r8 <bes f es bes>4 <bes f es bes> |
-    <b f d as>2 r8 b c d |
+    <a e d a>-\tweak Y-offset #5 \in <a e d a> r16 <a e d a> r8 
+    \once \override TextSpanner.bound-details.left.text = \markup { "poco rit." }
+    \once \override TextSpanner.bound-details.left-broken.text = ##f
+    <bes f es bes>4\startTextSpan <bes f es bes> |
+    <b f d as>2 r8 b c d\stopTextSpan |
     r4 es8 es d4 g, |
     r4 des'8 des c2 |
     r4 bes8 bes g16 f d c f8 f |
@@ -128,38 +131,38 @@ staffRight = {
     
     \grace { g,16 bes b } c8 r8 <bes g> r8 <a f>8.( <bes g>16) r g( bes b |
     c8) r <bes g> r <a f>8.( <bes g>16) r g( bes c |
-    cis8) r <bes g> r <a cis,>8.( <bes g>16) r a( bes cis |
-    d4) <d a fis>-- <d g, e>-- <d a fis>-- |
+    cis8) r <bes g> r <a cis,>8.( <bes g>16) r16 << { a( bes cis } \\ { s8. } >> |
+    << { d1) } \\ { r4 <a fis>-- <g e>-- <a fis>-- } >> |
     
-    b4 b \times 4/5 { bes16 a g e d } g8 g |
-    e16 g a b? c d e fis g d c a g8 a |
-    b4 b \times 4/5 { bes16 a g e d } g8 g |
+    b4\( b \times 4/5 { bes16 a g e d } g8 g |
+    e16 g a b? c d e fis g d c a g8 a\) |
+    r4 b\( \times 4/5 { bes16 a g e d } g8 g |
     e16 g a b c d e fis g d c d e fis g a |
-    b4 b \times 4/5 { bes16 a g e d } g8 g |
+    b4\) b\( \times 4/5 { bes16 a g e d } g8 g |
     e16 g a b c d e fis g d c a g8 a |
-    b4 b \times 4/5 { bes16 a g e d } g8 g |
-    e16 g a b c d e fis g8 d c a |
+    b4\) b\( \times 4/5 { bes16 a g e d } g8 g |
+    e16 g a b c d e fis g8 d c a\) |
     
-    g8 d c a g' d c a |
-    g'8 d c a g' d c a |
-    g'8 d c a g' d c a |
-    g'8 d c a g' d c a |
-    e'4 g f8 d e f |
+    g8( d c a) g'( d c a) |
+    g'8( d c a) g'( d c a) |
+    g'8( d c a) g'( d c a) |
+    g'8( d c a) g'( d c a) |
+    e'4( g f8 d e f |
     g a b g c a g f |
     e4 g f8 e d c |
-    a1 |
-    e'4 g f8 d e f |
+    a1) |
+    e'4( g f8 d e f |
     g a b g c a g f |
     e4 g f8 e d c |
-    a1 |
-    e'4 g f8 d e f |
+    a1) |
+    e'4( g f8 d e f |
     g a b g c a g f |
     e4 g f8 e d c |
-    a1 |
+    a1) |
     \once \override TextSpanner.bound-details.left.text = \markup { "rit." }
     \once \override TextSpanner.bound-details.left-broken.text = ##f
-    e'4\startTextSpan g f8 e d c |
-    a1 |
+    e'4(\startTextSpan g f8 e d c |
+    a1) |
     \break
     
     \once \override Staff.TimeSignature.style = #'single-digit
@@ -187,11 +190,11 @@ staffRight = {
     << { d'8 } \\ { <f, d>8 } >> r8 \grace { gis'16 } a4 g16 a c d f8 f |
     d2. cis4 |
     d4\( d c a 
-    g16 f d c'~ c8 c d,4\) r16 d16\( f a |
-    g8 f d c f r16 f g f es f |
+    \tuplet 3/2 { g8 f d } c'8 c16 d,~ d4\) r16 d16\( f a |
+    g8 f d c f \tuplet 3/2 { d16 es f } g f es f |
     d8 r8 \grace { g16 f es } d16 es f g a bes c cis d a g f |
     d8\) d'\( a d c4 a |
-    g16 f d c'~ c8 c d,4\) r16 d16\( f a |
+    \tuplet 3/2 { g8 f d } c'8 c16 d,~ d4\) r16 d16\( f a |
     g8 f d c f4\) g16 a b cis |
     << { 
       d1~
@@ -199,7 +202,7 @@ staffRight = {
       d1~
       d2. c8 cis |
       d1~
-      d2. b8 bes |
+      d2. g,8 gis |
     } \\ { 
       a,8\rest <c' a>8.( <b g>16) a,8\rest <c' a>8.( <b g>16) a,8\rest <c'~ a~>8 |
       <c a>16( <b g>16) a,8\rest <c' a>8.( <b g>16) a,16\rest <b' g cis,> a,4.\rest |
@@ -211,8 +214,8 @@ staffRight = {
     
     \grace { gis'16 } a4 \grace { gis16 } a4 g16 f d c f8 f |
     << { d2~ d8 } \\ { r8 <b f> <bes e,> <a es> <as d,>8 } >> d8\( f a |
-    g8 f d c f4\) g16 a b c |
-    << { d1 } \\ { a,8\rest <c' a>8.-- <b g>8.-- <c a>8.-- <b g>8.-- <c a>8-- | } >> |
+    g8 f d c f4\) << { \stemDown g16( a b cis \stemNeutral } \\ { s4 } >> |
+    << { d1) } \\ { a,8\rest <c' a>8.-- <b g>8.-- <c a>8.-- <b g>8.-- <c a>8-- | } >> |
     <d b a f>16-> <d b a f>-> r8 r16 <d, b a f>8 <d b a f>16 <d b a f>8 r4. |
     \bar "|."
     
@@ -249,7 +252,7 @@ staffLeft = {
       a,4~
       a,2~ a,2
       c2 b,2
-      e16\rest e,16--[\( g,-- gis,--]
+      e16\rest e,16[\( g, gis,]
       \bar ""
       \break
       a,4~\)
@@ -289,7 +292,7 @@ staffLeft = {
   d'8\mn d' d' d' es\mj es es es |
   bes\mj bes bes bes g\mn g a\spt a |
   d'8\mn d' d' d' bes\mj bes bes bes |
-  f\mj f f f g\mn g a\spt a |
+  f\mj f f f c'\mj c' c' c' |
   d'8\mn d' d' d' es\mj es es es |
   bes\mj bes bes bes g\mn g a\spt a |
   d'\mn d' d' d' es\mj es f\mj f |
@@ -357,17 +360,17 @@ staffLeft = {
   << { e8\mn e e e e e e e } \\ { b,2 cis } >>
   << { a8\spt a a a } \\ { a,2 } >> d2 |
   
-  c2 bes, g, f, |
-  c2 bes, g, f, |
+  c2( bes, g, f,) |
+  c2( bes, g, f,) |
   
-  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2 bes, } >>
-  << { g8\mj g g g f\mj f f f } \\ { g,2 f, } >>
-  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2 bes, } >>
-  << { g8\mj g g g f\mj f f f } \\ { g,2 f, } >>
-  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2 bes, } >>
-  << { g8\mj g g g f\mj f f f } \\ { g,2 f, } >>
-  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2 bes, } >>
-  << { g8\mj g g g f\mj f f f } \\ { g,2 f, } >>
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2( bes, } >>
+  << { g8\mj g g g f\mj f f f } \\ { g,2 f,) } >>
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2( bes, } >>
+  << { g8\mj g g g f\mj f f f } \\ { g,2 f,) } >>
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2( bes, } >>
+  << { g8\mj g g g f\mj f f f } \\ { g,2 f,) } >>
+  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2( bes, } >>
+  << { g8\mj g g g f\mj f f f } \\ { g,2 f,) } >>
   << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { a,1~ } >>
   << { g8\mj g g g f\mj f f f } \\ { a,1~ } >>
   << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { a,1~ } >>
@@ -396,7 +399,7 @@ staffLeft = {
   \break
   \time 4/4
   
-  r8 d-- des-- c-- b,-- bes,-- a,-- as,-- |
+  r8 a,-- as,-- g,-- ges,-- f,-- e,-- es,-- |
   << { r8 d'4\mn d'8 r d'4 d'8 } \\ { d2 c } >> |
   << { r8 d'4\mn d'8 r d'8 r g8\mn } \\ { b,2 bes,4 a, } >> |
   << { r8 d'4\mn d'8 r d'4 d'8 } \\ { d2 c } >> |
@@ -421,7 +424,7 @@ staffLeft = {
   d,8 d'\mn f, d' g, d' a, d' |
   b, d' c d' cis16[ r a16\spt a,] r8 a |
   d,8 d'\mn f, d' g, d' a, d' |
-  b, d' c d' cis16[ r a16\spt a,] r8 a |
+  b, d' c d' cis16[ r a16\spt a,] r4 |
   
   r8 d-- des-- c-- b,-- bes,-- a,-- as,-- |
   r8 g,-- ges,-- f,-- e,-- r4. |
@@ -444,8 +447,8 @@ dynamicsStaff = \new Dynamics {
   s1\!\f s1* 7 |
   s1\subp s1*3 |
   s1*4 |
-  s1\< s1 |
-  s1\!\mp s1*2 |
+  s1\< s2\! s2 |
+  s1\mp s1*2 |
   r4 r4\< r4 r16\> r8 r16\! |
   s1*3 |
   s1\mf s1*11 |
@@ -457,7 +460,10 @@ dynamicsStaff = \new Dynamics {
   s1*2 s2 s2\> |
   s2 s8\! s8\mp s4 |
   s1*3 s1\< |
-  s1\! s1*3 |
+  s4\! s4\> s2 |
+  s1\! |
+  s2 s2\< |
+  s1\! |
   s2\> s2\! |
   s1\mp s2. s4\< |
   s1 s1\!
@@ -534,7 +540,7 @@ dynamicsStaff = \new Dynamics {
     }
 
     \new PianoStaff \with {
-      \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 11) (padding . 1))
+      \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (padding . 1))
     } <<
       \new Staff = "right" \with {midiInstrument = "bright acoustic"} \staffRight
       \dynamicsStaff
