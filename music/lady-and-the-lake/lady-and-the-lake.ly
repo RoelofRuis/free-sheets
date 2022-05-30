@@ -128,6 +128,10 @@ staffRight = {
     <bes d,>4. <a c,>8 <bes d,> <a c,>4 <g~ bes,~>8 |
     <g bes,>4 <bes f> <g bes,> <bes f> |
     <g bes,>4 <bes f> <g bes,> <bes f> |
+    <c e,>4 <d f,> <e g,> <c e,> |
+    <bes d,>4. <a c,>8 <bes d,> <c e,>4 <c~ e,~>8 |
+    <c e,>4 <e g,> <c e,> <e g,> |
+    <c e,>4 <e g,> <c e,> <e g,> |
 
   }
 }
@@ -259,6 +263,16 @@ staffLeft = {
     << { f1 } \\ { r8 e?4 c'8~ c4 e, } >> |
     << { f1 } \\ { r8 es4 c'8~ c4 es, } >> |
     << { f1 } \\ { r8 es4 bes'8~ bes4 es, } >> |
+
+    << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
+    << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
+    << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
+    << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
+    << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
+    << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
+    << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
+    << { bes1 } \\ { r8 as4 e'8~ e4 gis, } >> |
+    
     
   }
 }
@@ -280,14 +294,14 @@ dynamics = \new Dynamics {
     info = "For Free Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
-    version = "March 2022"
+    version = "June 2022"
   }
 
   \paper {
-    max-systems-per-page = 6
-    %min-systems-per-page = 5
+    max-systems-per-page = 5
+    min-systems-per-page = 5
     indent = 0.0
-    %ragged-last-bottom = ##f
+    ragged-last-bottom = ##f
     print-all-headers = ##t
     
     bookTitleMarkup = \markup {
