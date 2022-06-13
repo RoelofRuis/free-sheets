@@ -24,7 +24,15 @@ accTwoRight = \relative c''' {
   r8 f16-. e-. f4-. r8 f16-. e-. |
   
   \time 4/4
-  f8-. f16-. e-. f8-. f16-. e-. f-. g-. f-. e-. f8-. f16-. e-.
+  f8-. f16-. e-. f8-. f16-. e-. f-. g-. f-. e-. f8-. f16-. e-. |
+  f16 e f g e8. f16 d8. f16 e8. g16 |
+  f8 f16 e f8 f16 e f g f e f8 f16 e |
+  f16 e f g e8. g16 f8. a16 g8. bes16 |
+  a8 a16 g a g a bes c4. d8 |
+  e2 f4. g8 |
+  a8 a16 g a8 a16 g a8 g16 f g f e f |
+  g8 g16 f g8 f16 e f e d e f8 e16 d |
+  e8 r16 e a,4~ a8 a16 e' a,8. e'16 |
   
 }
 
