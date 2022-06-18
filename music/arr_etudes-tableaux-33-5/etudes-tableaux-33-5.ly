@@ -48,7 +48,7 @@ accTwoRight = \relative c''' {
   d,4 r8. a16 d a d a d8 d16 a |
   d8[ r16 a16] d4 r8. a16 d8 d16 a |
   d8 d16 c d8 d16 c d8 d16 c d16 es d es |
-  d8 d16 c d cis d e f d f g d8. f16 |
+  d8 d16 c d cis d e f e f g e8. f16 |
   d8 d16 e f8. e16 f8. e16 f8. es16 |
   \grace { des16 es } des16 c des es f e f g as g as bes g8. as16 |
   f8 f16 e as8 as16 g as8 as16 g as8 as16 a |
@@ -77,9 +77,24 @@ accTwoRight = \relative c''' {
   b4. d8 b4. d8 |
   b8. d16 b8. d16 b8. d16 b8. d16 |
   b16 dis d8 b16 fis'8 f16 d16 a' gis8 f16 a e8 |
-  f8 d'16 d d a gis8 f d'16 d d a gis8 |
   
-  
+  f8 \ottava #1 d'16 d d a gis8 f d'16 d d a gis8 |
+  f16 as f as f as f as f a f a f a f a |
+  \time 3/4
+  f8 f16[ e] f8 f16 e f g f e |
+  r8 d c a g4~ |
+  g8a g e \ottava #0 d4~ |
+  d4 r2 |
+  R2. |
+  R2. |
+  R2. |
+  \time 4/4
+  r8. a'16 d4 r8. a16 d4 |
+  r8. a'16 d8. a16 d8. a16 d a d a |
+  d8. a16 d a d a d8. a16 d8. a16 |
+  d1 |
+  \bar "|."
+
 }
 
 \header {
