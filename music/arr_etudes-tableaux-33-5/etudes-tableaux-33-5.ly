@@ -1,18 +1,6 @@
 \version "2.20"
 
-accOneRight = \relative c'' {
-  \time 3/4
-  \key d \minor
-  \clef treble
-}
-
-accOneLeft = \relative c'' {
-  \time 3/4
-  \key d \minor
-  \clef bass
-}
-
-accTwoRight = \relative c''' {
+firstVoice = \relative c''' {
   \time 3/4
   \key d \minor
   \clef treble
@@ -90,11 +78,19 @@ accTwoRight = \relative c''' {
   R2. |
   \time 4/4
   r8. a'16 d4 r8. a16 d4 |
-  r8. a'16 d8. a16 d8. a16 d a d a |
-  d8. a16 d a d a d8. a16 d8. a16 |
-  d1 |
+  r8. a'16 d,8. a'16 d,8. a'16 d, a' d, a' |
+  d,8. a'16 d, a' d, a' d,8. a'16 d,8. a'16 |
+  d,1 |
   \bar "|."
 
+}
+
+secondVoice = \relative c''' {
+  \time 3/4
+  \key d \minor
+  \clef treble
+  
+  
 }
 
 \header {
@@ -105,18 +101,14 @@ accTwoRight = \relative c''' {
 
 \paper {
   indent = 0.0
-  %ragged-last-bottom = ##f
+  ragged-last-bottom = ##f
   print-all-headers = ##f
 }
 
 \score {
   <<
-    \new PianoStaff
-    <<
-      \new Staff = "right" \with { midiInstrument = "acoustic grand"} \accOneRight
-      \new Staff = "left" \with { midiInstrument = "acoustic grand" } \accOneLeft
-    >>
-    \new Staff = "right" \with { midiInstrument = "acoustic grand"} \accTwoRight
+    \new Staff = "right" \with { midiInstrument = "acoustic grand"} \firstVoice
+    \new Staff = "right" \with { midiInstrument = "acoustic grand"} \secondVoice
   >>
 
   \layout { }
