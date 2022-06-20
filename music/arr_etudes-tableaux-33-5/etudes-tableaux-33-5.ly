@@ -8,7 +8,7 @@ firstVoice = \relative c''' {
   \partial 16 a16 |
   d,4~ d8 d16 a' d,8. a'16 |
   d,4~ d8 d16 a' d,8. a'16 |
-  d,4 r8 f,16-. e-. f4-. |
+  d,4\fermata r8 f,16-. e-. f4-. |
   r8 f16-. e-. f4-. r8 f16-. e-. |
   
   \time 4/4
@@ -85,10 +85,31 @@ firstVoice = \relative c''' {
 
 }
 
-secondVoice = \relative c''' {
+secondVoice = \relative c'' {
   \time 3/4
   \key d \minor
   \clef treble
+  
+  \partial 16 a16 |
+  d,4~ d8 d16 a' d,8. a'16 |
+  d,4~ d8 d16 a' d,8. a'16 |
+  d,4\fermata r8 d16 a d4 |
+  8 d16 a d4 r8 d16 a |
+  d8 d16 a d8 d16 a d16 e d a d8 d16 a |
+  d16 g, d' e c8. d16 b8. d16 <cis a>8. e16 |
+  d8 d16 a d8 d16 a d e d a d8 d16 a |
+  d16 c b g a8. e'16 d8. f16 <e c>8. g16 |
+  f8 f16 c f16 e f g <a f>8 <a f>16 <g e> <f d> <g e> <a f> <bes g> |
+  <c a>8 <bes g>16 <c a> <d bes> <c a> <d bes> <e c> <d bes>8 <d bes>16 <c a> <bes g> <c a> <d bes> <e c> |
+  <f d>8 d16 e f f, a b c a c d e d c d |
+  es16 es, g a bes g bes c d g, f g d' f, a bes |
+  r4 f2~ f8. c'16 |
+  \time 3/4
+  f,8. c'16 f, c' f, c' f,8. c'16 |
+  f,8. c'16 f, c' f, c' f,8. c'16 |
+  f4~ f8 f16 c' f,8. c'16 |
+  f,4\fermata r8 d,16 a d4
+  
   
   
 }
@@ -103,6 +124,7 @@ secondVoice = \relative c''' {
   indent = 0.0
   ragged-last-bottom = ##f
   print-all-headers = ##f
+  max-systems-per-page = 6
 }
 
 \score {
