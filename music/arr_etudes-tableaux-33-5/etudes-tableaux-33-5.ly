@@ -39,7 +39,7 @@ firstVoice = \relative c''' {
   d8 d16 c d cis d e f e f g e8. f16 |
   d8 d16 e f8. e16 f8. e16 f8. es16 |
   \grace { des16 es } des16 c des es f e f g as g as bes g8. as16 |
-  f8 f16 e as8 as16 g as8 as16 g as8 as16 a |
+  f8 f16 g as8 as16 g as8 as16 g as8 as16 a |
   bes16 a a bes b8 b16 ais b8 b16 ais b8 b16 bis |
   cis16 bis bis cis d8 d16 d d8 c16 bes c bes a bes |
   \time 3/4
@@ -52,10 +52,10 @@ firstVoice = \relative c''' {
   \time 4/4
   r8 g16 d g d g f g8 r8 r4 |
   \time 3/4
-  r4 r8 f16 e f4 |
-  r8 f16 e f4 r8 f16 e |
+  r4 r8 <f a,>16 e <f a,>4 |
+  r8 <f a,>16 e <f a,>4 r8 <f a,>16 e |
   \time 4/4
-  f4 d,2 f4 |
+  <f a,>4 d,2 f4 |
   a1~ |
   a2 bes4. c8 |
   d1~ |
@@ -70,14 +70,14 @@ firstVoice = \relative c''' {
   f16 as f as f as f as f a f a f a f a |
   \time 3/4
   f8 f16[ e] f8 f16 e f g f e |
-  r8 d c a g4~ |
+  r8 d' c a g4~ |
   g8a g e \ottava #0 d4~ |
   d4 r2 |
   R2. |
   R2. |
   R2. |
   \time 4/4
-  r8. a'16 d4 r8. a16 d4 |
+  r8. a16 d4 r8. a16 d4 |
   r8. a'16 d,8. a'16 d,8. a'16 d, a' d, a' |
   d,8. a'16 d, a' d, a' d,8. a'16 d,8. a'16 |
   d,1 |
@@ -107,8 +107,37 @@ secondVoice = \relative c'' {
   \time 3/4
   f,8. c'16 f, c' f, c' f,8. c'16 |
   f,8. c'16 f, c' f, c' f,8. c'16 |
-  f4~ f8 f16 c' f,8. c'16 |
-  f,4\fermata r8 d,16 a d4
+  f,4~ f8 f16 c' f,8. c'16 |
+  f,4\fermata r8 d16 a d4 |
+  r8 d16 a d4 r8 d16 a |
+  d8 d16 a d8 d16 a d e d a d8 d16 a |
+  d16 g, d' e c8. d16 b8. d16 <cis a>8. e16 |
+  d8 d16 a d8 d16 a d e d a d8 d16 c |
+  bes16 a bes c a8. c16 bes8. d16 <cis a>8. e16 |
+  d8 d16 a d8 r8 r8. <e a,>16 <f d>4 |
+  r8. <e a,>16 <f d>8[ r16 e16] f e f e f8 f16 e |
+  f8[ r16 e16] f4 r8. d16 f8 f16 e |
+  f4 fis g a |
+  bes8 g gis a bes b c ces |
+  bes a as4 g ges |
+  f8 bes b c des d es eses |
+  bes8 c ces es fes4 <f es> |
+  <ges d>4 <fis d> <g d> <gis fis> |
+  <a eis>4 <a f d>8 <g e>16 <a f> <bes f>16 d, f g a g f g |
+  \time 3/4
+  as16 as, c d es c es f g f es f |
+  g16 g, bes c e bes d e? f e d b |
+  \time 4/4
+  c16 a c e c b c b c b c d e8 r8 |
+  \time 2/4
+  r2
+  \time 4/4
+  r8 bes16 a bes a bes c d8 r8 r4 |
+  \time 3/4
+  r4 r8 <d f,>16 a <d f,>4 |
+  r8 <d f,>16 a <d f,>4 r8 <d f,>16 a |
+  \time 4/4
+  <d f>4 r2. |
   
   
   
