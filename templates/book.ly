@@ -10,12 +10,15 @@ options = {
 
 staffRight = {
   \options
+  \clef treble
 
+  % \relative c'' { }
   % add music
 }
 
 staffLeft = {
   \options
+  \clef bass
 
   % add music
 }
@@ -36,9 +39,9 @@ dynamicsStaff = \new Dynamics {
     year = ""
     description = ""
     info = ""
-    permission = ""
-    projecturl = ""
-    version = ""
+    permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
+    projecturl = "https://github.com/RoelofRuis/free-sheets"
+    version = "" % e.g. January 2022
   }
 
   \paper {
