@@ -13,7 +13,7 @@ staffRight = {
   \options
 
   \relative c'' {
-    \partial 8 g8\( |
+    \partial 8 g8\(\regez |
     g8 c c d e c c\) a\( |
     g c d e f c g' f\) |
     e\( c c a a f f d |
@@ -21,7 +21,7 @@ staffRight = {
     g c c d e c c\) a\( |
     g c d e f c g' f\) |
     e\( c c a a f d b |
-    c2.\) c4\( |
+    c2.\) c4\(\regezv |
     c' b8 a g a c, d |
     e2.\) c4\( |
     c' b8 a g a c, d |
