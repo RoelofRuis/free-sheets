@@ -5,6 +5,9 @@
 options = {
   \numericTimeSignature
   \time 4/4
+  \override Score.MetronomeMark.X-offset = #1
+  \override Score.MetronomeMark.Y-offset = #8
+  \tempo 4=120
   \key c \major
 }
 
@@ -13,7 +16,7 @@ staffRight = {
   \options
 
   \relative c'' {
-    \partial 8 g8\(\regez |
+    \partial 8 g8\(\regez^\markup { \halign #-2.7 \italic "rubato" } |
     g8 c c d e c c\) a\( |
     g c d e f c g' f\) |
     e\( c c a a f f d |
