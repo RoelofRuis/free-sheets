@@ -97,6 +97,9 @@ dynamicsStaff = \new Dynamics {
     
     bookTitleMarkup = \markup {
       \column {
+        \general-align #X #DOWN {
+          \epsfile #X #108 #"repairing-a-broken-harmonium.eps"  
+        }
         \vspace #2
         \fill-line { \fontsize #2 \fromproperty #'header:dedication }
         \vspace #1
