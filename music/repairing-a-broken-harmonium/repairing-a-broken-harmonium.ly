@@ -16,6 +16,8 @@ staffRight = {
   \relative c'' { 
     r1 |
     r1 |
+    r1 |
+    r1 |
     r4.\regdba g8 e'4 f8 e8-. |
     r8 c4.~ c4 r4 |
     r4. g8 e'4 f8 e8-. |
@@ -43,8 +45,18 @@ staffRight = {
     es4 d8 es8~ es4 g |
     f4 es8 d~ d4. es8 |
     f4 g8 as~ as4 f |
-    g4 f8 es8~ es4 d8 c~ |
-    c1 |
+    g4 f8 es8~ es4 d8 << { c8~ } \\ { s8 } >> |
+    << { c1~ } \\ { r2 a8 bes a f~ } >> |
+    << { c'2 } \\ { f,2 } >> \grace { es16 f } es8 d c bes |
+    a1~ |
+    a2. r4 |
+    
+    \bar "||"
+    
+    << { d'4 es8 d8 r8 bes8 r8 bes~ } \\ { f2 r8 f8 r4 } >> |
+    << { bes2 c4\trill bes8 c } \\ { s1 } >> |
+    << { d4 es8 d8 r8 bes8 r8 bes~ } \\ { f2 r8 f8 r4 } >> |
+    << { bes2 \times 2/3 { bes'16[ c bes } a g] f[ es d c] } \\ { s1 } >> |
     
     
   }
@@ -55,6 +67,8 @@ staffLeft = {
   \clef bass
 
   \relative c' {
+    g2 as2 |
+    g2 as2 |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
@@ -76,13 +90,23 @@ staffLeft = {
     << { g'2. r4 } \\ { bes,8 c r8 c8~ c4 r4 } >> |
     << { r8 es c' es, bes' es, c' es, } \\ { as,1 } >> |
     << { r8 f' d' f, c' f, d' f, } \\ { bes,1 } >> |
-    << { r8 as'8 c e c as c e } \\ { c,1~ } >> |
-    << { c'8 as c e c as c as } \\ { c,1 } >> |
+    << { r8 g' e' g, d' g, e' g, } \\ { c,1~ } >> |
+    << { r8 g' e' g, d' g, c g } \\ { c,1 } >> |
     << { r8 es c' es, bes' es, c' es, } \\ { as,1 } >> |
     << { r8 f' d' f, c' f, d' f, } \\ { bes,1 } >> |
     << { r8 g'8 bes g as g bes g } \\ { c,1 } >> |
-    << { r8 g'8 bes g as g bes g } \\ { c,1 } >> |
+    << { r8 g'8 as g bes g as g } \\ { c,1 } >> |
     << { r8 es c' es, bes' es, c' es, } \\ { as,1 } >> |
+    << { r8 f' d' f, c' f, d' f, } \\ { bes,1 } >> |
+    << { r8 g' d' g, c g d' g, } \\ { b,!1 } >> |
+    c8~ <c~ g'~> <c g' d'>4 bes8~ <bes~ f'~> <bes f'~ c'~>4 |
+    <a~ f'~ c'>1 |
+    <a f'~>1 |
+    f'2 a,8 bes a f~ |
+    f2. r4 |
+    
+    \bar "||"
+    
     
   }
 }
@@ -108,7 +132,7 @@ dynamicsStaff = \new Dynamics {
   }
 
   \paper {
-    %max-systems-per-page = 5
+    max-systems-per-page = 5
     %min-systems-per-page = 5
     ragged-last-bottom = ##f
 
