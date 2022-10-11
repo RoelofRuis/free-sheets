@@ -95,7 +95,9 @@ dynamicsStaff = \new Dynamics {
       breakbefore = ##t
     }
 
-    \new PianoStaff <<
+    \new PianoStaff \with {
+      % \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (padding . 1))
+    } <<
       \new Staff = "right" \with {midiInstrument = "bright acoustic"} \staffRight
       \dynamicsStaff
       \new Staff = "left" \with {midiInstrument = "bright acoustic"} \staffLeft
