@@ -35,6 +35,17 @@ staffRight = {
     <c e,>2. c8 d |
     es4 d8 es8~ es4 g |
     f4 es8 d~ d4 bes |
+    c4. g'8 e'4 f8 e-. r8 c4.~ c4 c,8 d |
+    es4 d8 es8~ es4 g |
+    f4 es8 d~ d4 bes |
+    << { g1~ } \\ { r2 e8 f e c~ } >> |
+    << { g'2. s4 } \\ { c,2. c'8 d } >> |
+    es4 d8 es8~ es4 g |
+    f4 es8 d~ d4. es8 |
+    f4 g8 as~ as4 f |
+    g4 f8 es8~ es4 d8 c~ |
+    c1 |
+    
     
   }
 }
@@ -63,6 +74,15 @@ staffLeft = {
     << { r8 f as c as f as c } \\ { bes,1 } >> |
     << { as'4. g8~ g2~ } \\ { c,4. c8~ c2 } >> |
     << { g'2. r4 } \\ { bes,8 c r8 c8~ c4 r4 } >> |
+    << { r8 es c' es, bes' es, c' es, } \\ { as,1 } >> |
+    << { r8 f' d' f, c' f, d' f, } \\ { bes,1 } >> |
+    << { r8 as'8 c e c as c e } \\ { c,1~ } >> |
+    << { c'8 as c e c as c as } \\ { c,1 } >> |
+    << { r8 es c' es, bes' es, c' es, } \\ { as,1 } >> |
+    << { r8 f' d' f, c' f, d' f, } \\ { bes,1 } >> |
+    << { r8 g'8 bes g as g bes g } \\ { c,1 } >> |
+    << { r8 g'8 bes g as g bes g } \\ { c,1 } >> |
+    << { r8 es c' es, bes' es, c' es, } \\ { as,1 } >> |
     
   }
 }
@@ -90,7 +110,7 @@ dynamicsStaff = \new Dynamics {
   \paper {
     %max-systems-per-page = 5
     %min-systems-per-page = 5
-    %ragged-last-bottom = ##f
+    ragged-last-bottom = ##f
 
     indent = 0.0
     print-all-headers = ##t
@@ -136,7 +156,9 @@ dynamicsStaff = \new Dynamics {
       breakbefore = ##t
     }
 
-    \new PianoStaff <<
+    \new PianoStaff \with {
+      \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (padding . 1))
+    } <<
       \new Staff = "right" \with {midiInstrument = "harmonica"} \staffRight
       \dynamicsStaff
       \new Staff = "left" \with {midiInstrument = "harmonica"} \staffLeft
