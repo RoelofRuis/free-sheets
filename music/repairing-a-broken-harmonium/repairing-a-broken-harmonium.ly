@@ -49,7 +49,7 @@ staffRight = {
     << { c1~ } \\ { r2 a8 bes a f~ } >> |
     << { c'2 } \\ { f,2 } >> \grace { es16 f } es8 d c bes |
     a1~ |
-    a2. r4 |
+    a2 r2 |
     
     \bar "||"
     
@@ -83,8 +83,8 @@ staffLeft = {
     << { r8 as'8 c e c as c e } \\ { c,1 } >> |
     << { r8 as'8 c e c as c e } \\ { d,1 } >> |
     << { r8 g8 c e c g c e } \\ { e,1 } >> |
-    << { r8 as8 c e c as c e } \\ { d,1 } >> |
-    << { r8 as'8 c e c as c e } \\ { c,1 } >> |
+    << { r8 as8 c e c as c e } \\ { f,1 } >> |
+    << { r8 as8 c e c as c e } \\ { c,1 } >> |
     << { r8 f as c as f as c } \\ { bes,1 } >> |
     << { as'4. g8~ g2~ } \\ { c,4. c8~ c2 } >> |
     << { g'2. r4 } \\ { bes,8 c r8 c8~ c4 r4 } >> |
@@ -103,7 +103,7 @@ staffLeft = {
     <a~ f'~ c'>1 |
     <a f'~>1 |
     f'2 a,8 bes a f~ |
-    f2. r4 |
+    f2 r2 |
     
     \bar "||"
     
