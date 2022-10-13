@@ -53,12 +53,15 @@ staffRight = {
     
     \bar "||"
     
-    << { d'4 es8 d8 r8 bes8 r8 bes~ } \\ { f2 r8 f8 r4 } >> |
-    << { bes2 c4\trill bes8 c } \\ { s1 } >> |
-    << { d4 es8 d8 r8 bes8 r8 bes~ } \\ { f2 r8 f8 r4 } >> |
-    << { bes2 \times 2/3 { bes'16[ c bes } a g] f[ es d c] } \\ { s1 } >> |
-    
-    
+    << { d'4 es8 d8 r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
+    << { bes2 c4\trill bes8 c } \\ { g2 es2 } >> |
+    << { d'4 es8 d8 r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
+    << { bes2 \times 2/3 { bes'16[ c bes } a g] f[ es d c] } \\ { g2 r2 } >> |
+    << { d'4 es8 d8 r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
+    << { bes2 c4\trill bes8 c } \\ { g2 es2 } >> |
+    << { d'4 bes8 c~ c4 bes } \\ { f4 d8 es~ es2 } >> |
+    << { bes'2 r16 d,[ es f] g[ a bes c] } \\ { f,8 g f d s2 } >> |
+
   }
 }
 
@@ -106,6 +109,17 @@ staffLeft = {
     f2. r4 |
     
     \bar "||"
+    
+    bes'8 bes, c d r8 dis8 r8 e8~ |
+    e2 f2 |
+    bes8 bes, c d r8 dis r e~ |
+    e2 r2 |
+    bes'8 bes, c d r8 dis8 r8 e8~ |
+    e2 f2 |
+    bes8 a g ges~ ges4 f |
+    d8 es d bes r2 |
+    
+    
     
     
   }
