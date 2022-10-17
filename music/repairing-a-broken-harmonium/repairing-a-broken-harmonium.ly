@@ -62,6 +62,16 @@ staffRight = {
     << { d'4 bes8 c~ c4 bes } \\ { f4 d8 es~ es2 } >> |
     << { bes'2 r16 d,[ es f] g[ a bes c] } \\ { f,8 g f d s2 } >> |
 
+    << { d'4 es8 d8 r8 bes8 r8 c~ } \\ { f,4. fis8 r8 g8 r8 g~ } >> |
+    << { c8 d c f~ f4 fis } \\ { g,4. a8~ a4 a4 } >> |
+    << { g'4 a8 g r8 d8 r8 cis~ } \\ { bes2 r8 bes8 r8 a~ } >> |
+    << { cis d e f~ f4 e } \\ { a,4. a8~ a4 g } >> |
+    << { d'1~ } \\ { g,1~ } >> |
+    << { d'1~ } \\ { g,2 \grace { f16 g } f8 e d c } >> |
+    << { d'1~ } \\ { b,1~ } >> |
+    << { d'2 r2 } \\ { b,2 r2 } >> |
+    
+
   }
 }
 
@@ -70,7 +80,7 @@ staffLeft = {
   \clef bass
 
   \relative c' {
-    g2 as2 |
+    g2_\fbregz as2 |
     g2 as2 |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
@@ -118,6 +128,15 @@ staffLeft = {
     e2 f2 |
     bes8 a g ges~ ges4 f |
     d8 es d bes r2 |
+    bes'8 a g ges r8 f8 r8 e~ |
+    e8 d e f~ f4 es |
+    d8 g, a bes r8 g8 r8 a~ |
+    a8 b! cis d~ d4 c~ |
+    c2 b8 c b g~ |
+    g1~ |
+    g1~ |
+    g2 r2 |
+    
     
     
     
