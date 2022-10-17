@@ -74,7 +74,7 @@ staffRight = {
     << { e'4 f8 e4 c4 c8~ } \\ { g4. a4 a4 as8~ } >> |
     << { c1 } \\ { as1 } >> |
     << { e'4 f8 e r8 c8 r8 <c~ e~> } \\ { g4. gis8 r8 a8 r8 as~ } >> |
-    << { <c~ e~>2 <c d>2 } \\ { as1 } >> |
+    << { <c~ e~>2 d2 } \\ { as1 } >> |
 
     r4. g8 e'4 f8 e8-. |
     r8 c4.~ c4 r4 |
