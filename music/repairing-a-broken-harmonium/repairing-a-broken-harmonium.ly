@@ -51,8 +51,6 @@ staffRight = {
     a1~ |
     a2 r2 |
     
-    \bar "||"
-    
     << { d'4 es8 d8 r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
     << { bes2 c4\trill bes8 c } \\ { g2 es2 } >> |
     << { d'4 es8 d8 r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
@@ -71,6 +69,29 @@ staffRight = {
     << { d'1~ } \\ { b,1~ } >> |
     << { d'2 r2 } \\ { b,2 r2 } >> |
     
+    << { e'4\regezv f8 e r8 c8 r8 c~ } \\ { g2 r8 a8 r8 as~ } >> |
+    << { c2 d4\trill c8 d } \\ { as2 ges2 } >> |
+    << { e'4 f8 e4 c4 c8~ } \\ { g4. a4 a4 as8~ } >> |
+    << { c1 } \\ { as1 } >> |
+    << { e'4 f8 e r8 c8 r8 <c~ e~> } \\ { g4. gis8 r8 a8 r8 as~ } >> |
+    << { <c~ e~>2 <c d>2 } \\ { as1 } >> |
+
+    r4. g8 e'4 f8 e8-. |
+    r8 c4.~ c4 r4 |
+    r4. g8 e'4 f8 e8-. |
+    r8 c4. \grace { bes16 c } bes8 as g f |
+    e4 r8 g8 e'4 f8 e8-. |
+    r8 c4. as4 g |
+    <d' f,~>8 <e f,> r8 <e~ f,~>8 <e~ f,~>2 |
+    <e f,>1 |
+    
+    r4. g,8 e'4 f8 e8-. |
+    r8 c4.~ c4 r4 |
+    r4. g8 e'4 f8 e8-. |
+    r8 c4. \grace { bes16 c } bes8 as g f |
+    e4 r8 g8 e'4 f8 e8-. |
+    r8 c4. bes as |
+    bes8 c4 c8~ c2 |
 
   }
 }
@@ -80,8 +101,8 @@ staffLeft = {
   \clef bass
 
   \relative c' {
-    g2_\fbregz as2 |
-    g2 as2 |
+    << { r4 e r e } \\ { g,2_\fbregz as2 } >> |
+    << { r4 e' r e } \\ { g,2 as2 } >> |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
@@ -118,8 +139,6 @@ staffLeft = {
     f'2 a,8 bes a f~ |
     f2 r2 |
     
-    \bar "||"
-    
     bes'8 bes, c d r8 dis8 r8 e8~ |
     e2 f2 |
     bes8 bes, c d r8 dis r e~ |
@@ -137,9 +156,32 @@ staffLeft = {
     g1~ |
     g2 r2 |
     
+    \clef treble
     
+    c''8 c, d e r8 f8 r8 ges~ |
+    ges2 as2 |
+    bes8 a g f8~ f8 f4 e8~ |
+    e1
     
+    \clef bass
     
+    c8 c, d e r8 f r g~ |
+    g1
+    
+    << { r8 as8 c e c as c e } \\ { c,1 } >> |
+    << { r8 as'8 c e c as c e } \\ { d,1 } >> |
+    << { r8 g8 c e c g c e } \\ { e,1 } >> |
+    << { r8 f as c as f as c } \\ { bes,1 } >> |
+    << { r8 e g c g e g c } \\ { a,1 } >> |
+    << { r8 as' bes as r8 f g f } \\ { d2 g,2 } >> |
+    << { r8 g'8 c e c g c e } \\ { c,1 } >> |
+    << { r8 g'8 c e c g c e } \\ { c,1 } >> |
+    << { r8 g'8 c e c g c e } \\ { c,1 } >> |
+    << { r8 g'8 c e c g c e } \\ { d,1 } >> |
+    << { r8 g8 c e c g c e } \\ { e,1 } >> |
+    << { r8 g8 c e c g c e } \\ { f,1 } >> |
+    << { r8 g8 c e c g c e } \\ { a,,1 } >> |
+    << { r8 g8 c e c g c e } \\ { d,2 } >> |
     
   }
 }
