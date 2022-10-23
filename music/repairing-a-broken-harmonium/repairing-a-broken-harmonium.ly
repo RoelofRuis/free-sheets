@@ -62,8 +62,10 @@ staffRight = {
 
     << { d'4 es8 d8 r8 bes8 r8 c~ } \\ { f,4. fis8 r8 g8 r8 g~ } >> |
     << { c8 d c f~ f4 fis } \\ { g,4. a8~ a4 a4 } >> |
-    << { g'4 a8 g r8 d8 r8 cis~ } \\ { bes2 r8 bes8 r8 a~ } >> |
-    << { cis d e f~ f4 e } \\ { a,4. a8~ a4 g } >> |
+    << { g'4 a8 g r8 d8 r8 c~ } \\ { bes2 r8 bes8 r8 bes~ } >> |
+    << { c2. r4 } \\ { bes2. r4 } >> |
+    << { f'4 e8 fis8 r8 d8 r8 cis~ } \\ { c4. c8 r8 c8 r8 a~ } >> |
+    << { cis8 d e f~ f4 e } \\ { a,4. a8~ a4 g } >> |
     << { d'1~ } \\ { g,1~ } >> |
     << { d'1~ } \\ { g,2 \grace { f16 g } f8 e d c } >> |
     << { d'1~ } \\ { b,1~ } >> |
@@ -75,6 +77,8 @@ staffRight = {
     << { c1 } \\ { as1 } >> |
     << { e'4 f8 e r8 c8 r8 <c~ e~> } \\ { g4. gis8 r8 a8 r8 as~ } >> |
     << { <c~ e~>2 d2 } \\ { as1 } >> |
+    << { c1 } \\ { g1 } >> |
+    r1 |
 
     r4. g8 e'4 f8 e8-. |
     r8 c4.~ c4 r4 |
@@ -90,7 +94,7 @@ staffRight = {
     r4. g8 e'4 f8 e8-. |
     r8 c4. \grace { bes16 c } bes8 as g f |
     e4 r8 g8 e'4 f8 e8-. |
-    r8 c4. bes as |
+    r8 c4. bes4 as |
     bes8 c4 c8~ c2 |
 
   }
@@ -122,16 +126,16 @@ staffLeft = {
     << { r8 f as c as f as c } \\ { bes,1 } >> |
     << { as'4. g8~ g2~ } \\ { c,4. c8~ c2 } >> |
     << { g'2. r4 } \\ { bes,8 c r8 c8~ c4 r4 } >> |
-    << { r8 es c' es, bes' es, c' es, } \\ { as,1 } >> |
-    << { r8 f' d' f, c' f, d' f, } \\ { bes,1 } >> |
-    << { r8 g' e' g, d' g, e' g, } \\ { c,1~ } >> |
-    << { r8 g' e' g, d' g, c g } \\ { c,1 } >> |
-    << { r8 es c' es, bes' es, c' es, } \\ { as,1 } >> |
-    << { r8 f' d' f, c' f, d' f, } \\ { bes,1 } >> |
+    << { r8 es fes es c' es, fes es } \\ { as,1 } >> |
+    << { r8 f' ges f d' f, ges f } \\ { bes,1 } >> |
+    << { r8 g' as g c g as g } \\ { c,1~ } >> |
+    << { r8 g' as g c g as g } \\ { c,1 } >> |
+    << { r8 es fes es c' es, fes es } \\ { as,1 } >> |
+    << { r8 f' ges f d' f, ges f } \\ { bes,1 } >> |
     << { r8 g'8 bes g as g bes g } \\ { c,1 } >> |
     << { r8 g'8 as g bes g as g } \\ { c,1 } >> |
-    << { r8 es c' es, bes' es, c' es, } \\ { as,1 } >> |
-    << { r8 f' d' f, c' f, d' f, } \\ { bes,1 } >> |
+    << { r8 es fes es c' es, fes es } \\ { as,1 } >> |
+    << { r8 f' ges f d' f, ges f } \\ { bes,1 } >> |
     << { r8 g' d' g, c g d' g, } \\ { b,!1 } >> |
     c8~ <c~ g'~> <c g' d'>4 bes8~ <bes~ f'~> <bes f'~ c'~>4 |
     <a~ f'~ c'>1 |
@@ -149,16 +153,18 @@ staffLeft = {
     d8 es d bes r2 |
     bes'8 a g ges r8 f8 r8 e~ |
     e8 d e f~ f4 es |
-    d8 g, a bes r8 g8 r8 a~ |
+    d8 g, a bes r8 g8 r8 c~ |
+    c c, d e f g a bes |
+    a bes c d8 r8 fis, g a~ |
     a8 b! cis d~ d4 c~ |
     c2 b8 c b g~ |
     g1~ |
-    g1~ |
-    g2 r2 |
+    g1 |
+    g,2 r2 |
     
     \clef treble
     
-    c''8 c, d e r8 f8 r8 ges~ |
+    c'''8 c, d e r8 f8 r8 ges~ |
     ges2 as2 |
     bes8 a g f8~ f8 f4 e8~ |
     e1
@@ -166,9 +172,11 @@ staffLeft = {
     \clef bass
     
     c8 c, d e r8 f r g~ |
-    g1
+    g8 g, as bes r8 c r8 d8
     
-    << { r8 as8 c e c as c e } \\ { c,1 } >> |
+    << { r8 as'8 c e c as c e } \\ { c,1 } >> |
+    << { r8 as'8 c e c as c e } \\ { c,1 } >> |
+    << { r8 as'8 c e c as c e } \\ { c,1 } >> |
     << { r8 as'8 c e c as c e } \\ { d,1 } >> |
     << { r8 g8 c e c g c e } \\ { e,1 } >> |
     << { r8 f as c as f as c } \\ { bes,1 } >> |
@@ -258,9 +266,9 @@ dynamicsStaff = \new Dynamics {
     \new PianoStaff \with {
       \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (padding . 1))
     } <<
-      \new Staff = "right" \with {midiInstrument = "harmonica"} \staffRight
+      \new Staff = "right" \with {midiInstrument = "bright acoustic"} \staffRight
       \dynamicsStaff
-      \new Staff = "left" \with {midiInstrument = "harmonica"} \staffLeft
+      \new Staff = "left" \with {midiInstrument = "bright acoustic"} \staffLeft
     >>
 
     \layout {}
