@@ -1,5 +1,3 @@
-*english below*
-
 ### Gratis Bladmuziek
 
 Lilypond bronbestanden voor mijn composities die gratis zijn te verkrijgen.
@@ -15,11 +13,12 @@ Veel dank aan [NOVAM Nederland](http://novam.net) voor het publiekelijk aanbiede
 
 Heb je vragen of opmerkingen? Stuur me een mailtje op `roelof.ruis+bladmuziek@gmail.com`
 
-Wil je de bladmuziek genereren en beschik je over een systeem met Linux, lees dan onderaan verder bij 'Creating the sheet music'.
+Wil je de bladmuziek genereren en beschik je over een systeem met Linux, lees dan [generating sheet music](generate.md).
 
 #### Licentie
 Alle hier verzamelde werken zijn uitgebracht onder de [Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal (CC BY-ND 4.0) licentie](https://creativecommons.org/licenses/by-nd/4.0/).
 
+#
 
 ### Free Sheet Music
 
@@ -36,18 +35,7 @@ Many thanks go out to [NOVAM Nederland](http://novam.net) for showcasing my comp
 
 Do you have questions or comments? Send me a mail at `roelof.ruis+bladmuziek@gmail.com`
 
-If you want to generate the sheet music and you have a Linux machine, then read on at 'Creating the sheet music'
+If you want to generate the sheet music, and you have a Linux machine, then please read the instructions in [generating sheet music](generate.md).
 
 #### License
 All sheet music in this repository is published under the [Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) license](https://creativecommons.org/licenses/by-nd/4.0/).
-
-
-## Creating the sheet music
-
-Use the `publish.sh` script to publish music. This requires lilypond to be installed (`apt-get install lilypond`).
-
-Running
-```
-./publish.sh TAG
-```
-will produce a folder `pub` containing all the PDFs with the sheet music, the names postfixed with `_TAG`

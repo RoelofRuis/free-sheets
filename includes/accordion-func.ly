@@ -25,8 +25,19 @@ dot = \markup {
   \musicglyph #"accordion.dot"
 }
 
+freebass = \markup {
+  \musicglyph #"accordion.freebass"
+}
+
 discant = \markup {
   \musicglyph #"accordion.discant"
+}
+
+fbregz = ^\markup {
+  \whiteout
+  \combine
+  \freebass
+  \raise #0.5 \dot
 }
 
 regz = ^\markup {
