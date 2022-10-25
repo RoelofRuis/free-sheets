@@ -240,7 +240,7 @@ dynamicsStaff = \new Dynamics {
 
   \paper {
     max-systems-per-page = 5
-    %min-systems-per-page = 5
+    min-systems-per-page = 5
     ragged-last-bottom = ##f
 
     indent = 0.0
@@ -249,7 +249,7 @@ dynamicsStaff = \new Dynamics {
     bookTitleMarkup = \markup {
       \column {
         \general-align #X #DOWN {
-          \epsfile #X #108 #"repairing-a-broken-harmonium.eps"  
+          \epsfile #X #108 #"the-broken-harmonium.eps"  
         }
         \vspace #2
         \fill-line { \fontsize #2 \fromproperty #'header:dedication }
