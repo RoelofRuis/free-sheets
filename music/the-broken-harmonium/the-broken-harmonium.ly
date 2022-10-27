@@ -14,8 +14,15 @@ staffRight = {
   \clef treble
 
   \relative c'' { 
-    r1 |
-    r1 |
+    \partial 4 c8\regz d |
+    es4 d8 es8~ es4 g |
+    f4 es8 d~ d4 bes |
+    g1~ |
+    g2. c,8 d |
+    es4 d8 es8~ es4 g |
+    f4 es8 d~ d4 bes' |
+    g1~ |
+    g1 |
     r1 |
     r1 |
     r4.\regdba g8 e'4 f8 e8-. |
@@ -114,10 +121,18 @@ staffRight = {
 
 staffLeft = {
   \options
-  \clef bass
+  \clef treble
 
   \relative c' {
-    << { r4 e r e } \\ { g,2_\fbregz as2 } >> |
+    \partial 4 r4_\fbregz |
+    <c~ as'~>1 |
+    <c~ as'>1 |
+    <c~ g'~>1 |
+    <c g'>1 |
+    \clef bass
+    <c~ as~>1 |
+    <c as> |
+    << { r4 e r e } \\ { g,2 as2 } >> |
     << { r4 e' r e } \\ { g,2 as2 } >> |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
     << { r8 c e c r8 c e c } \\ { g2 as2 } >> |
@@ -148,11 +163,11 @@ staffLeft = {
     << { r8 g'8 as g bes g as g } \\ { c,1 } >> |
     << { r8 es fes es c' es, fes es } \\ { as,1 } >> |
     << { r8 f' ges f d' f, ges f } \\ { bes,1 } >> |
-    << { r8 g' d' g, c g d' g, } \\ { b,!1 } >> |
+    << { r8 g' as g d' g, as g } \\ { b,!1 } >> |
     c8~ <c~ g'~> <c g' d'>4 bes8~ <bes~ f'~> <bes f'~ c'~>4 |
-    <a~ f'~ c'>1 |
-    <a f'~>1 |
-    f'2 a,8 bes a f~ |
+    <a~ f'~ c'>2 <a~ f'~ >2 |
+    <a f'~>2 f'2~ |
+    f2 a,8 bes a f~ |
     f2 r2 |
     
     bes'8 bes, c d r8 dis8 r8 e8~ |
@@ -240,7 +255,7 @@ dynamicsStaff = \new Dynamics {
 
   \paper {
     max-systems-per-page = 5
-    min-systems-per-page = 5
+    %min-systems-per-page = 5
     ragged-last-bottom = ##f
 
     indent = 0.0
@@ -248,9 +263,8 @@ dynamicsStaff = \new Dynamics {
     
     bookTitleMarkup = \markup {
       \column {
-        \general-align #X #DOWN {
-          \epsfile #X #108 #"the-broken-harmonium.eps"  
-        }
+        \vspace #2
+        \fill-line { \epsfile #X #90 #"the-broken-harmonium.eps" }
         \vspace #2
         \fill-line { \fontsize #2 \fromproperty #'header:dedication }
         \vspace #1
