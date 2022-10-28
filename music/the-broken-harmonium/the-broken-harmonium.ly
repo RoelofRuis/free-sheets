@@ -81,8 +81,8 @@ staffRight = {
     << { g'4 a8 g-. r8 d8 r8 c~ } \\ { bes2 r8 bes8 r8 bes~ } >> |
     << { c2. } \\ { bes2. } >> r4 |
     << { f'8 a g fis8-. r8 d8 } \\ { a4. a8-. r8 c8 } >> r4 |
-    << { cis8 d e f~ f4 e } \\ { a,4. a8~ a4 g~ } >> |
-    << { d'1~ } \\ { g,1~ } >> |
+    << { cis8( d e f~ f4 e } \\ { a,4.( a8~ a4 g~ } >> |
+    << { d'1)~ } \\ { g,1)~ } >> |
     << { d'1~ } \\ { g,2 \grace { f16( g } f8 e d c } >> |
     << { d'1~ } \\ { b,1~ } >> |
     << { d'2. } \\ { b,2.) } >> r4 |
@@ -245,7 +245,7 @@ staffLeft = {
 dynamicsStaff = \new Dynamics {
   \time 4/4
 
-  \partial 4 s4\pp |
+  \partial 4 s4\pp
   s1*6
   s1\< s1 s1\!\mp
   s1*8 s1\< s1\!\mf
@@ -253,6 +253,11 @@ dynamicsStaff = \new Dynamics {
   s2. s4\mf
   s1*7 s2. s4\< s1 s1 s1
   s1\!\> s1 s1 s1 s1\!
+  
+  s1\mp s1*6 s2 s2\< s1\!
+  s1*9 s1\mp s1*3 s1\f
+  s1*19 s1\p
+  
   
 }
 
