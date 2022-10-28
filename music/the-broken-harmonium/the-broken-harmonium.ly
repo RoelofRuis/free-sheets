@@ -67,31 +67,31 @@ staffRight = {
     a1)~ |
     a2 r2 |
     
-    << { d'4 es8 d8-. r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
+    << { d'4 es8( d8)-. r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
     << { bes2 c4\trill bes8 c } \\ { g2 es2 } >> |
-    << { d'4 es8 d8-. r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
+    << { d'4 es8( d8)-. r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
     << { bes2 \times 2/3 { bes'16[( c bes } a g] f[ es d c]) } \\ { g2 r2 } >> |
-    << { d'4 es8 d8-. r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
+    << { d'4 es8( d8)-. r8 bes8 r8 bes~ } \\ { f2 r8 fis8 r8 g~ } >> |
     << { bes2 c4\trill bes8 c } \\ { g2 es2 } >> |
-    << { d'4 bes8 c~ c4 bes } \\ { f4 d8 es~ es2 } >> |
+    << { d'4 bes8( c)~ c4 bes } \\ { f4 d8( es)~ es2 } >> |
     << { bes'2 r16 d,[( es f] g[ a bes c]) } \\ { f,8( g f d) s2 } >> |
 
-    << { d'4 es8 d8-. r8 bes8 r8 c~ } \\ { f,4. fis8-. r8 g8 r8 g~ } >> |
+    << { d'4 es8( d8)-. r8 bes8 r8 c~ } \\ { f,4. fis8-. r8 g8 r8 g~ } >> |
     << { c8 d c f~ f8 r8 fis4 } \\ { g,4. a8~ a8 r8 a4 } >> |
-    << { g'4 a8 g-. r8 d8 r8 c~ } \\ { bes2 r8 bes8 r8 bes~ } >> |
+    << { g'4 a8( g)-. r8 d8 r8 c~ } \\ { bes2 r8 bes8 r8 bes~ } >> |
     << { c2. } \\ { bes2. } >> r4 |
-    << { f'8 a g fis8-. r8 d8 } \\ { a4. a8-. r8 c8 } >> r4 |
+    << { f'8( a g fis8)-. r8 d8 } \\ { a4. a8-. r8 c8 } >> r4 |
     << { cis8( d e f~ f4 e } \\ { a,4.( a8~ a4 g~ } >> |
     << { d'1)~ } \\ { g,1)~ } >> |
     << { d'1~ } \\ { g,2 \grace { f16( g } f8 e d c } >> |
     << { d'1~ } \\ { b,1~ } >> |
     << { d'2. } \\ { b,2.) } >> r4 |
     
-    << { e'4\regezv f8 e-. r8 c8 r8 c~ } \\ { g2 r8 a8 r8 as~ } >> |
+    << { e'4\regezv f8( e)-. r8 c8 r8 c~ } \\ { g2 r8 a8 r8 as~ } >> |
     << { c2 d4\trill c8 d } \\ { as2 ges2 } >> |
     << { e'4( f8 e4 c4 c8~ } \\ { g4.( a4 a4 as8~ } >> |
     << { c1) } \\ { as1) } >> \breathe |
-    << { e'4 f8 e-. r8 c8 r8 e~ } \\ { g,4. gis8-. r8 a8 r8 <c~ as>~ } >> |
+    << { e'4 f8( e)-. r8 c8 r8 e~ } \\ { g,4. gis8-. r8 a8 r8 <c~ as>~ } >> |
     << { <c e>4. d8~ d2 } \\ { <c as>4. <as~ f~>8 <as f>2 } >> |
     << { c1~ } \\ { <g~ e~>1 } >> |
     << { c2 } \\ { <g e>2 } >> r2 |
@@ -114,13 +114,13 @@ staffRight = {
     << { g1~ } \\ { r4 <e~ c~ as~>2. } >> |
     << { g1^\fermata } \\ { <e c as>1 } >> |
 
-    << { e4\regez f8 e-. r8 c8 r8 c~ } \\ { g2 r8 a8 r8 as~ } >> |
+    << { e4\regez f8( e)-. r8 c8 r8 c~ } \\ { g2 r8 a8 r8 as~ } >> |
     << { c2 d4\trill c8 d } \\ { as2 ges2 } >> |
-    << { e'4 f8 e-. r8 c8 r8 c~ } \\ { g2 r8 a8 r8 as~ } >> |
+    << { e'4 f8( e)-. r8 c8 r8 c~ } \\ { g2 r8 a8 r8 as~ } >> |
     << { c1 } \\ { as1 } >> |
-    << { e'4 f8 e-. r8 c8 r8 c~ } \\ { g2 r8 a8 r8 as~ } >> |
+    << { e'4 f8( e)-. r8 c8 r8 c~ } \\ { g2 r8 a8 r8 as~ } >> |
     << { c2 d4\trill c8 d } \\ { as2 ges2 } >> |
-    r4. g8 e'4 f8 e8-. |
+    r4. g8 e'4 f8( e8)-. |
     r4 << { c2. } \\ { e,2. } >> |
 
     \bar "|."
