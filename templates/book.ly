@@ -1,5 +1,6 @@
 \version "2.20.0"
 
+\include "../shared_includes.ly"
 % \include "../../includes/accordion-func.ly"
 
 options = {
@@ -40,7 +41,7 @@ dynamicsStaff = \new Dynamics {
     description = ""
     info = ""
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
-    projecturl = "https://github.com/RoelofRuis/free-sheets"
+    projecturl = /githuburl
     version = "" % e.g. January 2022
   }
 

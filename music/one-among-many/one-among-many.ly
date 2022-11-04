@@ -1,5 +1,6 @@
 \version "2.20.0"
 
+\include "../shared_includes.ly"
 \include "../../includes/accordion-func.ly"
 
 staffAccordionRight = {
@@ -412,7 +413,7 @@ dynamicsStaff = \new Dynamics {
     description = "A jazz piece starting with a soothing melody and slowly evolving central part. I tried to combine the left and right hands to create an interesting rythmic movement."
     info = "For standard bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
-    projecturl = "https://github.com/RoelofRuis/free-sheets"
+    projecturl = \githuburl
     version = "January 2021"
   }
 
@@ -462,7 +463,7 @@ dynamicsStaff = \new Dynamics {
       \fill-line {
         \center-column {
           \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - sheetmusic.roelofruis.nl }
+          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
         }
       }
     }  
