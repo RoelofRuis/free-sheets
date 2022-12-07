@@ -1,5 +1,6 @@
 \version "2.20.0"
 
+\include "../shared_includes.ly"
 \include "../../includes/accordion-func.ly"
 
 options = {
@@ -97,7 +98,7 @@ dynamicsStaff = \new Dynamics {
     description = "This piece is a tiny exploration of the possibilities of standard bass accompanyment to a single voice melody."
     info = "For Standard Bass - Difficulty: Medium"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
-    projecturl = "https://github.com/RoelofRuis/free-sheets"
+    projecturl = \githuburl
     version = "September 2022"
   }
 
@@ -141,7 +142,7 @@ dynamicsStaff = \new Dynamics {
       \fill-line {
         \center-column {
           \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis }
+          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
         }
       }
     }  

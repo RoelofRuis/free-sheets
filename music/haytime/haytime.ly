@@ -1,5 +1,6 @@
 \version "2.20.0"
 
+\include "../shared_includes.ly"
 \include "../../includes/accordion-func.ly"
 
 options = {
@@ -497,7 +498,7 @@ dynamicsStaff = \new Dynamics {
     description = "A sunny day during the Norwegian haying season. The air is warm but damp. Farmers cut the grass and rake it into piles to dry."
     info = "For Standard Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
-    projecturl = "https://github.com/RoelofRuis/free-sheets"
+    projecturl = \githuburl
     version = "May 2022"
   }
 
@@ -542,7 +543,7 @@ dynamicsStaff = \new Dynamics {
       \fill-line {
         \center-column {
           \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis }
+          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
         }
       }
     }  

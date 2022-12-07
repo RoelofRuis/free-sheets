@@ -4,10 +4,13 @@ Lilypond bronbestanden voor mijn composities die gratis zijn te verkrijgen.
 
 Alle bestanden hier zijn geschreven in Lilypond, een soort programmeertaal waaruit vervolgens bladmuziek gegenereerd wordt. Lees er meer over op [Lilypond.org](http://lilypond.org/)
 
+Een overzicht van alle stukken met downloadlinks zijn te vinden op [deze pagina](https://roelofruis.github.io/free-sheets/).
+
 **Wat staat waar?**
 - `music` bevat mappen met de individuele composities.
 - `includes` bevat bestanden die kunnen worden geïmporteerd.
 - `templates` bevat bestanden die als basis kunnen worden gebruikt voor nieuwe stukken.
+- `pub` bevat de uiteindelijk gepubliceerde bestanden.
 
 Veel dank aan [NOVAM Nederland](http://novam.net) voor het publiekelijk aanbieden van mijn composities.
 
@@ -26,10 +29,13 @@ Lilypond source files for my compositions that are obtainable free of charge.
 
 All sheet music is written in Lilypond, a kind of programming language from which the actual sheet music is generated. Read more about it over at [Lilypond.org](http://lilypond.org/)
 
+An overview of all the pieces with download links can be found on [this page](https://roelofruis.github.io/free-sheets/).
+
 **What's where?**
 - `music` contains folders with the individual compositions.
 - `includes` contains files to be included in scores.
 - `templates` contains files that serve as basis for new pieces.
+- `pub` contains the final published files.
 
 Many thanks go out to [NOVAM Nederland](http://novam.net) for showcasing my compositions.
 
