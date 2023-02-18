@@ -1,5 +1,6 @@
 \version "2.20.0"
 
+\include "../shared_includes.ly"
 \include "../../includes/accordion-func.ly"
 
 rightHand = \new Staff {
@@ -114,7 +115,7 @@ leftHand = \new Staff {
     description = "One of a series of songs I wrote for one of my students for practicing with the free-bass system. Notice the two hands playing in different keys."
     info = "For free bass - Difficulty: Medium/Easy"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
-    projecturl = "https://github.com/RoelofRuis/free-sheets"
+    projecturl = \githuburl
     version = "January 2021"
   }
 
@@ -157,7 +158,7 @@ leftHand = \new Staff {
       \fill-line {
         \center-column {
           \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - sheetmusic.roelofruis.nl }
+          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
         }
       }
     }  

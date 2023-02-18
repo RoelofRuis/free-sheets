@@ -1,5 +1,6 @@
 \version "2.20.0"
 
+\include "../shared_includes.ly"
 % \include "../../includes/accordion-func.ly"
 
 options = {
@@ -10,12 +11,15 @@ options = {
 
 staffRight = {
   \options
+  \clef treble
 
+  % \relative c'' { }
   % add music
 }
 
 staffLeft = {
   \options
+  \clef bass
 
   % add music
 }
@@ -36,9 +40,9 @@ dynamicsStaff = \new Dynamics {
     year = ""
     description = ""
     info = ""
-    permission = ""
-    projecturl = ""
-    version = ""
+    permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
+    projecturl = /githuburl
+    version = "" % e.g. January 2022
   }
 
   \paper {
@@ -92,7 +96,9 @@ dynamicsStaff = \new Dynamics {
       breakbefore = ##t
     }
 
-    \new PianoStaff <<
+    \new PianoStaff \with {
+      % \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (padding . 1))
+    } <<
       \new Staff = "right" \with {midiInstrument = "bright acoustic"} \staffRight
       \dynamicsStaff
       \new Staff = "left" \with {midiInstrument = "bright acoustic"} \staffLeft

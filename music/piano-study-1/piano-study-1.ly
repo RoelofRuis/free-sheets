@@ -1,5 +1,7 @@
 \version "2.20.0"
 
+\include "../shared_includes.ly"
+
 staffOptions = {
   \numericTimeSignature
   \tempo 4=160
@@ -79,7 +81,7 @@ staffPianoRight = \new Staff <<
     description = ""
     info = ""
     permission = ""
-    projecturl = ""
+    projecturl = \githuburl
     version = ""
   }
 
@@ -122,7 +124,7 @@ staffPianoRight = \new Staff <<
       \fill-line {
         \center-column {
           \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - sheetmusic.roelofruis.nl }
+          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
         }
       }
     }  

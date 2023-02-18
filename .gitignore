@@ -1,5 +1,6 @@
-pub/
+.idea/
 
 music/**/*.pdf
 music/**/*.midi
 music/**/*.mid
+music/**/*.eps
