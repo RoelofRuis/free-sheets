@@ -9,25 +9,37 @@ options = {
 
 staffLyrics = \relative c'' {
   R2*6 |
-  r4. f8 |
-  e d a f |
-  e8.[ f16] e8 d' |
-  a8. f16 a[( f]) e[( f]) |
-  d4 r8 f'8 |
-  e d a f |
-  e8.[ f16 e8] d' |
-  a8.[ f16] a[( f]) e[( f]) |
-  d4 r8 c |
-  f f f f |
-  g8.[ a16 g8] a |
-  c16([ bes) a8] g8[ a16( bes)] |
-  a4 r8 f8 |
-  bes bes bes bes |
-  c8.[ d16 c8] d |
-  f16( es) d8 c8. d16 |
-  bes4 r4 |
-  r2 |
   
+  \repeat volta 2 {
+    r4. f8 |
+    e d a f |
+    e8.[ f16] e8 d' |
+    a8. f16 a[( f]) e[( f]) |
+    d4 r8 f'8 |
+    e d a f |
+    e8.[ f16 e8] d' |
+    a8.[ f16] a[( f]) e[( f]) |
+    d4 r8 c |
+    f f f f |
+    g8.[ a16 g8] a |
+    c16([ bes) a8] g8[ a16( bes)] |
+    a4 r8 f8 |
+    bes bes bes bes |
+    c8.[ d16 c8] d |
+    f16( es) d8 c8. d16 |
+    bes4 r4 |
+    r2 |
+    r4. d8 |
+    bes8. g16 e8 d' |
+    a8.( f16) d8 f16( g) |
+    a8 a a b16( cis) |
+    d4 r8 d |
+    bes8. g16 e8 d' |
+    a8.( f16) d8 f16( g) |
+    a8 a a a |
+    d4 r4 |
+    R2*5 |
+  }
   
 }
 
@@ -35,7 +47,10 @@ text = \lyricmode {
   Fremd bin ich ein -- ge -- zo - gen, fremd zieh ich wie -- der aus.
   Der Mai war mir ge -- wo - gen mit man -- chem Blu -- men strauß.
   Das Mäd -- chen sprach von Lie - be, die Mut -- ter gar von Eh,
-  das Mäd -- chen sprach von Lie - be, die Mut -- ter gar von Eh -
+  das Mäd -- chen sprach von Lie - be, die Mut -- ter gar von Eh
+  
+  nun ist die Welt so trü -- be, der Weg ge -- hüllt in Schnee,
+  nun ist die Welt so trü -- be, der Weg ge -- hüllt in Schnee.
   
 }
 
@@ -43,26 +58,47 @@ staffRight = \relative c'' {
   \options
   \clef treble
 
-  r4. f8(
+  r4. f8( |
   e d a) f16.[(->\fp e32] |
   d4.) e8->\fp( |
   d4.) <d bes' d>8->( |
   <a d f a>4) g'16( f e\prall d) |
   d8 d cis cis |
-  <d a f>8 <f d'> <f d'> <f d'> |
-  <f d'>8 <f d'> <f d'> <f d'> |
-  <e g d'>8 <e g d'>8 <e g d'>8 <e g d'>8 |
-  <f a d>8 <a f'> <f a d> <g a cis> |
-  <f a d>8 <f d'> <f d'> <f d'> |
-  <f d'>8 <f d'> <f d'> <f d'> |
-  <e g d'>8 <e g d'>8 <e g d'>8 <e g d'>8 |
-  <f a d>8 <a f'> <f a d> <g a cis> |
-  <f a d>8 <f d'> <g c?> <e bes'> |
-  <f a>8 f16 g <f a>8 <f b> |
-  <f c'>8 <f c'> <e c'> <f c'> |
-  <e c'> <f c'> <f g c> <e g c> |
   
-
+  \repeat volta 2 {
+    <d a f>8 <f d'> <f d'> <f d'> |
+    <f d'>8 <f d'> <f d'> <f d'> |
+    <e g d'>8 <e g d'>8 <e g d'>8 <e g d'>8 |
+    <f a d>8 <a f'> <f a d> <g a cis> |
+    <f a d>8 <f d'> <f d'> <f d'> |
+    <f d'>8 <f d'> <f d'> <f d'> |
+    <e g d'>8 <e g d'>8 <e g d'>8 <e g d'>8 |
+    <f a d>8 <a f'> <f a d> <g a cis> |
+    <f a d>8 <f d'> <g c?> <e bes'> |
+    <f a>8 f16 g <f a>8 <f b> |
+    <f c'>8 <f c'> <e c'> <f c'> |
+    <e c'> <f c'> <f g c> <e g c> |
+    <f a c>8 <f a>( <e bes'> <es f c'>) |
+    <d f d'>8 bes'16 c <bes d>8 <bes e> |
+    <bes f'>8 <bes f'> <a f'> <bes f'> |
+    <a f'>8 <bes f'> <bes c f> <a c f> |
+    <bes d f> <bes d> <bes d> <bes d> |
+    <e, e'>8. <f f'>16 <e e'>8 r8 |
+    <a a'>8. <bes bes'>16 <a a'>8 r8 |
+    <e e'>8. <f f'>16 <e e'>8 r8 |
+    <a a'>8. <bes bes'>16 <a a'>8 <f a> |
+    <f a> <f a d> <g a e'> <g a> |
+    <f a d> <f a> <f a d> <f a f'> |
+    <e e'>8. <f f'>16 <e e'>8 r8 |
+    <a a'>8. <bes bes'>16 <a a'>8 <f a> |
+    <f a> <f a f'> <g a e'> <g a cis> |
+    <a d> r4 f'8( |
+    e d a) f16.[(->\fp e32] |
+    d4.) e8->\fp( |
+    d4.) <d bes' d>8->( |
+    <a d f a>4) g'16( f e\prall d) |
+    d8 d cis cis |
+  }
 
 }
 
@@ -76,19 +112,43 @@ staffLeft = \relative c {
   <d f a>8 <d f a> <d f a> <g, d' g>-> |
   <a d f>8 <a d f> <bes d g> <bes d g> |
   <a f' a>8 <a f' a> <a e' a> <a e' a> |
-  \bar "||"
+
   \break
   
-  <d, d'>8 <d' a'> <d a'> <d a'> |
-  <d a'> <d a'> <d a'> <d a'> |
-  <d bes'> <d bes'> <d bes'> <d bes'> |
-  <d a'> <d a'> <a a'> <a a'> |
-  <d a'> <d a'> <d a'> <d a'> |
-  <d a'> <d a'> <d a'> <d a'> |
-  <d bes'> <d bes'> <d bes'> <d bes'> |
-  <d a'> <d a'> <a a'> <a a'> |
-  <d a'> <d a'> <e g> <c c'> |
-  
+  \repeat volta 2 {
+    <d, d'>8 <d' a'> <d a'> <d a'> |
+    <d a'> <d a'> <d a'> <d a'> |
+    <d bes'> <d bes'> <d bes'> <d bes'> |
+    <d a'> <d a'> <a a'> <a a'> |
+    <d a'> <d a'> <d a'> <d a'> |
+    <d a'> <d a'> <d a'> <d a'> |
+    <d bes'> <d bes'> <d bes'> <d bes'> |
+    <d a'> <d a'> <a a'> <a a'> |
+    <d a'> <d a'> <e g> <c c'> |
+    <f c'> <f a> <d a'> <d g> |
+    <c g> <c g> <c g> a |
+    g a16 bes c8 c |
+    << { s4 g'8 a } \\ { f,8 f'4. } >> |
+    <bes, f' bes>8 <bes' d> <g d'> <g c> |
+    <f c'> <f c'> <f c'> d |
+    c8 d16 es f8 f, |
+    <bes f> <d bes' d> <f bes d> <bes d> |
+    <g bes d> <g bes d> <g bes d> <g bes d> |
+    <f a d> <f a d> <f a d> <f a d> |
+    <g bes d> <g bes d> <g bes d> <g bes d> |
+    <f a d> <f a d> <f a d> <a, a'> |
+    a a a e'16. f32 |
+    <d a'>8 <d a' d> <d a' d> <d a' d> |
+    <g bes d> <g bes d> <g bes d> <g bes d> |
+    <f a d> <f a d> <f a d> <a, a'> |
+    a a a e'16. f32 |
+    <d a' f'>8_- <d a' f'>_- <d a' f'>_- <d a' f'>_- |
+    <d a' f'>8_- <d a' f'>_- <d a' f'>_- <d g bes cis>_- |
+    <d f a>8 <d f a> <d f a> <d g bes cis> |
+    <d f a>8 <d f a> <d f a> <g, d' g>-> |
+    <a d f>8 <a d f> <bes d g> <bes d g> |
+    <a f' a>8 <a f' a> <a e' a> <a e' a> |
+  }
   
 }
 
