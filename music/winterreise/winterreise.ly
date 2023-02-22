@@ -41,6 +41,19 @@ staffLyrics = \relative c'' {
     R2*5 |
   }
   
+  r4. f8 |
+  e8 d a f |
+  e8. g16 bes8 d |
+  a8 f16( g) a8 b16( cis) |
+  d4 r8 f8 |
+  e8 d a f |
+  e8. g16 bes8 d |
+  a8 f16( g) a8 b16( cis) |
+  d4 r8 e, |
+  f8 f f f |
+  g8. a16 g8 a |
+  
+  
 }
 
 text = \lyricmode {
@@ -172,8 +185,8 @@ staffLeft = \relative c {
 
 \paper {
   indent = 0.0
-  %ragged-last-bottom = ##f
-  %print-all-headers = ##f
+  ragged-last-bottom = ##f
+  print-all-headers = ##f
   %max-systems-per-page = 6
 }
 
