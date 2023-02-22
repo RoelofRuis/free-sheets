@@ -54,6 +54,17 @@ text = \lyricmode {
   
 }
 
+textTwo = \lyricmode {
+  Ich kann zu mei -- ner Rei - sen nicht wäh -- len mit der Zeit,
+  muß selbst den Weg mir wei - sen in die -- ser Dun -- kel -- heit.
+  
+  Es zieht ein Mon -- den -- schat - ten als mein Ge -- fähr -- te mit,
+  es zieht ein Mon -- den -- schat - ten als mein Ge -- fähr -- te mit,
+  
+  und auf den wei -- ßen Mat -- ten such ich des Wil -- des Tritt,
+  und auf den wei -- ßen Mat -- ten such ich des Wil -- des Tritt.
+}
+
 staffRight = \relative c'' {
   \options
   \clef treble
@@ -173,6 +184,7 @@ staffLeft = \relative c {
       \new Voice = "lyrics" \staffLyrics
     }
     \new Lyrics \lyricsto "lyrics" \text
+    \new Lyrics \lyricsto "lyrics" \textTwo
     \new PianoStaff <<
       \new Staff = "right" \with { midiInstrument = "acoustic grand"} \staffRight
       \new Staff = "right" \with { midiInstrument = "acoustic grand"} \staffLeft
