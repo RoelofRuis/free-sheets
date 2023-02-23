@@ -8,71 +8,100 @@ options = {
 }
 
 staffLyrics = \relative c'' {
+  \numericTimeSignature
+  \autoBeamOff
+  \time 2/4
+  \key d \minor
   R2*6 |
   
   \repeat volta 2 {
     r4. f8 |
     e d a f |
-    e8.[ f16] e8 d' |
+    e8.[( f16]) e8 d' |
     a8. f16 a[( f]) e[( f]) |
     d4 r8 f'8 |
     e d a f |
-    e8.[ f16 e8] d' |
-    a8.[ f16] a[( f]) e[( f]) |
+    e8.[( f16]) e8 d' |
+    a8. f16 a[( f]) e[( f]) |
     d4 r8 c |
     f f f f |
-    g8.[ a16 g8] a |
-    c16([ bes) a8] g8[ a16( bes)] |
+    g8.[( a16]) g8 a |
+    c16([ bes]) a8 g8 a16[( bes)] |
     a4 r8 f8 |
     bes bes bes bes |
-    c8.[ d16 c8] d |
-    f16( es) d8 c8. d16 |
+    c8.[( d16]) c8 d |
+    f16[( es]) d8 c8. d16 |
     bes4 r4 |
     r2 |
     r4. d8 |
     bes8. g16 e8 d' |
-    a8.( f16) d8 f16( g) |
-    a8 a a b16( cis) |
+    a8.[( f16]) d8 f16[( g]) |
+    a8 a a b16[( cis]) |
     d4 r8 d |
     bes8. g16 e8 d' |
-    a8.( f16) d8 f16( g) |
+    a8.[( f16]) d8 f16[( g]) |
     a8 a a a |
-    d4 r4 |
+    d,4 r4 |
     R2*5 |
   }
   
-  r4. f8 |
+  r4. f'8 |
   e8 d a f |
-  e8. g16 bes8 d |
-  a8 f16( g) a8 b16( cis) |
+  e8.[( g16]) bes8 d |
+  a8 f16[( g]) a8 b16[( cis]) |
   d4 r8 f8 |
   e8 d a f |
-  e8. g16 bes8 d |
-  a8 f16( g) a8 b16( cis) |
+  e8.[( g16]) bes8 d |
+  a8 f16[( g]) a8 b16[( cis]) |
   d4 r8 e, |
   f8 f f f |
-  g8. a16 g8 a |
+  g8.[( a16]) g8 a |
+  c16[( bes]) a8 g a16[( bes]) |
+  a4 r8 f8 |
+  bes8 bes bes bes |
+  c8.[( d16]) c8 d |
+  f16[( es]) d8 c8. d16 |
+  bes4 r4 |
+  r2 |
+  r4. d8 |
+  bes8. g16 e8 d' |
+  a8.[( f16]) d8 a' |
+  a8 d e cis |
+  d4 r8 d |
+  bes8. g16 e8 d' |
+  a8.[( f16]) d8 a' |
+  a8 f' e cis |
+  d4 r4 |
+  R2*5 |
+  \bar "||"
   
+  \key d \major
   
 }
 
 text = \lyricmode {
-  Fremd bin ich ein -- ge -- zo - gen, fremd zieh ich wie -- der aus.
-  Der Mai war mir ge -- wo - gen mit man -- chem Blu -- men strauß.
-  Das Mäd -- chen sprach von Lie - be, die Mut -- ter gar von Eh,
-  das Mäd -- chen sprach von Lie - be, die Mut -- ter gar von Eh
+  Fremd bin ich ein -- ge -- zo -- gen, fremd zieh ich wie -- der aus.
+  Der Mai war mir ge -- wo -- gen mit man -- chem Blu -- men strauß.
+  Das Mäd -- chen sprach von Lie -- be, die Mut -- ter gar von Eh,
+  das Mäd -- chen sprach von Lie -- be, die Mut -- ter gar von Eh
   
   nun ist die Welt so trü -- be, der Weg ge -- hüllt in Schnee,
   nun ist die Welt so trü -- be, der Weg ge -- hüllt in Schnee.
   
+  Was soll ich läng -- er wei -- len, daß man mich trieb hin -- aus?
+  Laß ir -- re Hun -- de heu -- len vor ih -- res Her -- ren -- Haus!
+  
+  Die Lie -- be liebt das Wan -- dern Gott hat sie so ge -- macht
+  von ei -- nem zu den an -- dern Gott hat sie so ge -- macht
+  
 }
 
 textTwo = \lyricmode {
-  Ich kann zu mei -- ner Rei - sen nicht wäh -- len mit der Zeit,
-  muß selbst den Weg mir wei - sen in die -- ser Dun -- kel -- heit.
+  Ich kann zu mei -- ner Rei -- sen nicht wäh -- len mit der Zeit,
+  muß selbst den Weg mir wei -- sen in die -- ser Dun -- kel -- heit.
   
-  Es zieht ein Mon -- den -- schat - ten als mein Ge -- fähr -- te mit,
-  es zieht ein Mon -- den -- schat - ten als mein Ge -- fähr -- te mit,
+  Es zieht ein Mon -- den -- schat -- ten als mein Ge -- fähr -- te mit,
+  es zieht ein Mon -- den -- schat -- ten als mein Ge -- fähr -- te mit,
   
   und auf den wei -- ßen Mat -- ten such ich des Wil -- des Tritt,
   und auf den wei -- ßen Mat -- ten such ich des Wil -- des Tritt.
@@ -193,7 +222,6 @@ staffLeft = \relative c {
 \score {
   <<
     \new Staff = "lyrics" \with { midiInstrument = "voice oohs"} {
-      \options
       \new Voice = "lyrics" \staffLyrics
     }
     \new Lyrics \lyricsto "lyrics" \text
