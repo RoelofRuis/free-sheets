@@ -41,7 +41,7 @@ dynamicsStaff = \new Dynamics {
     description = ""
     info = ""
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
-    projecturl = /githuburl
+    projecturl = \githuburl
     version = "" % e.g. January 2022
   }
 
