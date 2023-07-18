@@ -2,6 +2,7 @@
 
 firstVoice = \relative c''' {
   \time 3/4
+  \numericTimeSignature
   \key d \minor
   \clef treble
   
@@ -87,6 +88,7 @@ firstVoice = \relative c''' {
 
 secondVoice = \relative c'' {
   \time 3/4
+  \numericTimeSignature
   \key d \minor
   \clef treble
   
@@ -139,30 +141,89 @@ secondVoice = \relative c'' {
   \time 4/4
   <d f>4 r2. |
   
+}
+
+BookAccOne = \book {
+  \bookOutputName "EtudesTableaux_One" 
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f
+    print-all-headers = ##f
+    %max-systems-per-page = 6
+  }
   
+  \header {
+    title = "Etudes Tableax - V"
+    composer = "Rachmaninoff"
+    instrument = "Accordion 1"
+    tagline = ##f
+  }
   
+  \score {  
+    <<
+      \new Staff {
+        \firstVoice 
+      }
+    >>
+  }
 }
 
-\header {
-  title = "Etudes Tableaux - V"
-  composer = "Rachmaninoff"
-  tagline = ##f
+BookAccTwo = \book {
+  \bookOutputName "EtudesTableaux_Two" 
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f
+    print-all-headers = ##f
+    %max-systems-per-page = 6
+  }
+  
+  \header {
+    title = "Etudes Tableax - V"
+    composer = "Rachmaninoff"
+    instrument = "Accordion 2"
+    tagline = ##f
+  }
+  
+  \score {  
+    <<
+      \new Staff {
+        \secondVoice 
+      }
+    >>
+  }
 }
 
-\paper {
-  indent = 0.0
-  ragged-last-bottom = ##f
-  print-all-headers = ##f
-  max-systems-per-page = 6
+BookFull = \book {
+  \bookOutputName "EtudesTableaux_Full"  
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f
+    print-all-headers = ##t
+    max-systems-per-page = 6
+  }
+  
+  \score {
+    \header {
+      title = "Etudes Tableaux - V"
+      composer = "Rachmaninoff"
+      tagline = ##f
+    }
+    
+    <<
+      \new StaffGroup <<
+        \new Staff = "right" \with { midiInstrument = "acoustic grand"} \firstVoice
+      >>
+      \new StaffGroup <<
+        \new Staff = "right" \with { midiInstrument = "acoustic grand"} \secondVoice
+      >>
+    >>
+  
+    \layout { }
+    
+    \midi { }
+  }
 }
 
-\score {
-  <<
-    \new Staff = "right" \with { midiInstrument = "acoustic grand"} \firstVoice
-    \new Staff = "right" \with { midiInstrument = "acoustic grand"} \secondVoice
-  >>
-
-  \layout { }
-
-  \midi { }
-}
+\BookFull
+%\BookOne
+%\BookTwo
