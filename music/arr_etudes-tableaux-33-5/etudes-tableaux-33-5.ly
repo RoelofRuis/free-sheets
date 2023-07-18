@@ -1,6 +1,6 @@
 \version "2.20"
 
-firstVoice = \relative c''' {
+accordeonOneRight = \relative c''' {
   \time 3/4
   \numericTimeSignature
   \key d \minor
@@ -83,10 +83,46 @@ firstVoice = \relative c''' {
   d,8. a'16 d, a' d, a' d,8. a'16 d,8. a'16 |
   d,1 |
   \bar "|."
-
 }
 
-secondVoice = \relative c'' {
+accordeonOneLeft = \relative c' {
+  \time 3/4
+  \numericTimeSignature
+  \key d \minor
+  \clef bass
+  
+  \partial 16 r16 |
+  R2.*4 |
+  r4 d,-. a-. d,-. |
+  bes'-. a-. g-. f8. e16 |
+  d4-. d'-. a-. d,-. |
+  r8 d'-. c4-. bes-. a8. g16 |
+  f4-. r8 c' d2 |
+  e4. f8 g2 |
+  a4. d8 c a g4~ |
+  g8 c bes g f bes a f |
+  e16 a c e \clef treble f2~ f8. r16 |
+  \time 3/4
+  R2.*5 |
+  \time 4/4
+  \clef bass
+  r4 d,4-. a-. d,-. |
+  bes'-. a-. g-. f8. e16 |
+  d4-. d'-. a-. d,-. |
+  r8 e8 f4 g a |
+  d,8 r8 d r8 r4 d |
+  r4 d8 r16 \clef treble a'' d16 g d g d8 d16 g |
+  d8[ r16 a16] d4 r8. g16 d8 d16 a |
+  d4 bes8 a' bes, bes' bes, c' |
+  bes,8 r8 bes \clef bass bes, r4 d'8~ <d as> |
+  as8 f4 c'8 d, b' es, c' |
+  
+  
+  
+  
+}
+
+accordeonTwoRight = \relative c'' {
   \time 3/4
   \numericTimeSignature
   \key d \minor
@@ -96,16 +132,16 @@ secondVoice = \relative c'' {
   d,4~ d8 d16 a' d,8. a'16 |
   d,4~ d8 d16 a' d,8. a'16 |
   d,4\fermata r8 d16 a d4 |
-  8 d16 a d4 r8 d16 a |
+  r8 d16 a d4 r8 d16 a |
   d8 d16 a d8 d16 a d16 e d a d8 d16 a |
-  d16 g, d' e c8. d16 b8. d16 <cis a>8. e16 |
+  d16 g, d' e c8. d16 bes8. d16 <cis a>8. e16 |
   d8 d16 a d8 d16 a d e d a d8 d16 a |
-  d16 c b g a8. e'16 d8. f16 <e c>8. g16 |
+  d16 c bes g a8. e'16 d8. f16 <e c>8. g16 |
   f8 f16 c f16 e f g <a f>8 <a f>16 <g e> <f d> <g e> <a f> <bes g> |
   <c a>8 <bes g>16 <c a> <d bes> <c a> <d bes> <e c> <d bes>8 <d bes>16 <c a> <bes g> <c a> <d bes> <e c> |
   <f d>8 d16 e f f, a b c a c d e d c d |
   es16 es, g a bes g bes c d g, f g d' f, a bes |
-  r4 f2~ f8. c'16 |
+  r2. r8. c16 |
   \time 3/4
   f,8. c'16 f, c' f, c' f,8. c'16 |
   f,8. c'16 f, c' f, c' f,8. c'16 |
@@ -113,7 +149,7 @@ secondVoice = \relative c'' {
   f,4\fermata r8 d16 a d4 |
   r8 d16 a d4 r8 d16 a |
   d8 d16 a d8 d16 a d e d a d8 d16 a |
-  d16 g, d' e c8. d16 b8. d16 <cis a>8. e16 |
+  d16 g, d' e c8. d16 bes8. d16 <cis a>8. e16 |
   d8 d16 a d8 d16 a d e d a d8 d16 c |
   bes16 a bes c a8. c16 bes8. d16 <cis a>8. e16 |
   d8 d16 a d8 r8 r8. <e a,>16 <f d>4 |
@@ -143,6 +179,14 @@ secondVoice = \relative c'' {
   
 }
 
+accordeonTwoLeft = \relative c'' {
+  \time 3/4
+  \numericTimeSignature
+  \key d \minor
+  \clef bass
+  
+}
+
 BookAccOne = \book {
   \bookOutputName "EtudesTableaux_One" 
   \paper {
@@ -162,7 +206,8 @@ BookAccOne = \book {
   \score {  
     <<
       \new Staff {
-        \firstVoice 
+        \accordeonOneRight 
+        \accordeonOneLeft
       }
     >>
   }
@@ -187,7 +232,8 @@ BookAccTwo = \book {
   \score {  
     <<
       \new Staff {
-        \secondVoice 
+        \accordeonTwoRight 
+        \accordeonTwoLeft
       }
     >>
   }
@@ -211,10 +257,12 @@ BookFull = \book {
     
     <<
       \new StaffGroup <<
-        \new Staff = "right" \with { midiInstrument = "acoustic grand"} \firstVoice
+        \new Staff = "right" \with { midiInstrument = "accoustic grand"} \accordeonOneRight
+        \new Staff = "left" \with { midiInstrument = "accoustic grand"} \accordeonOneLeft
       >>
       \new StaffGroup <<
-        \new Staff = "right" \with { midiInstrument = "acoustic grand"} \secondVoice
+        \new Staff = "right" \with { midiInstrument = "accoustic grand"} \accordeonTwoRight
+        \new Staff = "left" \with { midiInstrument = "accoustic grand"} \accordeonTwoLeft
       >>
     >>
   
