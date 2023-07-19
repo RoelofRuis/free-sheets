@@ -122,7 +122,7 @@ AccOneLeft = \relative c'' {
   \time 4/4
   bes2.~ bes8 a |
   \time 3/4
-  r4 r8 <d f,>16 a <d f,>4 |
+  r4 r8 <d' f,>16 a <d f,>4 |
   r8 <d f,>16 a <d f,>4 r8 <d f,>16 a |
   \time 4/4
   <d f,>4 d,2 f4 |
@@ -161,12 +161,15 @@ AccTwoRight = \relative c'' {
   d,4~ d8 d16 a' d,8. a'16 |
   d,4~ d8 d16 a' d,8. a'16 |
   d,4\fermata r2 |
-  r2.
+  R2.
   
   \time 4/4
-  s1*9 |
+  s1*8 |
+  r4 f2~ f8. c'16 |
   \time 3/4
-  s2.*5 |
+  f,8. c'16 f, c' f, c' f,8. g16 |
+  c,8. g'16 c, g' c, g' c,8. r16 |
+  s2.*3 |
   \time 4/4
   s1*4 |
   r4 r8. a'16 d,4 r8. a'16 |
@@ -201,11 +204,29 @@ AccTwoLeft = \relative c {
   R2.*4
   
   \time 4/4
-  s1*9 |
+  r4 d-. a-. d,-. |
+  bes'-. a-. g-. f8. e16 |
+  d4-. d'-. a-. d,-. |
+  r8 d'-. c4-. bes-. a8. g16 |
+  f4-. r8 c' d2 |
+  e4. f8 g2 |
+  a4. d8 c a g4~ |
+  g8 c bes g f bes a f |
+  e16 a c e r2. |
   \time 3/4
   s2.*5 |
   \time 4/4
-  s1*14 |
+  r4 d,4-. a-. d,-. |
+  bes'-. a-. g-. f8. e16 |
+  d4-. d'-. a-. d,-. |
+  r8 e8 f4 g a |
+  d,8 r8 d r8 r4 d |
+  r4 d8 r16 \clef treble a'' d16 g d g d8 d16 g |
+  d8[ r16 a16] d4 r8. g16 d8 d16 a |
+  d4 bes8 a' bes, bes' bes, c' |
+  bes,8 r8 bes \clef bass bes, r4 d'8~ <d as> |
+  as8 f4 c'8 d, b' es, c' |
+  s1*4 |
   \time 3/4
   s2.*2
   \time 4/4
@@ -223,80 +244,6 @@ AccTwoLeft = \relative c {
   \time 4/4
   s1*4
   \bar "|."
-}
-
-accordeonOneLeft = \relative c' {
-  \time 3/4
-  \numericTimeSignature
-  \key d \minor
-  \clef bass
-
-  \partial 16 s16 |
-  s2.*4 |
-  r4 d,-. a-. d,-. |
-  bes'-. a-. g-. f8. e16 |
-  d4-. d'-. a-. d,-. |
-  r8 d'-. c4-. bes-. a8. g16 |
-  f4-. r8 c' d2 |
-  e4. f8 g2 |
-  a4. d8 c a g4~ |
-  g8 c bes g f bes a f |
-  e16 a c e \clef treble f2~ f8. r16 |
-  \time 3/4
-  R2.*5 |
-  \time 4/4
-  \clef bass
-  r4 d,4-. a-. d,-. |
-  bes'-. a-. g-. f8. e16 |
-  d4-. d'-. a-. d,-. |
-  r8 e8 f4 g a |
-  d,8 r8 d r8 r4 d |
-  r4 d8 r16 \clef treble a'' d16 g d g d8 d16 g |
-  d8[ r16 a16] d4 r8. g16 d8 d16 a |
-  d4 bes8 a' bes, bes' bes, c' |
-  bes,8 r8 bes \clef bass bes, r4 d'8~ <d as> |
-  as8 f4 c'8 d, b' es, c' |
-  
-}
-
-accordeonTwoRight = \relative c'' {
-  \time 3/4
-  \numericTimeSignature
-  \key d \minor
-  \clef treble
-  
-  \partial 16 s16 |
-  s2.*4
-  
-  \time 4/4
-  s1*9
-  \time 3/4
-  f,8. c'16 f, c' f, c' f,8. c'16 |
-  f,8. c'16 f, c' f, c' f,8. c'16 |
-  f,4~ f8 f16 c' f,8. c'16 |
-  f,4\fermata r8 d16 a d4 |
-  r8 d16 a d4 r8 d16 a |
-  d8 d16 a d8 d16 a d e d a d8 d16 a |
-  d16 g, d' e c8. d16 bes8. d16 <cis a>8. e16 |
-  d8 d16 a d8 d16 a d e d a d8 d16 c |
-  bes16 a bes c a8. c16 bes8. d16 <cis a>8. e16 |
-  d8 d16 a d8 r8 r8. <e a,>16 <f d>4 |
-  r8. <e a,>16 <f d>8[ r16 e16] f e f e f8 f16 e |
-  f8[ r16 e16] f4 r8. d16 f8 f16 e |
-  f4 fis g a |
-  bes8 g gis a bes b c ces |
-  bes a as4 g ges |
-  f8 bes b c des d es eses |
-  bes8 c ces es fes4 <f es> |
-  <ges d>4 <fis d> <g d> <gis fis> |
-  <a eis>4 <a f d>8 <g e>16 <a f> <bes f>16 d, f g a g f g |
-  \time 3/4
-  as16 as, c d es c es f g f es f |
-  g16 g, bes c e bes d e? f e d b |
-  \time 4/4
-  c16 a c e c b c b c b c d e8 r8 |
-  
-  
 }
 
 BookAccOne = \book {
@@ -375,10 +322,6 @@ BookFull = \book {
       \new PianoStaff << 
         \new Staff = "right" \with { midiInstrument = "acoustic grand"} \AccTwoRight
         \new Staff = "left" \with { midiInstrument = "acoustic grand"} \AccTwoLeft
-      >>
-      \new StaffGroup <<
-        \new Staff \accordeonOneLeft
-        \new Staff \accordeonTwoRight
       >>
     >>
   
