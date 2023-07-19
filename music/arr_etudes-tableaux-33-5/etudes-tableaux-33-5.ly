@@ -1,6 +1,6 @@
 \version "2.20"
 
-accordeonOneRight = \relative c''' {
+AccOneRight = \relative c''' {
   \time 3/4
   \numericTimeSignature
   \key d \minor
@@ -9,11 +9,179 @@ accordeonOneRight = \relative c''' {
   \partial 16 a16 |
   d,4~ d8 d16 a' d,8. a'16 |
   d,4~ d8 d16 a' d,8. a'16 |
-  d,4\fermata r8 f,16-. e-. f4-. |
-  r8 f16-. e-. f4-. r8 f16-. e-. |
+  d,4\fermata r8 <f, d>16-. <e a,>-. <f d>4-. |
+  r8 <f d>16-. <e a,>-. <f d>4-. r8 <f d>16-. <e a,>-. |
   
   \time 4/4
-  f8-. f16-. e-. f8-. f16-. e-. f-. g-. f-. e-. f8-. f16-. e-. |
+  <f d>8-. <f d>16-. <e a,>-. <f d>8-. <f d>16-. <e a,>-. <f d>-. <g e>-. <f d>-. <e a,>-. <f d>8-. <f d>16-. <e a,>-. |
+  <f d>16 <e g,> <f d> <g e> <e c>8. <f d>16 <d bes>8. <f d>16 <e cis a>8. <g e>16 |
+  <f d>8 <f d>16 <e a,> <f d>8 <f d>16 <e a,> <f d> <g e> <f d> <e a,> <f d>8 <f d>16 <e a,> |
+  <f d>16 <e c> <f bes,> <g g,> <e a,>8. <g e>16 <f d>8. <a f>16 <g e c>8. <bes g>16 |
+  <a f>8 <a f>16 <g c,> <a f> <g e> <a f> <bes g> <a f>8 <a f>16 <g e> <f d> <g e> <a f> <bes g> |
+  <c a>8 <bes g>16 <c a> <d bes> <c a> <d bes> <e c> <d bes>8 <d bes>16 <c a> <bes g> <c a> <d bes> <e c> |
+  <f d>8 d16 e f f, a b c a c d e d c d |
+  es16 es, g a bes g bes c d g, f g d' f, a bes |
+  c8 r16 e a,4~ a8 a16 e' a,8. e'16 |
+  \time 3/4
+  a,8. e'16 a, e' a, e' a,8. e'16 |
+  a,8. e'16 a, e' a, e' a,8. e'16 |
+  a,4~ a8 a16 e' a,8. e'16 |
+  a,4\fermata r8 <f d>16-. <e a,>-. <f d>4 |
+  r8 <f d>16-. <e a,>-. <f d>4 r8 <f d>16-. <e a,>-. |
+  \time 4/4
+  <f d>8-. <f d>16-. <e a,>-. <f d>8-. <f d>16-. <e a,>-. <f d>-. <g e>-. <f d>-. <e a,>-. <f d>8-. <f d>16-. <e a,> |
+  <f d>16-. <e g,> <f d> <g e> <e c>8. <f d>16 <d bes>8. <f d>16 <e cis a>8. <g e>16 |
+  <f d>8 <f d>16 <e a,> <f d>8 <f d>16 <e a,> <f d>16 <g e> <f d> <e a,> <f d>8 <f d>16 <e c> |
+  <d bes>16 <c a> <d bes> <e c> <c a>8. <e c>16 <d bes>8. <f d>16 <e cis a>8. <g e>16 |
+  <f d>8 <f d>16 <e a,> <f d>8 r16 a'16 d,4 r8. a'16 |
+  d,4 r8. <a e>16 <d f,> <a e> <d f,> <a e> <d f,>8 <d f,>16 <a e> |
+  <d f,>8[ r16 <a e>16] <d f,>4 r8. <a e>16 <d f,>8 <d f,>16 <a e> |
+  <d f,>8 r8 r2. |
+  s1*6 |
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1
+  \time 2/4
+  s2 |
+  \time 4/4
+  s1
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1*12
+  \time 3/4
+  s2.*7
+  \time 4/4
+  R1*4
+  \bar "|."
+}
+
+AccOneLeft = \relative c'' {
+  \time 3/4
+  \numericTimeSignature
+  \key d \minor
+  \clef treble
+  
+  \partial 16 r16 |
+  R2.*4 |
+  
+  \time 4/4
+  R1*4 |
+  r2 c4. d8 |
+  e2 f4. g8 |
+  a8 a16 g a8 a16 g a8 g16 f g f e f |
+  g8 g16 f g8 f16 e f e d e f8 e16 d |
+  e8 r4. r2 |
+  \time 3/4
+  R2.*5 |
+  \time 4/4
+  R1*4
+  s1*10 |
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1
+  \time 2/4
+  s2 |
+  \time 4/4
+  s1
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1*12
+  \time 3/4
+  s2.*7
+  \time 4/4
+  R1*4
+  \bar "|."
+}
+
+AccTwoRight = \relative c'' {
+  \time 3/4
+  \numericTimeSignature
+  \key d \minor
+  \clef treble
+  
+  \partial 16 a16 |
+  d,4~ d8 d16 a' d,8. a'16 |
+  d,4~ d8 d16 a' d,8. a'16 |
+  d,4\fermata r2 |
+  r2.
+  
+  \time 4/4
+  s1*9 |
+  \time 3/4
+  s2.*5 |
+  \time 4/4
+  s1*4 |
+  r4 r8. a'16 d,4 r8. a'16 |
+  d,4 r2. |
+  s1*8 |
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1
+  \time 2/4
+  s2 |
+  \time 4/4
+  s1
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1*12
+  \time 3/4
+  s2.*7
+  \time 4/4
+  R1*4
+  \bar "|."
+}
+
+AccTwoLeft = \relative c {
+  \time 3/4
+  \numericTimeSignature
+  \key d \minor
+  \clef bass
+  
+  \partial 16 r16 |
+  R2.*4
+  
+  \time 4/4
+  s1*9 |
+  \time 3/4
+  s2.*5 |
+  \time 4/4
+  s1*14 |
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1
+  \time 2/4
+  s2 |
+  \time 4/4
+  s1
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1*12
+  \time 3/4
+  s2.*7
+  \time 4/4
+  R1*4
+  \bar "|."
+}
+
+accordeonOneRight = \relative c'' {
+  \time 3/4
+  \numericTimeSignature
+  \key d \minor
+  \clef treble
+  
+  \partial 16 s16 |
+  s2.*4
+  
+  \time 4/4
+  f,8-. f16-. e-. f8-. f16-. e-. f-. g-. f-. e-. f8-. f16-. e-. |
   f16 e f g e8. f16 d8. f16 e8. g16 |
   f8 f16 e f8 f16 e f g f e f8 f16 e |
   f16 e f g e8. g16 f8. a16 g8. bes16 |
@@ -90,9 +258,9 @@ accordeonOneLeft = \relative c' {
   \numericTimeSignature
   \key d \minor
   \clef bass
-  
-  \partial 16 r16 |
-  R2.*4 |
+
+  \partial 16 s16 |
+  s2.*4 |
   r4 d,-. a-. d,-. |
   bes'-. a-. g-. f8. e16 |
   d4-. d'-. a-. d,-. |
@@ -128,12 +296,11 @@ accordeonTwoRight = \relative c'' {
   \key d \minor
   \clef treble
   
-  \partial 16 a16 |
-  d,4~ d8 d16 a' d,8. a'16 |
-  d,4~ d8 d16 a' d,8. a'16 |
-  d,4\fermata r8 d16 a d4 |
-  r8 d16 a d4 r8 d16 a |
-  d8 d16 a d8 d16 a d16 e d a d8 d16 a |
+  \partial 16 s16 |
+  s2.*4
+  
+  \time 4/4
+  d,8 d16 a d8 d16 a d16 e d a d8 d16 a |
   d16 g, d' e c8. d16 bes8. d16 <cis a>8. e16 |
   d8 d16 a d8 d16 a d e d a d8 d16 a |
   d16 c bes g a8. e'16 d8. f16 <e c>8. g16 |
@@ -175,15 +342,14 @@ accordeonTwoRight = \relative c'' {
   r4 r8 <d f,>16 a <d f,>4 |
   r8 <d f,>16 a <d f,>4 r8 <d f,>16 a |
   \time 4/4
-  <d f>4 r2. |
+  <d f,>4 r2. |
   
-}
-
-accordeonTwoLeft = \relative c'' {
-  \time 3/4
-  \numericTimeSignature
-  \key d \minor
-  \clef bass
+  r8 <d, f>16 <e a,> <d f>8 <d f>16 <e a,> <d f> <e g> <d f> <e a,> <d f>8 <d f>16 <e a,> |
+  <d f>16 <e g,> <d f> <g e> <e c>8. <g e>16 <d f>8. <f a>16 <g e>8. <bes g>16 |
+  <d, fis a>8 <fis a>16 <e g> <fis a>8 <fis a>16 <e g> <fis a> <e g> <fis a> <g bes> <fis a>8 <d f>16 <e g> |
+  
+  
+  
   
 }
 
@@ -206,8 +372,8 @@ BookAccOne = \book {
   \score {  
     <<
       \new Staff {
-        \accordeonOneRight 
-        \accordeonOneLeft
+        \AccOneRight 
+        \AccOneLeft
       }
     >>
   }
@@ -232,8 +398,8 @@ BookAccTwo = \book {
   \score {  
     <<
       \new Staff {
-        \accordeonTwoRight 
-        \accordeonTwoLeft
+        \AccTwoRight 
+        \AccTwoLeft
       }
     >>
   }
@@ -256,13 +422,18 @@ BookFull = \book {
     }
     
     <<
-      \new StaffGroup <<
-        \new Staff = "right" \with { midiInstrument = "accoustic grand"} \accordeonOneRight
-        \new Staff = "left" \with { midiInstrument = "accoustic grand"} \accordeonOneLeft
+      \new PianoStaff <<
+        \new Staff = "right" \with { midiInstrument = "acoustic grand"} \AccOneRight
+        \new Staff = "left" \with { midiInstrument = "acoustic grand"} \AccOneLeft
+      >>
+      \new PianoStaff << 
+        \new Staff = "right" \with { midiInstrument = "acoustic grand"} \AccTwoRight
+        \new Staff = "left" \with { midiInstrument = "acoustic grand"} \AccTwoLeft
       >>
       \new StaffGroup <<
-        \new Staff = "right" \with { midiInstrument = "accoustic grand"} \accordeonTwoRight
-        \new Staff = "left" \with { midiInstrument = "accoustic grand"} \accordeonTwoLeft
+        \new Staff \accordeonOneRight
+        \new Staff \accordeonOneLeft
+        \new Staff \accordeonTwoRight
       >>
     >>
   
@@ -275,3 +446,37 @@ BookFull = \book {
 \BookFull
 %\BookOne
 %\BookTwo
+
+structure = \relative c'' {
+  \time 3/4
+  \numericTimeSignature
+  \key d \minor
+  \clef treble
+  
+  \partial 16 s16 |
+  s2.*4
+  
+  \time 4/4
+  s1*9 |
+  \time 3/4
+  s2.*5 |
+  \time 4/4
+  s1*14 |
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1
+  \time 2/4
+  s2 |
+  \time 4/4
+  s1
+  \time 3/4
+  s2.*2
+  \time 4/4
+  s1*12
+  \time 3/4
+  s2.*7
+  \time 4/4
+  R1*4
+  \bar "|."
+}
