@@ -40,6 +40,13 @@ fbregz = ^\markup {
   \raise #0.5 \dot
 }
 
+fbrega = ^\markup {
+  \whiteout
+  \combine
+  \freebass
+  \raise #1.5 \dot
+}
+
 regz = ^\markup {
   \whiteout
   \combine
@@ -61,6 +68,13 @@ rega = ^\markup {
   \combine
   \discant
   \raise #1.5 \dot
+}
+
+regac = ^\markup {
+  \whiteout
+  \combine
+  \discant
+  \translate #'(-1 . 0) \raise #1.5 \dot
 }
 
 regzdba = ^\markup {

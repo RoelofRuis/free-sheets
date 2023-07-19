@@ -1,12 +1,14 @@
 \version "2.20"
 
+\include "../../includes/accordion-func.ly"
+
 AccOneRight = \relative c''' {
   \time 3/4
   \numericTimeSignature
   \key d \minor
   \clef treble
   
-  \partial 16 a16 |
+  \partial 16 a16^\rega |
   d,4~ d8 d16 a' d,8. a'16 |
   d,4~ d8 d16 a' d,8. a'16 |
   d,4\fermata r8 <f, d>16-. <e a,>-. <f d>4-. |
@@ -59,7 +61,7 @@ AccOneRight = \relative c''' {
   <f a,>4 r2. |
   r8 <d, f>16 <e a,> <d f>8 <d f>16 <e a,> <d f> <e g> <d f> <e a,> <d f>8 <d f>16 <e a,> |
   <d f>16 <e g,> <d f> <g e> <e c>8. <g e>16 <d f>8. <f a>16 <g e>8. <bes g>16 |
-  <d, fis a>8 <fis a>16 <e g> <fis a>8 <fis a>16 <e g> <fis a> <e g> <fis a> <g bes> <fis a>8 <d f>16 <e g> |
+  <d, fis a>8 <fis a>16 <e g> <fis a>8 <fis a>16 <e g> <fis a> <e g> <fis a> <g bes> <fis a>8 <d fis>16 <e g> |
   <fis a>16 <e g> <fis a> <g bes> <fis a>8. <a c>16 <es g bes>8. <bes' d>16 <es, g c>8. <c' es>16 |
   <d bes f>8 <d bes>16 <c f,> <d bes>8 <d bes>16 <c f,> <d bes>16 <c f,> <bes d,> <c f,> <d bes>16 <c f,> <d bes> <es c> |
   <e cis g>8 <e cis>16 <d b> <e cis> <f d> <e cis> <d b> <e cis>8 <cis a>16 <d b> <e cis> <f d> <fis dis> <g e> |
@@ -90,7 +92,7 @@ AccOneLeft = \relative c'' {
   \key d \minor
   \clef treble
   
-  \partial 16 r16 |
+  \partial 16 r16_\fbrega |
   R2.*4 |
   
   \time 4/4
@@ -157,21 +159,33 @@ AccTwoRight = \relative c'' {
   \key d \minor
   \clef treble
   
-  \partial 16 a16 |
+  \partial 16 a16^\rega |
   d,4~ d8 d16 a' d,8. a'16 |
   d,4~ d8 d16 a' d,8. a'16 |
   d,4\fermata r2 |
   R2.
   
   \time 4/4
-  s1*8 |
-  r4 f2~ f8. c'16 |
+  r4\regza r8 <f d a> r <f d a> r <f d a> |
+  r8 <d f,> r <c e,> r <d bes>r <e cis a> |
+  r8 <f d a> r <f d a> r <f d a> r <f d a> |
+  r4 r8 <e a,> r <f d> r <g e> |
+  r8 <a f c> r4 r8 <c a f> r4 |
+  r8 <e c a> r4 r8 <f d bes> r4 |
+  r8 <a f d>8 r8 d,8 c a g4~ |
+  g8 c bes g f bes a f |
+  e16 a c e f2~ f8. c'16 |
   \time 3/4
   f,8. c'16 f, c' f, c' f,8. g16 |
-  c,8. g'16 c, g' c, g' c,8. r16 |
-  s2.*3 |
+  c,8. g'16 c, g' c, g' c,8. a'16 |
+  d,4~ d8 d16 a' d,8. a'16 |
+  d,2 r4 |
+  R2. |
   \time 4/4
-  s1*4 |
+  r4 r8 <f, d a> r <f d a> r <f d a> |
+  r8 <d f,> r <c e,> r <d bes> r <e cis a> |
+  r8 <f d a> r <f d a> r <f d a> r <f d a> |
+  r4 r8 <e c> r <f d> r <g e> |
   r4 r8. a'16 d,4 r8. a'16 |
   d,4 r2. |
   s1*8 |
@@ -200,7 +214,7 @@ AccTwoLeft = \relative c {
   \key d \minor
   \clef bass
   
-  \partial 16 r16 |
+  \partial 16 r16_\fbrega |
   R2.*4
   
   \time 4/4
@@ -209,12 +223,15 @@ AccTwoLeft = \relative c {
   d4-. d'-. a-. d,-. |
   r8 d'-. c4-. bes-. a8. g16 |
   f4-. r8 c' d2 |
-  e4. f8 g2 |
-  a4. d8 c a g4~ |
-  g8 c bes g f bes a f |
-  e16 a c e r2. |
+  <e a,,>4. f8 g2 |
+  <a d,,>4. r8 r2 |
+  R1*2 |
   \time 3/4
-  s2.*5 |
+  R2. |
+  r2 r8. e'16 |
+  a,4~ a8 a16 e' a,8. e'16 |
+  a,2 r4 |
+  R2. |
   \time 4/4
   r4 d,4-. a-. d,-. |
   bes'-. a-. g-. f8. e16 |
