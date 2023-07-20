@@ -179,7 +179,8 @@ AccTwoRight = \relative c'' {
   d,2 r4 |
   R2. |
   \time 4/4
-  R1*5
+  R1*4
+  r8 f,16 a,~ a8 r8 r8. <a' e'>16 <d f>4 |
   r4 r8. a16 d16 g d g d8 d16 g |
   d8[ r16 a16] d4 r8. g16 d8 d16 a |
   d4 |
