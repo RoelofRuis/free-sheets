@@ -179,12 +179,10 @@ AccTwoRight = \relative c'' {
   d,2 r4 |
   R2. |
   \time 4/4
-  r4 r8 <f, d a> r <f d a> r <f d a> |
-  r8 <d f,> r <c e,> r <d bes> r <e cis a> |
-  r8 <f d a> r <f d a> r <f d a> r <f d a> |
-  r4 r8 <e c> r <f d> r <g e> |
-  r4 r8. a'16 d,4 r8. a'16 |
-  d,4 r2. |
+  R1*5
+  r4 r8. a16 d16 g d g d8 d16 g |
+  d8[ r16 a16] d4 r8. g16 d8 d16 a |
+  d4 |
   s1*8 |
   \time 3/4
   s2.*2
@@ -211,7 +209,7 @@ AccTwoLeft = {
   \key d \minor
   \clef bass
   
-  \partial 16 r16 |
+  \partial 16 r16_\sbass |
   R2.*4
   
   \time 4/4
@@ -220,8 +218,8 @@ AccTwoLeft = {
   <d a,>8-.-> d'\mn d-.-> d'-. a,-.-> d'-. <d a,>-.-> d'-. |
   
   r8 d8-. c-.-> a-.\mn bes,-.-> bes-.\mj a,-.-> c'16-.\mj g, |
-  f,8-.-> f-.\mj r4 f8 d'-.\mn c-. bes,-. |
-  a-. f-.\mj r4 r8 g-.\mn f,-. e,-. |
+  f,8-.-> f-.\mj r4 f8(\mj d')-.\mn c-. bes,-. |
+  a,-. f-.\mj r4 r8 g-.\mn f,-. e,-. |
   d-. d'-.\mn r8 d'-.\mn f-.\mj f,-. c-. c'-.\mj
   es,8-. es-.\mj g,-. g-.\mn bes,-. bes-.\mj d-. r8 |
   a,4 r2. |
@@ -232,14 +230,15 @@ AccTwoLeft = {
   a,2 r4 |
   R2. |
   \time 4/4
-  r4 d,4-. a-. d,-. |
-  bes'-. a-. g-. f8. e16 |
-  d4-. d'-. a-. d,-. |
-  r8 e8 f4 g a |
-  d,8 r8 d r8 r4 d |
-  r4 d8 r16 \clef treble a'' d16 g d g d8 d16 g |
-  d8[ r16 a16] d4 r8. g16 d8 d16 a |
-  d4 bes8 a' bes, bes' bes, c' |
+  r4 d8-.-> d'-. \mn a,-.-> d'-. <d a,>-.-> d'-. |
+  bes,8-.-> bes-.\mj a,-.-> a-.\mn g,-.-> g-.\mn f, a16-.\mj e16 |
+  <d a,>8-.-> d'\mn d-.-> d'-. a,-.-> d'-. <d a,>-.-> d'-. |
+  r8 e,8 f,8-.-> a-.\mn g,-.-> bes-.\mj a,-.-> a\spt |
+  d8 r8 d r8 r8. a,16 d4 |
+  r8. a,16 d8 r8 r2 |
+  r4 d8 r8 r2 |
+  r1 |
+  r4 bes8 a' bes, bes' bes, c' |
   bes,8 r8 bes \clef bass bes, r4 d'8~ <d as> |
   as8 f4 c'8 d, b' es, c' |
   s1*4 |
