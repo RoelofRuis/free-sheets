@@ -7,7 +7,7 @@ AccOneRight = \relative c''' {
   \numericTimeSignature
   \key d \minor
   \clef treble
-  
+
   \partial 16 a16^\rega |
   d,4~ d8 d16 a' d,8. a'16 |
   d,4~ d8 d16 a' d,8. a'16 |
@@ -183,8 +183,12 @@ AccTwoRight = \relative c'' {
   r8 f,16 a,~ a8 r8 r8. <a' e'>16 <d f>4 |
   r4 r8. a16 d16 g d g d8 d16 g |
   d8[ r16 a16] d4 r8. g16 d8 d16 a |
-  d4 |
-  s1*8 |
+  d4 d8 es16 d es8 f16 es fis8 g16 fis |
+  g8 d16 e f8 f,16 gis cis16 d f g as g ges f |
+  d16 cis c b c8 <c f c'> r8 <b f' b> r <c bes'> |
+  r2 << { es16 f as bes ces bes beses as } \\ { s16 f8.~ f8 <f ces~> } >> |
+  << { f16[ e es des] } \\ { ces8 as } >> ces8 r8 as8 r8 r4 |
+  s1*2 |
   \time 3/4
   s2.*2
   \time 4/4
@@ -215,7 +219,7 @@ AccTwoLeft = {
   
   \time 4/4
   r4 d8-.-> d'-.\mn a,-.-> d'-. <d a,>-.-> d'-. |
-  bes,8-.-> bes-.\mj a,-.-> a-.\mn g,-.-> g-.\mn f, a16-.\mj e16 |
+  bes,8-.-> bes-.\mj a,-.-> a-.\mn g,-.-> g-.\mn f, a16-.\mj e,16 |
   <d a,>8-.-> d'\mn d-.-> d'-. a,-.-> d'-. <d a,>-.-> d'-. |
   
   r8 d8-. c-.-> a-.\mn bes,-.-> bes-.\mj a,-.-> c'16-.\mj g, |
@@ -237,12 +241,15 @@ AccTwoLeft = {
   r8 e,8 f,8-.-> a-.\mn g,-.-> bes-.\mj a,-.-> a\spt |
   d8 r8 d r8 r8. a,16 d4 |
   r8. a,16 d8 r8 r2 |
-  r4 d8 r8 r2 |
-  r1 |
-  r4 bes8 a' bes, bes' bes, c' |
-  bes,8 r8 bes \clef bass bes, r4 d'8~ <d as> |
-  as8 f4 c'8 d, b' es, c' |
-  s1*4 |
+  r4 d8 \clef treble r8_\bbass r2 |
+  \relative c' {
+    r4 bes8 a' bes, bes' bes, c' |
+    bes,8 r8 bes \clef bass bes, r4 d'8 as~ |
+    as8 f4 r8 <b d,> r <bes es,> r8 |
+  }
+  R1_\sbass
+  r4 as,8-. as-.\mn fes,-. fes-.\mj ces-. f\vsp
+  s1*2 |
   \time 3/4
   s2.*2
   \time 4/4
