@@ -166,13 +166,10 @@ AccTwoRight = \relative c'' {
   R2.
   
   \time 4/4
-  r4\regza r8 <f d a> r <f d a> r <f d a> |
-  r8 <d f,> r <c e,> r <d bes>r <e cis a> |
-  r8 <f d a> r <f d a> r <f d a> r <f d a> |
-  r4 r8 <e a,> r <f d> r <g e> |
-  r8 <a f c> r4 r8 <c a f> r4 |
-  r8 <e c a> r4 r8 <f d bes> r4 |
-  r8 <a f d>8 r8 d,8 c a g4~ |
+  R1*4
+  r4.\regza c8 d2 |
+  e4. f8 g2 |
+  a4. d8 c a g4~ |
   g8 c bes g f bes a f |
   e16 a c e f2~ f8. c'16 |
   \time 3/4
@@ -208,28 +205,30 @@ AccTwoRight = \relative c'' {
   \bar "|."
 }
 
-AccTwoLeft = \relative c {
+AccTwoLeft = {
   \time 3/4
   \numericTimeSignature
   \key d \minor
   \clef bass
   
-  \partial 16 r16_\fbrega |
+  \partial 16 r16 |
   R2.*4
   
   \time 4/4
-  r4 d-. a-. d,-. |
-  bes'-. a-. g-. f8. e16 |
-  d4-. d'-. a-. d,-. |
-  r8 d'-. c4-. bes-. a8. g16 |
-  f4-. r8 c' d2 |
-  <e a,,>4. f8 g2 |
-  <a d,,>4. r8 r2 |
-  R1*2 |
+  r4 d8-.-> d'-.\mn a,-.-> d'-. <d a,>-.-> d'-. |
+  bes,8-.-> bes-.\mj a,-.-> a-.\mn g,-.-> g-.\mn f, a16-.\mj e16 |
+  <d a,>8-.-> d'\mn d-.-> d'-. a,-.-> d'-. <d a,>-.-> d'-. |
+  
+  r8 d8-. c-.-> a-.\mn bes,-.-> bes-.\mj a,-.-> c'16-.\mj g, |
+  f,8-.-> f-.\mj r4 f8 d'-.\mn c-. bes,-. |
+  a-. f-.\mj r4 r8 g-.\mn f,-. e,-. |
+  d-. d'-.\mn r8 d'-.\mn f-.\mj f,-. c-. c'-.\mj
+  es,8-. es-.\mj g,-. g-.\mn bes,-. bes-.\mj d-. r8 |
+  a,4 r2. |
   \time 3/4
   R2. |
-  r2 r8. e'16 |
-  a,4~ a8 a16 e' a,8. e'16 |
+  r2 r8. e,16 |
+  a,4~ a,8 a,16 e, a,8. e,16 |
   a,2 r4 |
   R2. |
   \time 4/4
