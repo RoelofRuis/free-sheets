@@ -236,7 +236,7 @@ AccTwoLeft = {
   R2. |
   \time 4/4
   r4 d8-.-> d'-. \mn a,-.-> d'-. <d a,>-.-> d'-. |
-  bes,8-.-> bes-.\mj a,-.-> a-.\mn g,-.-> g-.\mn f, a16-.\mj e16 |
+  bes,8-.-> bes-.\mj a,-.-> a-.\mn g,-.-> g-.\mn f, a16-.\mj e,16 |
   <d a,>8-.-> d'\mn d-.-> d'-. a,-.-> d'-. <d a,>-.-> d'-. |
   r8 e,8 f,8-.-> a-.\mn g,-.-> bes-.\mj a,-.-> a\spt |
   d8 r8 d r8 r8. a,16 d4 |
