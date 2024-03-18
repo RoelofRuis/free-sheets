@@ -5,14 +5,13 @@ swing = \mark \markup {
   \line \general-align #Y #DOWN { \score { 
   \new Staff \with {
     fontSize = #-2
-    \override StaffSymbol #'line-count = #0 
-    \override VerticalAxisGroup #'Y-extent = #'(0 . 0)
+    \override StaffSymbol.line-count = #0 
+    \override VerticalAxisGroup.Y-extent = #'(0 . 0)
   }
   \relative { 
     \stemUp 
-    \override Score.SpacingSpanner 
-      #'common-shortest-duration = #(ly:make-moment 3 16) 
-    \override Beam #'positions = #'(2.5 . 2.5)
+    \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 3 16) 
+    \override Beam.positions = #'(2.5 . 2.5)
     b'8[ b8] 
   }
   \layout {
@@ -24,14 +23,13 @@ swing = \mark \markup {
   }} " ="
   \score { \new Staff \with {
     fontSize = #-2
-    \override StaffSymbol #'line-count = #0 
-    \override VerticalAxisGroup #'Y-extent = #'(0 . 0)
+    \override StaffSymbol.line-count = #0 
+    \override VerticalAxisGroup.Y-extent = #'(0 . 0)
   }
   \relative { 
     \stemUp 
-    \override Score.SpacingSpanner 
-      #'common-shortest-duration = #(ly:make-moment 3 16)
-    \override Beam #'positions = #'(2.5 . 2.5)
+    \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 3 16)
+    \override Beam.positions = #'(2.5 . 2.5)
     \times 2/3 { b'4 b8 } 
   }
   \layout {

@@ -7,7 +7,7 @@ staffAccordionRight = {
   \numericTimeSignature
   \key c \major
   \clef treble
-  \once \override Score.MetronomeMark #'X-offset = #0
+  \once \override Score.MetronomeMark.X-offset = #0
   \tempo 4 = 90
   \time 4/4
   \relative c'' {
@@ -219,8 +219,8 @@ staffAccordionLeft = {
     oddFooterMarkup = \markup {
       \fill-line {
         \center-column {
-          \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
+          \if \should-print-page-number
+          \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
         }
       }
     }  
