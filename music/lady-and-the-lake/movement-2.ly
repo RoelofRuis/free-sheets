@@ -8,8 +8,13 @@ movementTwoRight = {
   \key f \major
   \clef treble
   \relative c' {
-    \once \override Score.MetronomeMark #'X-offset = #0
+    \once \override Score.MetronomeMark.X-offset = #0
     \tempo 4=160
+    e4 fis8 gis~ gis2 |
+    gis4 ais8 c~ c2 |
+    c4 d8 e~ e8 c4 bes8~ |
+    bes1 |
+    
     f4\rega g8 a~ a f4 <f~ es~>8 |
     <f~ es>2 <f~ d~> |
     <f d>1 |
@@ -27,6 +32,14 @@ movementTwoRight = {
     <c gis e>8 <c gis e> <ais fis d> <gis e c> <fis d ais> r8 \afterGrace g8 \glissando g''8 r8 |
 
     <c, g e>4\regzv <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
+    <bes f d>1 |
+    <c g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
+    <bes f d>1 |
+    <es bes g>4 <f des as>8 <g~ es~ bes~> <g es bes> <es bes g>4 <des~ as~ f~>8 |
+    <des as f>1 |
+    <es bes g>4 <f des as>8 <g~ es~ bes~> <g es bes> <es bes g>4 <des~ as~ f~>8 |
+    <des as f>1 |
+    <c g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     <bes f d>1 |
     <c g e>4 <d bes f>8 <e~ c~ g~> <e c g> <c g e>4 <bes~ f~ d~>8 |
     <bes f d>1 |
@@ -92,6 +105,7 @@ movementTwoLeft = {
   \key f \major
   \clef treble
   \relative c' {    
+    R1*4
     f1~ |
     f |
     g4 a8 b~ b g4 f8 |
@@ -110,6 +124,15 @@ movementTwoLeft = {
     \clef bass
     
     c,1~ |
+    c8 bes[ f' e] f bes, c16 d e8 |
+    c1~ |
+    c8 bes[ f' e] f bes, c16 d f8 |
+    es1~ |
+    es8 des[ as' g] as des, es16 f g8 |
+    es1~ |
+    es8 des bes' as g f es des |
+    
+    c1~ |
     c8 bes[ f' e] f bes, c16 d e8 |
     c1~ |
     c8 bes[ f' e] f bes, c16 d f8 |

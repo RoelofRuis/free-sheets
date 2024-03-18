@@ -8,7 +8,7 @@ movementOneRight = {
   \key f \major
   \clef treble
   \relative c''' {
-    \once \override Score.MetronomeMark #'X-offset = #0
+    \once \override Score.MetronomeMark.X-offset = #0
     \tempo 4=100
     R1\regdba
     R1 |
@@ -48,7 +48,9 @@ movementOneRight = {
     d1 |
     a'8 g f d~ d2~ |
     d1 |
+    \staffHighlight "lightsteelblue"
     e,8 d e f g f g a bes a bes c d c d e |
+    \stopStaffHighlight
     f8 e d a~ a2 |
     r4. a8 bes c bes a |
     
@@ -154,7 +156,7 @@ movementOneLeft = {
     << { f1 } \\ { r8 des4 bes'8~ bes4 des, } >> |
     << { f1 } \\ { r8 c4 bes'8~ bes4 des, } >> |
     << { f1 } \\ { r8 c4 bes'8~ bes4 des, } >> |
-    <f c>1 |
+    <f c>2 r2 |
     
     R1
     

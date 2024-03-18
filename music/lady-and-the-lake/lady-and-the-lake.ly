@@ -6,12 +6,12 @@
 \book {
   \header {
     instrumentName = "Accordion solo"
-    year = "2022"
+    year = "2024"
     description = "The start of Spring. A young, adventurous lady arrives at a small lake and decides to take short swim.\n\nWritten to practice composing by story."
     info = "For Free Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = "https://github.com/RoelofRuis/free-sheets"
-    version = "June 2022"
+    version = "March 2024"
   }
   
   \paper {
@@ -54,8 +54,8 @@
     oddFooterMarkup = \markup {
       \fill-line {
         \center-column {
-          \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis }
+          \if \should-print-page-number
+          \line { \char ##x00A9 Roelof Ruis }
         }
       }
     }  
@@ -77,11 +77,15 @@
   
   \score {
     \header {
-      subtitle = "The Lady"
+      subtitle = "II. The Lady"
       tagline = ##f
       breakbefore = ##t
     }
     
     \movementTwo
+    
+    \layout {}
+    
+    \midi {}
   }
 }
