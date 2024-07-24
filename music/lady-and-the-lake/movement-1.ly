@@ -2,6 +2,13 @@
 
 \include "../../includes/accordion-func.ly"
 
+% Kan nog veel kleiner beginnen
+% Alleen de bovenstem bijvoorbeeld
+% Vanuit klank starten
+% Wat is het minimale wat je kan doen aan klank?
+% Kalm water
+% Dunne klank, durf te schrijven vanuit enkele noten, verstild
+
 movementOneRight = {
   \numericTimeSignature
   \time 4/4
