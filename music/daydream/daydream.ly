@@ -64,7 +64,7 @@ staffLeft = {
   << { r4 e2\spt s4 } \\ { c2 b,4 d4 \rest } >> |
   << { c'2\mj f\mj } \\ { a,4 d, g,2 } >> |
   << { r4 c'2.\spt  } \\ { c2 d,4 e, } >> |
-  << { f2\mj r4 c'4\spt } \\ { f,4 g, c2 } >> |
+  << { f2\mj r4 c'4\spt } \\ { f,4 g, e,2 } >> |
   << { f1\mj } \\ { f,4 es, d, des, } >> |
   << { r4 bes4\mj as2\mj~ } \\ { c2 bes,2~ } >> |
   << { as2. } \\ { bes,2. d4 \rest } >> |
@@ -141,8 +141,8 @@ dynamicsStaff = \new Dynamics {
     oddFooterMarkup = \markup {
       \fill-line {
         \center-column {
-          \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
+          \if \should-print-page-number
+          \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
         }
       }
     }  

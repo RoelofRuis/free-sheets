@@ -542,8 +542,8 @@ dynamicsStaff = \new Dynamics {
     oddFooterMarkup = \markup {
       \fill-line {
         \center-column {
-          \on-the-fly #part-first-page ""
-          \on-the-fly #not-first-page \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
+          \if \should-print-page-number
+          \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
         }
       }
     }  
