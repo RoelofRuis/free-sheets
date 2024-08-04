@@ -56,14 +56,14 @@ movementTwoRight = {
     <a e d>2.. <a e cis>8 |
     r8 a,[ b cis] d e f g |
 
-    <a c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e a,> |
-    <c e,> <e a,> <c e,> <e a,> |
-    <a, c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e a,> |
-    <c e,> <e a,> <c e,> <e a,> |
+    <a c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e g,> |
+    <c e,> <e g,> <c e,> <e g,> |
+    <a, c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e g,> |
+    <c e,> <e g,> <c e,> <e g,> |
     
-    <a, c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e a,> |
-    <c e,> <e a,> <c e,> <e a,> |
-    <c e,> <e a,> r2 |
+    <a, c,>4 <b d,>8 <c~ e,~>8 <c e,>4 <e g,> |
+    <c e,> <e g,> <c e,> <e g,> |
+    <c e,> <e g,> r2 |
     
     % IDEA: short water theme re-emerges?
 
@@ -175,7 +175,7 @@ movementTwoLeft = {
     << { f1 } \\ { r8 es4 c'8~ c4 es, } >> |
     << { f1 } \\ { r8 e?4 c'8~ c4 e, } >> |
     << { f1 } \\ { r8 es4 c'8~ c4 es, } >> |
-    << { f1 } \\ { r8 es4 bes'8~ bes4 es, } >> |
+    << { f1 } \\ { r8 e?4 bes'8~ bes4 e, } >> |
 
     << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
     << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
