@@ -16,6 +16,8 @@ tenorSax = \relative c'' {
   \globalOptions
   \clef treble
   
+  % Theme Minor
+  \mark \default
   \repeat volta 2 {
 
     es4-. es d c |
@@ -30,6 +32,8 @@ tenorSax = \relative c'' {
     
   }
   
+  % Theme Major
+  \mark \default
   \repeat volta 2 {
     
     e4-. e d c |
@@ -44,6 +48,20 @@ tenorSax = \relative c'' {
     
   }
 
+  % Aankondiging
+  \mark \default
+  \repeat volta 2 {
+    b8-.^\markup { \bold "Fanfare" } b16 c d8-. b-. e4 d8-. d |
+    b8-. b16 c d8-. b-. e4 d8-. d |
+    f8-. f e-. c-. e4 d8-. d |
+    f8-. f e-. c-. e4 d8-. d |
+  
+    es8( f) es( f) d4 d8-. d |
+    es8( f) es( f) d4 d8-. d |
+    bes4-- a-- g4.-- g8 |
+    bes8-. bes-- a-. a-- g2 |
+  }
+
   \bar "|."
 }
 
@@ -51,6 +69,8 @@ accordion = \relative c'' {
   \globalOptions
   \clef treble
   
+  % Theme Minor
+  \mark \default
   \repeat volta 2 {
   
     <g bes es>4 <g bes es> <f bes d> <es as c> |
@@ -65,6 +85,8 @@ accordion = \relative c'' {
     
   }
   
+  % Theme Major
+  \mark \default
   \repeat volta 2 {
 
     <g c e>4 <g c e> <f bes d> <f a c> |
@@ -78,6 +100,21 @@ accordion = \relative c'' {
     <f bes des> <f bes c> <f g~ c~> <e g c> |
   
   }
+  
+  % Aankondiging
+  \mark \default
+  \repeat volta 2 {
+    <d g b>8 <d g b>16 <e g c> <g b d>8 <d g b> <g c e>4 <g b d>8 <g b d> |
+    <d g b>8 <d g b>16 <e g c> <g b d>8 <d g b> <g c e>4 <g b d>8 <g b d> |
+    <a c f>8 <a c f> <g c e> <f a c> <g c e>4 <g b d>8 <g b d> |
+    <a c f>8 <a c f> <g c e> <f a c> <g c e>4 <g b d>8 <g b d> |
+    
+    <as c es>8 <as c f> <as c es> <as c f> <g b d>4 <g b d>8 <g b d> |
+    <as c es>8 <as c f> <as c es> <as c f> <g b d>4 <g b d>8 <g b d> |
+    <es g bes>4 <c f a> <b d g>4. <b d g>8 |
+    <es g bes>8 <es g bes> <c f a> <c f a> <b d g>2 |
+  }
+
   \bar "|."
 }
 
@@ -85,6 +122,8 @@ bass = \relative c {
   \globalOptions
   \clef bass
   
+  % Theme Minor
+  \mark \default
   \repeat volta 2 {
 
     c4. c8 c4. c8 |
@@ -99,6 +138,8 @@ bass = \relative c {
 
   }
   
+  % Theme Major
+  \mark \default
   \repeat volta 2 {
     
     c4. c8 c4. c8 |
@@ -112,6 +153,22 @@ bass = \relative c {
     bes4. bes8 c4. c8 |
     
   }
+  
+  % Aankondiging
+  \mark \default
+  \repeat volta 2 {
+    g4 g4 g4 g4 |
+    g4 g4 g4 g4 |
+    g4 g4 g4 g4 |
+    g4 g4 g4 g4 |
+    
+    g4 g4 g4 g4 |
+    g4 g4 g4 g4 |
+    g4 g4 g4 g4 |
+    g4 g4 g4 g4 |
+  }
+
+  \bar "|."
 
 }
 
@@ -125,7 +182,7 @@ BookFull = \book {
   }
   
   \header {
-    tagline = ##f
+    tagline = "Outline - v1 March 2025"
   }
   
   \score {
