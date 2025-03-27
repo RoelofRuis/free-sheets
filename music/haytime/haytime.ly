@@ -21,7 +21,7 @@ staffRight = {
   \relative c'' {
     
     \cadenzaOn
-    r4\regza^\markup { \halign #-2 \italic "rubato" } \grace { dis16 } \afterGrace e2\( { d16[ c] } d32[ e d c] d4.
+    r4\regz^\markup { \halign #-2 \italic "rubato" } \grace { dis16 } \afterGrace e2\( { d16[ c] } d32[ e d c] d4.
     r8 g,16[ a] b[ d g a] \times 2/3 { \grace { ais16 } b8[ g d16 c] } b4\)
     \bar ""
     \break
@@ -35,7 +35,7 @@ staffRight = {
     \break
     r4 \grace { dis16 } \afterGrace e2\( { d16[ c] } d32[ e d c] d4 c8
     a16[ c] a4 g8 
-    <a cis,>16[ <c g>] <a cis,>4.\)
+    <a cis,>16[--\fermata <c g>]--\fermata <a cis,>4.\)
     \cadenzaOff
     \breathe
     \bar "|"
@@ -44,18 +44,18 @@ staffRight = {
     \time 4/4
     \tempo 4 = 80
 
-    r8\regz <a' f c>4 <a f c>8 <g es bes>16 <f c as> <d bes f> <c as es> <f des as>8 <f des as> |
+    r8\regza <a' f c>4 <a f c>8 <g es bes>16 <f c as> <d bes f> <c as es> <f des as>8 <f des as> |
     <d~ as~ e~>2 <d as e>4 r16 d16 f a 
     g8 f d c <f cis g>4 <f cis g> |
     << { \grace { a,16 c cis } d2. c16\rest d f a } \\ { r8 <b, f>( <bes e,> <a es> <as d,>4)  s4 } >>
     \once \override TextSpanner.bound-details.left.text = \markup { "molto accel." }
     \once \override TextSpanner.bound-details.left-broken.text = ##f
-    g'8\startTextSpan f d c <f d a>4 <f d a> |
+    \tuplet 3/2 { g'16 \startTextSpan a g } f8 d c <f d a>4 <f d a> |
     r8 << { g16 f g f d c } \\ { as4. } >> <f' c ges>4 <f c ges> | 
-    << { g8 f d c } \\ { gis2 } >> <f' cis g>4 <f cis g>\stopTextSpan | 
+    << { \tuplet 3/2 { g16 a g } f8 d c } \\ { gis2 } >> <f' cis g>4 <f cis g>\stopTextSpan | 
     
     \tempo 4 = 132
-    \grace { a,16 c cis } d8\regza r <c a> r <b g>8.( <c a>16) r16 a( c cis |
+    \grace { a,16 c cis } d8 r <c a> r <b g>8.( <c a>16) r16 a( c cis |
     d8) r <c a> r r16 <b g cis,>-. r8 c cis |
     d8 r <c a> r <b g>8.( <c a>16) r16 a( c cis |
     d8) r <c a> r r16 <b g cis,> r8 c cis |
@@ -65,11 +65,11 @@ staffRight = {
     d8) r8. d16 a' c <d b g e>-> <d b g e>-> r4. |
     
     r4\regdba a4 g16 f d c f8 f |
-    d c16 a g8 f c' r8. c,16 cis d |
+    d c16 a g8 f c' r8. c,16( cis d) |
     r4 a''4 g16 f d c f8 f |
     d2 r2 |
     a'4 a g16 f d c f8 f |
-    d c16 a g8 f c' r8. c,16 cis d |
+    d c16 a g8 f c' r8. c,16( cis d) |
     r4 a''4 g16 f d c f8 f |
     d2 r2 |
     a'4 a g16 a c d f8 f |
@@ -89,11 +89,11 @@ staffRight = {
     d8) r8. d16 a' c <d b g e>-> <d b g e>-> r4. |
     
     r4 a4 g16 f d c f8 f |
-    d c16 a g8 f c' r8. c,16 cis d |
+    d c16 a g8 f c' r8. c,16( cis d) |
     r4 a''4 g16 f d c f8 f |
     d2 r2 |
     a'4 a g16 f d c f8 f |
-    d c16 a g8 f c' r8. c,16 cis d |
+    d c16 a g8 f c' r8. c,16( cis d) |
     r4 a''4 g16 f d c f8 f |
     d2 r2 |
     a'4 a g16 a c d f8 f |
@@ -136,13 +136,13 @@ staffRight = {
     << { d1) } \\ { r4 <a fis>-- <g e>-- <a fis>-- } >> |
     
     b4\( b \times 4/5 { bes16 a g e d } g8 g |
-    e16 g a b? c d e fis g d c a g8 a\) |
+    e16( g a b? c d e fis g) d( c a g8) a\) |
     r4 b\( \times 4/5 { bes16 a g e d } g8 g |
-    e16 g a b c d e fis g d c d e fis g a |
+    e16( g a b c d e fis g) d( c d e fis g a |
+    b4)\) b\( \times 4/5 { bes16 a g e d } g8 g |
+    e16( g a b c d e fis g) d( c a g8) a |
     b4\) b\( \times 4/5 { bes16 a g e d } g8 g |
-    e16 g a b c d e fis g d c a g8 a |
-    b4\) b\( \times 4/5 { bes16 a g e d } g8 g |
-    e16 g a b c d e fis g8 d c a\) |
+    e16( g a b c d e fis g8) d c a\) |
     
     g8( d c a) g'( d c a) |
     g'8( d c a) g'( d c a) |
@@ -162,7 +162,7 @@ staffRight = {
     a1) |
     \once \override TextSpanner.bound-details.left.text = \markup { "rit." }
     \once \override TextSpanner.bound-details.left-broken.text = ##f
-    e'4(\startTextSpan g f8 e d c |
+    e'4\startTextSpan g f8( e d c |
     a1) |
     \break
     
@@ -181,11 +181,11 @@ staffRight = {
     \tempo 4 = 132
     r8\regzav <c g cis,!>-- <cis gis d>-- <d a dis,>-- <dis ais e>-- <e b f>-- <f bis, fis>-- <fis cis fisis,>-- |
     \grace { gis16 } <a c,>4 \grace { gis16 } <a c,>4 g16 f d c f8 f |
-    d8 c16 a g8 f c' r8 r16 c,16 cis d|
+    d8 c16 a g8 f c' r8 r16 c,16( cis d) |
     r4 \grace { gis'16 } <a c,>4 g16 f d c f8 f | 
     << { d1~ } \\ { r4 <a f> <as f> <g e> } >> |
     << { d'8 } \\ { <f, d>8 } >> r8 \grace { gis'16 } <a c,>4 g16 f d c f8 f |
-    d8 c16 a g8 f c' r8 r16 c,16 cis d|
+    d8 c16 a g8 f c' r8 r16 c,16( cis d) |
     r4 \grace { gis'16 } <a c,>4 g16 f d c f8 f | 
     << { d1~ } \\ { r4 <a f> <as f> <g e> } >> |
     << { d'8 } \\ { <f, d>8 } >> r8 \grace { gis'16 } a4 g16 a c d f8 f |
@@ -249,7 +249,7 @@ staffLeft = {
     } 
     \\ 
     { 
-      a,4~
+      a,4\fermata~
       a,1
       a,
       a,4~
@@ -297,9 +297,9 @@ staffLeft = {
   d'8\mn d' d' d' bes\mj bes bes bes |
   f\mj f f f c'\mj c' c' c' |
   d'8\mn d' d' d' es\mj es es es |
-  bes\mj bes bes bes g\mn g a\spt a |
+  bes\mj bes bes bes g--\mn g a\spt a |
   d'\mn d' d' d' es\mj es f\mj f |
-  bes\mj bes bes bes g\mn g a\spt a |
+  bes\mj bes bes bes g--\mn g a\spt a |
   
   d d'\mn d' d' f, f\mj f f |
   c c'\mj c' c' g, g\mj g g |
@@ -351,7 +351,7 @@ staffLeft = {
   c8 c'\mn es, c' f, c' g, c' |
   c c'\mn es, c' f, c' g, c' |
   a, a\spt cis a e, a a, a |
-  d d'\spt r d' <c' d>4\mj <d d'>\spt |
+  d d'\spt r d' <c' d>8\mj c'\mj <d d'>\spt d'\spt |
   
   << { g8\mj g g g g g g g } \\ { g,2 f, } >>
   << { c'8\mj c' c' c' es\mj es es es } \\ { e,2 f, } >>
@@ -363,11 +363,11 @@ staffLeft = {
   << { e8\mn e e e e e e e } \\ { b,2 cis } >>
   << { a8\spt a a a } \\ { a,2 } >> d2 |
   
-  c2( bes, g, f,) |
+  c2(^\markup { \italic "legato" } bes, g, f,) |
   c2( bes, g, f,) |
   
-  << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2( bes, } >>
-  << { g8\mj g g g f\mj f f f } \\ { g,2 f,) } >>
+  << { c'8-.\mj c'-. c'-. c'-. bes-.\mj bes-. bes-. bes-. } \\ { c2(-3 bes,-5 } >>
+  << { g8-.\mj g-. g-. g-. f-.\mj f-. f-. f-. } \\ { g,2-2 f,-5) } >>
   << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2( bes, } >>
   << { g8\mj g g g f\mj f f f } \\ { g,2 f,) } >>
   << { c'8\mj c' c' c' bes\mj bes bes bes } \\ { c2( bes, } >>
@@ -440,8 +440,9 @@ staffLeft = {
 
 dynamicsStaff = \new Dynamics {
   \time 4/4
+  
 
-  s4\p s1 s2\< s2\!\>
+  s4\< s1\!\p s2\< s2\!\>
   s4\! s1 s1 s4
   s4 s1 s2\< s2\!\>
   s4\! s1 s1 |
@@ -449,8 +450,9 @@ dynamicsStaff = \new Dynamics {
   s1 s1 s1\< |
   s1\!\f s1* 7 |
   s1\subp s1*3 |
-  s1*4 |
-  s1\< s2\! s2 |
+  s1*3
+  s2\< s2\> |
+  s1\< s2\!\< s2\> |
   s1\mp s1*2 |
   r4 r4\< r4 r16\> r8 r16\! |
   s1*3 |
@@ -470,7 +472,9 @@ dynamicsStaff = \new Dynamics {
   s2\> s2\! |
   s1\mp s2. s4\< |
   s1 s1\! |
-  s1\mf s1*2 |
+  s1\mf 
+  s2\< s2\> |
+  s1\! |
   s1\< |
   s1\!\f s1*2 |
   s2 s2\> |
@@ -479,7 +483,7 @@ dynamicsStaff = \new Dynamics {
   s1\< s1 |
   s1\!\> s1*3 |
   s4\!\p s1 s1 |
-  s1\f s1*8 |
+  s1\mf\< s1\f\! s1*7 |
   s2 s2\< s1\! |
   s1*7 |
   s1*11 |
@@ -498,8 +502,9 @@ dynamicsStaff = \new Dynamics {
     description = "A sunny day during the Norwegian haying season. The air is warm but damp. Farmers cut the grass and rake it into piles to dry."
     info = "For Standard Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
+    revision = "For the revisions my thanks go to Bjarke Mogensen."
     projecturl = \githuburl
-    version = "May 2022"
+    version = "March 2025"
   }
 
   \paper {
@@ -531,9 +536,13 @@ dynamicsStaff = \new Dynamics {
         \vspace #4
         \override #'(line-width . 55)
         \fontsize #1
+        \justify-field #'header:revision
+        \vspace #4
+        \override #'(line-width . 55)
+        \fontsize #1
         \justify-field #'header:permission
         \vspace #1
-        \vspace #14
+        \vspace #8
         \justify { \char ##x00A9 Roelof Ruis \concat { " - Version " \fromproperty #'header:version } }
         \typewriter { \fromproperty #'header:projecturl }
       }
