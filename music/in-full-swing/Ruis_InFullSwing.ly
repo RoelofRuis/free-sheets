@@ -430,7 +430,7 @@ tenorSax = \relative c'' {
   d2.\) |
   
   d4\( b g |
-  c8 b c d e f |
+  c4. b8 c d |
   e4 cis a |
   d8 cis d e f4 |
   d8 cis d e f g |
@@ -1035,9 +1035,11 @@ bass = \relative c {
   e a r8 a4.\) |
   e4 d c |
   bes4. bes4 d8\( |
-  e8 a r8 a4 e8 |
-  a2.\) |
-  d,4. c4. |
+  e4-. g-. a4-. |
+  \ottava 1
+  a''2.\flageolet\) |
+  \ottava 0
+  d,,,4. c4. |
   bes4. bes4 d8\( |
   e a r8 a4 d,8 |
   e a r8 a4.\)
