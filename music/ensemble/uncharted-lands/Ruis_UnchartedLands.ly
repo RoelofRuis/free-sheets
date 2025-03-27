@@ -8,7 +8,7 @@ globalOptions = {
 
 chordmusic = \chordmode {
   \set chordChanges = ##t
-  
+
   % Chord
 }
 
