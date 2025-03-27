@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if ! command -v lilypond &>/dev/null; then
+    echo "Error: This script requires 'lilypond' to be installed."
+    echo "Please install it and try again."
+    exit 1
+fi
+
 TAG=$1
 ROOTDIR=$(pwd)
 
