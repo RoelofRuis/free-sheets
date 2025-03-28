@@ -3,13 +3,25 @@
 globalOptions = {
   \compressEmptyMeasures
   \numericTimeSignature
-  \tempo 4=120
+  \tempo 4=130
 }
 
 chordmusic = \chordmode {
   \set chordChanges = ##t
   
   % Chord
+}
+
+drumMusic = \drummode {
+  hihat4 4 4 4 |
+  4 4 4 4 |
+  4 4 4 4 |
+  hho1
+  \breathe
+  
+  hihat4 4 4 4 |
+  4 4 4 4 |
+  4 4 4 4 |
 }
 
 tenorSax = \relative c'' {
@@ -22,12 +34,15 @@ tenorSax = \relative c'' {
   as4 bes
   g es
   g f e d cis1 |
+  \breathe
   
   bes'4 c
   a f
   as4 bes
   g es
   g f e d |
+  
+  \tempo 2 = 120
   
   \bar "||"
   
@@ -44,6 +59,7 @@ accordion = \relative c'' {
   <gis d' f>2 <g des' f> |
   <fis c' es>2 <f b es> |
   <as b f'>1 <b cis g'> |
+  \breathe
   
   <gis d' f>2 <g des' f> |
   <fis c' es>2 <f b es> |
@@ -51,7 +67,8 @@ accordion = \relative c'' {
   
   \bar "||"
   
-  <c e g> |
+  r4 <bes e g> |
+  
   
   \bar "|."
 }
@@ -64,15 +81,21 @@ bass = \relative c {
   e2 es |
   d des |
   g,1 a |
+  \breathe
   
-  e2 es |
+  e'2 es |
   d des |
   g,1 
 
   \bar "||"
 
-  c |
-  
+  c4. g'8 r4 c,4 |
+  des4. gis8~ gis2 |
+  c,4. g'8 r4 c,4 |
+  des4. gis8~ gis2 |
+  c,4. g'8 r4 c,4 |
+  des4. gis8~ gis2 |
+
   \bar "|."
 
 }
@@ -100,6 +123,7 @@ BookFull = \book {
       \new Staff = "saxophone" \tenorSax
       \new Staff = "accordion" \accordion
       \new Staff = "bass" \bass
+      \new DrumStaff = "drums" \drumMusic
     >>
   
     \layout {
@@ -211,6 +235,9 @@ Midi = \score {
       \set Staff.midiMaximumVolume = 0.9
       \set Staff.midiInstrument = "electric bass (finger)"
       \transpose c c, { \bass }
+    }
+    \new DrumStaff = "drums" {
+      \drumMusic
     }
   >>
   
