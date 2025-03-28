@@ -16,16 +16,78 @@ tenorSax = \relative c'' {
   \globalOptions
   \clef treble
   
-  % Music
+  % Intro
+  a8 bes a c~ c2~ |
+  c2. r4 |
+  c8 d c f~ f2~ |
+  f2 es |
+  d8 es d bes~ bes2~ |
+  bes1 |
+  d8 es d bes~ bes2~ |
+  bes1 |
+  d8 es d c r bes4 bes16 c |
+  d8 es c f r a r bes |
   
+  % Theme
+  a16 bes,16 r bes r bes16 a'8 r4 bes,8 c |
+  d es d c~ c8 f4 r8 |
+  a16 bes, r bes r bes a'8 r4 bes,8 c |
+  d es c f r8 a8 r8 bes8 |
+  a16 bes,16 r bes r bes a'8 r4 bes,8 c |
+  d es d c r8 f4 r8 |
+  as8 g f es r8 f8 r8 g8 |
+  r4 c,2.~ |
+  c1 |
+
+  % Overgang I
+  a8 bes a c~ c2 |
+  a8 bes a f~ f2 |
+  a8 bes a c r f r es~ |
+  es1 |
+  a,8 bes a c~ c2 |
+  a8 bes a f~ f2 |
+  a8 bes a c r f r g~ |
+  g1 |
+
   \bar "|."
 }
 
-accordion = \relative c'' {
+accordion = \relative c' {
   \globalOptions
   \clef treble
   
-  % Music
+  % Intro
+  r2 r8 f g f |
+  <f a>2. r4 |
+  r2 r8 a bes a |
+  <a c>2 <g bes>2 |
+  <f bes>4. <es~ g~>8 <es g>2 |
+  <f bes>4. <es~ g~>8 <es g>2 |
+  <f bes>4. <es~ g~>8 <es g>2 |
+  <f bes>8 <es g>4 <es g> <es g> <es g>8 |
+  <f bes>4. <es as>8 r <es as>4. |
+  <f bes>4. <f bes>8 r <f a c> r <f bes d> |
+  
+  % Theme
+  <c f a>16 <c bes a>16 r <c bes a> r <c bes a> <c f a>8 r4 <c es as>4 |
+  <d f bes>4. <c~ f~ bes~>8 <c f bes> <des f as>4 r8 |
+  <c f a>16 <c bes a> r <c bes a> r <c bes a> <c f a>8 r4 <c es as>4 |
+  <d f bes>4 <f g c>8 <c f bes>8 r8 <c f a>8 r8 <d f bes>8 |
+  <c f a>16 <c bes a> r <c bes a> r <c bes a> <c f a>8 r4 <c es as>4 |
+  <d f bes>4. <c f bes>8 r8 <des f as>4 r8 |
+  <c d as'>4. <c es as>8 r8 <d f bes>8 r8 <es g bes>8 |
+  r4 <c~ f~ bes~>2. |
+  <c f bes>1 |
+  
+  % Overgang I
+  <c f>4. <es~ as~>8 <es as>2 |
+  <c f>4. <as~ des~>8 <as des>2 |
+  <c f>4. <es as>8 r <g c> r <f~ bes~>8 |
+  <f bes>4 <f as c>4. <f bes>4. |
+  <c f>4. <es~ as~>8 <es as>2 |
+  <c f>4. <as~ des~>8 <as des>2 |
+  <c f>4. <es as>8 r <des' as> r <es~ bes~> |
+  <es bes>1 |
   
   \bar "|."
 }
@@ -34,7 +96,38 @@ bass = \relative c {
   \globalOptions
   \clef bass
   
-  % Music
+  % Intro
+  r1 |
+  es2. r4 |
+  r1 |
+  bes2 c4 d |
+  es4. f8~ f2 |
+  es'4. f,8~ f2 |
+  es4. f8~ f2 |
+  es'8 f,4 f f f8 |
+  es4. des8 r8 des4 des8 |
+  c4 g8 c8 r8 bes' r c, |
+
+  % Theme
+  bes16 f r f r f bes8 r4 des4 |
+  es4 es8 as,8~ as ges4 r8 |
+  bes16 f r f r f bes8 r8 c des4 |
+  es a,8 d8 r8 c8 r8 c8 |
+  bes16 f r f r f bes8 r8 c des4 |
+  es4 es8 as,8 r8 ges4 g8 |
+  as8 d as8 bes8 r8 c8 r8 cis |
+  r4 fis,2. |
+  fis8 fis fis fis fis fis fis fis |
+  
+  % Overgang I
+  d4. des8~ des2 |
+  d4. ges8~ ges2 |
+  d4. des8 r as' r ges8~ |
+  ges1 |
+  d4. des8~ des2 |
+  d4. ges8~ ges2 |
+  d4. des8 r es r f~ |
+  f1 |
   
   \bar "|."
 
@@ -50,7 +143,7 @@ BookFull = \book {
   }
   
   \header {
-    tagline = ##f
+    tagline = "Outline - v1 March 2025"
   }
   
   \score {

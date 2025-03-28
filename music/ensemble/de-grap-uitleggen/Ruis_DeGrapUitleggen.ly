@@ -16,16 +16,42 @@ tenorSax = \relative c'' {
   \globalOptions
   \clef treble
   
-  % Music
+  % Intro
+  bes4 c
+  a f
+  as4 bes
+  g es
+  g f e d cis1 |
   
+  bes'4 c
+  a f
+  as4 bes
+  g es
+  g f e d |
+  
+  \bar "||"
+  
+  c1
+
   \bar "|."
 }
 
 accordion = \relative c'' {
   \globalOptions
   \clef treble
+
+  % Intro
+  <gis d' f>2 <g des' f> |
+  <fis c' es>2 <f b es> |
+  <as b f'>1 <b cis g'> |
   
-  % Music
+  <gis d' f>2 <g des' f> |
+  <fis c' es>2 <f b es> |
+  <as b f'>1 
+  
+  \bar "||"
+  
+  <c e g> |
   
   \bar "|."
 }
@@ -34,14 +60,25 @@ bass = \relative c {
   \globalOptions
   \clef bass
   
-  % Music
+  % Intro
+  e2 es |
+  d des |
+  g,1 a |
+  
+  e2 es |
+  d des |
+  g,1 
+
+  \bar "||"
+
+  c |
   
   \bar "|."
 
 }
 
 BookFull = \book {
-  \bookOutputName "Project_Full"
+  \bookOutputName "DeGrapUitleggen_Full"
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -50,12 +87,12 @@ BookFull = \book {
   }
   
   \header {
-    tagline = ##f
+      tagline = "Outline - v1 March 2025"
   }
   
   \score {
     \header {
-      title = "Title"
+      title = "De Grap Uitleggen"
       composer = "Roelof Ruis"
     }
     <<
@@ -83,7 +120,7 @@ BookFull = \book {
 }
 
 BookTenorSax = \book {
-  \bookOutputName "Project_TenorSax" 
+  \bookOutputName "DeGrapUitleggen_TenorSax" 
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -92,7 +129,7 @@ BookTenorSax = \book {
   }
   
   \header {
-    title = "Title"
+    title = "De Grap Uitleggen"
     composer = "Roelof Ruis"
     instrument = "Tenor Saxophone"
     tagline = ##f
@@ -107,7 +144,7 @@ BookTenorSax = \book {
 }
 
 BookAccordion = \book {
-  \bookOutputName "Project_Accordion" 
+  \bookOutputName "DeGrapUitleggen_Accordion" 
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -116,7 +153,7 @@ BookAccordion = \book {
   }
   
   \header {
-    title = "Title"
+    title = "De Grap Uitleggen"
     composer = "Roelof Ruis"
     instrument = "Accordion"
     tagline = ##f
@@ -131,7 +168,7 @@ BookAccordion = \book {
 }
 
 BookBass = \book {
-  \bookOutputName "Project_Bass" 
+  \bookOutputName "DeGrapUitleggen_Bass" 
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -140,7 +177,7 @@ BookBass = \book {
   }
   
   \header {
-    title = "Title"
+    title = "De Grap Uitleggen"
     composer = "Roelof Ruis"
     instrument = "Bass"
     tagline = ##f
@@ -155,25 +192,25 @@ BookBass = \book {
 }
 
 Midi = \score {
-  \bookOutputName "Project"
+  \bookOutputName "DeGrapUitleggen"
   <<
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.midiMinimumVolume = 0.6
       \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \tripletFeel 8 \tenorSax }
+      \transpose c c, { \tenorSax }
     }
     \new Staff = "accordion" {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.3
       \set Staff.midiMaximumVolume = 0.6
-      \transpose c c, { \tripletFeel 8 \accordion }
+      \transpose c c, { \accordion }
     }
     \new Staff = "bass" {
       \set Staff.midiMinimumVolume = 0.4
       \set Staff.midiMaximumVolume = 0.9
       \set Staff.midiInstrument = "electric bass (finger)"
-      \transpose c c, { \tripletFeel 8 \bass }
+      \transpose c c, { \bass }
     }
   >>
   
@@ -183,6 +220,6 @@ Midi = \score {
 
 \Midi
 \BookFull
-\BookTenorSax
-\BookAccordion
-\BookBass
+%\BookTenorSax
+%\BookAccordion
+%\BookBass
