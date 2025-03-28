@@ -388,7 +388,7 @@ tenorSax = \relative c'' {
   e2 r4 |
   f4-. a-. c-. |
   b8 c b a gis b |
-  a8 e r4 e8 f |
+  a4 e e8 f |
   fis2 r4 |
   g4-. bes-. d-. |
   c8 d c bes g4-. |
@@ -729,7 +729,7 @@ accordion = \relative c'' {
   <a f'>4. <bes f'> |
   <a g'>4. <a~ g'~> |
   <a g'>2. |
-  a2 r4 |
+  r2. |
   
   % Lament
   \mark \default
@@ -1376,6 +1376,6 @@ Midi = \score {
 
 \Midi
 \BookFull
-\BookTenorSax
-\BookAccordion
-\BookBass
+%\BookTenorSax
+%\BookAccordion
+%\BookBass
