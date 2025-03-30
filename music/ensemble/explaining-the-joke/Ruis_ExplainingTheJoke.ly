@@ -29,7 +29,7 @@ drumMusic = \drummode {
   hhc8 hh8 r hh8 8 8 r hh8 |
   hh8 8 r hh8 hho4 hhc4 |
   hh8 8 r hh8 8 8 r hh8 |
-  hh8 8 sn8 8 8 8 8 8
+  r8 sn16 16 8 8 8 8 8 8
   
 }
 
@@ -100,7 +100,7 @@ tenorSax = \relative c'' {
   % Statement
   \mark \default
   g'4 es4 es c |
-  c as as f8 fis |
+  c as as \grace { a16 as } f8 fis |
   g1 |
   r1 |
   g'4 es4 es c |
@@ -108,7 +108,7 @@ tenorSax = \relative c'' {
   d1 |
   r1 |
   g4 es4 es c |
-  c as as f8 fis |
+  c as as \grace { a16 as } f8 fis |
   g1 |
   r1 |
   g'4 es es c |

@@ -9,6 +9,8 @@ fi
 TAG=$1
 ROOTDIR=$(pwd)
 
+rm ./pub/*
+
 for file in $(find "music" -type f -name '*.ly')
 do
     FILEDIR=$(dirname $file)
