@@ -22,10 +22,14 @@ drumMusic = \drummode {
   4 4 4 4 |
   4 4 4 4 |
   
-  hihat8 8 r hh8 8 8 r hh8 |
-  hihat8 8 r hh8 hho2 |
-  hihat8 8 r hh8 8 8 r hh8 |
-  hihat8 8 r hh8 hho2 |
+  hh8 8 r hh8 8 8 r hh8 |
+  hh8 8 r hh8 hho2 |
+  hhc8 hh8 r hh8 8 8 r hh8 |
+  hh8 8 r hh8 hho2 |
+  hhc8 hh8 r hh8 8 8 r hh8 |
+  hh8 8 r hh8 hho4 hhc4 |
+  hh8 8 r hh8 8 8 r hh8 |
+  hh8 8 sn8 8 8 8 8 8
   
 }
 
@@ -45,32 +49,36 @@ tenorSax = \relative c'' {
   as4 bes
   g es
   g^\markup { "rit." } f e d |
-  
-  \tempo 2 = 120
-  
+
   \bar "||"
+
+  % Intro
+  \mark \default
+  \tempo 2 = 120
   
   c1 |
   R1*7
 
   c'4. e8~ e4 c |
-  des2 f |
+  des4. f8~ f2 |
   e4. g8~ g4 e |
-  f2 as |
+  f4. as8~ as2 |
   g4. bes8~ bes4 g |
-  as4 f8-. des8 r8 as4-. g8~ |
+  as4 f8 des8-. r8 as4-. g8~ |
   g1 |
   r1 |
   
   c4. e8~ e4 c |
-  des2 f |
+  des4. f8~ f2 |
   e4. g8~ g4 e |
-  f2 as |
+  f4. as8~ as2 |
   g4. bes8~ bes4 g |
-  as4 f8-. des8 r8 des'4 c8~ |
+  as4 f8 des8-. r8 des'4-. c8~ |
   c1 |
   r1 |
 
+  % Theme
+  \mark \default
   c,,4 d8 e8 r f g4~ |
   g4 g2 g4 |
   as4 c8 bes8 r as as4~ |
@@ -79,14 +87,35 @@ tenorSax = \relative c'' {
   as4 g2 e4 |
   g4 f8 e8 r d c4~ |
   c2 r2 |
-  
+
   c4 d8 e8 r f g4~ |
   g4 g2 g4 |
   as4 c8 bes8 r as as4~ |
   as4 g2 g4 |
-  as4 bes8 c8 r es4. |
-  d4 c8 b8 r a4 g8~ |
+  as4 bes8 c8~ c8 r es4 |
+  d4 c8 b8~ b8 r a4 |
+  g2 r2 |
+  r1 |
+  
+  % Statement
+  \mark \default
+  g'4 es4 es c |
+  c as as f8 fis |
   g1 |
+  r1 |
+  g'4 es4 es c |
+  c as as bes8 c |
+  d1 |
+  r1 |
+  g4 es4 es c |
+  c as as f8 fis |
+  g1 |
+  r1 |
+  g'4 es es c |
+  c as as g |
+  
+  \mark \default
+  c2 r2 |
 
   \bar "|."
 }
@@ -102,13 +131,38 @@ accordion = \relative c'' {
   
   <gis d' f>2 <g des' f> |
   <fis c' es>2 <f b es> |
-  <as b f'>1 
+  <as b f'>1^\markup { "rit." } 
   
   \bar "||"
   
+  % Intro
+  \mark \default
+  \tempo 2 = 120
   s1*8
   
   s1*8
+  
+  s1*8 
+  
+  % Theme
+  \mark \default
+  e4 r2. |
+  r2. e4 |
+  f4 r2. |
+  r2. e4 |
+  f4 r2. |
+  r2. g4 |
+  b4. b8 b4 c4 |
+  r1 |
+  
+  <bes e g>4. <bes e g>4. <bes~ e~ g~>4 |
+  <bes e g>4 <bes e g>2 <bes e g>4 |
+  <c f as>4. <c f as>4. <c~ f~ as>4 |
+  <c f as>4 <bes e g>2 <bes e g>4 |
+  <c f as>4. <c f as>4. <c f as>4 |
+  <c fis a>4. <c fis a>4. <c fis a>4 |
+  <f b d>2 <f b d>2 |
+  <fis c' f>1 |
   
   \bar "|."
 }
@@ -124,10 +178,14 @@ bass = \relative c {
   
   e'2 es |
   d des |
-  g,1 
+  g,1^\markup { "rit." }
 
   \bar "||"
 
+  % Intro
+  \mark \default
+  \tempo 2 = 120
+
   c4. g'8 r4 c,4 |
   des4. gis8~ gis2 |
   c,4. g'8 r4 c,4 |
@@ -155,29 +213,32 @@ bass = \relative c {
   c,4. g'8 r4 c,4 |
   bes4. bes4. b4 |
   
-  c4-> r2. |
-  r1 |
-  des4-> r2. |
-  r1 |
-  des4-> r2. |
-  r1 |
-  g,4-> r2. |
-  r4 bes4 bes8 bes4 b8 |
-  
-  c4 c4-. r8 e4 c8 |
-  c4 c4-. r8 e4 c8 |
-  des4 des4-. r8 f4 des8 |
-  des4 des4-. r8 f4 des8 |
-  des4 des4-. r8 f4. |
-  d4 d4-. r8 fis4. |
-  g,4. g8~ g2 |
+  % Theme
+  \mark \default
+  c4 r2. |
+  r2. c4 |
+  des4 r2. |
+  r2. c4 |
+  des4 r2. |
+  r2. c4 |
+  g4. g8~ g4 c4 |
+  r4 g4 g8 g r b |
+
+  c4. e4. c4 |
+  c8 r8 e2 c4 |
+  des4. f4. des4 |
+  des8 r8 e2 c4 |
+  des4. f4. des4 |
+  d4. fis4. d4 |
+  g,4. b4. g4 |
+  d'4. d4. c4 |
 
   \bar "|."
 
 }
 
 BookFull = \book {
-  \bookOutputName "DeGrapUitleggen_Full"
+  \bookOutputName "ExplainingTheJoke_Full"
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -191,7 +252,7 @@ BookFull = \book {
   
   \score {
     \header {
-      title = "De Grap Uitleggen"
+      title = "Explaining the Joke"
       composer = "Roelof Ruis"
     }
     <<
@@ -229,7 +290,7 @@ BookTenorSax = \book {
   }
   
   \header {
-    title = "De Grap Uitleggen"
+    title = "Explaining the Joke"
     composer = "Roelof Ruis"
     instrument = "Tenor Saxophone"
     tagline = ##f
@@ -244,7 +305,7 @@ BookTenorSax = \book {
 }
 
 BookAccordion = \book {
-  \bookOutputName "DeGrapUitleggen_Accordion" 
+  \bookOutputName "ExplainingTheJoke_Accordion" 
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -253,7 +314,7 @@ BookAccordion = \book {
   }
   
   \header {
-    title = "De Grap Uitleggen"
+    title = "Explaining the Joke"
     composer = "Roelof Ruis"
     instrument = "Accordion"
     tagline = ##f
@@ -268,7 +329,7 @@ BookAccordion = \book {
 }
 
 BookBass = \book {
-  \bookOutputName "DeGrapUitleggen_Bass" 
+  \bookOutputName "ExplainingTheJoke_Bass" 
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -277,7 +338,7 @@ BookBass = \book {
   }
   
   \header {
-    title = "De Grap Uitleggen"
+    title = "Explaining the Joke"
     composer = "Roelof Ruis"
     instrument = "Bass"
     tagline = ##f
@@ -292,7 +353,7 @@ BookBass = \book {
 }
 
 Midi = \score {
-  \bookOutputName "DeGrapUitleggen"
+  \bookOutputName "ExplainingTheJoke"
   <<
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"
