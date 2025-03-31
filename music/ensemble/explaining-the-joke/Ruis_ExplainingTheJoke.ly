@@ -98,6 +98,7 @@ tenorSax = \relative c'' {
   g1 |
   r1 |
   
+  
   c,4 d8 e8 r f g4~ |
   g4 g2 g4 |
   as4 c8 bes8 r as as4~ |
@@ -106,6 +107,8 @@ tenorSax = \relative c'' {
   as4 g2 e4 |
   g4 f8 e8 r d c4~ |
   c2 r2 |
+  
+  %s1*8
 
   c4 d8 e8 r f g4~ |
   g4 g2 g4 |
@@ -135,7 +138,7 @@ tenorSax = \relative c'' {
   
   \mark \default
   c2 r2 |
-  s1*7 |
+  R1*7 |
   
   c4. e8~ e4 c |
   des4. f8~ f2 |
@@ -202,9 +205,28 @@ tenorSax = \relative c'' {
   g, a bes es |
   d c b a |
   g1~ |
-  g1 |
+  g1\glissando |
   g'1~ |
+  g2 r2 |
+  
+  \mark \default
+  g2-. es4-. es~ |
+  es2 c |
+  r4 c2 as4 |
+  \tuplet 3/2 { as2 f fis } |
+  g1~ |
   g1 |
+  r1 |
+  r1 |
+  
+ g'2-. d4 es |
+ \tuplet 3/2 { f2 es c } |
+ \tuplet 3/2 { b2 c as } |
+ as2 r4 bes8 c |
+ d1~ |
+ d1 |
+ r1 |
+ r1 |
 
   \bar "|."
 }
@@ -249,7 +271,7 @@ accordion = \relative c'' {
   f4 r2. |
   r2. g4 |
   b4. b4.-. c4 |
-  r4 <bes b f'>4 8 8 r4 |
+  r4 <bes b f'>4-. 8 8 r4 |
   
   e,4 r2. |
   r2. e4 |
@@ -259,22 +281,21 @@ accordion = \relative c'' {
   fis4 r2 fis4 |
   <g c d>2 <g b d>2 |
   <b f'>1 |
-  
-  <bes e g>4. <bes e g>4.-. <bes e g>4 |
-  <bes e g>4. <bes e g>4.-. <bes e g>4 |
-  <c f as>4. <c f as>4.-. <c f as>4 |
-  <c f as>4. <bes e g>4.-. <bes e g>4 |
-  <c f as>4. <c f as>4.-. <c f as>4 |
-  <c f as>4. <bes e g>4.-. <bes e g>4 |
-  <c d g>4. <b d g>4.-. <g~ c~ e~>4 |
+
+  <bes e g>8 r <bes e g> r8 r8 <bes e g>8 r <bes e g>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c d g>4 r8 <c d g>8 r4 <g~ c~ e~>4 |
   <g c e>1 |
-  
-  <bes e g>4. <bes e g>4.-. <bes e g>4 |
-  <bes e g>4. <bes e g>4.-. <bes e g>4 |
-  <c f as>4. <c f as>4.-. <c f as>4 |
-  <c f as>4. <bes e g>4.-. <bes e g>4 |
-  <c f as>4. <c f as>4.-. <c f as>4 |
-  <c es fis a>4. <c es fis a>4.-. <c es fis a>4 |
+  <bes e g>8 r <bes e g> r8 r8 <bes e g>8 r <bes e g>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c f as>8 r <c f as> r8 r8 <c f as>8 r <c f as>8 |
+  r8 <c es fis a> r8 <c es fis a>8 r4 <c es fis a>8 r8 |
   <as c d g>1 |
   <as b~ d~ g~>2 <g b d g>2 |
   
@@ -315,20 +336,20 @@ accordion = \relative c'' {
   \mark \default
   e4\f r2. |
   r2. e4 |
-  <c f as>4. <c f as>4.-. <c f as>4 |
-  <c f as>4. <bes e g>4.-. <bes e g>4 |
-  <c f as>4. <c f as>4.-. <c f as>4 |
-  <c f as>4. <bes e g>4.-. <bes e g>4 |
-  <c d g>4. <b d g>4.-. <g c e>4 |
+  <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c d g>4 r8 <c d g>8 r4 <g~ c~ e~>4 |
   <g c e>1 |
   
-  <bes e g>4. <bes e g>4.-. <bes e g>4 |
-  <bes e g>4. <bes e g>4.-. <bes e g>4 |
-  <c f as>4. <c f as>4.-. <c f as>4 |
-  <c f as>4. <bes e g>4.-. <bes e g>4 |
-  <c f as>4. <c f as>4.-. <c f as>4 |
-  <c f as>4. <bes e g>4.-. <bes e g>4 |
-  <c d g>4. <b d g>4.-. <g~ c~ e~>4 |
+  <bes e g>8 r <bes e g> r8 r8 <bes e g>8 r <bes e g>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
+  r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
+  <c d g>4 r8 <c d g>8 r4 <g~ c~ e~>4 |
   <g c e>4 \tuplet 3/2 { f8 g as } \tuplet 3/2 { bes c d } \tuplet 3/2 { es f g } |
   
   \mark \default
@@ -373,6 +394,23 @@ accordion = \relative c'' {
   <f~ g~ b~ d~>1 |
   <f g b d>1 |
   
+  \mark \default
+  as,8 c es c g' es c es |
+  as, c es c g' es c es |
+  as, c es c g' es c es |
+  as, c es c g' es c es |
+  as,8 b d b g' d b d |
+  as b d b g' d b d |
+  as b d b g' d b d |
+  as b d b g' d b d |
+  as8 c es c g' es c es |
+  as, c es c g' es c es |
+  as, c es c g' es c es |
+  as, c es c g' es c es |
+  as,8 b d b g' d b d |
+  as b d b g' d b d |
+  as4 b d f |
+  <as, b g'>1 |
 
   \bar "|."
 }
@@ -432,7 +470,7 @@ bass = \relative c {
   des4 r2. |
   r2. c4 |
   g4. g4.-. c4 |
-  r4 g4 g8 g r b |
+  r4 g4-. g8 g r b |
   
   c4 r2. |
   r2. c4 |
@@ -443,23 +481,23 @@ bass = \relative c {
   g2. g4 |
   g4. a4. b4 |
 
-  c4. e4.-. c4 |
-  c4. e4.-. c4 |
-  des4. f4.-. des4 |
-  des4. e4.-. c4 |
-  des4. f4.-. des4 |
-  des4. e4.-. c4 |
-  g4. b4.-. c4 |
-  c4. g4.-. bes4 |
+  c2 g2 |
+  c2 g2 |
+  des'2 as2 |
+  c2 g |
+  des'2 as2 |
+  c2 g |
+  g4. g8 r4 c4~ |
+  c4 g2 bes4 |
 
-  c4. e4.-. c4 |
-  c4. e4.-. c4 |
-  des4. f4.-. des4 |
-  des4. e4.-. c4 |
-  des4. f4.-. des4 |
-  d4. fis4.-. d4 |
-  g,4. d'4.-. d4 |
-  g,4. b4.-. g4 |
+  c2 g2 |
+  c2 g2 |
+  des'2 as2 |
+  c2 g |
+  des'2 as |
+  d2 fis2 |
+  g2 b, |
+  g4. g4.-. b4 |
 
   % Statement
   \mark \default
@@ -499,20 +537,20 @@ bass = \relative c {
   \mark \default
   c4 r2. |
   r2. c4 |
-  des4. f4.-. des4 |
-  des4. e4.-. c4 |
-  des4. f4.-. des4 |
-  des4. e4.-. c4 |
-  g4. b4.-. c4 |
-  c4. g4.-. bes4 |
+  des2 as2 |
+  c2 g |
+  des'2 as2 |
+  c2 g |
+  g4. g8 r4 c4~ |
+  c4 g2 bes4 |
   
-  c4. e4.-. c4 |
-  c4. e4.-. c4 |
-  des4. f4.-. des4 |
-  des4. e4.-. c4 |
-  des4. f4.-. des4 |
-  des4. e4.-. c4 |
-  g4. b4.-. c4 |
+  c2 g2 |
+  c2 g2 |
+  des'2 as2 |
+  c2 g |
+  des'2 as2 |
+  c2 g |
+  g4. g8 r4 c4~ |
   c4 g2. |
   
   \mark \default
@@ -542,7 +580,7 @@ bass = \relative c {
   c'1 |
   b1 |
   \bar "."
-  
+
   bes4. f'4.-. r4 |
   bes,4. f'4-. b,8-> b-> b-> |
   es4. bes'4.-. r4 |
@@ -553,8 +591,27 @@ bass = \relative c {
   d1 |
   g,1 |
   d'1 |
-  g1~ |
+  g2. d4 |
+  g,1 |
+  
+  \mark \default
+  c1~ | 
+  c2 d4 es4~ |
+  es1~ |
+  es2 f4 g4~ |
+  g2 es |
+  es c |
+  c as |
+  bes b |
+  c1~ |
+  c2 d4 es4~ |
+  es1~ |
+  es2 f4 g4~ |
+  g2 es |
+  es c |
+  c as |
   g1 |
+  
   
   
   \bar "|."
@@ -592,6 +649,7 @@ BookFull = \book {
       \new Staff = "saxophone" \tenorSax
       \new Staff = "accordion" \accordion
       \new Staff = "bass" \bass
+      \new DrumStaff = "drums" \drumMusic
     >>
   
     \layout {
