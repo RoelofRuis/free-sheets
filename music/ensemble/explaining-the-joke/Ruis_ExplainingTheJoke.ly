@@ -227,6 +227,20 @@ tenorSax = \relative c'' {
  d1 |
  r1 |
  r1 |
+ 
+ %{
+ r2 as8 bes4-. g8~ |
+ g4 es-. des8 es4-. es8 |
+ 
+ r2 as8 bes4-. g8~ |
+ g4 es-. des8 es4-. es8 |
+ 
+ r2 as8 bes4-. g8~ |
+ g4 es-. des8 es4-. es8 |
+ 
+ r2 as8 bes4-. g8~ |
+ g4 es-. des8 es4-. es8 |
+ %}
 
   \bar "|."
 }
@@ -300,20 +314,20 @@ accordion = \relative c'' {
   <as b~ d~ g~>2 <g b d g>2 |
   
   \mark \default
-  r4. <g bes c es>4. <g bes c es>4 |
-  r4. <g bes c es>4. <g bes c es>4 |
-  r4. <as c d f>4. <as c d f>4 |
+  r4. <g bes c es>4.-. <g bes c es>4 |
+  r4. <g bes c es>4.-. <g bes c es>4 |
+  r4. <as c d f>4.-. <as c d f>4 |
   r4 <as c d f>4-. <as c d f> <as c d f> |
-  r4. <g bes c es>4. <g bes c es>4 |
-  r4. <g bes c es>4. <g bes c es>4 |
-  r4. <as c d f>4. <as c d f>4 |
-  r4. <as c d f>4. <as c d f>4 |
-  r4. <g bes c es>4. <g bes c es>4 |
-  r4. <g bes c es>4. <g bes c es>4 |
-  r4. <as c d f>4. <as c d f>4 |
+  r4. <g bes c es>4.-. <g bes c es>4 |
+  r4. <g bes c es>4.-. <g bes c es>4 |
+  r4. <as c d f>4.-. <as c d f>4 |
+  r4. <as c d f>4.-. <as c d f>4 |
+  r4. <g bes c es>4.-. <g bes c es>4 |
+  r4. <g bes c es>4.-. <g bes c es>4 |
+  r4. <as c d f>4.-. <as c d f>4 |
   r4 <as c d f>4-. <as c d f> <as c d f> |
-  r4. <g bes c es>4. <g bes c es>4 |
-  r4. <f as b d>4. <f as b d>4 |
+  r4. <g bes c es>4.-. <g bes c es>4 |
+  r4. <f as b d>4.-. <f as b d>4 |
   
   c'4. e8~ e4 c |
   des4. f8~ f2 |
@@ -411,6 +425,21 @@ accordion = \relative c'' {
   as b d b g' d b d |
   as4 b d f |
   <as, b g'>1 |
+
+
+  %{
+  r2 es8 f4-. d8~ |
+  d4 as-. ges8 as4-. as8 |
+ 
+  r2 as8 bes4-. g8~ |
+  g4 es-. des8 es4-. es8 |
+
+  r2 as8 bes4-. g8~ |
+  g4 es-. des8 es4-. es8 |
+ 
+  r2 as8 bes4-. g8~ |
+  g4 es-. des8 es4-. es8 |
+  %}
 
   \bar "|."
 }
@@ -612,6 +641,16 @@ bass = \relative c {
   c as |
   g1 |
   
+  %{
+  c4 d8 e4 f8 g4~ |
+  g4 g2 g4 |
+  as4 c8 bes4 as8 as4~ |
+  as4 g2 g4 |
+  as4 c8 bes4 as8 as4~ |
+  as4 g2 e4 |
+  g4 f8 e4 d8 c4~ |
+  c1 |
+  %}
   
   
   \bar "|."
