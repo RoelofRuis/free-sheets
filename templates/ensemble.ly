@@ -1,4 +1,5 @@
 \version "2.24"
+% -*- output: ./;
 
 globalOptions = {
   \compressEmptyMeasures
@@ -45,6 +46,7 @@ title = "Project"
 bookname = "Project"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
+docVersion = #(string-append "outline - version " date)
 
 BookFull = \book {
   \bookOutputName #(string-append bookname "_Full")
@@ -56,13 +58,14 @@ BookFull = \book {
   }
   
   \header {
-    tagline = #(string-append "version " date)
+    tagline = \docVersion
   }
   
   \score {
     \header {
       title = \title
       composer = \composer
+      tagline = \docVersion
     }
     <<
       \new ChordNames { \chordmusic }
@@ -101,7 +104,7 @@ BookTenorSax = \book {
     title = \title
     composer = \composer
     instrument = "Tenor Saxophone"
-    tagline = #(string-append "version " date)
+    tagline = \docVersion
   }
   
   \score {
@@ -125,7 +128,7 @@ BookAccordion = \book {
     title = \title
     composer = \composer
     instrument = "Accordion"
-    tagline = #(string-append "version " date)
+    tagline = \docVersion
   }
   
   \score {
@@ -149,7 +152,7 @@ BookBass = \book {
     title = \title
     composer = \composer
     instrument = "Bass"
-    tagline = #(string-append "version " date)
+    tagline = \docVersion
   }
   
   \score {

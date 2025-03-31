@@ -1,4 +1,5 @@
 \version "2.24"
+% -*- output: ./;
 
 globalOptions = {
   \compressEmptyMeasures
@@ -124,8 +125,15 @@ bass = \relative c {
 
 }
 
+% --- BOOKS --- %
+title = "Voorloper"
+bookname = "Voorloper"
+composer = "Roelof Ruis"
+date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
+docVersion = #(string-append "outline - version " date)
+
 BookFull = \book {
-  \bookOutputName "Voorloper_Full"
+  \bookOutputName #(string-append bookname "_Full")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -134,13 +142,14 @@ BookFull = \book {
   }
   
   \header {
-    tagline = "Outline - v1 March 2025"
+    tagline = \docVersion
   }
   
   \score {
     \header {
-      title = "Voorloper"
-      composer = "Roelof Ruis"
+      title = \title
+      composer = \composer
+      tagline = \docVersion
     }
     <<
       \new ChordNames { \chordmusic }
@@ -167,7 +176,7 @@ BookFull = \book {
 }
 
 BookTenorSax = \book {
-  \bookOutputName "Voorloper_TenorSax" 
+  \bookOutputName #(string-append bookname "_TenorSax")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -176,10 +185,10 @@ BookTenorSax = \book {
   }
   
   \header {
-    title = "Voorloper"
-    composer = "Roelof Ruis"
+    title = \title
     instrument = "Tenor Saxophone"
-    tagline = ##f
+    composer = \composer
+    tagline = \docVersion
   }
   
   \score {
@@ -191,7 +200,7 @@ BookTenorSax = \book {
 }
 
 BookAccordion = \book {
-  \bookOutputName "Voorloper_Accordion" 
+  \bookOutputName #(string-append bookname "_Accordion")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -200,10 +209,10 @@ BookAccordion = \book {
   }
   
   \header {
-    title = "Voorloper"
-    composer = "Roelof Ruis"
+    title = \title
+    composer = \composer
     instrument = "Accordion"
-    tagline = ##f
+    tagline = \docVersion
   }
   
   \score {
@@ -215,7 +224,7 @@ BookAccordion = \book {
 }
 
 BookBass = \book {
-  \bookOutputName "Voorloper_Bass" 
+  \bookOutputName #(string-append bookname "_Bass")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -224,10 +233,10 @@ BookBass = \book {
   }
   
   \header {
-    title = "Voorloper"
-    composer = "Roelof Ruis"
+    title = \title
+    composer = \composer
     instrument = "Bass"
-    tagline = ##f
+    tagline = \docVersion
   }
   
   \score {
@@ -239,25 +248,25 @@ BookBass = \book {
 }
 
 Midi = \score {
-  \bookOutputName "Voorloper"
+  \bookOutputName \bookname
   <<
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.midiMinimumVolume = 0.6
       \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \tenorSax }
+      \unfoldRepeats { \transpose c c, { \tenorSax } }
     }
     \new Staff = "accordion" {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.3
       \set Staff.midiMaximumVolume = 0.6
-      \transpose c c, { \accordion }
+      \unfoldRepeats { \transpose c c, { \accordion } }
     }
     \new Staff = "bass" {
       \set Staff.midiMinimumVolume = 0.4
       \set Staff.midiMaximumVolume = 0.9
       \set Staff.midiInstrument = "electric bass (finger)"
-      \transpose c c, { \bass }
+      \unfoldRepeats { \transpose c c, { \bass } }
     }
   >>
   

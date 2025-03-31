@@ -1,4 +1,5 @@
 \version "2.24"
+% -*- output: ./;
 
 \include "swing.ly"
 
@@ -310,37 +311,37 @@ tenorSax = \relative c'' {
   
   % Theme
   \mark \default
-  es,4-. g-. bes-. |
+  r8 es,8 r g r bes |
   a8 bes a g f a |
-  g8 c, r4 c8 bes |
+  g8 c, r8 c4 bes8 |
   d2 r4 |
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   a8 bes a g f a |
   g8 c, r es \times 2/3 { d c b }
   c2 r4 |
   
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   a8 bes a g f a |
-  g8 c, r4 c8 bes |
+  g8 c, r8 c4 bes8 |
   d2 r4 |
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   a8 bes a g f a |
   g8 c, r es \times 2/3 { d c b }
   c2 r4 |
   
   % Variation I
   \mark \default
-  bes4-. d-. f-. |
+  r8 bes r d r f |
   g2 r4 |
-  a4-. f-. c8 cis |
+  r8 a r f c8 cis |
   d4. e4. |
-  c4-. f-. a-. |
+  r8 c r f r a |
   bes4.-- a4.-- |
   a4.-- as4.-- |
   as4.-- g4.-- |
-  g4-. c-. e-. |
+  r8 g r c r e |
   f4. e4. |
-  f,4-. a-. d-. |
+  r8 f, r a r d |
   e8 f e d c d |
   
   % Return I
@@ -372,25 +373,25 @@ tenorSax = \relative c'' {
   
   % Theme
   \mark \default
-  es,4-. g-. bes-. |
+  r8 es, r g r bes |
   a8 bes a g f a |
-  g8 c, r4 c8 bes |
+  g8 c, r8 c4 bes8 |
   d2 r4 |
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   a8 bes a g f a |
   g8 c, r es \times 2/3 { d c b }
   c2 r4 |
   
   % Theme Var
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   a8 bes a g f a |
-  g8 d r4 d8 c |
+  g8 d r d4 c8 |
   e2 r4 |
-  f4-. a-. c-. |
+  r8 f r a r c |
   b8 c b a gis b |
-  a4 e e8 f |
+  a4 e r8 f |
   fis2 r4 |
-  g4-. bes-. d-. |
+  r8 g r bes r d |
   c8 d c bes g4-. |
   c8 d c bes g4-. |
   a8 bes a g f e |
@@ -431,10 +432,10 @@ tenorSax = \relative c'' {
   
   d4\( b g |
   c4. b8 c d |
-  e4 cis a |
+  e4. a,8 b cis |
   d8 cis d e f4 |
   d8 cis d e f g |
-  f4 e d |
+  r8 f r e r d |
   d2. |
   cis2.\) |
   
@@ -452,7 +453,7 @@ tenorSax = \relative c'' {
   bes4. a8 g4 |
   g2 a4 |
   bes4. a8 g4 |
-  g4 fis g |
+  r8 g r fis r g |
   a2.~ |
   a2.\) |
   
@@ -460,16 +461,16 @@ tenorSax = \relative c'' {
   \mark \default
   bes,4-.^\markup { \bold "Stringendo" } d-. f-. |
   e8 f e d bes4-. |
-  e8 f e d bes4-. |
+  r8 e8 f e d bes |
   e8 f e d bes as |
   bes4-. d-. f-. |
   e8 f e d bes4-. |
-  e8 f e d bes4-. |
+  r8 e8 f e d bes |
   bes'2. |
   
   bes,4-. d-. f-. |
   e8 f e d bes4-. |
-  e8 f e d bes4-. |
+  r8 e8 f e d bes |
   e8 f e d bes as |
   bes4-. d-. f-. |
   e8 f e d bes as |
@@ -507,37 +508,37 @@ tenorSax = \relative c'' {
   
     % Theme
   \mark \default
-  es,4-. g-. bes-. |
+  r8 es, r g r bes |
   a8 bes a g f a |
-  g8 c, r4 c8 bes |
+  g8 c, r8 c4 bes8 |
   d2 r4 |
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   a8 bes a g f a |
   g8 c, r es \times 2/3 { d c b }
   c2 r4 |
   
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   a8 bes a g f a |
-  g8 c, r4 c8 bes |
+  g8 c, r8 c4 bes8 |
   d2 r4 |
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   a8 bes a g f a |
   g8 c, r es \times 2/3 { d c b }
   c2 r4 |
   
   % Variation I
   \mark \default
-  bes4-. d-. f-. |
+  r8 bes r d r f |
   g2 r4 |
-  a4-. f-. c8 cis |
+  r8 a r f c8 cis |
   d4. e4. |
-  c4-. f-. a-. |
+  r8 c r f r a |
   bes4.-- a4.-- |
   a4.-- as4.-- |
   as4.-- g4.-- |
-  g4-. c-. e-. |
+  r8 g r c r e |
   f4. e4. |
-  f,4-. a-. d-. |
+  r8 f, r a r d |
   e8 f e d c d |
   
   % Return I
@@ -577,13 +578,13 @@ tenorSax = \relative c'' {
   r8 bes8 g es d bes |
   c4 r2 |
   r2. |
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   r8 bes g es d bes |
   c4 r2 |
   r2. |
   r2. |
   r8 bes' g es d f |
-  es4-. g-. bes-. |
+  r8 es r g r bes |
   a8 bes a g es f |
   g4-. c-. b-. |
   r8 c8~ c4 r4 |
