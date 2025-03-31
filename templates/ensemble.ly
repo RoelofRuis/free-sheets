@@ -33,15 +33,21 @@ accordion = \relative c'' {
 bass = \relative c {
   \globalOptions
   \clef bass
-  
+
   % Music
   
   \bar "|."
 
 }
 
+% --- BOOKS --- %
+title = "Project"
+bookname = "Project"
+composer = "Roelof Ruis"
+date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
+
 BookFull = \book {
-  \bookOutputName "Project_Full"
+  \bookOutputName #(string-append bookname "_Full")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -50,13 +56,13 @@ BookFull = \book {
   }
   
   \header {
-    tagline = ##f
+    tagline = #(string-append "version " date)
   }
   
   \score {
     \header {
-      title = "Title"
-      composer = "Roelof Ruis"
+      title = \title
+      composer = \composer
     }
     <<
       \new ChordNames { \chordmusic }
@@ -83,7 +89,7 @@ BookFull = \book {
 }
 
 BookTenorSax = \book {
-  \bookOutputName "Project_TenorSax" 
+  \bookOutputName #(string-append bookname "_TenorSax")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -92,10 +98,10 @@ BookTenorSax = \book {
   }
   
   \header {
-    title = "Title"
-    composer = "Roelof Ruis"
+    title = \title
+    composer = \composer
     instrument = "Tenor Saxophone"
-    tagline = ##f
+    tagline = #(string-append "version " date)
   }
   
   \score {
@@ -107,7 +113,7 @@ BookTenorSax = \book {
 }
 
 BookAccordion = \book {
-  \bookOutputName "Project_Accordion" 
+  \bookOutputName #(string-append bookname "_Accordion")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -116,10 +122,10 @@ BookAccordion = \book {
   }
   
   \header {
-    title = "Title"
-    composer = "Roelof Ruis"
+    title = \title
+    composer = \composer
     instrument = "Accordion"
-    tagline = ##f
+    tagline = #(string-append "version " date)
   }
   
   \score {
@@ -131,7 +137,7 @@ BookAccordion = \book {
 }
 
 BookBass = \book {
-  \bookOutputName "Project_Bass" 
+  \bookOutputName #(string-append bookname "_Bass")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -140,10 +146,10 @@ BookBass = \book {
   }
   
   \header {
-    title = "Title"
-    composer = "Roelof Ruis"
+    title = \title
+    composer = \composer
     instrument = "Bass"
-    tagline = ##f
+    tagline = #(string-append "version " date)
   }
   
   \score {
@@ -155,7 +161,7 @@ BookBass = \book {
 }
 
 Midi = \score {
-  \bookOutputName "Project"
+  \bookOutputName \bookname
   <<
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"

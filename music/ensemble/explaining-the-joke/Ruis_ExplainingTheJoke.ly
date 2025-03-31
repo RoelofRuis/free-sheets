@@ -465,8 +465,14 @@ bass = \relative c {
 
 }
 
+% --- BOOKS --- %
+title = "Explaining the Joke"
+bookname = "ExplainingTheJoke"
+composer = "Roelof Ruis"
+date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
+
 BookFull = \book {
-  \bookOutputName "ExplainingTheJoke_Full"
+  \bookOutputName #(string-append bookname "_Full")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -475,20 +481,20 @@ BookFull = \book {
   }
   
   \header {
-      tagline = "Outline - v1 March 2025"
+    tagline = #(string-append "version " date)
   }
   
   \score {
     \header {
-      title = "Explaining the Joke"
-      composer = "Roelof Ruis"
+      title = \title
+      composer = \composer
+      tagline = #(string-append "version " date)
     }
     <<
       \new ChordNames { \chordmusic }
       \new Staff = "saxophone" \tenorSax
       \new Staff = "accordion" \accordion
       \new Staff = "bass" \bass
-      \new DrumStaff = "drums" \drumMusic
     >>
   
     \layout {
@@ -509,7 +515,7 @@ BookFull = \book {
 }
 
 BookTenorSax = \book {
-  \bookOutputName "DeGrapUitleggen_TenorSax" 
+  \bookOutputName #(string-append bookname "_TenorSax")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -518,10 +524,10 @@ BookTenorSax = \book {
   }
   
   \header {
-    title = "Explaining the Joke"
-    composer = "Roelof Ruis"
+    title = \title
+    composer = \composer
     instrument = "Tenor Saxophone"
-    tagline = ##f
+    tagline = #(string-append "version " date)
   }
   
   \score {
@@ -533,7 +539,7 @@ BookTenorSax = \book {
 }
 
 BookAccordion = \book {
-  \bookOutputName "ExplainingTheJoke_Accordion" 
+  \bookOutputName #(string-append bookname "_Accordion")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -542,10 +548,10 @@ BookAccordion = \book {
   }
   
   \header {
-    title = "Explaining the Joke"
-    composer = "Roelof Ruis"
+    title = \title
+    composer = \composer
     instrument = "Accordion"
-    tagline = ##f
+    tagline = #(string-append "version " date)
   }
   
   \score {
@@ -557,7 +563,7 @@ BookAccordion = \book {
 }
 
 BookBass = \book {
-  \bookOutputName "ExplainingTheJoke_Bass" 
+  \bookOutputName #(string-append bookname "_Bass")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -566,10 +572,10 @@ BookBass = \book {
   }
   
   \header {
-    title = "Explaining the Joke"
-    composer = "Roelof Ruis"
+    title = \title
+    composer = \composer
     instrument = "Bass"
-    tagline = ##f
+    tagline = #(string-append "version " date)
   }
   
   \score {
@@ -581,7 +587,7 @@ BookBass = \book {
 }
 
 Midi = \score {
-  \bookOutputName "ExplainingTheJoke"
+  \bookOutputName \bookname
   <<
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"
@@ -600,9 +606,6 @@ Midi = \score {
       \set Staff.midiMaximumVolume = 0.9
       \set Staff.midiInstrument = "electric bass (finger)"
       \transpose c c, { \bass }
-    }
-    \new DrumStaff = "drums" {
-      \drumMusic
     }
   >>
   
