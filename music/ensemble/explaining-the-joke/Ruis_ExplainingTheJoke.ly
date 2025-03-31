@@ -607,6 +607,9 @@ Midi = \score {
       \set Staff.midiInstrument = "electric bass (finger)"
       \transpose c c, { \bass }
     }
+    \new DrumStaff = "drums" {
+      \drumMusic
+    }
   >>
   
   \midi { }
