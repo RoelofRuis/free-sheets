@@ -158,15 +158,15 @@ bass = \relative c {
   % Aankondiging
   \mark \default
   \repeat volta 2 {
-    g4 g4 g4 g4 |
-    g4 g4 g4 g4 |
-    g4 g4 g4 g4 |
-    g4 g4 g4 g4 |
+    g8 g4 g8 g8 g4 g8 |
+    g8 g4 g8 g8 g4 g8 |
+    g8 g4 g8 g8 g4 g8 |
+    g8 g4 g8 g8 g4 g8 |
     
-    g4 g4 g4 g4 |
-    g4 g4 g4 g4 |
-    g4 g4 g4 g4 |
-    g4 g4 g4 g4 |
+    g8 g4 g8 g8 g4 g8 |
+    g8 g4 g8 g8 g4 g8 |
+    g8 g4 g8 g8 g4 g8 |
+    g8 g4 g8 g8 g4 g8 |
   }
 
   \bar "|."

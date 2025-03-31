@@ -204,21 +204,25 @@ accordion = \relative c'' {
   
   <gis d' f>2 <g des' f> |
   <fis c' es>2 <f b es> |
-  <as b f'>1^\markup { "rit." } 
+  <as b f'>1^\markup { "rit." } |
   
   \bar "||"
   
   % Intro
   \mark \default
   \tempo 2 = 120
-  s1*8
+  <bes~ es~ e~>1\p |
+  <bes~ es~ e~>1
+  <bes~ es~ e~>1
+  <bes es e>2 r2
+  R1*4 |
   
   s1*8
   
   s1*6
   
-  <e bes' c>1 |
-  r8 <e bes' c>8 8 8 8 8 8 8 |
+  <bes es e>1 |
+  r8 <as~ des~ f~>8^\markup { "Bellows shake" } <as~ des~ f~>8 <as~ des~ f~>8 <as~ des~ f~>8 <as~ des~ f~>8 <as~ des~ f~>8 <as des f>8 |
   
   % Theme
   \mark \default
@@ -229,16 +233,16 @@ accordion = \relative c'' {
   f4 r2. |
   r2. g4 |
   b4. b8 b4 c4 |
-  r4 <as d f>4 8 8 r4 |
+  r4 <bes b f'>4 8 8 r4 |
   
-  e4 r2. |
+  e,4 r2. |
   r2. e4 |
   f4 r2. |
   r2. e4 |
   f4 r2 f4 |
   fis4 r2 fis4 |
-  c'2 b2 |
-  b2 a |
+  <g c d>2 <g b d>2 |
+  <b f'>1 |
   
   <bes e g>4. <bes e g>4. <bes~ e~ g~>4 |
   <bes e g>4 <bes e g>2 <bes e g>4 |
@@ -254,25 +258,25 @@ accordion = \relative c'' {
   <c f as>4. <c f as>4. <c~ f~ as>4 |
   <c f as>4 <bes e g>2 <bes e g>4 |
   <c f as>4. <c f as>4. <c f as>4 |
-  <c fis a>4. <c fis a>4. <c fis a>4 |
-  <c d g>1 |
-  <b d g>1 |
+  <c es fis a>4. <c es fis a>4. <c es fis a>4 |
+  <as c d g>1 |
+  <as b~ d~ g~>2 <g b d g>2 |
   
   \mark \default
-  r4. <g c es>4. <g c es>4 |
-  r4. <g c es>4. <g c es>4 |
-  r4. <f as d>4. <f as d>4 |
-  r4 <f as d>4-. <f as d> <f as d> |
-  r4. <g c es>4. <g c es>4 |
-  r4. <g c es>4. <g c es>4 |
-  r4. <f as d>4. <f as d>4 |
-  r4. <f as d>4. <f as d>4 |
-  r4. <g c es>4. <g c es>4 |
-  r4. <g c es>4. <g c es>4 |
-  r4. <f as d>4. <f as d>4 |
-  r4 <f as d>4-. <f as d> <f as d> |
-  r4. <g c es>4. <g c es>4 |
-  r4. <f as d>4. <f as d>4 |
+  r4. <g bes c es>4. <g bes c es>4 |
+  r4. <g bes c es>4. <g bes c es>4 |
+  r4. <as c d f>4. <as c d f>4 |
+  r4 <as c d f>4-. <as c d f> <as c d f> |
+  r4. <g bes c es>4. <g bes c es>4 |
+  r4. <g bes c es>4. <g bes c es>4 |
+  r4. <as c d f>4. <as c d f>4 |
+  r4. <as c d f>4. <as c d f>4 |
+  r4. <g bes c es>4. <g bes c es>4 |
+  r4. <g bes c es>4. <g bes c es>4 |
+  r4. <as c d f>4. <as c d f>4 |
+  r4 <as c d f>4-. <as c d f> <as c d f> |
+  r4. <g bes c es>4. <g bes c es>4 |
+  r4. <f as b d>4. <f as b d>4 |
   
   c'4. e8~ e4 c |
   des4. f8~ f2 |
@@ -394,24 +398,24 @@ bass = \relative c {
   des8 r8 e2 c4 |
   des4. f4. des4 |
   d4. fis4. d4 |
-  g,4. b4. 4 |
-  d4. d4. b4 |
+  g,4. d'4. 4 |
+  g,4. b4. g4 |
 
   % Statement
   \mark \default
-  as4. c4. as4 |
-  es'4. c4. as4 |
-  g4. b4. g4 |
-  d'4 b b g |
-  as4. c4. as4 |
-  es'4. c4. as4 |
-  g4. b4. g4 
-  d'4. b4. g4 |
-  as4. c4. as4 |
-  es'4. c4. as4 |
-  g4. b4. g4 |
-  d'4 b b g |
-  as4. c4. as4 |
+  c4. as4. as4 |
+  es'4. as,4. as4 |
+  b4. g4. g4 |
+  d'4. g,4. g4 |
+  c4. as4. as4 |
+  es'4. as,4. as4 |
+  b4. g4. g4 
+  d'4. g,4. g4 |
+  c4. as4. as4 |
+  es'4. as,4. as4 |
+  b4. g4. g4 |
+  d'4. g,4. g4 |
+  c4. as4. as4 |
   g4. g4. b4 |
     
   c4. g'8 r4 c,4 |
