@@ -164,7 +164,7 @@ tenorSax = \relative c'' {
   as4 c8 bes8 r as as4~ |
   as4 g2 e4 |
   g4 f8 e8 r d c4~ |
-  c2 r2 |
+  c4 r2. |
   
   % Uitleggen
   \mark \default
@@ -178,10 +178,12 @@ tenorSax = \relative c'' {
   g4 f8 e r8 d8 c4~ |
   c4 r2. |
   
-  as'4. bes4. g4~ |
-  g8 es4. r4 es4 |
-  ges4 ges as as |
+  r4 as'4. bes4. |
+  g4. es4. es4 |
+  ges4-. ges as-. as |
   f des f8 es d c |
+  
+  \mark \default
   bes8 r4. bes8 c d es |
   f f r f r2 |
   r4. f8 g bes a g |
@@ -189,6 +191,20 @@ tenorSax = \relative c'' {
   r4. f8 g bes a g |
   g f r f r2 |
   r4. d8 f es d c |
+  \bar "."
+  ges'2( as |
+  f des) |
+  \bar "."
+  bes8 r4. bes8 c d es |
+  f8 f r f r2 |
+  r4. f8 g bes a g |
+  g8 f r f r2 |
+  g, a bes es |
+  d c b a |
+  g1~ |
+  g1 |
+  g'1~ |
+  g1 |
 
   \bar "|."
 }
@@ -232,7 +248,7 @@ accordion = \relative c'' {
   r2. e4 |
   f4 r2. |
   r2. g4 |
-  b4. b8 b4 c4 |
+  b4. b4.-. c4 |
   r4 <bes b f'>4 8 8 r4 |
   
   e,4 r2. |
@@ -244,21 +260,21 @@ accordion = \relative c'' {
   <g c d>2 <g b d>2 |
   <b f'>1 |
   
-  <bes e g>4. <bes e g>4. <bes~ e~ g~>4 |
-  <bes e g>4 <bes e g>2 <bes e g>4 |
-  <c f as>4. <c f as>4. <c~ f~ as~>4 |
-  <c f as>4 <bes e g>2 <bes e g>4 |
-  <c f as>4. <c f as>4. <c~ f~ as~>4 |
-  <c f as>4 <bes e g>2 <bes e g>4 |
-  <c d g>4. <b d g> <g~ c~ e~>4 |
+  <bes e g>4. <bes e g>4.-. <bes e g>4 |
+  <bes e g>4. <bes e g>4.-. <bes e g>4 |
+  <c f as>4. <c f as>4.-. <c f as>4 |
+  <c f as>4. <bes e g>4.-. <bes e g>4 |
+  <c f as>4. <c f as>4.-. <c f as>4 |
+  <c f as>4. <bes e g>4.-. <bes e g>4 |
+  <c d g>4. <b d g>4.-. <g~ c~ e~>4 |
   <g c e>1 |
   
-  <bes e g>4. <bes e g>4. <bes~ e~ g~>4 |
-  <bes e g>4 <bes e g>2 <bes e g>4 |
-  <c f as>4. <c f as>4. <c~ f~ as>4 |
-  <c f as>4 <bes e g>2 <bes e g>4 |
-  <c f as>4. <c f as>4. <c f as>4 |
-  <c es fis a>4. <c es fis a>4. <c es fis a>4 |
+  <bes e g>4. <bes e g>4.-. <bes e g>4 |
+  <bes e g>4. <bes e g>4.-. <bes e g>4 |
+  <c f as>4. <c f as>4.-. <c f as>4 |
+  <c f as>4. <bes e g>4.-. <bes e g>4 |
+  <c f as>4. <c f as>4.-. <c f as>4 |
+  <c es fis a>4. <c es fis a>4.-. <c es fis a>4 |
   <as c d g>1 |
   <as b~ d~ g~>2 <g b d g>2 |
   
@@ -287,32 +303,76 @@ accordion = \relative c'' {
   g1 |
   r1 |
   
-  s1*8 |
+  <bes~ e~ es~>1\pp |
+  <bes~ e~ es~>1 |
+  <bes~ e~ es~>1 |
+  <bes~ e~ es~>1 |
+  <bes~ e~ es~>1 |
+  <bes~ e~ es~>1 |
+  <bes~ e~ es~>1 |
+  <bes e es>1
   
   \mark \default
-  e'4 r2. |
+  e4\f r2. |
   r2. e4 |
-  <c f as>4. <c f as>4. <c~ f~ as~>4 |
-  <c f as>4 <bes e g>2 <bes e g>4 |
-  <c f as>4. <c f as>4. <c~ f~ as~>4 |
-  <c f as>4 <bes e g>2 <bes e g>4 |
-  <c d g>4. <b d g> <g~ c~ e~>4 |
+  <c f as>4. <c f as>4.-. <c f as>4 |
+  <c f as>4. <bes e g>4.-. <bes e g>4 |
+  <c f as>4. <c f as>4.-. <c f as>4 |
+  <c f as>4. <bes e g>4.-. <bes e g>4 |
+  <c d g>4. <b d g>4.-. <g c e>4 |
   <g c e>1 |
   
-  <bes e g>4. <bes e g>4. <bes~ e~ g~>4 |
-  <bes e g>4 <bes e g>2 <bes e g>4 |
-  <c f as>4. <c f as>4. <c~ f~ as~>4 |
-  <c f as>4 <bes e g>2 <bes e g>4 |
-  <c f as>4. <c f as>4. <c~ f~ as~>4 |
-  <c f as>4 <bes e g>2 <bes e g>4 |
-  <c d g>4. <b d g> <g~ c~ e~>4 |
-  <g c e>1 |
+  <bes e g>4. <bes e g>4.-. <bes e g>4 |
+  <bes e g>4. <bes e g>4.-. <bes e g>4 |
+  <c f as>4. <c f as>4.-. <c f as>4 |
+  <c f as>4. <bes e g>4.-. <bes e g>4 |
+  <c f as>4. <c f as>4.-. <c f as>4 |
+  <c f as>4. <bes e g>4.-. <bes e g>4 |
+  <c d g>4. <b d g>4.-. <g~ c~ e~>4 |
+  <g c e>4 \tuplet 3/2 { f8 g as } \tuplet 3/2 { bes c d } \tuplet 3/2 { es f g } |
   
   \mark \default
-  <c es as>2 <c es bes'> |
-  <bes g'>2 <bes es>2 |
-  <f b d>4. <f b d>8 r4 <f~ g~ c~ e~>4 |
-  <f g c e>4 <f g>4 <f g>8 8 r <f g>8 |
+  <c, es as>2 <c es as> |
+  <bes es g>2 <bes es g>2 |
+  <b d f>4. <b d f>8 r4 <g~ c~ e~>4 |
+  <g c e>4 <f bes b>4-. <f bes b>8 8 r <f bes b>8 |
+  <c' es as>2 <c es as> |
+  <bes es g>2 <bes es g>2 |
+  <b d f>4. <b d f>8 r4 <g~ c~ e~>4 |
+  <g c e>4 <f bes b>4-. <f bes b>8 8 r <f bes b>8 |
+  
+  r4 <c' es as>4. <c es as>4. |
+  <bes es g>4. <bes es g>4. <bes es g>4 |
+  <bes des ges>4-. <bes des ges>4 <bes des ges>4-. <bes des ges>4 |
+  <as des f>2 <f a es'>2 |
+  
+  \mark \default
+  <f bes d>4-. <f bes d>-. r <f bes d>-. |
+  <f bes d>4-. <f bes d>-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
+  <g bes es>4-. <g bes es>-. r <g bes es>-. |
+  <f bes d>4-. <f bes d>4-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
+  <g bes es>4-. <g bes es>-. r <g bes es>-. |
+  <f bes d>4-. <f bes d>4-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
+  <f a c>2 <g a es'>2 |
+  \bar "."
+  <e bes' des>1 |
+  <es a c>1 |
+  \bar "."
+  
+  <f bes d>4-. <f bes d>-. r <f bes d>-. |
+  <f bes d>4-. <f bes d>-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
+  <g bes es>4-. <g bes es>-. r <g bes es>-. |
+  <f bes d>4-. <f bes d>4-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
+  
+  g8 a bes c a bes c d |
+  bes c d es c d es f |
+  d e fis g e fis g a |
+  fis g a b g a b c |
+  <f,~ as~ c~ d~>1 |
+  <f as c d>1 |
+  <f~ g~ b~ d~>1 |
+  <f g b d>1 |
+  
 
   \bar "|."
 }
@@ -371,7 +431,7 @@ bass = \relative c {
   r2. c4 |
   des4 r2. |
   r2. c4 |
-  g4. g8~ g4 c4 |
+  g4. g4.-. c4 |
   r4 g4 g8 g r b |
   
   c4 r2. |
@@ -383,23 +443,23 @@ bass = \relative c {
   g2. g4 |
   g4. a4. b4 |
 
-  c4. e4. c4 |
-  c8 r8 e2 c4 |
-  des4. f4. des4 |
-  des8 r8 e2 c4 |
-  des4. f4. des4 |
-  des8 r8 e2 c4 |
-  g4. b4. c4 |
-  c4 c2 g4 |
+  c4. e4.-. c4 |
+  c4. e4.-. c4 |
+  des4. f4.-. des4 |
+  des4. e4.-. c4 |
+  des4. f4.-. des4 |
+  des4. e4.-. c4 |
+  g4. b4.-. c4 |
+  c4. g4.-. bes4 |
 
-  c4. e4. c4 |
-  c8 r8 e2 c4 |
-  des4. f4. des4 |
-  des8 r8 e2 c4 |
-  des4. f4. des4 |
-  d4. fis4. d4 |
-  g,4. d'4. 4 |
-  g,4. b4. g4 |
+  c4. e4.-. c4 |
+  c4. e4.-. c4 |
+  des4. f4.-. des4 |
+  des4. e4.-. c4 |
+  des4. f4.-. des4 |
+  d4. fis4.-. d4 |
+  g,4. d'4.-. d4 |
+  g,4. b4.-. g4 |
 
   % Statement
   \mark \default
@@ -439,31 +499,62 @@ bass = \relative c {
   \mark \default
   c4 r2. |
   r2. c4 |
-  des4. f4. des4 |
-  des8 r8 e2 c4 |
-  des4. f4. des4 |
-  des8 r8 e2 c4 |
-  g4. b4. c4 |
-  c4 c2 g4 |
+  des4. f4.-. des4 |
+  des4. e4.-. c4 |
+  des4. f4.-. des4 |
+  des4. e4.-. c4 |
+  g4. b4.-. c4 |
+  c4. g4.-. bes4 |
   
-  c4. e4. c4 |
-  c8 r8 e2 c4 |
-  des4. f4. des4 |
-  des8 r8 e2 c4 |
-  des4. f4. des4 |
-  des8 r8 e2 c4 |
-  g4. b4. c4 |
-  c4. g8~ g2 |
+  c4. e4.-. c4 |
+  c4. e4.-. c4 |
+  des4. f4.-. des4 |
+  des4. e4.-. c4 |
+  des4. f4.-. des4 |
+  des4. e4.-. c4 |
+  g4. b4.-. c4 |
+  c4 g2. |
   
   \mark \default
   as2 as2 |
   es'2 es2 
   g,4. g4. c4~ |
-  c4 g4 g8 g8 r8 g |
+  c4 g4-. g8 g8 r8 g |
   as2 as2 |
   es'2 es2 |
   g,4. g4. c4 |
-  r4 g4 g8 g r8 g |
+  r4 g4-. g8 g r8 g |
+  
+  r4 as4. as4. |
+  es4. es4. es4 |
+  ges4-. ges ges-. ges |
+  des'2 f |
+  
+  \mark \default
+  bes,4. f'4.-. r4 |
+  bes,4. f'4-. b,8-> b-> b-> |
+  es4. bes'4.-. r4 |
+  bes,4. f'4-. b,8-> b-> b-> |
+  es4. bes'4.-. r4 |
+  bes,4. f'4-. b,8-> b-> b-> |
+  f4. c'4.-. f,4 |
+  \bar "."
+  c'1 |
+  b1 |
+  \bar "."
+  
+  bes4. f'4.-. r4 |
+  bes,4. f'4-. b,8-> b-> b-> |
+  es4. bes'4.-. r4 |
+  bes,4. f'4-. b,8-> b-> b-> |
+  es1 |
+  es1 |
+  d1 |
+  d1 |
+  g,1 |
+  d'1 |
+  g1~ |
+  g1 |
   
   
   \bar "|."
