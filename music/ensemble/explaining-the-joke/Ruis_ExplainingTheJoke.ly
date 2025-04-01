@@ -61,18 +61,18 @@ tenorSax = \relative c'' {
   R1*7
 
   c'4. e8~ e4 c |
-  des4. f8~ f2 |
+  des2 f2 |
   e4. g8~ g4 e |
-  f4. as8~ as2 |
+  f2 as2 |
   g4. bes8~ bes4 g |
   as4 f8 des8-. r8 as4-. g8~ |
   g1 |
   r1 |
   
   c4. e8~ e4 c |
-  des4. f8~ f2 |
+  des2 f2 |
   e4. g8~ g4 e |
-  f4. as8~ as2 |
+  f2 as2 |
   g4. bes8~ bes4 g |
   as4 f8 des8-. r8 des'4-. c8~ |
   c1 |
@@ -141,9 +141,9 @@ tenorSax = \relative c'' {
   R1*7 |
   
   c4. e8~ e4 c |
-  des4. f8~ f2 |
+  des2 f2 |
   e4. g8~ g4 e |
-  f4. as8~ as2 |
+  f2 as2 |
   g4. bes8~ bes4 g |
   as4 f8 des8-. r8 des'4-. c8~ |
   c1 |
@@ -202,7 +202,10 @@ tenorSax = \relative c'' {
   f8 f r f r2 |
   r4. f8 g bes a g |
   g8 f r f r2 |
-  g, a bes es |
+  r4. f8 g bes a g |
+  g8 f r f4. bes,4 |
+  
+  g2 a bes es |
   d c b a |
   g1~ |
   g1\glissando |
@@ -302,7 +305,7 @@ accordion = \relative c'' {
   r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
   <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
   r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
-  <c d g>4 r8 <c d g>8 r4 <g~ c~ e~>4 |
+  <b d f>4 r8 <b d f>8 r4 <g~ c~ e~>4 |
   <g c e>1 |
   <bes e g>8 r <bes e g> r8 r8 <bes e g>8 r <bes e g>8 |
   r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
@@ -330,9 +333,9 @@ accordion = \relative c'' {
   r4. <f as b d>4.-. <f as b d>4 |
   
   c'4. e8~ e4 c |
-  des4. f8~ f2 |
+  des2 f2 |
   e4. g8~ g4 e |
-  f4. as8~ as2 |
+  f2 as2 |
   g4. bes8~ bes4 g |
   as4 f8 des8-. r8 as4-. g8~ |
   g1 |
@@ -354,7 +357,7 @@ accordion = \relative c'' {
   r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
   <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
   r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
-  <c d g>4 r8 <c d g>8 r4 <g~ c~ e~>4 |
+  <b d f>4 r8 <b d f>8 r4 <g~ c~ e~>4 |
   <g c e>1 |
   
   <bes e g>8 r <bes e g> r8 r8 <bes e g>8 r <bes e g>8 |
@@ -398,6 +401,8 @@ accordion = \relative c'' {
   <f bes d>4-. <f bes d>-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
   <g bes es>4-. <g bes es>-. r <g bes es>-. |
   <f bes d>4-. <f bes d>4-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
+  <g bes es>4-. <g bes es>-. r <g bes es>-. |
+  <f bes d>4-. <f bes d>4-. r4 <f as d>4 |
   
   g8 a bes c a bes c d |
   bes c d es c d es f |
@@ -614,6 +619,8 @@ bass = \relative c {
   bes,4. f'4-. b,8-> b-> b-> |
   es4. bes'4.-. r4 |
   bes,4. f'4-. b,8-> b-> b-> |
+  es4. bes'4.-. r4 |
+  bes,4. f'4.-. d4 |
   es1 |
   es1 |
   d1 |
