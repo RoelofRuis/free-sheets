@@ -231,6 +231,23 @@ tenorSax = \relative c'' {
  r1 |
  r1 |
  
+ g2 as4 g |
+ r4 es2 d4 |
+ c2 bes2 |
+ as2. bes4 |
+ g1~ |
+ g1 |
+ r1 |
+ r1 |
+ g'4 es2. |
+ es4 c2. |
+ \tuplet 3/2 { c2 as as }
+ \tuplet 3/2 { as f fis }
+ g1~ |
+ g1 |
+ r1 |
+ r1 |
+ 
  %{
  r2 as8 bes4-. g8~ |
  g4 es-. des8 es4-. es8 |
@@ -366,7 +383,7 @@ accordion = \relative c'' {
   r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
   <c f as>8 r8 <c f as> r8 r8 <c f as>8 r <c f as>8 |
   r8 <bes e g>8 r8 <bes e g>8 r4 <bes e g>8 r8 |
-  <c d g>4 r8 <c d g>8 r4 <g~ c~ e~>4 |
+  <b d f>4 r8 <b d f>8 r4 <g~ c~ e~>4 |
   <g c e>4 \tuplet 3/2 { f8 g as } \tuplet 3/2 { bes c d } \tuplet 3/2 { es f g } |
   
   \mark \default
@@ -415,6 +432,23 @@ accordion = \relative c'' {
   
   \mark \default
   as,8 c es c g' es c es |
+  as, c es c g' es c es |
+  as, c es c g' es c es |
+  as, c es c g' es c es |
+  as,8 b d b g' d b d |
+  as b d b g' d b d |
+  as b d b g' d b d |
+  as b d b g' d b d |
+  as8 c es c g' es c es |
+  as, c es c g' es c es |
+  as, c es c g' es c es |
+  as, c es c g' es c es |
+  as,8 b d b g' d b d |
+  as b d b g' d b d |
+  as b d b g' d b d |
+  as b d b g' d b d |
+  
+  as8 c es c g' es c es |
   as, c es c g' es c es |
   as, c es c g' es c es |
   as, c es c g' es c es |
@@ -599,7 +633,7 @@ bass = \relative c {
   
   r4 as4. as4. |
   es4. es4. es4 |
-  ges4-. ges ges-. ges |
+  ges4 r4 ges4 r4 |
   des'2 f |
   
   \mark \default
@@ -631,6 +665,22 @@ bass = \relative c {
   g,1 |
   
   \mark \default
+  c1~ | 
+  c2 d4 es4~ |
+  es1~ |
+  es2 f4 g4~ |
+  g2 es |
+  es c |
+  c as |
+  bes b |
+  c1~ | 
+  c2 d4 es4~ |
+  es1~ |
+  es2 f4 g4~ |
+  g2 es |
+  es c |
+  c as |
+  bes b |
   c1~ | 
   c2 d4 es4~ |
   es1~ |
