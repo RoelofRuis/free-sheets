@@ -53,6 +53,14 @@ drumMusic = \drummode {
     sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
     sn4-> sn4 \repeat tremolo 16 sn32 |
   }
+  
+  \repeat volta 2 {
+    sn8 sn16 16 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
+    sn8 sn16 16 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
+    
+    sn8 8 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
+    sn8 8 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
+  }
 }
 
 tenorSax = \relative c'' {
