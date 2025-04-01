@@ -27,8 +27,32 @@ tenorSax = \relative c' {
   r8 b4. r8 b4 |
   r8 b4 ais4 a |
   b4. cis2 |
-  r8 d4 r8 fis4. |
-  fis2.. |
+  r8 d4. e4. |
+  fis2~ fis8 r4 |
+  
+  \mark \default
+  r8 e,4. r8 e4 |
+  r8 e4. r8 fis4 |
+  r8 fis4. r8 g4
+  r8 gis4. r8 gis4 |
+  r8 g4.~ g4. |
+  fis2 r4. |
+  
+  s2..*6
+  
+  \bar "||"
+  dis'4 cis bis4. |
+  gis4 ais b4 r8 |
+  dis4 cis bis4. |
+  gis4 g4 fis4 r8 |
+  
+  b,4 g'4 f4. |
+  e4 fis g4 r8 |
+  g2 fis4. |
+  r4 b4 e4 bes'8 |
+  d,2. r8 |
+  
+  \mark \default
   
   \bar "|."
 }
@@ -47,10 +71,33 @@ trumpet = \relative c'' {
   fis2 fis4. |
   fis4. b4 g |
   f4. e2 |
-  r4 g,4. b8 e |
-  dis2.. |
+  r4 g,4. b8 fis' |
+  dis2~ dis8 r4 |
   
+  \mark \default
+  gis,2 a4. |
+  b2 cis4. |
+  dis2 dis4. |
+  b2 b4. |
+  cis2~ cis8 b4 |
+  b2 r4 s8 |
   
+  s2..*6 |
+  
+  \bar "||"
+  
+  b4 g gis4. |
+  e4 fis fis4 r8 |
+  gis4 g fis4. |
+  f4 e4 dis4 r8 |
+  
+  b'4 ais b4. |
+  fis4 gis ais4 r8 |
+  b2 b4. |
+  r8 bes4 es as |
+  f2. r8 |
+  
+  \mark \default
   
   \bar "|."
 }
@@ -70,7 +117,36 @@ accordion = \relative c'' {
   b4 fis8 fis'4 dis |
   e4 dis8 cis4 b |
   b2..~ |
-  b2.. |
+  b2~ b8 r4 |
+  
+  \mark \default
+  gis,4 b8[ e] a,[ cis fis] |
+  e4 b8[ e16 fis] gis8[ e cis] |
+  e4 dis8[ fis16 gis] a8[ d, dis] |
+  ais'4 gis8[ gis16 ais] b8[ gis e] |
+  e4 cis4 dis8 e4 |
+  dis2 r8 cis16 dis] e8[ |
+  cis ais] ais4 cis e8 |
+  e4 dis4 r4 e16 dis |
+  cis4 e8[ gis] dis8[ g ais] |
+  gis4 e cis b8 |
+  g4 b8[ dis] dis4 cis8 |
+  b2~ b8 r4 |
+  
+  \bar "||"
+  
+  fis'4 dis e dis8 |
+  b4 cis dis4 r8 |
+  fis4 dis e dis8 |
+  b4 cis b4 r8 |
+  
+  fis'4 dis e dis8 |
+  b4 cis dis4 r8 |
+  fis4 dis e dis8 |
+  b2..~ |
+  b2. r8 |
+  
+  \mark \default
   
   \bar "|."
 }
@@ -90,15 +166,41 @@ bass = \relative c, {
   fis4. ais4 a |
   gis4. fis2 |
   b,4. cis2 |
-  b2.. |
+  b2~ b8 r4 |
+  
+  \mark \default
+  e,2 fis4. |
+  gis2 ais4. |
+  b2 cis4. |
+  dis2 e4. |
+  ais,2~ ais8 b4 |
+  b2 r4 g8~ |
+  g4 e2~ e8 |
+  g4 fis4 r4. |
+  
+  s2..*4
+  
+  \bar "||"
+  
+  R2..*3 |
+  r2 r4 fis16 e'
+
+  b4 a g4. |
+  g4 ais4 b4 r8 |
+  a2 g4. |
+  e2.. |
+  g2. r8 |
+  
+  \mark \default
+  
   
   \bar "|."
 
 }
 
 % --- BOOKS --- %
-title = "Sketch 01"
-bookname = "Sketch01"
+title = "How we lull ourselves to sleep"
+bookname = "HowWeLullOurselvesToSleep"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
 docVersion = #(string-append "outline - version " date)
@@ -237,7 +339,7 @@ Midi = \score {
     \new Staff = "accordion" {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.2
-      \set Staff.midiMaximumVolume = 0.6
+      \set Staff.midiMaximumVolume = 0.9
       \transpose c c, { \accordion }
     }
     \new Staff = "bass" {
