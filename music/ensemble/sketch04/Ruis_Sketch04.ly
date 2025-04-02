@@ -4,7 +4,7 @@
 globalOptions = {
   \compressEmptyMeasures
   \numericTimeSignature
-  \tempo 4=100
+  \tempo 4=120
 }
 
 chordmusic = \chordmode {
@@ -13,39 +13,14 @@ chordmusic = \chordmode {
   % Chord
 }
 
-tenorSax = \relative c' {
+tenorSax = \relative c'' {
   \globalOptions
   \clef treble
   
-  d8 g g f g4 g8 a |
-  b g g f g4 g8 a |
-  b g g f d g g f |
-  d2 r4 bes'16 a g es |
+  r4 e8-. d( e d-.) e( d-.) |
+  e( d-.) e-. d( e d-.) e( d-.) |
   
-  d8 g g f g4 g8 a |
-  b g g f g4 g8 a |
-  b g g f d g g f |
-  g2. r4 |
-  
-  c8 b a g e4 e4 |
-  bes'8 a g f c4 f8 a |
-  g1~ |
-  g2. r4 |
-  
-  c8 b a g e4 e |
-  bes'8 a g f c4 f8 a |
-  g1 |
-  r1 |
-  
-  d8 g g f g4 g8 a |
-  b g g f g4 g8 a |
-  b g g f d g g f |
-  d2 r4 bes'16 a g es |
-  
-  d8 g g f g4 g8 a |
-  b g g f g4 g8 a |
-  b g g f d g g f |
-  g2. r4 |
+  % Music
   
   \bar "|."
 }
@@ -54,80 +29,38 @@ accordion = \relative c'' {
   \globalOptions
   \clef treble
   
-  bes4 c d2~ |
-  d1~ |
-  d2. c4 |
-  bes2 r2 |
+  r8 <g c e> r8 <g c e> r <g c e> r <g c e> |
+  r8 <f as d> r8 <f as d> r <f as d> r <f as d> |
+  r8 <g c e> r8 <g c e> r <g c e> r <g c e> |
+  r8 <f as d> r8 <f as d> r <f as d> r <f as d> |
+  r8 <g c e> r8 <g c e> r <g c e> r <g c e> |
+  r8 <f as d> r8 <f as d> r <f as d> r <f as d> |
+  r8 <f a c> r8 <f a c> r <f a c> r <f a c> |
+  r8 <d gis c> r8 <d gis c> r <d gis c> r <d gis c> |
   
-  bes4 c d2~ |
-  d1 |
-  d4 es f es |
-  d1 |
-  
-  c1 |
-  bes2 a4 bes |
-  c2. d4 |
-  es1 |
-  
-  <c c'>1 |
-  <bes c'>1 |
-  c1 |
-  r1 |
-
-  r4 bes4 c d4~ |
-  d1~ |
-  d2. c4~ |
-  c2. r4 |
-  
-  r2 bes4 c |
-  d1~ |
-  d2. es4 |
-  f1 |
-
   \bar "|."
 }
 
 bass = \relative c {
   \globalOptions
   \clef bass
+
+  a4 r4 e4 e4 |
+  bes'4 r4 f4 f4 |
+  a4 r4 e4 e4 |
+  bes'4 r4 f4 f4 |
+  a4 r4 e4 e4 |
+  bes'4 r4 f4 f4 |
+  f4 r4 c'4 c |
+  e,4 r4 b'4 b |
   
-  es2. f4 |
-  g f es f |
-  g f es2~ |
-  es2 r2 |
-  
-  es2. f4 |
-  g4 f es f |
-  g1 |
-  g1 |
-    
-  fis4 f e2 |
-  es4 d c d |
-  e f8 g as2~ |
-  as1 |
-  
-  fis4 f e2 |
-  e4 d c d |
-  e1 |
-  r1 |
-  
-  r4 es2. |
-  f4 g f es |
-  f g f es~ |
-  es2. r4 |
-  
-  r2 es2~ |
-  es4 f g f |
-  es f g2~ |
-  g1 |
-    
   \bar "|."
 
 }
 
 % --- BOOKS --- %
-title = "Sketch 02"
-bookname = "Sketch02"
+title = "Sketch 04"
+bookname = "sketch04"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
 docVersion = #(string-append "outline - version " date)
@@ -186,8 +119,8 @@ BookTenorSax = \book {
   
   \header {
     title = \title
-    instrument = "Tenor Saxophone"
     composer = \composer
+    instrument = "Tenor Saxophone"
     tagline = \docVersion
   }
   
@@ -254,19 +187,19 @@ Midi = \score {
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.midiMinimumVolume = 0.6
       \set Staff.midiMaximumVolume = 0.9
-      \unfoldRepeats { \transpose c c, { \tenorSax } }
+      \transpose c c, { \tenorSax }
     }
     \new Staff = "accordion" {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.3
       \set Staff.midiMaximumVolume = 0.6
-      \unfoldRepeats { \transpose c c, { \accordion } }
+      \transpose c c, { \accordion }
     }
     \new Staff = "bass" {
       \set Staff.midiMinimumVolume = 0.4
       \set Staff.midiMaximumVolume = 0.9
       \set Staff.midiInstrument = "electric bass (finger)"
-      \unfoldRepeats { \transpose c c, { \bass } }
+      \transpose c c, { \bass }
     }
   >>
   
