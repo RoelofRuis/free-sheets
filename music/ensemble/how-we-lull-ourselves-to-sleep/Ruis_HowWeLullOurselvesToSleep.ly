@@ -37,22 +37,32 @@ tenorSax = \relative c' {
   r8 gis4. r8 gis4 |
   r8 g4.~ g4. |
   fis2 r4. |
+  g4 r8 e4.~ e8 |
+  g4 fis r4. |
   
-  s2..*6
+  r8 cis'4. r8 ais4 |
+  r8 b4. r8 gis4 |
+  
+  r8 b4.~ b4. |
+  r8 b4 cis8 dis4 r8 |
   
   \bar "||"
-  dis'4 cis bis4. |
+  dis4 cis bis4. |
   gis4 ais b4 r8 |
   dis4 cis bis4. |
   gis4 g4 fis4 r8 |
   
-  b,4 g'4 f4. |
+  ais4 g4 f4. |
   e4 fis g4 r8 |
   g2 fis4. |
-  r4 b4 e4 bes'8 |
-  d,2. r8 |
+  r8 gis4. ais4. |
+  g2. r8 |
   
   \mark \default
+  
+  r8 f4. r8 g4 |
+  r8 f4. r8 f4 |
+  r8 f4. r8 f4 |
   
   \bar "|."
 }
@@ -80,13 +90,18 @@ trumpet = \relative c'' {
   dis2 dis4. |
   b2 b4. |
   cis2~ cis8 b4 |
-  b2 r4 s8 |
+  b2 r4 ais8~ |
+  ais4 g2~ g8 |
+  cis4 b4 r4. |
   
-  s2..*6 |
-  
+  e,2 dis4. |
+  e2 f4. |
+  r4 g4~ g4. |
+  r4 d'8[ g] fis4 r8 |
+
   \bar "||"
   
-  b4 g gis4. |
+  b,4 g gis4. |
   e4 fis fis4 r8 |
   gis4 g fis4. |
   f4 e4 dis4 r8 |
@@ -94,8 +109,8 @@ trumpet = \relative c'' {
   b'4 ais b4. |
   fis4 gis ais4 r8 |
   b2 b4. |
-  r8 bes4 es as |
-  f2. r8 |
+  r4 ais8[ dis] r8 gis[ e] |
+  d2. r8 |
   
   \mark \default
   
@@ -131,7 +146,7 @@ accordion = \relative c'' {
   cis4 e8[ gis] dis8[ g ais] |
   gis4 e cis b8 |
   g4 b8[ dis] dis4 cis8 |
-  b2~ b8 r4 |
+  b2~ b4 r8 |
   
   \bar "||"
   
@@ -144,9 +159,24 @@ accordion = \relative c'' {
   b4 cis dis4 r8 |
   fis4 dis e dis8 |
   b2..~ |
+  
   b2. r8 |
   
   \mark \default
+  
+  gis4 b8[ e] a,[ cis fis] |
+  e4 b8[ e16 fis] gis8[ e b] |
+  e4 b8[ e16 fis] gis8[ e b] |
+  e4 b8 b'4 gis |
+  a4 gis8 fis4 e |
+  e2..~ |
+  e2 r4. |
+  
+  r8 gis,8[ b e] a,[ cis fis] |
+  e4 b8[ dis16 e] fis8[ cis e] |
+  dis4 fis8[ b] e,8[ gis cis] |
+  b4 fis8[ b16 cis] dis8[ b fis] |
+  b4 fis8[ b16 cis] dis8[ b fis] |
   
   \bar "|."
 }
@@ -174,25 +204,34 @@ bass = \relative c, {
   b2 cis4. |
   dis2 e4. |
   ais,2~ ais8 b4 |
-  b2 r4 g8~ |
+  b2 r4 g'8~ |
   g4 e2~ e8 |
   g4 fis4 r4. |
   
-  s2..*4
+  gis2 g4. |
+  e2 f4. |
   
+  cis2 e4. |
+  g2 fis4 r8 |
+
   \bar "||"
   
   R2..*3 |
-  r2 r4 fis16 e'
+  r2 r4 fis,16 e'
 
   b4 a g4. |
   g4 ais4 b4 r8 |
   a2 g4. |
-  e2.. |
-  g2. r8 |
+  e2 e'4. |
+  f2. r8 |
   
   \mark \default
   
+  g,2 a4. |
+  d2 cis4. |
+  d2 cis4. |
+  d4. dis4 d |
+  cis4. c2 |
   
   \bar "|."
 
