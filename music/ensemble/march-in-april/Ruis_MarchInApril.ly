@@ -55,12 +55,21 @@ drumMusic = \drummode {
   }
   
   \repeat volta 2 {
-    sn8 sn16 16 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
+    sn8^\markup { \bold "Fanfare" } sn16 16 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
     sn8 sn16 16 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
     
     sn8 8 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
     sn8 8 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
+    
+    sn8 8 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
+    sn8 8 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
+    
+    sn4 4 8 \repeat tremolo 4 sn32 sn8-> 8 |
+    sn8 8 8 8 \repeat tremolo 8 sn32 sn4-> |
   }
+  
+  sn8 \tuplet 3/2 { sn16 16 16 } 8 8 8-> 8 4 |
+  sn16-> 16 16 16 \repeat tremolo 8 sn32 sn2-> |
 }
 
 tenorSax = \relative c'' {
@@ -87,8 +96,7 @@ tenorSax = \relative c'' {
   
   % Theme Major
   \mark \default
-  \repeat volta 2 {
-    
+  \repeat volta 2 {    
     e4-. e d c |
     c-. as bes2 |
     c4-. as bes c |
@@ -104,6 +112,35 @@ tenorSax = \relative c'' {
   % Aankondiging
   \mark \default
   \repeat volta 2 {
+    
+    R1*8
+    
+  }
+  
+  R1*2
+
+  \bar "|."
+}
+
+trumpet = \relative c'' {
+  \globalOptions
+  \clef treble
+  
+  R1*8
+  
+  \mark \default
+  \repeat volta 2 {
+    R1*8
+  }
+  
+  \mark \default
+  \repeat volta 2 {
+    R1*8
+  }
+  
+  % Aankondiging
+  \mark \default
+  \repeat volta 2 {
     b8-.^\markup { \bold "Fanfare" } b16 c d8-. b-. e4 d8-. d |
     b8-. b16 c d8-. b-. e4 d8-. d |
     f8-. f e-. c-. e4 d8-. d |
@@ -114,8 +151,8 @@ tenorSax = \relative c'' {
     bes4-- a-- g4.-- g8 |
     bes8-. bes-- a-. a-- g2 |
   }
-
-  \bar "|."
+  
+  R1*2
 }
 
 accordion = \relative c'' {
@@ -159,7 +196,7 @@ accordion = \relative c'' {
   % Aankondiging
   \mark \default
   \repeat volta 2 {
-    <d g b>8-. <d g b>16 <e g c> <g b d>8-. <d g b>-. <g c e>4 <g b d>8-. <g b d> |
+    <d g b>8-.^\markup { \bold "Fanfare" } <d g b>16 <e g c> <g b d>8-. <d g b>-. <g c e>4 <g b d>8-. <g b d> |
     <d g b>8-. <d g b>16 <e g c> <g b d>8-. <d g b>-. <g c e>4 <g b d>8-. <g b d> |
     <a c f>8-. <a c f> <g c e>-. <f a c>-. <g c e>4 <g b d>8-. <g b d> |
     <a c f>8-. <a c f> <g c e>-. <f a c>-. <g c e>4 <g b d>8-. <g b d> |
@@ -169,6 +206,8 @@ accordion = \relative c'' {
     <es g bes>4-- <c f a>-- <b d g>4.-- <b d g>8 |
     <es g bes>8-. <es g bes>-- <c f a>-. <c f a>-- <b d g>2 |
   }
+  
+  R1*2
 
   \bar "|."
 }
@@ -210,11 +249,11 @@ bass = \relative c {
     bes4. bes8 c4. c8 |
     
   }
-  
+
   % Aankondiging
   \mark \default
   \repeat volta 2 {
-    g8 g4-. g8 g8 g4-. g8 |
+    g8^\markup { \bold "Fanfare" } g4-. g8 g8 g4-. g8 |
     g8 g4-. g8 g8 g4-. g8 |
     g8 g4-. g8 g8 g4-. g8 |
     g8 g4-. g8 g8 g4-. g8 |
@@ -224,6 +263,8 @@ bass = \relative c {
     g8 g4-. g8 g8 g4-. g8 |
     g8 g4-. g8 g8 g4-. g8 |
   }
+  
+  R1*2
 
   \bar "|."
 
@@ -258,6 +299,7 @@ BookFull = \book {
     <<
       \new ChordNames { \chordmusic }
       \new Staff = "saxophone" \tenorSax
+      \new Staff = "trumpet" \trumpet
       \new Staff = "accordion" \accordion
       \new Staff = "bass" \bass
       \new DrumStaff = "drums" \drumMusic
@@ -277,6 +319,31 @@ BookFull = \book {
         \consists Staff_collecting_engraver
       }
     }
+  }
+}
+
+
+BookTrumpet = \book {
+  \bookOutputName #(string-append bookname "_Trumpet")
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f
+    print-all-headers = ##f
+    max-systems-per-page = 12
+  }
+  
+  \header {
+    title = \title
+    instrument = "Trumpet"
+    composer = \composer
+    tagline = \docVersion
+  }
+  
+  \score {
+    <<
+      \new ChordNames { \transpose bes c' { \chordmusic } }
+      \new Staff { \transpose bes c' \trumpet }
+    >>
   }
 }
 
@@ -361,6 +428,12 @@ Midi = \score {
       \set Staff.midiMaximumVolume = 0.9
       \unfoldRepeats { \transpose c c, { \tenorSax } }
     }
+    \new Staff = "trumpet" {
+      \set Staff.midiInstrument = "trumpet"
+      \set Staff.midiMinimumVolume = 0.2
+      \set Staff.midiMaximumVolume = 0.9
+      \unfoldRepeats { \transpose c c { \trumpet } }
+    }
     \new Staff = "accordion" {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.3
@@ -384,6 +457,7 @@ Midi = \score {
 
 \Midi
 \BookFull
+%\BookTrumpet
 %\BookTenorSax
 %\BookAccordion
 %\BookBass

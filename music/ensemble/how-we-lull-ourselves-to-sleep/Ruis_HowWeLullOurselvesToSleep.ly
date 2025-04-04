@@ -61,8 +61,10 @@ tenorSax = \relative c' {
   \mark \default
   
   r8 f4. r8 g4 |
-  r8 f4. r8 f4 |
-  r8 f4. r8 f4 |
+  r8 fis4. r8 f4 |
+  r8 fis4. r8 f4 |
+  r8 fis4 g4 fis4 |
+  f4. e2 |
   
   \bar "|."
 }
@@ -113,6 +115,13 @@ trumpet = \relative c'' {
   d2. r8 |
   
   \mark \default
+  b2 cis4. |
+  c2 b4. |
+  c2 b4. |
+  c4. dis4 c |
+  b4. ais2 |
+  
+  
   
   \bar "|."
 }
@@ -177,6 +186,9 @@ accordion = \relative c'' {
   dis4 fis8[ b] e,8[ gis cis] |
   b4 fis8[ b16 cis] dis8[ b fis] |
   b4 fis8[ b16 cis] dis8[ b fis] |
+  
+  b4 g8[ c16 d] e8[ c g] |
+  
   
   \bar "|."
 }
@@ -288,6 +300,31 @@ BookFull = \book {
   }
 }
 
+
+BookTrumpet = \book {
+  \bookOutputName #(string-append bookname "_Trumpet")
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f
+    print-all-headers = ##f
+    max-systems-per-page = 12
+  }
+  
+  \header {
+    title = \title
+    composer = \composer
+    instrument = "Trumpet"
+    tagline = \docVersion
+  }
+  
+  \score {
+    <<
+      \new ChordNames { \transpose bes c' { \chordmusic } }
+      \new Staff { \transpose bes c' \trumpet }
+    >>
+  }
+}
+
 BookTenorSax = \book {
   \bookOutputName #(string-append bookname "_TenorSax")
   \paper {
@@ -396,5 +433,6 @@ Midi = \score {
 \Midi
 \BookFull
 %\BookTenorSax
+%\BookTrumpet
 %\BookAccordion
 %\BookBass
