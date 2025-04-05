@@ -18,13 +18,13 @@ drumMusic = \drummode {
   sn4-> sn4 sn4 r4 |
 
   sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
-  sn4-> sn4 sn4 \repeat tremolo 8 sn32 |
+  sn4-> sn4 sn4 sn16 16 16 16 |
   
   sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
   sn4-> sn4 sn4 r4 |
 
   sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
-  sn4-> sn4 sn4 \repeat tremolo 8 sn32 |
+  sn4-> sn4 sn4 sn16 16 16 16 |
   
   \repeat volta 2 {
     sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
@@ -39,7 +39,7 @@ drumMusic = \drummode {
     sn4 r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
     sn4-> r4 \repeat tremolo 16 sn32 |
   }
-  
+
   \repeat volta 2 {
     sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
     sn4-> sn4 \repeat tremolo 16 sn32 |
@@ -65,11 +65,29 @@ drumMusic = \drummode {
     sn8 8 8 8 \repeat tremolo 8 sn32 sn8-> 8 |
     
     sn4 4 8 \repeat tremolo 4 sn32 sn8-> 8 |
-    sn8 8 8 8 \repeat tremolo 8 sn32 sn4-> |
+    
+    \alternative {
+      { sn8 8 8 8 \repeat tremolo 8 sn32 sn4-> | }
+      { sn8 8 8 8 \repeat tremolo 8 sn32 sn4-> | }
+    }
   }
   
   sn8 \tuplet 3/2 { sn16 16 16 } 8 8 8-> 8 4 |
+  sn16-> 16 16 16 \repeat tremolo 8 sn32 sn4-> 4 |
+  sn8 \tuplet 3/2 { sn16 16 16 } 8 8 8-> 8 4 |
   sn16-> 16 16 16 \repeat tremolo 8 sn32 sn2-> |
+  
+  \mark \default
+  
+  \repeat volta 2 {
+    s1*4
+    
+    \alternative {
+      { s1*4 }
+      { s1*6 }
+    }
+  }
+  
 }
 
 tenorSax = \relative c'' {
@@ -82,7 +100,7 @@ tenorSax = \relative c'' {
   \mark \default
   \repeat volta 2 {
 
-    es4-. es d c |
+    es4-.^\markup { "play 2nd time only" } es d c |
     b-. g c2 |
     b4-. g c d |
     es4-. d b2 |
@@ -97,7 +115,7 @@ tenorSax = \relative c'' {
   % Theme Major
   \mark \default
   \repeat volta 2 {    
-    e4-. e d c |
+    e4-.^\markup { "play 2nd time only" } e d c |
     c-. as bes2 |
     c4-. as bes c |
     des es bes2 |
@@ -113,11 +131,54 @@ tenorSax = \relative c'' {
   \mark \default
   \repeat volta 2 {
     
-    R1*8
+    g4^\markup { "play 2nd time only" }^\markup { \bold "Fanfare" } g c g4 |
+    g4 g c g |
+    a4 g c b |
+    a g c b |
+    g as c b |
+    g as c b |
+    g f d2 |
+    
+    \alternative {
+      { R1 }
+      { g4 f f e }
+    }
     
   }
   
-  R1*2
+  f2 r2 |
+  R1*3 |
+
+  \mark \default
+  \repeat volta 2 {
+    R1*4
+    \alternative {
+      { R1*4 }
+      {
+         as1 |
+         bes1 |
+         as1 |
+         c1
+         b1~ |
+         b4 b c d |
+      }
+    }
+  }
+  
+  \mark \default
+  \repeat volta 2 {
+
+    es4-. es d c |
+    b-. g c2 |
+    b4-. g c d |
+    es4-. d b2 |
+    
+    es4-. es d c |
+    b-. g c d |
+    es4 f g f |
+    d2 d2 |
+    
+  }
 
   \bar "|."
 }
@@ -149,10 +210,32 @@ trumpet = \relative c'' {
     es8( f) es( f) d4 d8-. d |
     es8( f) es( f) d4 d8-. d |
     bes4-- a-- g4.-- g8 |
-    bes8-. bes-- a-. a-- g2 |
+    
+    \alternative {
+      { bes8-. bes-- a-. a-- g2 | }
+      { bes8-. bes-- a-. a-- g2 | }
+    }
   }
   
-  R1*2
+  a2 r2 |
+  
+  R1*3
+  
+  \mark \default
+  \repeat volta 2 {
+    R1*4
+    \alternative {
+      { R1*4 }
+      {
+        c1 |
+        d1 |
+        d2. c4 |
+        b8 r g8-. g-. b4-. d-. |
+        g1~ |
+        g1 |
+      }
+    }
+  }
 }
 
 accordion = \relative c'' {
@@ -201,13 +284,84 @@ accordion = \relative c'' {
     <a c f>8-. <a c f> <g c e>-. <f a c>-. <g c e>4 <g b d>8-. <g b d> |
     <a c f>8-. <a c f> <g c e>-. <f a c>-. <g c e>4 <g b d>8-. <g b d> |
     
-    <as c es>8( <as c f>) <as c es>( <as c f>) <g b d>4 <g b d>8-. <g b d> |
-    <as c es>8( <as c f>) <as c es>( <as c f>) <g b d>4 <g b d>8-. <g b d> |
+    <as c es>8( <as c f>) <as c es>( <as c f>) <g c d>4 <g b d>8-. <g b d> |
+    <as c es>8( <as c f>) <as c es>( <as c f>) <g c d>4 <g b d>8-. <g b d> |
     <es g bes>4-- <c f a>-- <b d g>4.-- <b d g>8 |
-    <es g bes>8-. <es g bes>-- <c f a>-. <c f a>-- <b d g>2 |
+    
+    \alternative {
+      { <es g bes>8-. <es g bes>-- <c f a>-. <c f a>-- <b d g>2 | } 
+      { <es g bes>8-. <es g bes>-- <c f a>-. <c f a>-- <c f g>4 <c e g> | } 
+    }
+  }
+
+  <c f a>2 r2
+  
+  R1*3
+  
+  \mark \default
+  
+  \repeat volta 2 {
+    <as' c es>4-. <as c es> <g bes d> <f as c> |
+    <d g bes>-. <bes d g> <f'~ bes c~> <f a c> |
+    <as c es>4-. <f as c> <es g bes> <bes es g> |
+    <f' bes c>2 <f a c> |  
+    
+    \alternative {
+      {
+        <c es as>4-. <c es as> <bes es g> <c es as> |
+        <des f bes>-. <des f bes> <des f as> <des f bes> |
+        <des f c'>2 <des f bes> |
+        <c~ f g~> <c e g>2 |
+      }
+      {
+        <as' c es>4-. <as c es> <g bes d> <as c es> |
+        <bes d f>4-. <bes d f> <as c es> <bes d f> |
+        <as c g'>2 <as c f> |
+        <g c d>1 
+        <g~ b~ g'~>1 |
+        <g b g'>1 |
+      }
+    }
   }
   
-  R1*2
+  \mark \default
+  \repeat volta 2 {
+  
+    <g bes es>4-. <g bes es> <f bes d> <es as c> |
+    <d g b>-. <b d g> <es g c>2 |
+    <d g b>4-. <b d g> <es g c> <f bes d> |
+    <g bes es>-. <f bes d> <d f b>2 |
+  
+    <g bes es>4-. <g bes es> <f bes d> <es as c> |
+    <d g b>-. <b d g> <es g c> <f bes d> |
+    <g bes es> <as c f> <as~ c~ g'> <as c f> |
+    <g c d>2 <g b d> |
+    
+  }
+  
+  \mark \default
+  \repeat volta 2 {
+
+    <g c e>4-. <g c e> <f bes d> <f a c> |
+    <es as c>-. <c es as> <es g bes>2 |
+    <es as c>4-. <c es as> <es g bes> <es as c> |
+    <f as des>4 <g bes es> <es g bes>2 |
+    
+    <a c f>4-. <f a c> <f a c> <f bes d> |
+    <g bes es>4 <bes d f> <g bes es> <f bes d> |
+    <es as c> <c es as> <es g bes> <es as c> |
+    
+    \alternative {
+      { 
+        <f bes des> <f bes c> <f g~ c~> <e g c> |
+      }
+      {
+        <f bes des>2 <f bes c> |
+        <f g~ c~>1 
+        <e g c>4-. r2. |
+      }
+    }
+  }
 
   \bar "|."
 }
@@ -261,10 +415,41 @@ bass = \relative c {
     g8 g4-. g8 g8 g4-. g8 |
     g8 g4-. g8 g8 g4-. g8 |
     g8 g4-. g8 g8 g4-. g8 |
-    g8 g4-. g8 g8 g4-. g8 |
+    
+    \alternative {
+      {g8 g4-. g8 g8 g4-. g8 |} 
+      {g8 g4-. g8 g8 g4-. g8 |} 
+    }
   }
   
-  R1*2
+  f2 f2 |
+  f2 f2 |
+  f2 f2 |
+  f2 f2 |
+  
+  \mark \default
+  \repeat volta 2 {
+    as2 g4 f |
+    g2 f |
+    as4 as g4 g |
+    f2 f |
+    \alternative {
+      {
+        as2 g4 f |
+        bes2 as4 g |
+        c2 c |
+        c2 c |
+      }
+      {
+        es2 d4 c |
+        f2 es4 d |
+        as2 as |
+        g2 g |
+        g2 g2 |
+        g1 |
+      }
+    }
+  }
 
   \bar "|."
 

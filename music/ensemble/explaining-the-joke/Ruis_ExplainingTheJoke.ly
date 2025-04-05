@@ -10,7 +10,8 @@ globalOptions = {
 chordmusic = \chordmode {
   \set chordChanges = ##t
   
-  % Chord
+  % Intro
+  
 }
 
 drumMusic = \drummode {
@@ -203,64 +204,52 @@ tenorSax = \relative c'' {
   r4. f8 g bes a g |
   g8 f r f r2 |
   r4. f8 g bes a g |
-  g8 f r f4. bes,4 |
+  g8 f r f~ f4 bes,4 |
   
   g2 a bes es |
   d c b a |
   g1~ |
   g1\glissando |
   g'1~ |
-  g2 r2 |
+  g2 r2^\markup{ "Improvise, small notes as indication" } |
   
   \mark \default
-  g2-. es4-. es~ |
-  es2 c |
-  r4 c2 as4 |
-  \tuplet 3/2 { as2 f fis } |
-  g1~ |
-  g1 |
-  r1 |
-  r1 |
-  
- g'2-. d4 es |
- \tuplet 3/2 { f2 es c } |
- \tuplet 3/2 { b2 c as } |
- as2 r4 bes8 c |
- d1~ |
- d1 |
- r1 |
- r1 |
- 
- g2 as4 g |
- r4 es2 d4 |
- c2 bes2 |
- as2. bes4 |
- g1~ |
- g1 |
- r1 |
- r1 |
- g'4 es2. |
- es4 c2. |
- \tuplet 3/2 { c2 as as }
- \tuplet 3/2 { as f fis }
- g1~ |
- g1 |
- r1 |
- r1 |
- 
- %{
- r2 as8 bes4-. g8~ |
- g4 es-. des8 es4-. es8 |
- 
- r2 as8 bes4-. g8~ |
- g4 es-. des8 es4-. es8 |
- 
- r2 as8 bes4-. g8~ |
- g4 es-. des8 es4-. es8 |
- 
- r2 as8 bes4-. g8~ |
- g4 es-. des8 es4-. es8 |
- %}
+  \magnifyMusic 0.5 {
+    g2-. es4-. es~ |
+    es2 c |
+    r4 c2 as4 |
+    \tuplet 3/2 { as2 f fis } |
+    g1~ |
+    g1 |
+    r1 |
+    r1 |
+    
+   g'2-. d4 es |
+   \tuplet 3/2 { f2 es c } |
+   \tuplet 3/2 { b2 c as } |
+   as2 r4 bes8 c |
+   d1~ |
+   d1 |
+   r1 |
+   r1 |
+   
+   g2 as4 g |
+   r4 es2 d4 |
+   c2 bes2 |
+   as2. bes4 |
+   g1~ |
+   g1 |
+   r1 |
+   r1 |
+   g'4 es2. |
+   es4 c2. |
+   \tuplet 3/2 { c2 as as }
+   \tuplet 3/2 { as f fis }
+   g1~ |
+   g1 |
+   r1 |
+   r1 |
+  }
 
   \bar "|."
 }
@@ -331,11 +320,11 @@ accordion = \relative c'' {
   <c f as>8 r <c f as> r8 r8 <c f as>8 r <c f as>8 |
   r8 <c es fis a> r8 <c es fis a>8 r4 <c es fis a>8 r8 |
   <as c d g>1 |
-  <as b~ d~ g~>2 <g b d g>2 |
+  <as b~ d~ g~>1 |
   
   \mark \default
-  r4. <g bes c es>4.-. <g bes c es>4 |
-  r4. <g bes c es>4.-. <g bes c es>4 |
+  r4. <g bes c es>8 r4 <g bes c es>4-. |
+  r4. <g bes c es>8 r4 <g bes c es>4-. |
   r4. <as c d f>4.-. <as c d f>4 |
   r4 <as c d f>4-. <as c d f> <as c d f> |
   r4. <g bes c es>4.-. <g bes c es>4 |
@@ -464,6 +453,11 @@ accordion = \relative c'' {
   as b d b g' d b d |
   as4 b d f |
   <as, b g'>1 |
+  
+  <e~ c'~>1 |
+  <e c'> |
+  <f c'> |
+  <e c'>
 
 
   %{
@@ -698,16 +692,12 @@ bass = \relative c {
   c as |
   g1 |
   
-  %{
   c4 d8 e4 f8 g4~ |
   g4 g2 g4 |
-  as4 c8 bes4 as8 as4~ |
-  as4 g2 g4 |
-  as4 c8 bes4 as8 as4~ |
-  as4 g2 e4 |
-  g4 f8 e4 d8 c4~ |
-  c1 |
-  %}
+  a4 c8 b4 a8 a4~ |
+  a4 g2 a4 |
+  
+  
   
   
   \bar "|."
