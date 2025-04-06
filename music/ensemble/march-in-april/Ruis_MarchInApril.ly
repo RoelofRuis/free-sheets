@@ -26,6 +26,18 @@ drumMusic = \drummode {
   sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
   sn4-> sn4 sn4 sn16 16 16 16 |
   
+  sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
+  sn4-> sn4 sn4 r4 |
+  
+  sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
+  sn4-> sn4 sn4 sn16 16 16 16 |
+  
+  sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
+  sn4-> sn4 sn4 r4 |
+  
+  sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
+  sn4-> sn4 sn4 sn16 16 16 16 |
+  
   \repeat volta 2 {
     sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
     sn4-> sn4 \repeat tremolo 16 sn32 |
@@ -80,19 +92,66 @@ drumMusic = \drummode {
   \mark \default
   
   \repeat volta 2 {
-    s1*4
+    cymr2 2 |
+    2 2 |
+    2 2 |
+    2 2 |
     
     \alternative {
-      { s1*4 }
-      { s1*6 }
+      { 
+        cymr2 2 |
+        2 2 |
+        2 2 |
+        2 2 |
+      }
+      { 
+        cymr2 2 |
+        2 2 |
+        2 2 |
+        4 sn8 8 4 4 |
+        sn4-> \repeat tremolo 8 sn32 sn8-> 8 8 8 |
+        sn16 16 16 16 16 16 16 16 8 8 8 8 |
+      }
     }
   }
   
+  R1*8
+  R1*8
+  
+  \repeat volta 2 {
+    { 
+      sn8 r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn16 16 16 16 |
+      sn8 r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn8-> r8 sn8 r8 |
+
+      sn8 r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn16 16 16 16 |
+      sn8 r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn8-> r8 sn8 r8 |
+      
+      sn8 r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn16 16 16 16 |
+      sn8 r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn8-> r8 sn8 r8 |
+      
+      sn8 r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn16 16 16 16 |
+      
+      \alternative {
+        {
+          sn8 r16 \repeat tremolo 2 sn32 sn8-> r16 \repeat tremolo 2 sn32 sn8-> r8 sn8 r8 |
+        }
+        {
+            sn4-> r8 \repeat tremolo 4 sn32 sn4-> r8 \repeat tremolo 4 sn32 |
+            sn4-> sn4 sn4 sn16 16 16 16 |
+            sn4 r2. |
+        }
+      }
+    }
+  }
+  
+  \bar "|."
 }
 
 tenorSax = \relative c'' {
   \globalOptions
   \clef treble
+  
+  R1*8
   
   R1*8
   
@@ -166,19 +225,49 @@ tenorSax = \relative c'' {
   }
   
   \mark \default
-  \repeat volta 2 {
 
-    es4-. es d c |
-    b-. g c2 |
-    b4-. g c d |
-    es4-. d b2 |
+  es4-. es d c |
+  b-. g c2 |
+  b4-. g c d |
+  es4-. d b2 |
+  
+  es4-. es d c |
+  b-. g c d |
+  es4 f g f |
+  d2 d2 |
+  
+  es4-. es d c |
+  b-. g c2 |
+  b4-. g c d |
+  es4-. d b2 |
+  
+  es4-. es d c |
+  b-. g c d |
+  es4 f g f |
+  d2 d2 |
+  
+  \mark \default
+  \repeat volta 2 {    
+    e4-. e d c |
+    c-. as bes2 |
+    c4-. as bes c |
+    des es bes2 |
     
-    es4-. es d c |
-    b-. g c d |
-    es4 f g f |
-    d2 d2 |
+    f'4-. c c d |
+    es f es d |
+    c as bes c |
     
+    \alternative {
+      { des c c2 | }
+      {
+        des2 c |
+        c1 |
+        c4-. r2. |
+      }
+    }
   }
+  
+  
 
   \bar "|."
 }
@@ -186,6 +275,8 @@ tenorSax = \relative c'' {
 trumpet = \relative c'' {
   \globalOptions
   \clef treble
+  
+  R1*8
   
   R1*8
   
@@ -227,12 +318,43 @@ trumpet = \relative c'' {
     \alternative {
       { R1*4 }
       {
-        c1 |
+        r1 |
+        r1 |
         d1 |
-        d2. c4 |
-        b8 r g8-. g-. b4-. d-. |
+        r4 g,8-. g-. b4-. d-. |
         g1~ |
-        g1 |
+        g2 r2 |
+      }
+    }
+  }
+  
+  R1*8
+  g,4-. g8-. 8-. bes4 r |
+  g4-. g8-. 8-. c4 r |
+  g4-. g8-. 8-. es4-. f4-. |
+  g4-. g8-. 8 as2 |
+  bes4-. 8-. 8-. bes4 r |
+  b4-. 8-. 8-. c4 r |
+  bes4 as g f |
+  f g-. g2 |
+  
+  \repeat volta 2 {
+    c8-. c16 d e8-. c-. f4 e |
+    c8-. c16 d es8-. c-. g'2 |
+    c,8-. c16 d es8-. c-. bes4 as |
+    as4 g4 f4 es |
+    f8-. f16 g a8-. f-. c'4 bes4 |
+    bes8-. bes16 c d8-. bes-. f'2 |
+    es8-. es16 d c8-. es-. bes8-. bes16 as g8-. bes-. |
+    
+    \alternative {
+      { 
+        f8-. f16 f f8-. f-. g2 |
+      }
+      {
+        f8-. f16 f f8-. f-. f4 f |
+        f1 |
+        e4-. r2. |
       }
     }
   }
@@ -241,6 +363,8 @@ trumpet = \relative c'' {
 accordion = \relative c'' {
   \globalOptions
   \clef treble
+  
+  R1*8
   
   R1*8
   
@@ -319,25 +443,32 @@ accordion = \relative c'' {
         <as c g'>2 <as c f> |
         <g c d>1 
         <g~ b~ g'~>1 |
-        <g b g'>1 |
+        <g b g'>2 r2 |
       }
     }
   }
   
   \mark \default
-  \repeat volta 2 {
   
-    <g bes es>4-. <g bes es> <f bes d> <es as c> |
-    <d g b>-. <b d g> <es g c>2 |
-    <d g b>4-. <b d g> <es g c> <f bes d> |
-    <g bes es>-. <f bes d> <d f b>2 |
+  <g bes es>4-. <g bes es> <f bes d> <es as c> |
+  <d g b>-. <b d g> <es g c>2 |
+  <d g b>4-. <b d g> <es g c> <f bes d> |
+  <g bes es>-. <f bes d> <d f b>2 |
+
+  <g bes es>4-. <g bes es> <f bes d> <es as c> |
+  <d g b>-. <b d g> <es g c> <f bes d> |
+  <g bes es> <as c f> <as~ c~ g'> <as c f> |
+  <g c d>2 <g b d> |
   
-    <g bes es>4-. <g bes es> <f bes d> <es as c> |
-    <d g b>-. <b d g> <es g c> <f bes d> |
-    <g bes es> <as c f> <as~ c~ g'> <as c f> |
-    <g c d>2 <g b d> |
-    
-  }
+  <g bes es>4-. <g bes es> <f bes d> <es as c> |
+  <d g b>-. <b d g> <es g c>2 |
+  <d g b>4-. <b d g> <es g c> <f bes d> |
+  <g bes es>-. <f bes d> <d f b>2 |
+
+  <g bes es>4-. <g bes es> <f bes d> <es as c> |
+  <d g b>-. <b d g> <es g c> <f bes d> |
+  <g bes es> <as c f> <as~ c~ g'> <as c f> |
+  <g c d>2 <g b d> |
   
   \mark \default
   \repeat volta 2 {
@@ -357,7 +488,7 @@ accordion = \relative c'' {
       }
       {
         <f bes des>2 <f bes c> |
-        <f g~ c~>1 
+        <f g c>1 
         <e g c>4-. r2. |
       }
     }
@@ -371,6 +502,16 @@ bass = \relative c {
   \clef bass
   
   R1*8
+  
+  \mark \default
+  es4-. es d c |
+  b-. g c2 |
+  b4-. g c d |
+  es-. d b2 |
+  es4-. es d c |
+  b-. g c d |
+  es4 f g f |
+  d1 |
   
   % Theme Minor
   \mark \default
@@ -446,7 +587,32 @@ bass = \relative c {
         as2 as |
         g2 g |
         g2 g2 |
-        g1 |
+        g2 r2 |
+      }
+    }
+  }
+  
+  R1*8
+  R1*8 
+
+  \mark \default
+  \repeat volta 2 {
+    
+    c4. c8 c4. c8 |
+    c4. c8 c4. c8 |
+    c4. c8 bes4. bes8 |
+    as4. as8 g4. g8 |
+
+    f4. f8 f4. f8 |
+    f4. f8 f4. f8 |
+    as4. as8 as4. as8 |
+    
+    \alternative {
+      { bes4. bes8 c4. c8 | }
+      {
+        bes2 bes |
+        c4. c8 c4 c |
+        c4-. r2. |
       }
     }
   }
@@ -642,7 +808,7 @@ Midi = \score {
 
 \Midi
 \BookFull
-%\BookTrumpet
-%\BookTenorSax
-%\BookAccordion
-%\BookBass
+\BookTrumpet
+\BookTenorSax
+\BookAccordion
+\BookBass

@@ -320,7 +320,7 @@ accordion = \relative c'' {
   <c f as>8 r <c f as> r8 r8 <c f as>8 r <c f as>8 |
   r8 <c es fis a> r8 <c es fis a>8 r4 <c es fis a>8 r8 |
   <as c d g>1 |
-  <as b~ d~ g~>1 |
+  <as b d g>1 |
   
   \mark \default
   r4. <g bes c es>8 r4 <g bes c es>4-. |
