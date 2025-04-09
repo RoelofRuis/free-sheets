@@ -11,20 +11,10 @@ chordmusic = \chordmode {
   \set chordChanges = ##t
   \time 12/8
 
-  \cadenzaOn
-  s4*10
-  \cadenzaOff
-  s1. |
-  \cadenzaOn
-  s4*10
-  \cadenzaOff
-  s1. |
-  \cadenzaOn
-  s4
-  \cadenzaOff
+  s1.*2
   s1.*20 |
   s1.*4 |
-  s1.*7 |
+  s1.*15 |
   
   \repeat volta 2 {
     d1.:m |
@@ -64,32 +54,14 @@ tenorSax = \relative c'' {
   \globalOptions
   \clef treble
   
-  \tempo 4=60
-  \cadenzaOn
-  \override TextSpanner.bound-details.left.text = "accel."
-  g8[\startTextSpan c d e]  a,[ d e fis] gis,[ d' e g] ais,[ e' fis a] c,[ e fis bes]\stopTextSpan
-  \cadenzaOff
-  \bar "|"
-  b1. |
-  \breathe
-  \tempo 4=60
-  \cadenzaOn
-  \override TextSpanner.bound-details.left.text = "accel."
-  g,8[\startTextSpan c d e]  a,[ d e fis] gis,[ d' e g] ais,[ e' fis a] c,[ e fis bes]\stopTextSpan
-  \cadenzaOff
-  \bar "|"
-  b1. |
-
-  \cadenzaOn
-  r4\fermata
-  \cadenzaOff
-  \bar "|"
+  \tempo 4.=96
+  r1.
+  r1.\fermata |
   
   \mark \default
-  \tempo 4.=96
   R1.*4 |
   
-  r4. c,4. b4. a4. |
+  r4. c4. b4. a4. |
   g4-. r8 g4. f4.~ f4 c'8 |
   d4. c4. b4. a4. |
   g4-. r8 a4.~ a4. r4. |
@@ -103,8 +75,8 @@ tenorSax = \relative c'' {
   d4-. r8 des4. c4. b4. |
   bes4. a4. as4. g4. |
   ges4-. r8 f4.~ f2. |
-  ges4-. r8 f4.~ f2. |
-  ges4-. r8 f4.~ f2.~ |
+  g4-. r8 f4.~ f2. |
+  g4-. r8 f4.~ f2.~ |
   f2.~ f4. r4 e8 |
 
   \mark \default
@@ -119,7 +91,9 @@ tenorSax = \relative c'' {
   r4 bes8 fis'4 e8 d4.-. c-. |
   r4 a8 d4 c8 bes4.-. e,4 fis8~ | 
   fis4. gis4. ais4 c8 d e fis |
-  gis1.\stopTextSpan |
+  gis1.
+  r1.
+  R1.*7\stopTextSpan |
   
   \mark \default
   \tempo 4.=150
@@ -135,12 +109,17 @@ tenorSax = \relative c'' {
   a4-. b8 g2. r4. |
   
   d2. g4. f4. |
-  d4-. e8 c4. d4. c4 b8 |
-  bes4. es4-. d8 c4. ges'4-. f8 |
-  e2.~ e4. r4. |
+  d4-. e8 c4. d4. c4-. bes8 |
+  as4. f'4-. e8 d4. as'4-. g8 |
+  f2.~ f4. r4. |
   
   \mark \default
-  R1*4 |
+  R1.*4 |
+  R1.*3 |
+  a8 d c a b g f bes as f g es |
+  des ges fes des es ces a d c a b g |
+  a1. |
+  r1. |
   
   
   \bar "|."
@@ -150,27 +129,11 @@ accordion = \relative c'' {
   \globalOptions
   \clef treble
   
-  \tempo 4=60
-  \cadenzaOn
-  r4*10
-  \cadenzaOff
-  \bar "|"
-  r4. <e~ g~>4.-> <e g>2. |
-  \breathe
-  
-  \tempo 4=60
-  \cadenzaOn
-  s4*10
-  \cadenzaOff
-  r4. <d~ g~>4. <d g>2. |
-  
-  \cadenzaOn
-  r4\fermata
-  \cadenzaOff
-  \bar "|"
+  \tempo 4.=96
+  <c~ e~ fis~ ais~>1. |
+  <c e fis ais>1.\fermata |
 
   \mark \default
-  \tempo 4.=96
   << { 
     a2. d4. c4. |
     a4-. b8 g4. a2. |
@@ -215,8 +178,8 @@ accordion = \relative c'' {
     g4 r8 f4. e4. es4. |
     d4. des4. e2. |
     d4 r8 d4.~ d2. | 
-    dis4 r8 d4.~ d2. | 
-    des4 r8 d4.~ d2.~ |
+    d4 r8 d4.~ d2. | 
+    d4 r8 d4.~ d2.~ |
     d2.~ d4. r4. |
   } >>
   
@@ -230,11 +193,19 @@ accordion = \relative c'' {
   \once \override TextSpanner.bound-details.left.text = "poco a poco accel." |
   <g c d e>2.\startTextSpan <a~ d~ e~ fis~>4. <a d e fis>4 <gis~ d'~ e~ g~>8 |
   <gis d' e g>1. |
+  <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis d' e g>8 |
+  r4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>2. |
+  <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis~ d'~ e~ g~>8 |
+  <gis~ d'~ e~ g~>4. <gis d' e g>4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>4 <c~ e~ fis~ ais~>8
+  <c e fis ais>1. |
+  r4 <gis d' e g>8 r4 <ais e' fis a>8 r4 <c~ e~ fis~ ais~>8 <c e fis ais>4. |
   <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis~ d'~ e~ g~>8 |
   <gis d' e g>1. |
-  <g~ c~ d~ e~>4. <g c d e>4 <a~ d~ e~ fis~>8 <a~ d~ e~ fis~>4. <a d e fis>4 <gis~ d'~ e~ g~>8 |
-  <gis d' e g>2. <ais~ e'~ fis~ a~>4. <ais e' fis a>4 <c~ e~ fis~ bes~>8 |
-  <c e fis bes>1.\stopTextSpan |
+  <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis d' e g>8 |
+  r4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>2. |
+  <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis~ d'~ e~ g~>8 |
+  <gis~ d'~ e~ g~>4. <gis d' e g>4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>4 <c~ e~ fis~ ais~>8
+  <c e fis ais>1.\stopTextSpan |
   
   \mark \default
   \tempo 4.=150
@@ -272,7 +243,6 @@ accordion = \relative c'' {
   }
   
   \mark \default
-  \bar "||"
   
   <c e f a>2. <e f a d>4. <e f a c>4. |
   <c e f a>4-. <d f b>8 <c d e g>4. <ais e' fis a>2. |
@@ -282,7 +252,7 @@ accordion = \relative c'' {
   <f a b d>2. <a b d g>4. <a b d f>4. |
   <f a b d>4-. <g c e>8 <f a b c>4. <f a b d>2. |
   <f as b d>2. <as b d g>4. <as b d f>4. |
-  <as b d>4-. e'8 <as,~ c~>4. <as c>4. r4. |
+  <as b d>4-. e'8 <as,~ b~ d~>4. <as b d>4. r4. |
   
   
   \mark \default
@@ -290,6 +260,14 @@ accordion = \relative c'' {
   <gis d' e g>1. |
   <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis d' e g>8 |
   r4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>2. |
+  <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis~ d'~ e~ g~>8 |
+  <gis~ d'~ e~ g~>4. <gis d' e g>4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>4 <c~ e~ fis~ ais~>8
+  <c e fis ais>1. |
+  a'8 d c a b g f bes as f g es |
+  des ges fes des es ces a d c a b g |
+  a4 g8 a4 g8 a4 g8 a4 g8 |
+  r1. |
+  
   
   \bar "|."
 }
@@ -298,24 +276,9 @@ bass = \relative c {
   \globalOptions
   \clef bass
 
-  \tempo 4=60
-  \cadenzaOn
-  r4*10
-  \cadenzaOff
-  \bar "|"
-  r4. d4.->~ d2. |
-  \breathe
-  
-  \tempo 4=60
-  \cadenzaOn
-  s4*10
-  \cadenzaOff
-  r4. a4.~ a2. |
-  
-  \cadenzaOn
-  r4\fermata
-  \cadenzaOff
-  \bar "|"
+  \tempo 4.=96
+  r4. a4. d c |
+  a4 b8 g4. a2.\fermata |
   
   \mark \default
   R1.*20 |
@@ -328,6 +291,15 @@ bass = \relative c {
   \bar "||"
   \once \override TextSpanner.bound-details.left.text = "poco a poco accel." |
   d4\startTextSpan c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 d4 c8 |
+
+  d4 c8 d4 c8 d4 c8 d4 c8 |
   d4 c8 d4 c8 d4 c8 d4 c8 |
   d4 c8 d4 c8 d4 c8 d4 c8 |
   d4 c8 d4 c8 d4 c8 d4 c8 |
@@ -371,7 +343,6 @@ bass = \relative c {
   }
   
   \mark \default
-  \bar "||"
 
   d4 a8 f'4 a,8 d4 a8 f'4 a,8 |
   d4 a8 f'4 a,8 c4 as8 ges'4 as,8 |
@@ -381,13 +352,22 @@ bass = \relative c {
   g'4 d8 b'4 d,8 g4 d8 b'4 d,8 |
   g4 d8 b'4 d,8 g4 d8 b'4 d,8 |
   as4 f8 d'4 f,8 as4 f8 d'4 f,8 |
-  as4 ges8 as4 ges8 bes4 as8 r4. |
+  as4 ges8 as4 ges8 bes4. r4. |
   
   \mark \default
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
+  c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
+  c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
+  c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
+  r1. |
+  des8 ges fes des es ces a d c a b g |
+  
+  d'4 c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 d4 c8 |
+  
 
   \bar "|."
 
@@ -521,7 +501,7 @@ Midi = \score {
   <<
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"
-      \set Staff.midiMinimumVolume = 0.6
+      \set Staff.midiMinimumVolume = 0.3
       \set Staff.midiMaximumVolume = 0.9
       \transpose c c, { \unfoldRepeats { \tenorSax } }
     }
