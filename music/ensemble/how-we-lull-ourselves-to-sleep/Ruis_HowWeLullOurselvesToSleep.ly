@@ -20,120 +20,7 @@ tenorSax = \relative c' {
   \key e \major
   \time 7/8
   
-  r8 e4. r8 e4 |
-  r8 e4. r8 fis4 |
-  r8 fis4. r8 b4 |
-  r8 b4. r8 b4 |
-  r8 b4. r8 b4 |
-  r8 b4 ais4 a |
-  b4. cis2 |
-  r8 d4. e4. |
-  fis2~ fis8 r4 |
-  
-  \mark \default
-  r8 e,4. r8 e4 |
-  r8 e4. r8 fis4 |
-  r8 fis4. r8 g4
-  r8 gis4. r8 gis4 |
-  r8 g4.~ g4. |
-  fis2 r4. |
-  g4 r8 e4.~ e8 |
-  g4 fis r4. |
-  
-  r8 cis'4. r8 ais4 |
-  r8 b4. r8 gis4 |
-  
-  r8 b4.~ b4. |
-  r8 b4 cis8 dis4 r8 |
-  
-  \bar "||"
-  dis4 cis bis4. |
-  gis4 ais b4 r8 |
-  dis4 cis bis4. |
-  gis4 g4 fis4 r8 |
-  
-  ais4 g4 f4. |
-  e4 fis g4 r8 |
-  g2 fis4. |
-  r8 gis4. ais4. |
-  g2. r8 |
-  
-  \mark \default
-  
-  r8 f4. r8 g4 |
-  r8 fis4. r8 f4 |
-  r8 fis4. r8 f4 |
-  r8 fis4 g4 fis4 |
-  f4. e2 |
-  
-  \bar "|."
-}
-
-trumpet = \relative c'' {
-  \globalOptions
-  \clef treble
-  
-  \key e \major
-  \time 7/8
-  
-  gis2 a4. |
-  b2 cis4. |
-  dis2 e4. |
-  fis2 fis4. |
-  fis2 fis4. |
-  fis4. b4 g |
-  f4. e2 |
-  r4 g,4. b8 fis' |
-  dis2~ dis8 r4 |
-  
-  \mark \default
-  gis,2 a4. |
-  b2 cis4. |
-  dis2 dis4. |
-  b2 b4. |
-  cis2~ cis8 b4 |
-  b2 r4 ais8~ |
-  ais4 g2~ g8 |
-  cis4 b4 r4. |
-  
-  e,2 dis4. |
-  e2 f4. |
-  r4 g4~ g4. |
-  r4 d'8[ g] fis4 r8 |
-
-  \bar "||"
-  
-  b,4 g gis4. |
-  e4 fis fis4 r8 |
-  gis4 g fis4. |
-  f4 e4 dis4 r8 |
-  
-  b'4 ais b4. |
-  fis4 gis ais4 r8 |
-  b2 b4. |
-  r4 ais8[ dis] r8 gis[ e] |
-  d2. r8 |
-  
-  \mark \default
-  b2 cis4. |
-  c2 b4. |
-  c2 b4. |
-  c4. dis4 c |
-  b4. ais2 |
-  
-  
-  
-  \bar "|."
-}
-
-accordion = \relative c'' {
-  \globalOptions
-  \clef treble
-  
-  \key e \major
-  \time 7/8
-  
-  gis4 b8[ e] a,[ cis fis] |
+  gis'4 b8[ e] a,[ cis fis] |
   e4 b8[ dis16 e] fis8[ cis e] |
   dis4 fis8[ b] e,[ gis cis] |
   b4 fis8[ b16 cis] dis8[ b fis] |
@@ -188,7 +75,114 @@ accordion = \relative c'' {
   b4 fis8[ b16 cis] dis8[ b fis] |
   
   b4 g8[ c16 d] e8[ c g] |
+}
+
+accordionRight = \relative c' {
+  \globalOptions
+  \clef treble
   
+  \key e \major
+  \time 7/8
+  
+  r8 e4. r8 e4 |
+  r8 e4. r8 fis4 |
+  r8 fis4. r8 b4 |
+  r8 b4. r8 b4 |
+  r8 b4. r8 b4 |
+  r8 b4 ais4 a |
+  b4. cis2 |
+  r8 d4. e4. |
+  fis2~ fis8 r4 |
+  
+  \mark \default
+  r8 e,4. r8 e4 |
+  r8 e4. r8 fis4 |
+  r8 fis4. r8 g4
+  r8 gis4. r8 gis4 |
+  r8 g4.~ g4. |
+  fis2 r4. |
+  g4 r8 e4.~ e8 |
+  g4 fis r4. |
+  
+  r8 cis'4. r8 ais4 |
+  r8 b4. r8 gis4 |
+  
+  r8 b4.~ b4. |
+  r8 b4 cis8 dis4 r8 |
+  
+  \bar "||"
+  dis4 cis bis4. |
+  gis4 ais b4 r8 |
+  dis4 cis bis4. |
+  gis4 g4 fis4 r8 |
+  
+  ais4 g4 f4. |
+  e4 fis g4 r8 |
+  g2 fis4. |
+  r8 gis4. ais4. |
+  g2. r8 |
+  
+  \mark \default
+  
+  r8 f4. r8 g4 |
+  r8 fis4. r8 f4 |
+  r8 fis4. r8 f4 |
+  r8 fis4 g4 fis4 |
+  f4. e2 |
+
+}
+
+accordionLeft = \relative c'' {
+  \globalOptions
+  \clef treble
+  
+  \key e \major
+  \time 7/8
+  
+  gis2 a4. |
+  b2 cis4. |
+  dis2 e4. |
+  fis2 fis4. |
+  fis2 fis4. |
+  fis4. b4 g |
+  f4. e2 |
+  r4 g,4. b8 fis' |
+  dis2~ dis8 r4 |
+  
+  \mark \default
+  gis,2 a4. |
+  b2 cis4. |
+  dis2 dis4. |
+  b2 b4. |
+  cis2~ cis8 b4 |
+  b2 r4 ais8~ |
+  ais4 g2~ g8 |
+  cis4 b4 r4. |
+  
+  e,2 dis4. |
+  e2 f4. |
+  r4 g4~ g4. |
+  r4 d'8[ g] fis4 r8 |
+
+  \bar "||"
+  
+  b,4 g gis4. |
+  e4 fis fis4 r8 |
+  gis4 g fis4. |
+  f4 e4 dis4 r8 |
+  
+  b'4 ais b4. |
+  fis4 gis ais4 r8 |
+  b2 b4. |
+  r4 ais8[ dis] r8 gis[ e] |
+  d2. r8 |
+  
+  \mark \default
+  b2 cis4. |
+  c2 b4. |
+  c2 b4. |
+  c4. dis4 c |
+  b4. ais2 |
   
   \bar "|."
 }
@@ -277,9 +271,11 @@ BookFull = \book {
     }
     <<
       \new ChordNames { \chordmusic }
-      \new Staff = "accordion" \accordion
-      \new Staff = "trumpet" \trumpet
       \new Staff = "saxophone" \tenorSax
+      \new PianoStaff <<
+        \new Staff = "accordion_right" \accordionRight
+        \new Staff = "accordion_left" \accordionLeft
+      >>
       \new Staff = "bass" \bass
     >>
   
@@ -297,31 +293,6 @@ BookFull = \book {
         \consists Staff_collecting_engraver
       }
     }
-  }
-}
-
-
-BookTrumpet = \book {
-  \bookOutputName #(string-append bookname "_Trumpet")
-  \paper {
-    indent = 0.0
-    ragged-last-bottom = ##f
-    print-all-headers = ##f
-    max-systems-per-page = 12
-  }
-  
-  \header {
-    title = \title
-    composer = \composer
-    instrument = "Trumpet"
-    tagline = \docVersion
-  }
-  
-  \score {
-    <<
-      \new ChordNames { \transpose bes c' { \chordmusic } }
-      \new Staff { \transpose bes c' \trumpet }
-    >>
   }
 }
 
@@ -368,7 +339,10 @@ BookAccordion = \book {
   \score {
     <<
       \new ChordNames { \chordmusic }
-      \new Staff { \accordion }
+      \new PianoStaff {
+        \new Staff = "accordion_right" \accordionRight
+        \new Staff = "accordion_left" \accordionLeft
+      }
     >>
   }
 }
@@ -406,17 +380,17 @@ Midi = \score {
       \set Staff.midiMaximumVolume = 0.9
       \transpose c c, { \tenorSax }
     }
-    \new Staff = "trumpet" {
-      \set Staff.midiInstrument = "trumpet"
+    \new Staff = "accordion" {
+      \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.2
       \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \trumpet }
+      \transpose c c, { \accordionRight }
     }
     \new Staff = "accordion" {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.2
       \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \accordion }
+      \transpose c c, { \accordionLeft }
     }
     \new Staff = "bass" {
       \set Staff.midiMinimumVolume = 0.2

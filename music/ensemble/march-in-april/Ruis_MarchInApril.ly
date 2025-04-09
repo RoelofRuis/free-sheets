@@ -217,9 +217,9 @@ tenorSax = \relative c'' {
          as1 |
          bes1 |
          as1 |
-         c1
-         b1~ |
-         b4 b c d |
+         g4-. g8-. g-. b4 d |
+         g1 |
+         r4 b, c d |
       }
     }
   }
@@ -235,39 +235,37 @@ tenorSax = \relative c'' {
   b-. g c d |
   es4 f g f |
   d2 d2 |
-  
-  es4-. es d c |
-  b-. g c2 |
-  b4-. g c d |
-  es4-. d b2 |
-  
-  es4-. es d c |
-  b-. g c d |
-  es4 f g f |
-  d2 d2 |
+
+  g,4-. g8-. 8-. bes4 r |
+  g4-. g8-. 8-. c4 r |
+  g4-. g8-. 8-. es4-. f4-. |
+  g4-. g8-. 8 as2 |
+  bes4-. 8-. 8-. bes4 r |
+  b4-. 8-. 8-. c4 r |
+  bes4 as g f |
+  f g-. g2 |
   
   \mark \default
-  \repeat volta 2 {    
-    e4-. e d c |
-    c-. as bes2 |
-    c4-. as bes c |
-    des es bes2 |
-    
-    f'4-. c c d |
-    es f es d |
-    c as bes c |
+  \repeat volta 2 {
+    c8-. c16 d e8-. c-. f4 e |
+    c8-. c16 d es8-. c-. g'2 |
+    c,8-. c16 d es8-. c-. bes4 as |
+    as4 g4 f4 es |
+    f8-. f16 g a8-. f-. c'4 bes4 |
+    bes8-. bes16 c d8-. bes-. f'2 |
+    es8-. es16 d c8-. es-. bes8-. bes16 as g8-. bes-. |
     
     \alternative {
-      { des c c2 | }
+      { 
+        f8-. f16 f f8-. f-. g2 |
+      }
       {
-        des2 c |
-        c1 |
-        c4-. r2. |
+        f8-. f16 f f8-. f-. f4 f |
+        f1 |
+        e4-. r2. |
       }
     }
   }
-  
-  
 
   \bar "|."
 }
@@ -650,7 +648,6 @@ BookFull = \book {
     <<
       \new ChordNames { \chordmusic }
       \new Staff = "saxophone" \tenorSax
-      \new Staff = "trumpet" \trumpet
       \new Staff = "accordion" \accordion
       \new Staff = "bass" \bass
       \new DrumStaff = "drums" \drumMusic
@@ -670,31 +667,6 @@ BookFull = \book {
         \consists Staff_collecting_engraver
       }
     }
-  }
-}
-
-
-BookTrumpet = \book {
-  \bookOutputName #(string-append bookname "_Trumpet")
-  \paper {
-    indent = 0.0
-    ragged-last-bottom = ##f
-    print-all-headers = ##f
-    max-systems-per-page = 12
-  }
-  
-  \header {
-    title = \title
-    instrument = "Trumpet"
-    composer = \composer
-    tagline = \docVersion
-  }
-  
-  \score {
-    <<
-      \new ChordNames { \transpose bes c' { \chordmusic } }
-      \new Staff { \transpose bes c' \trumpet }
-    >>
   }
 }
 
@@ -779,12 +751,6 @@ Midi = \score {
       \set Staff.midiMaximumVolume = 0.9
       \unfoldRepeats { \transpose c c, { \tenorSax } }
     }
-    \new Staff = "trumpet" {
-      \set Staff.midiInstrument = "trumpet"
-      \set Staff.midiMinimumVolume = 0.2
-      \set Staff.midiMaximumVolume = 0.9
-      \unfoldRepeats { \transpose c c { \trumpet } }
-    }
     \new Staff = "accordion" {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.3
@@ -808,7 +774,6 @@ Midi = \score {
 
 \Midi
 \BookFull
-%\BookTrumpet
 %\BookTenorSax
 %\BookAccordion
 %\BookBass
