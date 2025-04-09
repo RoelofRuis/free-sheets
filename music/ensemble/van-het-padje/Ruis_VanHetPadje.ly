@@ -316,7 +316,7 @@ bass = \relative c {
 
 % --- BOOKS --- %
 title = "Van het Padje"
-bookname = "vanhetpadje"
+bookname = "VanHetPadje"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
 docVersion = #(string-append "outline - version " date)
