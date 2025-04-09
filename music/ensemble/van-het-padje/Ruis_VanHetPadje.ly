@@ -22,7 +22,7 @@ chordmusic = \chordmode {
   \cadenzaOn
   s4
   \cadenzaOff
-  s1.*17 |
+  s1.*20 |
   s1.*4 |
   s1.*7 |
   
@@ -94,13 +94,16 @@ tenorSax = \relative c'' {
   d4. c4. b4. a4. |
   g4-. r8 a4.~ a4. r4. |
 
-  b4. a4. as4. ges4. |
+  b4. a4. as4. g4. |
   f4-. r8 es4. d4. cis'4.~ |
   cis4. c b a |
-  g4-. r8 f4. b4. fis'~ |
+  g4-. r8 f4.~ f2. |
+  r4. b4. fis'2.~ |
   fis4. f4. e4. es4. |
   d4-. r8 des4. c4. b4. |
   bes4. a4. as4. g4. |
+  ges4-. r8 f4.~ f2. |
+  ges4-. r8 f4.~ f2. |
   ges4-. r8 f4.~ f2.~ |
   f2.~ f4. r4 e8 |
 
@@ -125,6 +128,20 @@ tenorSax = \relative c'' {
     s1.^\markup { "freak blues" }
     s1.*23
   }
+  
+  a2. d4. c4. |
+  a4-. b8 g4. a2. |
+  c4.-. a8 b c b d a g4 e8 |
+  a4-. b8 g2. r4. |
+  
+  d2. g4. f4. |
+  d4-. e8 c4. d4. c4 b8 |
+  bes4. es4-. d8 c4. ges'4-. f8 |
+  e2.~ e4. r4. |
+  
+  \mark \default
+  R1*4 |
+  
   
   \bar "|."
 }
@@ -168,11 +185,13 @@ accordion = \relative c'' {
     a2. d4. c4. |
     a4-. b8 g4. a2. |
     a2. d4. c4. |
-    a4-. b8 g4.~ g2. |
-
+    a4-. b8 g4.~ g2.~ |
+    g2.~ g4. r4.
     a2. d4. c4. |
     a4-. b8 g4. a2. |
     a2. d4. c4. |
+    a4-. b8 g4.~ g2. |
+    a4-. b8 g4.~ g2. |
     a4-. b8 g4.~ g2.~ |
     g2.~ g4. r4 gis8 |
   } \\ {
@@ -189,19 +208,23 @@ accordion = \relative c'' {
     f2. e2. |
     es4. des4. d4. e4. |
     f2. e4. f4. |
-    f4-. r8 d4.~ d2. |
+    f4-. r8 d4.~ d2.~ |
+    d2.~ d4. r4. |
     
     d2. f4. fis4. |
     g4 r8 f4. e4. es4. |
     d4. des4. e2. |
-    d4 r8 d4.~ d2.~ |
+    d4 r8 d4.~ d2. | 
+    dis4 r8 d4.~ d2. | 
+    des4 r8 d4.~ d2.~ |
     d2.~ d4. r4. |
   } >>
   
   \mark \default
-  a'1. |
+  a'4 g8 a4 g8 a4 g8 a4 g8 |
+  a4 g8 a4 g8 a4 g8 a4 g8 |
   
-  R1.*3 |
+  R1.*2 |
   
   \bar "||"
   \once \override TextSpanner.bound-details.left.text = "poco a poco accel." |
@@ -248,6 +271,26 @@ accordion = \relative c'' {
     r4 <g cis f>8 r4 <g cis f>8 r4 <g~ cis~ f~>8 <g cis f>4. |
   }
   
+  \mark \default
+  \bar "||"
+  
+  <c e f a>2. <e f a d>4. <e f a c>4. |
+  <c e f a>4-. <d f b>8 <c d e g>4. <ais e' fis a>2. |
+  <c e f a>2. <e f a d>4. <e f a c>4. |
+  <c e f a>4-. <d f b>8 <gis,~ d'~ e~ g~>4. <gis d' e g>2. |
+  
+  <f a b d>2. <a b d g>4. <a b d f>4. |
+  <f a b d>4-. <g c e>8 <f a b c>4. <f a b d>2. |
+  <f as b d>2. <as b d g>4. <as b d f>4. |
+  <as b d>4-. e'8 <as,~ c~>4. <as c>4. r4. |
+  
+  
+  \mark \default
+  <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis~ d'~ e~ g~>8 |
+  <gis d' e g>1. |
+  <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis d' e g>8 |
+  r4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>2. |
+  
   \bar "|."
 }
 
@@ -275,10 +318,9 @@ bass = \relative c {
   \bar "|"
   
   \mark \default
-  R1.*17 |
+  R1.*20 |
   
   \mark \default
-  \tempo 4.=96
   d4 c8 d4 c8 d4 c8 d4 c8 |
   d4 c8 d4 c8 d4 c8 d4 c8 |
   d4 c8 d4 c8 d4 c8 d4 c8 |
@@ -327,6 +369,25 @@ bass = \relative c {
     d4 a8 r4 a8 d4 a8 r4 a8 |
     r4 es'8 r4 es8 r4 es8~ es4. |
   }
+  
+  \mark \default
+  \bar "||"
+
+  d4 a8 f'4 a,8 d4 a8 f'4 a,8 |
+  d4 a8 f'4 a,8 c4 as8 ges'4 as,8 |
+  d4 a8 f'4 a,8 d4 a8 f'4 a,8 |
+  d4 a8 f'4 a,8 c4 as8 ges'4 as,8 |
+  
+  g'4 d8 b'4 d,8 g4 d8 b'4 d,8 |
+  g4 d8 b'4 d,8 g4 d8 b'4 d,8 |
+  as4 f8 d'4 f,8 as4 f8 d'4 f,8 |
+  as4 ges8 as4 ges8 bes4 as8 r4. |
+  
+  \mark \default
+  c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
+  c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
+  c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
+  c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
 
   \bar "|."
 
