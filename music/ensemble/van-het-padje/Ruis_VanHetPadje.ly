@@ -10,7 +10,7 @@ globalOptions = {
 chordmusic = \chordmode {
   \set chordChanges = ##t
   \time 12/8
-  
+
   \cadenzaOn
   s4*10
   \cadenzaOff
@@ -18,7 +18,10 @@ chordmusic = \chordmode {
   \cadenzaOn
   s4*10
   \cadenzaOff
-  s1.*2 |
+  s1. |
+  \cadenzaOn
+  s4
+  \cadenzaOff
   s1.*17 |
   s1.*4 |
   s1.*7 |
@@ -68,6 +71,7 @@ tenorSax = \relative c'' {
   \cadenzaOff
   \bar "|"
   b1. |
+  \breathe
   \tempo 4=60
   \cadenzaOn
   \override TextSpanner.bound-details.left.text = "accel."
@@ -75,7 +79,11 @@ tenorSax = \relative c'' {
   \cadenzaOff
   \bar "|"
   b1. |
-  r1.\fermata
+
+  \cadenzaOn
+  r4\fermata
+  \cadenzaOff
+  \bar "|"
   
   \mark \default
   \tempo 4.=96
@@ -85,7 +93,7 @@ tenorSax = \relative c'' {
   g4-. r8 g4. f4.~ f4 c'8 |
   d4. c4. b4. a4. |
   g4-. r8 a4.~ a4. r4. |
-  
+
   b4. a4. as4. ges4. |
   f4-. r8 es4. d4. cis'4.~ |
   cis4. c b a |
@@ -131,13 +139,18 @@ accordion = \relative c'' {
   \cadenzaOff
   \bar "|"
   r4. <e~ g~>4.-> <e g>2. |
+  \breathe
   
   \tempo 4=60
   \cadenzaOn
   s4*10
   \cadenzaOff
   r4. <d~ g~>4. <d g>2. |
-  r1.\fermata
+  
+  \cadenzaOn
+  r4\fermata
+  \cadenzaOff
+  \bar "|"
 
   \mark \default
   \tempo 4.=96
@@ -248,13 +261,18 @@ bass = \relative c {
   \cadenzaOff
   \bar "|"
   r4. d4.->~ d2. |
+  \breathe
   
   \tempo 4=60
   \cadenzaOn
   s4*10
   \cadenzaOff
   r4. a4.~ a2. |
-  r1.\fermata
+  
+  \cadenzaOn
+  r4\fermata
+  \cadenzaOff
+  \bar "|"
   
   \mark \default
   R1.*17 |

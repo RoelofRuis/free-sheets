@@ -9,7 +9,7 @@ globalOptions = {
 
 chordmusic = \chordmode {
   \set chordChanges = ##t
-  
+
   % Chord
 }
 
@@ -505,13 +505,13 @@ bass = \relative c {
   
   \mark \default
   es4-. es d c |
-  b-. g c2 |
+  b-. g c2~ |
+  c1~ |
+  c1 |
   b4-. g c d |
-  es-. d b2 |
-  es4-. es d c |
-  b-. g c d |
-  es4 f g f |
-  d1 |
+  es-. d b2~ |
+  b1~ | 
+  b1 |
   
   % Theme Minor
   \mark \default
@@ -808,7 +808,7 @@ Midi = \score {
 
 \Midi
 \BookFull
-\BookTrumpet
-\BookTenorSax
-\BookAccordion
-\BookBass
+%\BookTrumpet
+%\BookTenorSax
+%\BookAccordion
+%\BookBass
