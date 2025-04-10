@@ -1,12 +1,11 @@
 \version "2.24"
 % -*- output: ./;
 
-majorPhrygian = #`((0 . ,NATURAL) (1 . ,FLAT) (2 . ,NATURAL) (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,FLAT) (6 . ,FLAT))
-
 globalOptions = {
   \compressEmptyMeasures
-  \key g \majorPhrygian
   \numericTimeSignature
+  \key es \major
+  \time 4/4
   \tempo 4=180
 }
 
@@ -19,6 +18,11 @@ chordmusic = \chordmode {
 tenorSax = \relative c'' {
   \globalOptions
   \clef treble
+
+  r4 g'8 f r8 es r c |
+  r4 bes8 a bes es g f~ |
+  f4 es8 c r2 |
+  r1 |
   
   % Music
   
@@ -29,27 +33,7 @@ accordion = \relative c'' {
   \globalOptions
   \clef treble
   
-  r2. g8 as |
-  b4 b8 as b c as as |
-  r8 g8~ g4 r4 g8 as |
-  b4 b8 as b c as d~ |
-  d2 r4 d8 es |
-  \tuplet 3/2 { f8 g f } es8 d \tuplet 3/2 { es f es } d c |
-  \tuplet 3/2 { d es d } c b \tuplet 3/2 { c d c } as d~ |
-  d1 |
-  r2. g,8 as |
-  b4 b8 as b c as as |
-  r8 g8~ g4 r4 g8 as |
-  b4 b8 as b c as d~ |
-  d2 r4 d8 es |
-  \tuplet 3/2 { f8 g f } es8 d \tuplet 3/2 { es f es } d c |
-  \tuplet 3/2 { d es d } c b \tuplet 3/2 { c d c } b as |
-  g1 |
-  r1 |
-  f'4. es8~ es4 d4~ |
-  d8 c b c d4. f8 |
-  es4. d8~ d4 c4~ |
-  c2 r4 d8 es |
+  % Music
   
   \bar "|."
 }
@@ -58,15 +42,18 @@ bass = \relative c {
   \globalOptions
   \clef bass
 
-  % Music
+  es2 es |
+  as4 bes es,2 |
+  des2 as2 |
+  des2 as2 |
   
   \bar "|."
 
 }
 
 % --- BOOKS --- %
-title = "Sketch 05"
-bookname = "Sketch05"
+title = "Sketch 06"
+bookname = "Sketch06"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
 docVersion = #(string-append "outline - version " date)

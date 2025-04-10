@@ -116,7 +116,7 @@ tenorSax = \relative c'' {
   \mark \default
   R1.*4 |
   R1.*3 |
-  a8 d c a b g f bes as f g es |
+  a8 d c a b g f bes as f g des~-> |
   des ges fes des es ces a d c a b g |
   a1. |
   r1. |
@@ -263,7 +263,7 @@ accordion = \relative c'' {
   <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis~ d'~ e~ g~>8 |
   <gis~ d'~ e~ g~>4. <gis d' e g>4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>4 <c~ e~ fis~ ais~>8
   <c e fis ais>1. |
-  a'8 d c a b g f bes as f g es |
+  a'8 d c a b g f bes as f g des~-> |
   des ges fes des es ces a d c a b g |
   a4 g8 a4 g8 a4 g8 a4 g8 |
   r1. |
@@ -278,7 +278,7 @@ bass = \relative c {
 
   \tempo 4.=96
   r4. a4. d c |
-  a4 b8 g4. a2.\fermata |
+  a4-. b8 g4. a2.\fermata |
   
   \mark \default
   R1.*20 |
@@ -362,7 +362,7 @@ bass = \relative c {
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
-  r1. |
+  r2. r4. r4 des8~-> |
   des8 ges fes des es ces a d c a b g |
   
   d'4 c8 d4 c8 d4 c8 d4 c8 |
