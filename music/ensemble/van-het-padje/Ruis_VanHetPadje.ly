@@ -57,6 +57,7 @@ tenorSax = \relative c'' {
   \tempo 4.=96
   r1.
   r1.\fermata |
+  \breathe
   
   \mark \default
   R1.*4 |
@@ -72,7 +73,7 @@ tenorSax = \relative c'' {
   g4-. r8 f4.~ f2. |
   r4. b4. fis'2.~ |
   fis4. f4. e4. es4. |
-  d4-. r8 des4. c4. b4. |
+  d4-. r8 des4. c4.~ c4 b8 |
   bes4. a4. as4. g4. |
   ges4-. r8 f4.~ f2. |
   g4-. r8 f4.~ f2. |
@@ -132,6 +133,7 @@ accordion = \relative c'' {
   \tempo 4.=96
   <c~ e~ fis~ ais~>1. |
   <c e fis ais>1.\fermata |
+  \breathe
 
   \mark \default
   << { 
@@ -262,13 +264,13 @@ accordion = \relative c'' {
   r4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>2. |
   <g c d e>2. <a~ d~ e~ fis~>4. <a d e fis>4 <gis~ d'~ e~ g~>8 |
   <gis~ d'~ e~ g~>4. <gis d' e g>4 <ais~ e'~ fis~ a~>8 <ais~ e'~ fis~ a~>4. <ais e' fis a>4 <c~ e~ fis~ ais~>8
-  <c e fis ais>1. |
+  <c~ e~ fis~ ais~>2. <c e fis ais>4. r4. |
   a'8 d c a b g f bes as f g des~-> |
   des ges fes des es ces a d c a b g |
   a4 g8 a4 g8 a4 g8 a4 g8 |
   r1. |
-  
-  
+
+
   \bar "|."
 }
 
@@ -279,6 +281,7 @@ bass = \relative c {
   \tempo 4.=96
   r4. a4. d c |
   a4-. b8 g4. a2.\fermata |
+  \breathe
   
   \mark \default
   R1.*20 |
