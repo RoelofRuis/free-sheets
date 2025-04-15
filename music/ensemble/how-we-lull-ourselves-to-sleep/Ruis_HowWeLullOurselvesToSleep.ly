@@ -406,7 +406,7 @@ Midi = \score {
 
 \Midi
 \BookFull
-%\BookTenorSax
-%\BookTrumpet
-%\BookAccordion
-%\BookBass
+\BookTenorSax
+\BookTrumpet
+\BookAccordion
+\BookBass
