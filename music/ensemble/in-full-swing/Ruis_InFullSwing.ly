@@ -184,17 +184,17 @@ chordmusic = \chordmode {
   ges2:maj7 as4:7 |
   bes2. |
   
-  fis4. cis/eis |
-  b2./cis |
-  b2./cis |
-  b2./cis |
-  fis4 cis/eis b/dis |
-  b2./cis
-  b2./cis |
-  b2./cis
+  ges4. des/f |
+  ces2./des |
+  ces2./des |
+  ces2./des |
+  ges4 des/f ces/es |
+  ces2./des
+  ces2./des |
+  ces2./des
   
-  fis4. cis/eis |
-  b/dis b/cis |
+  ges4. des/f |
+  ces/es ces/des |
   
   a4. e/gis |
   d2./e
@@ -331,11 +331,11 @@ tenorSax = \relative c'' {
   
   % Variation I
   \mark \default
-  r8 bes r d r f |
+  bes4 d f |
   g2 r4 |
-  r8 a r f c8 cis |
+  a4 r8 f c8 cis |
   d4. e4. |
-  r8 c r f r a |
+  c4 f a |
   bes4.-- a4.-- |
   a4.-- as4.-- |
   as4.-- g4.-- |
@@ -391,7 +391,7 @@ tenorSax = \relative c'' {
   b8 c b a gis b |
   a4 e r8 f |
   fis2 r4 |
-  r8 g r bes r d |
+  g4 bes d |
   c8 d c bes g4-. |
   c8 d c bes g4-. |
   a8 bes a g f e |
@@ -435,7 +435,7 @@ tenorSax = \relative c'' {
   e4. a,8 b cis |
   d8 cis d e f4 |
   d8 cis d e f g |
-  r8 f r e r d |
+  f4-. r8 e r d |
   d2. |
   cis2.\) |
   
@@ -461,35 +461,35 @@ tenorSax = \relative c'' {
   \mark \default
   bes,4-.^\markup { \bold "Stringendo" } d-. f-. |
   e8 f e d bes4-. |
-  r8 e8 f e d bes |
-  e8 f e d bes as |
+  e8 r4 d8 bes as |
+  e'8 f e d bes as |
   bes4-. d-. f-. |
   e8 f e d bes4-. |
-  r8 e8 f e d bes |
+  e8 f e d bes as |
   bes'2. |
   
   bes,4-. d-. f-. |
   e8 f e d bes4-. |
-  r8 e8 f e d bes |
-  e8 f e d bes as |
+  e8 r4 d8 bes as |
+  e'8 f e d bes as |
   bes4-. d-. f-. |
   e8 f e d bes as |
   bes2.~ |
-  bes4 r8 eis,8 fis gis |
+  bes4 r8 f8 ges as |
   
   % Big Return
   \mark \default
-  ais8 b ais gis fis ais |
-  gis cis r8 cis4. |
+  bes8 ces bes as ges bes |
+  as des r8 des4. |
   r2. |
   r2. |
-  ais8 b ais gis fis ais |
-  gis cis r8 cis4. |
+  bes8 ces bes as ges bes |
+  as des r8 des4. |
   r2. |
-  r4. eis,8 fis gis |
+  r4. f,8 ges as |
   
-  ais8 b ais gis fis ais |
-  gis cis r8 cis4. \grace { gis16 a b }  |
+  bes8 ces bes as ges bes |
+  as des r8 des4. \grace { gis,16 a b }  |
   cis8 d cis b a cis |
   b4 r4 \tuplet 3/2 { b8 cis d } |
   e8 f e d c e |
@@ -528,11 +528,11 @@ tenorSax = \relative c'' {
   
   % Variation I
   \mark \default
-  r8 bes r d r f |
+  bes4 d f |
   g2 r4 |
-  r8 a r f c8 cis |
+  a4-. r8 f c8 cis |
   d4. e4. |
-  r8 c r f r a |
+  c4 f a |
   bes4.-- a4.-- |
   a4.-- as4.-- |
   as4.-- g4.-- |
@@ -587,7 +587,7 @@ tenorSax = \relative c'' {
   r8 es r g r bes |
   a8 bes a g es f |
   g4-. c-. b-. |
-  r8 c8~ c4 r4 |
+  r8 c8~ c4-. r4 |
   \bar "|."
  
 }
@@ -717,7 +717,7 @@ accordion = \relative c'' {
   <a~ d~ g~>2. |
   <a d g>2. |
   
-  <a c f>4. <bes d f> |
+  <a c f>4 <a c f>4-. <bes d f> |
   <a d g>4. <a~ d~ g~> |
   <a~ d~ g~>2. |
   <a d g>2. |
@@ -727,7 +727,7 @@ accordion = \relative c'' {
   <a~ g'~>2. |
   <a g'>2. |
   
-  <a f'>4. <bes f'> |
+  <a f'>4 <a f'>4-. <bes f'> |
   <a g'>4. <a~ g'~> |
   <a g'>2. |
   r2. |
@@ -791,16 +791,16 @@ accordion = \relative c'' {
   
   % Big Return
   \mark \default
-  <fis ais cis>4. <eis gis cis> |
-  <fis b dis>2. |
-  <fis b dis>8 r4 <fis b dis>4. |
-  <fis b dis>8 r4 <fis b dis>4. |
-  <fis ais cis>4 <eis gis cis> <fis b dis> |
-  <fis b dis>2. |
-  <fis b dis>8 r4 <fis b dis>4. |
-  <fis b dis>4 r2 |
-  <fis ais cis>4. <eis gis cis> |
-  <fis b dis>4. <fis b dis> |
+  <ges bes des>4. <f as des> |
+  <ges ces es>2. |
+  <ges ces es>8 r4 <ges ces es>4. |
+  <ges ces es>8 r4 <ges ces es>4. |
+  <ges bes des>4 <f as des> <ges ces es> |
+  <ges ces es>2. |
+  <ges ces es>8 r4 <ges ces es>4. |
+  <ges ces es>4 r2 |
+  <ges bes des>4. <f as des> |
+  <ges ces es>4. <ges ces es> |
   <e a cis>4. <e gis b>4. |
   <fis a d>4 r2 |
   <g c e>4. <g b d>4. |
@@ -875,7 +875,7 @@ accordion = \relative c'' {
   <g c e>4. <g cis e> |
   <a c f>4. <a dis fis> |
   <b d g>4. <c f a>4. |
-  <c fis a>2. |
+  <c fis a>4 r2 |
   
   <g b d>4. <fis a d> |
   <g bes es> <a~ c~ f~>4. |
@@ -907,7 +907,7 @@ accordion = \relative c'' {
   <g bes es>4 r2 |
   <a c f>2. |
   <as c es>2. |
-  r8 c8~ c4 r4 |
+  r8 c8~ c4-. r4 |
   \bar "|."
 }
 
@@ -984,7 +984,7 @@ bass = \relative c {
   c,4 cis d |
   e f fis |
   g gis a |
-  b4 g,2 |
+  b4 g,2-> |
   
   c4. b |
   bes4. as |
@@ -1108,16 +1108,17 @@ bass = \relative c {
   
   % Big Return
   \mark \default
-  fis'4. eis |
-  cis2 r8 fis,8\(
-  gis cis r8 cis4 fis,8 |
-  gis cis r8 cis4.\) |
-  fis4 eis dis |
-  cis2 r8 fis,8\( |
-  gis cis r8 cis4 gis8 |
-  cis4\) r2 |
-  fis4. eis |
-  dis cis |
+  ges'4. f |
+  des2 r8 ges,8\(
+  as des r8 des4 ges,8 |
+  as des r8 des4.\) |
+  ges4 f es |
+  des2 r8 ges,8\( |
+  as des r8 des4 as8 |
+  des4\) r2 |
+  ges4. f |
+  es des |
+
   a4. gis |
   e4 r2 |
   
@@ -1125,7 +1126,7 @@ bass = \relative c {
   bes4. as4. |
   g''8 as g es c as |
   g as g es c as |
-  g2. |
+  g2.-> |
   es'4-. f-. g-. |
   
   % Terug bij af
@@ -1193,7 +1194,7 @@ bass = \relative c {
   c4. cis4. |
   d4. dis |
   e4. f |
-  fis4 e d |
+  fis4-- e-- d-- |
   
   g4. fis |
   f g |
@@ -1225,7 +1226,7 @@ bass = \relative c {
   c4 r2 |
   d2. |
   es4 f g |
-  g8 c,8~ c4 r4 |
+  g8 c,8~ c4-. r4 |
   \bar "|."
 
 }
@@ -1377,6 +1378,6 @@ Midi = \score {
 
 \Midi
 \BookFull
-%\BookTenorSax
-%\BookAccordion
-%\BookBass
+\BookTenorSax
+\BookAccordion
+\BookBass
