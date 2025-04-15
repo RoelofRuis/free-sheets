@@ -57,7 +57,6 @@ tenorSax = \relative c'' {
   \tempo 4.=96
   r1.
   r1.\fermata |
-  \breathe
   
   \mark \default
   R1.*4 |
@@ -76,7 +75,7 @@ tenorSax = \relative c'' {
   d4-. r8 des4. c4.~ c4 b8 |
   bes4. a4. as4. g4. |
   ges4-. r8 f4.~ f2. |
-  g4-. r8 f4.~ f2. |
+  g?4-. r8 f4.~ f2. |
   g4-. r8 f4.~ f2.~ |
   f2.~ f4. r4 e8 |
 
@@ -121,23 +120,53 @@ tenorSax = \relative c'' {
   des ges fes des es ces a d c a b g |
   a1. |
   r1. |
+  r1. |
+  r1. |
+  
+  \mark \default
+  
+  r1. |
+  r1. |
+  r1. |
+  r1. |
+  
+  \once \override TextSpanner.bound-details.left.text = "molto rit."
+  r4.\startTextSpan a4. d4. c4. |
+  a4-. b8 g4. a2. |
+  r4. a4. d4. c4. |
+  a4-. b8 g4.~ g2.
+  a4-. b8 g4.~ g2.
+  a4-. b8 g4.~ g2.\stopTextSpan
+  r2. gis2. |
+  
+  \mark \default
+  
+  r4. b c d |
+  es d c b |
+  r4. g a bes |
+  c4. bes4.~ bes2. |
+  
+  
+  r4. bes c d |
+  e4. es d des |
+  c b bes a |
+  as g fis2.\fermata |
   
   
   \bar "|."
 }
 
-accordion = \relative c'' {
+accordion = \relative c' {
   \globalOptions
   \clef treble
   
   \tempo 4.=96
   <c~ e~ fis~ ais~>1. |
-  <c e fis ais>1.\fermata |
-  \breathe
+  <c e fis ais>2. <d as'>2.\fermata |
 
   \mark \default
   << { 
-    a2. d4. c4. |
+    a'2. d4. c4. |
     a4-. b8 g4. a2. |
     a2. d4. c4. |
     a4-. b8 g4.~ g2. |
@@ -269,6 +298,64 @@ accordion = \relative c'' {
   des ges fes des es ces a d c a b g |
   a4 g8 a4 g8 a4 g8 a4 g8 |
   r1. |
+  r1. |
+  r1. |
+
+  \mark \default
+  
+  << { 
+    r4. a4. d4. c4. |
+    a4-. b8 g4. a2. |
+    f4. a4. d4. c4. |
+    a4-. b8 g4.~ g2. |
+    
+    \once \override TextSpanner.bound-details.left.text = "molto rit."
+    r4.\startTextSpan a4. d4. c4. |
+    a4-. b8 g4. a2. |
+    f4. a4. d4. c4. |
+    a4-. b8 g4.~ g2. |
+    a4-. b8 g4.~ g2. 
+    a4-. b8 g4.~ g2.\stopTextSpan
+    r2. gis2. |
+  } \\ {
+    f2. es2. |
+    d2. c4. bes4. |
+    a4. c4. e2. |
+    d4 r8 c4.~ c2. |
+    
+    f2. es2. |
+    d2. c4. bes4. |
+    a4. c4. e2. |
+    d4 r8 cis4.~ cis2. |
+    d4 r8 c4.~ c2. |
+    d4 r8 c4.~ c2. |
+    r2. c2. |
+  } >>
+  
+  \tempo 4.=96
+  \mark \default
+ << { 
+    a'2. d4. c4. |
+    a4 b8 g4. a2. |
+    a2. d4. c4. |
+    a4-. b8 g4.~ g2. |
+   
+    a2. d4. c4. |
+    a4 b8 g4. a2. |
+    a4 b8 g4. a4. f4. |
+    e4 f8 d4. d2. |
+  } \\ {
+    d2. e2. |
+    f2. e2. |
+    f2. es2. |
+    d2. c2. |
+    
+    d2. e2. |
+    f2. e2. |
+    d2.~ d4. bes4. |
+    bes2. a2.\fermata |
+  } >>
+  
 
 
   \bar "|."
@@ -281,7 +368,6 @@ bass = \relative c {
   \tempo 4.=96
   r4. a4. d c |
   a4-. b8 g4. a2.\fermata |
-  \breathe
   
   \mark \default
   R1.*20 |
@@ -370,7 +456,36 @@ bass = \relative c {
   
   d'4 c8 d4 c8 d4 c8 d4 c8 |
   d4 c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 e4 d8 fis4 e8 gis4 fis8 |
+  gis4 fis8 ais4 gis8 c4 ais8 d4 c8 |
   
+  \mark \default
+
+  d4 c8 d4 c8 bes4 as8 bes4 as8 |
+  ges4 e8 ges4 e8 d4 c8 d4 c8 |
+
+  d'4 c8 d4 c8 bes4 as8 bes4 as8 |
+  ges4 e8 ges4 e8 d4 c8 d4 c8 |
+  
+  \once \override TextSpanner.bound-details.left.text = "molto rit."
+  d'4\startTextSpan c8 d4 c8 bes4 as8 bes4 as8 |
+  ges4 e8 ges4 e8 d4 c8 d4 c8 |
+  
+  d'4 c8 d4 c8 bes4 as8 bes4 as8 |
+  ges4 r8 e4.~ e2.
+  ges4 r8 e4.~ e2.
+  ges,4 r8 e4.~ e2.\stopTextSpan
+  r2. es'2. |
+
+  \mark \default
+  f2. f'2. |
+  f,1. |
+  es2. es'2. |
+  es,1. |
+  r1.|
+  r1. |
+  r1. |
+  r2. r4. d4.\fermata |
 
   \bar "|."
 
