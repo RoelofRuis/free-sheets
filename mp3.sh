@@ -10,7 +10,13 @@ ROOTDIR=$(pwd)
 
 for file in $(find "pub" -type f -name '*.midi')
 do
-    BASE=$(basename -s .midi $file)
-    OUT=${ROOTDIR}/pub/${BASE}.mp3
-    timidity -Ow -o - $file | ffmpeg -i - $OUT
+    BASE=$(basename -s .midi "$file")
+    OUT="${ROOTDIR}/pub/${BASE}.mp3"
+    TEMP_WAV=$(mktemp --suffix=.wav)
+
+    echo "Converting: $file -> $OUT"
+
+    timidity "$file" -Ow -o "$TEMP_WAV"
+    ffmpeg -y -i "$TEMP_WAV" -b:a 192k -id3v2_version 3 "$OUT"
+    rm -f "$TEMP_WAV"
 done

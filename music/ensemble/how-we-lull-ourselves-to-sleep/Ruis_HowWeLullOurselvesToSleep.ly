@@ -271,12 +271,12 @@ BookFull = \book {
     }
     <<
       \new ChordNames { \chordmusic }
-      \new Staff = "saxophone" \tenorSax
+      \new Staff = "saxophone" { \tenorSax }
       \new PianoStaff <<
-        \new Staff = "accordion_right" \accordionRight
-        \new Staff = "accordion_left" \accordionLeft
+        \new Staff = "accordion_right" { \accordionRight }
+        \new Staff = "accordion_left" { \accordionLeft }
       >>
-      \new Staff = "bass" \bass
+      \new Staff = "bass" { \bass }
     >>
   
     \layout {
@@ -339,10 +339,10 @@ BookAccordion = \book {
   \score {
     <<
       \new ChordNames { \chordmusic }
-      \new PianoStaff {
-        \new Staff = "accordion_right" \accordionRight
-        \new Staff = "accordion_left" \accordionLeft
-      }
+      \new PianoStaff <<
+        \new Staff = "accordion_right" { \accordionRight }
+        \new Staff = "accordion_left" { \accordionLeft }
+      >>
     >>
   }
 }
@@ -407,6 +407,5 @@ Midi = \score {
 \Midi
 \BookFull
 \BookTenorSax
-\BookTrumpet
 \BookAccordion
 \BookBass

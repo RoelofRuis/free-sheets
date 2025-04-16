@@ -58,8 +58,9 @@ tenorSax = \relative c'' {
   \mark \default
   \tempo 2 = 120
   
-  c1 |
-  R1*7
+  c1~ |
+  c1
+  R1*6
 
   c'4. e8~ e4 c |
   des2 f2 |

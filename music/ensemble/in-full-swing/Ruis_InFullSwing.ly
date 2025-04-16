@@ -299,7 +299,7 @@ tenorSax = \relative c'' {
   \time 3/4
   
   % Opening
-  e8 f e d c e |
+  e8\mf f e d c e |
   d g r8 g4.~ |
   g2. |
   r2. |
@@ -313,7 +313,7 @@ tenorSax = \relative c'' {
   \mark \default
   r8 es,8 r g r bes |
   a8 bes a g f a |
-  g8 c, r8 c4 bes8 |
+  g8 c, r8 c4-. bes8 |
   d2 r4 |
   r8 es r g r bes |
   a8 bes a g f a |
@@ -322,7 +322,7 @@ tenorSax = \relative c'' {
   
   r8 es r g r bes |
   a8 bes a g f a |
-  g8 c, r8 c4 bes8 |
+  g8 c, r8 c4-. bes8 |
   d2 r4 |
   r8 es r g r bes |
   a8 bes a g f a |
@@ -331,11 +331,11 @@ tenorSax = \relative c'' {
   
   % Variation I
   \mark \default
-  bes4 d f |
+  bes4-. d-. f-. |
   g2 r4 |
   a4 r8 f c8 cis |
   d4. e4. |
-  c4 f a |
+  c4-. f-. a-. |
   bes4.-- a4.-- |
   a4.-- as4.-- |
   as4.-- g4.-- |
@@ -356,10 +356,10 @@ tenorSax = \relative c'' {
   r2. |
   r2. |
   
-  e8 f e d c e |
+  e8\< f e d c e |
   d g r8 g4 c,8 |
   d g r8 g4 d8 |
-  g4 r2 |
+  g4\! r2 |
   
   e8 f e d c e |
   d g r8 g4. |
@@ -373,9 +373,9 @@ tenorSax = \relative c'' {
   
   % Theme
   \mark \default
-  r8 es, r g r bes |
+  r8\mf es, r g r bes |
   a8 bes a g f a |
-  g8 c, r8 c4 bes8 |
+  g8 c, r8 c4-. bes8 |
   d2 r4 |
   r8 es r g r bes |
   a8 bes a g f a |
@@ -385,21 +385,21 @@ tenorSax = \relative c'' {
   % Theme Var
   r8 es r g r bes |
   a8 bes a g f a |
-  g8 d r d4 c8 |
+  g8 d r d4-. c8 |
   e2 r4 |
-  r8 f r a r c |
+  r8\< f r a r c |
   b8 c b a gis b |
   a4 e r8 f |
   fis2 r4 |
-  g4 bes d |
-  c8 d c bes g4-. |
-  c8 d c bes g4-. |
+  g4\!\f-.-> bes-.-> d-.-> |
+  c8-> d c bes g4-. |
+  c8-> d c bes g4-. |
   a8 bes a g f e |
   
   % Vervolg
   \mark \default
   \key d \minor
-  f8 g f e d f |
+  f8_\markup { \italic "poco a poco dim." } g f e d f |
   e8 a r8 a4. |
   r2. |
   r2. |
@@ -421,7 +421,7 @@ tenorSax = \relative c'' {
   
   % Lament
   \mark \default
-  a4\(^\markup { \bold "Cantabile" } d cis |
+  a4\p\(^\markup { \bold "Cantabile" } d cis |
   d2 e4 |
   f4. e8 d4 |
   d2 e4 |
@@ -448,7 +448,7 @@ tenorSax = \relative c'' {
   d2.~ |
   d2.\) |
   
-  d4\( g fis |
+  d4\mf\<\( g fis |
   g8 fis g a bes c |
   bes4. a8 g4 |
   g2 a4 |
@@ -459,23 +459,23 @@ tenorSax = \relative c'' {
   
   % Frissig
   \mark \default
-  bes,4-.^\markup { \bold "Stringendo" } d-. f-. |
+  bes,4-.->\!\f^\markup { \bold "Stringendo" } d-.-> f-.-> |
   e8 f e d bes4-. |
   e8 r4 d8 bes as |
   e'8 f e d bes as |
-  bes4-. d-. f-. |
+  bes4-.-> d-.-> f-.-> |
   e8 f e d bes4-. |
   e8 f e d bes as |
   bes'2. |
   
-  bes,4-. d-. f-. |
+  bes,4-.-> d-.-> f-.-> |
   e8 f e d bes4-. |
   e8 r4 d8 bes as |
   e'8 f e d bes as |
-  bes4-. d-. f-. |
+  bes4-.-> d-.-> f-.-> |
   e8 f e d bes as |
   bes2.~ |
-  bes4 r8 f8 ges as |
+  bes4 r8 f8\mp^\markup { \bold "Amabile" } ges as |
   
   % Big Return
   \mark \default
@@ -486,31 +486,31 @@ tenorSax = \relative c'' {
   bes8 ces bes as ges bes |
   as des r8 des4. |
   r2. |
-  r4. f,8 ges as |
+  r4. f,8\< ges as |
   
   bes8 ces bes as ges bes |
   as des r8 des4. \grace { gis,16 a b }  |
   cis8 d cis b a cis |
-  b4 r4 \tuplet 3/2 { b8 cis d } |
+  b4 r4 \tuplet 3/2 { b8\!\f cis d } |
   e8 f e d c e |
   d g r8 g4.~ |
   g2.~ |
   g2. |
   r2. |
-  g,4-. c-. b-. |
+  g,4-.-> c-.-> b-.-> |
   
   % Terug bij af
   \mark \default
   \key c \minor
-  c4 r2 |
+  c4-> r2 |
   R2.*3
   R2.*4
   
     % Theme
   \mark \default
-  r8 es, r g r bes |
+  r8\mf es, r g r bes |
   a8 bes a g f a |
-  g8 c, r8 c4 bes8 |
+  g8 c, r8 c4-. bes8 |
   d2 r4 |
   r8 es r g r bes |
   a8 bes a g f a |
@@ -519,7 +519,7 @@ tenorSax = \relative c'' {
   
   r8 es r g r bes |
   a8 bes a g f a |
-  g8 c, r8 c4 bes8 |
+  g8 c, r8 c4-. bes8 |
   d2 r4 |
   r8 es r g r bes |
   a8 bes a g f a |
@@ -528,11 +528,11 @@ tenorSax = \relative c'' {
   
   % Variation I
   \mark \default
-  bes4 d f |
+  bes4-. d-. f-. |
   g2 r4 |
   a4-. r8 f c8 cis |
   d4. e4. |
-  c4 f a |
+  c4-. f-. a-. |
   bes4.-- a4.-- |
   a4.-- as4.-- |
   as4.-- g4.-- |
@@ -555,12 +555,12 @@ tenorSax = \relative c'' {
 
   % Ending
   \mark \default
-  e,8 f e d cis e |
+  e,8\p\< f e d cis e |
   d a' r8 a4 fis8 |
   g e' r8 e4 d8 |
-  c4 r2 |
+  c4\! r2 |
   
-  b8 c b a g b |
+  b8\f c b a g b |
   a d r8 d4.~ |
   d2.
   e8 f e d c e |
@@ -568,26 +568,26 @@ tenorSax = \relative c'' {
   g2 f4-. |
   e8 f e d c d |
   e8 f e d c e |
-  d4 r4 c8 as |
-  g4-- as-- bes-- | 
+  d4 r4 c8\(\> as |
+  g4-- as--\!\< bes-- | 
   c-- d-- es-- |
   f-- g-- as-- |
+  g2.\!~ |
   g2.~ |
-  g2.~ |
-  g2. |
+  g2.\) |
   r8 bes8 g es d bes |
   c4 r2 |
   r2. |
-  r8 es r g r bes |
+  r8\mp es r g r bes |
   r8 bes g es d bes |
   c4 r2 |
   r2. |
   r2. |
   r8 bes' g es d f |
-  r8 es r g r bes |
+  r8\f es r g r bes |
   a8 bes a g es f |
-  g4-. c-. b-. |
-  r8 c8~ c4-. r4 |
+  g4-.-> c-.-> b-.-> |
+  r8 c8-.-> r2 |
   \bar "|."
  
 }
@@ -598,8 +598,8 @@ accordion = \relative c'' {
   \time 3/4
   
   % Opening
-  <g c e>8 r4. <g b d>8 r8 |
-  <es as c>4. <es~ g~ c~>4. |
+  <g c e>8\mf r4. <g b d>8 r8 |
+  <es as c>4 r8 <es~ g~ c~>4. |
   <es g c>2. |
   r2. 
   
@@ -729,7 +729,7 @@ accordion = \relative c'' {
   
   <a f'>4 <a f'>4-. <bes f'> |
   <a g'>4. <a~ g'~> |
-  <a g'>2. |
+  <a~ g'~>2 <a g'>8 r8 |
   r2. |
   
   % Lament
@@ -904,7 +904,7 @@ accordion = \relative c'' {
   r8 <a c f> <a c f> r8 <a c f>4 |
   r8 <bes es g>8 r4 <bes es g>4 |
   r8 <a c f> <a c f> r8 <a c f>4 |
-  <g bes es>4 r2 |
+  <g bes es>8-> r8 r2 |
   <a c f>2. |
   <as c es>2. |
   r8 c8~ c4-. r4 |
@@ -917,8 +917,8 @@ bass = \relative c {
   \time 3/4
   
   % Opening
-  c8 r4. b8 r8 |
-  bes4. as4.~ |
+  c8\mf r4. b8 r8 |
+  bes4 r8 as4.~ |
   as2. |
   r2. |
   
@@ -981,10 +981,10 @@ bass = \relative c {
   d8 g r8 g4 c,8 |
   d8 g r8 g4.\) |
   
-  c,4 cis d |
+  c,4\< cis d |
   e f fis |
   g gis a |
-  b4 g,2-> |
+  b4\!\ff g,2-> |
   
   c4. b |
   bes4. as |
@@ -992,7 +992,7 @@ bass = \relative c {
   
   %Intro
   \mark \default
-  c,4. c4 c8 |
+  c,4.\> c4 c8\!\mf |
   d4. d4 d8 |
   es4. es4 es8 |
   d4. d4 d8 |
@@ -1018,11 +1018,11 @@ bass = \relative c {
   f4. f4 fis8 |
   g4. g4 gis8 |
   a4. a4 es8 |
-  d4. d4 dis8 |
+  d4.\< d4 dis8 |
   e4. e4 gis,8 |
   a4. cis4 e8 |
   d4. d8 e fis |
-  g2. |
+  g2.\!\f |
   fis2. |
   f2. |
   e2. |
@@ -1030,7 +1030,7 @@ bass = \relative c {
   % Vervolg
   \mark \default
   \key d \minor
-  d4. c4. |
+  d4._\markup { \italic "poco a poco dim." } c4. |
   bes4. bes4 d8\( |
   e a r8 a4 d,8 |
   e a r8 a4.\) |
@@ -1051,45 +1051,45 @@ bass = \relative c {
   
   % Lament
   \mark \default
-  d2. |
-  c2. |
-  bes2. |
-  e2 a,4 |
-  g2. |
-  a2. |
-  bes2 a4 |
-  d2 c4 |
+  d2.--\p^\markup { \bold "Cantabile" } |
+  c2.-- |
+  bes2.-- |
+  e2-- a,4-- |
+  g2.-- |
+  a2.-- |
+  bes2-- a4-- |
+  d2-- c4-- |
 
-  g2. |
-  c |
-  a |
-  bes |
-  b 
-  e |
-  a2 e4 |
-  a,4 b cis |
+  g2.-- |
+  c-- |
+  a-- |
+  bes-- |
+  b-- 
+  e-- |
+  a2-- e4-- |
+  a,4-- b-- cis-- |
   
-  d2. |
-  c2. |
-  bes2. |
-  e2 a,4 |
-  g2. |
-  a2. |
-  bes2 a4 |
-  d2 c4 |
+  d2.-- |
+  c2.-- |
+  bes2.-- |
+  e2-- a,4-- |
+  g2.-- |
+  a2.-- |
+  bes2-- a4-- |
+  d2-- c4-- |
 
-  g'2. |
-  f2. |
-  e2. |
-  es2. |
-  des2. |
-  es2. |
-  f2. |
-  es4 des c |
+  g'2.--\< |
+  f2.-- |
+  e2.-- |
+  es2.-- |
+  des2.-- |
+  es2.-- |
+  f2.-- |
+  es4-- des-- c-- |
 
   % Frissig
   \mark \default
-  bes2. |
+  bes2.\!\f^\markup { \bold "Stringendo" } |
   as2. |
   ges2. |
   fes2. |
@@ -1108,7 +1108,7 @@ bass = \relative c {
   
   % Big Return
   \mark \default
-  ges'4. f |
+  ges'4.\mp^\markup { \bold "Amabile" } f |
   des2 r8 ges,8\(
   as des r8 des4 ges,8 |
   as des r8 des4.\) |
@@ -1116,13 +1116,13 @@ bass = \relative c {
   des2 r8 ges,8\( |
   as des r8 des4 as8 |
   des4\) r2 |
-  ges4. f |
+  ges4.\< f |
   es des |
 
   a4. gis |
-  e4 r2 |
+  e4\! r2 |
   
-  c'4. b4. |
+  c'4.\f b4. |
   bes4. as4. |
   g''8 as g es c as |
   g as g es c as |
@@ -1132,7 +1132,7 @@ bass = \relative c {
   % Terug bij af
   \mark \default
   \key c \minor
-  c,4. c4 c8 |
+  c,4. c4\mf c8 |
   d4. d4 d8 |
   es4. es4 es8 |
   d4. bes'8 g es |
@@ -1187,16 +1187,16 @@ bass = \relative c {
   c,4 d e |
   f4. f4 c8\( |
   d g r8 g4 c,8 |
-  d g r8 g f d\) |
+  d g r8 g\> f d\) |
   
   % Ending
   \mark \default
-  c4. cis4. |
+  c4.\!\p\< cis4. |
   d4. dis |
   e4. f |
   fis4-- e-- d-- |
   
-  g4. fis |
+  g4.\!\f fis |
   f g |
   d'8 es d c a f |
   c4. bes |
@@ -1204,12 +1204,12 @@ bass = \relative c {
   a4 b c |
   d4. g,4. |
   c4. b |
-  bes as |
-  es4. es4 e8 |
+  bes\> as |
+  es4.\!\< es4 e8 |
   f4. f4 fis8 |
   g4 as bes |
   
-  c4. c4 c8 |
+  c4.\!\mf c4 c8 |
   d4. d4 d8 |
   es4. es4 es8 |
   d4. d4 d8 |
@@ -1223,7 +1223,7 @@ bass = \relative c {
   d4. d4 d8 |
   es4. es4 es8 |
   d4. d4 d8 |
-  c4 r2 |
+  c8->\f r8 r2 |
   d2. |
   es4 f g |
   g8 c,8~ c4-. r4 |
@@ -1354,18 +1354,18 @@ Midi = \score {
   <<
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"
-      \set Staff.midiMinimumVolume = 0.6
+      \set Staff.midiMinimumVolume = 0.1
       \set Staff.midiMaximumVolume = 0.9
       \transpose c c, { \tripletFeel 8 \tenorSax }
     }
     \new Staff = "accordion" {
       \set Staff.midiInstrument = "reed organ"
-      \set Staff.midiMinimumVolume = 0.3
-      \set Staff.midiMaximumVolume = 0.6
+      \set Staff.midiMinimumVolume = 0.1
+      \set Staff.midiMaximumVolume = 0.7
       \transpose c c, { \tripletFeel 8 \accordion }
     }
     \new Staff = "bass" {
-      \set Staff.midiMinimumVolume = 0.4
+      \set Staff.midiMinimumVolume = 0.1
       \set Staff.midiMaximumVolume = 0.9
       \set Staff.midiInstrument = "electric bass (finger)"
       \transpose c c, { \tripletFeel 8 \bass }

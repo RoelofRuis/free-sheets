@@ -62,7 +62,7 @@ accordion = \relative c'' {
   bes4 c d2~ |
   d1 |
   d4 es f es |
-  d1 |
+  d2. r4 |
   
   c1 |
   bes2 a4 bes |
@@ -99,7 +99,7 @@ bass = \relative c {
   es2. f4 |
   g4 f es f |
   g1 |
-  g1 |
+  g2. r4 |
     
   fis4 f e2 |
   es4 d c d |
