@@ -21,7 +21,7 @@ tenorSax = \relative c'' {
 
   s1*8
 
-  s1*4
+  s1*8
 
   \time 3/4
   e4.-. d8 e d |
@@ -40,16 +40,16 @@ tenorSax = \relative c'' {
   g2. |
   a4.-. g8 a g |
   a4. c16 bes a g f g |
-  a4.-. g8 a g|
-  a4. c16 bes a g f g |
+  a4.-. cis8 d cis |
+  d4. f16 e d c bes g |
   a8-. a d,2~ |
   d2 r8 g8 |
-  a8-. a d,2~ |
-  d2 r8 g8 |
-  a8-. a d,2~ |
-  d2 r8 g8 |
-  a8-. a d,2~ |
-  d2. |
+  a8-. a c,2~ |
+  c2 r8 g'8 |
+  a8-. a bes,2~ |
+  bes2 r8 g'8 |
+  a8-. a bes,4 a |
+  g4 bes d |
 
   e4.-. d8 e d |
   e4.-. d8 e g |
@@ -114,21 +114,30 @@ accordionRightHand = \relative c'' {
   } >>
 
   << {
-    r4 <cis e>8-. <b d>( <cis e> <b d>-.) <cis e>( <b d>-.) |
+    r4 <cis' e>8-. <b d>( <cis e> <b d>-.) <cis e>( <b d>-.) |
     <cis e>( <bes d>-.) <cis e>-. <bes d>( <cis e> <bes d>-.) <cis e>( <bes d>-.) |
     r4 <cis e>8-. <b d>( <cis e> <b d>-.) <cis e>( <b d>-.) |
     <cis e>( <bes d>-.) <cis e>-. <bes d>( <cis e> <bes d>-.) <cis e>( <bes d>-.) |
+
+    r4 <dis fis>8-. <cis e>( <dis fis> <cis e>-.) <dis fis>( <cis e>-.) |
+    <dis fis>( <c e>-.) <dis fis>-. <c e>( <dis fis> <c e>-.) <dis fis>( <c e>-.) |
+    r4 <dis fis>8-. <cis e>( <dis fis> <cis e>-.) <dis fis>( <cis e>-.) |
+    <dis fis>( <c e>-.) <dis fis>-. <c e>( <dis fis> <c e>-.) <dis fis>( <c e>-.) |
   } \\ {
-    f1 |
+    f,1 |
     e1 |
     f1 |
     e1 |
+    g1 |
+    g1 |
+    g1 |
+    g1 |
   } >>
   
   \mark \default
   \time 3/4 
   
-  <a c f>2. |
+  <a, c f>2. |
   <a c f> |
   <a c f> |
   <a c f> |
@@ -140,7 +149,7 @@ accordionRightHand = \relative c'' {
   <g c es> |
   <g c es> |
   <g c es> |
-  <e b' d> |
+  <e gis d'> |
   <g cis e> |
   <a c f> |
   <a d f> |
@@ -184,6 +193,11 @@ accordionLeftHand = \relative c'' {
   r8 <e g cis>-. r8 <e g cis>-. r8 <e g cis>-. r8 <e g cis>-. |
   r8 <f as d>-. r8 <f as d>-. r8 <f as d>-. r8 <f as d>-. |
   
+  r8 <fis a dis>-. r8 <fis a dis>-. r8 <fis a dis>-. r8 <fis a dis>-. |
+  r8 <g bes e>-. r8 <g bes e>-. r8 <g bes e>-. r8 <g bes e>-. |
+  r8 <fis a dis>-. r8 <fis a dis>-. r8 <fis a dis>-. r8 <fis a dis>-. |
+  r8 <g bes e>-. r8 <g bes e>-. r8 <g bes e>-. r8 <g bes e>-. |
+  
   \mark \default
   \time 3/4
   R2.*26
@@ -217,6 +231,11 @@ bass = \relative c {
   bes'4 r4 f4 f4 |
   a4 r4 e4 e |
   bes'4 r4 f4 f4 |
+  
+  b4 r4 fis4 fis|
+  c'4 r4 g4 g4 |
+  b4 r4 fis4 fis|
+  c'4 r4 g4 g4 |
   
   \mark \default
   \time 3/4

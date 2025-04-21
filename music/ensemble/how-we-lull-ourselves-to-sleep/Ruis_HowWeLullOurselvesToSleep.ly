@@ -20,8 +20,8 @@ tenorSax = \relative c' {
   \key e \major
   \time 7/8
   
-  gis'4 b8[ e] a,[ cis fis] |
-  e4 b8[ dis16 e] fis8[ cis e] |
+  gis'4( b8[ e]) a,[( cis fis] |
+  e4 b8[) dis16( e] fis8[ cis e]) |
   dis4 fis8[ b] e,[ gis cis] |
   b4 fis8[ b16 cis] dis8[ b fis] |
   b4 fis8[ b16 cis] dis8[ b fis] |
@@ -84,50 +84,54 @@ accordion = \relative c' {
   \key e \major
   \time 7/8
   
-  e8~ <e gis>4. e8~ <e a>4 |
-  e8~ <e b'>4. fis8~ <fis cis'>4 |
-  fis8~ <fis dis'>4. b8~ <b e>4 |
-  b8~ <b fis'>4. b8~ <b fis'>4 |
-  b8~ <b fis'>4. b8~ <b fis'>4 |
-  b8~ <b fis'>4 <ais b'>4 <a g'> |
-  b8~ <b f'>4 cis8~ <cis e>4. |
-  b8~ <b~ d~> <b d g> cis8 fis~ <fis~ b~> <fis b e> |
+  r8 e8~ <e gis>4 r8 e8~ <e a>8 |
+  r8 e8~ <e b'>4 r8 fis8~ <fis cis'>8 |
+  r8 fis8~ <fis dis'>4 r8 b8~ <b e>8 |
+  r8 b8~ <b fis'>4 r8 b8~ <b fis'>8 |
+  r8 b8~ <b fis'>4 r8 b8~ <b fis'>8 |
+  r8 b8~ <b fis'>8 <b dis>4 <g b> |
+  <f b>4. <e gis>2 |
+  b'8~ <b~ d~> <b d g> cis8~ <cis fis~> <fis~ b~> <fis b e> |
   <fis~ b~ dis~>2 <fis b dis>8 r4 |
+  
+  r8 e,8~ <e gis>4 r8 e8~ <e a>8 |
+  r8 e8~ <e b'>4 r8 fis8~ <fis cis'>8 |
+  r8 fis8~ <fis dis'>4 r8 g8~ <g dis'>8 |
+  r8 gis8~ <gis b>4 r8 gis8~ <gis b>8 |
+  r8 g8~ <g cis>4. <g cis>4 |
+  <fis dis'>2 r8 r4 |
+  e8~ <e ais>8 r8 g8~ <g~ b>4 <g bes>8 |
+  <e b'>4 <dis b'>4 r4. |
+  r8 e8~ <e b'>4 r8 dis8~ <dis cis'>8 |
+  <gis b>2 <g a>4. |
+  r8 g8~ <g b>4 r8 g8~ <g bes>8 |
+  r8 b~ <b~ d~> <b d g> <b dis fis>4 r8 |
+  
+  <b dis>4 <g cis> <gis c>4. |
+  <e gis>4 <fis ais> <fis b>4 r8 |
+  <b dis>4 <g cis> <fis c'>4. |
+  <f gis>4 <e g> <dis fis>4 r8 |
+  
+  <ais' b>4 <g ais> <f b>4. |
+  <e fis>4 <fis gis> <g ais> r8 |
+  <g b>2 <fis b>4. |
+  r8 e8~ <e~ gis~> <e gis ais> b'8~ <b~ e~> <b e fis> |
+  <b f'>2. r8 |
+  
   
 }
 
-accordionRight = \relative c' {
+accordionRight = \relative c'' {
   \globalOptions
   \clef treble
   
   \key e \major
   \time 7/8
   
-  r8 e4. r8 e4 |
-  r8 e4. r8 fis4 |
-  r8 fis4. r8 b4 |
-  r8 b4. r8 b4 |
-  r8 b4. r8 b4 |
-  r8 b4 ais4 a |
-  b4. cis2 |
-  r8 d4. e4. |
-  fis2~ fis8 r4 |
-  
+  s2..*9
+
   \mark \default
-  r8 e,4. r8 e4 |
-  r8 e4. r8 fis4 |
-  r8 fis4. r8 g4
-  r8 gis4. r8 gis4 |
-  r8 g4.~ g4. |
-  fis2 r4. |
-  g4 r8 e4.~ e8 |
-  g4 fis r4. |
-  
-  r8 cis'4. r8 ais4 |
-  r8 b4. r8 gis4 |
-  
-  r8 b4.~ b4. |
-  r8 b4 cis8 dis4 r8 |
+  s2..*12
   
   \bar "||"
   dis4 cis bis4. |
@@ -158,34 +162,14 @@ accordionLeft = \relative c'' {
   \key e \major
   \time 7/8
   
-  gis2 a4. |
-  b2 cis4. |
-  dis2 e4. |
-  fis2 fis4. |
-  fis2 fis4. |
-  fis4. b4 g |
-  f4. e2 |
-  r4 g,4. b8 fis' |
-  dis2~ dis8 r4 |
+  s2..*9
   
   \mark \default
-  gis,2 a4. |
-  b2 cis4. |
-  dis2 dis4. |
-  b2 b4. |
-  cis2~ cis8 b4 |
-  b2 r4 ais8~ |
-  ais4 g2~ g8 |
-  cis4 b4 r4. |
-  
-  e,2 dis4. |
-  e2 f4. |
-  r4 g4~ g4. |
-  r4 d'8[ g] fis4 r8 |
+  s2..*12
 
   \bar "||"
   
-  b,4 g gis4. |
+  b4 g gis4. |
   e4 fis fis4 r8 |
   gis4 g fis4. |
   f4 e4 dis4 r8 |
@@ -220,7 +204,7 @@ bass = \relative c, {
   dis2 e4. |
   fis4. ais4 a |
   gis4. fis2 |
-  b,4. cis2 |
+  d4. cis2 |
   b2~ b8 r4 |
   
   \mark \default

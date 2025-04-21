@@ -14,7 +14,7 @@ chordmusic = \chordmode {
   s1.*2
   s1.*20 |
   s1.*4 |
-  s1.*15 |
+  s1.*19 |
   
   \repeat volta 2 {
     d1.:m |
@@ -74,10 +74,15 @@ tenorSax = \relative c'' {
   fis4. f4. e4. es4. |
   d4-. r8 des4. c4.~ c4 b8 |
   bes4. a4. as4. g4. |
-  ges4-. r8 f4.~ f2. |
-  g?4-. r8 f4.~ f2. |
-  g4-. r8 f4.~ f2.~ |
-  f2.~ f4. r4 e8 |
+  ges4-. r8 f4. b4. fis'4. |
+  f4. e4. es4. d4. |
+  des4-. r8 c4. b4. bes4. |
+  a4. as4. g4. ges4. |
+  
+  f4-. r8 e4.~ e2. |
+  fis4-. r8 e4.~ e2. |
+  g4-. r8 e4.~ 2.~ |
+  e2.~ e4. r4 e8 |
 
   \mark \default
   d1. |
@@ -148,6 +153,11 @@ tenorSax = \relative c'' {
   
   
   r4. bes c d |
+  e4. es d dis |
+  e4. es d dis |
+  e4. es d des |
+
+  r4. bes c d |
   e4. es d des |
   c b bes a |
   as g fis2.\fermata |
@@ -185,6 +195,12 @@ accordion = \relative c' {
     a4-. b8 g4. a2. |
     a2. d4. c4. |
     a4-. b8 g4.~ g2. |
+    
+    a2. d4. c4. |
+    a4 b8 g4. a2. |
+    a2. d4. c4. |
+    
+    a4-. b8 g4.~ g2. |
     a4-. b8 g4.~ g2. |
     a4-. b8 g4.~ g2.~ |
     g2.~ g4. r4 gis8 |
@@ -209,9 +225,15 @@ accordion = \relative c' {
     g4 r8 f4. e4. es4. |
     d4. des4. e2. |
     d4 r8 d4.~ d2. | 
-    d4 r8 d4.~ d2. | 
-    d4 r8 d4.~ d2.~ |
-    d2.~ d4. r4. |
+    
+    d2. g4. ges4. |
+    e4 r8 e4. d2. |
+    f2. e4. es4. |
+
+    d4 r8 des4.~ des2. | 
+    d4 r8 des4.~ des2. | 
+    d4 r8 des4.~ des2.~ |
+    des2.~ des4. r4. |
   } >>
   
   \mark \default
@@ -341,14 +363,24 @@ accordion = \relative c' {
     a4-. b8 g4.~ g2. |
    
     a2. d4. c4. |
-    a4 b8 g4. a2. |
-    a4 b8 g4. a4. f4. |
-    e4 f8 d4. d2. |
+    a4-. b8 g4. a4. b4.\rest |
+    a4-. b8 g4. a4. b4.\rest |
+    a4-. b8 g4. a4. b4.\rest |
+    
+    a2. d4. c4. |
+    a4-. b8 g4. a2. |
+    a4-. b8 g4. a4. f4. |
+    e4-. f8 d4. d2. |
   } \\ {
     d2. e2. |
     f2. e2. |
     f2. es2. |
     d2. c2. |
+    
+    d2. e2. |
+    f2. e4. s4. |
+    f2. e4. s4. |
+    f2. e4. s4. |
     
     d2. e2. |
     f2. e2. |
@@ -370,7 +402,7 @@ bass = \relative c {
   a4-. b8 g4. a2.\fermata |
   
   \mark \default
-  R1.*20 |
+  R1.*24 |
   
   \mark \default
   d4 c8 d4 c8 d4 c8 d4 c8 |
@@ -485,7 +517,11 @@ bass = \relative c {
   r1.|
   r1. |
   r1. |
-  r2. r4. d4.\fermata |
+  r1. |
+  g,2. a2. |
+  b2. a2. |
+  g2. f2. |
+  e2. d2.\fermata |
 
   \bar "|."
 
