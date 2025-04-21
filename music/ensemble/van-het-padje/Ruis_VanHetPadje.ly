@@ -61,7 +61,7 @@ tenorSax = \relative c'' {
   \mark \default
   R1.*4 |
   
-  r4. c4. b4. a4. |
+  r4. c4.\mp b4. a4. |
   g4-. r8 g4. f4.~ f4 c'8 |
   d4. c4. b4. a4. |
   g4-. r8 a4.~ a4. r4. |
@@ -161,7 +161,7 @@ accordion = \relative c' {
   \clef treble
   
   \tempo 4.=96
-  <c~ e~ fis~ ais~>1. |
+  <c~ e~ fis~ ais~>1.\mf |
   <c e fis ais>2. <d as'>2.\fermata |
 
   \mark \default
@@ -189,7 +189,7 @@ accordion = \relative c' {
     a4-. b8 g4.~ g2.~ |
     g2.~ g4. r4 gis8 |
   } \\ {
-    d2. e2. |
+    d2.\mp e2. |
     f4-. r8 f4. e2. |
     d2. e2. |
     f4-. r8 d4.~ d2. |

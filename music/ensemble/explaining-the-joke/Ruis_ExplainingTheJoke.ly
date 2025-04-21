@@ -251,6 +251,11 @@ tenorSax = \relative c'' {
    r1 |
    r1 |
   }
+  
+  R1*6 |
+  r4 bes'4. c4. |
+  a4 f g8 f e d |
+  
 
   \bar "|."
 }
@@ -457,8 +462,12 @@ accordion = \relative c'' {
   
   <e~ c'~>1 |
   <e c'> |
-  <f c'> |
-  <e c'>
+  <f c'>2. <e~ c'~>4 |
+  <e c'>1
+  <f c'>2. <e~ c'~>4 |
+  <e c'>1
+  <f c'>2. <e~ c'~>4 |
+  <e c'>1
 
 
   %{
@@ -696,8 +705,11 @@ bass = \relative c {
   c4 d8 e4 f8 g4~ |
   g4 g2 g4 |
   a4 c8 b4 a8 a4~ |
-  a4 g2 a4 |
-  
+  a4 g2 g4 |
+  a4 c8 b4 a8 a4~ |
+  a4 g2 g4 |
+  a4 c8 b4 a8 a4~ |
+  a4 g2 g4 |
   
   
   
