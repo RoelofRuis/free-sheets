@@ -38,10 +38,10 @@ tenorSax = \relative c'' {
   es2. |
   fis2. |
   g2. |
-  a4 d f |
-  a,2. |
-  a4 d f |
-  a,4. c16 bes a g f g |
+  a4.-. g8 a g |
+  a4. c16 bes a g f g |
+  a4.-. g8 a g|
+  a4. c16 bes a g f g |
   a8-. a d,2~ |
   d2 r8 g8 |
   a8-. a d,2~ |

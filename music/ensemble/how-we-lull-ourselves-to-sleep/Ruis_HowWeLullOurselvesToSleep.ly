@@ -77,6 +77,25 @@ tenorSax = \relative c' {
   b4 g8[ c16 d] e8[ c g] |
 }
 
+accordion = \relative c' {
+  \globalOptions
+  \clef treble
+  
+  \key e \major
+  \time 7/8
+  
+  e8~ <e gis>4. e8~ <e a>4 |
+  e8~ <e b'>4. fis8~ <fis cis'>4 |
+  fis8~ <fis dis'>4. b8~ <b e>4 |
+  b8~ <b fis'>4. b8~ <b fis'>4 |
+  b8~ <b fis'>4. b8~ <b fis'>4 |
+  b8~ <b fis'>4 <ais b'>4 <a g'> |
+  b8~ <b f'>4 cis8~ <cis e>4. |
+  b8~ <b~ d~> <b d g> cis8 fis~ <fis~ b~> <fis b e> |
+  <fis~ b~ dis~>2 <fis b dis>8 r4 |
+  
+}
+
 accordionRight = \relative c' {
   \globalOptions
   \clef treble
@@ -272,6 +291,7 @@ BookFull = \book {
     <<
       \new ChordNames { \chordmusic }
       \new Staff = "saxophone" { \tenorSax }
+      \new Staff = "accordion" { \accordion }
       \new PianoStaff <<
         \new Staff = "accordion_right" { \accordionRight }
         \new Staff = "accordion_left" { \accordionLeft }
@@ -384,13 +404,7 @@ Midi = \score {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.2
       \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \accordionRight }
-    }
-    \new Staff = "accordion" {
-      \set Staff.midiInstrument = "reed organ"
-      \set Staff.midiMinimumVolume = 0.2
-      \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \accordionLeft }
+      \transpose c c, { \accordion }
     }
     \new Staff = "bass" {
       \set Staff.midiMinimumVolume = 0.2

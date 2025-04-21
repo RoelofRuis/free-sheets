@@ -162,7 +162,7 @@ accordion = \relative c' {
   
   \tempo 4.=96
   <c~ e~ fis~ ais~>1.\mf |
-  <c e fis ais>2. <d as'>2.\fermata |
+  <c e fis ais>2. <d f as>2.\fermata |
 
   \mark \default
   << { 
