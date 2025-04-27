@@ -10,7 +10,39 @@ globalOptions = {
 chordmusic = \chordmode {
   \set chordChanges = ##t
   
-  % Intro
+  \mark \default
+  s1*7
+  
+  \mark \default
+  s1*24
+  
+  \mark \default
+  s1*32
+  
+  \mark \default
+  s1*14
+  
+  \mark \default
+  s1*16
+  
+  \mark \default
+  s1*16
+  
+  \mark \default
+  s1*12
+  
+  \mark \default
+  s1*23
+  
+  \mark \default
+  as1*4:maj7
+  g1*4:7.9-
+  as1*4:maj7
+  g1*4:7.9-
+  as1*4:maj7
+  g1*4:7.9-
+  as1*4:maj7
+  g1*4:7.9-
   
 }
 
@@ -40,17 +72,17 @@ tenorSax = \relative c'' {
   \clef treble
   
   % Intro
-  bes4 c
-  a f
-  as4 bes
-  g es
-  g f e d cis2 r2\fermata |
+  bes4-- c--
+  a-- f--
+  as4-- bes--
+  g-- es--
+  g-- f-- e-- d-- cis2 r2\fermata |
   
-  bes'4 c
-  a f
-  as4 bes
-  g es
-  g^\markup { "rit." } f e d |
+  bes'4-- c--
+  a-- f--
+  as4-- bes--
+  g-- es--
+  g--^\markup { "rit." } f-- e-- d-- |
 
   \bar "||"
 
@@ -62,20 +94,20 @@ tenorSax = \relative c'' {
   c1
   R1*6
 
-  c'4. e8~ e4 c |
+  c'4. e8~ e4 c-. |
   des2 f2 |
-  e4. g8~ g4 e |
+  e4. g8~ g4 e-. |
   f2 as2 |
-  g4. bes8~ bes4 g |
+  g4. bes8~ bes4 g-. |
   as4 f8 des8-. r8 as4-. g8~ |
   g1 |
   r1 |
   
-  c4. e8~ e4 c |
+  c4. e8~ e4 c-. |
   des2 f2 |
-  e4. g8~ g4 e |
+  e4. g8~ g4 e-. |
   f2 as2 |
-  g4. bes8~ bes4 g |
+  g4. bes8~ bes4 g-. |
   as4 f8 des8-. r8 des'4-. c8~ |
   c1 |
   r1 |
@@ -83,39 +115,39 @@ tenorSax = \relative c'' {
   % Theme
   \mark \default
   c,,4 d8 e8 r f g4~ |
-  g4 g2 g4 |
+  g4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
-  as4 g2 g4 |
+  as4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
-  as4 g2 e4 |
+  as4 g2 e4-. |
   g4 f8 e8 r d c4~ |
   c2 r2 |
 
   c4 d8 e8 r f g4~ |
-  g4 g2 g4 |
+  g4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
-  as4 g2 g4 |
-  as4 bes8 c8~ c8 r es4 |
+  as4 g2 g4-. |
+  as4 bes8 c8~ c8 r es4-. |
   d4 c8 b8~ b8 r a4 |
   g1 |
   r1 |
   
   
   c,4 d8 e8 r f g4~ |
-  g4 g2 g4 |
+  g4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
-  as4 g2 g4 |
+  as4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
-  as4 g2 e4 |
+  as4 g2 e4-. |
   g4 f8 e8 r d c4~ |
   c2 r2 |
   
   %s1*8
 
   c4 d8 e8 r f g4~ |
-  g4 g2 g4 |
+  g4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
-  as4 g2 g4 |
+  as4 g2 g4-. |
   as4 bes8 c8~ c8 r es4 |
   d4 c8 b8~ b8 r a4 |
   g1 |
@@ -123,30 +155,30 @@ tenorSax = \relative c'' {
   
   % Statement
   \mark \default
-  g4 es4 es c |
-  c as as \grace { a16 as } f8 fis |
+  g4-> es4 es-> c |
+  c-> as as \grace { a16 as } f8 fis |
   g1 |
   r1 |
-  g'4 es4 es c |
-  c as as bes8 c |
+  g'4-> es4 es-> c |
+  c-> as as bes8 c |
   d1 |
   r1 |
-  g4 es4 es c |
-  c as as \grace { a16 as } f8 fis |
+  g4-> es4 es-> c |
+  c-> as as \grace { a16 as } f8 fis |
   g1 |
   r1 |
-  g'4 es es c |
-  c as as g |
+  g'4-> es es-> c |
+  c-> as as g |
   
   \mark \default
   c2 r2 |
   R1*7 |
   
-  c4. e8~ e4 c |
+  c4. e8~ e4 c-. |
   des2 f2 |
-  e4. g8~ g4 e |
+  e4. g8~ g4 e-. |
   f2 as2 |
-  g4. bes8~ bes4 g |
+  g4. bes8~ bes4 g-. |
   as4 f8 des8-. r8 des'4-. c8~ |
   c1 |
   r1 |
@@ -154,11 +186,11 @@ tenorSax = \relative c'' {
   % Theme
   \mark \default
   c,,4 d8 e8 r f g4~ |
-  g4 g2 g4 |
+  g4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
-  as4 g2 g4 |
+  as4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
-  as4 g2 e4 |
+  as4 g2 e4-. |
   g4 f8 e8 r d c4~ |
   c2 r2 |
 
@@ -173,18 +205,18 @@ tenorSax = \relative c'' {
   
   % Uitleggen
   \mark \default
-  as''2 bes |
-  g2 es |
+  as''2-- bes-- |
+  g2-- es-- |
   g4 f8 e8 r d8 c4~ |
   c4 r2. |
 
-  as'2 bes |
-  g2 es |
+  as'2-- bes-- |
+  g2-- es-- |
   g4 f8 e r8 d8 c4~ |
   c4 r2. |
   
   r4 as'4. bes4. |
-  g4. es4. es4 |
+  g4. es4. es4-. |
   ges4-. ges as-. as |
   f des f8 es d c |
   
@@ -208,11 +240,12 @@ tenorSax = \relative c'' {
   g8 f r f~ f4 bes,4 |
   
   g2 a bes es |
-  d c b a |
+  d c4 b~ b2 a |
   g1~ |
   g1\glissando |
   g'1~ |
   g2 r2^\markup{ "Improvise, small notes as indication" } |
+  \bar "||"
   
   \mark \default
   \magnifyMusic 0.5 {
@@ -251,6 +284,10 @@ tenorSax = \relative c'' {
    r1 |
    r1 |
   }
+  
+  \bar "||"
+  
+  \mark \default
   
   R1*6 |
   r4 bes'4. c4. |
@@ -459,6 +496,9 @@ accordion = \relative c'' {
   as b d b g' d b d |
   as4 b d f |
   <as, b g'>1 |
+  
+  \bar "||"
+  \mark \default
   
   <e~ c'~>1 |
   <e c'> |
@@ -701,6 +741,9 @@ bass = \relative c {
   es c |
   c as |
   g1 |
+  
+  \bar "||"
+  \mark \default
   
   c4 d8 e4 f8 g4~ |
   g4 g2 g4 |

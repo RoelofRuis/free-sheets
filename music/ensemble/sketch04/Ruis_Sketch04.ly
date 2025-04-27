@@ -37,8 +37,8 @@ tenorSax = \relative c'' {
   c-. c es,2~ |
   es2. |
   fis2. |
-  g2. |
-  a4.-. g8 a g |
+  \grace { f16 fis } g2. |
+  \grace { fis16 g } a4.-. g8 a g |
   a4. c16 bes a g f g |
   a4.-. cis8 d cis |
   d4. f16 e d c bes g |

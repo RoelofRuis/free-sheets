@@ -182,7 +182,7 @@ tenorSax = \relative c'' {
     f'4-. c c d |
     es f es d |
     c as bes c |
-    des c c2 |
+    des( c) c2 |
     
   }
 
@@ -190,13 +190,13 @@ tenorSax = \relative c'' {
   \mark \default
   \repeat volta 2 {
     
-    g4^\markup { "play 2nd time only" }^\markup { \bold "Fanfare" } g c g4 |
-    g4 g c g |
-    a4 g c b |
-    a g c b |
-    g as c b |
-    g as c b |
-    g f d2 |
+    g4^\markup { "play 2nd time only" }^\markup { \bold "Fanfare" } g c b8 a |
+    g4 g c b8 g |
+    a4 g c b8 g |
+    a4 g c b8 a |
+    g4 as c b8 a |
+    g4 as c b |
+    g4 f d2 |
     
     \alternative {
       { R1 }
@@ -214,10 +214,10 @@ tenorSax = \relative c'' {
     \alternative {
       { R1*4 }
       {
-         as1 |
+         as1( |
          bes1 |
          as1 |
-         g4-. g8-. g-. b4 d |
+         g4)-. g8-. g-. b4 d |
          g1 |
          r4 b, c d |
       }
@@ -238,12 +238,12 @@ tenorSax = \relative c'' {
 
   g,4-. g8-. 8-. bes4 r |
   g4-. g8-. 8-. c4 r |
-  g4-. g8-. 8-. es4-. f4-. |
+  g4-. b8-. g8-. es4-. f4-. |
   g4-. g8-. 8 as2 |
   bes4-. 8-. 8-. bes4 r |
   b4-. 8-. 8-. c4 r |
   bes4 as g f |
-  f g-. g2 |
+  f g-. g8 a b d |
   
   \mark \default
   \repeat volta 2 {
@@ -394,7 +394,7 @@ accordion = \relative c'' {
     <a c f>4-. <f a c> <f a c> <f bes d> |
     <g bes es>4 <bes d f> <g bes es> <f bes d> |
     <es as c> <c es as> <es g bes> <es as c> |
-    <f bes des> <f bes c> <f g~ c~> <e g c> |
+    <f bes des>( <f bes c>) <f g~ c~> <e g c> |
   
   }
   
@@ -624,7 +624,7 @@ title = "March In April"
 bookname = "MarchInApril"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
-docVersion = #(string-append "outline - version " date)
+docVersion = #(string-append "version " date)
 
 BookFull = \book {
   \bookOutputName #(string-append bookname "_Full")
