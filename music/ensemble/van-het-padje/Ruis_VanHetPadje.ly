@@ -70,16 +70,16 @@ tenorSax = \relative c'' {
   f4-. r8 es4. d4. cis'4.~ |
   cis4. c b a |
   g4-. r8 f4.~ f2. |
-  r4. b4. fis'2.~ |
+  r4. b4.--\f fis'2.--~ |
   fis4. f4. e4. es4. |
-  d4-. r8 des4. c4.~ c4 b8 |
-  bes4. a4. as4. g4. |
-  ges4-. r8 f4. b4. fis'4. |
+  d4-. r8 des4.\> c4.~ c4 b8 |
+  bes4. a4. as4. g4.\! |
+  ges4-. r8 f4.\< b4. fis'4.\! |
   f4. e4. es4. d4. |
-  des4-. r8 c4. b4. bes4. |
+  des4-. r8 c4.\> b4. bes4. |
   a4. as4. g4. ges4. |
   
-  f4-. r8 e4.~ e2. |
+  f4-.\mp\! r8 e4.~ e2. |
   fis4-. r8 e4.~ e2. |
   g4-. r8 e4.~ 2.~ |
   e2.~ e4. r4 e8 |
@@ -91,14 +91,20 @@ tenorSax = \relative c'' {
   \bar "||"
   \once \override TextSpanner.bound-details.left.text = "poco a poco accel." |
   r1.\startTextSpan
-  r4 a'8 d4 c8 a4 b8 g4 a8 |
+  r4\mp a'8 d4 c8 a4 b8 g4 a8 |
   f4. e4 bes'8~ bes2. |
   r4 bes8 fis'4 e8 d4.-. c-. |
   r4 a8 d4 c8 bes4.-. e,4 fis8~ | 
-  fis4. gis4. ais4 c8 d e fis |
-  gis1.
+  fis4. ais4 gis8~ gis4. c4 ais8~ |
+  ais1.
   r1.
-  R1.*7\stopTextSpan |
+  r1. 
+  r4\mf e'8 a4 gis8 e4 fis8 d4 e8 |
+  c4. ais4 e'8~ e2. |
+  r4 e8 ais4 gis8 fis4. e4. |
+  r4 d8 gis4 fis8 e4. ais,4. |
+  c4.\< d4. e4 fis8 gis8 ais c |
+  d1.\!\stopTextSpan |
   
   \mark \default
   \tempo 4.=150
@@ -108,7 +114,7 @@ tenorSax = \relative c'' {
     s1.*23
   }
   
-  a2. d4. c4. |
+  a2.\f d4. c4. |
   a4-. b8 g4. a2. |
   c4.-. a8 b c b d a g4 e8 |
   a4-. b8 g2. r4. |
@@ -119,11 +125,17 @@ tenorSax = \relative c'' {
   f2.~ f4. r4. |
   
   \mark \default
-  R1.*4 |
-  R1.*3 |
+  R1.
+  r4\mf e8 a4 gis8 e4 fis8 d4 e8 |
+  c4. ais4 e'8~ e2. |
+  r4 e8 ais4 gis8 fis4. e4. |
+  r4 d8 gis4 fis8 e4. ais,4. |
+  c4.~ c4 d8~ d2. |
+  f4.-> a4.-> d4.-> c4.-> |
   a8 d c a b g f bes as f g des~-> |
   des ges fes des es ces a d c a b g |
-  a1. |
+  a1.\> |
+  r1.\! |
   r1. |
   r1. |
   r1. |
@@ -136,7 +148,7 @@ tenorSax = \relative c'' {
   r1. |
   
   \once \override TextSpanner.bound-details.left.text = "molto rit."
-  r4.\startTextSpan a4. d4. c4. |
+  r4.\mp\startTextSpan a4. d4. c4. |
   a4-. b8 g4. a2. |
   r4. a4. d4. c4. |
   a4-. b8 g4.~ g2.
@@ -146,16 +158,16 @@ tenorSax = \relative c'' {
   
   \mark \default
   
-  r4. b c d |
-  es d c b |
+  r4. b\< c d |
+  es\!\> d c b\! |
   r4. g a bes |
   c4. bes4.~ bes2. |
   
   
   r4. bes c d |
-  e4. es d dis |
-  e4. es d dis |
-  e4. es d des |
+  e4.( es d) dis-- |
+  e4.( es d) dis-- |
+  e4.( es d des) |
 
   r4. bes c d |
   e4. es d des |
@@ -320,8 +332,9 @@ accordion = \relative c' {
   des ges fes des es ces a d c a b g |
   a4 g8 a4 g8 a4 g8 a4 g8 |
   r1. |
-  r1. |
-  r1. |
+  <g c d e>2. <a d e fis>2. |
+  <gis d' e g>2. <ais e' fis a>2. |
+  <c e fis ais>1. |
 
   \mark \default
   
@@ -482,7 +495,7 @@ bass = \relative c {
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
   c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
-  c4 bes8 c4 bes8 c4 bes8 c4 bes8 |
+  f4.-- a4.-- d4.-- c4.-- |
   r2. r4. r4 des8~-> |
   des8 ges fes des es ces a d c a b g |
   
@@ -490,6 +503,7 @@ bass = \relative c {
   d4 c8 d4 c8 d4 c8 d4 c8 |
   d4 c8 e4 d8 fis4 e8 gis4 fis8 |
   gis4 fis8 ais4 gis8 c4 ais8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 d4 c8 |
   
   \mark \default
 
@@ -524,7 +538,6 @@ bass = \relative c {
   e2. d2.\fermata |
 
   \bar "|."
-
 }
 
 % --- BOOKS --- %
@@ -532,7 +545,7 @@ title = "Van het Padje"
 bookname = "VanHetPadje"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
-docVersion = #(string-append "outline - version " date)
+docVersion = #(string-append "version " date)
 
 BookFull = \book {
   \bookOutputName #(string-append bookname "_Full")

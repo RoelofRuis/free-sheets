@@ -190,12 +190,12 @@ tenorSax = \relative c'' {
   \mark \default
   \repeat volta 2 {
     
-    g4^\markup { "play 2nd time only" }^\markup { \bold "Fanfare" } g c b8 a |
-    g4 g c b8 g |
-    a4 g c b8 g |
-    a4 g c b8 a |
-    g4 as c b8 a |
-    g4 as c b |
+    g4-.^\markup { "play 2nd time only" }^\markup { \bold "Fanfare" } g-. c b8 a |
+    g4-. g-. c b8 g |
+    a4-. g-. c b8 g |
+    a4-. g-. c b8 a |
+    g4-. as-. c b8 a |
+    g4-. as-. c b |
     g4 f d2 |
     
     \alternative {
@@ -234,9 +234,9 @@ tenorSax = \relative c'' {
   es4-. es d c |
   b-. g c d |
   es4 f g f |
-  d2 d2 |
+  d2 d8 c b a |
 
-  g,4-. g8-. 8-. bes4 r |
+  g4-. g8-. 8-. bes4 r |
   g4-. g8-. 8-. c4 r |
   g4-. b8-. g8-. es4-. f4-. |
   g4-. g8-. 8 as2 |
