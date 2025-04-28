@@ -115,79 +115,19 @@ accordion = \relative c' {
   <ais' b>4 <g ais> <f b>4. |
   <e fis>4 <fis gis> <g ais> r8 |
   <g b>2 <fis b>4. |
-  r8 e8~ <e~ gis~> <e gis ais> b'8~ <b~ e~> <b e fis> |
-  <b f'>2. r8 |
+  r8 e8~ <e~ gis~> <e gis ais> ais8~ <ais~ d~> <ais d fis> |
+  <gis d' f>2. r8 |
   
+  r8 f8~ <f b>4 r8 g8~ <g cis>8 |
+  r8 fis8~ <fis c'>4 r8 e8~ <e bes'>8 |
+  r8 fis8~ <fis c'>4 r8 e8~ <e bes'>8 |
+  r8 fis8~ <fis c'>8 <f g d'>4 <es fis c'>4 |
+  <dis f b>4. <des e bes'>2 |
   
-}
-
-accordionRight = \relative c'' {
-  \globalOptions
-  \clef treble
+  s2..*2 |
   
-  \key e \major
-  \time 7/8
+  r8 f8~ <f b>4 r8 g~ <g cis>8 |
   
-  s2..*9
-
-  \mark \default
-  s2..*12
-  
-  \bar "||"
-  dis4 cis bis4. |
-  gis4 ais b4 r8 |
-  dis4 cis bis4. |
-  gis4 g4 fis4 r8 |
-  
-  ais4 g4 f4. |
-  e4 fis g4 r8 |
-  g2 fis4. |
-  r8 gis4. ais4. |
-  g2. r8 |
-  
-  \mark \default
-  
-  r8 f4. r8 g4 |
-  r8 fis4. r8 f4 |
-  r8 fis4. r8 f4 |
-  r8 fis4 g4 fis4 |
-  f4. e2 |
-
-}
-
-accordionLeft = \relative c'' {
-  \globalOptions
-  \clef treble
-  
-  \key e \major
-  \time 7/8
-  
-  s2..*9
-  
-  \mark \default
-  s2..*12
-
-  \bar "||"
-  
-  b4 g gis4. |
-  e4 fis fis4 r8 |
-  gis4 g fis4. |
-  f4 e4 dis4 r8 |
-  
-  b'4 ais b4. |
-  fis4 gis ais4 r8 |
-  b2 b4. |
-  r4 ais8[ dis] r8 gis[ e] |
-  d2. r8 |
-  
-  \mark \default
-  b2 cis4. |
-  c2 b4. |
-  c2 b4. |
-  c4. dis4 c |
-  b4. ais2 |
-  
-  \bar "|."
 }
 
 bass = \relative c, {
@@ -276,10 +216,6 @@ BookFull = \book {
       \new ChordNames { \chordmusic }
       \new Staff = "saxophone" { \tenorSax }
       \new Staff = "accordion" { \accordion }
-      \new PianoStaff <<
-        \new Staff = "accordion_right" { \accordionRight }
-        \new Staff = "accordion_left" { \accordionLeft }
-      >>
       \new Staff = "bass" { \bass }
     >>
   
@@ -343,10 +279,7 @@ BookAccordion = \book {
   \score {
     <<
       \new ChordNames { \chordmusic }
-      \new PianoStaff <<
-        \new Staff = "accordion_right" { \accordionRight }
-        \new Staff = "accordion_left" { \accordionLeft }
-      >>
+      \new Staff = "accordion" { \accordion }
     >>
   }
 }
