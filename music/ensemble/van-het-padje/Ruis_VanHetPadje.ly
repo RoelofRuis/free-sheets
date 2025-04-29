@@ -67,14 +67,14 @@ tenorSax = \relative c'' {
   g4-. r8 a4.~ a4. r4. |
 
   b4. a4. as4. g4. |
-  f4-. r8 es4. d4. cis'4.~ |
+  f4-. r8 es4. d4. cis'4.->~ |
   cis4. c b a |
   g4-. r8 f4.~ f2. |
-  r4. b4.--\f fis'2.--~ |
+  r4. b4.--\f fis'2.->~ |
   fis4. f4. e4. es4. |
   d4-. r8 des4.\> c4.~ c4 b8 |
-  bes4. a4. as4. g4.\! |
-  ges4-. r8 f4.\< b4. fis'4.\! |
+  bes?4. a4. as4. g4.\! |
+  ges4-. r8 f4.\< b4. fis'4.->\! |
   f4. e4. es4. d4. |
   des4-. r8 c4.\> b4. bes4. |
   a4. as4. g4. ges4. |
@@ -93,7 +93,7 @@ tenorSax = \relative c'' {
   r1.\startTextSpan
   r4\mp a'8 d4 c8 a4 b8 g4 a8 |
   f4. e4 bes'8~ bes2. |
-  r4 bes8 fis'4 e8 d4.-. c-. |
+  r4 bes8 fis'4 e8 d4.-> c-> |
   r4 a8 d4 c8 bes4.-. e,4 fis8~ | 
   fis4. ais4 gis8~ gis4. c4 ais8~ |
   ais1.
@@ -101,7 +101,7 @@ tenorSax = \relative c'' {
   r1. 
   r4\mf e'8 a4 gis8 e4 fis8 d4 e8 |
   c4. ais4 e'8~ e2. |
-  r4 e8 ais4 gis8 fis4. e4. |
+  r4 e8 ais4 gis8 fis4.-> e4.-> |
   r4 d8 gis4 fis8 e4. ais,4. |
   c4.\< d4. e4 fis8 gis8 ais c |
   d1.\!\stopTextSpan |
