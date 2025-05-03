@@ -124,7 +124,8 @@ accordion = \relative c' {
   r8 fis8~ <fis c'>8 <f g d'>4 <es fis c'>4 |
   <dis f b>4. <des e bes'>2 |
   
-  s2..*2 |
+  r8 e8 gis c f a c |
+  <c, e gis b>2 r4. |
   
   r8 f8~ <f b>4 r8 g~ <g cis>8 |
   
@@ -177,10 +178,17 @@ bass = \relative c, {
   \mark \default
   
   g,2 a4. |
-  d2 cis4. |
-  d2 cis4. |
+  d2 c4. |
+  d2 c4. |
   d4. dis4 d |
   cis4. c2 |
+  
+  b2..~ |
+  b2 r4. |
+
+  g2 a4. |
+  d2 c4. |
+  
   
   \bar "|."
 

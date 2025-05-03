@@ -3,6 +3,7 @@
 
 globalOptions = {
   \compressEmptyMeasures
+  \key f \major
   \numericTimeSignature
   \tempo 4=120
 }
@@ -37,18 +38,20 @@ tenorSax = \relative c'' {
   a16 bes,16 r bes r bes a'8 r4 bes,8 c |
   d es d c r8 f4 r8 |
   as8 g f es r8 f8 r8 g8 |
-  r4 c,2.~ |
-  c1 |
+  r4 c,2. |
+  R1 |
+  
+  a'4 r4 r8 a16 bes a g f g |
+  g4 r4 r4 bes,8 c |
+  d8 es d c r8 f~ f4 |
+  d8 es d c r8 f~ f4 |
+  a4 r4 r8 a16 bes a g f g |
+  g4 r4 r4 bes,8 c |
+  d8 es c f~ f2~ |
+  f1 |
+  
 
-  % Overgang I
-  a8 bes a c~ c2 |
-  a8 bes a f~ f2 |
-  a8 bes a c r f r es~ |
-  es1 |
-  a,8 bes a c~ c2 |
-  a8 bes a f~ f2 |
-  a8 bes a c r f r g~ |
-  g1 |
+  
 
   \bar "|."
 }
@@ -80,15 +83,16 @@ accordion = \relative c' {
   r4 <c~ f~ bes~>2. |
   <c f bes>1 |
   
-  % Overgang I
-  <c f>4. <es~ as~>8 <es as>2 |
-  <c f>4. <as~ des~>8 <as des>2 |
-  <c f>4. <es as>8 r <g c> r <f~ bes~>8 |
-  <f bes>4 <f as c>4. <f bes>4. |
-  <c f>4. <es~ as~>8 <es as>2 |
-  <c f>4. <as~ des~>8 <as des>2 |
-  <c f>4. <es as>8 r <des' as> r <es~ bes~> |
-  <es bes>1 |
+  <f a c>4 r4 r8 <f a c>4. |
+  <es g bes>4 r4 r4 <es g bes> |
+  <f bes d>4. <f a c>8 r8 <ges bes des>4. |
+  <f bes d>4. <f a c>8 r8 <ges bes des>4. |
+  <f a c>4 r4 r8 <f a c>4. |
+  <es g bes>4 r4 r4 <es g bes> |
+  <f bes d>4 <f a c>8 r8 a' bes g c~ |
+  c4~ <c a>2. |
+
+  
   
   \bar "|."
 }
@@ -120,15 +124,16 @@ bass = \relative c {
   r4 fis,2. |
   fis8 fis fis fis fis fis fis fis |
   
-  % Overgang I
-  d4. des8~ des2 |
-  d4. ges8~ ges2 |
-  d4. des8 r as' r ges8~ |
-  ges1 |
-  d4. des8~ des2 |
-  d4. ges8~ ges2 |
-  d4. des8 r es r f~ |
-  f1 |
+  bes'16 c, r c r c bes'8 r8 bes,8. bes |
+  as'16 bes, r bes r bes as'8 r4 as,4 |
+  es'4. bes8 r8 as4. |
+  es'4. bes8 r8 as4. |
+  
+  bes'16 c, r c r c bes'8 r8 bes,8. bes |
+  as'16 bes, r bes r bes as'8 r4 as,4 |
+  es'4 bes8 r8 r2 |
+  r4 f2. |
+  
   
   \bar "|."
 
