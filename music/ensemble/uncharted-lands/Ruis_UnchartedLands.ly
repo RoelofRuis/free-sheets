@@ -80,8 +80,8 @@ accordion = \relative c' {
   <c f a>16 <c bes a> r <c bes a> r <c bes a> <c f a>8 r4 <c es as>4 |
   <d f bes>4. <c f bes>8 r8 <des f as>4 r8 |
   <c d as'>4. <c es as>8 r8 <d f bes>8 r8 <es g bes>8 |
-  r4 <c~ f~ bes~>2. |
-  <c f bes>1 |
+  r4 <c f bes>2. |
+  r8 <d f bes>4 <es~ as~ c~>8 <es as c> <f bes d>4. |
   
   <f a c>4 r4 r8 <f a c>4. |
   <es g bes>4 r4 r4 <es g bes> |
@@ -89,8 +89,8 @@ accordion = \relative c' {
   <f bes d>4. <f a c>8 r8 <ges bes des>4. |
   <f a c>4 r4 r8 <f a c>4. |
   <es g bes>4 r4 r4 <es g bes> |
-  <f bes d>4 <f a c>8 r8 a' bes g c~ |
-  c4~ <c a>2. |
+  <f bes d>4 <f a c>8 r8 a' bes g c |
+  r4 <bes d,>2. |
 
   
   
@@ -122,7 +122,7 @@ bass = \relative c {
   es4 es8 as,8 r8 ges4 g8 |
   as8 d as8 bes8 r8 c8 r8 cis |
   r4 fis,2. |
-  fis8 fis fis fis fis fis fis fis |
+  r8 fis4 fis8~ fis8 fis4. |
   
   bes'16 c, r c r c bes'8 r8 bes,8. bes |
   as'16 bes, r bes r bes as'8 r4 as,4 |
@@ -132,7 +132,7 @@ bass = \relative c {
   bes'16 c, r c r c bes'8 r8 bes,8. bes |
   as'16 bes, r bes r bes as'8 r4 as,4 |
   es'4 bes8 r8 r2 |
-  r4 f2. |
+  r4 c2. |
   
   
   \bar "|."
