@@ -72,9 +72,20 @@ tenorSax = \relative c' {
   e4 b8[ dis16 e] fis8[ cis e] |
   dis4 fis8[ b] e,8[ gis cis] |
   b4 fis8[ b16 cis] dis8[ b fis] |
-  b4 fis8[ b16 cis] dis8[ b fis] |
+  b4 fis8[ b16 cis] dis8[ b g] |
   
   b4 g8[ c16 d] e8[ c g] |
+  c4 g8[ c16 d] e8[ c g] |
+  
+  \mark \default
+  
+  r8 c,4. r8 c4 |
+  r8 c4. r8 c4 |
+  r8 c4. r8 c4 |
+  
+  r8 c4. r8 c4 |
+  r8 c4. r8 c4 |
+  r8 c4. r8 c4 |
 }
 
 accordion = \relative c' {
@@ -119,15 +130,33 @@ accordion = \relative c' {
   <gis d' f>2. r8 |
   
   r8 f8~ <f b>4 r8 g8~ <g cis>8 |
-  r8 fis8~ <fis c'>4 r8 e8~ <e bes'>8 |
-  r8 fis8~ <fis c'>4 r8 e8~ <e bes'>8 |
-  r8 fis8~ <fis c'>8 <f g d'>4 <es fis c'>4 |
+  r8 fis8~ <fis a>4 r8 e8~ <e gis>8 |
+  r8 fis8~ <fis a>4 r8 e8~ <e gis>8 |
+  r8 fis8~ <fis a>8 <f g d'>4 <es fis c'>4 |
   <dis f b>4. <des e bes'>2 |
   
   r8 e8 gis c f a c |
   <c, e gis b>2 r4. |
   
-  r8 f8~ <f b>4 r8 g~ <g cis>8 |
+  r2 r8 f,~ <f b>8 |
+  r8 g8~ <g cis>4 fis8~ <fis cis'>4 |
+  r8 fis8~ <fis dis'>4 r8 b8~ <b e>8 |
+  r8 fis8~ <fis c'>4 r8 gis8~ <gis d'>8 |
+  r8 fis8~ <fis c'>4 r8 eis8~ <eis b'>8 |
+  r8 cis8~ <cis g'>4 r8 d8~ <d as'>8 |
+  r8 cis8~ <cis g'>4 r8 d8~ <d as'>8 |
+  
+  \mark \default
+  
+  r8 g'8[ c e] a,[ d fis] |
+  e4 b8 e16 fis gis8[ e b] |
+  e4 b8 e16 fis gis8[ e b] |
+  
+  r8 g8[ c e] a,[ d fis] |
+  e4 b8 e16 fis gis8[ e b] |
+  e4 b8 e16 fis gis8[ e b] |
+  
+  
   
 }
 
@@ -178,16 +207,34 @@ bass = \relative c, {
   \mark \default
   
   g,2 a4. |
-  d2 c4. |
-  d2 c4. |
+  d2 cis4. |
+  d2 cis4. |
   d4. dis4 d |
   cis4. c2 |
   
   b2..~ |
   b2 r4. |
 
-  g2 a4. |
-  d2 c4. |
+  r2 g4. |
+  a2 ais4. |
+  b2 cis4. |
+  d2 e4. |
+  d2 cis4. |
+  a2 bes4. |
+  a2 bes4. |
+  
+  \mark \default
+  
+  c2 d4. |
+  e2 f4. |
+  e2 f4. |
+
+  c2 d4. |
+  e2 f4. |
+  e2 f4. |
+  
+  \mark \default
+  
   
   
   \bar "|."
