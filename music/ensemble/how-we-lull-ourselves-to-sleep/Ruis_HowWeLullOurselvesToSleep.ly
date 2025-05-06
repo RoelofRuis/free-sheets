@@ -91,6 +91,14 @@ tenorSax = \relative c' {
   r8 c4. r8 c4 |
   r8 bes8[ es a] g4.\fermata |
   
+  \breathe
+  
+  f2..~ f2.. |
+  r2.. r2.. |
+  f2..~ f2.. |
+  
+  \mark \default
+  
 }
 
 accordion = \relative c' {
@@ -99,7 +107,7 @@ accordion = \relative c' {
   
   \key e \major
   \time 7/8
-  
+
   r8 e8~ <e gis>4 r8 e8~ <e a>8 |
   r8 e8~ <e b'>4 r8 fis8~ <fis cis'>8 |
   r8 fis8~ <fis dis'>4 r8 b8~ <b e>8 |
@@ -164,6 +172,23 @@ accordion = \relative c' {
   b2 r4 a16 g |
   es4 g8 b b4 a8 |
   g2~ g4. |
+  
+  \breathe
+  
+  \mark \default
+  
+  <e' gis b>4 <b e gis>4 <cis f a>4 <b f' gis>8 |
+  <g cis e>4 <a dis fis>4 <b~ e~ gis~>4. |
+  
+  <b~ e~ gis~>2..
+  <b e gis>2..
+  
+  <e gis b>4 <b e gis>4 <cis f a>4 <b f' gis>8 |
+  <ais cis e>4 <a dis fis>4 <gis~ b~ e~>4. |
+  <gis~ b~ e~>2.. |
+  <gis b e>
+  
+  
   
   
   
@@ -242,10 +267,29 @@ bass = \relative c, {
   e2 f4. |
   e2 f4. |
   
-  fis4.~ fis8 fis4. |
+  fis!4.~ fis8 fis4. |
   g2 r4. |
   es2 d4. |
   g2..\fermata |
+  
+  \breathe
+  
+  \mark \default
+  
+  r2.. |
+  r2. f16 g |
+  a8[ f c] f4 c8 f16 g |
+  a8[ f c] f4 c4~ |
+  c2.. |
+  r2. f16 g |
+  a8[ f c] f4 c8 f16 g |
+  a8[ f c] f4 c |
+  r8 c[ f a] d,[ g b] |
+  a4 e8 a16 b c8[ a f] |
+  f4 d4 e8 f4 |
+  e2 r4 d16 c |
+  as4 c8 e e4 d8 |
+  c2.. |
   
   \bar "|."
 

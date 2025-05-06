@@ -108,7 +108,7 @@ accordion = \relative c'' {
   g8-. r8 r4 r4 c16 d g, bes |
   r1 |
   g16 d' g fis g f d bes c ces bes a c-. f, fis g |
-  r2 r16 <d' g bes>8-. <cis g' a>8-. <c fis a>8. |
+  r2  <g' bes>16[ d <g bes>] <g a>[ cis, <g' a>] <fis a>[ c] |
   <bes d g>8-. r8  r4 r4 c16 d g, bes |
   r1 |
   g16 d' g fis g f d bes? c b c d c bes g f |
