@@ -20,40 +20,40 @@ tenorSax = \relative c' {
   \key e \major
   \time 7/8
   
-  gis'4(\mf b8[ e]) a,[( cis fis] |
+  gis'4(\mf b8[ e] a,[ cis fis] |
   e4 b8[) dis16( e] fis8[ cis e]) |
-  dis4 fis8[ b] e,[ gis cis] |
-  b4 fis8[ b16 cis] dis8[ b fis] |
-  b4 fis8[ b16 cis] dis8[ b fis] |
-  b4 fis8 fis'4 dis |
+  dis4( fis8[ b] e,[ gis cis] |
+  b4 fis8[) b16( cis] dis8[ b fis] |
+  b4 fis8[) b16( cis] dis8[ b fis] |
+  b4 fis8) fis'4( dis |
   e4 dis8 cis4 b |
   b2..~ |
-  b2~ b8 r4 |
+  b2~ b8) r4 |
   
   \mark \default
-  gis,4 b8[ e] a,[ cis fis] |
-  e4 b8[ e16 fis] gis8[ e cis] |
-  e4 dis8[ fis16 gis] a8[ d, dis] |
-  ais'4 gis8[ gis16 ais] b8[ gis e] |
+  gis,4( b8[ e] a,[ cis fis] |
+  e4 b8[) e16( fis] gis8[ e cis] |
+  e4 dis8[) fis16( gis] a8[ d, dis] |
+  ais'4 gis8[) gis16( ais] b8[ gis e] |
   e4 cis4 dis8 e4 |
-  dis2 r8 cis16 dis] e8[ |
+  dis2) r8 cis16( dis] e8[ |
   cis ais] ais4 cis e8 |
-  e4 dis4 r4 e16 dis |
+  e4 dis4) r4 e16( dis |
   cis4 e8[ gis] dis8[ g ais] |
-  gis4 e cis b8 |
-  g4 b8[ dis] dis4 cis8 |
-  b2~ b4 r8 |
+  gis4 e cis) b8( |
+  g4 b8[ dis]) dis4( cis8 |
+  b2~ b4) r8 |
   
   \bar "||"
   
   \mark \default
   
-  fis'4 dis e dis8 |
+  fis'4\mp dis e dis8 |
   b4 cis dis4 r8 |
   fis4 dis e dis8 |
   b4 cis b4 r8 |
   
-  fis'4 dis e dis8 |
+  fis'4\f dis e dis8 |
   b4 cis dis4 r8 |
   fis4 dis e dis8 |
   b2..~ |
@@ -62,26 +62,25 @@ tenorSax = \relative c' {
   
   \mark \default
   
-  gis4 b8[ e] a,[ cis fis] |
-  e4 b8[ e16 fis] gis8[ e b] |
-  e4 b8[ e16 fis] gis8[ e b] |
-  e4 b8 b'4 gis |
+  gis4(\mp^\markup { \bold "Drowsily" } b8[ e] a,[ cis fis] |
+  e4 b8[) e16( fis] gis8[ e b] |
+  e4 b8[) e16( fis] gis8[ e b] |
+  e4 b8) b'4( gis |
   a4 gis8 fis4 e |
   e2..~ |
-  e2 r4. |
+  e2) r4. |
   
-  r8 gis,8[ b e] a,[ cis fis] |
-  e4 b8[ dis16 e] fis8[ cis e] |
-  dis4 fis8[ b] e,8[ gis cis] |
-  b4 fis8[ b16 cis] dis8[ b fis] |
-  b4 fis8[ b16 cis] dis8[ b g] |
-  
-  b4 g8[ c16 d] e8[ c g] |
-  c4 g8[ c16 d] e8[ c g] |
+  r8 gis,8[( b e] a,[ cis fis] |
+  e4 b8[) dis16( e] fis8[ cis e]) |
+  dis4( fis8[ b] e,8[ gis cis] |
+  b4 fis8[) b16( cis] dis8[ b fis] |
+  b4 fis8[) b16( cis] dis8[ b g] |
+  b4 g8[) c16( d] e8[ c g] |
+  c4 g8[) c16( d] e8[ c g]) |
   
   \mark \default
   
-  r8\p^\markup { \bold "Hypnagogisch" } c,4. r8 c4 |
+  r8\p^\markup { \bold "Hypnagogic" } c,4. r8 c4 |
   r8 c4. r8 c4 |
   r8 c4. r8 c4 |
   
@@ -104,6 +103,9 @@ tenorSax = \relative c' {
   r8 bes8[ es a] g4.\fermata |
   
   \breathe
+  
+  R2..*4 |
+  
   \mark \default
   
   f2..~\ff^\markup { \italic "a tempo" } f2. r8 |
@@ -111,41 +113,41 @@ tenorSax = \relative c' {
   f2..~ f2. r8 |
   
   R2..*11 |
-  r4 as, es' as8 
-  g2 r8 e8[ d] |
+  r4 as,( es' as8 
+  g2) r8 e8[( d] |
   c2 e4 gis8 |
   gis2 fis4. |
-  e4 c g' c8 |
-  b2 r4. |
+  e4) c( g' c8 |
+  b2) r4. |
   
   \mark \default
   
-  gis,4(\mf b8[ e]) a,[( cis fis] |
+  gis,4(\mf b8[ e] a,[ cis fis] |
   e4 b8[) dis16( e] fis8[ cis e]) |
-  dis4 fis8[ b] e,[ gis cis] |
-  b4 fis8[ b16 cis] dis8[ b fis] |
-  b4 fis8[ b16 cis] dis8[ b fis] |
-  b4 fis8 fis'4 dis |
+  dis4( fis8[ b] e,[ gis cis] |
+  b4 fis8[) b16( cis] dis8[ b fis] |
+  b4 fis8[) b16( cis] dis8[ b fis] |
+  b4 fis8) fis'4( dis |
   e4 dis8 cis4 b |
   b2..~ |
-  b2~ b8 r4 |
+  b2~ b8) r4 |
   
   \mark \default
-  gis,4 b8[ e] a,[ cis fis] |
-  e4 b8[ e16 fis] gis8[ e cis] |
-  e4 dis8[ fis16 gis] a8[ d, dis] |
-  ais'4 gis8[ gis16 ais] b8[ gis e] |
+  gis,4( b8[ e] a,[ cis fis] |
+  e4 b8[) e16( fis] gis8[ e cis] |
+  e4 dis8[) fis16( gis] a8[ d, dis] |
+  ais'4 gis8[) gis16( ais] b8[ gis e] |
   e4 cis4 dis8 e4 |
-  dis2 r8 cis16 dis] e8[ |
+  dis2) r8 cis16( dis] e8[ |
   cis ais] ais4 cis e8 |
-  e4 dis4 r8 e8[ dis] |
-  cis2 e4 gis8 |
-  dis2 g4 ais8 |
-  gis2 e4. | 
-  cis2 b4. |
-  g2 b4 dis8 dis2 cis4. |
-  b4 d g cis8 |
-  b2.. |
+  e4 dis4) r8 e8[( dis] |
+  cis2 e4 gis8) |
+  dis2( g4 ais8) |
+  gis2( e4. | 
+  cis2 b4.) |
+  g2( b4 dis8 dis2 cis4. |
+  b4) d( g cis8 |
+  b2..) |
   
   \bar "|."
   
@@ -187,12 +189,12 @@ accordion = \relative c' {
   
   \bar "||"
 
-  <b dis>4 <g cis> <gis c>4. |
+  <b dis>4\mp <g cis> <gis c>4. |
   <e gis>4 <fis ais> <fis b>4 r8 |
   <b dis>4 <g cis> <fis c'>4. |
   <f gis>4 <e g> <dis fis>4 r8 |
   
-  <ais' b>4 <g ais> <f b>4. |
+  <ais' b>4\f <g ais> <f b>4. |
   <e fis>4 <fis gis> <g ais> r8 |
   <g b>2 <fis b>4. |
   r8 b,8~ <b~ e~> <b e gis> ais'8~ <ais~ d~> <ais d fis> |
@@ -200,7 +202,7 @@ accordion = \relative c' {
   
   \mark \default
   
-  r8 f8~ <f b>4 r8 g8~ <g cis>8 |
+  r8\mp^\markup { \bold "Drowsily" } f8~ <f b>4 r8 g8~ <g cis>8 |
   r8 fis8~ <fis c'>4 r8 eis8~ <eis b'>8 |
   r8 fis8~ <fis c'>4 r8 eis8~ <eis b'>8 |
   r8 fis8~ <fis c'>8 <f g d'>4 <es fis c'>4 |
@@ -220,7 +222,7 @@ accordion = \relative c' {
   
   \mark \default
   
-  r8\p^\markup { \bold "Hypnagogisch" } g8[ c8 e] a,[ d fis] |
+  r8\p^\markup { \bold "Hypnagogic" } g8[ c8 e] a,[ d fis] |
   e4 b8 e16 fis gis8[ e b] |
   e4 b8 e16 fis gis8[ e b] |
   
@@ -239,13 +241,25 @@ accordion = \relative c' {
   c4 a4 b8 c4 |
   b2 r4 a16 g |
   es4 g8 b b4 a8 |
-  g2~ g4. |
+  g2~ g4. \stopStaff |
   
   \breathe
+ 
+  \override Staff.StaffSymbol.line-count = #1
+  \override NoteHead.style = #'xcircle
+  \startStaff
+  b2^\markup{ "air button: breathing" } b4.
+  b2 b4.
+  b2 b4.
+  b2 b4.
+  \stopStaff
+  \revert Staff.StaffSymbol.line-count
+  \revert NoteHead.style
+  \startStaff
   
   \mark \default
   
-  <e' gis b>4\ff^\markup { \italic "a tempo" } <b e gis>4 <cis f a>4 <b f' gis>8 |
+  <e gis b>4\ff^\markup { \italic "a tempo" } <b e gis>4 <cis f a>4 <b f' gis>8 |
   <g cis e>4 <a dis fis>4 <b~ e~ gis~>4.\> |
   
   <b~ e~ gis~>2..\!\pp
@@ -262,8 +276,8 @@ accordion = \relative c' {
   
   <b e gis>2\< <cis fis ais>4. |
   <dis gis bis>4. r8 <f a c>4. |
-  <f~ as~ c~>4\!\mf <f as c>4. <es as c>4 |
-  <d g c>2 r4. |
+  <f~ as~ c~>4\!\mf <f as c>4. <es~ as~ c~>4 |
+  <es as c>4 <d g c>4. r4 |
   <d f c'>2.. 
   <f as c>2.. |
   <f g c~>2.. 
@@ -348,7 +362,7 @@ bass = \relative c, {
   \bar "||"
   
   R2..*3 |
-  r2 r4 fis,16 e'
+  r2 r4 fis,16\f e'
 
   b4 a g4. |
   g4 ais4 b4 r8 |
@@ -358,7 +372,7 @@ bass = \relative c, {
   
   \mark \default
   
-  g,2 a4. |
+  g,2\mp^\markup { \bold "Drowsily" } a4. |
   d2 cis4. |
   d2 cis4. |
   d4. dis4 d |
@@ -377,7 +391,7 @@ bass = \relative c, {
   
   \mark \default
   
-  c2\p^\markup { \bold "Hypnagogisch" } d4. |
+  c2\p^\markup { \bold "Hypnagogic" } d4. |
   e2 f4. |
   e2 f4. |
 
@@ -386,7 +400,7 @@ bass = \relative c, {
   e2 f4. |
   
   \once \override TextSpanner.bound-details.left.text = "rit."
-  c2\startTextSpan d4. |
+  c'2\startTextSpan d4. |
   e2 f4. |
   e2 f4. |
 
@@ -402,10 +416,12 @@ bass = \relative c, {
   
   \breathe
   
+  R2..*4 |
+  
   \mark \default
   
   R2..^\markup { \italic "a tempo" } |
-  r2. f16 g |
+  r2. f,16 g |
   a8[\pp f c] f4 c8 f16 g |
   a8[ f c] f4 c4~ |
   c2.. |
@@ -417,8 +433,8 @@ bass = \relative c, {
   a4 e8 a16 b cis8[ a e] |
   r8\< c[ f a] d,[ g b] |
   a4 e8 a16 b c8[ a f] |
-  f4\!\mf d4 e8 f4 |
-  e2 r8 d8[ c] |
+  f4\!\mf d4 e8 f4~ |
+  f4 e4. d8[ c] |
   as2 c4 e8
   e2 d4. |
   c2.. |
@@ -470,7 +486,7 @@ title = "How we lull ourselves to sleep"
 bookname = "HowWeLullOurselvesToSleep"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
-docVersion = #(string-append "outline - version " date)
+docVersion = #(string-append "version " date)
 
 BookFull = \book {
   \bookOutputName #(string-append bookname "_Full")
@@ -612,7 +628,6 @@ Midi = \score {
   
   \midi { }
 }
-
 
 \Midi
 \BookFull
