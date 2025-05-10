@@ -734,7 +734,7 @@ accordion = \relative c'' {
   
   % Lament
   \mark \default
-  f2. |
+  f2.^\markup { \bold "Cantabile" } |
   g2. |
   a2. |
   g2. |
@@ -772,7 +772,7 @@ accordion = \relative c'' {
   
   % Frissig
   \mark \default
-  <f, bes>2. |
+  <f, bes>2.^\markup { \bold "Stringendo" } |
   <ges c>2. |
   <e bes'>2. |
   <d as'>2. |
@@ -791,7 +791,7 @@ accordion = \relative c'' {
   
   % Big Return
   \mark \default
-  <ges bes des>4. <f as des> |
+  <ges bes des>4.^\markup { \bold "Amabile" } <f as des> |
   <ges ces es>2. |
   <ges ces es>8 r4 <ges ces es>4. |
   <ges ces es>8 r4 <ges ces es>4. |
@@ -1038,7 +1038,7 @@ bass = \relative c {
   bes4. bes4 d8\( |
   e4-. g-. a4-. |
   \ottava 1
-  a''2.\flageolet\) |
+  a''2.\flageolet\) % TODO: N.H. natural harmonic, diamant nootje |
   \ottava 0
   d,,,4. c4. |
   bes4. bes4 d8\( |
@@ -1201,12 +1201,12 @@ bass = \relative c {
   d'8 es d c a f |
   c4. bes |
   as4. g4. |
-  a4 b c |
+  a4 b cis |
   d4. g,4. |
   c4. b |
   bes\> as |
-  es4.\!\< es4 e8 |
-  f4. f4 fis8 |
+  es'4.\!\< es4 e8 |
+  f4. f,4 fis8 |
   g4 as bes |
   
   c4.\!\mf c4 c8 |
@@ -1226,7 +1226,7 @@ bass = \relative c {
   c8->\f r8 r2 |
   d2. |
   es4 f g |
-  g8 c,8~ c4-. r4 |
+  g8 c,4->-. r4. |
   \bar "|."
 
 }

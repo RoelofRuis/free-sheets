@@ -633,7 +633,7 @@ accordion = \relative c'' {
   <gis d' f>2_\markup { \italic "ritenuto" } <g des' f> |
   <fis c' es>2 <f b es> |
   <as b f'>1 <b cis g>2 r2 |
-  
+
   <gis d' f>2 <g des' f> |
   <fis c' es>2 <f b es> |
   <as b f'>1 |
@@ -868,6 +868,7 @@ bass = \relative c {
   a4 g2 g4 |
   a4 c8 b4 a8 a4 |
   g2 gis4 e |
+  % TODO: octaaf hoger?
   a,4 b8 cis4 d8 e4~ |
   e4 e2 e4 |
   fis4 a8 gis4 fis8 fis4~ |

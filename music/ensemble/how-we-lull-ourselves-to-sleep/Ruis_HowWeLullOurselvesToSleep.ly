@@ -35,6 +35,9 @@ tenorSax = \relative c' {
   e4 b8[) e16( fis] gis8[ e cis] |
   e4 dis8[) fis16( gis] a8[ d, dis] |
   ais'4 gis8[) gis16( ais] b8[ gis e] |
+  
+  % TODO: maatsoorten fixen voor drums
+  
   e4 cis4 dis8 e4 |
   dis2) r8 cis16( dis] e8[ |
   cis ais] ais4 cis e8 |
@@ -139,6 +142,9 @@ tenorSax = \relative c' {
   ais'4 gis8[) gis16( ais] b8[ gis e] |
   e4 cis4 dis8 e4 |
   dis2) r8 cis16( dis] e8[ |
+  
+  % TODO: maatsoort wisselen
+  
   cis ais] ais4 cis e8 |
   e4 dis4) r8 e8[( dis] |
   cis2 e4 gis8) |
@@ -331,6 +337,7 @@ bass = \relative c, {
   \key e \major
   \time 7/8
   
+  % TODO: octaaf hoger
   e2\mf fis4. |
   gis2 ais4. |
   b2 cis4. |
@@ -447,6 +454,8 @@ bass = \relative c, {
   
   \mark \default
   
+  % TODO: Ook 8va!
+  
   e,2\mf fis4. |
   gis2 ais4. |
   b2 cis4. |
@@ -466,6 +475,8 @@ bass = \relative c, {
   b2 r4 g'8~ |
   g4 e2~ e8 |
   g4 fis4 r4. |
+  
+  % TODO: deze weer loco
   
   gis2.. |
   g2.. |

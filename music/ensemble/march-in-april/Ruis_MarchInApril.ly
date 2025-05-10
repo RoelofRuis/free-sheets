@@ -441,7 +441,7 @@ accordion = \relative c'' {
         <as c g'>2 <as c f> |
         <g c d>1 
         <g~ b~ g'~>1 |
-        <g b g'>2 r2 |
+        <g b g'>4 r2. |
       }
     }
   }
@@ -568,7 +568,7 @@ bass = \relative c {
   
   \mark \default
   \repeat volta 2 {
-    as2 g4 f |
+    as2\mp g4 f |
     g2 f |
     as4 as g4 g |
     f2 f |
@@ -580,12 +580,12 @@ bass = \relative c {
         c2 c |
       }
       {
-        es2 d4 c |
+        es2\< d4 c |
         f2 es4 d |
         as2 as |
         g2 g |
-        g2 g2 |
-        g2 r2 |
+        g2\! g2 |
+        g4 r2. |
       }
     }
   }

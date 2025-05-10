@@ -106,6 +106,8 @@ tenorSax = \relative c'' {
   c4.\< d4. e4 fis8 gis8 ais c |
   d1.\!\stopTextSpan |
   
+  \break
+  
   \mark \default
   \tempo 4.=150
 
@@ -113,6 +115,8 @@ tenorSax = \relative c'' {
     s1.^\markup { "freak blues" }
     s1.*23
   }
+  
+  \break
   
   a2.\f d4. c4. |
   a4-. b8 g4. a2. |
@@ -275,8 +279,10 @@ accordion = \relative c' {
   \mark \default
   \tempo 4.=150
   
+  \break
+  
   \repeat volta 2 {
-    r4. <d, g c>4 r8 r4. <d g c>4 r8 |
+    r4.^\markup { "freak blues" } <d, g c>4 r8 r4. <d g c>4 r8 |
     r4. r4 <fis c' f>8 r4 <fis~ c'~ f~>8 <fis c' f>4. |
     r4. <d g c>4 r8 r4. <d g c>4 r8 |
     r4. <d g c>4 <fis~ c'~ f~>8 <fis c' f>4. r4. |
@@ -306,6 +312,8 @@ accordion = \relative c' {
     r4. <d g c>4 r8 r4. <d g c>4 r8 |
     r4 <g cis f>8 r4 <g cis f>8 r4 <g~ cis~ f~>8 <g cis f>4. |
   }
+  
+  \break
   
   \mark \default
   
@@ -385,6 +393,7 @@ accordion = \relative c' {
     a4-. b8 g4. a4. f4. |
     e4-. f8 d4. d2. |
   } \\ {
+    % TODO: dubbelen van de baspartij
     d2. e2. |
     f2. e2. |
     f2. es2. |
@@ -400,8 +409,6 @@ accordion = \relative c' {
     d2.~ d4. bes4. |
     bes2. a2.\fermata |
   } >>
-  
-
 
   \bar "|."
 }
@@ -444,8 +451,10 @@ bass = \relative c {
   \mark \default
   \tempo 4.=150
 
+  \break
+
   \repeat volta 2 {
-    d4 a8 r4 a8 d4 a8 r4 a8 |
+    d4^\markup { "freak blues" } a8 r4 a8 d4 a8 r4 a8 |
     d4 a8 r4 as8 r4 as8~ as4. |
     d4 a8 r4 a8 d4 a8 r4 a8 |
     d4 a8 r4 as8~ as4. r4. |
@@ -476,8 +485,12 @@ bass = \relative c {
     r4 es'8 r4 es8 r4 es8~ es4. |
   }
   
+  \break
+  
   \mark \default
 
+  % TODO: ritme bas en drums
+  % Akkoorden er bij zetten!
   d4 a8 f'4 a,8 d4 a8 f'4 a,8 |
   d4 a8 f'4 a,8 c4 as8 ges'4 as,8 |
   d4 a8 f'4 a,8 d4 a8 f'4 a,8 |
