@@ -10,6 +10,8 @@ TAG=$1
 ROOTDIR=$(pwd)
 
 rm ./output/*
+rmdir ./output
+mkdir -p ./output
 
 for file in $(find "music" -type f -name '*.ly')
 do

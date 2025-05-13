@@ -19,7 +19,6 @@ jobs:
 
       - name: Generate PDFs and MIDI
         run: |
-          mkdir -p output
           ./publish.sh
 
       - name: Generate mp3s
