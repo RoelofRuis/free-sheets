@@ -1,0 +1,9 @@
+.idea/
+
+output/
+
+music/**/*.pdf
+music/**/*.midi
+music/**/*.mid
+music/**/*.eps
+music/**/*.mp3

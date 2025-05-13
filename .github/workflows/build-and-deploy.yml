@@ -1,0 +1,36 @@
+name: Build and Deploy Lilypond
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install LilyPond and tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lilypond timidity lame ffmpeg
+
+      - name: Generate PDFs and MIDI
+        run: |
+          mkdir -p output
+          ./publish.sh
+
+      - name: Generate mp3s
+        run: |
+          ./mp3.sh
+
+      - name: Copy index.html to output folder
+        run: cp index.html output/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
