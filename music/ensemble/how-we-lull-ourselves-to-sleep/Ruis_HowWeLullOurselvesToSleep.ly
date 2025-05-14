@@ -14,67 +14,154 @@ chordmusic = \chordmode {
 }
 
 drumMusic = \drummode {
+  \numericTimeSignature
+  \override Staff.StaffSymbol.line-count = #1
   \time 7/8
   \tempo 4=102
   
-  s2..*9 |
-  
+  #(define mydrums '((ridecymbal cross #f 0)))
+  \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+
+  cymr2\mf 4. |
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  4. 2
+  4. 2
+  4. 2
+  2 r4.
+
   \mark \default
-  
-  s2..*4
+
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+
   \time 5/8
-  s2 s8 
+  4 4.
   
   \time 4/4
-  s1*2
-  
+  4 2 r4
+  cymr4. 8~ 2 |
+
   \time 7/8
-  s2..*5 |
+  4 4 r4.
+  cymr2 4.
+  2 4.
+  2 4.
+  2 4.
+  
+  \mark \default
+  R2..*4
+
+  cymr4\f-> 4-> 4.->
+  4-> 4-> 4.->
+  4-> 4-> 4.->
+  2 4. 
+  2. r8 
   
   \mark \default
   
-  s2..*9 
+  cymr2\mp^\markup { \bold "Drowsily" } 4.
+  2 4.
+  2 4.
+  4. 2
+  4. 2
+  2 4.
+  2 r4. 
+  r2 cymr4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
   
   \mark \default
   
-  s2..^\markup { \bold "Drowsily" } |
-  s2..*13 |
-  
-  \mark \default
-  
-  s2..^\markup { \bold "Hypnagogic" } |
-  
-  s2..*5
+  2\p^\markup { \bold "Hypnagogic" } 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
   \once \override TextSpanner.bound-details.left.text = "rit."
-  s2..*5\startTextSpan
-  
-  s2..*5\stopTextSpan |
+  2\startTextSpan 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2\stopTextSpan 4.
+  2 4.
+  2 r4.
+  cymr2 4.
+  2.. |
   
   \breathe
   
   R2..*4 |
   
   \mark \default
-  s2..^\markup { \italic "a tempo" } |
-  
-  s2..*22 |
+  cymr4\f^\markup { \italic "a tempo" } 4 4.
+  4 4 4. 
+  R2..*2
+  cymr4 4 4.
+  4 4 4.
+  R2..*2
+  cymr2\p 4.
+  2 4.
+  2 4.
+  2\< 4.
+  2 4.
+  2~\mf\! 8 4~ |
+  4 4. 8 8 |
+  2 4.
+  2 4.
+  2..
+  2..
+  2..
+  2..
+  2..
+  2 r4. |
   
   \mark \default
   
-  s2..*9 |
+  cymr2\mf 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  4. 2
+  4. 2
+  4. 2
+  2 r4.
   
   \mark \default 
   
-  s2..*4 |
+  cymr2 4.
+  2 4.
+  2 4.
+  2 4.
   
   \time5/8
-  s2 s8 |
+  2~ 8
   
   \time 4/4
-  s1*2 |
+  4 2 r4 |
+  4 2 4 |
   
   \time 7/8
-  s2..*9 |
+  cymr4 4 r4. 
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2..
   
   \bar "|."
   
@@ -332,6 +419,7 @@ accordion = \relative c' {
  
   \override Staff.StaffSymbol.line-count = #1
   \override NoteHead.style = #'xcircle
+  \override Staff.BarLine.bar-extent = #'(-2.0 . 2.0)
   \startStaff
   b2^\markup{ "air button: breathing" } b4.
   b2 b4.
@@ -505,7 +593,7 @@ bass = \relative c, {
   e2 f4. |
   e2\stopTextSpan f4. |
   
-  fis!4.~ fis8 fis4. |
+  fis!2 fis4. |
   g2 r4. |
   es2 d4. |
   g2..\fermata |
@@ -643,9 +731,16 @@ BookDrums = \book {
   
   \score {
     <<
-      \new ChordNames { \chordmusic }
       \new DrumStaff { \drumMusic }
     >>
+    
+    \layout {
+      \context {
+        \Score
+        \override SpacingSpanner.uniform-stretching = ##t
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+      }
+    }
   }
 }
 

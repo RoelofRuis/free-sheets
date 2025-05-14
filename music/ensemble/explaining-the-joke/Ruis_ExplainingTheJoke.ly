@@ -10,11 +10,13 @@ globalOptions = {
 chordmusic = \chordmode {
   \set chordChanges = ##t
 
-  s1*2
+  e2:9 es:9 |
+  d:9 des:9 |
   g1:7.9- |
   a1:9 |
   
-  s1*2
+  e2:9 es:9 |
+  d:9 des:9 |
   g1:7.9- |
   
   \mark \default
@@ -206,7 +208,56 @@ chordmusic = \chordmode {
   d1 |
   a2 cis:7 |
   fis1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  s1 |
+  as1 |
+  es |
+  g:7 |
+  c |
+  as1 |
+  es |
+  g:7 |
+  c |
+  as1 |
+  es |
+  as/d |
+  g:7 |
   
+  c |
+  c |
+  des |
+  c |
+  des |
+  c 
+  g 
+  c
+  
+  c |
+  c 
+  des |
+  c |
+  des 
+  d 
+  g:7.9-
+  g:7.9-
+  
+  as1 |
+  es1 |
+  R1*2 |
+  ges1 |
+  des1 |
+  R1*2 |
+  
+  e2:9 es:9 |
+  d:9 des:9 |
+  g1:7.9- |
+  a:7
+  e2:9 es:9 |
+  d:9 des:9 |
+  g1:7.9- |
   
 }
 
@@ -294,7 +345,8 @@ drumMusic = \drummode {
   
   \mark \default
   
-  s1*16 |
+  s1*15 |
+  R1\fermata
   
   \bar "|."
   
@@ -1208,27 +1260,6 @@ BookFull = \book {
       \new Staff = "bass" \bass
       \new DrumStaff = "drums" \drumMusic
     >>
-  
-    \layout {
-      \context {
-        \Score
-        \remove Mark_engraver
-        \remove Text_mark_engraver
-        \remove Staff_collecting_engraver
-      }
-      \context {
-        \Staff
-        \consists Mark_engraver
-        \consists Text_mark_engraver
-        \consists Staff_collecting_engraver
-      }
-      \context {
-        \DrumStaff 
-        \consists Mark_engraver
-        \consists Text_mark_engraver
-        \consists Staff_collecting_engraver
-      }
-    }
   }
 }
 
@@ -1250,9 +1281,16 @@ BookDrums = \book {
   
   \score {
     <<
-      \new ChordNames { \chordmusic }
       \new DrumStaff { \drumMusic }
     >>
+    
+    \layout {
+      \context {
+        \Score
+        \override SpacingSpanner.uniform-stretching = ##t
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+      }
+    }
   }
 }
 

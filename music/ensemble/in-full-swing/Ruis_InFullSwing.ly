@@ -294,7 +294,11 @@ chordmusic = \chordmode {
 }
 
 drumMusic = \drummode {
-  \globalOptions
+  \tweak font-size -2
+  \textMark \markup \pad-around #1 { \doubleQuaver = \tupletII }
+  \numericTimeSignature
+  \once \override Score.MetronomeMark.X-offset = #0
+  \tempo 4=170
   \time 3/4
   
   % Opening
@@ -306,77 +310,59 @@ drumMusic = \drummode {
   % Intro
   \mark \default
   cymr4 8 8 4
-  4 8 8 4 
-  4 8 8 4
-  4 8 8 4
-
-  cymr4 8 8 4
-  4 8 8 4 
-  4 8 8 4
-  4 8 8 4
+  s2.*6
+  4 r2
   
   % Theme
   \mark \default
-  s2.*8
-  s2.*8
+  cymr4 8 8 4
+  s2.*7
+  cymr4 8 8 4
+  s2.*7
   
   % Variation I
   \mark \default
-  s2.*5
-  cymr4.-> 4.
-  cymr4.-> 4.
-  cymr4.-> 4.
+  cymr4 8 8 4 
   s2.*4
+  cymr4.-> 4.
+  cymr4.-> 4.
+  cymr4.-> 4.
+  cymr4 8 8 4
+  s2.*3
   
   % Return I
   \mark \default
   s2.*4
   s2.*4
   s2.*4
-  s2.*3
+  s2.*2
+  cymr4 4 4 |
   
   % Intro
   \mark \default
-  s2.*8
+  cymr4 8 8 4
+  s2.*6
+  cymr4 r2 |
   
   % Theme
   \mark \default
   cymr4 8 8 4
-  4 8 8 4 
-  4 8 8 4
-  4 8 8 4
-
-  s2.*4
+  s2.*7
   
   % Theme Var
-  s2.*12
+  cymr4 8 8 4
+  s2.*11
   
   % Vervolg
   \mark \default
-  s2.*4
-  
-  s2.*4
-  
-  s2.*4
-  
-  s2.*4
+  cymr4 8 8 4
+  s2.*14
+  cymr2. |
   
   % Lament
   \mark \default
   cymr2.^\markup { \bold "Cantabile" } |
-  cymr2. |
-  cymr2. |
-  cymr2. |
-  cymr2. |
-  cymr2. |
-  cymr2. |
-  cymr2. |
-  
-  s2.*8
-  
-  s2.*8
-  
-  s2.*8
+  s2.*31 |
   
   % Frissig
   \mark \default
@@ -389,11 +375,14 @@ drumMusic = \drummode {
   \mark \default
   s2.*8^\markup { \bold "Amabile" } |
   
-  s2.*10
+  s2.*8
+  cymr2. |
+  cymr4 4 4 |
   
   % Terug bij af
   \mark \default
-  s2.*8
+  cymr4 8 8 4
+  s2.*7
   
     % Theme
   \mark \default
@@ -403,19 +392,42 @@ drumMusic = \drummode {
   
   % Variation I
   \mark \default
-  s2.*12
+  cymr4 8 8 4
+  s2.*4
+  cymr4.-> 4. |
+  4.-> 4. |
+  4.-> 4. |
+  cymr4 8 8 4
+  s2.*3
   
   % Return I
   \mark \default
-  s2.*4
-  
-  s2.*4
+  s2.*8
 
   % Ending
   \mark \default
-  s2.*4
+  cymr4. 4.
+  4. 4.
+  4. 4.
+  4 4 4 
+  4. 4.
+  4. 4.
+  4 4 8 8
+  4. 4.
+  4. 4.
+  4 4 4
+  4. 4.
+  4. 4.
+  4. 4. 
+  4 8 8 4
+  4 8 8 4
+  4 8 8 4
   
-  s2.*28
+  s2.*12
+  cymr4 r2 |
+  cymr4 r2 |
+  cymr4 4 4 |
+  r8 8 r2 |
   
   \bar "|."
 }
@@ -1747,7 +1759,7 @@ BookDrums = \book {
     print-all-headers = ##f
     max-systems-per-page = 12
   }
-  
+
   \header {
     title = \title
     subtitle = \subtitle
@@ -1755,12 +1767,19 @@ BookDrums = \book {
     instrument = "Drums - outline"
     tagline = \docVersion
   }
-  
+
   \score {
     <<
-      \new ChordNames { \chordmusic }
       \new DrumStaff { \drumMusic }
     >>
+    
+    \layout {
+      \context {
+        \Score
+        \override SpacingSpanner.uniform-stretching = ##t
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4)
+      }
+    }
   }
 }
 

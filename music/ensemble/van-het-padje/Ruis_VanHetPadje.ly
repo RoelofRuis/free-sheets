@@ -728,7 +728,7 @@ BookDrums = \book {
     print-all-headers = ##f
     max-systems-per-page = 12
   }
-  
+
   \header {
     title = \title
     composer = \composer
@@ -738,9 +738,16 @@ BookDrums = \book {
   
   \score {
     <<
-      \new ChordNames { \chordmusic }
       \new DrumStaff { \drumMusic }
     >>
+    
+    \layout {
+      \context {
+        \Score
+        \override SpacingSpanner.uniform-stretching = ##t
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+      }
+    }
   }
 }
 
