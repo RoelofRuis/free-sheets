@@ -151,7 +151,31 @@ chordmusic = \chordmode {
   des2 f:7 |
   
   \mark \default
-  s1*23
+  bes1 |
+  bes1 |
+  es1 |
+  bes1 |
+  es1 |
+  bes1 |
+  f:7 |
+  
+  c:7.9- |
+  b:7.9- |
+  
+  bes1 |
+  bes1 |
+  es1 |
+  bes1 |
+  es1 |
+  bes1 |
+  es1 |
+  es1 |
+  d |
+  d |
+  g:7.9- |
+  g:7.9- |
+  g:7 |
+  g:7 |
   
   \mark \default
   as1*4:maj7
@@ -162,6 +186,27 @@ chordmusic = \chordmode {
   g1*4:7.9-
   as1*4:maj7
   g1*4:7.9-
+  
+  \mark \default
+  
+  c1 |
+  c1 |
+  f1 |
+  c1 |
+  f1 |
+  c1 |
+  f1 |
+  c2 e:7 |
+  a1 |
+  a1 |
+  d1 |
+  a1 |
+  d1 |
+  a1 |
+  d1 |
+  a2 cis:7 |
+  fis1 |
+  
   
 }
 
@@ -1063,7 +1108,7 @@ bass = \relative c {
   fis4 a8 gis4 fis8 fis4~ |
   fis4 e2 e4 |
   fis4 a8 gis4 fis8 fis4 |
-  e2 eis2 |
+  e2 eis4 cis |
   fis,4 gis8 ais4 b8 cis4~ |
   cis4 cis2 d4 |
   es4 f8 g4 as8 bes4~ |
