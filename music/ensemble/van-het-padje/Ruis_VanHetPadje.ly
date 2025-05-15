@@ -380,7 +380,7 @@ accordionRight = \relative c' {
   \break
   
   \mark \default
-  
+
   <c e f a>2. <e f a d>4. <e f a c>4. |
   <c e f a>4-. <d f b>8 <c d e g>4. <ais e' fis a>2. |
   <c e f a>2. <e f a d>4. <e f a c>4. |
@@ -405,9 +405,9 @@ accordionRight = \relative c' {
   a4 g8 a4 g8 a4 g8 a4 g8 |
   r1. |
   <g c d e>2. <a d e fis>2. |
-  <gis d' e g>2. <ais e' fis a>2. |
-  <c~ e~ fis~ ais~>1. |
-  <c e fis ais>1. |
+  <gis d' e g>2. <ais~ e'~ fis~ a~>4. <ais e' fis a>4 <c~ e~ fis~ ais~>8 |
+  <c~ e~ fis~ ais~>1.\> |
+  <c e fis ais>1.\! |
 
   \mark \default
   
@@ -426,7 +426,7 @@ accordionRight = \relative c' {
     a4-. b8 g4.~ g2.\stopTextSpan
     s2. gis2. |
   } \\ {
-    f2. es2. |
+    f2.\mp es2. |
     d2. c4. bes4. |
     a4. c4. e2. |
     d4 r8 c4.~ c2. |
@@ -643,12 +643,12 @@ bass = \relative c {
   d4 c8 d4 c8 d4 c8 d4 c8 |
   d4 c8 e4 d8 fis4 e8 gis4 fis8 |
   gis4 fis8 ais4 gis8 c4 ais8 d4 c8 |
-  d4 c8 d4 c8 d4 c8 d4 c8 |
-  d4 c8 d4 c8 d4 c8 bes4 c8 |
+  d4\> c8 d4 c8 d4 c8 d4 c8 |
+  d4 c8 d4 c8 d4 c8 bes4 c8\! |
   
   \mark \default
 
-  d4 c8 d4 c8 bes4 as8 bes4 as8 |
+  d4\mp c8 d4 c8 bes4 as8 bes4 as8 |
   ges4 e8 ges4 e8 d4 c8 d4 c8 |
 
   d'4 c8 d4 c8 bes4 as8 bes4 as8 |

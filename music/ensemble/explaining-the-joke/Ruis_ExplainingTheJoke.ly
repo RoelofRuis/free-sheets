@@ -10,13 +10,13 @@ globalOptions = {
 chordmusic = \chordmode {
   \set chordChanges = ##t
 
-  e2:9 es:9 |
-  d:9 des:9 |
+  e2:7.9- es:9 |
+  d:7.9- des:9 |
   g1:7.9- |
   a1:9 |
   
-  e2:9 es:9 |
-  d:9 des:9 |
+  e2:7.9- es:9 |
+  d:7.9- des:9 |
   g1:7.9- |
   
   \mark \default
@@ -251,12 +251,12 @@ chordmusic = \chordmode {
   des1 |
   R1*2 |
   
-  e2:9 es:9 |
-  d:9 des:9 |
+  e2:7.9- es:9 |
+  d:7.9- des:9 |
   g1:7.9- |
   a:7
-  e2:9 es:9 |
-  d:9 des:9 |
+  e2:7.9- es:9 |
+  d:7.9- des:9 |
   g1:7.9- |
   
 }
@@ -273,7 +273,7 @@ drumMusic = \drummode {
   
   \mark \default
   
-  hh8 8 r hh8 8 8 r hh8 |
+  hh8\p 8 r hh8 8 8 r hh8 |
   hh8 8 r hh8 hho2 |
   hhc8 hh8 r hh8 8 8 r hh8 |
   hh8 8 r hh8 hho2 |
@@ -286,43 +286,82 @@ drumMusic = \drummode {
   
   \mark \default
   
-  s1*32 |
+  hh4->\mf r2. |
+  r2. hh4 |
+  hh4-> r2. |
+  r2. hh4 |
+  hh4-> r2. |
+  r2. hh4 |
+  hh4.-> 4. 4 |
+  r4 sn4 8 8 r sn8 |
+  hh4-> r2. |
+  r2. hh4 |
+  hh4-> r2. |
+  r2. hh4 |
+  hh4-> r2 hh4 |
+  hh4-> r2 hh4 |
+  hh2. 4 |
+  4. 4. 4 |
   
-  \mark \default
+  hh4 4 r8 hh8 r hh8 |
+  r hh r hh r4 hh4 |
   
   s1*14 |
   
+  \mark \default
+  
+  bd4. sn4. sn4 |
+  bd4. sn4. sn4 |
+  s1*12 |
+  
   \mark \default 
-  
-  s1*16 |
-  
-  \mark \default
-  
-  s1*16 |
+  hh8\p 8 r hh8 8 8 r hh8 |
+  s1*15 |
   
   \mark \default
+  sn4\f r2. |
+  r2. sn4 |
+  hh4 4 r8 hh8 r hh8 |
+  r hh r hh r4 hh4 |
   
   s1*12 |
   
   \mark \default
   
-  bd4 hhp8 bd8 bd-> bd hhp8 bd |
-  bd4 hhp8 bd8 bd sn8-> 8-> 8-> |
-  bd4 hhp8 bd8 bd-> bd hhp8 bd |
-  bd4 hhp8 bd8 bd sn8-> 8-> 8-> |
-  bd4 hhp8 bd8 bd-> bd hhp8 bd |
-  bd4 hhp8 bd8 bd sn8-> 8-> 8-> |
-  bd4 hhp8 bd8 bd-> bd hhp8 bd |
+  hh2-> 2-> |
+  2-> 2-> |
+  sn4 8 8 r sn8 cymc4 |
+  r4 bd4 8 8 r8 bd8 |
+  
+  hh2 2 |
+  2 2 |
+  sn4 8 8 r sn8 cymc4 |
+  r4 bd4 8 8 r8 bd8 |
+  
+  r4 hh4. 4. |
+  4. 4. 4 |
+  4 4 4 4 |
+  4 4 sn8 8 8 8 |
+  
+  \mark \default
+  
+  bd4\mp hhp8 bd8 bd-> bd hhp8 bd |
+  bd4 hhp8 bd8 bd sn8->\sf 8-> 8-> |
+  bd4\mp hhp8 bd8 bd-> bd hhp8 bd |
+  bd4 hhp8 bd8 bd sn8->\sf 8-> 8-> |
+  bd4\mp hhp8 bd8 bd-> bd hhp8 bd |
+  bd4 hhp8 bd8 bd sn8->\sf 8-> 8-> |
+  bd4\mp hhp8 bd8 bd-> bd hhp8 bd |
 
   \bar "."
   cymr2 2 |
   2 2 |
   \bar "."
   bd4 hhp8 bd8 bd-> bd hhp8 bd |
-  bd4 hhp8 bd8 bd sn8-> 8-> 8-> |
-  bd4 hhp8 bd8 bd-> bd hhp8 bd |
-  bd4 hhp8 bd8 bd sn8-> 8-> 8-> |
-  bd4 hhp8 bd8 bd-> bd hhp8 bd |
+  bd4 hhp8 bd8 bd sn8->\sf 8-> 8-> |
+  bd4\mp hhp8 bd8 bd-> bd hhp8 bd |
+  bd4 hhp8 bd8 bd sn8->\sf 8-> 8-> |
+  bd4\mp hhp8 bd8 bd-> bd hhp8 bd |
   bd4 hhp8 bd8 bd-> bd hhp8 bd |
   
   s1*8 |
@@ -333,11 +372,18 @@ drumMusic = \drummode {
   
   \mark \default 
   
-  s1*22 |
+  s1*20 |
+  r8\< hh4. 4 4 |
+  4 4 4 4\! |
   
   \mark \default
   
-  s1*12 |
+  s1*8\f |
+
+  hh2-> 2-> |
+  4.-> 4.-> 4 |
+  4 4 4 4 |
+  4 r4 hh2 |
   
   \mark \default
   
@@ -345,7 +391,22 @@ drumMusic = \drummode {
   
   \mark \default
   
-  s1*15 |
+  hh2-> 2-> |
+  2-> 2-> |
+  bd4 4 8 8 r bd |
+  bd4 8 8 r bd8 4 |
+  hh4 4 4 4 |
+  2 r2 |
+  bd4 4 8 8 r bd8 |
+  bd4 r2. |
+  
+  hh2\mf_\markup { \italic "ritenuto" } 2 |
+  hh2 2 |
+  2 2 |
+  2 r2 |
+  hh2 2 |
+  2 2 |
+  2 2 |
   R1\fermata
   
   \bar "|."
@@ -399,7 +460,7 @@ tenorSax = \relative c'' {
 
   % Theme
   \mark \default
-  c,,4 d8 e8 r f g4~ |
+  c,,4\mf d8 e8 r f g4~ |
   g4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
   as4 g2 g4-. |
@@ -456,7 +517,7 @@ tenorSax = \relative c'' {
   c2 r2 |
   R1*7 |
   
-  c4. e8~ e4 c-. |
+  c4.\mp e8~ e4 c-. |
   des2 f2 |
   e4. g8~ g4 e-. |
   f2 as2 |
@@ -467,7 +528,7 @@ tenorSax = \relative c'' {
 
   % Theme
   \mark \default
-  c,,4 d8 e8 r f g4~ |
+  c,,4\f d8 e8 r f g4~ |
   g4 g2 g4-. |
   as4 c8 bes8 r as as4~ |
   as4 g2 g4-. |
@@ -487,23 +548,23 @@ tenorSax = \relative c'' {
   
   % Uitleggen
   \mark \default
-  as''2-- bes-- |
-  g2-- es-- |
+  as''2-> bes-> |
+  g2-> es-> |
   g4 f8 e8 r d8 c4~ |
   c4 r2. |
 
-  as'2-- bes-- |
-  g2-- es-- |
+  as'2-> bes-> |
+  g2-> es-> |
   g4 f8 e r8 d8 c4~ |
   c4 r2. |
   
-  r4 as'4. bes4. |
-  g4. es4. es4-. |
+  r4 as'4.-> bes4.-> |
+  g4.-> es4.-> es4-. |
   ges4-. ges as-. as |
   f des f8 es d c |
   
   \mark \default
-  bes8 r4. bes8 c d es |
+  bes8\mp r4. bes8 c d es |
   f f r f r2 |
   r4. f8 g bes a g |
   g f r f r2 |
@@ -582,22 +643,22 @@ tenorSax = \relative c'' {
   r2. c'4 |
   bes4 as4 bes8 c des es |
   f1 |
-  r8 c'4. b4-. bes-. |
-  as g-. f-. g-. |
+  r8 c'4.\< b4-. bes-. |
+  as g-. f-. g-.\! |
   
   \mark \default
-  as2-- bes-- |
-  g2-- es-- |
+  as2->\f bes-> |
+  g2-> es-> |
   g4 f8 e8 r d8 c4~ |
   c4 r2. |
 
-  as'2-- bes-- |
-  g2-- es-- |
+  as'2-> bes-> |
+  g2-> es-> |
   g4 f8 e r8 d8 c4~ |
   c4 r2. |
   
-  as'2-- bes-- |
-  g4. es4. es4-. |
+  as'2-> bes-> |
+  g4.-> es4.-> es4-. |
   as4-. as bes-. bes |
   g4-. r4 es2 |
   
@@ -621,15 +682,15 @@ tenorSax = \relative c'' {
   r1 |
   
   \mark \default
-  as2-- bes-- |
-  g2-- es-- |
+  as2-> bes-> |
+  g2-> es-> |
   R1*2 |
   ges4-. ges as-. as |
   f2 r2 |
 
   R1*2 |
   
-  bes,4--_\markup { \italic "ritenuto" } c--
+  bes,4--\mf_\markup { \italic "ritenuto" } c--
   a-- f--
   as4-- bes--
   g-- es--
@@ -679,7 +740,7 @@ accordion = \relative c'' {
   
   % Theme
   \mark \default
-  e4 r2. |
+  e4\mf r2. |
   r2. e4 |
   f4 r2. |
   r2. e4 |
@@ -731,7 +792,7 @@ accordion = \relative c'' {
   r4. <g bes c es>4. <g bes c es>4-. |
   r4. <f as b d>4. <f as b d>4-. |
   
-  c'4. e8~ e4 c |
+  c'4.\p e8~ e4 c |
   des2 f2 |
   e4. g8~ g4 e |
   f2 as2 |
@@ -769,38 +830,38 @@ accordion = \relative c'' {
   <g c e>4 \tuplet 3/2 { f8 g as } \tuplet 3/2 { bes c d } \tuplet 3/2 { es f g } |
   
   \mark \default
-  <c, es as>2 <c es as> |
-  <bes es g>2 <bes es g>2 |
+  <c, es as>2-> <c es as>-> |
+  <bes es g>2-> <bes es g>2-> |
   <b d f>4. <b d f>8 r4 <g~ c~ e~>4 |
   <g c e>4 r2. |
-  <c es as>2 <c es as> |
-  <bes es g>2 <bes es g>2 |
+  <c es as>2-> <c es as>-> |
+  <bes es g>2-> <bes es g>2-> |
   <b d f>4. <b d f>8 r4 <g~ c~ e~>4 |
   <g c e>4 r2. |
   
-  r4 <c es as>4. <c es as>4. |
-  <bes es g>4. <bes es g>4. <bes es g>4 |
+  r4 <c es as>4.-> <c es as>4.-> |
+  <bes es g>4.-> <bes es g>4.-> <bes es g>4 |
   <bes des ges>4-. <bes des ges>4 <bes des ges>4-. <bes des ges>4 |
   <as des f>2 <f a es'>2 |
   
   \mark \default
-  <f bes d>4-. <f bes d>-. r <f bes d>-. |
-  <f bes d>4-. <f bes d>-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
-  <g bes es>4-. <g bes es>-. r <g bes es>-. |
-  <f bes d>4-. <f bes d>4-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
-  <g bes es>4-. <g bes es>-. r <g bes es>-. |
-  <f bes d>4-. <f bes d>4-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
-  <f a c>2 <g a es'>2 |
+  <f bes d>4-.\mp <f bes d>-. r <f bes d>-. |
+  <f bes d>4-. <f bes d>-. r8 <a d dis>\sf-> <a d dis>-> <a d dis>-> |
+  <g bes es>4-.\mp <g bes es>-. r <g bes es>-. |
+  <f bes d>4-. <f bes d>4-. r8 <a d dis>\sf-> <a d dis>-> <a d dis>-> |
+  <g bes es>4-.\mp <g bes es>-. r <g bes es>-. |
+  <f bes d>4-. <f bes d>4-. r8 <a d dis>\sf-> <a d dis>-> <a d dis>-> |
+  <f a c>2\mp <g a es'>2 |
   \bar "."
   <e bes' des>1 |
   <es a c>1 |
   \bar "."
   
   <f bes d>4-. <f bes d>-. r <f bes d>-. |
-  <f bes d>4-. <f bes d>-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
-  <g bes es>4-. <g bes es>-. r <g bes es>-. |
-  <f bes d>4-. <f bes d>4-. r8 <a d dis>-> <a d dis>-> <a d dis>-> |
-  <g bes es>4-. <g bes es>-. r <g bes es>-. |
+  <f bes d>4-. <f bes d>-. r8 <a d dis>\sf-> <a d dis>-> <a d dis>-> |
+  <g bes es>4-.\mf <g bes es>-. r <g bes es>-. |
+  <f bes d>4-. <f bes d>4-. r8 <a d dis>\sf-> <a d dis>-> <a d dis>-> |
+  <g bes es>4-.\mf <g bes es>-. r <g bes es>-. |
   <f bes d>4-. <f bes d>4-. r4 <f as d>4 |
   
   g8 a bes c a bes c d |
@@ -813,39 +874,39 @@ accordion = \relative c'' {
   <f g b d>1 |
   
   \mark \default
-  as,8 c es c g' es c es |
+  as,8\( c es c g' es c es |
   as, c es c g' es c es |
   as, c es c g' es c es |
+  as, c es c g' es c es\) |
+  as,8\( b d b g' d b d |
+  as b d b g' d b d |
+  as b d b g' d b d |
+  as b d b g' d b d\) |
+  as8\( c es c g' es c es |
   as, c es c g' es c es |
-  as,8 b d b g' d b d |
-  as b d b g' d b d |
-  as b d b g' d b d |
-  as b d b g' d b d |
-  as8 c es c g' es c es |
   as, c es c g' es c es |
-  as, c es c g' es c es |
-  as, c es c g' es c es |
-  as,8 b d b g' d b d |
+  as, c es c g' es c es\) |
+  as,8\( b d b g' d b d |
   as b d b g' d b d |
   as b d b g' d b d |
-  as b d b g' d b d |
+  as b d b g' d b d\) |
   
-  as8 c es c g' es c es |
+  as8\( c es c g' es c es |
   as, c es c g' es c es |
   as, c es c g' es c es |
-  as, c es c g' es c es |
-  as,8 b d b g' d b d |
+  as, c es c g' es c es\) |
+  as,8\( b d b g' d b d |
   as b d b g' d b d |
   as b d b g' d b d |
-  as b d b g' d b d |
-  as8 c es c g' es c es |
+  as b d b g' d b d\) |
+  as8\( c es c g' es c es |
   as, c es c g' es c es |
   as, c es c g' es c es |
-  as, c es c g' es c es |
-  as,8 b d b g' d b d |
+  as, c es c g' es c es\) |
+  as,8\( b d b g' d b d |
   as b d b g' d b d |
   as4 b d f |
-  <as, b g'>1 |
+  <as, b g'>1\) |
   
   \bar "||"
   \mark \default
@@ -870,21 +931,21 @@ accordion = \relative c'' {
   <ais fis'>2. <as f'>4 |
   <bes des f>4 r4 <des f as>4 r4 |
   des'8 c des es f g as bes |
-  as8 <e, g c>4. <f b d>4-. <g bes es>-. |
-  <as c es> <g c e>-. <b d f>-. <bes es g>-. |
+  as8 <e, g c>4.\< <f b d>4-. <g bes es>-. |
+  <as c es> <g c e>-. <b d f>-. <bes es g>-.\! |
   
   \mark \default
-  <c es as>2 <c es as> |
-  <bes es g>2 <bes es g>2 |
+  <c es as>2->\f <c es as>-> |
+  <bes es g>2-> <bes es g>2-> |
   <b d f>4. <b d f>8 r4 <g~ c~ e~>4 |
   <g c e>4 \tuplet 3/2 { f8 g as } \tuplet 3/2 { bes c d } \tuplet 3/2 { es f g } |
-  <c, es as>2 <c es as> |
-  <bes es g>2 <bes es g>2 |
+  <c, es as>2-> <c es as>-> |
+  <bes es g>2-> <bes es g>2-> |
   <b d f>4. <b d f>8 r4 <g~ c~ e~>4 |
   <g c e>4 \tuplet 3/2 { f8 g as } \tuplet 3/2 { bes c d } \tuplet 3/2 { es f g } |
   
-  <c, es as>2 <c es as>2 |
-  <bes es g>4. <bes es g>4. <bes es g>4 |
+  <c, es as>2-> <c es as>2-> |
+  <bes es g>4.-> <bes es g>4.-> <bes es g>4 |
   <c es as>4-. <c es as> <c es as>-. <c es as> |
   <b es f>4 r4 <f b es>2 |
  
@@ -908,14 +969,14 @@ accordion = \relative c'' {
   <as b d g>1 |
   
   \mark \default
-  <c es as>2 <c es as> |
-  <bes es g>2 <bes es g>2 |
+  <c es as>2-> <c es as>-> |
+  <bes es g>2-> <bes es g>2-> |
   R1*2 |
   <bes des ges>4-. <bes des ges>4 <bes des ges>4-. <bes des ges>4 |
   <as des f>2 r2 |
   R1*2 |
 
-  <gis d' f>2_\markup { \italic "ritenuto" } <g des' f> |
+  <gis d' f>2\mf_\markup { \italic "ritenuto" } <g des' f> |
   <fis c' es>2 <f b es> |
   <as b f'>1 <b cis g>2 r2 |
 
@@ -975,7 +1036,7 @@ bass = \relative c {
   
   % Theme
   \mark \default
-  c4 r2. |
+  c4\mf r2. |
   r2. c4 |
   des4 r2. |
   r2. c4 |
@@ -1028,7 +1089,7 @@ bass = \relative c {
   c4. as4. as4 |
   g4. g4. b4 |
     
-  c4. g'8 r4 c,4 |
+  c4.\p g'8 r4 c,4 |
   des4. as'8~ as2 |
   c,4. g'8 r4 c,4 |
   des4. as'8~ as2 |
@@ -1047,7 +1108,7 @@ bass = \relative c {
   bes4. bes4. b4 |
 
   \mark \default
-  c4 r2. |
+  c4\f r2. |
   r2. c4-. |
   des2 as2 |
   c2 g |
@@ -1066,38 +1127,38 @@ bass = \relative c {
   c4 g2. |
   
   \mark \default
-  as2 as2 |
-  es'2 es2 |
+  as2-> as2-> |
+  es'2-> es2-> |
   g,4. g4. c4~ |
   c4 g4-. g8 g8 r8 g |
-  as2 as2 |
-  es'2 es2 |
+  as2-> as2-> |
+  es'2-> es2-> |
   g,4. g4. c4 |
   r4 g4-. g8 g r8 g |
   
-  r4 as4. as4. |
-  es4. es4. es4 |
+  r4 as4.-> as4.-> |
+  es4.-> es4.-> es4 |
   ges4 r4 ges4 r4 |
   des'2 f |
   
   \mark \default
-  bes,4. f'4.-. r4 |
-  bes,4. f'4-. b,8-> b-> b-> |
-  es4. bes'4.-. r4 |
-  bes,4. f'4-. b,8-> b-> b-> |
-  es4. bes'4.-. r4 |
-  bes,4. f'4-. b,8-> b-> b-> |
-  f4. c'4.-. f,4 |
+  bes,4.\mp f'4.-. r4 |
+  bes,4. f'4-. b,8\sf-> b-> b-> |
+  es4.\mp bes'4.-. r4 |
+  bes,4. f'4-. b,8\sf-> b-> b-> |
+  es4.\mp bes'4.-. r4 |
+  bes,4. f'4-. b,8\sf-> b-> b-> |
+  f4.\mp c'4.-. f,4 |
   \bar "."
   c'1 |
   b1 |
   \bar "."
 
   bes4. f'4.-. r4 |
-  bes,4. f'4-. b,8-> b-> b-> |
-  es4. bes'4.-. r4 |
-  bes,4. f'4-. b,8-> b-> b-> |
-  es4. bes'4.-. r4 |
+  bes,4. f'4-. b,8->\sf b-> b-> |
+  es4.\mp bes'4.-. r4 |
+  bes,4. f'4-. b,8->\sf b-> b-> |
+  es4.\mp bes'4.-. r4 |
   bes,4. f'4.-. d4 |
   es1 |
   es1 |
@@ -1145,42 +1206,42 @@ bass = \relative c {
   \bar "||"
   \mark \default
   
-  c4 d8 e4 f8 g4~ |
-  g4 g2 g4 |
+  c4( d8 e4 f8 g4~ |
+  g4 g2) g4( |
   a4 c8 b4 a8 a4~ |
-  a4 g2 g4 |
+  a4 g2) g4( |
   a4 c8 b4 a8 a4~ |
   a4 g2 g4 |
   a4 c8 b4 a8 a4 |
-  g2 gis4 e |
-  a,4 b8 cis4 d8 e4~ |
-  e4 e2 e4 |
+  g2) gis4 e |
+  a,4( b8 cis4 d8 e4~ |
+  e4 e2) e4( |
   fis4 a8 gis4 fis8 fis4~ |
-  fis4 e2 e4 |
+  fis4 e2) e4( |
   fis4 a8 gis4 fis8 fis4~ |
-  fis4 e2 e4 |
+  fis4 e2) e4( |
   fis4 a8 gis4 fis8 fis4 |
-  e2 eis4 cis |
-  fis,4 gis8 ais4 b8 cis4~ |
-  cis4 cis2 d4 |
+  e2) eis4 cis |
+  fis,4( gis8 ais4 b8 cis4~ |
+  cis4 cis2) d4( |
   es4 f8 g4 as8 bes4~ |
-  bes4 es,,2. |
-  r8 c'4. g4 es |
-  as c g es |
+  bes4 es,2.) |
+  r8\< c4. g4 es' |
+  as, c g es'\! |
   
   \mark \default
-  as2 as2 |
-  es'2 es2 |
+  as,2->\f as2-> |
+  es'2-> es2-> |
   g,4. g4. c4~ |
   c4 f,4 bes es |
-  as,2 as2 |
-  es'2 es2 |
+  as,2-> as2-> |
+  es'2-> es2-> |
   g,4. g4. c4~ |
   c4 f,4 bes es |
   
-  as,2 as2 |
-  es4. es4. es4 |
-  d'4 d d d |
+  as,2-> as2-> |
+  es'4.-> es4.-> es4 |
+  d4 d d d |
   g,4 r4 g2 |
   
   \mark \default
@@ -1203,8 +1264,8 @@ bass = \relative c {
   g2 f' |
   
   \mark \default
-  as,2 as2 |
-  es'2 es2 |
+  as,2-> as2-> |
+  es'2-> es2-> |
   
   g,4-. g4-. g8 g8 r g |
   g4-. g8 g8 r g g4-. |
@@ -1214,7 +1275,7 @@ bass = \relative c {
   f,4-. f4-. f8 f r f |
   f4-. r2. |
   
-  e'2_\markup { \italic "ritenuto" } es |
+  e'2\mf_\markup { \italic "ritenuto" } es |
   d des |
   g,1 a2 r2 |
   
