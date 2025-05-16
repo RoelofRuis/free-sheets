@@ -291,21 +291,21 @@ melody = \relative c'' {
   r2. es8 es |
   d8 d d d d4 es8 bes~ |
   bes2 r4 bes8 bes |
-  a8 a a a a4 bes8 f~ |
+  a8 a a a bes4 es,8 f~ |
 
   \break
 
   f2 r4 f8 f |
-  es8 es es es es4 f8 d~ |
+  es8 es es es es4 d8 d'~ |
   d1 |
   r1 |
 
   \break
 
-  r2. es'8 es |
+  r2. es8 es |
   d8 d d d d4 es8 bes~ |
   bes2 r4 bes8 bes |
-  as8 as as as as4 bes8 g~ |
+  as8 as as as bes4 f8 g~ |
 
   \break
 
@@ -389,6 +389,7 @@ bass = \relative c {
     d4. f8~ f4 bes,8 b |
   }
   
+  \mark \default
   \break
   c4. es8~ es2 |
   d4. f8~ f2 |
@@ -440,6 +441,7 @@ bass = \relative c {
   c4. es8~ es4. d8~ |
   d4. f8~ f4 bes,8 b |
   
+  \break
   \mark \default
   
   \repeat volta 2 {
