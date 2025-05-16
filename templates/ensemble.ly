@@ -13,6 +13,14 @@ chordmusic = \chordmode {
   % Chord
 }
 
+drumMusic = \drummode {
+  \numericTimeSignature
+
+  % Music
+  
+  \bar "|."
+}
+
 tenorSax = \relative c'' {
   \globalOptions
   \clef treble
