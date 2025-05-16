@@ -56,7 +56,7 @@ chordmusic = \chordmode {
   g1.:9 |
   as1.:dim |
   as1.:dim |
-  
+
 }
 
 drumMusic = \drummode {
@@ -123,6 +123,138 @@ drumMusic = \drummode {
   
   \bar "|."
   
+}
+
+tenorSaxFourFour = \relative c'' {
+  \numericTimeSignature
+  \time 4/4
+
+  \clef treble
+  
+  \tempo 4=96
+  R1
+  R1\fermata |
+  
+  \bar "||"
+
+  R1*4 |
+  
+  r4 c4\mp b4 a4 |
+  \times 2/3 { g4-. r8 } g4 f4~ \times 2/3 { f4 c'8 } |
+  d4 c4 b4 a4 |
+  \times 2/3 { g4-. r8 } a4~ a4 r4 |
+
+  b4 a4 as4 g4 |
+  \times 2/3 { f4-. r8 } es4 d4 cis'4->~ |
+  cis4 c b a |
+  \times 2/3 { g4-. r8 } f4~ f2 |
+  r4 b4--\f fis'2->~ |
+  fis4 f4 e4 es4 |
+  \times 2/3 { d4-. r8 } des4\> c4~ \times 2/3 { c4 b8 } |
+  bes?4 a4 as4 g4\! |
+  
+  \times 2/3 { ges4-.\mp\! r8 } e4~ e2 |
+  \times 2/3 { ges4-. r8 } e4~ e2 |
+  \times 2/3 { g4-. r8 } e4~ 2~ |
+  e2~ e4 \times 2/3 { r4 e8 } |
+
+  \mark \default
+  d1 |
+  R1*3 |
+
+  \bar "||"
+  \break
+  \once \override TextSpanner.bound-details.left.text = "poco a poco accel." |
+  r1\startTextSpan
+  \times 2/3 { r4\mp a'8 } \times 2/3 { d4 c8 } \times 2/3 { a4 b8 } \times 2/3 { g4 a8 } |
+  f4 \times 2/3 { e4 bes'8~ } bes2 |
+  \times 2/3 { r4 bes8 } \times 2/3 { fis'4 e8 } d4-> c-> |
+  \times 2/3 { r4 a8 } \times 2/3 { d4 c8 } bes4-. \times 2/3 { e,4 fis8~ } | 
+  fis4 \times 2/3 { ais4 gis8~ } gis4 \times 2/3 { c4 ais8~ } |
+  ais1
+  r1
+  r1
+  \times 2/3 { r4\mf e'8 } \times 2/3 { a4 gis8 } \times 2/3 { e4 fis8 } \times 2/3 { d4 e8 } |
+  c4 \times 2/3 { ais4 e'8~ } e2 |
+  \times 2/3 { r4 e8 } \times 2/3 { ais4 gis8 } fis4-> e4-> |
+  \times 2/3 { r4 d8 } \times 2/3 { gis4 fis8 } e4 ais,4 |
+  c4\< d4 \times 2/3 { e4 fis8 } \times 2/3 { gis8 ais c } |
+  d1\!\stopTextSpan |
+  
+  \break
+  
+  \mark \default
+  \tempo 4=150
+
+  \repeat volta 2 {
+    s1^\markup { "freak blues" }
+    s1*23
+  }
+  
+  \break
+  
+  a2\f d4 c4 |
+  \times 2/3 { a4-. b8 } g4 a2 |
+  c4-. \times 2/3 { a8 b c } \times 2/3 { b d a } \times 2/3 { g4 e8 } |
+  \times 2/3 { a4-. b8 } g2 r4 |
+  
+  d2 g4 f4 |
+  \times 2/3 { d4-. e8 } c4 d4 \times 2/3 { c4-. bes8 } |
+  as4 \times 2/3 { f'4-. e8 } d4 \times 2/3 { as'4-. g8 } |
+  f2~ f4 r4 |
+  
+  \mark \default
+  R1
+  \times 2/3 { r4\mf e8 } \times 2/3 { a4 gis8 } \times 2/3 { e4 fis8 } \times 2/3 { d4 e8 } |
+  c4 \times 2/3 { ais4 e'8~ } e2 |
+  \times 2/3 { r4 e8 } \times 2/3 { ais4 gis8 } fis4 e4 |
+  \times 2/3 { r4 d8 } \times 2/3 { gis4 fis8 } e4 ais,4 |
+  c4~ \times 2/3 { c4 d8~ } d2 |
+  f4-> a4-> d4-> c4-> |
+  \times 2/3 { a8 d c } \times 2/3 { a b g } \times 2/3 { f bes as } \times 2/3 { f g des~-> } |
+  \times 2/3 {des ges fes } \times 2/3 { des es ces } \times 2/3 { a d c } \times 2/3 { a b g } |
+  a1\> |
+  r1\! |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  
+  \mark \default
+  
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  
+  \once \override TextSpanner.bound-details.left.text = "molto rit."
+  r4\mp\startTextSpan a4 d4 c4 |
+  \times 2/3 { a4-. b8 } g4 a2 |
+  r4 a4 d4 c4 |
+  \times 2/3 { a4-. b8 } g4~ g2
+  \times 2/3 { a4-. b8 } g4~ g2
+  \times 2/3 { a4-. b8 } g4~ g2\stopTextSpan
+  r2 gis2 |
+  
+  \mark \default
+  
+  r4 b\< c d |
+  es\!\> d c b\! |
+  r4 g a bes |
+  c4 bes4~ bes2 |
+  
+  
+  r4 bes c d |
+  e4( es d) dis-- |
+  e4( es d) dis-- |
+  e4( es d des) |
+
+  r4 bes c d |
+  e4 es d des |
+  c b bes a |
+  as g fis2\fermata |
+  
+  \bar "|."
 }
 
 tenorSax = \relative c'' {
@@ -250,7 +382,6 @@ tenorSax = \relative c'' {
   e4. es d des |
   c b bes a |
   as g fis2.\fermata |
-  
   
   \bar "|."
 }
@@ -756,7 +887,7 @@ BookTenorSax = \book {
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
-   
+
     print-all-headers = ##f
     max-systems-per-page = 12
   }
@@ -772,6 +903,31 @@ BookTenorSax = \book {
     <<
       \new ChordNames { \transpose bes c' { \chordmusic } }
       \new Staff { \transpose bes c' \tenorSax }
+    >>
+  }
+}
+
+BookTenorSaxFourFourths = \book {
+  \bookOutputName #(string-append bookname "_TenorSax_4q")
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f
+
+    print-all-headers = ##f
+    max-systems-per-page = 12
+  }
+  
+  \header {
+    title = \title
+    composer = \composer
+    instrument = "Tenor Saxophone"
+    tagline = \docVersion
+  }
+  
+  \score {
+    <<
+      \new ChordNames { \transpose bes c' {  \scaleDurations 2/3 { \chordmusic } } }
+      \new Staff { \transpose bes c' \tenorSaxFourFour }
     >>
   }
 }
@@ -867,5 +1023,6 @@ Midi = \score {
 \BookFull
 \BookDrums
 \BookTenorSax
+\BookTenorSaxFourFourths
 \BookAccordion
 \BookBass
