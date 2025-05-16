@@ -54,7 +54,7 @@ chordmusic = \chordmode {
   bes:7 |
   
   as:m7+ |
-  g:7 |
+  g:7.9- |
   c:m7 |
   d:m7.5- |
   
@@ -348,7 +348,7 @@ melody = \relative c'' {
       }
       {
         c1 |
-        b1 |
+        d1 |
       }
     }
   }
