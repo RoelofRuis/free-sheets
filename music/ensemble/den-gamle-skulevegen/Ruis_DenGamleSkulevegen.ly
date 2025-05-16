@@ -12,20 +12,20 @@ chordmusic = \chordmode {
   \set chordChanges = ##t
   
   \repeat volta 2 {
-    c1:m
+    c1:m7
     d:m7.5-
-    c1:m
+    c1:m7
     d:m7.5-
   }
 
-  c1:m
+  c1:m7
   d:m7.5-
-  f:m
+  f:m7
   g:7.9-
   
   c1:m/es
   f2:m bes:7 |
-  es1 |
+  es1:maj7 |
   bes:sus4.7.9-
 
   es1:m |
@@ -35,40 +35,78 @@ chordmusic = \chordmode {
   
   as:m7 |
   des:7 |
-  ges:7 |
+  ges |
   ges:7.5+ |
   
-  g:m |
+  g:m7 |
   a:m7.5- |
   es |
   f:7 |
   
-  bes |
+  bes:maj7 |
   a:m7.5- |
-  d:7.9- | %Susje, of iets?
+  d:7.9- |
   d:7.9- |
   
-  g:m |
-  as |
-  es |
+  g:m7 |
+  as:maj7 |
+  es:maj7 |
   bes:7 |
   
   as:m7+ |
   g:7 |
-  c:m |
+  c:m7 |
   d:m7.5- |
   
   \mark \default
-  c2:m bes/d |
-  c/e f:m |
-  g1 |
-  as1:7 |
+  \repeat volta 2 {
+    c2:m bes/d |
+    c/e f:m |
+    \alternative {
+      {
+        g1 |
+        as1:7 |
+      }
+      {
+        g1 |
+        c2:m7.5-/ges f:7 |
+      }
+    }
+  }
   
   \break
   
-  c2:m bes/d |
-  c/e f:m |
-  g1:m |
+  \repeat volta 2 {
+    bes2 f:7/c |
+    bes/d c:9/e |
+    \alternative {
+      {
+        f1:7 |
+        es:m6 |
+      }
+      {
+        fis1:dim |
+        g:7.9- |
+      }
+    }
+  }
+  
+  \break
+  
+  \repeat volta 2 {
+    c2:m bes/d |
+    c/e f:m |
+    \alternative {
+      {
+        g1 |
+        as1:7 |
+      }
+      {
+        g1:m |
+        c1:m |
+      }
+    }
+  }
 
 }
 
@@ -153,16 +191,57 @@ drumMusic = \drummode {
   \break
   \mark \default
   
-  s1 |
-  s1 |
-  s1 |
-  s1 |
+    \repeat volta 2 {
+    s1 |
+    s1 |
+    \alternative {
+      {
+        s1 |
+        s1
+      }
+      {
+        s1 |
+        s1 | 
+      }
+    }
+  }
   
   \break
   
-  s1 |
-  s1 |
-  s1 |
+  \repeat volta 2 {
+    s1
+    s1
+    \alternative {
+      {
+        s1 |
+        s1 |
+      }
+      {
+        s1 |
+        s1 |
+      }
+    }
+  }
+  
+  \break
+  
+  \repeat volta 2 {
+    s1
+    s1
+    \alternative {
+      {
+        s1
+        s1
+      }
+      {
+         s1
+         \bar "!"
+         s1  
+      }
+    }
+  }
+  
+  \bar "|."
   
 }
 
@@ -239,20 +318,58 @@ melody = \relative c'' {
   es2 r2 |
   
   \break
-  
-  \bar "||"
+
   \mark \default
   
-  r4 c'4 bes8 as g f |
-  g8 as g e c d es f |
-  d4. b8 r8 d4 c8~ |
-  c1 |
+  \repeat volta 2 {
+    r4 c'4 bes8 as g f |
+    g8 as g e c d es f |
+    \alternative {
+      {
+        d4. b8 r8 d4 c8~ |
+        c1
+      }
+      {
+         d4. b8 r8 d4 c8~ |
+         c1  
+      }
+    }
+  }
   
   \break
   
-  r4 c'4 bes8 as g f |
-  g8 as g e c d es f |
-  d4. bes8 r d4 c8\laissezVibrer|
+  \repeat volta 2 {
+    r4 bes'4 a8 g f es |
+    d es d c bes c d es? |
+    \alternative {
+      {
+        c1 |
+        c1 |
+      }
+      {
+        c1 |
+        b1 |
+      }
+    }
+  }
+  
+  \break
+  
+  \repeat volta 2 {
+    r4 c'4 bes8 as g f |
+    g8 as g e c d es f |
+    \alternative {
+      {
+        d4. b8 r8 d4 c8~ |
+        c1
+      }
+      {
+         d4. bes8 r8 d4 c8~ |
+         \bar "!"
+         c1  
+      }
+    }
+  }
 
   \bar "|."
 }
@@ -325,14 +442,51 @@ bass = \relative c {
   
   \mark \default
   
-  c2 d2 |
-  e2 f2 |
-  g2 d4. as'8~ |
-  as4. as,8~ as2 |
+  \repeat volta 2 {
+    c2 d2 |
+    e2 f2 |
+    \alternative {
+      {
+        g2 d4. as'8~ |
+        as4. as,8~ as2 |
+      }
+      {
+        g'2 b,4. ges8~ |
+        ges2 f2 |
+      }
+    }
+  }
   
-  c2 d2 |
-  e2 f2 |
-  g2 d4. c8~\laissezVibrer | 
+  \repeat volta 2 {
+    bes2 c2 |
+    d2 e2 |
+    \alternative {
+      {
+        f4. a8~ a2 |
+        es4. ges8~ ges2 |
+      }
+      {
+        fis4. a8~ a2 |
+        g4. b8~ b2 |
+      }
+    }
+  }
+  
+  \repeat volta 2 {
+    c,2 d2 |
+    e2 f2 |
+    \alternative {
+      {
+        g2 d4. as'8~ |
+        as4. as,8~ as2 |
+      }
+      {
+        g'2 d4. c8~ |
+        \bar "!"
+        c4. es8~ es4. d8\laissezVibrer |
+      }
+    }
+  }
   
   \bar "|."
 
@@ -405,7 +559,7 @@ BookDrums = \book {
 }
 
 BookLeadSheetBb = \book {
-  \bookOutputName #(string-append bookname "_LeadsheetBb")
+  \bookOutputName #(string-append bookname "_LeadSheetBb")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
@@ -429,7 +583,7 @@ BookLeadSheetBb = \book {
 }
 
 BookLeadSheetC = \book {
-  \bookOutputName #(string-append bookname "_LeadsheetC")
+  \bookOutputName #(string-append bookname "_LeadSheetC")
   \paper {
     indent = 0.0
     ragged-last-bottom = ##f
