@@ -103,7 +103,7 @@ chordmusic = \chordmode {
       }
       {
         g1:m |
-        c1:m |
+        c1:m7 |
       }
     }
   }
@@ -296,7 +296,7 @@ melody = \relative c'' {
   \break
 
   f2 r4 f8 f |
-  es8 es es es es4 d8 d'~ |
+  g8 g g g g4 d8 d'~ |
   d1 |
   r1 |
 
