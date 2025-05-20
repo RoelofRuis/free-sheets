@@ -267,7 +267,7 @@ melody = \relative c'' {
   
   \break
   
-  c2 r4 es8 es |
+  c2 r4 c8 c |
   d8 d d d d4 bes8 bes'~ |
   bes1 |
   r1 |
@@ -296,7 +296,7 @@ melody = \relative c'' {
   \break
 
   f2 r4 f8 f |
-  g8 g g g g4 d8 d'~ |
+  es8 es es es es4 d8 d'~ |
   d1 |
   r1 |
 
@@ -326,11 +326,11 @@ melody = \relative c'' {
     g8 as g e c d es f |
     \alternative {
       {
-        d4. b8 r8 d4 c8~ |
+        d4. b8 r8 d4-. c8~ |
         c1
       }
       {
-         d4. b8 r8 d4 c8~ |
+         d4. b8 r8 d4-. c8~ |
          c1  
       }
     }
@@ -360,11 +360,11 @@ melody = \relative c'' {
     g8 as g e c d es f |
     \alternative {
       {
-        d4. b8 r8 d4 c8~ |
+        d4. b8 r8 d4-. c8~ |
         c1
       }
       {
-         d4. bes8 r8 d4 c8~ |
+         d4. bes8 r8 d4-. c8~ |
          \bar "!"
          c1  
       }
@@ -635,6 +635,12 @@ BookBass = \book {
 Midi = \score {
   \bookOutputName \bookname
   <<
+    \new ChordNames = "harmony" { 
+      \set Staff.midiInstrument = "electric grand"
+      \set Staff.midiMinimumVolume = 0.7
+      \set Staff.midiMaximumVolume = 0.7
+      \unfoldRepeats { \chordmusic }
+    }
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.midiMinimumVolume = 0.6
