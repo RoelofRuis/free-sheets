@@ -506,8 +506,7 @@ accordion = \relative c' {
 bass = \relative c, {
   \globalOptions
   \clef bass
-  
-  \key e \major
+
   \time 7/8
 
   e2\mf fis4. |
@@ -811,7 +810,36 @@ BookBass = \book {
   \score {
     <<
       \new ChordNames { \chordmusic }
-      \new Staff { \bass }
+      \new Staff { 
+        \key e \major
+        \bass 
+      }
+    >>
+  }
+}
+
+BookBassAtonal = \book {
+  \bookOutputName #(string-append bookname "_Bass_Atonal")
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f
+    print-all-headers = ##f
+    max-systems-per-page = 12
+  }
+  
+  \header {
+    title = \title
+    composer = \composer
+    instrument = "Bass"
+    tagline = \docVersion
+  }
+  
+  \score {
+    <<
+      \new ChordNames { \chordmusic }
+      \new Staff {
+        \bass 
+      }
     >>
   }
 }
@@ -851,3 +879,4 @@ Midi = \score {
 \BookTenorSax
 \BookAccordion
 \BookBass
+\BookBassAtonal
