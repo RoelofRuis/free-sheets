@@ -262,14 +262,14 @@ chordmusic = \chordmode {
 }
 
 drumMusic = \drummode {
-  hihat4 4 4 4 |
-  4 4 4 4 |
-  4 4 4 4 |
+  hihat2 2 |
+  2 2 |
+  2 2 |
   hho2 r2\fermata
   
-  hihat4 4 4 4 |
-  4 4 4 4 |
-  4 4 4 4 |
+  hihat2 2 |
+  2 2 |
+  2 2 |
   
   \mark \default
   
@@ -327,7 +327,6 @@ drumMusic = \drummode {
   s1*12 |
   
   \mark \default
-  
   hh2-> 2-> |
   2-> 2-> |
   sn4 8 8 r sn8 cymc4 |
@@ -344,7 +343,6 @@ drumMusic = \drummode {
   4 4 sn8 8 8 8 |
   
   \mark \default
-  
   bd4\mp hhp8 bd8 bd-> bd hhp8 bd |
   bd4 hhp8 bd8 bd sn8->\sf 8-> 8-> |
   bd4\mp hhp8 bd8 bd-> bd hhp8 bd |
@@ -367,6 +365,7 @@ drumMusic = \drummode {
   s1*8 |
   
   \bar "||"
+  \mark \default
   
   s1*32 |
   
@@ -631,7 +630,6 @@ tenorSax = \relative c'' {
   \bar "||"
   
   \mark \default
-  
   R1*6 |
   r4 f'4. g4. |
   e4 c e8 d cis b |
@@ -792,6 +790,7 @@ accordion = \relative c'' {
   r4. <g bes c es>4. <g bes c es>4-. |
   r4. <f as b d>4. <f as b d>4-. |
   
+  \mark \default
   c'4.\p e8~ e4 c |
   des2 f2 |
   e4. g8~ g4 e |
@@ -909,8 +908,8 @@ accordion = \relative c'' {
   <as, b g'>1\) |
   
   \bar "||"
+
   \mark \default
-  
   <e~ c'~>1 |
   <e c'> |
   <f c'>2. <f~ c'~>4 |
@@ -1088,7 +1087,8 @@ bass = \relative c {
   d'4. g,4. g4 |
   c4. as4. as4 |
   g4. g4. b4 |
-    
+  
+  \mark \default
   c4.\p g'8 r4 c,4 |
   des4. as'8~ as2 |
   c,4. g'8 r4 c,4 |
@@ -1204,8 +1204,8 @@ bass = \relative c {
   g1 |
   
   \bar "||"
+
   \mark \default
-  
   c4( d8 e4 f8 g4~ |
   g4 g2) g4( |
   a4 c8 b4 a8 a4~ |

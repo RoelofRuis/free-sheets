@@ -93,6 +93,8 @@ drumMusic = \drummode {
     s1.*23
   }
   
+  \mark \default
+  
   \break
   
   s1.*8 |
@@ -319,6 +321,8 @@ tenorSax = \relative c'' {
     s1.^\markup { "freak blues" }
     s1.*23
   }
+  
+  \mark \default
   
   \break
   

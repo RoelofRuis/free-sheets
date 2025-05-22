@@ -423,6 +423,8 @@ drumMusic = \drummode {
   4 8 8 4
   4 8 8 4
   
+  \mark \default
+  
   s2.*12
   cymr4 r2 |
   cymr4 r2 |
@@ -1031,6 +1033,8 @@ tenorSax = \relative c'' {
   g4-- as--\!\< bes-- | 
   c-- d-- es-- |
   f-- g-- as-- |
+
+  \mark \default
   g2.\!~ |
   g2.~ |
   g2.\) |
@@ -1351,6 +1355,7 @@ accordion = \relative c'' {
   r8 <as c es>8 r4 <as c es>4 |
   r8 <as c es>8 r4 <as c es>4 |
   
+  \mark \default
   r8 <g bes es>8 r4 <g bes es>4  |
   r8 <a c f> <a c f> r8 <a c f>4 |
   r8 <bes es g>8 r4 <bes es g>4 |
@@ -1498,7 +1503,7 @@ bass = \relative c {
   e4-. g-. a4-. |
   \ottava 1
   \override NoteHead.style = #'harmonic
-  a''2.\)
+  g''2.\)
   \revert NoteHead.style
   \ottava 0
   d,,,4. c4. |
@@ -1670,6 +1675,7 @@ bass = \relative c {
   f4. f,4 fis8 |
   g4 as bes |
   
+  \mark \default
   c4.\!\mf c4 c8 |
   d4. d4 d8 |
   es4. es4 es8 |

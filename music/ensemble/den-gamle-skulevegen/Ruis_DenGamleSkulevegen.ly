@@ -64,11 +64,11 @@ chordmusic = \chordmode {
     c/e f:m |
     \alternative {
       {
-        g1 |
+        g1:7 |
         as1:7 |
       }
       {
-        g1 |
+        g1:7 |
         c2:m7.5-/ges f:7 |
       }
     }
@@ -86,7 +86,7 @@ chordmusic = \chordmode {
       }
       {
         fis1:dim |
-        g:7.9- |
+        g:7 |
       }
     }
   }
@@ -98,7 +98,7 @@ chordmusic = \chordmode {
     c/e f:m |
     \alternative {
       {
-        g1 |
+        g1:7 |
         as1:7 |
       }
       {

@@ -164,6 +164,8 @@ tenorSax = \relative c'' {
   
   R1*8
   
+  \mark \default
+  
   R1*8
   
   % Theme Minor
@@ -375,6 +377,8 @@ accordion = \relative c'' {
   
   R1*8
   
+  \mark \default
+  
   R1*8
   
   % Theme Minor
@@ -430,24 +434,26 @@ accordion = \relative c'' {
   <c f a>2 r2
   
   R1*3
-  
+
   \mark \default
   
   \repeat volta 2 {
-    <as' c es>4-. <as c es> <g bes d> <f as c> |
-    <d g bes>-. <bes d g> <f'~ bes c~> <f a c> |
-    <as c es>4-. <f as c> <es g bes> <bes es g> |
-    <f' bes c>2 <f a c> |  
+    \ottava 1
+    <as'' c es>4( <as c es> <g bes d> <f as c> |
+    <d g bes> <bes d g> <f'~ bes c~> <f a c>) |
+    <as c es>4( <f as c> <es g bes> <bes es g> |
+    <f' bes c>2 <f a c>) |  
     
     \alternative {
       {
-        <c es as>4-. <c es as> <bes es g> <c es as> |
-        <des f bes>-. <des f bes> <des f as> <des f bes> |
+        <c es as>4( <c es as> <bes es g> <c es as> |
+        <des f bes> <des f bes> <des f as> <des f bes> |
         <des f c'>2 <des f bes> |
-        <c~ f g~> <c e g>2 |
+        <c~ f g~> <c e g>2) |
       }
       {
-        <as' c es>4-. <as c es> <g bes d> <as c es> |
+        \ottava 0
+        <as c es>4-. <as c es> <g bes d> <as c es> |
         <bes d f>4-. <bes d f> <as c es> <bes d f> |
         <as c g'>2 <as c f> |
         <g c d>1 
@@ -600,6 +606,8 @@ bass = \relative c {
       }
     }
   }
+  
+  \mark \default
   
   R1*8
   R1*8 

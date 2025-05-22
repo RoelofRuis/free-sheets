@@ -54,6 +54,7 @@ drumMusic = \drummode {
   2 4.
   
   \mark \default
+  \bar "||"
   R2..*4
 
   cymr4\f-> 4-> 4.->
@@ -104,11 +105,11 @@ drumMusic = \drummode {
   R2..*4 |
   
   \mark \default
-  cymr4\f^\markup { \italic "a tempo" } 4 4.
-  4 4 4. 
+  cymr4\f\>^\markup { \italic "a tempo" } 4 4.
+  4 4 4.\! 
   R2..*2
-  cymr4 4 4.
-  4 4 4.
+  cymr4\f\> 4 4.
+  4 4 4.\!
   R2..*2
   cymr2\p 4.
   2 4.
@@ -116,7 +117,7 @@ drumMusic = \drummode {
   2\< 4.
   2 4.
   2~\mf\! 8 4~ |
-  4 4. 8 8 |
+  4 4. 8[ 8] |
   2 4.
   2 4.
   2..
@@ -204,9 +205,8 @@ tenorSax = \relative c' {
   g4 b8[ dis]) dis4( cis8 |
   b2~ b4) r8 |
   
-  \bar "||"
-  
   \mark \default
+  \bar "||"
   
   fis'4\mp dis e dis8 |
   b4 cis dis4 r8 |
@@ -268,9 +268,9 @@ tenorSax = \relative c' {
   
   \mark \default
   
-  f2..~\ff^\markup { \italic "a tempo" } f2. r8 |
+  f2..~\ff\>^\markup { \italic "a tempo" } f2. r8\! |
   R2.. R2.. |
-  f2..~ f2. r8 |
+  f2..~\ff\> f2. r8\! |
   
   R2..*11 |
   r4 as,( es' as8 
@@ -432,14 +432,14 @@ accordion = \relative c' {
   
   \mark \default
   
-  <e gis b>4\ff^\markup { \italic "a tempo" } <b e gis>4 <cis f a>4 <b f' gis>8 |
-  <g cis e>4 <a dis fis>4 <b~ e~ gis~>4.\> |
+  <e gis b>4\ff\>^\markup { \italic "a tempo" } <b e gis>4 <cis f a>4 <b f' gis>8 |
+  <g cis e>4 <a dis fis>4 <b~ e~ gis~>4. |
   
   <b~ e~ gis~>2..\!\pp
   <b e gis>2..
   
-  <e gis b>4\ff <b e gis>4 <cis f a>4 <b f' gis>8 |
-  <ais cis e>4 <a dis fis>4 <gis~ b~ e~>4.\> |
+  <e gis b>4\ff\> <b e gis>4 <cis f a>4 <b f' gis>8 |
+  <ais cis e>4 <a dis fis>4 <gis~ b~ e~>4. |
   <gis~ b~ e~>2..\!\pp |
   <gis b e> |
   
@@ -460,6 +460,8 @@ accordion = \relative c' {
   <fis c' es>2.. |
   <a b e>2.. |
   <gis b e>2 r4. |
+  
+  \breathe
   
   \mark \default
   
