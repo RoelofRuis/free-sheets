@@ -469,7 +469,7 @@ accordion = \relative c' {
   r8 b8~ <b fis'>4 r8 b8~ <b fis'>8 |
   r8 b8~ <b fis'>4 r8 b8~ <b fis'>8 |
   r8 b8~ <b fis'>8 <b' dis fis>4 <g b dis> |
-  <f~ b~ e>4 <f b dis>8 <e~ gis~ c>4 <e gis b> |
+  <f~ b~ e>4 <f b dis>8 <e~ gis~ cis>4 <e gis b> |
   b8~ <b~ d~> <b d g> cis8~ <cis fis~> <fis~ b~> <fis b e> |
   <fis~ b~ dis~>2 <fis b dis>8 r4 |
   
