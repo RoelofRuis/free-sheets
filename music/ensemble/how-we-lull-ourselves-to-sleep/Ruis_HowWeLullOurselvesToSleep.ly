@@ -7,6 +7,35 @@ globalOptions = {
   \tempo 4=102
 }
 
+midiTempo = {
+  \tempo 4=102
+  \time 7/8
+  R1*9*7/8
+  R1*4*7/8
+  \time 5/8
+  R1*5/8
+  \time 4/4
+  R1*2
+  \time 7/8
+  R1*5*7/8
+  R1*9*7/8
+  R1*14*7/8
+  R1*6*7/8
+  r4 \tempo 4=100 r4 \tempo 4=99 r4 \tempo 4=98 r8 \tempo 4=97
+  r4 \tempo 4=96 r4 \tempo 4=95 r4 \tempo 4=94 r8 \tempo 4=93
+  r4 \tempo 4=92 r4 \tempo 4=91 r4 \tempo 4=90 r8 \tempo 4=89
+  r4 \tempo 4=88 r4 \tempo 4=87 r4 \tempo 4=86 r8 \tempo 4=85 
+  r4 \tempo 4=84 r4 \tempo 4=83 r4 \tempo 4=82 r8 \tempo 4=81 
+  r4 \tempo 4=80 r4 \tempo 4=79 r4 \tempo 4=78 r8 \tempo 4=77
+  \time 5/8
+  R1*5/8
+  \time 4/4
+  R1*2
+  \time 7/8
+  R1*5*7/8
+  \tempo 4=102
+}
+
 metronomeMusic = \drummode {  
   \tempo 4=102
   \time 7/8
@@ -1063,6 +1092,9 @@ Midi = \book {
   \bookOutputName \bookname
   \score {
     <<
+      {
+        \midiTempo
+      }
       \new Staff = "saxophone" {
         \set Staff.midiInstrument = "tenor sax"
         \set Staff.midiMinimumVolume = 0.2
@@ -1093,8 +1125,13 @@ Midi = \book {
 MidiTenorMetronome = \book {
   \bookOutputName #(string-append bookname "_tenor-metronome")
 
-  \score { 
+  \score {
     <<
+      {
+        \time 4/4
+        R1 |
+        \midiTempo
+      }
       \new Staff = "saxophone" {
         \set Staff.midiInstrument = "tenor sax"
         \set Staff.midiMinimumVolume = 0.2

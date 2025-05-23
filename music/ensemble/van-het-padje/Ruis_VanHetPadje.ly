@@ -59,6 +59,49 @@ chordmusic = \chordmode {
 
 }
 
+midiTempo = {
+  \tempo 4=96
+  \time 4/4
+  R1*22
+  R1*4
+  r1 \tempo 4 = 100
+  r1 \tempo 4 = 104
+  r1 \tempo 4 = 108
+  r1 \tempo 4 = 112
+  r1 \tempo 4 = 116
+  r1 \tempo 4 = 120
+  r1 \tempo 4 = 124
+  r1 \tempo 4 = 128
+  r1 \tempo 4 = 132
+  r1 \tempo 4 = 136
+  r1 \tempo 4 = 140
+  r1 \tempo 4 = 144
+  r1 \tempo 4 = 148
+  r1 \tempo 4 = 150
+  r1
+  \tempo 4= 150
+  
+  \repeat volta 2 {
+    R1*24
+  }
+  
+  R1*8
+  
+  R1*15
+  
+  R1*4
+  
+  r1 \tempo 4 = 142
+  r1 \tempo 4 = 136
+  r1 \tempo 4 = 128
+  r1 \tempo 4 = 120
+  r1 \tempo 4 = 112
+  r1 \tempo 4 = 104
+  r1 \tempo 4 = 96
+
+  \tempo 4 = 96
+}
+
 drumMusic = \drummode {
   \time 4/4
   \tempo 4=96
@@ -369,7 +412,7 @@ accordionRight = \relative c' {
     r4 <g c f>4-. r4 <g c f>4-. |
     r4 \times 2/3 { r4 <fis c' f>8 } \times 2/3 { r4 <fis~ c'~ f~>8 } <fis c' f>4 |
     r4 <g c f>4-. r4 <g c f>4-. |
-    r4 \times 2/3 { <d g c>4 <fis~ c'~ f~>8 } <fis c' f>4 r4 |
+    r4 \times 2/3 { <g c f>4 <fis~ c'~ f~>8 } <fis c' f>4 r4 |
     
     r4 <g c f>4-. r4 <g c f>4-. |
     r4 \times 2/3 { r4 <f b e>8 } \times 2/3 { r4 <f~ b~ e~>8 } <f b e>4 |
@@ -412,8 +455,8 @@ accordionRight = \relative c' {
   <g c d e>2 <a~ d~ e~ fis~>4 \times 2/3 { <a d e fis>4 <gis d' e g>8 } |
   \times 2/3 { r4 <ais~ e'~ fis~ a~>8 } <ais~ e'~ fis~ a~>4 <ais e' fis a>2 |
   <g c d e>2 <a~ d~ e~ fis~>4 \times 2/3 { <a d e fis>4 <gis~ d'~ e~ g~>8 } |
-  <gis~ d'~ e~ g~>4 \times 2/3 { <gis d' e g>4 <ais~ e'~ fis~ a~>8 } <ais~ e'~ fis~ a~>4 \times 2/3 { <ais e' fis a>4 <c e fis ais>8-. }
-  f4-. a-. d-. c-. |
+  <gis~ d'~ e~ g~>4 \times 2/3 { <gis d' e g>4 <ais~ e'~ fis~ a~>8 } <ais~ e'~ fis~ a~>4 <ais e' fis a>4
+  f'4-. a-. d-. c-. |
   \times 2/3 { a8 d c } \times 2/3 { a b g } \times 2/3 { f bes as } \times 2/3 { f g des~-> } |
   \times 2/3 { des ges fes } \times 2/3 { des es ces } \times 2/3 { a d c } \times 2/3 { a b g } |
   \times 2/3 { a4 g8 } \times 2/3 { a4 g8 } \times 2/3 { a4 g8 } \times 2/3 { a4 g8 } |
@@ -421,7 +464,7 @@ accordionRight = \relative c' {
   <g c d e>2 <a d e fis>2 |
   <gis d' e g>2 <ais~ e'~ fis~ a~>4 \times 2/3 { <ais e' fis a>4 <c~ e~ fis~ ais~>8 } |
   <c~ e~ fis~ ais~>1\> |
-  <c e fis ais>1\! |
+  <c e fis ais>2. r4\! |
 
   \mark \default
   
@@ -831,6 +874,9 @@ BookBass = \book {
 Midi = \score {
   \bookOutputName \bookname
   <<
+    {
+      \unfoldRepeats \midiTempo
+    }
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.midiMinimumVolume = 0.3
