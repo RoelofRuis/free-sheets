@@ -2,6 +2,7 @@
 % -*- output: ./;
 
 globalOptions = {
+  \defineBarLine  "|!"  #'( #t #t #t )
   \compressEmptyMeasures
   \key c \minor
   \numericTimeSignature
@@ -183,7 +184,7 @@ drumMusic = \drummode {
   s1 |
   s1 |
   
-  \bar "!"
+  \bar "|!"
   
   s1 |
   s1 |
@@ -235,7 +236,7 @@ drumMusic = \drummode {
       }
       {
          s1
-         \bar "!"
+         \bar "|!"
          s1  
       }
     }
@@ -312,7 +313,7 @@ melody = \relative c'' {
   g2 r4 g8 g |
   f8 f f f g4 d8 es~ |
   
-  \bar "!"
+  \bar "|!"
   
   es1~ |
   es2 r2 |
@@ -365,7 +366,7 @@ melody = \relative c'' {
       }
       {
          d4. bes8 r8 d4-. c8~ |
-         \bar "!"
+         \bar "|!"
          c1  
       }
     }
@@ -436,7 +437,7 @@ bass = \relative c {
   as4. es8~ es2 |
   g4. d8~ d2 |
   
-  \bar "!"
+  \bar "|!"
   
   c4. es8~ es4. d8~ |
   d4. f8~ f4 bes,8 b |
@@ -484,7 +485,7 @@ bass = \relative c {
       }
       {
         g'2 d4. c8~ |
-        \bar "!"
+        \bar "|!"
         c4. es8~ es4. d8\laissezVibrer |
       }
     }
