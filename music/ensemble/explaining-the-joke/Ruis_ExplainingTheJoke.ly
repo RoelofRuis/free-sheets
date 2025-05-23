@@ -8,6 +8,8 @@ globalOptions = {
 }
 
 chordmusic = \chordmode {
+  \set noChordSymbol = ##f
+  
   \set chordChanges = ##t
 
   e2:7.9- es:9 |
@@ -262,6 +264,8 @@ chordmusic = \chordmode {
 }
 
 drumMusic = \drummode {
+  \tempo 2=65
+
   hihat2 2 |
   2 2 |
   2 2 |
@@ -272,6 +276,7 @@ drumMusic = \drummode {
   2 2 |
   
   \mark \default
+  \tempo 2 = 120
   
   hh8\p 8 r hh8 8 8 r hh8 |
   hh8 8 r hh8 hho2 |
@@ -285,7 +290,7 @@ drumMusic = \drummode {
   s1*16 |
   
   \mark \default
-  
+
   hh4->\mf r2. |
   r2. hh4 |
   hh4-> r2. |
