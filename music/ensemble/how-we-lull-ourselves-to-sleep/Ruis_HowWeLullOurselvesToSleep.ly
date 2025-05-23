@@ -7,10 +7,149 @@ globalOptions = {
   \tempo 4=102
 }
 
-chordmusic = \chordmode {
-  \set chordChanges = ##t
+metronomeMusic = \drummode {  
+  \tempo 4=102
+  \time 7/8
+
+  #(define mydrums '((sidestick default #f 0) (claves cross #f 0)))
+  \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
   
-  % Chord
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  \time 5/8
+  ss8[ cl8] ss8[ cl8 8] |
+  
+  \time 4/4
+  ss8[ cl8 8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8 8] |
+  
+  \time 7/8
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8] ss8[ cl 8 8 8] |
+  ss8[ cl8 8] ss8[ cl 8 8 8] |
+  ss8[ cl8 8] ss8[ cl 8 8 8] |
+  ss8[ cl8 8] ss8[ cl 8 8 8] |
+  
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  
+  % D
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  
+  % F
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8] ss8[ cl8 8 8] |
+  
+  % G
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  \time 5/8
+  ss8[ cl8] ss8[ cl8 8] |
+  
+  \time 4/4
+  ss8[ cl8 8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8 8] |
+
+  \time 7/8
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss4. |
+  
 }
 
 drumMusic = \drummode {
@@ -70,7 +209,7 @@ drumMusic = \drummode {
   2 4.
   4. 2
   4. 2
-  2 4.
+  4. 2
   2 r4. 
   r2 cymr4.
   2 4.
@@ -164,8 +303,7 @@ drumMusic = \drummode {
   2 4.
   2..
   
-  \bar "|."
-  
+  \bar "|." 
 }
 
 tenorSax = \relative c' {
@@ -693,7 +831,7 @@ BookFull = \book {
     print-all-headers = ##t
     %max-systems-per-page = 16
   }
-  
+
   \header {
     tagline = \docVersion
   }
@@ -705,10 +843,12 @@ BookFull = \book {
       tagline = \docVersion
     }
     <<
-      \new ChordNames { \chordmusic }
       \new Staff = "saxophone" { \tenorSax }
       \new Staff = "accordion" { \accordion }
-      \new Staff = "bass" { \bass }
+      \new Staff = "bass" { 
+        \key e \major
+        \bass
+      }
       \new DrumStaff = "drums" { \drumMusic }
     >>
   }
@@ -763,8 +903,39 @@ BookTenorSax = \book {
   
   \score {
     <<
-      \new ChordNames { \transpose bes c' { \chordmusic } }
       \new Staff { \transpose bes c' \tenorSax }
+    >>
+  }
+}
+
+BookTenorSaxMetronome = \book {
+  \bookOutputName #(string-append bookname "_TenorSax_Metronome")
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f
+    print-all-headers = ##f
+    max-systems-per-page = 6
+  }
+  
+  \header {
+    title = \title
+    composer = \composer
+    instrument = "Tenor Saxophone + Metronome"
+    tagline = \docVersion
+  }
+  
+  \score {
+    <<
+      \new Staff { \transpose bes c' \tenorSax }
+      \new DrumStaff \with { 
+        \magnifyStaff #3/4
+        \remove Time_signature_engraver
+        \hide Clef
+      } {
+        \override Staff.StaffSymbol.line-count = #0
+        \stemUp
+        \metronomeMusic
+      }
     >>
   }
 }
@@ -787,7 +958,6 @@ BookAccordion = \book {
   
   \score {
     <<
-      \new ChordNames { \chordmusic }
       \new Staff = "accordion" { \accordion }
     >>
   }
@@ -811,7 +981,6 @@ BookBass = \book {
   
   \score {
     <<
-      \new ChordNames { \chordmusic }
       \new Staff { 
         \key e \major
         \bass 
@@ -838,7 +1007,6 @@ BookBassAtonal = \book {
   
   \score {
     <<
-      \new ChordNames { \chordmusic }
       \new Staff {
         \bass 
       }
@@ -846,39 +1014,72 @@ BookBassAtonal = \book {
   }
 }
 
-Midi = \score {
+Midi = \book {
   \bookOutputName \bookname
-  <<
-    \new Staff = "saxophone" {
-      \set Staff.midiInstrument = "tenor sax"
-      \set Staff.midiMinimumVolume = 0.2
-      \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \tenorSax }
-    }
-    \new Staff = "accordion" {
-      \set Staff.midiInstrument = "reed organ"
-      \set Staff.midiMinimumVolume = 0.2
-      \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \accordion }
-    }
-    \new Staff = "bass" {
-      \set Staff.midiMinimumVolume = 0.2
-      \set Staff.midiMaximumVolume = 0.9
-      \set Staff.midiInstrument = "electric bass (finger)"
-      \transpose c c, { \bass }
-    }
-    \new DrumStaff = "drums" {
-      \drumMusic
-    }
-  >>
-  
-  \midi { }
+  \score {
+    <<
+      \new Staff = "saxophone" {
+        \set Staff.midiInstrument = "tenor sax"
+        \set Staff.midiMinimumVolume = 0.2
+        \set Staff.midiMaximumVolume = 0.9
+        \transpose c c, { \tenorSax }
+      }
+      \new Staff = "accordion" {
+        \set Staff.midiInstrument = "reed organ"
+        \set Staff.midiMinimumVolume = 0.2
+        \set Staff.midiMaximumVolume = 0.9
+        \transpose c c, { \accordion }
+      }
+      \new Staff = "bass" {
+        \set Staff.midiMinimumVolume = 0.2
+        \set Staff.midiMaximumVolume = 0.9
+        \set Staff.midiInstrument = "electric bass (finger)"
+        \transpose c c, { \bass }
+      }
+      \new DrumStaff = "drums" {
+        \drumMusic
+      }
+    >>
+    
+    \midi { }
+  }
+}
+
+MidiTenorMetronome = \book {
+  \bookOutputName #(string-append bookname "_tenor-metronome")
+
+  \score { 
+    <<
+      \new Staff = "saxophone" {
+        \set Staff.midiInstrument = "tenor sax"
+        \set Staff.midiMinimumVolume = 0.2
+        \set Staff.midiMaximumVolume = 0.9
+        \transpose c c, { 
+          \time 4/4
+          R1 |
+          \tenorSax 
+        }
+      }
+      \new DrumStaff = "drums" {
+        \tempo 4=102
+        \drummode {
+          \time 4/4
+          cl4 4 4 4 |
+        }
+        \metronomeMusic
+      }
+    >>
+
+    \midi { }
+  }
 }
 
 \Midi
+\MidiTenorMetronome
 \BookFull
 \BookDrums
 \BookTenorSax
+\BookTenorSaxMetronome
 \BookAccordion
 \BookBass
 \BookBassAtonal
