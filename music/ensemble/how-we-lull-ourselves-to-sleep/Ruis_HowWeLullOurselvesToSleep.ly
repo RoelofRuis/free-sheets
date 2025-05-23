@@ -14,6 +14,10 @@ metronomeMusic = \drummode {
   #(define mydrums '((sidestick default #f 0) (claves cross #f 0)))
   \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
 
+  \defineBarLine "|" #'( #t #t #t)
+  
+  \bar "|"
+
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
@@ -81,6 +85,14 @@ metronomeMusic = \drummode {
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
+  \time 5/8
+  ss8[ cl8] ss8[ cl8 8] |
+  \time 4/4
+  ss8[ cl8 8 8] ss8[ cl8 8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8 8] |
+  \time 7/8
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
@@ -88,11 +100,6 @@ metronomeMusic = \drummode {
   
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
-  ss8[ cl8 8 8] ss8[ cl8 8] |
-  ss8[ cl8 8 8] ss8[ cl8 8] |
-  
-  ss8[ cl8 8 8] ss8[ cl8 8] |
-  ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8] ss8[ cl8 8 8] |
   ss8[ cl8 8] ss8[ cl8 8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
@@ -105,8 +112,11 @@ metronomeMusic = \drummode {
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
-  ss8[ cl8 8] ss8[ cl8 8 8] |
-  ss8[ cl8 8] ss8[ cl8 8 8] |
+  \time 5/8
+  ss8[ cl8] ss8[ cl8 8] |
+  \time 9/8
+  ss8[ cl8 8 8] ss8[ cl8 8] ss8[ cl8] |
+  \time 7/8
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
@@ -169,7 +179,7 @@ drumMusic = \drummode {
   4. 2
   4. 2
   4. 2
-  2 r4.
+  4. r2
 
   \mark \default
 
@@ -183,7 +193,7 @@ drumMusic = \drummode {
   
   \time 4/4
   4 2 r4
-  cymr4. 8~ 2 |
+  cymr4. 4 4. |
 
   \time 7/8
   4 4 r4.
@@ -210,7 +220,7 @@ drumMusic = \drummode {
   4. 2
   4. 2
   4. 2
-  2 r4. 
+  4. r2
   r2 cymr4.
   2 4.
   2 4.
@@ -234,9 +244,12 @@ drumMusic = \drummode {
   2 4.
   2 4.
   2\stopTextSpan 4.
-  2 4.
-  2 r4.
-  cymr2 4.
+  \time 5/8
+  4 4. |
+  \time 4/4
+  4 4 r2 |
+  cymr2~ 8 4. |
+  \time 7/8
   2.. |
   
   \breathe
@@ -255,8 +268,11 @@ drumMusic = \drummode {
   2 4.
   2\< 4.
   2 4.
-  2~\mf\! 8 4~ |
-  4 4. 8[ 8] |
+  \time 5/8
+  2~\mf\! 8 
+  \time 9/8
+  2 4. 8[ 8] |
+  \time 7/8
   2 4.
   2 4.
   2..
@@ -276,7 +292,7 @@ drumMusic = \drummode {
   4. 2
   4. 2
   4. 2
-  2 r4.
+  4. r2
   
   \mark \default 
   
@@ -321,7 +337,7 @@ tenorSax = \relative c' {
   b4 fis8) fis4( dis |
   e4 dis8 cis4 b |
   b2..~ |
-  b2~ b8) r4 |
+  b4.~ b4) r4 |
   
   \mark \default
   gis4( b8[ e] a,[ cis fis] |
@@ -366,7 +382,7 @@ tenorSax = \relative c' {
   e4 b8) b'4( gis |
   a4 gis8 fis4 e |
   e2..~ |
-  e2) r4. |
+  e4.) r2 |
   
   r8 gis,8[( b e] a,[ cis fis] |
   e4 b8[) dis16( e] fis8[ cis e]) |
@@ -395,9 +411,12 @@ tenorSax = \relative c' {
   r8 c4. r8 c4 |
   r8 c4.\stopTextSpan r8 c4 |
 
-  r8 c2 d4 |
-  d2 r4. |
-  r8 c4. r8 c4 |
+  \time 5/8
+  r8 c2 
+  \time 4/4
+  d4 d2 r4 |
+  r4 c4. r8 c4 |
+  \time 7/8
   r8 bes8[ es a] g4.\fermata |
   
   \breathe
@@ -410,7 +429,14 @@ tenorSax = \relative c' {
   R2.. R2.. |
   f2..~\ff\> f2. r8\! |
   
-  R2..*11 |
+  R2..*7 |
+  \time 5/8
+  R1*5/8 |
+  \time 9/8
+  R1*9/8 |
+  \time 7/8
+  R2..*2 |
+  
   r4 as,( es' as8 
   g2) r8 e8[( d] |
   c2 e4 gis8 |
@@ -428,7 +454,7 @@ tenorSax = \relative c' {
   b4 fis8) fis4( dis |
   e4 dis8 cis4 b |
   b2..~ |
-  b2~ b8) r4 |
+  b4.~ b4) r4 |
   
   \mark \default
   gis4( b8[ e] a,[ cis fis] |
@@ -472,7 +498,7 @@ accordion = \relative c' {
   r8 b8~ <b fis'>8 <b' dis fis>4 <g b dis> |
   <f~ b~ e>4 <f b dis>8 <e~ gis~ cis>4 <e gis b>4 |
   b8~ <b~ d~> <b d g> cis8~ <cis fis~> <fis~ b~> <fis b e> |
-  <fis~ b~ dis~>2 <fis b dis>8 r4 |
+  <fis~ b~ dis~>4. <fis b dis>4 r4 |
 
   \mark \default
 
@@ -519,7 +545,7 @@ accordion = \relative c' {
   <dis f b>4. <des e bes'>2 |
   
   r8 e8~ <e gis> a~ <a~ c~> <a~ c~ f~> <a c f a> |
-  <b c e gis>2 r4. |
+  <b c e gis>4. r2 |
   
   r2 r8 f~ <f b>8 |
   r8 g8~ <g cis>4 fis8~ <fis cis'>4 |
@@ -548,9 +574,12 @@ accordion = \relative c' {
   r8 g8[ c e] a,[ d fis] |
   e4 b8 e16 fis gis8[ e b] |
   e4 b8\stopTextSpan e16 fis g8[ e c] |
-  c4 a4 b8 c4 |
-  b2 r4 a16 g |
-  es4 g8 b b4 a8 |
+  \time 5/8
+  c4 a4 b8 
+  \time 4/4
+  c4 b2 r4 
+  a16 g es4 g8 b b4 a8 |
+  \time 7/8
   g2~ g4. \stopStaff |
   
   \breathe
@@ -587,8 +616,11 @@ accordion = \relative c' {
   
   <b e gis>2\< <cis fis ais>4. |
   <dis gis bis>4. r8 <f a c>4. |
-  <f~ as~ c~>4\!\mf <f as c>4. <es~ as~ c~>4 |
-  <es as c>4 <d g c>4. r4 |
+  \time 5/8
+  <f~ as~ c~>4\!\mf <f as c>4. |
+  \time 9/8
+  <es as c>2 <d g c>4. r4 |
+  \time 7/8
   <d f c'>2.. 
   <f as c>2.. |
   <f g c~>2.. 
@@ -611,7 +643,7 @@ accordion = \relative c' {
   r8 b8~ <b fis'>8 <b' dis fis>4 <g b dis> |
   <f~ b~ e>4 <f b dis>8 <e~ gis~ cis>4 <e gis b> |
   b8~ <b~ d~> <b d g> cis8~ <cis fis~> <fis~ b~> <fis b e> |
-  <fis~ b~ dis~>2 <fis b dis>8 r4 |
+  <fis~ b~ dis~>4. <fis b dis>4 r4 |
   
   \mark \default
   
@@ -657,7 +689,7 @@ bass = \relative c, {
   fis4. ais4 a |
   gis4. fis2 |
   d4. cis2 |
-  b2~ b8 r4 |
+  b4.~ b4 r4 |
   
   \mark \default
   e,2 fis4. |
@@ -702,7 +734,7 @@ bass = \relative c, {
   cis4. c2 |
   
   b2..~ |
-  b2 r4. |
+  b4. r2 |
 
   r2 g4. |
   a2 ais4. |
@@ -732,9 +764,12 @@ bass = \relative c, {
   e2 f4. |
   e2\stopTextSpan f4. |
   
-  fis!2 fis4. |
-  g2 r4. |
-  es2 d4. |
+  \time 5/8
+  fis!2~ fis8 |
+  \time 4/4
+  fis4 g2 r4 |
+  r8 es2 d4. |
+  \time 7/8
   g2..\fermata |
   
   \breathe
@@ -756,8 +791,11 @@ bass = \relative c, {
   a4 e8 a16 b cis8[ a e] |
   r8\< c[ f a] d,[ g b] |
   a4 e8 a16 b c8[ a f] |
-  f4\!\mf d4 e8 f4~ |
-  f4 e4. d8[ c] |
+  \time 5/8
+  f4\!\mf d4 e8
+  \time 9/8
+  f2 e4. d8[ c] |
+  \time 7/8
   as2 c4 e8
   e2 d4. |
   c2.. |
@@ -780,7 +818,7 @@ bass = \relative c, {
   fis4. ais4 a |
   gis4. fis2 |
   d4. cis2 |
-  b2~ b8 r4 |
+  b4.~ b4 r4 |
   
   \mark \default
   \ottava 0
@@ -923,7 +961,7 @@ BookTenorSaxMetronome = \book {
     instrument = "Tenor Saxophone + Metronome"
     tagline = \docVersion
   }
-  
+
   \score {
     <<
       \new Staff { \transpose bes c' \tenorSax }
@@ -937,6 +975,13 @@ BookTenorSaxMetronome = \book {
         \metronomeMusic
       }
     >>
+    
+    \layout {
+      \context {
+        \Score
+        \remove System_start_delimiter_engraver
+      }
+    }
   }
 }
 
