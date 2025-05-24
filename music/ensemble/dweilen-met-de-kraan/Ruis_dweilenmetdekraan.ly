@@ -11,16 +11,84 @@ globalOptions = {
 chordmusic = \chordmode {
   \set chordChanges = ##t
   
-  % Chord
+  s1*18 | 
+  
+  \mark \default
+  f1:m |
+  bes1:m |
+  f:m |
+  bes:m |
+  f:m |
+  bes:m |
+  f:m |
+  bes2:m c:7.9- |
+  bes2:7 as |
+  bes2:7 as |
+  bes2:7 as |
+  bes2:m c:7.9- |
+  bes2:7 as |
+  bes:7 as |
+  bes:7 as |
+  bes:m c:7.9- |
+  f1:m |
+  bes:m |
+  f1 |
+  bes:m |
+  f1 |
+  bes:m |
+  f1 |
+  f4 es des es |
+  f1 |
+  f2. d4:7.10- |
+  
+  \mark \default
+  g4:m f:maj9 e2:m7.5- |
+  es4:maj7 d:7  c2:m9.5- |
+  g4:m f:maj9 e2:m7.5- |
+  a2:7 d:7.10- |
+  
+  g4:m f:maj9 e2:m7.5- |
+  es4:maj7 d:7 c2:m9.5- |
+  g4:m f:maj9 e:m7.5- d:7.10- |
+  c1:7 |
+  f2:7 bes |
+  bes:m c:7 |
+  f1 |
+  des4 bes8 f8 s2 |
+  
+  \mark \default
+
+  \repeat volta 2 {
+    g2:m f |
+    e1:m7.5- |
+    es2:maj7 d:7 |
+    c1:m9.5- |
+    
+    g2:m f |
+    e1:m7.5- |
+    a1:7.9- |
+    d1:9 |
+    
+    g2:m f |
+    e1:m7.5- |
+    es2:maj7 d:7 |
+    c1:m9.5- |
+    
+    g2:m f |
+    es2:maj7 d:7 |
+    c2:m d:7.9- |
+    g1:m |
+  }
+  
 }
 
 drumMusic = \drummode {
   \numericTimeSignature
   \tempo 4=120
-  tomh8. tomml toml tomh toml8 cymc8
+  tomh8.\f tomml toml tomh toml8 cymc8
   \repeat tremolo 8 sn32 sn8-> toml8 sn16-> 16 16 16 16-> toml8. |
   
-  hh16-> 16 16 16 16-> 16 16 16 16-> 16 16 16 16-> 16 16 16
+  hh16->\mp 16 16 16 16-> 16 16 16 16-> 16 16 16 16-> 16 16 16
   hh16-> 16 16 16 16-> 16 16 16 16-> 16 16 16 16-> 16 16 16
   hh16-> 16 16 16 16-> 16 16 16 16-> 16 16 16 16-> 16 16 16
   sn16-> 16 r tomh r tomml32 32 toml16 16 sn16-> 16 16 16 16 cymc8. |
@@ -28,13 +96,18 @@ drumMusic = \drummode {
   hh16-> 16 16 16 16-> 16 16 16 16-> 16 16 16 16-> 16 16 16
   hh16-> 16 16 16 16-> 16 16 16 16-> 16 16 16 16-> 16 16 16
   
-  r2 hh16-> 16 16 16-> 16 16 16-> 16 |
+  r2 hh16->\f 16 16 16-> 16 16 16-> 16 |
   
-  s1*8 |
+  s16\mp s8. s4 s2 |
+  s1*6 |
+  r8. sn16 16 r8 sn16 8 16 16 r sn8. |
   
   \mark \default
   
-  s1*26 |
+  bd8. bd16 sn16 8 bd16 bd8. 16 sn16 8 bd16 |
+  bd8. bd16 sn16 8 bd16 bd8. 16 sn16 8 bd16 |
+  
+  s1*24 |
   
   \mark \default
   
@@ -42,16 +115,32 @@ drumMusic = \drummode {
   
   \mark \default
 
+  \repeat volta 2 {
+    bd8. bd16 r4 bd8. bd16 r4 |
+    bd8. bd16 r4 bd8. bd16 r4 |
+    s1*2
+    \break
+    
+    s1*4
+    \break
+    
+    s1*4
+    \break
+    
+    s1*4
+    \break
+  }
+
 }
 
 tenorSax = \relative c'' {
   \globalOptions
   \clef treble
   
-  g8. a bes c-. d8-. es~ |
+  g8.\f a bes c-. d8-. es~ |
   es2 es16 f es d es-. fis,8. |
   
-  g8-. r8  r4 r4 c16 d g, bes |
+  g8-.\mp r8  r4 r4 c16 d g, bes |
   R1 |
   \grace { bes16 a as } g16 d' g fis g f d bes? c b c d c bes g f |
   bes-. e,8. r4 f16 bes c bes c-. fis,8. |
@@ -122,7 +211,10 @@ tenorSax = \relative c'' {
   es f es des bes e f8 r2 |
   
   \mark \default
-  \bar "||"
+  
+  \repeat volta 2 {
+    s1*16 |
+  }
  
   \bar "|."
 }
@@ -131,10 +223,10 @@ accordion = \relative c'' {
   \globalOptions
   \clef treble
   
-  <bes d g>8. <c f a> <d g bes> <es g c>8.-. <f bes d>8-. <ges~ bes~ es~> |
+  <bes d g>8.\f <c f a> <d g bes> <es g c>8.-. <f bes d>8-. <ges~ bes~ es~> |
   <ges bes es>2 es'16 f es d es-. fis,8. |
   
-  g,8-. r8  r4 r4 c16 d g, bes |
+  g,8-.\mp r8  r4 r4 c16 d g, bes |
   R1 |
   g16 d' g fis g f d bes? c b c d c bes g f |
   bes-. e,8. r4 f16 bes c bes c-. fis,8. |
@@ -142,8 +234,8 @@ accordion = \relative c'' {
   g8-. r8 r4 r4 c16 d g, bes |
   R1 |
   g16 d' g fis g f d bes c ces bes a c-. f, fis g |
-  r2  <g' bes>16[ d <g bes>] <g a>[ cis, <g' a>] <fis a>[ c] |
-  <bes d g>8-. r8  r4 r4 c16 d g, bes |
+  r2  <g' bes>16[\f d <g bes>] <g a>[ cis, <g' a>] <fis a>[ c] |
+  <bes d g>8-.\mp r8  r4 r4 c16 d g, bes |
   r1 |
   g16 d' g fis g f d bes? c b c d c bes g f |
   bes-. e,8. r4 f16 bes c bes c-. fis,8. |
@@ -203,7 +295,33 @@ accordion = \relative c'' {
   es f es des bes as <a c f>8 r2 |
   
   \mark \default
-  \bar "||"
+  
+  \repeat volta 2 {
+    <d f g bes>2 <d f a c>2 |
+    <d e g bes>1 |
+    <d es g bes>2 <c d fis a> |
+    <d es ges bes>1 |
+    \break
+   
+    <d f g bes>2 <d f a c>2 |
+    <d e g bes>1 |
+    <cis e g bes>1 |
+    <c e fis a>1 |
+    \break
+    
+    <d f g bes>2 <d f a c>2 |
+    <d e g bes>1 |
+    <d es g bes>2 <c d fis a> |
+    <d es ges bes>1 |
+    \break
+    
+    <d f g bes>2 <d f a c>2 |
+    <d es g bes>2 <c d fis a> |
+    <c es g a>2 <c es fis a>2 |
+    <bes c d g>1 |
+    \break
+  }
+  
   
   
   
@@ -214,10 +332,10 @@ bass = \relative c {
   \globalOptions
   \clef bass
 
-  g8. f e es d8 c~ |
+  g8.\f f e es d8 c~ |
   c2 d4-. r4 |
 
-  g8-. r8  r4 r4 c16 d g, bes |
+  g8-.\mp r8  r4 r4 c16 d g, bes |
   R1 |
   g16 d' g fis g f d bes c b c d c bes g f |
   bes-. e,8. r4 f16 bes c bes c-. fis,8. |
@@ -225,14 +343,14 @@ bass = \relative c {
   g8-. r8 r4 r4 c16 d g, bes |
   R1 |
   g16 d' g fis g f d bes c ces bes a c-. f, fis g |
-  r2 g8. a8. b8 |
+  r2 g8.\f a8. b8 |
   
-  g8-. r8  r4 r4 c16 d g, bes |
-  r8 d des c f16-. b,8. e16-. bes8. |
+  g8-.\mp r8  r4 r4 c16 d g, bes |
+  r8^\markup { \italic "ad lib. tussen unisono" } \magnifyMusic 0.6 { d des c f16-. b,8. e16-. bes8. } |
   g16 d' g fis g f d bes c b c d c bes g f |
-  bes-. e,8. a8-. g-. f16 bes c bes c-. fis,8. |
+  bes-. e,8. \magnifyMusic 0.6 { a8-. g-. } f16 bes c bes c-. fis,8. |
   
-  g8 r16 g16 d' g cis, c r4 c16 d g, bes |
+  g8 \magnifyMusic 0.6 { r16 g16 d' g cis, c r4 } c16 d g, bes |
   R1 |
   g16 d' g fis g f d bes c ces bes a c-. f, fis g |
   r8. g'16 f r8 f16 es8 es16 des16 r des8. |
@@ -287,7 +405,20 @@ bass = \relative c {
   b bes8 f r2 |
   
   \mark \default
-  \bar "||"
+  
+  \repeat volta 2 {
+    s1*4 |
+    \break
+    
+    s1*4 |
+    \break
+    
+    s1*4 |
+    \break
+    
+    s1*4 |
+    \break
+  }
   
   \bar "|."
 
@@ -339,6 +470,37 @@ BookFull = \book {
         \consists Mark_engraver
         \consists Text_mark_engraver
         \consists Staff_collecting_engraver
+      }
+    }
+  }
+}
+
+BookDrums = \book {
+  \bookOutputName #(string-append bookname "_Drums")
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f 
+    print-all-headers = ##f
+    max-systems-per-page = 12
+  }
+
+  \header {
+    title = \title
+    composer = \composer
+    instrument = "Drums - outline"
+    tagline = \docVersion
+  }
+  
+  \score {
+    <<
+      \new DrumStaff { \drumMusic }
+    >>
+    
+    \layout {
+      \context {
+        \Score
+        \override SpacingSpanner.uniform-stretching = ##t
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
       }
     }
   }
@@ -423,19 +585,19 @@ Midi = \score {
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.midiMinimumVolume = 0.6
       \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \tenorSax }
+      \transpose c c, { \unfoldRepeats { \tenorSax } }
     }
     \new Staff = "accordion" {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.3
       \set Staff.midiMaximumVolume = 0.6
-      \transpose c c, { \accordion }
+      \transpose c c, { \unfoldRepeats { \accordion } }
     }
     \new Staff = "bass" {
       \set Staff.midiMinimumVolume = 0.4
       \set Staff.midiMaximumVolume = 0.9
       \set Staff.midiInstrument = "electric bass (finger)"
-      \transpose c c, { \bass }
+      \transpose c c, { \unfoldRepeats { \bass } }
     }
     \new DrumStaff = "drums" {
       \unfoldRepeats { \drumMusic }
@@ -448,6 +610,7 @@ Midi = \score {
 
 \Midi
 \BookFull
+\BookDrums
 \BookTenorSax
 \BookAccordion
 \BookBass
