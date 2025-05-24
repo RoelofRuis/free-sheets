@@ -15,6 +15,8 @@ chordmusic = \chordmode {
 }
 
 drumMusic = \drummode {
+  \numericTimeSignature
+  \tempo 4=120
   tomh8. tomml toml tomh toml8 cymc8
   \repeat tremolo 8 sn32 sn8-> toml8 sn16-> 16 16 16 16-> toml8. |
   
@@ -25,6 +27,20 @@ drumMusic = \drummode {
   hh16-> 16 16 16 16-> 16 16 16 16-> 16 16 16 16-> 16 16 16
   hh16-> 16 16 16 16-> 16 16 16 16-> 16 16 16 16-> 16 16 16
   hh16-> 16 16 16 16-> 16 16 16 16-> 16 16 16 16-> 16 16 16
+  
+  r2 hh16-> 16 16 16-> 16 16 16-> 16 |
+  
+  s1*8 |
+  
+  \mark \default
+  
+  s1*26 |
+  
+  \mark \default
+  
+  s1*12 |
+  
+  \mark \default
 
 }
 
@@ -104,6 +120,9 @@ tenorSax = \relative c'' {
   
   r16 f bes a bes a f c as'8 as16 bes as f es c |
   es f es des bes e f8 r2 |
+  
+  \mark \default
+  \bar "||"
  
   \bar "|."
 }
@@ -182,6 +201,11 @@ accordion = \relative c'' {
   des'8 des16 es des bes as f bes c bes g e es d c |
   r16 f bes a bes a f c as'8 as16 bes as f es c |
   es f es des bes as <a c f>8 r2 |
+  
+  \mark \default
+  \bar "||"
+  
+  
   
   \bar "|."
 }
@@ -262,6 +286,8 @@ bass = \relative c {
   f4 es d des |
   b bes8 f r2 |
   
+  \mark \default
+  \bar "||"
   
   \bar "|."
 

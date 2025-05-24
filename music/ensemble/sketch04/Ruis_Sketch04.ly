@@ -318,21 +318,6 @@ BookFull = \book {
       >>
       \new Staff = "bass" \bass
     >>
-  
-    \layout {
-      \context {
-        \Score
-        \remove Mark_engraver
-        \remove Text_mark_engraver
-        \remove Staff_collecting_engraver
-      }
-      \context {
-        \Staff
-        \consists Mark_engraver
-        \consists Text_mark_engraver
-        \consists Staff_collecting_engraver
-      }
-    }
   }
 }
 
