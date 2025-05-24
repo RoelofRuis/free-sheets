@@ -21,11 +21,11 @@ chordmusic = \chordmode {
   f:m |
   bes:m |
   f:m |
-  bes2:m c:7.9- |
+  bes2:m c:7.10- |
   bes2:7 as |
   bes2:7 as |
   bes2:7 as |
-  bes2:m c:7.9- |
+  bes2:m c:7.10- |
   bes2:7 as |
   bes:7 as |
   bes:7 as |
@@ -42,14 +42,14 @@ chordmusic = \chordmode {
   f2. d4:7.10- |
   
   \mark \default
-  g4:m f:maj9 e2:m7.5- |
+  g4:m f:9 e2:m7.5- |
   es4:maj7 d:7  c2:m9.5- |
-  g4:m f:maj9 e2:m7.5- |
+  g4:m f:9 e2:m7.5- |
   a2:7 d:7.10- |
   
-  g4:m f:maj9 e2:m7.5- |
+  g4:m f:9 e2:m7.5- |
   es4:maj7 d:7 c2:m9.5- |
-  g4:m f:maj9 e:m7.5- d:7.10- |
+  g4:m f:9 e:m7.5- d:7.10- |
   c1:7 |
   f2:7 bes |
   bes:m c:7 |
@@ -59,26 +59,45 @@ chordmusic = \chordmode {
   \mark \default
 
   \repeat volta 2 {
-    g2:m f |
+    g2:m7 f:7 |
     e1:m7.5- |
     es2:maj7 d:7 |
     c1:m9.5- |
     
-    g2:m f |
+    g2:m7 f:7 |
     e1:m7.5- |
     a1:7.9- |
     d1:9 |
     
-    g2:m f |
+    g2:m7 f:7 |
     e1:m7.5- |
     es2:maj7 d:7 |
     c1:m9.5- |
     
-    g2:m f |
+    g2:m7 f:7 |
     es2:maj7 d:7 |
-    c2:m d:7.9- |
-    g1:m |
+    c2:m7 d:7.9- |
+    \alternative {
+      { g1:m7 }
+      { g2:m7 c:7.13- }
+    }
   }
+  
+  f1:maj9 |
+  bes:m9 |
+  f:maj9 |
+  bes:m9 |
+  f:maj9 |
+  bes:m9 |
+  f:maj9 |
+  bes2:m9 c2:10-.13- |
+  
+  bes2:7 as2:7 |
+  bes2:7 as2:7 |
+  bes2:7 as2:7 |
+  bes2:m9 c:7.10- |
+  
+  
   
 }
 
@@ -114,6 +133,7 @@ drumMusic = \drummode {
   s1*12 |
   
   \mark \default
+  \break
 
   \repeat volta 2 {
     bd8. bd16 r4 bd8. bd16 r4 |
@@ -127,9 +147,28 @@ drumMusic = \drummode {
     s1*4
     \break
     
-    s1*4
+    s1*3
+    \alternative {
+      { s1 }
+      { s1 }
+    }
     \break
   }
+  
+  s1*4 |
+  \break
+  
+  s1*4 |
+  \break
+  
+  \bar "||"
+  
+  s1*3 |
+  hh2 sn8-> sn16\< 16 16 16 16 16\! |
+  
+  \mark \default
+  
+  s1*4 |
 
 }
 
@@ -212,9 +251,41 @@ tenorSax = \relative c'' {
   
   \mark \default
   
+  \break
   \repeat volta 2 {
-    s1*16 |
+    s1*4 |
+    \break
+    
+    s1*4 |
+    \break
+    
+    s1*4 |
+    \break
+    
+    s1*3 |
+    \alternative {
+      { s1 }
+      { s1 }
+    }
+    \break
   }
+  
+  s1*4 |
+  \break
+  
+  s1*4 |
+  \break
+ 
+  s1*3 |
+  s2 s8 c'16 d e fis gis ais |
+  \break
+  
+  \mark \default
+  
+  b16 f b f b f b f b c8 as16~ as4 |
+  b16 f b f b f b f b c r4. |
+  b16 f b f b f b f b c8 as16~ as4 |
+  b16 g f des c8 bes b8 c es8 des |
  
   \bar "|."
 }
@@ -296,35 +367,62 @@ accordion = \relative c'' {
   
   \mark \default
   
+  \break
   \repeat volta 2 {
-    <d f g bes>2 <d f a c>2 |
+    <d f g bes>2 <es g a c>2 |
     <d e g bes>1 |
     <d es g bes>2 <c d fis a> |
     <d es ges bes>1 |
     \break
    
-    <d f g bes>2 <d f a c>2 |
+    <d f g bes>2 <es g a c>2 |
     <d e g bes>1 |
     <cis e g bes>1 |
     <c e fis a>1 |
     \break
     
-    <d f g bes>2 <d f a c>2 |
+    <d f g bes>2 <es g a c>2 |
     <d e g bes>1 |
     <d es g bes>2 <c d fis a> |
     <d es ges bes>1 |
     \break
     
-    <d f g bes>2 <d f a c>2 |
+    <d f g bes>2 <es g a c>2 |
     <d es g bes>2 <c d fis a> |
-    <c es g a>2 <c es fis a>2 |
-    <bes c d g>1 |
+    <c es g bes>2 <c es fis a>2 |
+    \alternative {
+      { <a bes d g>1 | }
+      { <a bes d g>2 <as c e g> | }
+    }
+    
     \break
   }
   
+  <a c e g>1 |
+  <as c des f>1 |
+  <a c e g>1 |
+  <as c des f>1 |
+  <a c e g>1 |
+  <as c des f>1 |
+  <a c e g>1 |
+  <as c des f>2 <e as bes es>2 |
   
+  \break
+    
+  \bar "||"
+  <d as' bes c>2 <c ges' as bes>2 |
+  <d as' bes c>2 <c ges' as bes>2 |
+  <d as' bes c>2 <c ges' as bes>2 |
+  <des f as c>2 <e as bes es>8 c'16 d e fis gis ais |
+
+  \break
+  \mark \default
   
-  
+  f16 d f d f d f d f ges8 d16~ d4 |
+  f16 d f d f d f d f ges r4. |
+  f16 d f d f d f d f ges8 c,16~ c4 |
+  f16 des bes f es8 des g4 e |
+
   \bar "|."
 }
 
@@ -405,20 +503,63 @@ bass = \relative c {
   b bes8 f r2 |
   
   \mark \default
+  \break
   
   \repeat volta 2 {
-    s1*4 |
+    g'8. g16 r4 f8. f16 r4 |
+    e8. e16 r4 e8. e16 r4 |
+    es8. es16 r4 d8. d16 r4 |
+    c8. c16 r4 c8. c16 r4 |
     \break
     
-    s1*4 |
+    g8. g16 r4 f8. f16 r4 |
+    e8. e16 r4 e8. e16 r4 |
+    a8. a16 r4 a8. a16 r4 |
+    d8. d16 r4 d8. d16 r4 |
     \break
     
-    s1*4 |
+    g8. g16 r4 f8. f16 r4 |
+    e8. e16 r4 e8. e16 r4 |
+    es8. es16 r4 d8. d16 r4 |
+    c8. c16 r4 c8. c16 r4 |
     \break
     
-    s1*4 |
+    g'8. g16 r4 f8. f16 r4 |
+    es8. es16 r4 d8. d16 r4 |
+    c8. c16 r4 d8. d16 r4 |
+    \alternative {
+      { g,8. g16 r4 g8. g16 r4 }
+      { g8. g16 r4 c8. c16 r4 }
+    }
     \break
   }
+
+  f8. f16 r8 r8 f8. f16 r8 f8 |
+  bes8. bes16 r8 bes8 bes4 g4 |
+  f8. f16 r8 f8 f8. f16 r4 |
+  bes8. bes16 r8 bes8-. r8 bes4. |
+  \break
+
+  f8. f16 r8 r8 f8. f16 r8 f8 |
+  bes8. bes16 r8 bes8 bes4 g4 |
+  f8. f16 r8 f8 f8. f16 r4 |
+  bes8. bes16 r8 bes8-. c4 c4 |
+  \break
+  
+  \bar "||"
+  
+  bes8. bes8. bes8 as8. as8. as8 |
+  bes8. bes8. bes8 as8. as8. as8 |
+  bes8. bes8. bes8 as8. as8. as8 |
+  bes8. bes8. bes8 c8 r4. |
+  \break
+
+  \mark \default
+  
+  bes8. bes8. bes8 as8. as8. as8 |
+  bes8. bes8. bes8 as8. as8. as8 |
+  bes8. bes8. bes8 as8. as8. as8 |
+  bes8. bes8. bes8 c8. c8. c8 |
   
   \bar "|."
 
