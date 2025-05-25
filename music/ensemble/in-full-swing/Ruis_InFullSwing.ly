@@ -1506,7 +1506,7 @@ bass = \relative c {
   g''2.\)
   \revert NoteHead.style
   \ottava 0
-  d,,,4. c4. |
+  d,,4. c4. |
   bes4. bes4 d8\( |
   e a r8 a4 d,8 |
   e a r8 a4.\)
