@@ -78,7 +78,6 @@ chordmusic = \chordmode {
   
 }
 
-
 voltaRepeat = \markup { \text \bold "Repeat" }
 voltaEnding = \markup { \text \bold "Ending" }
 
@@ -89,50 +88,50 @@ melody = \relative c'' {
   \textMark \markup \pad-around #1 { \doubleQuaver = \tupletII }
   \clef treble
   
-  \partial 4 r8 g8\( |
+  \partial 4 r8 g8 |
   g4 c8-. c8~ c4 d4 |
-  e4 c8-. c8~ c4\) r8 a8\( |
+  e4 c8-. c8~ c4 r8 a8 |
   g4 c-. d-. e-. |
-  f4 c8 g'8 r8 f8~ f4\) |
+  f4 c8 g'8 r8 f8~ f4 |
   \break
-  e4\( c8-. c8~ c4 a8-. a8~ |
+  e4 c8-. c8~ c4 a8-. a8~ |
   a4 f8-. f8~ f4 d8-. d8~ |
-  d1\) |
-  r2. r8 g8\( |
+  d1 |
+  r2. r8 g8 |
   \break
   g4 c8-. c8~ c4 d4 |
-  e4 c8-. c8~ c4\) r8 a8\( |
+  e4 c8-. c8~ c4 r8 a8 |
   g4 c-. d-. e-. |
-  f4 c8 g'8 r8 f8~ f4\) |
+  f4 c8 g'8 r8 f8~ f4 |
   \break
-  e4\( c8-. c8~ c4 a8-. a8~ |
+  e4 c8-. c8~ c4 a8-. a8~ |
   a4 f4 d4 b8 c8~ |
-  c1\) |
-  r2. r8 e'8\( |
+  c1 |
+  r2. r8 e'8 |
   \break
   
   \bar "||"
   \mark \default
 
-  e4 c8-. c8~ c4\) r8 g'8\( |
-  g4 a,8-. a8~ a4\) r8 e'8\( |
+  e4 c8-. c8~ c4 r8 g'8 |
+  g4 a,8-. a8~ a4 r8 e'8 |
   e4 c-. b-. c-. |
-  a2.\) g4\( |
+  a2. g4 |
   \break
   c4 d-. e-. f-. |
   g2 \times 2/3 { c4 b c } |
-  g1\) |
-  r2. r8 e8\(
+  g1 |
+  r2. r8 e8
   \break
-  e4 c8-. c8~ c4\) r8 g'8\( |
-  g4 a,8-. a8~ a4\) r8 e'8\( |
+  e4 c8-. c8~ c4 r8 g'8 |
+  g4 a,8-. a8~ a4 r8 e'8 |
   e4 c-. b-. c-. |
-  a2.\) r4 |
+  a2. r4 |
   \break
-  e'4\( c8-. c~ c4 a8-. a~ |
+  e'4 c8-. c~ c4 a8-. a~ |
   a4 f4 d b8 c~ |
-  c1\) |
-  r2. c4\( |
+  c1|
+  r2. c4 |
   \break
   
   \bar "||"
@@ -141,23 +140,23 @@ melody = \relative c'' {
   c'2 b8 a r8 g |
   r a r4 c,4 d8 e~ |
   e1~ |
-  e2\) r4 c4\( |
+  e2 r4 c4 |
   \break
   c'2 b8 a r8 g |
   r a r4 c,4 d8 e~ |
   e1~ |
-  e2\) r4 c4\( | 
+  e2 r4 c4 | 
   \break
-  c'2 b8 a r8 g\) |
-  r2. c,4\( |
-  a'2 g8 f r8 e\) |
-  r2. f4\( |
+  c'2 b8 a r8 g~ |
+  g4 r2 c,4 |
+  a'2 g8 f r8 e~ |
+  e4 r2 f4 |
   \break
   e4 g8-. g~ g4 a |
   es4 \grace { f16 es } c8 d8~ d2~ |
   \bar "|"
   \set Score.repeatCommands = #(list(list 'volta voltaRepeat) 'start-repeat)
-  d1\) |
+  d1 |
   r2. r8 g8 |
   \set Score.repeatCommands = #(list(list 'volta voltaEnding) 'end-repeat)
   d2.\repeatTie c4 |
