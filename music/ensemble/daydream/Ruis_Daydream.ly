@@ -3,11 +3,8 @@
 
 \include "swing.ly"
 
-globalOptions = {
-  \compressEmptyMeasures
-  \key c \major
-  \numericTimeSignature
-}
+doubleQuaver = \markup \rhythm { 8[ 8] }
+tupletII = \markup \rhythm { \tuplet 3/2 { 4 8 } }
 
 chordmusic = \chordmode {
   \set chordChanges = ##t
@@ -74,15 +71,25 @@ chordmusic = \chordmode {
   as1/bes |
   as1/bes |
   as1/bes |
+
+  as1/bes |
+  as4/bes as4/c es4/c bes/c |
+  c1 |
   
 }
 
+
+voltaRepeat = \markup { \text \bold "Repeat" }
+voltaEnding = \markup { \text \bold "Ending" }
+
 melody = \relative c'' {
-  \globalOptions
+  \key c \major
+  \numericTimeSignature
+  \tweak font-size -2
+  \textMark \markup \pad-around #1 { \doubleQuaver = \tupletII }
   \clef treble
   
   \partial 4 r8 g8\( |
-  \mark \default
   g4 c8-. c8~ c4 d4 |
   e4 c8-. c8~ c4\) r8 a8\( |
   g4 c-. d-. e-. |
@@ -147,12 +154,20 @@ melody = \relative c'' {
   r2. f4\( |
   \break
   e4 g8-. g~ g4 a |
-  es4 \grace { f8 es } c8 d8~ d2~ |
+  es4 \grace { f16 es } c8 d8~ d2~ |
+  \bar "|"
+  \set Score.repeatCommands = #(list(list 'volta voltaRepeat) 'start-repeat)
   d1\) |
   r2. r8 g8 |
+  \set Score.repeatCommands = #(list(list 'volta voltaEnding) 'end-repeat)
+  d2.\repeatTie c4 |
+  \set Score.repeatCommands = #'((volta #f))
+  c'1~ |
+  c1 |
 
   \bar "|."
 }
+
 
 % --- BOOKS --- %
 title = "Daydream"
