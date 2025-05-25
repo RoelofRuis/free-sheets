@@ -53,8 +53,8 @@ chordmusic = \chordmode {
   c1:7 |
   f2:7 bes |
   bes:m c:7 |
-  f1 |
-  des4 bes8 f8 s2 |
+  f4 f/es d:m7.5- des:maj7 |
+  des4/b bes8 f8 s2 |
   
   \mark \default
 
@@ -95,9 +95,35 @@ chordmusic = \chordmode {
   bes2:7 as2:7 |
   bes2:7 as2:7 |
   bes2:7 as2:7 |
-  bes2:m9 c:7.10- |
+  bes2:7 c:7.10- |
   
+  \mark \default
   
+  bes2:7 as2:7 |
+  bes2:7 as2:7 |
+  bes2:7 as2:7 |
+  bes2:7 c:7.10- |
+  
+  bes2:7 as2:7 |
+  bes2:7 as2:7 |
+  bes2:7 as2:7 |
+  bes2:7 a4:7 d:7 |
+  
+  \mark \default
+  
+  g4:m f:9 e2:m7.5- |
+  es4:maj7 d:7  c2:m9.5- |
+  g4:m f:9 e2:m7.5- |
+  a2:7 d:7.10- |
+  
+  g4:m f:9 e2:m7.5- |
+  es4:maj7 d:7 c2:m9.5- |
+  g4:m f:9 e:m7.5- d:7.10- |
+  c1:7 |
+  f2:7 bes |
+  bes:m c:7 |
+  f4 f/es d:m7.5- des:maj7 |
+  des4/b bes8 f8 s2 |
   
 }
 
@@ -123,34 +149,64 @@ drumMusic = \drummode {
   
   \mark \default
   
-  bd8. bd16 sn16 8 bd16 bd8. 16 sn16 8 bd16 |
-  bd8. bd16 sn16 8 bd16 bd8. 16 sn16 8 bd16 |
+  bd8. bd16 hh16 8 16 bd8. 16 hh16 8 16 |
+  bd8. bd16 hh16 8 16 bd8. 16 hh16 8 16 |
   
-  s1*24 |
+  s1*6
   
+  bd8. 8. 8 8. 8. 8 |
+  8. 8. 8 8. 8. 8
+  
+  s1*6
+  
+  bd8. bd16 hh16 8 16 bd8. 16 hh16 8 16 |
+  bd8. bd16 hh16 8 16 bd8. 16 hh16 8 16 |
+  
+  s1*5
+  
+  hh4 4 4 4 |
+  hh8. 16 r8 hh8 r8 hh8 16 16 8 |
+  hh8. 16 r8 hh8 r4 cymc4 |
+
   \mark \default
-  
-  s1*12 |
+
+  bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16 bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16
+  bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16 bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16
+
+  s1*6 |
+  sn4 r4 sn4 r4 |
+  sn4 r4 sn4 r4 |
+  hh4 4 4 4 |
+  4 8 8-> r2 |
   
   \mark \default
   \break
 
   \repeat volta 2 {
+    bd8.^\markup { \bold "Solo's over scheme" } bd16 r4 bd8. bd16 r4 |
+    bd8. bd16 r4 r8 bd8.[ bd16] r8 |
+    bd8. bd16 r4 bd8. bd16 r4 |
+    bd8. bd16 r4 r8 bd8.[ bd16] r8 |
+    \break
+
+    bd8. bd16 r4 bd8. bd16 r4 |
+    bd8. bd16 r4 r8 bd8.[ bd16] r8 |
+    bd8. bd16 r4 r8 bd8.[ bd16] r8 |
+    bd8. bd16 r4 r8 bd8.[ bd16] r8 |
+    \break
+
+    bd8. bd16 r4 bd8. bd16 r4 |
+    bd8. bd16 r4 r8 bd8.[ bd16] r8 |
+    bd8. bd16 r4 bd8. bd16 r4 |
+    bd8. bd16 r4 r8 bd8.[ bd16] r8 |
+    \break
+
     bd8. bd16 r4 bd8. bd16 r4 |
     bd8. bd16 r4 bd8. bd16 r4 |
-    s1*2
-    \break
-    
-    s1*4
-    \break
-    
-    s1*4
-    \break
-    
-    s1*3
+    bd8. bd16 r4 bd8. bd16 r4 |
     \alternative {
-      { s1 }
-      { s1 }
+      { bd8. bd16 r4 r8 bd8.[ bd16] r8 | }
+      { bd8. bd16 r4 bd8. bd16 r4 | }
     }
     \break
   }
@@ -166,10 +222,24 @@ drumMusic = \drummode {
   s1*3 |
   hh2 sn8-> sn16\< 16 16 16 16 16\! |
   
+  \bar "||"
+  
   \mark \default
   
-  s1*4 |
+  s1*8 |
+  
+  \mark \default
+  
+  bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16 bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16
+  bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16 bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16
 
+  s1*6 |
+  sn4 r4 sn4 r4 |
+  sn4 r4 sn4 r4 |
+  hh4 4 4 4 |
+  4 8 8-> r2 |
+
+  \bar "|."
 }
 
 tenorSax = \relative c'' {
@@ -253,7 +323,7 @@ tenorSax = \relative c'' {
   
   \break
   \repeat volta 2 {
-    s1*4 |
+    s1*4^\markup { \bold "Solo's over scheme" } |
     \break
     
     s1*4 |
@@ -276,16 +346,42 @@ tenorSax = \relative c'' {
   s1*4 |
   \break
  
+  \bar "||"
+ 
   s1*3 |
   s2 s8 c'16 d e fis gis ais |
   \break
   
   \mark \default
+  \bar "||"
   
-  b16 f b f b f b f b c8 as16~ as4 |
+  b16 f b f b f b f b c8-. as16~ as4 |
+  b16 f b f b f b f b c r4. |
+  b16 f b f b f b f b c8-. as16~ as4 |
+  b16 g f des c8-. bes-. b16 c r4. |
+  
+  b'16 f b f b f b f b c8 as16~ as4 |
   b16 f b f b f b f b c r4. |
   b16 f b f b f b f b c8 as16~ as4 |
-  b16 g f des c8 bes b8 c es8 des |
+  b16 g f des c8 bes a8 g' f bes, |
+ 
+  \mark \default
+  
+  g8-. r8  r4 r4 c16 d g, bes |
+  R1 |
+  \grace { bes16 a as } g16 d' g fis g f d bes? c b c d c bes g f |
+  bes-. e,8. r4 f16 bes c bes c-. fis,8. |
+
+  g8-. r8 r4 r4 c16 d g, bes |
+  R1 |
+  g16 d' g fis g f d bes c ces bes a c-. f, fis g~ |
+  g2. r4 |
+  
+  f16 c' es d es b c cis d8 d16 es d c bes g |
+  des'8 des16 es des bes as f bes c bes g e es d c |
+  
+  r16 f bes a bes a f c as'8 as16 bes as f es c |
+  es f es des bes e f8 r2 |
  
   \bar "|."
 }
@@ -369,7 +465,7 @@ accordion = \relative c'' {
   
   \break
   \repeat volta 2 {
-    <d f g bes>2 <es g a c>2 |
+    <d f g bes>2^\markup { \bold "Solo's over scheme" } <es g a c>2 |
     <d e g bes>1 |
     <d es g bes>2 <c d fis a> |
     <d es ges bes>1 |
@@ -413,7 +509,9 @@ accordion = \relative c'' {
   <d as' bes c>2 <c ges' as bes>2 |
   <d as' bes c>2 <c ges' as bes>2 |
   <d as' bes c>2 <c ges' as bes>2 |
-  <des f as c>2 <e as bes es>8 c'16 d e fis gis ais |
+  <d as' bes c>2 <e as bes es>8 fis16 gis ais c d e |
+  
+  \bar "||"
 
   \break
   \mark \default
@@ -421,7 +519,29 @@ accordion = \relative c'' {
   f16 d f d f d f d f ges8 d16~ d4 |
   f16 d f d f d f d f ges r4. |
   f16 d f d f d f d f ges8 c,16~ c4 |
-  f16 des bes f es8 des g4 e |
+  f16 des bes f es8 des d16 e r4. |
+  
+  f'16 d f d f d f d f ges8 d16~ d4 |
+  f16 d f d f d f d f ges r4. |
+  f16 d f d f d f d f ges8 c,16~ c4 |
+  f16 des bes f es8 des <g cis e>4 <fis c' f> |
+
+  \mark \default
+  
+  r8 <g bes d> r <g a c> r <g bes d> r <g bes d> |
+  r8 <g bes d> r <fis a c> r <ges bes d> r <ges bes d> |
+  r8 <g bes d> r <g a c> r <g bes d> r <g bes d> |
+  r8 <g cis e> r <g cis e> r <fis c' f> r <fis c' f> |
+  
+  r8 <g bes d> r <g a c> r <g bes d> r <g bes d> |
+  r8 <g bes d> r <fis a c> r <ges bes d> r <ges bes d> |
+  r8 <g bes d> r <g a c> r <g bes d> r <fis c' f> |
+  <g bes e>2. r4 |
+  
+  f'16 c' es d es b c cis d8 d16 es d c bes g |
+  des'8 des16 es des bes as f bes c bes g e es d c |
+  r16 f bes a bes a f c as'8 as16 bes as f es c |
+  es f es des bes as <a c f>8 r2 |
 
   \bar "|."
 }
@@ -506,29 +626,29 @@ bass = \relative c {
   \break
   
   \repeat volta 2 {
-    g'8. g16 r4 f8. f16 r4 |
-    e8. e16 r4 e8. e16 r4 |
+    g'8.^\markup { \bold "Solo's over scheme" } g16 r4 f8. f16 r4 |
+    e8. e16 r4 r8 e8.[ e16] r8 |
     es8. es16 r4 d8. d16 r4 |
-    c8. c16 r4 c8. c16 r4 |
+    c8. c16 r4 r8 c8.[ c16] r8 |
     \break
     
     g8. g16 r4 f8. f16 r4 |
-    e8. e16 r4 e8. e16 r4 |
-    a8. a16 r4 a8. a16 r4 |
-    d8. d16 r4 d8. d16 r4 |
+    e8. e16 r4 r8 e8.[ e16] r8 |
+    a8. a16 r4 r8 a8.[ a16] r8 |
+    d8. d16 r4 r8 d8.[ d16] r8 |
     \break
     
     g8. g16 r4 f8. f16 r4 |
-    e8. e16 r4 e8. e16 r4 |
+    e8. e16 r4 r8 e8.[ e16] r8 |
     es8. es16 r4 d8. d16 r4 |
-    c8. c16 r4 c8. c16 r4 |
+    c8. c16 r4 r8 c8.[ c16] r8 |
     \break
     
     g'8. g16 r4 f8. f16 r4 |
     es8. es16 r4 d8. d16 r4 |
     c8. c16 r4 d8. d16 r4 |
     \alternative {
-      { g,8. g16 r4 g8. g16 r4 }
+      { g,8. g16 r4 r8 g8.[ g16] r8 }
       { g8. g16 r4 c8. c16 r4 }
     }
     \break
@@ -553,13 +673,36 @@ bass = \relative c {
   bes8. bes8. bes8 as8. as8. as8 |
   bes8. bes8. bes8 c8 r4. |
   \break
-
+  
+  \bar "||"
   \mark \default
   
-  bes8. bes8. bes8 as8. as8. as8 |
+  bes,8. bes8. bes8 as8. as8. as8 |
   bes8. bes8. bes8 as8. as8. as8 |
   bes8. bes8. bes8 as8. as8. as8 |
   bes8. bes8. bes8 c8. c8. c8 |
+
+  bes8. bes8. bes8 as8. as8. as8 |
+  bes8. bes8. bes8 as8. as8. as8 |
+  bes8. bes8. bes8 as8. as8. as8 |
+  bes8. bes8. bes8 a4 d4 |
+  
+  \mark \default
+  
+  g8. g16 f16-. f8 f16 e8. e16 g16-. g8 g16 |
+  es8. es16 d16-. d8 d16 c8. c16 fis16-. fis8 fis16 |
+  g8. g16 f16-. f8 f16 e8. e16 g16-. g8 g16 |
+  a,8. a16 cis16-. cis8 cis16 d8. d16 f16-. f8 fis16 |
+  
+  g8. g16 f16-. f8 f16 e8. e16 g16-. g8 g16 |
+  es8. es16 d16-. d8 d16 c8. c16 fis16-. fis8 fis16 |
+  g8. g16 f16-. f8 f16 es8. es16 d16-. d8 fis16 |
+  c8. c16 bes8. bes16 a8. a16 g4 |
+
+  f4-> r4 bes4-> r4 |
+  bes4-> r4 c4-> r4 |
+  f4 es d des |
+  b bes8 f r2 |
   
   \bar "|."
 
@@ -570,7 +713,7 @@ title = "Dweilen met de kraan"
 bookname = "dweilenmetdekraan"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
-docVersion = #(string-append "outline - version " date)
+docVersion = #(string-append "version " date)
 
 BookFull = \book {
   \bookOutputName #(string-append bookname "_Full")
@@ -631,7 +774,7 @@ BookDrums = \book {
     instrument = "Drums - outline"
     tagline = \docVersion
   }
-  
+
   \score {
     <<
       \new DrumStaff { \drumMusic }
