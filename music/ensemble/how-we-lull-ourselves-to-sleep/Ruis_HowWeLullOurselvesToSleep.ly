@@ -277,7 +277,7 @@ drumMusic = \drummode {
   4 4. |
   \time 4/4
   4 4 r2 |
-  cymr2~ 8 4. |
+  cymr4. 4 4. |
   \time 7/8
   2.. |
   
@@ -331,11 +331,11 @@ drumMusic = \drummode {
   2 4.
   
   \time5/8
-  2~ 8
+  4. 4
   
   \time 4/4
   4 2 r4 |
-  4 2 4 |
+  4. 4 4. |
   
   \time 7/8
   cymr4 4 r4. 
