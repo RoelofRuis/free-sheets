@@ -7,6 +7,36 @@ globalOptions = {
   \tempo 2=65
 }
 
+midiTempo = {
+  \tempo 2=65
+  R1*6
+  \tempo 2=60 r4 \tempo 2=55 r4 \tempo 2=50 r4 \tempo 2=45 r4 |
+  \tempo 2=120
+  R1*24
+  R1*32
+  R1*14
+  R1*16
+  R1*16
+  R1*12
+  R1*7
+  \tempo 2=110
+  R1*2
+  \tempo 2=120
+  R1*14
+  R1*32
+  R1*22
+  R1*12
+  R1*16
+  R1*8
+  \tempo 2=115 r2 \tempo 2=110 r2
+  \tempo 2=105 r2 \tempo 2=100 r2
+  \tempo 2=95 r2 \tempo 2=90 r2
+  \tempo 2=85 r2 \tempo 2=80 r2
+  \tempo 2=75 r2 \tempo 2=70 r2
+  \tempo 2=65 r1
+  r1*2 |
+}
+
 chordmusic = \chordmode {
   \set noChordSymbol = ##f
   
@@ -1435,6 +1465,9 @@ BookBass = \book {
 Midi = \score {
   \bookOutputName \bookname
   <<
+    {
+      \midiTempo
+    }
     \new Staff = "saxophone" {
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.midiMinimumVolume = 0.6
