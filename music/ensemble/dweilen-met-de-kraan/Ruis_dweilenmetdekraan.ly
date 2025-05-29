@@ -239,8 +239,8 @@ drumMusic = \drummode {
   
   \bar "||"
   
-  s1*3 |
-  hh2 sn8-> sn16\< 16 16 16 16 16\! |
+  s1*3\p\cresc |
+  hh2\endcresc sn8-> sn16\< 16 16 16 16 16\! |
   
   \bar "||"
   
@@ -258,7 +258,9 @@ drumMusic = \drummode {
   bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16 bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16
   bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16 bd16 hh16 16 sn16 sn16-> bd16 hh16 bd16
 
-  s1*8 |
+  s1*5
+  s2 s8. sn16-> r16 sn8.-> |
+  s1*2 |
 
   s1*6 |
   sn4 r4 sn4 r4 |
@@ -380,8 +382,8 @@ tenorSax = \relative c'' {
  
   \bar "||"
  
-  s1*3 |
-  s2 s8 c'16\< d e fis gis ais\! |
+  s1*3\p\cresc |
+  s2 s8\endcresc c'16\< d e fis gis ais\! |
   \break
   
   \mark \default
@@ -479,10 +481,10 @@ accordionRight = \relative c'' {
 
   as16 c bes c as8-. as16 c bes c as8-. r16 as bes as |
   bes16-. f8. r4 f16 a f e f-. des8. |
-  a'16 c b c a8-. a16 c b c a8-. r16 a b c |
+  a'16 c b c a8-. a16 c b c a8-. r16 a bes c |
   des4 r4 c16 des c bes c as8 g16 |
 
-  a16 c b c a8-. a16 c b c a8-. r16 a b c |
+  a16 c b c a8-. a16 c b c a8-. r16 a bes c |
   bes16-. f8. r4 f16 a f e f-. des8. |
   a'16 c b c a8-. a16 c b c a8-. r16 a b a |
   r16 f g a bes c d es des c as g f8 es |
@@ -492,7 +494,15 @@ accordionRight = \relative c'' {
   
   \mark \default
   
-  s1*8
+  g8-. r8  r4 r4 c16 d g, bes |
+  R1 |
+  g16 d' g fis g f d bes c b c d c bes g f |
+  bes-. e,8. r4 f16 bes c bes c-. fis,8. |
+
+  g8-. r8 r4 r4 c16 d g, bes |
+  R1 |
+  g16 d' g fis g f d bes c ces bes a c-. f, fis g~ |
+  g2. r4 |
   
   f'16 c' es d es b c cis d8 d16 es d c bes g |
   des'8 des16 es des bes as f bes c bes g e es d c |
@@ -546,17 +556,17 @@ accordionRight = \relative c'' {
   \break
     
   \bar "||"
+  <d as' bes c>2\p\cresc <c ges' as bes>2 |
   <d as' bes c>2 <c ges' as bes>2 |
   <d as' bes c>2 <c ges' as bes>2 |
-  <d as' bes c>2 <c ges' as bes>2 |
-  <d as' bes c>2 <e as bes es>8 fis16 gis ais c d e |
+  <d as' bes c>2\endcresc <e as bes es>8 fis16\< gis ais c d e |
   
   \bar "||"
 
   \break
   \mark \default
   
-  f16\f d f d f d f d f ges8-. d16~ d8 f8->~ |
+  f16\!\f d f d f d f d f ges8-. d16~ d8 f8->~ |
   f16 d f16 d f d f d f ges r4. |
   r8 f16 d f d f d f ges8-. c,16~ c4 |
   f16 des bes f es8 des es16 e r4. |
@@ -575,7 +585,6 @@ accordionRight = \relative c'' {
 
   g8-. r8 r4 r4 c16 d g, bes |
   R1 |
-  
   g16 d' g fis g f d bes c ces bes a c-. f, fis g |
   R1 |
 
@@ -586,7 +595,6 @@ accordionRight = \relative c'' {
 
   g8-. r8 r4 r4 c16 d g, bes |
   R1 |
-
   g16 d' g fis g f d bes c ces bes a c-. f, fis g~ |
   g2. r4 |
   
@@ -669,11 +677,13 @@ accordionLeft = {
     r8 <g bes d> r <fis a c> r <ges bes d> r <ges bes d> |
     r8 <g bes d> r <g a c> r <g bes d> r <fis c' f> |
     <g bes e>2. r4 |
-
-    s1*4
   }
   
   \clef bass
+  f,4-> r4 bes,4-> r4 |
+  bes,4-> r4 c4-> r4 |
+  f,4 es, d des |
+  b, bes,8 f, r2 |
   
   \mark \default
   
@@ -895,10 +905,10 @@ bass = \relative c {
   
   \bar "||"
   
+  bes8.\p\cresc bes8. bes8 as8. as8. as8 |
   bes8. bes8. bes8 as8. as8. as8 |
   bes8. bes8. bes8 as8. as8. as8 |
-  bes8. bes8. bes8 as8. as8. as8 |
-  bes8. bes8. bes8 c8 r4. |
+  bes8. bes8. bes8 c8\endcresc r4. |
   \break
   
   \bar "||"

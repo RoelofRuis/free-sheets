@@ -762,14 +762,25 @@ accordion = \relative c'' {
   <e~ bes'~ es~>1
   <e~ bes'~ es~>1
   <e bes' es>2 r2
+
   R1*4 |
   
-  s1*8
-  
-  s1*6
-  
-  <e bes' es>1 |
-  r8 <as~ des~ f~>8^\markup { "Bellows shake" } <as~ des~ f~>8 <as~ des~ f~>8 <as~ des~ f~>8 <as~ des~ f~>8 <as~ des~ f~>8 <as des f>8 |
+  g4. bes4. g4-. |
+  as2 c2 |
+  g4. bes4. g4-. |
+  as2 c2 |
+  c4. e4. c4-. |
+  des4 c8 as8 r8 f4-. e8~ |
+  e1 |
+  r1 |
+  g4. bes4. g4-. |
+  as2 c2 |
+  g4. bes4. g4-. |
+  as2 c2 |
+  c4. e4. c4-. |
+  des4 c8 as-. r8 f'4-. <es~ bes~ e,~>8 |
+  <es bes e,>1 |
+  r8 <as,~ des~ f~>8^\markup { "Bellows shake" } <as~ des~ f~>8 <as~ des~ f~>8 <as~ des~ f~>8 <as~ des~ f~>8 <as~ des~ f~>8 <as des f>8 |
   
   % Theme
   \mark \default
@@ -779,8 +790,8 @@ accordion = \relative c'' {
   r2. e4 |
   f4 r2. |
   r2. g4 |
-  b4. b4.-. c4 |
-  r4 <bes b f'>4-. 8 8 r4 |
+  f4. f4.-. e4 |
+  r4 <bes' b f'>4-. 8 8 r4 |
   
   e,4 r2. |
   r2. e4 |
@@ -1276,7 +1287,7 @@ bass = \relative c {
   
   as,2-> as2-> |
   es'4.-> es4.-> es4 |
-  d4 d d d |
+  d4-. d d-. d |
   g,4 r4 g2 |
   
   \mark \default
