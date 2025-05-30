@@ -1,19 +1,35 @@
 \version "2.24"
 % -*- output: ./;
 
-majorPhrygian = #`((0 . ,NATURAL) (1 . ,FLAT) (2 . ,NATURAL) (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,FLAT) (6 . ,FLAT))
-
 globalOptions = {
   \compressEmptyMeasures
-  \key g \majorPhrygian
   \numericTimeSignature
-  \tempo 4=180
+  \tempo 4=160
 }
 
 chordmusic = \chordmode {
   \set chordChanges = ##t
   
   % Chord
+}
+
+drumMusic = \drummode {
+  \numericTimeSignature
+
+  bd4. 4. 4~ |
+  8 4. 4 4 |
+  bd4. 4. 4~ |
+  8 4. 4 4 |
+  bd4. 4. 4~ |
+  8 4. 4 4 |
+  bd4. 4. 4~ |
+  8 4. 4 4 |
+  bd4. 4. 4~ |
+  8 4. 4 4 |
+  bd4. 4. 4~ |
+  8 4. 4 4 |
+  
+  \bar "|."
 }
 
 tenorSax = \relative c'' {
@@ -25,10 +41,11 @@ tenorSax = \relative c'' {
   \bar "|."
 }
 
-accordion = \relative c'' {
+accordionLeft = \relative c'' {
   \globalOptions
   \clef treble
   
+  R1*3 |
   r2. g8 as |
   b4 b8 as b c as as |
   r8 g8~ g4 r4 g8 as |
@@ -54,6 +71,15 @@ accordion = \relative c'' {
   \bar "|."
 }
 
+accordionRight = \relative c'' {
+  \globalOptions
+  \clef treble
+  
+  % Music
+  
+  \bar "|."
+}
+
 bass = \relative c {
   \globalOptions
   \clef bass
@@ -65,8 +91,8 @@ bass = \relative c {
 }
 
 % --- BOOKS --- %
-title = "Sketch 05"
-bookname = "Sketch05"
+title = "Nou nog eentje dan"
+bookname = "NouNogEentjeDan"
 composer = "Roelof Ruis"
 date = #(strftime "%d-%m-%Y %H:%M" (localtime (current-time)))
 docVersion = #(string-append "outline - version " date)
@@ -93,22 +119,42 @@ BookFull = \book {
     <<
       \new ChordNames { \chordmusic }
       \new Staff = "saxophone" \tenorSax
-      \new Staff = "accordion" \accordion
+      \new GrandStaff = "accordion" <<
+        \new Staff \accordionRight
+        \new Staff \accordionLeft
+      >>
       \new Staff = "bass" \bass
+      \new DrumStaff = "drums" \drumMusic
     >>
+  }
+}
+
+BookDrums = \book {
+  \bookOutputName #(string-append bookname "_Drums")
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f 
+    print-all-headers = ##f
+    max-systems-per-page = 12
+  }
+
+  \header {
+    title = \title
+    composer = \composer
+    instrument = "Drums - outline"
+    tagline = \docVersion
+  }
   
+  \score {
+    <<
+      \new DrumStaff { \drumMusic }
+    >>
+    
     \layout {
       \context {
         \Score
-        \remove Mark_engraver
-        \remove Text_mark_engraver
-        \remove Staff_collecting_engraver
-      }
-      \context {
-        \Staff
-        \consists Mark_engraver
-        \consists Text_mark_engraver
-        \consists Staff_collecting_engraver
+        \override SpacingSpanner.uniform-stretching = ##t
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
       }
     }
   }
@@ -157,7 +203,10 @@ BookAccordion = \book {
   \score {
     <<
       \new ChordNames { \chordmusic }
-      \new Staff { \accordion }
+      \new GrandStaff <<
+        \new Staff { \accordionRight }
+        \new Staff { \accordionLeft }
+      >>
     >>
   }
 }
@@ -193,19 +242,28 @@ Midi = \score {
       \set Staff.midiInstrument = "tenor sax"
       \set Staff.midiMinimumVolume = 0.6
       \set Staff.midiMaximumVolume = 0.9
-      \transpose c c, { \tenorSax }
+      \transpose c c, { \unfoldRepeats \tenorSax }
     }
-    \new Staff = "accordion" {
+    \new Staff = "accordionRight" {
       \set Staff.midiInstrument = "reed organ"
       \set Staff.midiMinimumVolume = 0.3
       \set Staff.midiMaximumVolume = 0.6
-      \transpose c c, { \accordion }
+      \transpose c c, { \unfoldRepeats \accordionRight }
+    }
+    \new Staff = "accordionLeft" {
+      \set Staff.midiInstrument = "reed organ"
+      \set Staff.midiMinimumVolume = 0.3
+      \set Staff.midiMaximumVolume = 0.6
+      \transpose c c, { \unfoldRepeats { \accordionLeft } }
     }
     \new Staff = "bass" {
       \set Staff.midiMinimumVolume = 0.4
       \set Staff.midiMaximumVolume = 0.9
       \set Staff.midiInstrument = "electric bass (finger)"
-      \transpose c c, { \bass }
+      \transpose c c, { \unfoldRepeats \bass }
+    }
+    \new DrumStaff = "drums" {
+      \unfoldRepeats { \drumMusic }
     }
   >>
   
@@ -215,6 +273,7 @@ Midi = \score {
 
 \Midi
 \BookFull
-%\BookTenorSax
-%\BookAccordion
-%\BookBass
+\BookDrums
+\BookTenorSax
+\BookAccordion
+\BookBass
