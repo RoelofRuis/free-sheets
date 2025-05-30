@@ -34,6 +34,24 @@ midiTempo = {
   \time 7/8
   R1*5*7/8
   \tempo 4=102
+  R1*13*7/8
+  \time 5/8
+  R1*5/8
+  \time 9/8
+  R1*9/8
+  \time 7/8
+  R1*8*7/8
+  R1*9*7/8
+  R1*4*7/8
+  \time 5/8
+  R1*5/8
+  \time 4/4
+  R1*2
+  \time 7/8
+  R1*15*7/8
+  r4 \tempo 4=95 r4 \tempo 4=90 r4 \tempo 4=80 r8 |
+  r4 \tempo 4=75 r4 \tempo 4=70 r4 \tempo 4=65 r8 |
+  R1*7/8 |
 }
 
 metronomeMusic = \drummode {  
@@ -179,6 +197,15 @@ metronomeMusic = \drummode {
   ss8[ cl8 8 8] ss8[ cl8 8 8] |
 
   \time 7/8
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
+  ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
   ss8[ cl8 8 8] ss8[ cl8 8] |
@@ -346,6 +373,15 @@ drumMusic = \drummode {
   2 4.
   2 4.
   2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2 4.
+  2..
   2..
   
   \bar "|." 
@@ -499,14 +535,23 @@ tenorSax = \relative c' {
   e8[ cis ais] ais4 cis e8 |
   
   \time 7/8
-  e4 dis4) r8 e8[( dis] |
+  e4 dis4) e4( dis8 |
   cis2 e4 gis8) |
   dis2( g4 ais8) |
   gis2( e4. | 
   cis2 b4.) |
+  ais2 cis4 e8 |
+  dis2 g4 ais8 |
+  gis2..~ |
+  gis2 e4( dis8 |
+  cis2 e4 gis8) |
+  dis2( g4 ais8) |
+  gis2( e4. |
+  cis2 b4.) |
   g2( b4 dis8 dis2 cis4. |
-  b4) d( g cis8 |
-  b2..) |
+  b4) d(^\markup { \italic "molto rit." } g cis8 |
+  b2..~ |
+  b2..)\fermata |
   
   \bar "|."
   
@@ -696,10 +741,21 @@ accordion = \relative c' {
   <gis b dis~>2.. |
   <g b dis>2.. |
   
+  <g ais fis'>4 <g ais dis> <g ais e'> <g ais dis>8 |
+  <dis g b>2 <g b dis>4. |
+  <e gis b>2.. |
+  <dis f b>2 <cis e b'>4. |
+
+  <gis' b fis'>4 <gis b dis> <gis b e> <gis b dis>8 |
+  <g b>2 <g b cis>4. |
+  <gis b dis~>2.. |
+  <g b dis>2.. |
+  
   <g b fis'>4 <g b dis> <g b e> <g b dis>8 |
-  <g b>2 <g cis>4. |
-  <cis, g' b>2.. |
-  <b dis e fis b>2.. |  
+  <f b>2 <e g cis>4. |
+  <cis g' b>2..^\markup { \italic "molto rit." } |
+  <b~ dis~ e~ fis~ b~>2.. |
+  <b dis e fis b>2..\fermata |
   
   \bar "|."
 }
@@ -872,12 +928,21 @@ bass = \relative c, {
   gis,2.. |
   g2.. |
   e2.. |
-  f2.. |
+  fis2.. |
   
   cis2.. 
+  dis2.. |
   e2.. |
-  g2.. 
+  f2 fis4. |
+  gis2.. |
+  g2.. |
+  e2.. |
+  ais,2.. |
+  cis2.. |
+  dis2 e4 fis8 |
+  g2..^\markup { \italic "molto rit." }
   fis2.. |
+  b,2..\fermata |
   
   \bar "|."
 
