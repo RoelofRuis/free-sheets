@@ -12,19 +12,19 @@ chordmusic = \chordmode {
   \partial 4 s4 |
   c1 |
   fis:m7.5- |
-  f2/c c/bes |
-  f/a f:m/as |
-  f1/d |
-  f/g |
+  f2 c:7 |
+  f f:m |
+  d1:m |
+  g:sus7 |
   bes1:7 |
   bes:7 |
   
   c1 |
   fis:m7.5- |
-  f2/c c/bes |
-  f/a f:m/as |
-  f1/d |
-  f/g |
+  f2 c:7 |
+  f f:m |
+  d1:m |
+  g:sus7 |
   c2 f2 |
   c1 |
   
@@ -32,50 +32,50 @@ chordmusic = \chordmode {
   
   f1 |
   fis:m7.5- |
-  c2/e c/a |
-  c2/d d2:7 |
+  c2 a:m |
+  d:sus7 d2:7 |
   
-  f2/g g/f |
-  c/e f/d |
-  bes1/c |
+  g:sus7 g:7 |
+  c d:m |
+  c1:sus7 |
   c:7 |
   
   f1 |
   fis:m7.5- |
-  c2/e c/a |
-  c/d d:7 |
+  c2 a:m |
+  d:sus7 d:7 |
   
-  f1/d |
-  f/g |
+  d1:m |
+  g:sus7 |
   c2 f |
   c1 |
   
   \mark \default
   
-  c2/a c/d |
-  f1/g |
+  a2:m d:sus7 |
+  g1:sus7 |
   e:7/c |
   e:7/b |
   
-  c2/a c/d |
-  f1/g |
+  a2:m d:sus7 |
+  g1:sus7 |
   c:7 |
   c2:7/d c:7/e |
   
-  f2 f/g |
+  f2 g:sus7 |
   c1:7/e |
   f2 f/es |
   f/d f/des |
   
-  bes1/c |
-  as1/bes |
-  as1/bes |
-  as1/bes |
+  c1:sus7 |
+  bes1:sus7 |
+  bes:sus7 |
+  bes:sus7 |
 
-  as1/bes |
+  bes:sus7 |
   as4/bes as4/c es4/c bes/c |
   c1 |
-  
+
 }
 
 voltaRepeat = \markup { \text \bold "Repeat" }
