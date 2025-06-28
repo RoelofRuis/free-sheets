@@ -835,13 +835,13 @@ BookAccordion = \book {
     instrument = "Accordion"
     tagline = \docVersion
   }
-  
+
   \score {
     <<
       \new ChordNames { \chordmusic }
       \new GrandStaff <<
         \new Staff { \accordionRight }
-        \new Staff { \accordionLeft }
+        \new Staff \with { \RemoveAllEmptyStaves } { \accordionLeft }
       >>
     >>
   }

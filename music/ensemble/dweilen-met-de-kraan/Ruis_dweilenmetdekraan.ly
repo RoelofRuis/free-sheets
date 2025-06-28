@@ -1091,6 +1091,30 @@ BookAccordion = \book {
   }
 }
 
+BookAccordionRight = \book {
+  \bookOutputName #(string-append bookname "_AccordionRight")
+  \paper {
+    indent = 0.0
+    ragged-last-bottom = ##f
+    print-all-headers = ##f
+    max-systems-per-page = 12
+  }
+  
+  \header {
+    title = \title
+    composer = \composer
+    instrument = "Accordion"
+    tagline = \docVersion
+  }
+  
+  \score {
+    <<
+      \new ChordNames { \chordmusic }
+      \new Staff { \accordionRight }
+    >>
+  }
+}
+
 BookBass = \book {
   \bookOutputName #(string-append bookname "_Bass")
   \paper {
@@ -1156,4 +1180,5 @@ Midi = \score {
 \BookDrums
 \BookTenorSax
 \BookAccordion
+\BookAccordionRight
 \BookBass
