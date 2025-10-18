@@ -95,6 +95,12 @@ movementTwoRight = {
     <bes d,>4. <a c,>8 <bes d,> <c e,>4 <c~ e,~>8 |
     <c e,>4 <e g,> <c e,> <e g,> |
     <c e,>4 <e g,> <c e,> <e g,> |
+    
+    <f a,>4 <g bes,>8 <a~ c,~>8 <a c,>4 <c es,>4 |
+    <c es,>4 <bes d,> <bes d,> <a c,>4 |
+    <bes d,>4 <c es,>8 <d~ f,~>8 <d f,>4 <f a,>4 |
+    <f a,>4 <e g,>4 <e g,>2 |
+    
 
   }
 }
@@ -175,7 +181,7 @@ movementTwoLeft = {
     << { f1 } \\ { r8 es4 c'8~ c4 es, } >> |
     << { f1 } \\ { r8 e?4 c'8~ c4 e, } >> |
     << { f1 } \\ { r8 es4 c'8~ c4 es, } >> |
-    << { f1 } \\ { r8 e?4 bes'8~ bes4 e, } >> |
+    << { f1 } \\ { r8 e?4 d'8~ d4 e, } >> |
 
     << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
     << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
@@ -185,6 +191,8 @@ movementTwoLeft = {
     << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
     << { g1 } \\ { r8 f4 d'8~ d4 f, } >> |
     << { bes1 } \\ { r8 as4 e'8~ e4 gis, } >> |
+    c2 fis2 |
+    
     
     
   }
