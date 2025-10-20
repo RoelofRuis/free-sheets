@@ -29,7 +29,7 @@ rightHand = \relative c'' {
     a8 b d c |
     f8 es gis fis 
     b2~\)
-    b8-. c\( g es |
+    b8-. c!\( g! es |
     f4. d8 |
     es4 c8 as\) |
   } \\ { 
@@ -46,7 +46,7 @@ rightHand = \relative c'' {
   c4 bes8 a |
   d4.\) d8\( |
   g4 es8 c |
-  b4.\) b8\( |
+  b!4.\) b8\( |
   g'4 es8 c |
   a4.\) a8\( |
   d4. b8 |
@@ -131,7 +131,7 @@ rightHand = \relative c'' {
     <d f>8
   } \\ {
     s4 |
-    f,4. c''!8-. |
+    f,!4. c''!8-. |
     s4 ais,~ |
     ais8\noBeam cis'-. s4 |
     s8
@@ -150,15 +150,15 @@ rightHand = \relative c'' {
   } >> 
   r8 b16-1[\( cis-2] d-3[ e-4 eis-1 gis] |
   cis[ dis e! cis] c![ a c a] |
-  g!16 e dis b\) r8 c16\( d |
-  es[ f fis a] d[ e f d] |
+  g!16 e dis b\) r8 c16\(-2 d-3 |
+  es[-4 f-1 fis-2 a]-1 d[-3 e f! d] |
   des[ bes des bes] as[ f e c]\) |
   r8 dis16\([ eis] fis[ gis a gis] |
   a16[ b c! b] c[ d es d] |
   dis8[ fis\)] bes,,[( cis]) |
   d!8( f!) fis16[\( gis a gis] |
   a16[ d es d] dis8[ fis]\) |
-  bes,,8[( cis]) d[( f!]) |
+  bes,,8[( cis]) d![( f!]) |
   fis16[\( gis a gis] a[ d es d] |
   dis8[ fis]\) fis,16[\( gis a gis] |
   a16[ d es d] dis8[ fis]\) |
@@ -207,18 +207,18 @@ rightHand = \relative c'' {
   r4 f4 |
   r4 fis4 |
   r4 g4 |
-  r4 as4~ |
-  as8 r8 r fis( |
+  r4 as4( |
+  a!8) r8 r fis( |
   g bes d) d |
-  d4 f8. es16 |
-  d4 g8. e!16 |
-  d4 f16 des f des |
-  bes8 bes c4~ |
+  d4 f8.--( es16 |
+  d4) g8.--( e!16 |
+  d4) f16( des f des |
+  bes8) bes\( c4~ |
   c4 es |
-  d!4 f16 des f des |
-  bes8 bes c4~ |
-  c4 es |
-  d4 f,16 des f des |
+  d!4\) f16( des f des |
+  bes8) bes( c4~ |
+  c4) es |
+  d!4 f,16 des f des |
   bes8 bes c4~ |
   c8 es d b! |
   fis a as f! |
@@ -245,12 +245,12 @@ leftHandTreble = \relative c' {
   \globalOptions
   \clef treble
   
-  r8 d f d |
-  r8 e g e |
-  r8 f a f |
-  r8 es g es |
-  r8 d f d |
-  r8 c e c |
+  r8 d( f d) |
+  r8 e( g e) |
+  r8 f( a f)|
+  r8 es( g es) |
+  r8 d( f d) |
+  r8 c( e c) |
   f2 |
   e2 |
   f2 |
@@ -259,12 +259,12 @@ leftHandTreble = \relative c' {
   r8 fis a gis |
   dis e gis g |
   d es g fis |
-  cis d es4 |
-  r8 d f d |
-  r8 cis e cis |
-  r8 f as f |
-  r8 e! g e |
-  r8 dis fis dis |
+  cis d es4-5
+  r8 d( f d) |
+  r8 cis( e cis) |
+  r8 f( as f) |
+  r8 e!( g e) |
+  r8 dis( fis dis) |
   g2 |
   fis2 |
   f!2~ |
@@ -272,11 +272,11 @@ leftHandTreble = \relative c' {
   R2 |
   R2 |
   b4. a8~ |
-  a g fis b |
+  a g! fis b |
   R2 |
   r4 cis4~ |
   cis8 b4 a8 |
-  gis8 << { cis4.~ cis2~ cis4 } \\ { cis8 fis, b e, a dis, gis cis,[ fis] } >> 
+  << { s8 cis4.~ cis2~ cis4 } \\ { gis8[ cis8] fis,[ b] e,[ a] dis,[ gis] cis,[ fis] } >> 
   r4 |
   \time 3/4
   r4. d'8 a c |
@@ -296,16 +296,16 @@ leftHandTreble = \relative c' {
   R2 |
   R2 |
   R2 |
-  r8 a8 d f |
-  ges8 as8 r8 es |
+  r8 a8( d f |
+  ges8 as8) r8 es |
   R2 |
   R2 |
   R2 |
-  r4 d8 g |
+  r4 d8\( g |
   e[ a] f[ bes] |
   g[ c] c,[ f] |
   d[ g] es[ as] |
-  f[ bes] bes,4~ |
+  f[ bes]\) bes,4~ |
   bes2~ |
   bes2 |
   R2 |
@@ -335,7 +335,26 @@ leftHandTreble = \relative c' {
   R2
   R2
   R2
-  
+  R2
+  R2
+  R2
+  R2
+  \time 3/4
+  R2.
+  \time 2/4
+  \set Timing.baseMoment = #(ly:make-moment 2/4)
+  r8 g4\bbass r8 |
+  g4 r8 g8~ |
+  g8 r8 g4 |
+  r8 g4 r8 |
+  g4 r8 g8~ |
+  g8 r8 g4 |
+  f'2 |
+  e2 |
+  f2 |
+  e4. s8 |
+  e2~ |
+  e2 |
   
 }
 
@@ -349,25 +368,25 @@ leftHandBass = \relative c' {
   g2 |
   g2 |
   g2 |
-  r8 d g d |
-  r8 a d a |
-  r8 d g d |
+  r8 d( g d) |
+  r8 a( d a) |
+  r8 d( g d) |
   r8 g a c |
-  e4 d cis c |
+  e4( d cis c)-1 |
   b2~ |
   b2~ |
   b2~ |
-  b4 c4 |
+  b4 c4-1 |
   g2 |
   g2 |
   g2 |
   g2 |
   g2 |
-  r8 d' f d |
-  r8 cis e cis |
-  r8 c es c |
-  r8 as c as |
-  g4 g,8\sbass a |
+  r8 d'!( f! d!) |
+  r8 cis( e cis) |
+  r8 c!( es c) |
+  r8 as( c as |
+  g4) g,8\sbass a |
   b4 r4 |
   R2
   R2
@@ -389,18 +408,18 @@ leftHandBass = \relative c' {
   <f as c>4 <bes d!> |
   <f as c> <ces ges' ces> |
   <f as c!> <cis a'! cis> |
-  <f as c!> r8 as8 |
-  es'4 bes |
+  <f as c!> r8 as8( |
+  es'4) bes |
   des4 ces8 as |
   fes4 des |
   f!4 r4 |
-  r8 f bes des |
-  d!8 e r8 b! |
+  r8 f( bes des |
+  d!8 e) r8 b! |
   R2 |
   R2 |
-  r8 g! b!4 |
-  r8 as8 c4 |
-  <a cis>4 <bes d> |
+  r8 g!( b!4) |
+  r8 as8( c4) |
+  <a cis>4( <bes d>) |
   <f a c>4 r4 |
   R2 |
   R2 |
@@ -409,25 +428,25 @@ leftHandBass = \relative c' {
   ges8-. f-. es-. des-. |
   ces-. bes-. as-. bes-. |
   << {
-    s8 g8^\markup {\box {\bold{SB}}} as s8
+    s8 g8^\markup {\box {\bold{BB}}}-2 as-3 s8
     g8 as s8 g[ |
     as] s8 g as |
     s8 g as s8 |
     g as s8 g[ |
     a] s8 g a |
-    s8 c des s8 |
+    s8 c-1 des-2 s8 |
     c des s8 c[ |
     des] s8 c des |
     s8 c8 des s8 |
     c8 des s4 |
   } \\ {
-    f,8\bbass s4 f8 |
+    f,8\sbass-4 s4 f8 |
     s4 f8 s8 |
     s8 f8 s4 |
     f8 s4 f8 |
     s4 f8 s8 |
     s8 f8 s4 |
-    bes8 s4 bes8 |
+    bes8-5 s4 bes8 |
     s4 bes8 s8 |
     s8 bes8 s4 |
     bes8 s4 bes8 |
@@ -435,7 +454,7 @@ leftHandBass = \relative c' {
   } >>
   a fis gis a |
   fis gis a fis |
-  gis[ a] d,[ e] |
+  gis[ a] d,![ e] |
   fis d e fis |
   d e fis d |
   e[ fis] b[ cis] |
@@ -457,12 +476,18 @@ leftHandBass = \relative c' {
   R2.
   \time 2/4
   \set Timing.baseMoment = #(ly:make-moment 2/4)
-  g8 a bes g |
+  g8\sbass a bes g |
   a bes g a |
   bes g a bes |
   g a bes g |
   a bes g a |
   bes g a bes |
+  r8\bbass d( g d) |
+  r8 a( d a) |
+  r8 d( g d) |
+  r8 g a c |
+  e4( d cis c) |
+  
   
 }
 
@@ -568,7 +593,6 @@ dynamicsStaff = \new Dynamics {
     \header {
       title = "Zweite Sonate für Klavier"
       composer = "Paul Hindemith"
-      arranger = "Arranged for piano accordion by Roelof Ruis"
       subtitle = "I"
       tagline = ##f
     }
