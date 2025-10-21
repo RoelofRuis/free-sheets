@@ -97,7 +97,9 @@ staffRight = {
     << { <f a>8[-> <gis b> <gis b>] <f a>[-> <gis b>] <f a>[-> <gis b> <gis b>] } \\ { c,1 } >>
     << { <gis' b>8-> <a c> <a c> <gis b>[-> <a c>] <gis b>[-> <a c> <a c>] } \\ { d,1 } >>
     << { <as' c>8-> <bes d> <bes d> <as c>[-> <bes d>] <as c>[-> <bes d> <bes d>] } \\ { es,1 } >>
-    << { <as c>8 <bes d> <bes d> <as c> } \\ { es2 } >> <es as c>4 <d g b>4 |
+    << { <as c>8 <bes d> <bes d> } \\ { es4. } >> <es as c>4 <d g b>4. |
+    
+    \break
     
     \key es \major
     <d g d'>4 <c g' c> <g c g'> <es g es'> |
@@ -172,6 +174,7 @@ dynamicsStaff = \new Dynamics {
   
   \header {
     title = "La pasión de Helena"
+    dedication = "For Helena"
     subtitle = "Tango"
     composer = "Roelof Ruis"
     tagline = ##f
@@ -194,7 +197,9 @@ dynamicsStaff = \new Dynamics {
     
     bookTitleMarkup = \markup {
       \column {
-        \vspace #3
+        \vspace #2
+        \fill-line { \fontsize #2 \fromproperty #'header:dedication }
+        \vspace #1
         \fill-line { \fontsize #8 \fromproperty #'header:title }
         \vspace #2
         \fill-line { \fontsize #6 \italic \fromproperty #'header:composer }
