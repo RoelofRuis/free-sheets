@@ -33,11 +33,27 @@ discant = \markup {
   \musicglyph #"accordion.discant"
 }
 
+fbrega = ^\markup {
+  \whiteout
+  \combine
+  \freebass
+  \raise #1.5 \dot
+}
+
 fbregz = ^\markup {
   \whiteout
   \combine
   \freebass
   \raise #0.5 \dot
+}
+
+fbregza = ^\markup {
+  \whiteout
+  \combine
+  \freebass
+  \combine
+  \raise #0.5 \dot
+  \raise #1.5 \dot
 }
 
 regz = ^\markup {

@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-\include "../../includes/accordion-func.ly"
+\include "../../../includes/accordion-func.ly"
 
 % Kan nog veel kleiner beginnen
 % Alleen de bovenstem bijvoorbeeld
