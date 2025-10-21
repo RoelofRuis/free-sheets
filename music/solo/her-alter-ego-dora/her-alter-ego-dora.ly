@@ -228,11 +228,11 @@ dynamicsStaff = \new Dynamics {
     tagline = ##f
     instrumentName = "Accordion Solo"
     year = "2025"
-    description = "Consider wearing a light purple wig while performing."
+    description = "An joyful and improvisational encounter, but with who exactly? Consider wearing a light purple wig while performing."
     info = "For Standard Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = \githuburl
-    version = "" % e.g. January 2022
+    version = "Oktober 2025 - Unfinished"
   }
 
   \paper {
