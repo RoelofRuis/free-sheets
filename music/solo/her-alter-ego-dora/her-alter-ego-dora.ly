@@ -236,9 +236,9 @@ dynamicsStaff = \new Dynamics {
   }
 
   \paper {
-    %max-systems-per-page = 6
+    max-systems-per-page = 5
     %min-systems-per-page = 5
-    ragged-last-bottom = ##f
+    %ragged-last-bottom = ##f
 
     indent = 0.0
     print-all-headers = ##t
@@ -289,11 +289,11 @@ dynamicsStaff = \new Dynamics {
     }
 
     \new PianoStaff \with {
-      % \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (padding . 1))
+      \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (padding . 1))
     } <<
-      \new Staff = "right" \with {midiInstrument = "harmonica"} \staffRight
+      \new Staff = "right" \with {midiInstrument = "reed organ"} \staffRight
       \dynamicsStaff
-      \new Staff = "left" \with {midiInstrument = "harmonica"} \staffLeft
+      \new Staff = "left" \with {midiInstrument = "reed organ"} \staffLeft
     >>
 
     \layout {}
