@@ -15,7 +15,11 @@ jobs:
       - name: Install LilyPond and tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y lilypond timidity lame ffmpeg
+          sudo apt-get install -y lilypond timidity lame ffmpeg imagemagick
+
+      - name: Preprocess Graphics
+        run: |
+          ./graphics.sh
 
       - name: Generate PDFs and MIDI
         run: |
