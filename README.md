@@ -4,7 +4,7 @@ Dit repository bevat Lilypond bronbestanden voor mijn composities die gratis zij
 
 Alle bestanden hier zijn geschreven in Lilypond, een soort programmeertaal waaruit vervolgens bladmuziek gegenereerd wordt. Lees er meer over op [Lilypond.org](http://lilypond.org/)
 
-Een overzicht van alle stukken met downloadlinks zijn te vinden op [deze pagina](https://roelofruis.github.io/free-sheets/).
+Een overzicht van alle stukken met downloadlinks is te vinden op [deze pagina](https://roelofruis.github.io/free-sheets/).
 
 **Wat staat waar?**
 - `includes` bevat bestanden die kunnen worden geïmporteerd.
