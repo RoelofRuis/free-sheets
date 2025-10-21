@@ -35,46 +35,84 @@ staffRight = {
     <f g>4 r8 <f g>8 <e f> <e f> <f g>4-. |
     d4-. <c' d>4-. r8 <e, f> <b' c> <f g>-> |
     
-    r8\regeza d8 f a g f d c |
+    r8\regeza d8 f as g f d c |
     f4-- b,-. r8 b8-. f'-. d-- |
-    r8 d8 f a g f d c |
+    r8 d8 f as g f d c |
     f4-- b,-. r8 <g' c e>-.-> r8 <f b d>---> |
-    r8 d8 f a g f d e |
+    r8 d8 f as g f d e |
     f4-- b-. r4 c8-> d-> |
     r8 d8-> c a as d g, cis |
     d4 r2. |
     
-    r8 d,8 f a g f d c |
+    r8 d,8 f as g f d c |
     f4-- b,-. r8 b8-. f'-. d-- |
-    r8 d8 f a g f d c |
-    f4-- b,-. r8 <a' c f>-.-> r8 <f b d>---> | |
-    r8 d8 f a g f d e |
+    r8 d8 f as g f d c |
+    f4-- b,-. r8 <a' c f>-. <g c e>8-. <f b d>-- | |
+    r8 d8 f as g f d e |
     f4 b4 r4 c8-> d-> |
     r8 d-> c a gis d' g, cis |
     << { d1 } \\ { r8 <f, a b> r4 <f a b>4 <f a b>4 } >> |
     
     r8 <f b e> r4 d8 e f g |
-    as2.. g8~ |
-    g2. f8 g |
+    << { 
+      as1
+      g2.
+    } \\ {
+      r8 <e d bes> r4 <e d bes>4 <e d bes>4 
+      r8 <e d as> r4 <e d as>4
+    } >> f8 g |
     \tuplet 5/4 { a16 d a g f } \tuplet 5/4 { a16 d a g f } a16 d a g a d a as |
     << { g2 } \\ { r8 <d gis,>4. } >> d8 e f g |
-    a4. as8~ as4. g8~ |
-    g4. ges8~ ges2 |
-    f4-- b,-. r2 |
-    b4-. f'8 d r8 e f g |
-    a2.. as8~ |
-    as2. e8 f |
+    << {
+      a4. as8~ as4. g8~ |
+      g4. ges8~ ges2 |
+    } \\ {
+      r8 <f c>4 r8 r8 <e b>4 r8 |
+      r8 <es bes>4 r8 r8 <d a>4 r8 |
+    } >>
+    <es f>4-- <a, b>-. r2 |
+    b4-. f'8 d r8 e^\markup { \italic "improvviso" } f g |
+    << { 
+      a1
+      as2.
+    } \\ {
+      r8 <f e c> r4 <f e c> <f e c> |
+      r8 <e d b> r4 <e d b>
+    } >> e8 f |
     \tuplet 5/4 { g16 c g f e } \tuplet 5/4 { g16 c g f e } g16 c g f g c g e |
     << { c2 } \\ { r8 <as f>4. } >> c8 d e f |
-    g2 ges2 |
-    f2 e2 |
-    es4-- a,-. r2 |
+    << { 
+      g4. ges8~ ges4. f8~ |
+      f4. e8~ e2 |
+    } \\ { 
+      r8 <d b>4 r8 r8 <cis bes>4 r8 |
+      r8 <c a>4 r8 r8 <b as>4 r8 |
+    } >>
+    <des es>4-- <g, a>-. r2 |
     \time 3/8
     b4-. f'8
+
     \bar "!"
+
     \time 4/4 
-    d4-. <c' d>-. r8 <e, f>-. <b' c>-. <f~ g~> |
-    <f g>4
+    d4-.^\markup { \italic "con sorpresa" } <c' d>-. r8 <e, f>-. <b' c>-. <f~ g~> |
+    <f g>4 r8 <f g>8 <e f> <e f> <f g>4-. |
+    d4-. <c' d>4-. r8 <e, f>-. <b' c>-. <f~ g~> |
+    <f g>2 r2 |
+    
+    d4-. <c' d>4-. r8 <e, f>-. <b' c>-. <f~ g~> |
+    <f g>4 r8 <f g>8 <e f> <e f> <f g>4-. |
+    d4-. <c' d>4-. r8 <e, f> <b' c> <f g>-> |
+    
+    \bar "||"
+    
+    s1^\markup { \bold "Improvise" }
+    \repeat volta 2 {
+      s1
+      s1
+    }
+    
+    
     
     
     
@@ -106,33 +144,58 @@ staffLeft = {
   d4 d'8\mn d' f,4 f8\mj f |
   g,4 g8\spt g8 b,8-. r8 g8-. g8-. |
 
-  g,4 g8\spt g b,4 g8 g |
+  d4 d'8\mn d' g,4 g8\spt g |
   f,4 f8\spt f fis,8 g, <as, as>\spt <bes, bes>\spt |
   r8 <f, f>4.\spt <g, g>4\spt <a, a>4\spt |
-  d4 d'8\mn d' r8 <d d'>-.\mn r8 <g, g d'>--\mj\mn |
+  d4 d'8\mn d' a,8 d'-.\mn r8 <g, g d'>--\mj\mn |
 
   R1 |
   g,4 g8\spt g b,4 g8 g |
   d4 d'8\mn d' f,4 f8\mj f |
   g,4 g8\spt g8 b,8-. r8 g8-. g8-. |
   
-  g,4 g8\spt g b,4 g8 g |
+  d4 d'8\mn d' g,4 g8\spt g |
   f,4 f8\spt f fis,8 g, <as, as>\spt <bes, bes>\spt |
   r8 f, f8\spt f g,8 g8\spt a, a\spt |
-  d8 r8 d'8\mn a,8~ a,8 r8 d'4 |
+  d8 r8 d'8\mn a,8~ a,4 d'8 a,8 |
   g,8 r8 g\spt d r2 |
   
-  s1 |
-  s1 |
+  bes,8 r8 bes\spt bes,~ bes,4 bes8 bes, |
+  c8 r8 c'\spt c~ c4 c'8 c |
+
   b,4 d'8\mn d' b,4 d'8 d' |
-  e,8 r8 e8\spt b, <a a,>8\spt r4. |
-  s1 |
-  s1 |
+  e,4 e8\spt e a,4 a8\spt a |
+  d4 d'8\mn d' cis4 e8\mj e |
+  c4 c'8\mn c' b,4 d8\mj d |
+
   f,4 r4 f,8 f, fis, fis, |
   <g, g d'>4-.\mj\mn <a, a>8\spt <d d'>\mn r2 |
-  s1 |
-  s1 |
+  f,8 r8 f\mj f,8~ f,4 f8\mj f |
+  g,8 r8 g\spt g,8~ g,4 g8\spt g |
+
   c4 c'8\mj c' b,4 c'8 c' |
+  bes,4 bes8\spt bes bes,4 bes8 bes |
+  e,4 e8\mn e a,4 a8\spt a |
+  d4 d'8\mn d' g,4 g8\spt g |
+  es,4-. r4 es,8 e, f, fis, |
+  \time 3/8
+  <g, g d'>4-.\mj\mn <a, a>8\spt |
+  
+  \bar "!"
+  
+  \time 4/4
+  <d d'>4\mn-. r2. |
+  R1 |
+  R1 |
+  r2 f,16 fis, g,8-. f,16 fis, g,8-. |
+  d4-. r8 d f, r4 g,8~ |
+  g,4 r8 g,8 as, as, g,4-. |
+  d4-. r8 d f, r8 fis,8 g,8 |
+  R1 |
+  \repeat volta 2 {
+    f,4 f8\spt f8 a,4 f8 f |
+    g,4 g8\spt g8 b,4 g8 g |
+  }
   
   
   
@@ -165,7 +228,7 @@ dynamicsStaff = \new Dynamics {
   }
 
   \paper {
-    max-systems-per-page = 6
+    %max-systems-per-page = 6
     %min-systems-per-page = 5
     ragged-last-bottom = ##f
 
