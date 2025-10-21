@@ -7,6 +7,7 @@ options = {
   \numericTimeSignature
   \time 8/8
   \key a \minor
+  \override Score.MetronomeMark.X-offset = #-1
   \tempo 4 = 152
 }
 
@@ -15,17 +16,17 @@ staffRight = {
   \clef treble
 
   \relative c'' {
-    <e a e'>4\regz <d a' d> <a d a'> <f d' f> |
+    <e a e'>4\regz^\markup { \halign #-1.7 \bold "Maestoso" } <d a' d> <a d a'> <f d' f> |
     <e as e'> <e' as e'>4. <e as b>8 <e as c> <e as d> |
     <e a e'>4 <d a' d> <a e' a> <c e c'> |
-    <c e gis b>2. r8\fermata b16 e |
+    <c e gis b>2.\fermata \breathe r8 b16\regza e |
 
     \break
     
-    b'4. a4 e4 c8 |
+    b'4.^\markup { \bold "Con fuoco" } a4 e4 c8 |
     b1 |
     e4. d4 g,4 a16 b |
-    c8-- bes-. es,16 f g8~ g2 |
+    c8-- bes-. es,16 f g8~ g4 r4 |
     
     as16[ bes as g] as[ c] g'4 f4 f16 g |
     as16[ bes as f] d[ c] b8~ b2 |
@@ -39,8 +40,14 @@ staffRight = {
     
     d'4. c4 g4 es8 |
     es'4. d4 b as8 |
-    g8 f b d r c r
-    << { \stemDown b~ \stemNeutral b2. b,8\rest b16[\regzv e] } \\ { s 8 r4 <gis e c>2 s4 } >> |
+    g8( f b d)-. r c-. r
+    << { 
+      \stemDown b~ \stemNeutral b2..
+      b,16[\regzv e] 
+    } \\ { 
+      s 8 
+      r8 <gis e c>8-. r4 <gis e c>4 <gis e c>8
+    } >> |
     
     b4. a4 e4 c8 |
     b1 |
@@ -59,7 +66,7 @@ staffRight = {
     
     d'4. c4 g4 es8 |
     es'4. d4 b as8 |
-    g8 f b d r c r
+    g8( f b d)-. r c-. r
     << { \stemDown b~ \stemNeutral b1 } \\ { s 8 r4 <gis e c>2. } >> |
     
     << { <f a>8[-> <gis b> <gis b>] <f a>[-> <gis b>] <f a>[-> <gis b> <gis b>] } \\ { c,1 } >>
@@ -87,7 +94,7 @@ staffRight = {
     g16 g g g g8 g16[ g g8] g16 g g fis g gis |
     a4\glissando
     \ottava 0
-    a,,8 <bes~ cis~ f~ a~>8-> <bes cis f a>2 |
+    a,,8 <bes~ des~ f~ a~>8-> <bes des f a>2 |
     
     << { <f' a>8[-> <gis b> <gis b>] <f a>[-> <gis b>] <f a>[-> <gis b> <gis b>] } \\ { c,1 } >>
     << { <gis' b>8-> <a c> <a c> <gis b>[-> <a c>] <gis b>[-> <a c> <a c>] } \\ { d,1 } >>
@@ -97,7 +104,7 @@ staffRight = {
     << { <f a>8[-> <gis b> <gis b>] <f a>[-> <gis b>] <f a>[-> <gis b> <gis b>] } \\ { c,1 } >>
     << { <gis' b>8-> <a c> <a c> <gis b>[-> <a c>] <gis b>[-> <a c> <a c>] } \\ { d,1 } >>
     << { <as' c>8-> <bes d> <bes d> <as c>[-> <bes d>] <as c>[-> <bes d> <bes d>] } \\ { es,1 } >>
-    << { <as c>8 <bes d> <bes d> } \\ { es4. } >> <es as c>4 <d g b>4. |
+    << { <as c>8 <bes d> <bes d> } \\ { es,4. } >> <es as c>4 <d g b>4. |
     
     \break
     
@@ -133,18 +140,25 @@ staffLeft = {
   << { r2 f\mj } \\ { f,1 } >>
   << { r2 bes\spt } \\ { bes,1 } >>
   <b, d'>2\mn <fis, a>2\mn
-  << { r4 e2\spt r4 } \\ { e,2. } >>
+  << { r4 e2\spt\fermata d4\rest } \\ { e,2. } >>
 
-  << { a8\mn r8 a8 a8 r8 a4 r8 } \\ { a,4 r8 a,4 r4 e,8 } >>
-  << { a8\mn r8 a8 a8 r8 a4 r8 } \\ { f,4 r8 f,4 r4. } >>
-  << { g8\mj r8 g8 g8 r8 g4 r8 } \\ { b,4 r8 b,4 r4. } >>
-  << { f8\mn r8 f8 es8 r8 es4 r8 } \\ { as,4 r8 g,4 r4. } >>
-  << { f8\mn r8 f8 f8 r4 f8 r8 } \\ { } >> |
-  << { f8\mn r8 f8 g8\spt r4 g8 r8 } \\ { } >> |
-  << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { } >> |
-  << { c'8\mn r8 c'8 d'8\spt r4 d'8 r8 } \\ { } >> |
-  R1
-  R1*23
+  << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 a,4. r8 e,8 } >>
+  << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
+  << { g8\mj r8 g8 g8 r4 g8 r8 } \\ { b,4 r8 b,4. r8 d8 } >>
+  << { f8\mn r8 f8 es8 r4 es8 r8 } \\ { as,4 r8 g,4. r8 g,8 } >>
+  << { f8\mn r8 f8 f8 r4 f8 r8 } \\ { f,4 r8 es,4. r8 es,8 } >> |
+  << { f8\mn r8 f8 g8\spt r4 g8 r8 } \\ { d4 r8 g,4. r8 d8 } >> |
+  << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 bes,4. r8 bes,8 } >> |
+  << { c'8\mn r8 c'8 d'8\spt r4 d'8 r8 } \\ { a,4 r8 d4. r8 a,8 } >> |
+  << { g8\mn r8 g8 g8 r4 g8 r8 } \\ { g,4 r8 g,4. r8 g,8 } >> |
+  << { a8\spt r8 a8 a8 r8 a8 a8 a8 } \\ { a,4 r8 cis4 r8 e,8 r8 } >> |
+  << { d'8\mn r8 d'8 d' r4 d'8 r8 } \\ { d4 r8 d4. r8 a,8 } >> |
+  << { g8\spt r8 g8 g8 r4 g8 r8 } \\ { g,4 r8 b,4. r8 d8 } >> |
+  << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 c4. r8 g,8 } >> |
+  << { g8\spt r8 g8 g8 r4 g8 r8 } \\ { b,4 r8 b,4. r8 d,8 } >> |
+  << { b8\spt r8 b8 b8 r4 b8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >> |
+  << { r4 e8\spt r4. e8 r8 } \\ { e,4 r8 b,4. r4 } >> |
+  R1*16
   
   d1 |
   e,1 |
@@ -167,11 +181,14 @@ staffLeft = {
 dynamicsStaff = \new Dynamics {
   \time 4/4
 
-  % add dynamics
+  s1\ff
+  s1
+  s1
+  s2\< s4.\! s8\mf
 }
 
 \book {
-  
+
   \header {
     title = "La pasión de Helena"
     dedication = "For Helena"
@@ -180,7 +197,7 @@ dynamicsStaff = \new Dynamics {
     tagline = ##f
     instrumentName = "Accordion solo"
     year = "2025"
-    description = "A passionate Tango using the unusual rhythm grouping of 3-2-3."
+    description = "A passionate Tango with intricate left hand patterns."
     info = ""
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = \githuburl
@@ -188,9 +205,9 @@ dynamicsStaff = \new Dynamics {
   }
 
   \paper {
-    %max-systems-per-page = 5
-    %min-systems-per-page = 5
-    %ragged-last-bottom = ##f
+    max-systems-per-page = 5
+    min-systems-per-page = 5
+    ragged-last-bottom = ##f
 
     indent = 0.0
     print-all-headers = ##t

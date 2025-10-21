@@ -8,7 +8,7 @@ options = {
   \time 4/4
   \key d \dorian
   \override Score.MetronomeMark.X-offset = #-1
-  \tempo 4 = 130
+  \tempo 4 = 140
 }
 
 staffRight = {
@@ -193,8 +193,16 @@ staffLeft = {
   d4-. r8 d f, r8 fis,8 g,8 |
   R1 |
   \repeat volta 2 {
-    f,4 f8\spt f8 a,4 f8 f |
-    g,4 g8\spt g8 b,4 g8 g |
+    <<
+      \new ChordNames \chordmode {
+        f1:7
+        g1:7
+      }
+      {
+        f,4 f8\spt f8 a,4 f8 f |
+        g,4 g8\spt g8 b,4 g8 g |
+      }
+    >>
   }
   
   
