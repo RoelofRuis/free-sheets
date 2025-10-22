@@ -16,7 +16,7 @@ staffRight = {
   \clef treble
 
   \relative c' {
-    d4-.\rega^\markup { \bold "With unapologetic self expression" } <c' d>4-. r8 <e, f>-. <b' c>-. <f~ g~> |
+    d4-.\rega^\markup { \halign #-1.1 \pad-around #1 \bold "With unapologetic self expression" } <c' d>4-. r8 <e, f>-. <b' c>-. <f~ g~> |
     <f g>4 r8 <f g>8 <e f> <e f> <f g>4-. |
     d4-. <c' d>4-. r8 <e, f>-. <b' c>-. <f~ g~> |
     <f g>2. r4 |
@@ -106,7 +106,7 @@ staffRight = {
     
     \bar "||"
     
-    s1^\markup { \bold "Improvise" }
+    s1^\markup { \pad-around #1 \bold "Improvise" }
     \repeat volta 2 {
       s1
       s1
@@ -212,6 +212,7 @@ staffLeft = {
 
 dynamicsStaff = \new Dynamics {
   \time 4/4
+  \override TextScript.Y-offset = -0.5
 
   s1\mp
 

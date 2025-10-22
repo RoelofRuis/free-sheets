@@ -5,7 +5,6 @@
 
 options = {
   \numericTimeSignature
-  \time 8/8
   \key a \minor
   \override Score.MetronomeMark.X-offset = #-1
   \tempo 4 = 152
@@ -14,16 +13,19 @@ options = {
 staffRight = {
   \options
   \clef treble
+  \time 2/2
 
   \relative c'' {
-    <e a e'>4\regz^\markup { \halign #-1.7 \bold "Maestoso" } <d a' d> <a d a'> <f d' f> |
+    <e a e'>4\regz^\markup { \halign #-1.5 \pad-around #1 \large \bold "Maestoso" } <d a' d> <a d a'> <f d' f> |
     <e as e'> <e' as e'>4. <e as b>8 <e as c> <e as d> |
     <e a e'>4 <d a' d> <a e' a> <c e c'> |
     <c e gis b>2.\fermata \breathe r8 b16\regza e |
 
     \break
     
-    b'4.^\markup { \bold "Con fuoco" } a4 e4 c8 |
+    \time 8/8
+    
+    b'4.^\markup { \pad-around #1 \large \bold "Con fuoco" } a4 e4 c8 |
     b1 |
     e4. d4 g,4 a16 b |
     c8-- bes-. es,16 f g8~ g4 r4 |
@@ -52,7 +54,7 @@ staffRight = {
     b4. a4 e4 c8 |
     b1 |
     e4. d4 g,4 a16 b |
-    c8-- bes-. es,16 f g8~ g2 |
+    c8-- bes-. es,16 f g8~ g4 r4 |
     
     as16[ bes as g] as[ c] g'4 f4 f16 g |
     as16[ bes as f] d[ c] b8~ b2 |
@@ -70,7 +72,7 @@ staffRight = {
     << { 
       \stemDown b~ \stemNeutral b1 
     } \\ { 
-      s 8 r8 <gis e c>8 r4 <gis e c>4 r4  
+      s 8 r8 <gis e c>8-. r4 <gis e c>4 r4  
     } >> |
     
     << { 
@@ -95,10 +97,10 @@ staffRight = {
       e4 r8 e8 r8 e4 r8
     } >>
     
-    <c e fis b>8[-. \hide NoteHead 8-. 8-. 8]-. 8[-. 8-. 8-. 8]-. \undo \hide NoteHead
-    <c es fis b>8[-. \hide NoteHead 8-. 8-. 8]-. 8[-. 8-. 8-. 8]-. \undo \hide NoteHead
-    <bes d e a>8[-. \hide NoteHead 8-. 8-. 8]-. 8[-. 8-. 8-. 8]-. \undo \hide NoteHead
-    <bes cis e a>8[-. \hide NoteHead 8-. 8-. 8]-. \undo \hide NoteHead <bes cis e a>4 r4 |
+    \repeat tremolo 8 { <c e fis b>8-. }
+    \repeat tremolo 8 { <c es fis b>8-. }
+    \repeat tremolo 8 { <bes d e a>8-. }
+    \repeat tremolo 4 { <bes cis e a>8-. } <bes cis e a>4 r4 |
     
     d4. cis8[ d] e[ f g] |
     e4. dis8 e g bes e |
@@ -107,7 +109,7 @@ staffRight = {
     d4. cis8[ d] f[ a c] |
     \ottava 1
     e2. dis16 e f fis |
-    g16 g g g g8 g16[ g g8] g16 g g fis g gis |
+    g16 g g g g8-. g16[ g g8]-. g16 g g fis g gis |
     a4\glissando
     \ottava 0
     a,,8 <bes~ des~ f~ a~>8-> <bes des f a>2 |
@@ -137,7 +139,8 @@ staffRight = {
     \break
     
     \key es \major
-    <d g d'>4^\markup { \bold "Maestoso" } <c g' c> <g c g'> <es g es'> |
+    \time 2/2
+    <d g d'>4^\markup { \pad-around #1 \large \bold "Maestoso" } <c g' c> <g c g'> <es g es'> |
     <d ges d'>4 <d' ges d'>4. <d ges a>8 <d ges bes> <d ges c> |
     <d g d'>4 <c g' c> <g d' g> <bes d bes'> |
     << { es2 d } \\ { <c a'>1 } >> |
@@ -178,10 +181,10 @@ staffRight = {
     << { es'1 } \\ { <as, as'>4 <bes bes'> <as as'> <g g'> } >>
     << { es'1 } \\ { <f, f'>2 <as as'> } >>
     << { e'1 } \\ { <a, a'>4 <b b'> <a a'> <gis gis'> } >>
-    <g dis' g>1
+    <gis dis' gis>1
     
     \key a \minor
-    
+    \time 8/8
     
     
   }
@@ -190,11 +193,14 @@ staffRight = {
 staffLeft = {
   \options
   \clef bass
+  \time 2/2
 
   << { r2 f\mj } \\ { f,1 } >>
   << { r2 bes\spt } \\ { bes,1 } >>
   <b, d'>2\mn <fis, a>2\mn
   << { r4 e2\spt\fermata d4\rest } \\ { e,2. } >>
+
+  \time 8/8
 
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 a,4. r8 e,8 } >>
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
@@ -228,12 +234,12 @@ staffLeft = {
   << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 c4. r8 g,8 } >> |
   << { g8\spt r8 g8 g8 r4 g8 r8 } \\ { b,4 r8 b,4. r8 d,8 } >> |
   << { b8\spt r8 b8 b8 r4 b8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >> |
-  << { r4 e8\spt r4. } \\ { e,4 r8 b,4. e,8-.-> es,8---> } >> |
+  << { r4 e8\spt r4. } \\ { e,4 r8 b,4. e,8-. es,8-- } >> |
   
   d8-> r2.. |
   e,8-> r2.. |
   f,8-> r2.. |
-  g,8-> r2.. |
+  g,8-> r4. r4. cis8-> |
   d8-> r4 d8-> r8 d8-> r4 |
   e,8-> r4 e,8-> r8 e,8-> r4 |
   f,8-> r4 f,8-> r8 f,8-> r4 |
@@ -250,20 +256,21 @@ staffLeft = {
   e,8 e8\spt e bes,[ e8] b,[ e8 e] |
   
   d8 d'8\mn 8 c8[ c'8]\spt e,[ c'8 c'] |
-  bes,8 bes8\spt 8 f,[ bes] bes,8[ bes8 8] |
+  bes,8 bes8\spt 8 e,[ bes] f,8[ bes8 8] |
   e,8 e8\spt e bes,8[ e8] b,8[ e8 8]
-  a,8 r8 a8\spt <es,~ a~>8\spt <es, a>4 e8-.-> es---> |
+  a,8 r8 a8\spt <es,~ a~>8\spt <es, a>4 e8-. es-- |
   
   d8-> r2.. |
   e,8-> r2.. |
   f,8-> r2.. |
-  g,8-> r2.. |
+  g,8-> r4. r4. cis8-> |
   d8-> r4 d8-> r8 d8-> r4 |
   e,8-> r4 e,8-> r8 e,8-> r4 |
   f,8-> r4 f,8-> r8 f,8-> r4 |
   << { r2 bes\mj } \\ { bes,1 } >>
   
   \key es \major
+  \time 2/2
   
   << { 
     r2 es\mj
@@ -338,6 +345,7 @@ staffLeft = {
   } >>
   
   \key a \minor
+  \time 8/8
   
   
   
@@ -345,6 +353,7 @@ staffLeft = {
 
 dynamicsStaff = \new Dynamics {
   \time 4/4
+  \override TextScript.Y-offset = -0.5
 
   s1\f
   s1
@@ -357,6 +366,20 @@ dynamicsStaff = \new Dynamics {
   s1*3
   s1*4
   s1\ff
+  s1
+  s1
+  s2. s4\mf
+  s1
+  s4. s8\< s2
+  s1\!\>
+  s1\!
+  s4. s8\< s2
+  s2.\! s4\<
+  s1\!
+  s2. s4\>
+  s4\!\mp s2.^\markup { "cresc." }
+  s1*7
+  s1\f
   
 }
 
@@ -433,12 +456,20 @@ dynamicsStaff = \new Dynamics {
     \new PianoStaff \with {
       \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (padding . 1))
     } <<
-      \new Staff = "right" \with {midiInstrument = "reed organ"} \staffRight
+      \new Staff = "right" \staffRight
       \dynamicsStaff
-      \new Staff = "left" \with {midiInstrument = "reed organ"} \staffLeft
+      \new Staff = "left" \staffLeft
     >>
 
     \layout {}
+  }
+  
+  \score {
+    <<
+      \new Staff = "right" \with {midiInstrument = "reed organ"} \unfoldRepeats { \staffRight }
+      \dynamicsStaff
+      \new Staff = "left" \with {midiInstrument = "reed organ"} \unfoldRepeats { \staffLeft }
+    >>
     
     \midi {}
   }
