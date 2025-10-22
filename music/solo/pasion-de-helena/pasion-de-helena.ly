@@ -33,7 +33,7 @@ staffRight = {
     as16[ bes as g] as[ c] g'4 f4 f16 g |
     as16[ bes as f] d[ c] b8~ b2 |
     es16[ f es d] es[ g] d'4 c c16 d |
-    es16[ f es c] a[ g] fis4-. g4 gis8 |
+    es16[ f es c] a[ g] fis8 r8 g4 gis8 |
     
     a4. g4 d bes8 |
     a4. c4 b8-. bes16 a g f |
@@ -59,7 +59,7 @@ staffRight = {
     as16[ bes as g] as[ c] g'4 f4 f16 g |
     as16[ bes as f] d[ c] b8~ b2 |
     es16[ f es d] es[ g] d'4 c c16 d |
-    es16[ f es c] a[ g] fis4-. g4 gis8 |
+    es16[ f es c] a[ g] fis8 r8 g4 gis8 |
     
     a4. g4 d bes8 |
     a4. c4 b8-. bes16 a g f |
