@@ -33,7 +33,7 @@ staffRight = {
     
     d4-. <c' d>4-. r8 <e, f>-. <b' c>-. <f~ g~> |
     <f g>4 r8 <f g>8 <e f> <e f> <f g>4-. |
-    d4-. <c' d>4-. r8 <e, f> <b' c> <f g>-> |
+    d4-. <c' d>4-. r8 <e, f>-. <b' c>-. <f g>-> |
     
     r8\regeza d8 f as g f d c |
     f4-- b,-. r8 b8-. f'-. d-- |
@@ -53,38 +53,61 @@ staffRight = {
     r8 d-> c a gis d' g, cis |
     << { d1 } \\ { r8 <f, a b> r4 <f a b>4 <f a b>4 } >> |
     
-    r8 <f b e> r4 d8 e f g |
-    << { 
-      as1
+    r8 <f b e> r4 
+    << {
+      d8( e f g
+      as1)
       g2.
     } \\ {
+      s2
       r8 <e d bes> r4 <e d bes>4 <e d bes>4 
       r8 <e d as> r4 <e d as>4
-    } >> f8 g |
-    \tuplet 5/4 { a16 d a g f } \tuplet 5/4 { a16 d a g f } a16 d a g a d a as |
-    << { g2 } \\ { r8 <d gis,>4. } >> d8 e f g |
+    } >> 
+    
+    << { 
+      f8( g |
+      \tuplet 5/4 { a16 d a g f } \tuplet 5/4 { a16 d a g f } a16 d a g a d a as-2 |
+      g2-5)
+    } \\ {
+      s4
+      s1
+      r8 <d gis,>4. 
+    } >> 
     << {
-      a4. as8~ as4. g8~ |
+      d8( e f g |
+      a4.) as8~ as4. g8~ |
       g4. ges8~ ges2 |
     } \\ {
+      s2
       r8 <f c>4 r8 r8 <e b>4 r8 |
       r8 <es bes>4 r8 r8 <d a>4 r8 |
     } >>
-    <es f>4-- <a, b>-. r2 |
-    b4-. f'8 d r8 e^\markup { \italic "improvviso" } f g |
-    << { 
-      a1
+    <es f>4 <a, b>-. r2 |
+    b4-. f'8 d
+    << {
+      r8 e(^\markup { \italic "improvviso" } f g |
+      a1)
       as2.
     } \\ {
+      s2
       r8 <f e c> r4 <f e c> <f e c> |
       r8 <e d b> r4 <e d b>
-    } >> e8 f |
-    \tuplet 5/4 { g16 c g f e } \tuplet 5/4 { g16 c g f e } g16 c g f g c g e |
-    << { c2 } \\ { r8 <as f>4. } >> c8 d e f |
+    } >>
+    << {
+      e8( f |
+      \tuplet 5/4 { g16 c g f e } \tuplet 5/4 { g16 c g f e } g16 c g f g c g e-1 |
+      c2)-3
+    } \\ {
+      s4
+      s1
+      r8 <as f>4.
+    } >> 
     << { 
-      g4. ges8~ ges4. f8~ |
+      c8( d e f |
+      g4.) ges8~ ges4. f8~ |
       f4. e8~ e2 |
     } \\ { 
+      s2
       r8 <d b>4 r8 r8 <cis bes>4 r8 |
       r8 <c a>4 r8 r8 <b as>4 r8 |
     } >>
@@ -102,7 +125,7 @@ staffRight = {
     
     d4-. <c' d>4-. r8 <e, f>-. <b' c>-. <f~ g~> |
     <f g>4 r8 <f g>8 <e f> <e f> <f g>4-. |
-    d4-. <c' d>4-. r8 <e, f> <b' c> <f g>-> |
+    d4-. <c' d>4-. r8 <e, f>-. <b' c>-. <f g>-> |
     
     \bar "||"
     
@@ -168,7 +191,7 @@ staffLeft = {
   d4 d'8\mn d' cis4 e8\mj e |
   c4 c'8\mn c' b,4 d8\mj d |
 
-  f,4 r4 f,8 f, fis, fis, |
+  f,4 r4 f,8-. f, fis,-. fis, |
   <g, g d'>4-.\mj\mn <a, a>8\spt <d d'>\mn r2 |
   f,8 r8 f\mj f,8~ f,4 f8\mj f |
   g,8 r8 g\spt g,8~ g,4 g8\spt g |
@@ -177,7 +200,7 @@ staffLeft = {
   bes,4 bes8\spt bes bes,4 bes8 bes |
   e,4 e8\mn e a,4 a8\spt a |
   d4 d'8\mn d' g,4 g8\spt g |
-  es,4-. r4 es,8 e, f, fis, |
+  es,4-. r4 es,8-. e,-. f,-. fis,-. |
   \time 3/8
   <g, g d'>4-.\mj\mn <a, a>8\spt |
   
@@ -229,7 +252,7 @@ dynamicsStaff = \new Dynamics {
     tagline = ##f
     instrumentName = "Accordion Solo"
     year = "2025"
-    description = "An joyful and improvisational encounter, but with who exactly? Consider wearing a light purple wig while performing."
+    description = "A joyful and improvisational encounter, but with who exactly? Consider wearing a light purple wig while performing."
     info = "For Standard Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = \githuburl
