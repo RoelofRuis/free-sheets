@@ -419,7 +419,7 @@ dynamicsStaff = \new Dynamics {
       \fill-line {
         \center-column {
           \if \should-print-page-number
-          \line { \char ##x00A9 Roelof Ruis - sheetmusic.roelofruis.nl }
+          \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
         }
       }
     }  
