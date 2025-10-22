@@ -33,7 +33,7 @@ staffRight = {
     as16[ bes as g] as[ c] g'4 f4 f16 g |
     as16[ bes as f] d[ c] b8~ b2 |
     es16[ f es d] es[ g] d'4 c c16 d |
-    es16[ f es c] a[ g] fis4 g4 gis8 |
+    es16[ f es c] a[ g] fis4-. g4 gis8 |
     
     a4. g4 d bes8 |
     a4. c4 b8-. bes16 a g f |
@@ -59,7 +59,7 @@ staffRight = {
     as16[ bes as g] as[ c] g'4 f4 f16 g |
     as16[ bes as f] d[ c] b8~ b2 |
     es16[ f es d] es[ g] d'4 c c16 d |
-    es16[ f es c] a[ g] fis4 g4 gis8 |
+    es16[ f es c] a[ g] fis4-. g4 gis8 |
     
     a4. g4 d bes8 |
     a4. c4 b8-. bes16 a g f |
@@ -153,7 +153,7 @@ staffRight = {
     \ottava 0
 
     <d f d'>4 <c es c'> <g bes g'> <es bes' es> |
-    <d as' d>4 <d' as' d>4. <d as' b>8 <d as' c> <d as' d> |
+    <d as' d>4 <d' as' d>4. <d as' b>8 <d as' c> <d as' cis> |
     <d g d'>4 <c g' c> <g d' g> <es c' es>4 |
     << { g2 f } \\ { <c c'>1 } >>
     
@@ -175,7 +175,7 @@ staffRight = {
     \ottava 0
 
     <d f d'>4 <c es c'> <g bes g'> <es bes' es> |
-    <d as' d>4 <d' as' d>4. <d as' b>8 <d as' c> <d as' d> |
+    <d as' d>4 <d' as' d>4. <d as' b>8 <d as' c> <d as' cis> |
     <d g d'>4 <c g' c> <g d' g> <es c' es>4 |
     << { g2 f } \\ { <c c'>1 } >>
     << { es'1 } \\ { <as, as'>4 <bes bes'> <as as'> <g g'> } >>
@@ -242,7 +242,7 @@ staffLeft = {
   g,8-> r4. r4. cis8-> |
   d8-> r4 d8-> r8 d8-> r4 |
   e,8-> r4 e,8-> r8 e,8-> r4 |
-  f,8-> r4 f,8-> r8 f,8-> r4 |
+  f,4-> r8 f,4-> f,4.-> |
   fis,1 |
   
   b,4. a,4 e,4 c8 |
@@ -258,7 +258,7 @@ staffLeft = {
   d8 d'8\mn 8 c8[ c'8]\spt e,[ c'8 c'] |
   bes,8 bes8\spt 8 e,[ bes] f,8[ bes8 8] |
   e,8 e8\spt e bes,8[ e8] b,8[ e8 8]
-  a,8 r8 a8\spt <es,~ a~>8\spt <es, a>4 e8-. es-- |
+  a,8 r8 a8\spt <es,~ a~>8\spt <es, a>4 e,8-. es,-- |
   
   d8-> r2.. |
   e,8-> r2.. |
@@ -266,7 +266,7 @@ staffLeft = {
   g,8-> r4. r4. cis8-> |
   d8-> r4 d8-> r8 d8-> r4 |
   e,8-> r4 e,8-> r8 e,8-> r4 |
-  f,8-> r4 f,8-> r8 f,8-> r4 |
+  f,8-> r4 f,8-> r8 f,4.-> |
   << { r2 bes\mj } \\ { bes,1 } >>
   
   \key es \major
