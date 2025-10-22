@@ -26,6 +26,7 @@ staffLeft = {
 
 dynamicsStaff = \new Dynamics {
   \time 4/4
+  \override TextScript.Y-offset = -0.5
 
   % add dynamics
 }
