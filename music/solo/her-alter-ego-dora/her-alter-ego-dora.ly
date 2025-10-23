@@ -60,8 +60,8 @@ staffRight = {
       g2.
     } \\ {
       s2
-      r8 <e d bes> r4 <e d bes>4 <e d bes>4 
-      r8 <e d as> r4 <e d as>4
+      r8 <e d bes>-. r4 <e d bes>4 <e d bes>4 
+      r8 <e d as>-. r4 <e d as>4
     } >> 
     
     << { 
@@ -181,7 +181,17 @@ staffLeft = {
   f,4 f8\spt f fis,8 g, <as, as>\spt <bes, bes>\spt |
   r8 f, f8\spt f g,8 g8\spt a, a\spt |
   d8 r8 d'8\mn a,8~ a,4 d'8 a,8 |
-  g,8 r8 g\spt d r2 |
+  << { 
+    g,8 r8 \stemDown g\spt d \stemNeutral 
+  } \\ { 
+    s4.
+    \omit Stem
+    \omit Flag
+    \hideNotes
+    d8^\shape #'((0.5 . -10.6) (5 . -11) (-3 . 0) (0 . 0)) \( 
+    \change Staff = "right"
+    d'8\)
+  } >> r4. |
   
   bes,8 r8 bes\spt bes,~ bes,4 bes8 bes, |
   c8 r8 c'\spt c~ c4 c'8 c |
