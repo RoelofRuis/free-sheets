@@ -1,8 +1,8 @@
 \version "2.20.0"
 
 % ---- Bellows ----
-out = ^\markup { \musicglyph #"accordion.pull" }
-in = ^\markup { \musicglyph #"accordion.push" }
+out = ^\markup { \translate #'(0.9 . 0) \musicglyph #"accordion.pull" }
+in = ^\markup { \translate #'(1.2 . 0) \musicglyph #"accordion.push" }
 
 outsub = _\markup { \musicglyph #"accordion.pull" }
 insub = _\markup { \musicglyph #"accordion.push" }

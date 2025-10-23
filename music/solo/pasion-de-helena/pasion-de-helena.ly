@@ -17,9 +17,9 @@ staffRight = {
 
   \relative c'' {
     <e a e'>4\regz^\markup { \halign #-1.5 \pad-around #1 \large \bold "Maestoso" } <d a' d> <a d a'> <f d' f> |
-    <e as e'> <e' as e'>4. <e as b>8 <e as c> <e as d> |
+    <e as e'> <e' as b e>4.\arpeggio <e as b>8 <e as c> <e as d> |
     <e a e'>4 <d a' d> <a e' a> <c e c'> |
-    <c e gis b>2.\fermata \breathe r8 b16\regza e |
+    <c gis' b>2.\fermata \breathe r8 b16\regza e |
 
     \break
     
@@ -112,7 +112,7 @@ staffRight = {
     g16 g g g g8-. g16[ g g8]-. g16 g g fis g gis |
     a4\glissando
     \ottava 0
-    a,,8 <bes~ des~ f~ a~>8-> <bes des f a>2 |
+    a,,8 <bes~ des~ f~ a~>8-> <bes des f a>4 r4 |
     
     << {
       <f' a>8[(-> <gis b>-.) <gis b>]-. <f a>[(-> <gis b>-.)] <f a>([-> <gis b>-.) <gis b>-.] 
@@ -180,12 +180,76 @@ staffRight = {
     << { g2 f } \\ { <c c'>1 } >>
     << { es'1 } \\ { <as, as'>4 <bes bes'> <as as'> <g g'> } >>
     << { es'1 } \\ { <f, f'>2 <as as'> } >>
-    << { e'1 } \\ { <a, a'>4 <b b'> <a a'> <gis gis'> } >>
-    <gis dis' gis>1
-    
+
     \key a \minor
+    << { e'1 } \\ { <a, a'>4 <b b'> <a a'> <gis gis'> } >>
+    <gis dis' gis>2. <fis fis'>4 |
+    <e e'>2. <dis dis'>4 |
+    <e e'>4 <gis gis'> <b b'> <fis' fis'> |
+    <e~ b' e~>1 |
+    <e a e'>2 <e e'>4 <dis dis'> |
+    <e e'>4 <dis dis'> <b b'> <gis gis'> |
+    <fis fis'>4 <e e'> <fis fis'>8 <gis gis'> <a a'> <b b'> |
+    << { 
+      <a' cis>8(-> <b dis>)-. <b dis>-. <a cis>[(-> <b dis>])-. <a cis>[(-> <b dis>)-. <b dis>]-. |
+      <bes d>8(-> <c e>-.) <c e>-. <bes d>[(-> <c e>]-.) <bes d>8[(-> <c e>-.) <c e>]-.
+    } \\ {
+      e,4 r8 e8 r8 e4 r8
+      e4 r8 e8 r8 e4 r8
+    } >>
+
     \time 8/8
+
+    \repeat tremolo 8 { <c e fis b>8-. }
+    \repeat tremolo 8 { <c es fis b>8-. }
+    \repeat tremolo 8 { <bes d e a>8-. }
+    \repeat tremolo 4 { <bes cis e a>8-. } <bes cis e a>4 r4 |
     
+    d4. cis8[ d] e[ f g] |
+    e4. dis8 e g bes e |
+    d4. c4 a f8 |
+    << { r4. <fis~ bes~ d~>8 <fis bes d>2 } \\ { e1 } >>
+    d4. cis8[ d] f[ a c] |
+    \ottava 1
+    e2. dis16 e f fis |
+    g16 g g g g8-. g16[ g g8]-. g16 g g fis g gis |
+    a4\glissando
+    \ottava 0
+    a,,8 <bes des f a>8-> r8 <c e gis b>4-> b16 e |
+    
+    b'4. a4 e4 c8 |
+    b1 |
+    e4. d4 g,4 a16 b |
+    c8-- bes-. es,16 f g8~ g4 r4 |
+    
+    as16[ bes as g] as[ c] g'4 f4 f16 g |
+    as16[ bes as f] d[ c] b8~ b2 |
+    es16[ f es d] es[ g] d'4 c c16 d |
+    es16[ f es c] a[ g] fis8 r8 g4 gis8 |
+    
+    a4. g4 d bes8 |
+    a4. c4 b8-. bes16 a g f |
+    d2 r8 f8-- a-. c-. |
+    e-- d-. a16 ais b8~ b4 r8 d16 g |
+    
+    d'4. c4 g4 es8 |
+    es'4. d4 b as8 |
+    g8( f b d)-. r c-. r
+    << { 
+      \stemDown b~ \stemNeutral b2..
+      b,16[ e]
+    } \\ { 
+      s 8 
+      r8 <gis e c>8-. r4 <gis e c>4 <gis e c>8
+    } >> |
+    
+    b4. a4 e c8 |
+    <b b'>4 <a a'> <e e'> <c c'> |
+    <d d'>8-> r8 <g~ c~ e~ g~>2. |
+    <g~ c~ e~ g~>8\out <g~ c~ e~ g~>8\in <g~ c~ e~ g~>8\out <g~ c~ e~ g~>8\in <g~ c~ e~ g~>8\out <g c e g>8\in r4 |
+    <b c e a>4-> r2. |
+
+    \bar "|."
     
   }
 }
@@ -198,7 +262,7 @@ staffLeft = {
   << { r2 f\mj } \\ { f,1 } >>
   << { r2 bes\spt } \\ { bes,1 } >>
   <b, d'>2\mn <fis, a>2\mn
-  << { r4 e2\spt\fermata d4\rest } \\ { e,2. } >>
+  e,2.\fermata r4 |
 
   \time 8/8
 
@@ -246,17 +310,17 @@ staffLeft = {
   fis,1 |
   
   b,4. a,4 e,4 c8 |
-  b,2. f,16 fis, g, gis, |
-  a,4. g,4 d4 bes,8 |
-  a,2. ais,16 b, c cis |
+  b,2. f,16( fis, g, gis, |
+  a,4.) g,4 d4 bes,8 |
+  a,2. ais,16( b, c cis |
 
-  d8 d'8\mn 8 gis,8[ e8]\spt e,[ e\spt e] |
+  d8) d'8\mn 8 e,8[ e8]\spt gis,[ e\spt e] |
   a,8 a8\mn 8 c8[ c'8]\spt e,[ c'8 8] |
-  f,8 f8\mj 8 a,[ f8] c[ f8 8] |
+  f,8 f8\mj 8 c[ f8] f,[ f8 8] |
   e,8 e8\spt e bes,[ e8] b,[ e8 e] |
   
   d8 d'8\mn 8 c8[ c'8]\spt e,[ c'8 c'] |
-  bes,8 bes8\spt 8 e,[ bes] f,8[ bes8 8] |
+  bes,8 bes8\spt 8 f,[ bes] bes,8[ bes8 8] |
   e,8 e8\spt e bes,8[ e8] b,8[ e8 8]
   a,8 r8 a8\spt <es,~ a~>8\spt <es, a>4 e,8-. es,-- |
   
@@ -340,14 +404,51 @@ staffLeft = {
     a,1
     f,1
     bes,1
+    \key a \minor
     fis,1
     b,1
   } >>
   
-  \key a \minor
+  s1*8 |
+  
   \time 8/8
+  b,4. a,4 e,4 c8 |
+  b,2. f,16( fis, g, gis, |
+  a,4.) g,4 d4 bes,8 |
+  a,2. ais,16( b, c cis |
   
+  d8) d'8\mn 8 e,8[ e8]\spt gis,[ e\spt e] |
+  a,8 a8\mn 8 c8[ c'8]\spt e,[ c'8 8] |
+  f,8 f8\mj 8 c[ f8] f,[ f8 8] |
+  e,8 e8\spt e bes,[ e8] b,[ e8 e] |
   
+  d8 d'8\mn 8 c8[ c'8]\spt e,[ c'8 c'] |
+  bes,8 bes8\spt 8 f,[ bes] bes,8[ bes8 8] |
+  e,8 e8\spt e bes,8[ e8] b,8[ e8 8] |
+  a,8 r8 a8\spt <es, a>8\spt r8 <e e'>4\spt r8 |
+
+  << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 a,4. r8 e,8 } >>
+  << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
+  << { g8\mj r8 g8 g8 r4 g8 r8 } \\ { b,4 r8 b,4. r8 d8 } >>
+  << { f8\mn r8 f8 es8 r4 es8 r8 } \\ { as,4 r8 g,4. r8 g,8 } >>
+  << { f8\mn r8 f8 f8 r4 f8 r8 } \\ { f,4 r8 es,4. r8 es,8 } >> |
+  << { f8\mn r8 f8 g8\spt r4 g8 r8 } \\ { d4 r8 g,4. r8 d8 } >> |
+  << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 bes,4. r8 bes,8 } >> |
+  << { c'8\mn r8 c'8 d'8\spt r4 d'8 r8 } \\ { a,4 r8 d4. r8 a,8 } >> |
+  << { g8\mn r8 g8 g8 r4 g8 r8 } \\ { g,4 r8 g,4. r8 g,8 } >> |
+  << { a8\spt r8 a8 a8 r8 a8 a8 a8 } \\ { a,4 r8 cis4 r8 e,8 r8 } >> |
+  << { d'8\mn r8 d'8 d' r4 d'8 r8 } \\ { d4 r8 d4. r8 a,8 } >> |
+  << { g8\spt r8 g8 g8 r4 g8 r8 } \\ { g,4 r8 b,4. r8 d8 } >> |
+  << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 c4. r8 g,8 } >> |
+  << { g8\spt r8 g8 g8 r4 g8 r8 } \\ { b,4 r8 b,4. r8 d,8 } >> |
+  << { b8\spt r8 b8 b8 r4 b8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >> |
+  << { r4 e8\spt r4. e8 r8 } \\ { e,4 r8 b,4. r4 } >> |
+  
+  << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 a,4. r8 e,8 } >>
+  << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
+  bes,8 r8 <bes,~ bes~>2.\spt |
+  <bes, bes>2. f,16( fis, g, ais,
+  a,4 r2. |
   
 }
 
@@ -358,7 +459,7 @@ dynamicsStaff = \new Dynamics {
   s1\f
   s1
   s1
-  s2\< s4.\! s8\mf
+  s2.. s8\mf
   
   s1*16
   s1*16
