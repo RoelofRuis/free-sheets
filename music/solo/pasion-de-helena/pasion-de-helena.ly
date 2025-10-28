@@ -35,7 +35,7 @@ staffRight = {
     
     b'4.^\markup { \pad-around #1 \large \bold "Con fuoco" } a4 e4 c8 |
     b1 |
-    e4. d4 g,4 a16 b |
+    r8 e4 d4 g,4 a16 b |
     c8-- bes-. es,16 f g8~ g4. r8 |
     
     as16[ bes as g] as[ c] g'4 f4 f16 g |
@@ -61,7 +61,7 @@ staffRight = {
     
     b4. a4 e4 c8 |
     b1 |
-    e4. d4 g,4 a16 b |
+    r8 e4 d4 g,4 a16 b |
     c8-- bes-. es,16 f g8~ g4. r8 |
     
     as16[ bes as g] as[ c] g'4 f4 f16 g |
@@ -84,7 +84,7 @@ staffRight = {
     } >> r4 |
     
     << { 
-      <f a>8[(->\regza <gis b>-.) <gis b>]-. <f a>[(-> <gis b>-.)] <f a>([-> <gis b>-.) <gis b>-.] 
+      <f a>8[(->\regza^\markup { \hspace #3 \italic "con tensione" } <gis b>-.) <gis b>]-. <f a>[(-> <gis b>-.)] <f a>([-> <gis b>-.) <gis b>-.] 
       <gis b>8(-> <a c>-.) <a c>-. <gis b>[(-> <a c>]-.) <gis b>[(-> <a c>-.) <a c>-.] |
       <a c>8(-> <b d>-.) <b d>-. <a c>[(-> <b d>]-.) <a c>[(-> <b d>-.) <b d>]-. |
       <b d>8(-> <cis e>-.) <cis e>-. <b d>[(-> <cis e>]-.) <b d>[(-> <cis e>-.) <cis e>]-. |
@@ -114,9 +114,9 @@ staffRight = {
       s1
       s1
       s1
-      r4. <fis'~ bes~ d~>8 <fis bes d>2
+      r4. fis'4 bes4 d8
     } \\ {
-      d4.^\(\regz cis8[ d] e[ f g] |
+      d,4.^\(\regz cis8[ d] e[ f g] |
       e4. dis8[ e] g[ bes e] |
       d4. c4 a f8 |
       e1\)
@@ -160,8 +160,8 @@ staffRight = {
     <d g d'>4 <c g' c> <g d' g> <bes d bes'> |
     << { es2 d } \\ { <c a'>1 } >> |
     
-    << { <a a'>4 <bes bes'> <a a'> <g g'> } \\ { es'1 } >>
-    <a, es' f a>2 <c es f c'>2 |
+    <a es' a>4 <bes es bes'> <a es' a> <g es' g>
+    <a es' f a>2 <c es f c'>2 |
     \ottava 1
     <g' c d g>2 <f~ c'~ d~ f~>2 |
     <f c' d f>2 r2
@@ -172,18 +172,18 @@ staffRight = {
     <d g d'>4 <c g' c> <g d' g> <es c' es>4 |
     << { g2 f } \\ { <c c'>1 } >>
     
-    << { <as' as'>4 <bes bes'> <as as'> <g g'> } \\ { es'1 } >>
-    <as, es' as>2 <c es c'>2 |
-    << { <ces ces'>4 <des des'> <ces ces'> <bes bes'> } \\ { ges'1 } >>
-    <bes, ges' bes>2 r4 <c ges' c>4\regzav |
+    <as' es' as>4 <bes es bes'> <as es' as> <g es' g> |
+    <as es' as>2 <c es c'>2 |
+    <ces ges' ces>4 <des ges des'> <ces ges' ces> <bes ges' bes> |
+    <bes ges' bes>2 r4 <c ges' c>4\regzav |
     
     <d g d'>4 <c g' c> <g c g'> <es g es'> |
     <d ges d'>4 <d' ges d'>4. <d ges a>8 <d ges bes> <d ges c> |
     <d g d'>4 <c g' c> <g d' g> <bes d bes'> |
     << { es2 d } \\ { <c a'>1 } >> |
-    
-    << { <a a'>4 <bes bes'> <a a'> <g g'> } \\ { es'1 } >>
-    <a, es' f a>2 <c es f c'>2 |
+
+    <a es' a>4 <bes es bes'> <a es' a> <g es' g>
+    <a es' f a>2 <c es f c'>2 |
     \ottava 1
     <g' c d g>2 <f~ c'~ d~ f~>2 |
     <f c' d f>2 r2
@@ -193,19 +193,19 @@ staffRight = {
     <d as' d>4 <d' as' d>4 \tuplet 3/2 { <d as' b>4 <d as' c> <d as' cis> } |
     <d g d'>4 <c g' c> <g d' g> <es c' es>4 |
     << { g2 f } \\ { <c c'>1 } >>
-    << { es'1 } \\ { <as, as'>4 <bes bes'> <as as'> <g g'> } >>
+    <as' es' as>4 <bes es bes'> <as es' as> <g es' g> |
     <f es' f>2 <as es' as>2 |
 
     \key a \minor
-    << { e'1 } \\ { <a, a'>4 <b b'> <a a'> <gis gis'> } >>
+    <a e' a>4 <b e b'> <a e' a> <gis e' gis>
     <gis dis' gis>2. <fis fis'>4 |
-    <e e'>2. <dis dis'>4 |
+    <e e'>2.^\markup { \italic "dolce" } <dis dis'>4 |
     <e e'>4 <gis gis'> <b b'> <fis' fis'> |
     <e~ b' e~>1 |
-    <e a e'>2 <e e'>4 <dis dis'> |
-    <e e'>4 <dis dis'> <b b'> <gis gis'> |
-    <fis fis'>4 <e e'> <fis fis'> <g g'> |
-    <gis dis' e gis>1 |
+    <e a e'>2 e'4 dis |
+    e4 dis b gis |
+    fis4 e fis g |
+    <gis, dis' e gis>1 |
     <ais d e fis>1 |
     b2. ais4 |
     b4 dis fis cis' |
@@ -231,9 +231,9 @@ staffRight = {
       s1
       s1
       s1
-      r4. <fis'~ bes~ d~>8 <fis bes d>2 
+      r4. fis'4 bes4 d8
     } \\ { 
-      d4.^\( cis8[ d] e[ f g] |
+      d,4.^\( cis8[ d] e[ f g] |
       e4. dis8[ e] g[ bes e] |
       d4. c4 a f8 |
       e1\)
@@ -251,16 +251,16 @@ staffRight = {
     
     c4. b8 c[ e g d'] |
     c2. c8 b |
-    c[ g e c] d[ c d e] |
+    c[ b g e] d[ c d e] |
     <g gis,>2.\fermata r8 b,16\regzav e |
     
     << { b'1 } \\ { r4 a e c } >>
     b1 |
-    e4. d4 g,4 a16 b |
-    c8-- bes-. es,16 f g8~ g4. r8 |
+    r8 e4 d4 g,4 a16 b |
+    c8-- bes-. es,16 f g8 r16 a,16 bes c d es f g |
     
     as16[ bes as g] as[ c] g'4 f4 f16 g |
-    as16[ bes as f] d[ c] b8~ b2 |
+    as16[ bes as f] d[ c] b4 as'8 g16 ges f e |
     es16[ f es d] es[ g] d'4 c c16 d |
     es16[ f es c] a[ g] fis4-. g4 gis8 |
     
@@ -432,7 +432,7 @@ staffLeft = {
     r4 e2\mj e4
     r4 e2\mj e4
     r4 a2\mj a4
-    r4 a2\mn a4
+    a4\mn r2.
     r4 e2\mj e4
     r4 gis2\spt gis4
     r4 cis'2\mn cis4
@@ -458,7 +458,7 @@ staffLeft = {
     e,1
     d1
     cis1
-    c1
+    c4 r2.
     b,1
     gis,1
     cis1
@@ -470,13 +470,13 @@ staffLeft = {
   gis,4 e2\mj e4
   <g, e>4 r2. |
   
-  fis,4 fis2\spt fis4 |
-  fis,4 fis2 fis4 |
-  fis,4 fis2 fis4 |
-  fis,4 fis2 fis4 |
+  fis,4 fis4\spt fis4 fis4 |
+  fis,4 fis4 fis fis4 |
+  fis,4 fis4 fis fis4 |
+  fis,4 fis4 fis fis4 |
   
   \time 8/8
-  
+
   b,4. ais,4 fis,4 dis,8 |
   e,4. fis,4 gis,4 ais,8 |
   b,4. ais,4 fis,4 dis,8 |
@@ -540,10 +540,10 @@ dynamicsStaff = \new Dynamics {
   s1
   s1
   s2\! s2\>
-  s1\!\f
+  s1\!\mp
+  s1\<
   s1
-  s1^\markup { "poco rit." }
-  s2.. s8\mf
+  s2..\! s8\mf
   
   s1*16
   s1*16
@@ -553,26 +553,31 @@ dynamicsStaff = \new Dynamics {
   s1\ff
   s1
   s1
-  s2. s4\mf
-  s1
+  s2. s4\>
+  s1\!\mp
   s4. s8\< s2
   s1\!\>
   s1\!
   s4. s8\< s2
-  s2.\! s4\<
-  s1\!
+  s2.\!\f s4\<
+  s1\!\ff
   s2. s4\>
   s4\!\mp s2.^\markup { "cresc." }
   s1*7
-  s1\f
+  s1\mp
   
-  s1*15
-  s1*15
+  s1*14
+  s2.\< s4\!\f
+  s1
+  s1*14
   s1
   s1
-  s1*5
-  s1\>
-  s1
+  s1\<
+  s1\!\>
+  s1\!
+  s1*2
+  s1\<
+  s1\!\>
   s1\!\p
   s1*7
 
@@ -580,6 +585,11 @@ dynamicsStaff = \new Dynamics {
   
   s1\mf
   s1
+  s1
+  s1
+  s1*4
+  s1\<
+  s1\!
   
 }
 
