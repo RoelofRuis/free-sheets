@@ -229,7 +229,7 @@ staffRight = {
     <e e'>2.^\markup { \italic "dolce" } <dis dis'>4 |
     <e e'>4 <gis gis'> <b b'> <fis' fis'> |
     <e~ b' e~>1 |
-    <e a e'>2 e'4 dis |
+    <e a e'>2 r4 e'8 dis |
     e4. dis4 b4 gis8 |
     fis4 e fis g |
     gis2~ <gis e dis>2 |
@@ -317,18 +317,18 @@ staffRight = {
     f'4. es4 c a8 |
     g'4. f4 bes,16 a bes c d es |
     f4. es4 bes4 f8 |
-    es4 es[ g] d'4 c4 c16 d  |
-    es16[ f es c] as[ g] f8~ f2 |
-    d'4 c g es |
-    <fis, d'>4 <d' fis a d>2. |
-    <fis, d'>4 <d' fis a d>2. |
-    <fis, d'>4 <d' fis a d>2. |
+    es2 r8 f16 g as bes c d |
+    es8-- d-. f,16 g as8~ as4 r4 |
+    <g d'>4 <es c'> <bes g'> <g es'> |
+    <fis d'>8-> r8 <d' fis a d>2. |
+    <fis, d'>8-> r8 <d' fis a d>2. |
+    <fis, d'>8-> r8 <d' fis a d>2. |
 
     b'4. a4 e c8 |
     <b b'>4 <a a'> <e e'> <c c'> |
     <d d'>8-> r8 <g c e g>2. |
     <as d f>8(-> <as e' g>-.) <as e' g>-. <as d f>[( <as e' g>)]-. <as d f>[(-> <as e' g>-.) <as e' g>]-. |
-    <b c e a>4-> r2. |
+    <b c e a>8-> r2.. |
 
     \bar "|."
     
@@ -591,15 +591,15 @@ staffLeft = {
   << { bes8\mn r8 bes8 bes8 r4 bes8 r8 } \\ { bes,4 r8 bes,4. r4 } >> |
   
   << { es8\mj r8 es8 es8 r4 es8 r8 } \\ { es,4 r8 es,4. r4 } >> |
-  as,4 <as, as>2.\spt 
-  c4 <c c'>2.\spt
-  e,4 <e, e>2.\spt
+  as,8-> r8 <as, as>2.\spt 
+  c8-> r8 <c c'>2.\spt
+  e,8-> r8 <e, e>2.\spt
   
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 g,4. r8 g,8 } >>
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
   bes,8 r8 <bes, bes>2.\spt |
-  bes,8 r4 bes,8 r8 e,8 f,16( fis, g, gis, |
-  a,4) r2. |
+  bes,8-> r4 bes,8-> r8 e,8 f,16( fis, g, gis, |
+  a,8)-> r2.. |
   
 }
 
