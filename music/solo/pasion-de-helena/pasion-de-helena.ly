@@ -674,6 +674,7 @@ dynamicsStaff = \new Dynamics {
     }
     
     oddFooterMarkup = \markup {
+      %\combine\watermark
       \fill-line {
         \center-column {
           \if \should-print-page-number
