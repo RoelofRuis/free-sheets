@@ -122,7 +122,7 @@ staffRight = {
       d4. c4 a f8 |
       e1\)
     } >>
-    d4.\(\regzv cis8[ d] f[ a c] |
+    r8 d4\(\regzv cis8[ d] f[ a c] |
     \ottava 1
     e2. dis16 e f fis |
     g16 g g g g8-. g16[ g g8]-. g16 g g fis g gis |
@@ -243,7 +243,7 @@ staffRight = {
       d4. c4 a f8 |
       e1\)
     } >>
-    d4.\( cis8[ d] f[ a c] |
+    r8 d4\( cis8[ d] f[ a c] |
     e2. g16 ges f e |
     d16 d d d d8-. d16[ d d8]-. d16 d d b c d |
     e4\glissando
@@ -252,7 +252,7 @@ staffRight = {
     b'4. a4 e4 cis8 |
     b2. a4 |
     r8 e'4 d4 a4 b16 cis |
-    d8 c f,16 g as8 r8 as16 bes as g as bes |
+    d8-- c-. f,16 g as8 r8 as16 bes as g as bes |
     
     c4. b8 c[ e g d'] |
     c2. c8 b |
@@ -267,9 +267,9 @@ staffRight = {
     b'4. a4 e4 cis8 |
     b2. a4 |
     r8 e'4 d4 a4 b16 cis |
-    d8 c f,16 g as8 r8 as16 bes as g as bes |
+    d8-- c-. f,16 g as8 r8 as16 bes as g as bes |
     
-    c4. b8 c[ e g d'] |
+    c4. b8 c[ es g b] |
     c2. c8 b |
     c[ b g e] d[ c d e] |
     <g d as>2.\fermata r8 b,16\regzav e |
@@ -281,12 +281,12 @@ staffRight = {
     
     as16[ bes as g] as[ c] g'4 f4 f16 g |
     as16[ bes as f] d[ c] b4 as'8-. g16 ges f e |
-    es16[ f es d] es[ g] d'4 c c16 d |
+    es16[ f es d] es[ g] d'4 c d8 |
     es16[ f es c] a[ g] fis4-. g4 gis8 |
     
     a4. g4 d bes8 |
     a4. c4 b8-. bes16 a g f |
-    d2 r8 f8-- a-. c-. |
+    d4 d16 e d cis d8-- f8-. a-. c-. |
     e-- d-. a16 ais b8~ b4 r8 d16 g |
 
     d'4. c4 g4 es8 |
@@ -523,8 +523,8 @@ staffLeft = {
   << { d8\mj 8 8 8 8 8 8 8 } \\ { fis,4. fis,4.~ fis,4 } >>
   << { d8\mn 8 8 f8\mn 8 8 8 8 } \\ { f,4. f,4.~ f,4 } >>
   
-  << { c'8\mj 8 8 bes8\spt 8 8 8 8 } \\ { c4. bes,4.~ bes,4 } >>
-  << { f8\mj[ 8 8 8] } \\ { a,2 } >> <as, f>4\mn r4 |
+  << { c'8\mj 8 8 f8\spt 8 8 8 8 } \\ { c4. f,4.~ f,4 } >>
+  << { f8\mn[ 8 8 8] } \\ { d,2 } >> <g, f>4\vsp r4 |
   c2 b, |
   bes,2.\fermata r4 |
   
