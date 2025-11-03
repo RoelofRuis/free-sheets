@@ -298,7 +298,10 @@ staffRight = {
     c2. a8 b |
     c4. b4 g4 e8 d4 c d e |
     <g~ e~ c~ g~>1\arpeggio |
-    <g e c g>2\fermata r4 b,8\regzav e |
+    <g e c g>2\fermata r2
+    s1
+    
+    r2. b,8\regzav e |
     
     b'1~ b4~ <b~ a~> <b~ a~ e~> <b a e c>
     b,1 |
@@ -320,12 +323,13 @@ staffRight = {
     f'4. es4 c a8 |
     g'4. f4 bes,16 a bes c d es |
     f4. es4 bes4 f8 |
-    es2 r8 f16 g as bes c d |
-    es8-- d-. f,16 g as8~ as4 r4 |
+    es1 |
+    r4 f16 g f e f8-- as-. bes-. c-. |
+    d8-- c-. f,16 g as8~ as4 r4 |
     <g d'>4 <es c'> <bes g'> <g es'> |
-    <fis d'>8-> r8 <d' fis a d>4\arpeggio \tuplet 3/2 { <d fis a>4 <d fis bes> <d fis c'> } |
-    <fis, d'>8-> r8 <d' fis bes d>4\arpeggio \tuplet 3/2 { <d fis a>4 <d fis bes> <d fis c'> } |
-    <fis, d'>8-> r8 <d' fis gis d'>2\arpeggio <d fis gis c>4 |
+    <fis d'>8-> r8 <d' fis a d>4->\arpeggio \tuplet 3/2 { <d fis a>4 <d fis bes> <d fis c'> } |
+    <fis, d'>8-> r8 <d' fis bes d>4->\arpeggio \tuplet 3/2 { <d fis a>4 <d fis bes> <d fis c'> } |
+    <fis, d'>8-> r8 <d' fis gis d'>2->\arpeggio <c fis gis c>4 |
 
     b'4. a4 e c8 |
     <b b'>4 <a a'> <e e'> <c c'> |
@@ -574,6 +578,8 @@ staffLeft = {
   << { bes8[\spt 8 8 8] 8[ 8 8 8] } \\ { bes,1 } >> |
   <bes, bes>2\fermata r2 |
   
+  s1 |
+  R1 |
   R1 |
   R1 |
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
@@ -593,14 +599,15 @@ staffLeft = {
   << { bes8\mj r8 bes8 bes8 r4 bes8 r8 } \\ { as,4 r8 as,4. r8 as,8 } >> |
   << { es8\mj r8 es8 es8 r4 es8 r8 } \\ { g,4 r8 g,4. r4 } >> |
   << { f8\mn r8 f8 f8 r4 f8 r8 } \\ { f,4 r8 f,4. r4 } >> |
-  << { bes8\mn r8 bes8 bes8 r4 bes8 r8 } \\ { bes,4 r8 bes,4. r4 } >> |
+  << { bes8\spt r8 bes8 bes8 r4 bes8 r8 } \\ { bes,4 r8 bes,4. r4 } >> |
+  << { bes8\spt r8 bes8 bes8 r4 bes8 r8 } \\ { bes,4 r8 bes,4. r4 } >> |
   
   << { es8\mj r8 es8 es8 r4 es8 r8 } \\ { es,4 r8 es,4. r4 } >> |
-  as,8-> r8 <as, as>4\spt as,2
-  c8-> r8 <c c'>4\spt c2
-  e,8-> r8 <e, e>4\spt e,2
+  as,4~ <as, as>4\spt r2
+  c4~ <c c'>4\spt r2
+  << { e8\spt r8 e8 e8 r4 e8 r8 } \\ { e,4 r8 e,4. r4 } >> |
   
-  << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 g,4. r8 g,8 } >>
+  << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 a,4. r8 a,8 } >>
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
   bes,8 r8 <bes, bes>2.\spt |
   bes,8-> r4 bes,8-> r8 e,8 f,16( fis, g, gis, |
@@ -699,7 +706,7 @@ dynamicsStaff = \new Dynamics {
     info = "For Standard Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = \githuburl
-    version = "November 2025 - v6 Unfinished"
+    version = "November 2025 - v7 Unfinished"
   }
 
   \paper {
