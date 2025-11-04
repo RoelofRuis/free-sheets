@@ -13,7 +13,7 @@ staffRight = {
   \clef treble
   \time 2/2
   \override Score.MetronomeMark.X-offset = #-1
-  \tempo 4 = 120
+  \tempo \markup { \pad-around #1 \bold "Andante Moderato" } 4 = 120
 
   \relative c'' {
     \partial 8 { e16\regzav a }
@@ -37,14 +37,14 @@ staffRight = {
     <c gis' b>2..\)\fermata \breathe 
 
     \override Score.MetronomeMark.X-offset = #2.5
-    \tempo 4 = 152
     b16\regza e |
     
     \break
     
     \time 8/8
     
-    b'4.^\markup { \pad-around #1 \large \bold "Con fuoco" } a4 e4 c8 |
+    \tempo \markup { \pad-around #1 \bold "Con fuoco" } 4 = 152
+    b'4. a4 e4 c8 |
     b1 |
     r8 e4 d4 g,4 a16 b |
     c8-- bes-. es,16 f g8~ g4. r8 |
@@ -92,10 +92,10 @@ staffRight = {
       \stemDown b~ \stemNeutral b2. 
     } \\ { 
       s 8 r8 <gis c,>8-. r4 <gis c,>4
-    } >> r4 |
+    } >> r4\regza |
     
     << { 
-      <f a>8[(->\regza^\markup { \hspace #3 \italic "con tensione" } <gis b>-.) <gis b>]-. <f a>[(-> <gis b>-.)] <f a>([-> <gis b>-.) <gis b>-.] 
+      <f a>8[(-> <gis b>-.) <gis b>]-. <f a>[(-> <gis b>-.)] <f a>([-> <gis b>-.) <gis b>-.] 
       <gis b>8(-> <a c>-.) <a c>-. <gis b>[(-> <a c>]-.) <gis b>[(-> <a c>-.) <a c>-.] |
       <a c>8(-> <b d>-.) <b d>-. <a c>[(-> <b d>]-.) <a c>[(-> <b d>-.) <b d>]-. |
       <b d>8(-> <cis e>-.) <cis e>-. <b d>[(-> <cis e>]-.) <b d>[(-> <cis e>-.) <cis e>]-. |
@@ -138,7 +138,7 @@ staffRight = {
     g16 g g g g8-. g16[ g g8]-. g16 g g fis g gis |
     a4\glissando
     \ottava 0
-    a,,8 <bes~ des~ f~ a~>8-^ <bes des f a>4\) r4 |
+    a,,8-. <bes~ des~ f~ a~>8-^ <bes des f a>4\) r4 |
     
     << {
       <f' a>8[(\regza-> <gis b>-.) <gis b>]-. <f a>[(-> <gis b>-.)] <f a>([-> <gis b>-.) <gis b>-.] 
@@ -166,18 +166,18 @@ staffRight = {
       as4 r8 as8 r8 as4 r8
     } >>
     
-    \repeat tremolo 8 { <g bes des e>8\regzav } |
-    \repeat tremolo 8 { <g bes des e>8 } |
-    \repeat tremolo 8 { <es g a d>8 } |
-    \repeat tremolo 8 { <es g a c>8 } |
+    \repeat tremolo 8 { <g bes des e>8-.\regzav } |
+    \repeat tremolo 8 { <g bes des e>8-. } |
+    \repeat tremolo 8 { <es g a d>8-. } |
+    \repeat tremolo 8 { <es g a c>8-. } |
     
-    \repeat tremolo 8 { <des g c>8 } |
-    \repeat tremolo 8 { <des g c>8 } |
-    \repeat tremolo 8 { <des g c>8 } |
+    \repeat tremolo 8 { <des g c>8-. } |
+    \repeat tremolo 8 { <des g c>8-. } |
+    \repeat tremolo 8 { <des g c>8-. } |
     d'4~ <d~ c~> <d~ c~ g~> <d~ c~ g es> |
     <d c d,>1 |
     <d d,>1 |
-    d2 r4. d,16\regzv g |
+    d2 r4.\regzv d,16 g |
     << { d'1 } \\ { r4 <f, as>4 <g bes> <as c> } >>
     
     \break
@@ -204,7 +204,7 @@ staffRight = {
     <es' as>4 <d bes'> <c as'> <bes g'> |
     <c as'>2 <es c'>2 |
     <ces ces'>4 < des des'> <es ces'> <f bes> |
-    <ges bes>2 r4 <ges c>4\regzav^\markup { \hspace #3 \pad-around #1 \large \bold "Maestoso" } |
+    <ges bes>2 r4\regzav <ges c>4^\markup { \hspace #3 \pad-around #1 \large \bold "Maestoso" } |
     
     <d g d'>4 <c g' c> <g c g'> <es g es'> |
     <d ges d'>4 <d' ges d'>4. <d ges a>8 <d ges bes> <d ges c> |
@@ -244,10 +244,10 @@ staffRight = {
     b4. ais4 fis4 dis8 |
     e2. e16 fis gis ais |
     b4. ais4 fis4 dis8 |
-    e2. e16 fis gis ais |
+    e1 |
 
     \time 8/8
-    \repeat tremolo 8 { <cis, e fis b>8-. }
+    \repeat tremolo 8 { <cis e fis b>8-. }
     \repeat tremolo 8 { <cis e fis cis'>8-. }
     \repeat tremolo 8 { <cis e fis b>8-. }
     \repeat tremolo 8 { <d fis gis cis>8-. }
@@ -272,7 +272,7 @@ staffRight = {
     e2. g16 ges f e |
     d16 d d d d8-. d16[ d d8]-. d16 d d b c d |
     e4\glissando
-    e,8 <e a d>4.\) b8 e |
+    e,8-. <e a d>4.\) b8 e |
     
     b'4. a4 e4 cis8 |
     b2. r4 |
@@ -301,6 +301,7 @@ staffRight = {
     <g e c g>2\fermata r2
     s1
     
+    \tempo \markup { \pad-around #1 \bold "Con fuoco" } 4 = 152
     r2. b,8\regzav e |
     
     b'1~ b4~ <b~ a~> <b~ a~ e~> <b a e c>
@@ -333,7 +334,7 @@ staffRight = {
 
     b'4. a4 e c8 |
     <b b'>4 <a a'> <e e'> <c c'> |
-    <d d'>8-> r8 <g c e g>2. |
+    <d d'>8-> r8 <g c e g>2.-^ |
     <as d f>8(-> <as e' g>-.) <as e' g>-. <as d f>[( <as e' g>)]-. <as d f>[(-> <as e' g>-.) <as e' g>]-. |
     <b c e a>8-> r2.. |
 
@@ -418,7 +419,7 @@ staffLeft = {
   d8 d'8\mn 8 c8[ c'8]\spt e,[ c'8 c'] |
   bes,8 bes8\spt 8 f,[ bes] bes,8[ bes8 8] |
   e,8 e8\spt e bes,8[ e8] b,8[ e8 8]
-  a,8 r8 a8\spt <es,~ a~>8\spt <es, a>4 e,8-. es,-- |
+  a,8 r8 a8-.\spt <es,~ a~>8\spt <es, a>4 e,8-. es,-- |
   
   d8-> r2.. |
   e,8-> r4. r4. e,8 |
@@ -428,7 +429,7 @@ staffLeft = {
   e,8 r2.. |
   << { r2 f\mn } \\ { f,1 } >> |
   << { r2 g\spt } \\ { g,1 } >>
-  << { r2 g\spt } \\ { g,1 } >>
+  << { r2 g\spt } \\ { d1 } >>
   << { r2 g\spt } \\ { b,1 } >>
   
   c4. bes,4 f,4 des8 |
@@ -532,11 +533,11 @@ staffLeft = {
   << { r4 fis4\spt r4 fis4 } \\ { fis,1 } >> |
   << { r4 fis4\spt r4 fis4 } \\ { e,1 } >> |
   << { r4 fis4\spt r4 fis4 } \\ { dis,1 } >> |
-  << { r4 fis4\spt r4 fis4 } \\ { cis1 } >> |
+  << { r4 fis4\spt r4 } \\ { cis2. } >> e,16( fis, gis, ais, |
   
   \time 8/8
 
-  b,4. ais,4 fis,4 dis,8 |
+  b,4.) ais,4 fis,4 dis,8 |
   e,2. e,16( fis, gis, ais, |
   b,4.) ais,4 fis,4 dis8 |
   e,2. e,16( fis, gis, ais, |
@@ -637,7 +638,7 @@ dynamicsStaff = \new Dynamics {
   s2..\< s8\!\f
   s1
   s1*15
-  s4\mp s2.
+  s4\mp s2.^\markup { \italic "con tensione" }
   s1*3
   s1*4^\markup { "cresc." }
   s4\ff s2.^\markup { "dim." }
@@ -659,11 +660,14 @@ dynamicsStaff = \new Dynamics {
   s1
   s1\ff
   s1*2^\markup { "poco a poco dim." }
-  s1*7
-  s2.. s8\p
+  s1*5
+  \override TextSpanner.bound-details.left.text = "rall."
+  s1*2\startTextSpan
+  s2..\stopTextSpan s8\p
   s1
+  s1^\markup { "a tempo" }
   
-  s1*14
+  s1*13
   s1\<
   s2.\!
   s4\f
@@ -678,7 +682,9 @@ dynamicsStaff = \new Dynamics {
   s1\<
   s1\!\>
   s1\!\p
-  s1*7
+  s1*3
+  s1*3\<
+  s2 s2\!
 
   s1*4\f
   
@@ -686,9 +692,38 @@ dynamicsStaff = \new Dynamics {
   s1
   s1
   s2. s4\mp
-  s1*4
+  s1
+  s1\<
+  s1\!\>
+  s1\!
+  s1
   s1\<
   s1\!
+  s2. s4\mf
+  s1
+  s1
+  s1
+  s1
+  s1
+  s1
+  s1
+  s1
+  s1
+  s1
+  s1
+  s1
+  s1
+  \override TextSpanner.bound-details.left.text = "rall."
+  s1\startTextSpan
+  s1
+  s1
+  s1
+  s1\stopTextSpan
+  s1
+  s2. s4\p
+  s1
+  s1\<
+  s1\!\f
   
 }
 
@@ -706,7 +741,7 @@ dynamicsStaff = \new Dynamics {
     info = "For Standard Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = \githuburl
-    version = "November 2025 - v7 Unfinished"
+    version = "November 2025 - v8 Unfinished"
   }
 
   \paper {
