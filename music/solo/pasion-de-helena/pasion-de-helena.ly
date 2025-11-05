@@ -58,13 +58,13 @@ staffRight = {
     
     d'4. c4 g4 es8 |
     es'4. d4 b as8 |
-    g8[ f b] d8-. r c-. r
+    g8([ f b] d8)-. r c-. r
     << { 
       \stemDown b~ \stemNeutral b2..
-      b,16[\regzv e] 
+      b,16[ e] 
     } \\ { 
       s 8 
-      r8 <gis c,>8-. r4 <gis c,>4 r8
+      r8 <gis c,>8-. r4 <gis c,>4 r8\regzv
     } >> |
     
     b4. a4 e4 c8 |
@@ -116,29 +116,30 @@ staffRight = {
     \repeat tremolo 8 { <c e fis b>8-. }
     \repeat tremolo 8 { <c es fis b>8-. }
     \repeat tremolo 8 { <bes d e a>8-. }
-    \repeat tremolo 4 { <bes cis e a>8-. } <bes cis e a>4 r4 |
+    \repeat tremolo 4 { <bes cis e a>8-. } <bes cis e a>4 r4\regz |
     
     << {
       s1
       s1
       s1
-      r4. <fis'~ bes~ d~>8 <fis bes d>2
+      r4. <fis'~ bes~ d~>8^\markup { "(soave)" } <fis bes d>2
     } \\ {
-      d4.^\(\regz cis8[ d] e[ f g] |
+      d4.^\shape #'((0 . -2) (0.5 . 0)
+             (0.5 . 1) (-0.3 . -2.5))\( cis8[ d] e[ f g] |
       e4. dis8[ e] g[ bes e] |
       d4. c4 a f8 |
       e1\)
     } >>
-    r8 d4\(\regzv cis8 \tuplet 3/2 { d4 f a8 c } |
+    r8\regzv d4\( cis8 \tuplet 3/2 { d4 f a8 c } |
     \ottava 1
     e2. dis16 e f fis |
     g16 g g g g8-. g16[ g g8]-. g16 g g fis g gis |
     a4\glissando
     \ottava 0
-    a,,8-. <bes~ des~ f~ a~>8-^ <bes des f a>4\) r4 |
+    a,,8-. <bes~ des~ f~ a~>8-^ <bes des f a>4\) r4\regza |
     
     << {
-      <f' a>8[(\regza-> <gis b>-.) <gis b>]-. <f a>[(-> <gis b>-.)] <f a>([-> <gis b>-.) <gis b>-.] 
+      <f' a>8[(-> <gis b>-.) <gis b>]-. <f a>[(-> <gis b>-.)] <f a>([-> <gis b>-.) <gis b>-.] 
       <gis b>8(-> <a c>-.) <a c>-. <gis b>[(-> <a c>]-.) <gis b>[(-> <a c>-.) <a c>-.] |
       <a c>8(-> <b d>-.) <b d>-. <a c>[(-> <b d>]-.) <a c>[(-> <b d>-.) <b d>]-. |
       <b d>8(-> <cis e>-.) <cis e>-. <b d>[(-> <cis e>]-.) <b d>[(-> <cis e>-.) <cis e>]-. |
@@ -177,13 +178,13 @@ staffRight = {
     d,2 r2 |
     d2\fermata r4.\regz 
     << {
-      d16\( g |
+      d16\(^\markup { \bold "Amabile" } g |
       d'1~ 
       \key es \major
       \break
       \time 2/2
       \stemDown
-      <g, d'>4^\markup { \bold "Amabile" }
+      <g, d'>4^\markup { \bold "a tempo" }
       <es c'> <c g'> <g es'> |
       <ges d'>4 <ges' d'>4. <ges a>8 <ges bes> <ges c> |
       <g d'>4 <es c'> <e g> <d bes'> |
@@ -205,15 +206,25 @@ staffRight = {
     <c f>2 r2
     \ottava 0
 
-    <f, d'>4 <es c'> <bes g'> <g es'> |
-    <as d>4 <as' d>4 \tuplet 3/2 { <as b>4 <as c> <as cis> } |
-    <g d'>4 <es c'> <bes g'>4. <a es'>8 |
-    << { c1 } \\ { g2 f } >>
+    << { 
+      \stemDown
+      <f, d'>4\shape #'((0 . -1) (0.5 . -1)
+             (0.5 . 2) (0 . -2))\( <es c'> <bes g'> <g es'> |
+      <as d>4 <as' d>4 \tuplet 3/2 { <as b>4 <as c> <as cis> } |
+      <g d'>4 <es c'> <bes g'>4. <a es'>8 |
+      \stemNeutral
+      c1\)
+    } \\ { 
+      s1
+      s1
+      s1
+      g2 f 
+    } >>
     
-    <es' as>4 <d bes'> <c as'> <bes g'> |
+    <es' as>4\( <d bes'> <c as'> <bes g'> |
     <c as'>2 <es c'>2 |
     <ces ces'>4 < des des'> <es ces'> <f bes> |
-    <ges bes>2 r4\regzav <ges c>4^\markup { \pad-around #1 \bold "Maestoso" } |
+    <ges bes>2\) r4\regzav <ges c>4^\markup { \pad-around #1 \bold "Maestoso" } |
     
     <d g d'>4 <c g' c> <g c g'> <es g es'> |
     <d ges d'>4 <d' ges d'>4. <d ges a>8 <d ges bes> <d ges c> |
@@ -238,22 +249,22 @@ staffRight = {
     \key e \major
     <a e' a>4 <b e b'> <a e' a> <gis e' gis>
     <gis dis' gis>2. <fis fis'>4 |
-    <e e'>2.^\markup { \italic "dolce" } <dis dis'>4 |
+    <e e'>2.\(^\markup { \italic "dolce" } <dis dis'>4 |
     <e e'>4 <gis gis'> <b b'> <fis' fis'> |
     <e~ b' e~>1 |
-    <e a e'>2 r4 e'8 dis |
+    <e a e'>2\) r4 e'8\( dis |
     e4. dis4 b4 gis8 |
     a4 gis fis e |
     dis cis gis e |
-    fis2 dis'\regz |
+    fis2\) dis'\(\regz \appoggiatura { d16 des c } |
     b2. ais4 |
     b4 dis fis cis' |
-    b1~ |
-    b4 r4 gis4\regza ais |
+    b1\)~ |
+    b4 r4\regza gis4\( ais |
     b4. ais4 fis4 dis8 |
-    e2. e16 fis gis ais |
+    e2.\) e16\( fis gis ais |
     b4. ais4 fis4 dis8 |
-    e2. r4 |
+    e2.\) r4 |
 
     \time 8/8
     \key a \minor
@@ -266,20 +277,20 @@ staffRight = {
     \repeat tremolo 8 { <c e fis b>8-. }
     \repeat tremolo 8 { <c es fis b>8-. }
     \repeat tremolo 8 { <bes d e a>8-. }
-    \repeat tremolo 4 { <bes cis e a>8-. } <bes cis e a>4 r4 |
+    \repeat tremolo 4 { <bes cis e a>8-. } <bes cis e a>4 r4\regz |
 
     << { 
       s1
       s1
       s1
-      r4. <fis'~ bes~ d~>8 <fis bes d>2
+      r4. <fis'~ bes~ d~>8^\markup { \italic "(soave)" } <fis bes d>2
     } \\ { 
-      d4.^\(\regz cis8[ d] e[ f g] |
+      d4.^\( cis8[ d] e[ f g] |
       e4. dis8[ e] g8[ bes e] |
       d4. c4 a f8 |
       e1\)
     } >>
-    r8 d4\(\regzv cis8 \tuplet 3/2 { d4 f a8 c } |
+    r8\regzv d4\( cis8 \tuplet 3/2 { d4 f a8 c } |
     e2. g16 ges f e |
     d16 d d d d8-. d16[ d d8]-. d16 d d b c d |
     e4\glissando
@@ -315,13 +326,13 @@ staffRight = {
     c2.) a8( b |
     c4. b4 g4 e8 d4 c d e |
     <g e c g>1) |
-    <g e c g>2\arpeggio\fermata r2
-    a,4\rega a16[ b a gis] a8-- c-. e-. g-. |
+    <g e c g>2\arpeggio\fermata r2\rega
+    a,4 a16[ b a gis] a8-- c-. e-. g-. |
     b8-- a-. e16 f fis8~ fis4\fermata \breathe
+    \tempo \markup { \pad-around #1 \bold "Con fuoco" } 4 = 152
     b,8\regzav e |
     
     b'1~ b4~ <b~ a~> <b~ a~ e~> <b a e c>
-    \tempo \markup { \pad-around #1 \bold "Con fuoco" } 4 = 152
     <b a e c b>1 |
     r8 <e, g,>4-> <d g,>4-> g,4 a16 b |
     <c es,>8-- bes-. es,16 f <g~ bes,~>8 <g bes,>8 r4. |
@@ -345,11 +356,11 @@ staffRight = {
     d16[ es d des] d8[-. es]-. g f4 g8 |
     as8-- g-. f16 es d8 r16 b16 c d e f g a |
     <e b'>4 <c a'> <a e'> <e c'> |
-    <es b'>8-> r8 <b' es fis b>4
+    <es b'>8-> r8 <b' es fis b>4->
     
     \tuplet 3/2 { <c fis>4-- <c g'>-- <c a'>-- } |
-    <fis, b>8-> r8 <b es fis b>4 \tuplet 3/2 { <bes fis'>4-- <bes g'>-- <bes a'>-- } |
-    <fis b>8-> r8 <b es fis b>2 <c e gis c>4 |
+    <fis, b>8-> r8 <b es fis b>4-> \tuplet 3/2 { <bes fis'>4-- <bes g'>-- <bes a'>-- } |
+    <fis b>8-> r8 <b es fis b>2-> <c e gis c>4 |
 
     <b c e b'>4. <a c e a>4 e' c8 |
     <b b'>4 <a a'> <e e'> <c c'> |
@@ -617,11 +628,11 @@ staffLeft = {
   << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 c4. r8 g,8 } >> |
   << { g8\spt r8 g8 g8 r4 g8 r8 } \\ { b,4 r8 b,4. r8 d,8 } >> |
   << { f8\mj r8 f8 f r4 f8 r8 } \\ { a,4 r8 a,4. r8 a,8 } >> |
-  << { bes8\mj r8 bes8 bes8 r4 bes8 r8 } \\ { as,4 r8 as,4. r8 as,8 } >> |
-  << { es8\mj r8 es8 es8 r4 es8 r8 } \\ { g,4 r8 g,4. r4 } >> |
+  << { bes8\mj r8 bes8 bes8 r8 bes8 r8 bes8 } \\ { as,4 r8 as,4. as,4 } >> |
+  << { es8\mj r8 es8 es8 r4 es8 r8 } \\ { g,4 r8 g,4. r8 g,8 } >> |
   << { f8\mn r8 f8 f8 r4 f8 r8 } \\ { f,4 r8 f,4. r4 } >> |
   << { bes8\spt r8 bes8 bes8 r4 bes8 r8 } \\ { bes,4 r8 bes,4. r4 } >> |
-  << { g8\mj r8 g8 g8\spt r4 g8 r8 } \\ { b,4 r8 g,4. r4 } >> |
+  << { g8\mj r8 g8 g8\spt r8 g8 r8 g8 } \\ { b,4 r8 g,4. g,4 } >> |
   << { c'8\mj r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 c4. r4 } >> |
 
   f,2 es,2 |
@@ -672,22 +683,22 @@ dynamicsStaff = \new Dynamics {
   s4. s8\< s2
   s2.\!\f s4\<
   s1\!\ff
-  s2. s4\>
-  s4\!\mp s2.
+  s2. s4
+  s4\mp s2.^\markup { \italic "con tensione" }
   s1*3
   s1*4^\markup { "cresc." }
-  s1
   s1\<
+  s1
   s4\!\ff s2.^\markup { "string." }
   s1
-  s1^\markup { "poco a poco dim." }
+  s1^\markup { \whiteout \pad-around #1 "poco a poco dim." }
   s1*5
   \override TextSpanner.bound-details.left.text = "rall."
   s1*2\startTextSpan
   s1
   s2..\stopTextSpan s8\p
   s1
-  s1^\markup { "a tempo" }
+  s1
   
   s1*13
   s1\<
@@ -695,8 +706,8 @@ dynamicsStaff = \new Dynamics {
   s4\f
   s1
   s1*14
-  s1
-  s1
+  s2 s2\>
+  s1\!
   s1\<
   s1\!\>
   s1\!
@@ -747,10 +758,15 @@ dynamicsStaff = \new Dynamics {
   s1
   s1\sfz\<
   s1\!
-  s1*16
-  s1*7
+  s1*9
+  s1*3\<
+  s1\!
+  s1\>
+  s1\!
+  s1*8
   s4 s2\sfz\< s8 s8\!
-  s1\fff
+  s2\ff s2\<
+  s1\!
   
 }
 
