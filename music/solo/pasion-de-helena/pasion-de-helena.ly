@@ -46,9 +46,9 @@ staffRight = {
     r8 e4 d4 g,4 a16 b |
     c8-- bes-. es,16 f g8~ g4. r8 |
     
-    as16[ bes as g] as[ c] g'4 f4 f16 g |
+    as16[ bes as g] as[ c] g'4 f4 g8-. |
     as16[ bes as f] d[ c] b8~ b4 r4 |
-    es16[ f es d] es[ g] d'4 c c16 d |
+    es16[ f es d] es[ g] d'4 c d8-. |
     es16[ f es c] a[ g] fis4-. g4 gis8 |
     
     a4. g4 d bes8 |
@@ -72,9 +72,9 @@ staffRight = {
     r8 e4 d4 g,4 a16 b |
     c8-- bes-. es,16 f g8~ g4. r8 |
     
-    as16[ bes as g] as[ c] g'4 f4 f16 g |
+    as16[ bes as g] as[ c] g'4 f4 g8-. |
     as16[ bes as f] d[ c] b8~ b4 r4 |
-    es16[ f es d] es[ g] d'4 c c16 d |
+    es16[ f es d] es[ g] d'4 c d8-. |
     es16[ f es c] a[ g] fis4-. g4 gis8 |
     
     a4. g4 d bes8 |
@@ -245,8 +245,8 @@ staffRight = {
     e4. dis4 b4 gis8 |
     a4 gis fis e |
     dis cis gis e |
-    fis2 <gis e'> |
-    b2.\regz ais4 |
+    fis2 dis'\regz |
+    b2. ais4 |
     b4 dis fis cis' |
     b1~ |
     b4 r4 gis4\regza ais |
@@ -304,7 +304,7 @@ staffRight = {
       s4
       s1
       r8 <b fis>8-. r4 <b fis>4
-    } >> b8( e |
+    } >> b8(\regzav e |
     
     b'4. a4 e4 cis8 |
     b2.) r4 |
@@ -316,7 +316,7 @@ staffRight = {
     c4. b4 g4 e8 d4 c d e |
     <g e c g>1) |
     <g e c g>2\arpeggio\fermata r2
-    a,4\regz a16[ b a gis] a8-- c-. e-. g-. |
+    a,4\rega a16[ b a gis] a8-- c-. e-. g-. |
     b8-- a-. e16 f fis8~ fis4\fermata \breathe
     b,8\regzav e |
     
@@ -324,7 +324,7 @@ staffRight = {
     \tempo \markup { \pad-around #1 \bold "Con fuoco" } 4 = 152
     <b a e c b>1 |
     r8 <e, g,>4-> <d g,>4-> g,4 a16 b |
-    <c es,>8-> bes-. es,16 f <g~ bes,~>8-> <g bes,>8 r4. |
+    <c es,>8-- bes-. es,16 f <g~ bes,~>8 <g bes,>8 r4. |
     
     as16[ bes as g] as[ c] g'4 f4 g8-. |
     as16[ bes as f] d[ c] b4 as'8-. g16 ges f e |
@@ -342,21 +342,22 @@ staffRight = {
     g'4. f4 bes,16 a bes c d es |
     f4. es4 bes4 f8 |
     es1 |
-    f16[ g f e] f[ as] c4 bes c8-. |
-    d8-- c-. f,16 g as8~ as4 r4 |
-    <g d'>4( <es c'> <bes g'> <g es'> |
-    <fis d'>8)-> r8 <d' fis a d>4-> \tuplet 3/2 { <es a>4 <es bes'> <es c'> } |
-    <a, d>8-> r8 <d fis a d>4-> \tuplet 3/2 { <es a>4 <es bes'> <es c'> } |
-    <gis, d'>8-> r8 <d' fis gis d'>2-> <c fis gis c>4 |
+    d16[ es d des] d8[-. es]-. g f4 g8 |
+    as8-- g-. f16 es d8 r16 b16 c d e f g a |
+    <e b'>4 <c a'> <a e'> <e c'> |
+    <es b'>8-> r8 <b' es fis b>4
+    
+    \tuplet 3/2 { <c fis>4-- <c g'>-- <c a'>-- } |
+    <fis, b>8-> r8 <b es fis b>4 \tuplet 3/2 { <bes fis'>4-- <bes g'>-- <bes a'>-- } |
+    <fis b>8-> r8 <b es fis b>2 <c e gis c>4 |
 
-    b'4. a4 e c8 |
+    <b c e b'>4. <a c e a>4 e' c8 |
     <b b'>4 <a a'> <e e'> <c c'> |
-    <d d'>8-> r8 <g c e g>2.-^ |
+    <d d'>8-> r8 <g~ c~ e~ g~>4 <g c e g>4. r8 |
     <as d f>8(-> <as e' g>-.) <as e' g>-. <as d f>[( <as e' g>)]-. <as d f>[(-> <as e' g>-.) <as e' g>]-. |
     <b c e a>4-^ r2. |
 
     \bar "|."
-    
   }
 }
 
@@ -577,7 +578,7 @@ staffLeft = {
   << { e8\spt r8 e8 } \\ { e,4 r8 } >> <e, d>4.\mj r4 |
 
   << { a8\mj 8 8 8 8 8 8 8 } \\ { a,4. a,4.~ a,4 } >>
-  << { a8\mj 8 8 8 8 8 8 8 } \\ { g,4. g,4.~ g,4 } >>
+  << { a8\mj 8 8 8 8 8 8 8 } \\ { g,4. g,4. g,4 } >>
   << { d8\mj 8 8 8 8 8 8 8 } \\ { fis,4. fis,4.~ fis,4 } >>
   << { d8\mn 8 8 f8\mn 8 8 8 8 } \\ { f,4. f,4.~ f,4 } >>
   
@@ -587,7 +588,7 @@ staffLeft = {
   e,4 d'8\mj b, <e, d'>4 r4 |
 
   << { a8\mj 8 8 8 8 8 8 8 } \\ { a,4. a,4.~ a,4 } >>
-  << { a8\mj 8 8 8 8 8 8 8 } \\ { g,4. g,4.~ g,4 } >>
+  << { a8\mj 8 8 8 8 8 8 8 } \\ { g,4. g,4. g,4 } >>
   << { d8\mj 8 8 8 8 8 8 8 } \\ { fis,4. fis,4.~ fis,4 } >>
   << { d8\mn 8 8 f8\mn 8 8 8 8 } \\ { f,4. f,4.~ f,4 } >>
   
@@ -620,16 +621,16 @@ staffLeft = {
   << { es8\mj r8 es8 es8 r4 es8 r8 } \\ { g,4 r8 g,4. r4 } >> |
   << { f8\mn r8 f8 f8 r4 f8 r8 } \\ { f,4 r8 f,4. r4 } >> |
   << { bes8\spt r8 bes8 bes8 r4 bes8 r8 } \\ { bes,4 r8 bes,4. r4 } >> |
-  << { bes8\spt r8 bes8 bes8 r4 bes8 r8 } \\ { bes,4 r8 bes,4. r4 } >> |
-  
-  << { es8\mj r8 es8 es8 r4 es8 r8 } \\ { es,4 r8 es,4. r4 } >> |
-  as,2 g,2
-  fis,2 f,2
-  << { e8\spt r8 e8 e8 r4 e8 r8 } \\ { e,4 r8 e,4. r4 } >> |
+  << { g8\mj r8 g8 g8\spt r4 g8 r8 } \\ { b,4 r8 g,4. r4 } >> |
+  << { c'8\mj r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 c4. r4 } >> |
+
+  f,2 es,2 |
+  d2 c2 |
+  g,4. a,4. e,4 |
   
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 a,4. r8 a,8 } >>
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
-  bes,8 r8 <bes, bes>2.\spt |
+  bes,8 r8 <bes,~ bes~>4\spt <bes, bes>4. r8 |
   bes,8-> r4 bes,8-> r8 e,8 f,16( fis, g, gis, |
   a,4)-^ r2. |
   
@@ -746,6 +747,10 @@ dynamicsStaff = \new Dynamics {
   s1
   s1\sfz\<
   s1\!
+  s1*16
+  s1*7
+  s4 s2\sfz\< s8 s8\!
+  s1\fff
   
 }
 
@@ -763,7 +768,7 @@ dynamicsStaff = \new Dynamics {
     info = "For Standard Bass - Difficulty: Hard"
     permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
     projecturl = \githuburl
-    version = "November 2025 - v8 Unfinished"
+    version = "November 2025"
   }
 
   \paper {
