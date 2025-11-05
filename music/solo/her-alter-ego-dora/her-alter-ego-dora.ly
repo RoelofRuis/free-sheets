@@ -95,12 +95,12 @@ staffRight = {
     } >>
     << {
       e8( f |
-      \tuplet 5/4 { g16 c g f e } \tuplet 5/4 { g16 c g f e } g16 c g f g c g e-1 |
-      c2)-3
+      \tuplet 5/4 { g16 c g f e } \tuplet 5/4 { g16 c g f e } g16 c g f g c g e_1 |
+      c2)_3
     } \\ {
       s4
       s1
-      r8 <as f>4.
+      c,8\rest <as' f>4.
     } >> 
     << { 
       c8( d e f |
@@ -129,11 +129,25 @@ staffRight = {
     
     \bar "||"
     
-    s1^\markup { \pad-around #1 \bold "Improvise" }
-    \repeat volta 2 {
-      s1
-      s1
-    }
+    r8^\markup { \pad-around #1 \bold "Quasi Improvvisando" }
+    d'8 f as g f es des |
+    b8 r4 f'8 r2 |
+    r8 bes,8 des f es des c bes |
+    as4 r4 r8 as bes g~ |
+    g8 as a b cis dis e eis |
+    fis4. e8 r8 g4 fis8~ |
+    fis8 e d cis~ cis2 |
+    <dis f>4 <cis b>4 <f g>8 <f g> <cis dis> <cis' b> |
+    r4 d4 as c |
+    a2~ a8 a c b |
+    bes a as g~ g2 |
+    r8 bes a as g as a bes |
+    f1 |
+    r8 e8 g bes a g ges f |
+    e f e d~ d2 |
+    <f g>4 <a, b>8 <dis f>4 <g, a>8 <b~ cis~>4 |
+    <b cis>1 |
+    
     
     
     
@@ -170,7 +184,7 @@ staffLeft = {
   d4 d'8\mn d' g,4 g8\spt g |
   f,4 f8\spt f fis,8 g, <as, as>\spt <bes, bes>\spt |
   r8 <f, f>4.\spt <g, g>4\spt <a, a>4\spt |
-  d4 d'8\mn d' a,8 d'-.\mn r8 <g, g d'>--\mj\mn |
+  d4 d'8\mn d' a,8 d'-.\mn r8 <g, d'>--\mj\mn |
 
   R1 |
   g,4 g8\spt g b,4 g8 g |
@@ -202,7 +216,7 @@ staffLeft = {
   c4 c'8\mn c' b,4 d8\mj d |
 
   f,4 r4 f,8-. f, fis,-. fis, |
-  <g, g d'>4-.\mj\mn <a, a>8\spt <d d'>\mn r2 |
+  <g, d'>4-.\mj\mn <a, a>8\spt <d d'>\mn r2 |
   f,8 r8 f\mj f,8~ f,4 f8\mj f |
   g,8 r8 g\spt g,8~ g,4 g8\spt g |
 
@@ -212,7 +226,7 @@ staffLeft = {
   d4 d'8\mn d' g,4 g8\spt g |
   es,4-. r4 es,8-. e,-. f,-. fis,-. |
   \time 3/8
-  <g, g d'>4-.\mj\mn <a, a>8\spt |
+  <g, d'>4-.\mj\mn <a, a>8\spt |
   
   \bar "!"
   
@@ -224,19 +238,24 @@ staffLeft = {
   d4-. r8 d f, r4 g,8~ |
   g,4 r8 g,8 as, as, g,4-. |
   d4-. r8 d f, r8 fis,8 g,8 |
+  
   R1 |
-  \repeat volta 2 {
-    <<
-      \new ChordNames \chordmode {
-        f1:7
-        g1:7
-      }
-      {
-        f,4 f8\spt f8 a,4 f8 f |
-        g,4 g8\spt g8 b,4 g8 g |
-      }
-    >>
-  }
+  f,4 f8\spt f f,4 f8 f |
+  es,4 es8\spt es es,4 es8 es |
+  des4 des'8\spt des' des4 des'8 des |
+  b,4 b8\spt b b,4 b8 b |
+  a,4 a8\spt a a,4 a8 a |
+  g,4 g8\spt g g,4 g8 g |
+  b,2 a,4. g8-> |
+  
+  R1 |
+  f,4 f8\spt f f,4 f8 f |
+  es,4 es8\spt es es,4 es8 es |
+  des4 des'8\spt des' des4 des'8 des |
+  b,4 b8\spt b b,4 b8 b |
+  a,4 a8\spt a a,4 a8 a |
+  g,4 g8\spt g g,4 g8 g |
+  
   
   
   
