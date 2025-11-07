@@ -122,7 +122,7 @@ staffRight = {
       s1
       s1
       s1
-      r4. <fis'~ bes~ d~>8^\markup { "(soave)" } <fis bes d>2
+      r4. <fis'~ bes~ d~>8^\markup { \italic \small "(soave)" } <fis bes d>2
     } \\ {
       d4.^\shape #'((0 . -2) (0.5 . 0)
              (0.5 . 1) (-0.3 . -2.5))\( cis8[ d] e[ f g] |
@@ -184,7 +184,8 @@ staffRight = {
       \break
       \time 2/2
       \stemDown
-      <g, d'>4^\markup { \bold "a tempo" }
+      \tempo "a tempo" 4 = 152
+      <g, d'>4
       <es c'> <c g'> <g es'> |
       <ges d'>4 <ges' d'>4. <ges a>8 <ges bes> <ges c> |
       <g d'>4 <es c'> <e g> <d bes'> |
@@ -283,7 +284,7 @@ staffRight = {
       s1
       s1
       s1
-      r4. <fis'~ bes~ d~>8^\markup { \italic "(soave)" } <fis bes d>2
+      r4. <fis'~ bes~ d~>8^\markup { \italic \small "(soave)" } <fis bes d>2
     } \\ { 
       d4.^\( cis8[ d] e[ f g] |
       e4. dis8[ e] g8[ bes e] |
@@ -333,7 +334,7 @@ staffRight = {
     b,8\regzav e |
     
     b'1~ b4~ <b~ a~> <b~ a~ e~> <b a e c>
-    <b a e c b>1 |
+    <b a e c b>1-> |
     r8 <e, g,>4-> <d g,>4-> g,4 a16 b |
     <c es,>8-- bes-. es,16 f <g~ bes,~>8 <g bes,>8 r4. |
     
@@ -395,7 +396,7 @@ staffLeft = {
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 a,4. r8 e,8 } >>
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
   << { g8\mj r8 g8 g8 r4 g8 r8 } \\ { b,4 r8 b,4. r8 d8 } >>
-  << { f8\mn r8 f8 es8 r4 es8 r8 } \\ { as,4 r8 g,4. r8 g,8 } >>
+  << { f8\mn r8 f8 es8\mj r4 es8 r8 } \\ { as,4 r8 g,4. r8 g,8 } >>
   << { f8\mn r8 f8 f8 r4 f8 r8 } \\ { f,4 r8 es,4. r8 es,8 } >> |
   << { f8\mn r8 f8 g8\spt r4 g8 r8 } \\ { d4 r8 g,4. r8 d8 } >> |
   << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 bes,4. r8 bes,8 } >> |
@@ -412,7 +413,7 @@ staffLeft = {
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { a,4 r8 a,4. r8 e,8 } >>
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
   << { g8\mj r8 g8 g8 r4 g8 r8 } \\ { b,4 r8 b,4. r8 d8 } >>
-  << { f8\mn r8 f8 es8 r4 es8 r8 } \\ { as,4 r8 g,4. r8 g,8 } >>
+  << { f8\mn r8 f8 es8\mj r4 es8 r8 } \\ { as,4 r8 g,4. r8 g,8 } >>
   << { f8\mn r8 f8 f8 r4 f8 r8 } \\ { f,4 r8 es,4. r8 es,8 } >> |
   << { f8\mn r8 f8 g8\spt r4 g8 r8 } \\ { d4 r8 g,4. r8 d8 } >> |
   << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 bes,4. r8 bes,8 } >> |
@@ -608,7 +609,7 @@ staffLeft = {
   << { c'8\mj 8 8 8 8 8 8 8 } \\ { c4. c4.~ c4 } >> |
   << { g8\mj[ 8 8 8] 8[ 8 8 8] } \\ { b,2 b,2 } >> |
   << { bes8[\spt 8 8 8] 8[ 8 8 8] } \\ { bes,2 bes,2 } >> |
-  <bes, bes>2\fermata r2 |
+  <bes, bes>2\spt\fermata r2 |
   
   R1 |
   R1 |
@@ -616,7 +617,7 @@ staffLeft = {
   R1 |
   << { a8\mn r8 a8 a8 r4 a8 r8 } \\ { f,4 r8 f,4. r8 f,8 } >>
   << { g8\mj r8 g8 g8 r4 g8 r8 } \\ { b,4 r8 b,4. r8 d8 } >>
-  << { f8\mn r8 f8 es8 r4 es8 r8 } \\ { as,4 r8 g,4. r8 g,8 } >>
+  << { f8\mn r8 f8 es8\mj r4 es8 r8 } \\ { as,4 r8 g,4. r8 g,8 } >>
   << { f8\mn r8 f8 f8 r4 f8 r8 } \\ { f,4 r8 es,4. r8 es,8 } >> |
   << { f8\mn r8 f8 g8\spt r4 g8 r8 } \\ { d4 r8 g,4. r8 d8 } >> |
   << { c'8\mn r8 c'8 c'8 r4 c'8 r8 } \\ { c4 r8 bes,4. r8 bes,8 } >> |
@@ -814,12 +815,15 @@ dynamicsStaff = \new Dynamics {
         \vspace #1
         \fontsize #1
         \justify-field #'header:info
+        \vspace #1
+        \fontsize #1
+        \line { "When performing as dancing accompanyment, consider using" \note {4} #1 "= 132" }
         \vspace #4
         \override #'(line-width . 55)
         \fontsize #1
         \justify-field #'header:permission
         \vspace #1
-        \vspace #14
+        \vspace #13
         \justify { \char ##x00A9 Roelof Ruis \concat { " - Version " \fromproperty #'header:version } }
         \typewriter { \fromproperty #'header:projecturl }
       }
