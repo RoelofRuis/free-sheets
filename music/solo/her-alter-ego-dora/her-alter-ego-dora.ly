@@ -169,7 +169,7 @@ staffLeft = {
   
   d4-. r8 d f, r4 g,8~ |
   g,4 r8 g,8 as, as, g,4-. |
-  d4-. r8 d f, r8 b,8 cis8~ |
+  d4-. r8 d f, r8 g,8 cis8~ |
   cis2. r4 |
 
   d4-. r8 d f, r4 g,8~ |
@@ -184,7 +184,7 @@ staffLeft = {
   d4 d'8\mn d' g,4 g8\spt g |
   f,4 f8\spt f fis,8 g, <as, as>\spt <bes, bes>\spt |
   r8 <f, f>4.\spt <g, g>4\spt <a, a>4\spt |
-  d4 d'8\mn d' a,8 d'-.\mn r8 <g, d'>--\mj\mn |
+  d4 d'8\mn d' a,8 d'-.\mn r8 <g, d'>--\mn |
 
   R1 |
   g,4 g8\spt g b,4 g8 g |
@@ -216,7 +216,7 @@ staffLeft = {
   c4 c'8\mn c' b,4 d8\mj d |
 
   f,4 r4 f,8-. f, fis,-. fis, |
-  <g, d'>4-.\mj\mn <a, a>8\spt <d d'>\mn r2 |
+  <g, d'>4-.\mn <a, a>8\spt <d d'>\mn r2 |
   f,8 r8 f\mj f,8~ f,4 f8\mj f |
   g,8 r8 g\spt g,8~ g,4 g8\spt g |
 
@@ -226,12 +226,12 @@ staffLeft = {
   d4 d'8\mn d' g,4 g8\spt g |
   es,4-. r4 es,8-. e,-. f,-. fis,-. |
   \time 3/8
-  <g, d'>4-.\mj\mn <a, a>8\spt |
+  <g, d'>4-.\mn <a, a>8\spt |
   
   \bar "!"
   
   \time 4/4
-  <d d'>4\mn-. r2. |
+  d4-. r2. |
   R1 |
   R1 |
   r2 f,16 fis, g,8-. f,16 fis, g,8-. |
@@ -255,6 +255,8 @@ staffLeft = {
   b,4 b8\spt b b,4 b8 b |
   a,4 a8\spt a a,4 a8 a |
   g,4 g8\spt g g,4 g8 g |
+  b,4. a,8~ a,4 g,4~ |
+  g,2 g,16 gis, a,8 g,16 gis, a,8 |
   
   
   
