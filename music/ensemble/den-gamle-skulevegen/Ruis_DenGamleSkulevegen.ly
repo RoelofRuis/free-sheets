@@ -30,7 +30,7 @@ chordmusic = \chordmode {
   bes:sus4.7.9-
 
   es1:m |
-  f1:dim |
+  f1:m7.5- |
   as:m7 |
   bes:7.5+ |
   
