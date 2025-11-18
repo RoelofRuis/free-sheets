@@ -164,19 +164,19 @@ staffRight = {
       as4 r8 as8 r8 as4 r8
     } >>
     
-    \repeat tremolo 8 { <e as des es>8-.\regzav } |
-    \repeat tremolo 8 { <e as des es>8-. } |
+    \repeat tremolo 8 { <es g a c d>8-.\regzav } |
+    \repeat tremolo 8 { <es g a c d>8-. } |
     \repeat tremolo 8 { <es g c d>8-. } |
     \repeat tremolo 8 { <es g c d>8-. } |
     
     \repeat tremolo 8 { <es g d'>8-. } |
     \repeat tremolo 8 { <es g d'>8-. } |
     \repeat tremolo 8 { <es d'>8-. } |
-    d'4~ <d~ c~> <d~ c~ g~> <d~ c~ g es> |
-    <d c d,>2. r4 |
-    <d d,>2. r4 |
-    d,2 r2 |
-    d2\fermata r4.\regz 
+    d'4~ <d~ c~> <d~ c~ g~> <d~ c~ g~ es> |
+    <d~ c~ g d~>1  |
+    <d~ c d,~>1 |
+    <d d,>1 |
+    d,2\fermata r4.\regz 
     << {
       d16\(^\markup { \bold "Amabile" } g |
       d'1~ 
@@ -268,13 +268,13 @@ staffRight = {
     e2.\) r4 |
 
     \time 8/8
-    \key a \minor
     
     \repeat tremolo 8 { <cis e fis b>8-. }
     \repeat tremolo 8 { <cis e fis cis'>8-. }
     \repeat tremolo 8 { <cis e fis b>8-. }
     \repeat tremolo 8 { <d fis gis cis>8-. }
 
+    \key a \minor
     \repeat tremolo 8 { <c e fis b>8-. }
     \repeat tremolo 8 { <c es fis b>8-. }
     \repeat tremolo 8 { <bes d e a>8-. }
@@ -364,7 +364,7 @@ staffRight = {
     <fis b>8-> r8 <b es fis b>2-> <c e gis c>4 |
 
     <b c e b'>4. <a c e a>4 e' c8 |
-    <b b'>4 <a a'> <e e'> <c c'> |
+    <b b'>4-- <a a'>-- <e e'>-- <c c'>-- |
     <d d'>8-> r8 <g~ c~ e~ g~>4 <g c e g>4. r8 |
     <as d f>8(-> <as e' g>-.) <as e' g>-. <as d f>[( <as e' g>)]-. <as d f>[(-> <as e' g>-.) <as e' g>]-. |
     <b c e a>4-^ r2. |
@@ -566,7 +566,6 @@ staffLeft = {
   << { r4 fis4\spt r4 fis4 } \\ { dis,1 } >> |
   << { r4 fis4\spt r4 } \\ { cis2. } >> e,16( fis, gis, ais, |
   
-  \key a \minor
   \time 8/8
 
   b,4.) ais,4 fis,4 dis,8 |
@@ -574,6 +573,7 @@ staffLeft = {
   b,4.) ais,4 fis,4 dis8 |
   e,2. e,16( fis, gis, ais, |
 
+  \key a \minor
   b,4.) a,4 e,4 c8 |
   b,2. f,16( fis, g, gis, |
   a,4.) g,4 d4 bes,8 |
@@ -595,7 +595,7 @@ staffLeft = {
   << { d8\mn 8 8 f8\mn 8 8 8 8 } \\ { f,4. f,4.~ f,4 } >>
   
   << { c'8\mj 8 8 bes8\spt 8 8 8 8 } \\ { c4. bes,4.~ bes,4 } >>
-  << { f8\mj[ 8 8 8] f8\mn[ 8 8 8] } \\ { a,2 as,2 } >>
+  << { f8\mj 8 8 f8\mn 8 8 8 8 } \\ { a,4. as,4.~ as,4 } >>
   << { c'8\mj[ 8 8 8] d'8\mn[ 8 8 8] } \\ { c2 b,2 } >>
   e,4 d'8\mj b, <e, d'>4 r4 |
 
