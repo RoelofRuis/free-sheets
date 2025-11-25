@@ -16,10 +16,10 @@ staffRight = {
   \tempo \markup { \pad-around #1 \bold "Andante Moderato" } 4 = 120
 
   \relative c'' {
-    \partial 8 { e16\regzav a }
+    \partial 8 { e16\regz a }
     << {
       e'1~
-      <a, e'>4\( <f d'> <c a'> <a f'> |
+      <a, e'>4\(\regzav <f d'> <c a'> <a f'> |
       <as e'> <e' as b e>4\)\arpeggio
     } \\ {
       r4 <ges bes>4-- <as c>-- <bes d>--\fermata |
