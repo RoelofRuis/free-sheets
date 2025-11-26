@@ -16,12 +16,14 @@ staffRight = {
   \tempo \markup { \pad-around #1 \bold "Andante Moderato" } 4 = 120
 
   \relative c'' {
-    \partial 8 { e16\regz a }
+   
     << {
-      e'1~
-      <a, e'>4\(\regzav <f d'> <c a'> <a f'> |
+      \partial 8 { e16\(\regz a }
+      e'1\)~
+      <e, a e'>4\(\regzav <f d'> <c a'> <a f'> |
       <as e'> <e' as b e>4\)\arpeggio
     } \\ {
+      \partial 8 { s8 }
       r4 <ges bes>4-- <as c>-- <bes d>--\fermata |
       s1
       s2
@@ -113,7 +115,7 @@ staffRight = {
       e4 r8 e8 r8 e4 r8
     } >>
     
-    \repeat tremolo 8 { <c e fis b>8-. }
+    \repeat tremolo 8 { <c e fis b>8-.^\markup { \italic \small "senza accento" } }
     \repeat tremolo 8 { <c es fis b>8-. }
     \repeat tremolo 8 { <bes d e a>8-. }
     \repeat tremolo 4 { <bes cis e a>8-. } <bes cis e a>4 r4\regz |
@@ -124,8 +126,7 @@ staffRight = {
       s1
       r4. <fis'~ bes~ d~>8^\markup { \italic \small "(soave)" } <fis bes d>2
     } \\ {
-      d4.^\shape #'((0 . -2) (0.5 . 0)
-             (0.5 . 1) (-0.3 . -2.5))\( cis8[ d] e[ f g] |
+      d4.^\( cis8[ d] e[ f g] |
       e4. dis8[ e] g[ bes e] |
       d4. c4 a f8 |
       e1\)
@@ -175,7 +176,7 @@ staffRight = {
     d'4~ <d~ c~> <d~ c~ g~> <d~ c~ g~ es> |
     <d~ c~ g d~>1  |
     <d~ c d,~>1 |
-    <d d,>1 |
+    <d d,~ >1 |
     d,2\fermata r4.\regz 
     << {
       d16\(^\markup { \bold "Amabile" } g |
@@ -328,8 +329,8 @@ staffRight = {
     c4. b4 g4 e8 d4 c d e |
     <g e c g>1) |
     <g e c g>2\arpeggio\fermata r2\rega
-    a,4 a16[ b a gis] a8-- c-. e-. g-. |
-    b8-- a-. e16 f fis8~ fis4\fermata \breathe
+    a,4\( a16[ b a gis] a8-- c-. e-. g-. |
+    b8-- a-. e16 f fis8~ fis4\)\fermata \breathe
     \tempo \markup { \pad-around #1 \bold "Con fuoco" } 4 = 152
     b,8\regzav e |
     
@@ -436,10 +437,10 @@ staffLeft = {
   f,4-> r8 f,4-> f,4.-> |
   fis,1 |
   
-  b,4. a,4 e,4 c8 |
-  b,2. f,16( fis, g, gis, |
-  a,4.) g,4 d4 bes,8 |
-  a,2. ais,16( b, c cis |
+  b,4.( a,4 e,4 c8 |
+  b,2.) f,16( fis, g, gis, |
+  a,4. g,4 d4 bes,8 |
+  a,2.) ais,16( b, c cis |
 
   d8) d'8\mn 8 e,8[ e8]\spt gis,[ e\spt e] |
   a,8 a8\mn 8 c8[ c'8]\spt e,[ c'8 8] |
@@ -462,14 +463,14 @@ staffLeft = {
   << { r2 g\spt } \\ { d1 } >>
   << { r2 g\spt } \\ { b,1 } >>
   
+  c4.( bes,4 f,4 des8 |
+  c2.) as,16(_5 a,_3 bes,_4 b,_2 |
+  c4._3 bes,4 f,4 des8 |
+  c2.) as,16( a, bes, b, |
   c4. bes,4 f,4 des8 |
-  c2. as,16( a, bes, b, |
-  c4.) bes,4 f,4 des8 |
-  c2. as,16( a, bes, b, |
-  c4.) bes,4 f,4 des8 |
-  c2. as,16( a, bes, b, |
-  c4) bes, f, des |
-  c2. as,16( a, bes, b, |
+  c2.) as,16( a, bes, b, |
+  c4 bes, f, des |
+  c2.) as,16( a, bes, b, |
   c2.) as,16( a, bes, b, |
   c2.) as,16( a, bes, b, |
   c2) as,8( a, bes, b, |
@@ -568,16 +569,16 @@ staffLeft = {
   
   \time 8/8
 
-  b,4.) ais,4 fis,4 dis,8 |
-  e,2. e,16( fis, gis, ais, |
-  b,4.) ais,4 fis,4 dis8 |
-  e,2. e,16( fis, gis, ais, |
+  b,4. ais,4 fis,4 dis,8 |
+  e,2.) e,16( fis, gis, ais, |
+  b,4. ais,4 fis,4 dis8 |
+  e,2.) e,16( fis, gis, ais, |
 
   \key a \minor
-  b,4.) a,4 e,4 c8 |
-  b,2. f,16( fis, g, gis, |
-  a,4.) g,4 d4 bes,8 |
-  a,2. ais,16( b, c cis |
+  b,4. a,4 e,4 c8 |
+  b,2.) f,16( fis, g, gis, |
+  a,4. g,4 d4 bes,8 |
+  a,2.) ais,16( b, c cis |
   
   d8) d'8\mn 8 e,8[ e8]\spt gis,[ e\spt e] |
   a,8 a8\mn 8 c8[ c'8]\spt e,[ c'8 8] |
@@ -667,7 +668,7 @@ dynamicsStaff = \new Dynamics {
   s2.. s8\mf
   
   s1*15
-  s2..\< s8\!\f
+  s2\< s4.\!\f s8\mf
   s1
   s1*15
   s4\mp s2.^\markup { \italic "con tensione" }
@@ -677,14 +678,14 @@ dynamicsStaff = \new Dynamics {
   s1
   s1
   s2. s4\mp
+  s1\<
   s1
-  s4. s8\< s2
   s1\!\>
-  s1\!
-  s4. s8\< s2
+  s1
+  s4.\! s8\< s2
   s2.\!\f s4\<
-  s1\!\ff
-  s2. s4
+  s1
+  s4.\! s4.\ff s4
   s4\mp s2.^\markup { \italic "con tensione" }
   s1*3
   s1*4^\markup { "cresc." }
@@ -706,9 +707,10 @@ dynamicsStaff = \new Dynamics {
   s2.\!
   s4\f
   s1
-  s1*14
-  s2 s2\>
-  s1\!
+  s1*13
+  s1\>
+  s2 s2\!
+  s1
   s1\<
   s1\!\>
   s1\!
@@ -726,14 +728,14 @@ dynamicsStaff = \new Dynamics {
   s1
   s1
   s2. s4\mp
-  s1
   s1\<
+  s1
   s1\!\>
-  s1\!
   s1
-  s1\<
-  s1\!
-  s2. s4\mf
+  s1\!\<
+  s2.\! s4\<
+  s1
+  s4.\!\f s4. s4\mf
   s1
   s1
   s1
