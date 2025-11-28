@@ -29,19 +29,19 @@ chordmusic = \chordmode {
   es1:maj7 |
   bes:sus4.7.9-
 
-  es1:m |
+  es1:m7 |
   f1:m7.5- |
   as:m7 |
   bes:7.5+ |
   
-  as:m7 |
+  as:m7/ces |
   des:7 |
-  ges |
+  ges:maj7 |
   ges:7.5+ |
   
   g:m7 |
   a:m7.5- |
-  es |
+  es:maj7 |
   f:7 |
   
   bes:maj7 |
@@ -52,7 +52,7 @@ chordmusic = \chordmode {
   g:m7 |
   as:maj7 |
   es:maj7 |
-  bes:7 |
+  bes:9 |
   
   as:m7+ |
   g:7.9- |
