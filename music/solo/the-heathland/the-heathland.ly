@@ -6,41 +6,43 @@
 options = {
   \numericTimeSignature
   \time 4/4
-  \override Score.MetronomeMark.X-offset = #-1
-  \tempo 4 = 124
+  \override Score.MetronomeMark.X-offset = #7
+  \tempo 4 = 124 - 132
   \key c \major
 }
 
 staffRight = {
   \options
-  \relative c'' {
+  \relative c' {
     \clef treble
-    \partial 2 { b8\regz c d e~ }
+    \mark \default
+    \partial 2 { b8 c d e~ }
     e2 c8 d e f~ |
     f2 f4. g8 |
     f8 es c2.~ |
     c2 b8 c d e~ |
-    e4 c8 c~ c4 c8 bes~ |
-    bes4. as8~ as4. e8~ |
+    e4 c8 c~ c8 c4. |
+    bes4. as8~ as4 e4~ |
     e1 |
     r2 b'8 c d e~ |
     e2 c8 d e f~ |
     f2 f4. g8 |
     f8 es c2.~ |
     c2 b8 c d e~ |
-    e4 c8 c~ c4 c8 bes~ |
-    bes2 as4 g8 c8~ |
+    e4 c8 c~ c8 c4. |
+    bes4. as8~ as8 g8 c4~ |
     c1~ |
     c1 |
+    \bar "||"
+    \break
     
+    \mark \default
     c'4. bes4. f4~ |
-    f8 f4 g8 f e c4~ |
-    c1~ |
-    c1 |
+    f8 f4 g8 f e c4~ 
+    c1~ c1
     c'4. bes4. f4~ |
     f8 f4 g8 f e g4~ |
-    g1~ |
-    g1 |
+    g1~ g1
     c4. bes4. f4~ |
     f8 f4 g8 f es c4~ |
     c1~ |
@@ -48,7 +50,41 @@ staffRight = {
     c'4. bes4. f4~ |
     f8 f4 g8 f e c4~ |
     c1~ |
-    c1
+    c2 
+    \bar "!"
+    \break
+    \mark \default
+    c8 d e f~ |
+    f2. f8 f |
+    g4 f8 es~ es f4. |
+    g4. c8~ c es4. |
+    d2 r8 f,8 g as |
+    bes4 as8 g~ g as4 bes8~ |
+    \override Glissando.style = #'zigzag
+    bes2 \tuplet 3/2 { as4 bes c  \glissando } |
+    d,1~  |
+    d2 c8 d es f~ |
+    f2. f8 f |
+    g4 f8 es~ es f4. |
+    g4. c8~ c es4. |
+    d1 |
+    c1 |
+    c1 |
+    b1 |
+    \bar "||"
+    \break
+    \mark \default
+    c4. bes4. f4~ |
+    f1 |
+    c'4. bes4. f4~ |
+    f1 |
+    c'4. bes4. f4~ |
+    f8 f4 g8 f es c4~ |
+    <c~ f~ g~ des'~>1 |
+    <c f g des'>1 |
+    \bar "||"
+    \break
+    \mark \default
     
   }
 }
@@ -76,7 +112,19 @@ staffLeft = {
   c4. bes,4. f,4~ |
   f,8 f,4 g,8 f, e, c4~ |
   c1 |
-  c1 |
+  c2 s2 |
+  
+  s1*8 |
+  s1*7 |
+  
+  c4. bes,4. a,4~ |
+  a,1 |
+  c4. bes,4. as,4~ |
+  as,1 |
+  ges,4. f,4. es,4~ |
+  es,8 d4. des2~ |
+  des1~ |
+  des1 |
   
   
 }
@@ -120,6 +168,38 @@ chordmusic = \chordmode {
   <c e f g>1
   <c e f g>1
   
+  s1 s1
+  s2 c:sus4
+  c1
+  s1 s1
+  s2 c:sus4
+  c1 
+  s1 s1
+  s2 f:sus4
+  f1
+  s1 s1
+  s2 c:sus4
+  c2 s2 |
+
+  as1:6 |
+  g:5+.7.9-
+  f:m9 |
+  bes:maj7.13 |
+  des:maj7 |
+  es:9 |
+  as:maj7.11+ |
+  as:maj7.11+ |
+  f:m7 |
+  bes:9 |
+  es:maj7 |
+  as:7.11+ |
+  as:7 |
+  g:sus4.9 |
+  g:9 |
+  
+  s1*6
+  des:maj7.11+
+  
 }
 
 \book {
@@ -128,11 +208,11 @@ chordmusic = \chordmode {
     title = "The Heathland"
     composer = "Roelof Ruis"
     tagline = ##f
-    instrumentName = "Accordion Solo"
+    instrumentName = "Lead Sheet for Accordion or Ensemble"
     year = "2025"
-    description = ""
+    description = "This tune is inspired by the open views of heathland at De Hoge Veluwe. \n\n Can be performed solo or with an ensemble, a global structure is provided but can be adjusted to allow different performance durations with more or less improvistion. \n\n Where two hands are written, the left hand is written in accordion standard bass notation."
     info = ""
-    permission = "Licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License."
+    permission = ""
     projecturl = \githuburl
     version = "December 2025"
   }
@@ -188,16 +268,22 @@ chordmusic = \chordmode {
       breakbefore = ##t
     }
 
-    \new PianoStaff \with {
-      % \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (padding . 1))
-    } <<
+    \new PianoStaff <<
       \new ChordNames { \chordmusic }
       \new Staff = "right" \with {midiInstrument = "harmonica"} \staffRight
-      \dynamicsStaff
       \new Staff = "left" \with {midiInstrument = "harmonica"} \staffLeft
     >>
 
-    \layout {}
+    \layout {
+      \context {
+        \PianoStaff
+        \remove "Keep_alive_together_engraver"
+      }
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
     
     \midi {}
   }
