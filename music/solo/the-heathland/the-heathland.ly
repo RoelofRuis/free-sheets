@@ -80,11 +80,17 @@ staffRight = {
     f1 |
     c'4. bes4. f4~ |
     f8 f4 g8 f es c4~ |
-    <c~ f~ g~ des'~>1 |
-    <c f g des'>1 |
-    \bar "||"
+    c1~ |
+    c1 |
     \break
     \mark \default
+    
+    \repeat volta 2 {
+      \once \hide NoteHead
+      c'1^\markup { \bold "Improvisation" }
+      \once \hide NoteHead
+      c1
+    }
     
   }
 }
@@ -98,21 +104,21 @@ staffLeft = {
   s1*8 |
 
   c4. bes,4. f,4~ |
-  f,8 f,4 g,8 f, e, c4~ |
-  c1 |
-  c1 |
+  f,8 f,4 g,8 f, e, c,4~ |
+  c,1~ |
+  c,1 |
   c4. bes,4. f,4~ |
-  f,8 f,4 g,8 f, e, c4~ |
-  c1 |
-  c1 |
+  f,8 f,4 g,8 f, e, c,4~ |
+  c,1~ |
+  c,1 |
   c4. bes,4. a,4~ |
   a,8 as,4. ges,4 f,4~ |
-  f,1 |
+  f,1~ |
   f,1 |
   c4. bes,4. f,4~ |
-  f,8 f,4 g,8 f, e, c4~ |
-  c1 |
-  c2 s2 |
+  f,8 f,4 g,8 f, e, c,4~ |
+  c,1~ |
+  c,2 s2 |
   
   s1*8 |
   s1*7 |
@@ -122,9 +128,9 @@ staffLeft = {
   c4. bes,4. as,4~ |
   as,1 |
   ges,4. f,4. es,4~ |
-  es,8 d4. des2~ |
-  des1~ |
-  des1 |
+  es,8 d,4. des,2~ |
+  des,1~ |
+  des,1 |
   
   
 }
@@ -192,13 +198,19 @@ chordmusic = \chordmode {
   f:m7 |
   bes:9 |
   es:maj7 |
-  as:7.11+ |
-  as:7 |
+  as:9.11+ |
+  as:9 |
   g:sus4.9 |
   g:9 |
   
   s1*6
-  des:maj7.11+
+  des1:maj7.11+
+  des1:maj7.11+
+  
+  \repeat volta 2 {
+    <c d e g>1
+    des1:maj7.11+
+  }
   
 }
 
@@ -210,8 +222,8 @@ chordmusic = \chordmode {
     tagline = ##f
     instrumentName = "Lead Sheet for Accordion or Ensemble"
     year = "2025"
-    description = "This tune is inspired by the open views of heathland at De Hoge Veluwe. \n\n Can be performed solo or with an ensemble, a global structure is provided but can be adjusted to allow different performance durations with more or less improvistion. \n\n Where two hands are written, the left hand is written in accordion standard bass notation."
-    info = ""
+    description = "This tune is inspired by the open views of heathland at National Park De Hoge Veluwe."
+    info = "It can be performed solo or with an ensemble, the global structure provided may be adjusted to allow different performance durations with more or less room for improvisation. \n\n Where a bass cleff is present the bass is intended to play the notes as written, otherwise the chords should be followed."
     permission = ""
     projecturl = \githuburl
     version = "December 2025"
@@ -220,7 +232,7 @@ chordmusic = \chordmode {
   \paper {
     %max-systems-per-page = 5
     %min-systems-per-page = 5
-    %ragged-last-bottom = ##f
+    ragged-last-bottom = ##f
 
     indent = 0.0
     print-all-headers = ##t
@@ -240,6 +252,7 @@ chordmusic = \chordmode {
         \fontsize #1
         \justify-field #'header:description
         \vspace #1
+        \override #'(line-width . 55)
         \fontsize #1
         \justify-field #'header:info
         \vspace #4
@@ -247,7 +260,7 @@ chordmusic = \chordmode {
         \fontsize #1
         \justify-field #'header:permission
         \vspace #1
-        \vspace #14
+        \vspace #12
         \justify { \char ##x00A9 Roelof Ruis \concat { " - Version " \fromproperty #'header:version } }
         \typewriter { \fromproperty #'header:projecturl }
       }
@@ -257,7 +270,7 @@ chordmusic = \chordmode {
       \fill-line {
         \center-column {
           \if \should-print-page-number
-          \line { \char ##x00A9 Roelof Ruis - \fromproperty #'header:projecturl }
+          \line { \char ##x00A9 Roelof Ruis }
         }
       }
     }  
