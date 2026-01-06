@@ -21,16 +21,16 @@ staffRight = {
     f2 f4. g8 |
     f8 es c2.~ |
     c2 b8 c d e~ |
-    e4 c8 c~ c8 c4. |
-    bes4. as8~ as4 e4~ |
+    e4 d8 c~ c4 d4 |
+    as4. g4. e4~ |
     e1 |
     r2 b'8 c d e~ |
     e2 c8 d e f~ |
     f2 f4. g8 |
     f8 es c2.~ |
     c2 b8 c d e~ |
-    e4 c8 c~ c8 c4. |
-    bes4. as8~ as8 g8 c4~ |
+    e4 d8 c~ c8 d4. |
+    as4. g4. c4~ |
     c1~ |
     c1 |
     \bar "||"
@@ -55,7 +55,7 @@ staffRight = {
     \break
     \mark \default
     c8 d e f~ |
-    f2. f8 f |
+    f2~ \times 2/3 { f4 as f } |
     g4 f8 es~ es f4. |
     g4. c8~ c es4. |
     d2 r8 f,8 g as |
@@ -64,7 +64,7 @@ staffRight = {
     bes2 \tuplet 3/2 { as4 bes c  \glissando } |
     d,1~  |
     d2 c8 d es f~ |
-    f2. f8 f |
+    f2~ \times 2/3 { f4 as f } |
     g4 f8 es~ es f4. |
     g4. c8~ c es4. |
     d1 |
@@ -74,14 +74,26 @@ staffRight = {
     \bar "||"
     \break
     \mark \default
-    c4. bes4. f4~ |
-    f1 |
-    c'4. bes4. f4~ |
-    f1 |
-    c'4. bes4. f4~ |
-    f8 f4 g8 f es c4~ |
-    c1~ |
-    c1 |
+    << {
+      s1
+      r4 f'8 g f es c4 
+      s1
+      r4 f8 g f es c4
+      s1
+      s1
+      <des,~ f~ g~ c~>1
+      <des, f g c>1
+    } \\ {
+      c'4. bes4. f4~ |
+      f1
+      c'4. bes4. f4~ |
+      f1 |
+      c'4. bes4. \stemUp f4~ |
+      f8 f4 g8 f es \stemDown c4~ |
+      c1~ |
+      c1 |
+    } >> |
+
     \break
     \mark \default
     
@@ -198,7 +210,7 @@ chordmusic = \chordmode {
   f:m7 |
   bes:9 |
   es:maj7 |
-  as:9.11+ |
+  as:11+.9 |
   as:9 |
   g:sus4.9 |
   g:9 |
