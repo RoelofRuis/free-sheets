@@ -82,7 +82,7 @@ staffRight = {
       s1
       s1
       <des,~ f~ g~ c~>1
-      <des, f g c>1
+      <des f g c>1
     } \\ {
       c'4. bes4. f4~ |
       f1
