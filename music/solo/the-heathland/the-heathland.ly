@@ -20,7 +20,7 @@ staffRight = {
     e2 c8 d e f~ |
     f2 f4. g8 |
     f8 es c2.~ |
-    c2 b8 c d e~ |
+    c2 r8 b8 c d |
     e4 d8 c~ c4 d4 |
     as4. g4. e4~ |
     e1 |
@@ -28,7 +28,7 @@ staffRight = {
     e2 c8 d e f~ |
     f2 f4. g8 |
     f8 es c2.~ |
-    c2 b8 c d e~ |
+    c2 r8 b8 c d |
     e4 d8 c~ c8 d4. |
     as4. g4. c4~ |
     c1~ |
@@ -93,16 +93,8 @@ staffRight = {
       c1~ |
       c1 |
     } >> |
-
-    \break
-    \mark \default
     
-    \repeat volta 2 {
-      \once \hide NoteHead
-      c'1^\markup { \bold "Improvisation" }
-      \once \hide NoteHead
-      c1
-    }
+    \bar "||"
     
   }
 }
@@ -175,12 +167,12 @@ chordmusic = \chordmode {
   <c d e g>1
   bes:9
   <c d e g>1
-  <c d e g>1
+  g:sus9
   
   <c d e g>1
   bes:9
   as:maj7.13
-  bes:9
+  g:sus9
   <c d e g>1
   bes:9
   <c e f g>1
@@ -218,11 +210,6 @@ chordmusic = \chordmode {
   s1*6
   des1:maj7.11+
   des1:maj7.11+
-  
-  \repeat volta 2 {
-    <c d e g>1
-    des1:maj7.11+
-  }
   
 }
 
