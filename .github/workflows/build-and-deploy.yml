@@ -12,6 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Make output dir
+        run: mkdir ./output/
+
       - name: Copy index.html to output folder
         run: cp index.html output/
 
